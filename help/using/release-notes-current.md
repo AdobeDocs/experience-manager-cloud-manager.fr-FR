@@ -4,12 +4,12 @@ seo-title: Notes de mise à jour d’AEM Cloud Manager pour la version 2019.5.0
 description: Consultez cette page pour obtenir des informations sur la version 2019.5.0 de Cloud Manager.
 seo-description: Consultez cette page pour plus d’informations sur la version 2019.5.0 d’AEM Cloud Manager.
 translation-type: tm+mt
-source-git-commit: 8031df1c1ce9d7fee4ef33de289c6952370b7589
+source-git-commit: cab67f6a3358ef2988baaba78e2a41f7edadb323
 
 ---
 
 
-# Notes de mise à jour de la version 2019.4.0 {#release-notes-for}
+# Notes de mise à jour de la version 2019.5.0 {#release-notes-for}
 
 La version 2019.5.0 [!UICONTROL de Cloud Manager] ne contient pas de modifications fonctionnelles significatives. Pour plus d&#39;informations, suivez les sections ci-dessous.
 
