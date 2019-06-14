@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 translation-type: tm+mt
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+source-git-commit: f8cea9d52ebb01d7f5291d4dfcd82011da8dacc2
 
 ---
 
@@ -43,7 +43,7 @@ Dans le cadre du pipeline, le code source est analysé afin de garantir que les 
 | Cote de sécurité | A = 0 vulnérabilité <br/>B = au moins 1 vulnérabilité mineure<br/> C = au moins 1 vulnérabilité majeure <br/>D = au moins 1 vulnérabilité critique <br/>E = au moins 1 vulnérabilité de blocage | Critique | &lt; B |
 | Cote de fiabilité | A = 0 bogue <br/>B = au moins 1 bogue mineur <br/>C = au moins 1 bogue majeur <br/>D = au moins 1 bogue critique E = au moins 1 bogue bloqueur | Important | &lt; C |
 | Évaluation de maintenabilité | Le coût de correction en suspens pour les smells du code est : <br/><ul><li>&lt;=5% du temps qui s’est déjà écoulé dans l’application, la note est A </li><li>entre 6 et 10 % la note est B </li><li>entre 11 et 20 % la note est C </li><li>entre 21 et 50 % la note est D</li><li>tout ce qui dépasse 50 % est E</li></ul> | Important | &lt; A |
-| Couverture | Combinaison de couverture de ligne de test unitaire et de couverture de condition à l&#39;aide de cette formule : <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`<br/>où : CT = conditions qui ont été évaluées sur « true » au moins une fois lors de l&#39;exécution de tests <br/>Unit CF = conditions qui ont été évaluées à « false » au moins une fois lors de l&#39;exécution des tests <br/>d&#39;unité LC = lignes couvertes = lignes_ to_ cover - uncover_ lines <br/><br/> B = nombre total de conditions <br/>EL = nombre total de lignes exécutables (lignes_ à_ couverture) | Important | &lt; 50% |
+| Couverture | Combinaison de couverture de ligne de tests unitaires et de couverture de condition utilisant cette formule : <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <br/>où : CT = conditions qui ont été évaluées comme « vrai » au moins une fois lors de l’exécution de tests unitaires <br/>CF = conditions qui ont été évaluées comme « faux » au moins une fois <br/>LC = lignes couvertes = lines_ to_ cover - uncover_ lines <br/><br/> B = nombre total de conditions <br/>EL = nombre total de lignes exécutables (lines_to_cover) | Important | &lt; 50% |
 | Tests unitaires ignorés | Nombre de tests unitaires ignorés. | Infos | &gt; 1 |
 | Problèmes en cours | Types de problèmes généraux - Vulnérabilités, bogues et smells de code | Infos | &gt; 1 |
 | Lignes dupliquées | Nombre de lignes impliquées dans des blocs dupliqués. <br/>Pour qu’un bloc de code soit considéré comme dupliqué : <br/><ul><li>**Projets non Java :**</li><li>Il doit y avoir au moins 100 jetons successifs et dupliqués.</li><li>Ces jetons doivent être répartis au moins sur : </li><li>30 lignes de code pour COBOL </li><li>20 lignes de code pour ABAP </li><li>10 lignes de code pour d’autres langages</li><li>**Projets Java :**</li><li> Il devrait y avoir au moins 10 instructions successives et dupliquées, quel que soit le nombre de jetons et de lignes.</li></ul> <br/>Les différences dans la mise en retrait ainsi que dans les littéraux de chaîne sont ignorées lors de la détection des doublons. | Infos | &gt; 1% |
@@ -54,11 +54,11 @@ Dans le cadre du pipeline, le code source est analysé afin de garantir que les 
 >Pour plus [d&#39;informations, reportez-vous à la section Définitions](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) des mesures.
 
 
-Vous pouvez télécharger la liste des règles ici : [sonarqube-rules.xlsx](assets/sonarqube-rules.xlsx)&gt;.
+Vous pouvez télécharger la liste des règles ici [code-quality-rules.xlsx](assets/code-quality-rules.xlsx)
 
 >[!NOTE]
 >
->Pour en savoir plus sur les règles personnalisées SonarQube exécutées par [!UICONTROL  Cloud Manager ], reportez-vous à la section [Règles de qualité du code personnalisé](custom-code-quality-rules.md).
+>Pour en savoir plus sur les règles de qualité du code personnalisé exécutées par [!UICONTROL Cloud Manager], reportez-vous aux [Règles Qualité du code personnalisé](custom-code-quality-rules.md).
 
 ### Traitement des faux positifs {#dealing-with-false-positives}
 
@@ -102,28 +102,28 @@ Si l’une des **instances** signale un échec pour un contrôle d’intégrité
 
 Le tableau suivant répertorie les contrôles actuels :
 
-| **Nom** | **Implémentation de la vérification de l&#39;intégrité** | **Catégorie** |
+| **Nom** | **Implémentation de la vérification de l’intégrité** | **Catégorie** |
 |---|---|---|
-| Le pare-feu de désérialisation Attach API Readiness est dans un état acceptable. | Disponibilité de l’API d’ajout de pare-feu de désérialisation | Critique |
-| Le pare-feu de désérialisation est fonctionnel | Pare-feu de désérialisation fonctionnel | Critique |
-| Le pare-feu de désérialisation est chargé | Pare-feu de désérialisation chargé | Critique |
-| La mise en œuvre authorizablenodename n&#39;expose pas l&#39;ID autorisable dans le nom/le chemin du nœud. | Génération de nom de nœud autorisé | Critique |
+| La disponibilité de l’API d’ajout de pare-feu de désérialisation est dans un état acceptable. | Disponibilité de l’API d’ajout de pare-feu de désérialisation | Critique |
+| Le pare-feu de désérialisation est fonctionnel. | Pare-feu de désérialisation fonctionnel | Critique |
+| Le pare-feu de désérialisation est chargé. | Pare-feu de désérialisation chargé | Critique |
+| L’implémentation d’AuthorizableNodeName n’expose pas l’ID autorisable dans le nom/chemin du nœud. | Génération de nom de nœud autorisé | Critique |
 | Les mots de passe par défaut ont été modifiés. | Comptes de connexion par défaut | Critique |
-| La servlet GET par défaut Sling est protégée contre les attaques par DOS. | Servlet Sling Get | Critique |
-| Le répartiteur effectue correctement le filtrage des requêtes | Configuration du Dispatcher CQ | Critique |
-| Le Gestionnaire de bibliothèque HTML Adobe Granite est configuré correctement | Configuration de gestionnaire de bibliothèque HTML CQ | Critique |
-| Le Gestionnaire de script Sling Java est configuré correctement | Gestionnaire de script Java Sling | Critique |
-| Le Gestionnaire de script Sling JSP est configuré correctement | Gestionnaire de script JSP Sling | Critique |
-| Le filtre Sling Referrer Filter est configuré pour empêcher les attaques CSRF. | Filtre référent Sling | Critique |
-| SSL est configuré correctement | Configuration SSL | Critique |
-| Aucune stratégie de profil utilisateur manifestement insécurisée trouvée | Accès par défaut au profil utilisateur | Critique |
-| Prise en charge de CRXDE lot désactivé | Prise en charge de CRXDE | Important |
-| Lot Sling davex et servlet désactivé | Contrôle d’intégrité DavEx | Important |
-| Echantillon de contenu non installé | Packages d’exemple de contenu | Important |
+| Le servlet GET par défaut Sling est protégé contre les attaques par DOS. | Servlet Sling Get | Critique |
+| Le Dispatcher effectue correctement le filtrage des requêtes. | Configuration du Dispatcher CQ | Critique |
+| Le gestionnaire de bibliothèque HTML Adobe Granite est correctement configuré. | Configuration de gestionnaire de bibliothèque HTML CQ | Critique |
+| Le gestionnaire de script Java Sling est correctement configuré. | Gestionnaire de script Java Sling | Critique |
+| Le gestionnaire de script JSP Sling est correctement configuré. | Gestionnaire de script JSP Sling | Critique |
+| Le filtre référent Sling est configuré pour empêcher les attaques CSRF. | Filtre référent Sling | Critique |
+| SSL est correctement configuré. | Configuration SSL | Critique |
+| Aucune stratégie de profil d’utilisateur évidemment risquée trouvée | Accès par défaut au profil utilisateur | Critique |
+| Le lot de prise en charge de CRXDE est désactivé. | Prise en charge de CRXDE | Important |
+| Le lot DavEx Sling et le servlet sont désactivés. | Contrôle d’intégrité DavEx | Important |
+| L’exemple de contenu n’est pas installé. | Packages d’exemple de contenu | Important |
 | Le filtre de requête WCM et le filtre de débogage WCM sont désactivés. | Configuration des filtres WCM | Important |
-| Le lot Sling webdav et la servlet sont configurés correctement | Contrôle d’intégrité WebDAV | Important |
-| Le serveur Web est configuré pour empêcher les clics publicitaires | Configuration du serveur web | Important |
-| La réplication n&#39;utilise pas l&#39;utilisateur « admin » | Utilisateurs de réplication et de transport | Infos |
+| Le lot WebDAV Sling et le servlet sont correctement configurés. | Contrôle d’intégrité WebDAV | Important |
+| Le serveur web est configuré pour empêcher les clics publicitaires. | Configuration du serveur web | Important |
+| La réplication n’utilise pas l’utilisateur « admin ». | Utilisateurs de réplication et de transport | Infos |
 
 ## Test de performance {#performance-testing}
 
