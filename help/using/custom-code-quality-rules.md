@@ -1,22 +1,22 @@
 ---
 title: Règles de qualité du code personnalisé
 seo-title: Règles de qualité du code personnalisé
-description: Consultez cette page pour en savoir plus sur les règles personnalisées SonarQube exécutées par Cloud Manager.
-seo-description: Consultez cette page pour en savoir plus sur les règles personnalisées SonarQube exécutées par Adobe Experience Manager Cloud Manager.
+description: Suivez cette page pour en savoir plus sur les règles de qualité du code personnalisées exécutées par Cloud Manager.
+seo-description: Suivez cette page pour en savoir plus sur les règles de qualité du code personnalisées exécutées par Adobe Experience Manager Cloud Manager.
 uuid: a7feb465-1982-46be-9e57-e67b59849579
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 translation-type: tm+mt
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+source-git-commit: f8cea9d52ebb01d7f5291d4dfcd82011da8dacc2
 
 ---
 
 
 # Règles de qualité du code personnalisé {#custom-code-quality-rules}
 
-Cette page décrit les règles personnalisées SonarQube exécutées par Cloud Manager. Ces règles améliorent les règles standard SonarQube avec les bonnes pratiques d’AEM Engineering.
+Cette page décrit les règles de qualité du code personnalisées exécutées par Cloud Manager, créées en fonction des bonnes pratiques d&#39;AEM Engineering.
 
 >[!NOTE]
 >
