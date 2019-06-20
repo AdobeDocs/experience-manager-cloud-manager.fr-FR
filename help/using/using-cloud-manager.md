@@ -8,7 +8,7 @@ uuid: cef44d35-75ed-44bb-9636-2de2bca5e458
 contentOwner: jsyal
 discoiquuid: c37566d5-0d1b-4c44-abd7-b271ea443c1a
 translation-type: tm+mt
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+source-git-commit: 4c1c6786db9b8972f9315bd2f12fc1752881492f
 
 ---
 
@@ -253,7 +253,7 @@ Les contrôles actuels sont les suivants :
 
 ### Mise en œuvre du contrôle qualité par SonarQube {#quality-check-implementation-by-sonarqube}
 
-Dans le cadre du pipeline, comme illustré ci-dessus, le code est analysé. Actuellement, ce contrôle est implémenté par SonarQube. Nous avons 93 règles qui sont une combinaison de règles Java génériques et de règles spécifiques à AEM (y compris certaines des règles existantes de Cognifide). Vous trouverez la liste de ces règles ici : [Règles SonarQube](assets/sonarqube-rules.xlsx)
+Dans le cadre du pipeline, comme illustré ci-dessus, le code est analysé. Actuellement, ce contrôle est implémenté par SonarQube. Nous avons 93 règles qui sont une combinaison de règles Java génériques et de règles spécifiques à AEM (y compris certaines des règles existantes de Cognifide). A list of these rules can be found here: [code-quality-rules.xlsx](/help/using/assets/code-quality-rules.xlsx)
 
 À partir de ces règles, plusieurs mesures sont calculées, certaines d’entre elles étant utilisées comme point de contrôle de qualité avant d’autoriser un déploiement vers l’environnement intermédiaire.
 
