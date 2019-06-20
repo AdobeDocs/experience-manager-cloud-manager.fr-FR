@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 translation-type: tm+mt
-source-git-commit: 4c1c6786db9b8972f9315bd2f12fc1752881492f
+source-git-commit: ea5bf33dc67c9ce174801f6d905abfc4a21886a2
 
 ---
 
@@ -33,6 +33,10 @@ Pour chaque point de contrôle, il existe une structure à trois niveaux pour le
 * **Critique** : il s’agit des problèmes identifiés par le point de contrôle qui entraînent l’échec immédiat du pipeline.
 * **Important** : il s’agit des problèmes identifiés par le point de contrôle qui entraînent la suspension du pipeline. Un responsable de déploiement, un responsable de projet ou un propriétaire d’entreprise peuvent soit contourner les problèmes, auquel cas le pipeline continue, soit accepter les problèmes, auquel cas le pipeline s’arrête avec un échec.
 * **Informations** : il s’agit des problèmes identifiés par le point de contrôle qui sont fournis uniquement à titre d’information et qui n’ont aucune incidence sur l’exécution du pipeline.
+
+>[!NOTE]
+>
+>Dans un pipeline Qualité du code uniquement, les échecs importants de la ligne Test de qualité du code ne peuvent pas être remplacés puisque l&#39;étape Test qualité du code est la dernière étape du pipeline.
 
 ## Test de qualité du code {#code-quality-testing}
 
