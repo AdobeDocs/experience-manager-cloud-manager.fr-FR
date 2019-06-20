@@ -1,27 +1,32 @@
 ---
-title: Notes de mise à jour de la version 2019.5.0
-seo-title: Notes de mise à jour d’AEM Cloud Manager pour la version 2019.5.0
-description: Consultez cette page pour obtenir des informations sur la version 2019.5.0 de Cloud Manager.
-seo-description: Consultez cette page pour plus d’informations sur la version 2019.5.0 d’AEM Cloud Manager.
+title: Notes de mise à jour de la version 2019.6.0
+seo-title: Notes de mise à jour d’AEM Cloud Manager pour la version 2019.6.0
+description: Consultez cette page pour obtenir des informations sur la version 2019.6.0 de Cloud Manager.
+seo-description: Consultez cette page pour plus d’informations sur la version 2019.6.0 d’AEM Cloud Manager.
 translation-type: tm+mt
-source-git-commit: cab67f6a3358ef2988baaba78e2a41f7edadb323
+source-git-commit: 75563d3f4b2a27d943c052993c97d830338ead9c
 
 ---
 
+# Notes de mise à jour de la version 2019.6.0 {#release-notes-for}
 
-# Notes de mise à jour de la version 2019.5.0 {#release-notes-for}
-
-La version 2019.5.0 [!UICONTROL de Cloud Manager] ne contient pas de modifications fonctionnelles significatives. Pour plus d&#39;informations, suivez les sections ci-dessous.
+La version 2019.6.0 de [!UICONTROL Cloud Manager] ne contient pas de modifications fonctionnelles significatives. Pour plus d’informations, suivez les sections ci-après.
 
 ## Date de publication {#release-date}
 
-La date de publication de [!UICONTROL Cloud Manager] version 2019.5.0 est le 23 mai 2019.
+The Release Date for [!UICONTROL Cloud Manager] Version 2019.6.0 is .
 
+## Nouveautés {#whats-new}
+
+* Nouvel assistant de mise à jour des produits pour aider les clients à exécuter une mise à jour AEM. (lien vers la page Assistant de mise à jour des produits)
+* Règles de qualité du code qui examinent les structures de contenu. (lien vers la page Règles Qualité du code personnalisé)
+* La taille maximale d&#39;une push git a été augmentée à 1 Go.
 
 ## Correctifs {#bug-fixes}
 
-* Le graphique des rapports SLA affichait des valeurs répétées dans l&#39;axe Y.
-* L&#39;écran Rapports n&#39;était pas visible pour certains utilisateurs.
-* Dans de rares cas, les résultats de qualité du code ne pouvaient pas être analysés en raison d&#39;échecs d&#39;exécution du canal.
-* Le calendrier de l&#39;étape de planification du canal n&#39;était pas localisé correctement.
-* Plusieurs problèmes mineurs de localisation et de traduction.
+* Dans certains cas, les pipelines ne pouvaient pas être démarrés suite à un échec précédent.
+
+## Problèmes connus {#known-issues}
+
+* Le téléchargement CSV de qualité du code n&#39;est pas toujours trié en fonction de la gravité.
+* Les faux positifs peuvent être signalés par la règle configandinstallaidonlycontainosginodes si les configurations osgi sont placées dans un dossier imbriqué sous un dossier de configuration.
