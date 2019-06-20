@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 translation-type: tm+mt
-source-git-commit: f8cea9d52ebb01d7f5291d4dfcd82011da8dacc2
+source-git-commit: 4c1c6786db9b8972f9315bd2f12fc1752881492f
 
 ---
 
@@ -36,7 +36,7 @@ Pour chaque point de contrôle, il existe une structure à trois niveaux pour le
 
 ## Test de qualité du code {#code-quality-testing}
 
-Dans le cadre du pipeline, le code source est analysé afin de garantir que les déploiements respectent certains critères de qualité. Actuellement, ce contrôle est implémenté par SonarQube. Il existe plus de 100 règles combinant des règles Java génériques et des règles spécifiques à AEM. Le tableau suivant résume l’évaluation des critères de test :
+Dans le cadre du pipeline, le code source est analysé afin de garantir que les déploiements respectent certains critères de qualité. Actuellement, cette méthode est implémentée par une combinaison de sonarqube et d&#39;examens au niveau du package de contenu utilisant oakpal. Il existe plus de 100 règles combinant des règles Java génériques et des règles spécifiques à AEM. Le tableau suivant résume l’évaluation des critères de test :
 
 | Nom | Définition | Catégorie | Seuil d’échec |
 |--- |--- |--- |--- |
@@ -51,14 +51,13 @@ Dans le cadre du pipeline, le code source est analysé afin de garantir que les 
 
 >[!NOTE]
 >
->Pour plus [d&#39;informations, reportez-vous à la section Définitions](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) des mesures.
+>Refer to [Metric Definitions](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) for more detailed definitions.
 
-
-Vous pouvez télécharger la liste des règles ici [code-quality-rules.xlsx](assets/code-quality-rules.xlsx)
+You can download the list of rules here [code-quality-rules.xlsx](/help/using/assets/code-quality-rules.xlsx)
 
 >[!NOTE]
 >
->Pour en savoir plus sur les règles de qualité du code personnalisé exécutées par [!UICONTROL Cloud Manager], reportez-vous aux [Règles Qualité du code personnalisé](custom-code-quality-rules.md).
+>To learn more about the custom code quality rules executed by [!UICONTROL Cloud Manager], please refer to [Custom Code Quality Rules](custom-code-quality-rules.md).
 
 ### Traitement des faux positifs {#dealing-with-false-positives}
 
