@@ -8,30 +8,39 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
-source-git-commit: 47331787d45fe68144cb90c4b907560fe0079b3c
+source-git-commit: 2ac4a59f1af46cfb1cae8cda3c24e217620cec70
 
 ---
 
 
 # Introduction {#introduction}
 
-L&#39;Assistant de mise à jour des produits est une expérience guidée et pas à pas destinée aux clients Cloud Manager qui effectuent la mise à niveau vers Adobe Experience Manager (AEM) 6.5. Il simplifie le processus complet, assure l&#39;adhérent aux bonnes pratiques AEM tout en utilisant la structure CI/CD de Cloud Manager et les tests automatisés intégrés.
+L&#39;Assistant de mise à jour des produits est une expérience guidée et pas à pas destinée aux clients Cloud Manager qui effectuent la mise à niveau vers Adobe Experience Manager (AEM) 6.5. Il simplifie le processus complet, garantit l&#39;acceptation des bonnes pratiques AEM à l&#39;aide de la structure CI/CD de Cloud Manager et des tests automatisés intégrés.
 
-L&#39;assistant comprend cinq phases de guidage de l&#39;utilisateur lors d&#39;une mise à jour de produit AEM, notamment Evaluation, Correction, Exécution, Validation et Achèvement.
+L&#39;assistant comprend cinq phases qui guident l&#39;utilisateur lors d&#39;une mise à jour de produit AEM. Les cinq phases sont les suivantes :
+
+* Evaluation
+* Correction
+* Exécution
+* Validation
+* Fin
 
 >[!NOTE]
->The current release of product update feature in Cloud Manager supports the **Evaluation** phase only. The other four phases namely **Remediation**, **Execution**, **Validation**, and **Completion** are coming soon.
+>The current release of Product Update feature in Cloud Manager supports the **Evaluation** phase only. The other four phases namely **Remediation**, **Execution**, **Validation**, and **Completion** are coming soon.
 
 
 ## Using Product Update Wizard {#using-product-update-wizard}
 
 >[!NOTE]
->Les clients intégrés à Cloud Manager et souhaitant effectuer la mise à niveau vers AEM 6.5 pourront profiter de l&#39;Assistant de mise à jour des produits. Pour plus d&#39;informations, contactez votre ingénieur de succès client (CSE).
+>Les clients intégrés à Cloud Manager et souhaitant effectuer la mise à niveau vers AEM 6.5 pourront profiter de l&#39;Assistant Product Update. Pour plus d&#39;informations, contactez votre ingénieur de succès client (CSE).
 
 1. Vous recevrez une notification Push via Cloud Manager pour vous informer qu&#39;une nouvelle version d&#39;AEM 6.5 est disponible pour votre programme.
 
-   ![](assets/screen_shot_2018-06-04at120643pm.png)
+1. An **[!UICONTROL AEM 6.5 Update]** card displays on the overview screen of [!UICONTROL Cloud Manager]. Cette carte vous aidera à déterminer la phase du processus de mise à jour que vous recherchez et vous informera de l&#39;étape à suivre. Select **[!UICONTROL Start Update]** to start the update wizard.
 
-1. You will see an AEM update card on the overview screen of [!UICONTROL Cloud Manager]. Cette carte vous aidera à déterminer la phase du processus de mise à jour que vous recherchez et vous informera de l&#39;étape à suivre. Select **Start update** to navigate to the update wizard.
+   ![](assets/Start-Update.png)
 
-   ![](assets/screen_shot_2018-06-04at12611pm.png)
+### Étapes suivantes {#next-steps}
+
+Once you click the **[!UICONTROL Start Update]** from the **[!UICONTROL AEM 6.5 Update]** card, the **Evaulation** phase starts.
+Navigate to the [Evaluation Phase](evaluation.md) to learn more.
