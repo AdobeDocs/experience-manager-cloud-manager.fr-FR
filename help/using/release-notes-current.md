@@ -4,7 +4,7 @@ seo-title: Notes de mise à jour d’AEM Cloud Manager pour la version 2019.6.0
 description: Consultez cette page pour obtenir des informations sur la version 2019.6.0 de Cloud Manager.
 seo-description: Consultez cette page pour plus d’informations sur la version 2019.6.0 d’AEM Cloud Manager.
 translation-type: tm+mt
-source-git-commit: 75563d3f4b2a27d943c052993c97d830338ead9c
+source-git-commit: 9a1af88238a232c64d9f0229059c5001f314c736
 
 ---
 
@@ -14,12 +14,12 @@ La version 2019.6.0 de [!UICONTROL Cloud Manager] ne contient pas de modificati
 
 ## Date de publication {#release-date}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2019.6.0 is .
+The Release Date for [!UICONTROL Cloud Manager] Version 2019.6.0 is June 20, 2019 .
 
 ## Nouveautés {#whats-new}
 
-* Nouvel assistant de mise à jour des produits pour aider les clients à exécuter une mise à jour AEM. (lien vers la page Assistant de mise à jour des produits)
-* Règles de qualité du code qui examinent les structures de contenu. (lien vers la page Règles Qualité du code personnalisé)
+* Assistant de mise à jour de nouveaux produits pour aider les clients à exécuter une mise à jour AEM. Refer to [Product Update Wizard](overview-productupdate-wizard.md) to learn more.
+* Règles de qualité du code qui examinent les structures de contenu. Refer to [Custom Code Quality Rules](custom-code-quality-rules.md)for more information.
 * La taille maximale d&#39;une push git a été augmentée à 1 Go.
 
 ## Correctifs {#bug-fixes}
@@ -29,4 +29,4 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2019.6.0 is .
 ## Problèmes connus {#known-issues}
 
 * Le téléchargement CSV de qualité du code n&#39;est pas toujours trié en fonction de la gravité.
-* Les faux positifs peuvent être signalés par la règle configandinstallaidonlycontainosginodes si les configurations osgi sont placées dans un dossier imbriqué sous un dossier de configuration.
+* False positives may be reported by the *ConfigAndInstallShouldOnlyContainOsgiNodes* rule if OSGi configurations are placed in a nested folder under a config folder.
