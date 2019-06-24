@@ -8,22 +8,22 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
-source-git-commit: 2ac4a59f1af46cfb1cae8cda3c24e217620cec70
+source-git-commit: 9a1af88238a232c64d9f0229059c5001f314c736
 
 ---
 
 
-# Introduction {#introduction}
+# Overview to Product Update Wizard {#overview-product-update-wizard}
 
-L&#39;Assistant de mise à jour des produits est une expérience guidée et pas à pas destinée aux clients Cloud Manager qui effectuent la mise à niveau vers Adobe Experience Manager (AEM) 6.5. Il simplifie le processus complet, garantit l&#39;acceptation des bonnes pratiques AEM à l&#39;aide de la structure CI/CD de Cloud Manager et des tests automatisés intégrés.
+L&#39;Assistant Mise à jour des produits est une expérience guidée et pas à pas destinée aux clients Cloud Manager qui effectuent la mise à niveau vers Adobe Experience Manager (AEM) 6.5. Il simplifie le processus complet, garantit l&#39;acceptation des bonnes pratiques AEM à l&#39;aide de la structure CI/CD de Cloud Manager et des tests automatisés intégrés.
 
 L&#39;assistant comprend cinq phases qui guident l&#39;utilisateur lors d&#39;une mise à jour de produit AEM. Les cinq phases sont les suivantes :
 
-* Evaluation
-* Correction
-* Exécution
-* Validation
-* Fin
+* **Evaluation**
+* **Correction**
+* **Exécution**
+* **Validation**
+* **Fin**
 
 >[!NOTE]
 >The current release of Product Update feature in Cloud Manager supports the **Evaluation** phase only. The other four phases namely **Remediation**, **Execution**, **Validation**, and **Completion** are coming soon.
