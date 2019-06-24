@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
-source-git-commit: 2fda16bb4826171c993ec07c7ff3e38d1675b9f5
+source-git-commit: 2ac4a59f1af46cfb1cae8cda3c24e217620cec70
 
 ---
 
@@ -33,15 +33,22 @@ Ceci donne une évaluation de l&#39;effort de développement impliqué dans la m
 
 Suivez les étapes ci-dessous pour exécuter l&#39;évaluateur :
 
-1. Select **[!UICONTROL Run Evaluation]** to run the pattern detector. Le détecteur de motif peut s&#39;exécuter dans n&#39;importe quel environnement. Toutefois, afin d&#39;augmenter le taux de détection et d&#39;éviter tout ralentissement des instances critiques, Cloud Manager l&#39;exécute sur l&#39;environnement d&#39;évaluation de l&#39;instance d&#39;auteur.
+1. Select **[!UICONTROL Run Evaluation]** to run the pattern detector.
 
-![](assets/Run-Evaluation.png)
+   >[!NOTE]
+   >Le détecteur de motif peut s&#39;exécuter dans n&#39;importe quel environnement. Toutefois, afin d&#39;augmenter le taux de détection et d&#39;éviter tout ralentissement des instances critiques, Cloud Manager l&#39;exécute sur l&#39;environnement d&#39;évaluation de l&#39;instance d&#39;auteur.
+
+   ![](assets/Run-Evaluation.png)
 
 1. L&#39;assistant vous informe de l&#39;état de votre action. You will notice **In progress** or **completed** as applicable when the evaluation report is being generated.
 
-Once the report is generated, you can select [!UICONTROL Download] to save a copy of the evaluation report.
+   Once the report is generated, you can click on **[!UICONTROL Download report]** to save a copy of the evaluation report.
 
-![](assets/Evaluation-1.png)
+   ![](assets/Evaluation-1.png)
+
+   Vous pouvez afficher les notifications Push mises à jour en tant que mises à jour de statut.
+
+   ![](assets/Evaluation-pulse-notification.png)
 
 >[!NOTE]
 >The other four phases succeeding **Evaluation** namely **Remediation**, **Execution**, **Validation**, and **Completion** are coming soon and are not available in the current release.
