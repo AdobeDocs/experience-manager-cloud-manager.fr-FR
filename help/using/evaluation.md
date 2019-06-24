@@ -8,14 +8,15 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
-source-git-commit: 9a1af88238a232c64d9f0229059c5001f314c736
+source-git-commit: 9e33b90818c686f0b7aacaf0955c3f2eba05488f
 
 ---
 
 
 # Evaluation Phase {#evaluation}
 
-Once you click **[!UICONTROL Start Update]**, the first phase in Product Update wizard is the **[!UICONTROL Evaluation]** phase. Au cours de cette phase, vous pouvez évaluer la complexité de la mise à niveau avec le détecteur de modèle accessible directement à partir de l&#39;assistant. A la fin de cette étape, vous avez accès au rapport d&#39;évaluation.
+The first phase in the Product Update wizard is **[!UICONTROL Evaluation]** phase.
+Vous pouvez ici évaluer la complexité de la mise à niveau avec le détecteur de modèle accessible directement à partir de l&#39;assistant. A la fin de cette étape, vous avez accès au rapport d&#39;évaluation.
 
 Le rapport généré vous permet de vérifier l&#39;instance Auteur pour la mise à niveau en détectant les modèles qui :
 
@@ -30,9 +31,9 @@ Ceci donne une évaluation de l&#39;effort de développement impliqué dans la m
 
 ## Running the Evaluator {#running-evaluator}
 
-Suivez les étapes ci-dessous pour exécuter l&#39;évaluateur :
+Pour générer un rapport d&#39;évaluation, procédez comme suit :
 
-1. Click on **[!UICONTROL Run Evaluation]** to run the pattern detector.
+1. Click on **[!UICONTROL Run Evaluation]**.
 
    >[!NOTE]
    >Le détecteur de motif peut s&#39;exécuter dans n&#39;importe quel environnement. Toutefois, afin d&#39;augmenter le taux de détection et d&#39;éviter tout ralentissement des instances critiques, Cloud Manager l&#39;exécute sur l&#39;environnement d&#39;évaluation de l&#39;instance d&#39;auteur.
@@ -41,13 +42,10 @@ Suivez les étapes ci-dessous pour exécuter l&#39;évaluateur :
 
 1. L&#39;assistant vous informe de l&#39;état de votre action. You will notice **In progress** or **completed** as applicable when the evaluation report is being generated.
 
-   Once the report is generated, you can click on **[!UICONTROL Download report]** to save a copy of the evaluation report.
+   Once the report is generated, you can click on **[!UICONTROL Download report]** to save a copy.
 
    ![](assets/Evaluation-1.png)
 
-   Vous pouvez afficher les notifications Push mises à jour en tant que mises à jour de statut.
-
-   ![](assets/Evaluation-pulse-notification.png)
 
 >[!NOTE]
->The other four phases succeeding **Evaluation** namely **Remediation**, **Execution**, **Validation**, and **Completion** are coming soon and are not available in the current release.
+>The current release of Product Update wizard in Cloud Manager supports the **Evaluation** phase only. The other four phases namely **Remediation**, **Execution**, **Validation**, and **Completion** are coming soon.
