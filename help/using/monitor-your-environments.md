@@ -3,7 +3,7 @@ title: Surveillance des environnements
 seo-title: Surveillance des environnements
 description: 'null'
 seo-description: Consultez cette page pour en savoir plus sur la surveillance du système dans Cloud Manager, en observant les instances dans un environnement et en suivant diverses mesures pour chaque instance.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 ---
@@ -93,31 +93,31 @@ Par exemple, si vous cliquez sur la série de seuil d’avertissement, vous ne v
 * Agent de réplication : durée, en secondes, d’un événement de réplication de test. Il existe des mesures distinctes pour chaque agent de réplication.
 * Purge du Dispatcher : nombre d’éléments actuellement présents dans la file d’attente de purge du Dispatcher.
 
-## Création de rapports SLA {#sla-reporting}
+## Création de rapports de contrat SLA {#sla-reporting}
 
-Les clients peuvent voir les performances de leur environnement AEM en production par rapport à leur contrat de niveau de service. Cette option est disponible dans un sous-menu de l&#39;écran Rapports.
-Par exemple, le graphique ci-dessous illustre le résultat mensuel du SLA pour 2018.
+Les clients peuvent voir les performances de leur environnement AEM de production correspondant au contrat de niveau de service auquel ils ont souscrit. Cette option est disponible dans un sous-menu de l’écran Rapports.
+Par exemple, le graphique ci-dessous illustre les résultats mensuels du contrat de niveau de service spécifique à l’année 2018.
 
 ![](assets/sla-reporting1.png)
 
-Comme pour les graphiques de surveillance du système, le fait de survoler un point de données indique les valeurs spécifiques de ce mois.
+Comme pour les graphiques de surveillance du système, le fait de survoler un point de données affiche les valeurs correspondant à ce mois.
 
 ![](assets/sla-reporting2.png)
 
-La section Analyse des événements, située sous ce graphique, présente le jeu d&#39;incidents survenus au cours de l&#39;année sélectionnée. Chaque incident comporte une période, une cause et un ensemble de commentaires.
+La section Analyse des événements, située sous ce graphique, affiche l’ensemble des incidents survenus pour le programme au cours de l’année sélectionnée. Chaque incident comporte une période, une cause et un ensemble de commentaires.
 
 ![](assets/sla-reporting3.png)
 
 ## Mesures SLA {#sla-metrics}
 
-* **Contrat d&#39;auteur**: Il s&#39;agit du SLA défini dans votre contrat avec Adobe Managed Services pour le niveau d&#39;auteur.
+* **Contrat d’auteur** : il s’agit du contrat SLA défini dans le cadre de votre contrat avec Adobe Managed Services pour le niveau auteur.
 
-* **AMS Author SLA**: Il s&#39;agit de l&#39;heure de disponibilité mesurée des incidents de mise en forme de niveaux auteur de production causés par Adobe ou par nos fournisseurs.
+* **Contrat SLA d’auteur AMS** : il s’agit de la période de disponibilité mesurée du niveau auteur de production compabilisant les indidents causés par Adobe ou par nos fournisseurs.
 
-* **Author SLA**: Il s&#39;agit de la durée de disponibilité mesurée du niveau d&#39;auteur ignorant le temps d&#39;arrêt planifié, tel que les fenêtres de maintenance.
+* **Contrat SLA d’auteur** : il s’agit de la période de disponibilité mesurée du niveau auteur ignorant le temps d&#39;arrêt planifié, tel que les fenêtres de maintenance.
 
-* **Fin - Contrat utilisateur**: Il s&#39;agit du SLA défini dans votre contrat avec Adobe Managed Services pour le niveau de publication.
+* **Contrat utilisateur final** : il s&#39;agit du contrat SLA défini dans votre contrat avec Adobe Managed Services pour le niveau publication.
 
-* **Fin AMS - SLA utilisateur**: Il s&#39;agit de l&#39;heure de disponibilité mesurée des incidents de mise en forme de niveaux de publication de production générés par Adobe ou par nos fournisseurs.
+* **Contrat SLA utilisateur final AMS** : il s’agit de la période de disponibilité mesurée du niveau publication de production comptabilisant les indidents causés par Adobe ou par nos fournisseurs.
 
-* **Fin - SLA utilisateur**: Il s&#39;agit de la durée de disponibilité mesurée du niveau de publication ignoré par le temps d&#39;arrêt planifié, comme les fenêtres de maintenance.
+* **Contrat SLA utilisateur final** : il s’agit de la période de disponibilité mesurée du niveau publication ignorant le temps d’arrêt planifié, tel que les fenêtres de maintenance.
