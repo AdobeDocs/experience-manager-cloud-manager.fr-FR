@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 content-type: référence
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 ---
@@ -33,7 +33,7 @@ Le responsable de déploiement est chargé de la configuration du pipeline. Pour
 
 >[!CAUTION]
 >
->Le pipeline ne peut pas être configuré tant que le référentiel Git dispose d&#39;au moins une branche et [que la configuration](setting-up-program.md) du programme est terminée.
+>Le pipeline ne peut être configuré que si le référentiel Git dispose d’au moins une branche et que la [configuration du programme](setting-up-program.md) est terminée.
 
 Avant de commencer le déploiement du code, vous devez configurer les paramètres de votre pipeline à partir de [!UICONTROL Cloud Manager].
 
@@ -51,10 +51,10 @@ Pour configurer le comportement et les préférences de votre pipeline, procéde
 
    ![](assets/Configure_ci-cd-1.png)
 
-1. L&#39;écran de **configuration du canal** s&#39;affiche.
+1. L’écran **Configurer un pipeline** s’affiche.
 
-   L&#39;assistant en trois étapes vous permet de configurer votre environnement **Branche**, **Environnements** et **Test** .
-Sélectionnez votre branche Git et cliquez **sur Suivant**.
+   L’assistant en trois étapes permet de configurer votre **branche**, vos **environnements** et votre environnement de **test**.
+Sélectionnez votre branche Git et cliquez **Suivant**.
 
    >[!NOTE]
    >
@@ -136,7 +136,7 @@ Pour configurer les invalidations du Dispatcher, procédez comme suit :
 
    **AEM Sites:**
 
-   Cloud Manager exécute les tests de performances pour les programmes AEM Sites en demandant des pages (en tant qu&#39;utilisateur non authentifié) sur le serveur de publication stage pour une période de test de 30 minutes et en mesurant le temps de réponse pour chaque page ainsi que les différentes mesures au niveau du système. Les pages sont sélectionnées par trois **jeux de pages**; vous pouvez choisir n&#39;importe où entre les trois jeux. La répartition du trafic dépend du nombre d’ensembles sélectionnés. Si les trois ensembles sont sélectionnés, 33 % du nombre total des pages vues sont placées dans chaque ensemble, si deux ensembles sont sélectionnés, 50 % sont dirigées vers chaque ensemble, si un seul est sélectionné, 100 % du trafic va vers cet ensemble.
+   Cloud Manager exécute les tests de performance pour les programmes AEM Sites, en demandant des pages (en tant qu’utilisateur non authentifié) sur le serveur de publication intermédiaire pendant une période de test de 30 minutes et en mesurant le temps de réponse pour chaque page, ainsi que les différentes mesures au niveau du système. Les pages sont sélectionnées par trois **ensembles de pages**. Vous pouvez en choisir un, deux ou trois. La répartition du trafic dépend du nombre d’ensembles sélectionnés. Si les trois ensembles sont sélectionnés, 33 % du nombre total des pages vues sont placées dans chaque ensemble, si deux ensembles sont sélectionnés, 50 % sont dirigées vers chaque ensemble, si un seul est sélectionné, 100 % du trafic va vers cet ensemble.
 
    Supposons, par exemple, qu’il y ait une répartition 50 %/50 % entre les pages actives populaires et les nouvelles pages (dans cet exemple, les autres pages actives se sont pas utilisées) et que les nouvelles pages contiennent 3 000 pages. L’indicateur de performance clé des pages vues par minute est défini sur 200. Pendant la période test de 30 minutes :
 
