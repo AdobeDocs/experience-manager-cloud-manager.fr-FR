@@ -3,7 +3,7 @@ title: Notes de mise à jour de la version 2019.2.0
 seo-title: Notes de mise à jour d’AEM Cloud Manager pour la version 2019.2.0
 description: Consultez cette page pour obtenir des informations sur la mise à jour 2019.2.0 de Cloud Manager.
 seo-description: Consultez cette page pour obtenir des informations sur la mise à jour 2019.2.0 d’AEM Cloud Manager.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 ---
@@ -24,7 +24,7 @@ La date de publication de la mise à jour de [!UICONTROL Cloud Manager] 2019.2.
 * Le module de dispatcher dans les projets générés par l’assistant contient désormais un fichier Lisez-moi.
 * L’ordre de tri des problèmes d’analyse du code a été amélioré afin de correspondre à la priorité du problème.
 * Les instances intermédiaires sont maintenant toujours restaurées à l&#39;équilibreur de charge, même dans le cas d’un échec de déploiement.
-* Un nouveau rôle de développeur API est disponible dans Admin Console, ce qui permet à des utilisateurs spécifiques d’obtenir l’autorisation de créer des intégrations dans la console Adobe I/O. Consultez [la section Gestion des développeurs](https://www.adobe.com/go/aac_api_prod_learn) pour en savoir plus.
+* Un nouveau rôle de développeur API est disponible dans Admin Console, ce qui permet à des utilisateurs spécifiques d’obtenir l’autorisation de créer des intégrations dans la console Adobe I/O. Voir [Gérer les développeurs]( https://helpx.adobe.com/fr/enterprise/using/manage-developers.html) pour en savoir plus.
 * La version de Maven Archetype a été mise à jour vers la version 16.
 * La version de Maven a été mise à jour vers la version 3.6.0.
 
