@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: Guide de démarrage
 discoiquuid: c2393540-e852-4f7c-aafd-1427209065d2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 ---
@@ -97,4 +97,4 @@ Lors de la configuration du programme, des indicateurs de performance clés spé
 
 Si vous avez déjà configuré le **pipeline**, l’exécution suivante prendra en compte vos paramètres mis à jour. Si vous n’avez pas encore configuré le pipeline, suivez d’abord les étapes de configuration de celui-ci.
 
-Reportez-vous à [la section Configuration de](https://helpx.adobe.com/experience-manager/cloud-manager/using/configuring-pipeline.html) votre canal CI/CD pour configurer le canal.
+Reportez-vous à la section [Configuration de votre pipeline CI/CD ](https://helpx.adobe.com/experience-manager/cloud-manager/using/configuring-pipeline.html) pour configurer le pipeline.
