@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: 67a54bae-99a9-4405-91e3-9a0a8b3ccc98
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 ### Rôles d’utilisateur {#user-roles}
 
-La gestion des rôles de [!UICONTROL Cloud Manager] est effectuée dans [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html). Tout utilisateur de [!UICONTROL Cloud Manager] doit être membre de l’organisation IMS du client et avoir le contexte du produit Adobe Managed Services. Des rôles spécifiques sont fournis en ajoutant un utilisateur à un profil de produit [!UICONTROL Cloud Manager] dans Admin Console.
+La gestion des rôles de [!UICONTROL Cloud Manager] est effectuée dans [Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html). Tout utilisateur de [!UICONTROL Cloud Manager] doit être membre de l’organisation IMS du client et avoir le contexte du produit Adobe Managed Services. Des rôles spécifiques sont fournis en ajoutant un utilisateur à un profil de produit [!UICONTROL Cloud Manager] dans Admin Console.
 
 Pour plus d’informations sur la configuration de vos rôles, consultez la rubrique [Configuration des utilisateurs et des rôles](setting-up-users-and-roles.md).
 
@@ -46,23 +46,23 @@ Pour en savoir plus sur le configuration de vos utilisateurs, consultez [Configu
 | Autorisation | Description | Propriétaire de l’entreprise | Responsable de déploiement | Responsable de programme | Développeur | Ingénieur du service client |
 |--- |--- |--- |--- |--- |--- |--- |
 | Lecture de l’application | Voir les détails du programme. | x | x | x | x | x |
-| Écriture de l’application | Configuration du programme (y compris des ICP). | x |
+| Écriture de l’application | Configuration du programme (y compris des ICP). | x |  |  |  |  |
 | Lecture de l’environnement | Voir les détails de l’environnement. | x | x | x | x | x |
-| Création de l’exécution | Démarrage du pipeline. | x | x | x |
+| Création de l’exécution | Démarrage du pipeline. | x | x | x |  |  |
 | Lecture de l’exécution | Voir le statut de l’exécution. | x | x | x | x | x |
-| Relancer l’exécution | Relance l’exécution lorsqu’elle est en pause. | x | x | x | x |
-| Approbation de l’exécution du déploiement en production | Fournit l’approbation de GoLive. | x | x | x |
-| Planning d’exécution du déploiement en production | Planning du déploiement en production. | x | x | x | x |
-| Exécution du déploiement en production | Déploie l’application en production lorsqu’elle est mise en pause dans le cadre de la supervision de l’ingénieur du service client. | x |
-| Annuler l’exécution | Annuler l’exécution actuelle. | x | x | x |
-| Contourner les échecs du point de contrôle de qualité | Approuver des échecs importants du point de contrôle qualité. | x | x | x |
-| Création d’un pipeline | Configurer/modifier un pipeline. | x |
+| Relancer l’exécution | Relance l’exécution lorsqu’elle est en pause. | x | x | x |  | x |
+| Approbation de l’exécution du déploiement en production | Fournit l’approbation de GoLive. | x | x | x |  |  |
+| Planning d’exécution du déploiement en production | Planning du déploiement en production. | x | x | x |  | x |
+| Exécution du déploiement en production | Déploie l’application en production lorsqu’elle est mise en pause dans le cadre de la supervision de l’ingénieur du service client. |  |  |  |  | x |
+| Annuler l’exécution | Annuler l’exécution actuelle. | x | x | x |  |  |
+| Contourner les échecs du point de contrôle de qualité | Approuver des échecs importants du point de contrôle qualité. | x | x | x |  |  |
+| Création d’un pipeline | Configurer/modifier un pipeline. |  | x |  |  |  |
 | Lecture d’un pipeline | Voir les détails du pipeline. | x | x | x | x | x |
-| Écriture d’un pipeline | Configurer/modifier un pipeline. | x |
-| Approbation de la modification d’un pipeline | Permet la modification de l’option Propriétaire de l’entreprise. | x |
-| Déploiement géré par la modification du pipeline | Permet la modification de l’option Supervision par l’ingénieur du service client. | x |
+| Écriture d’un pipeline | Configurer/modifier un pipeline. |  | x |  |  |  |
+| Approbation de la modification d’un pipeline | Permet la modification de l’option Propriétaire de l’entreprise. |  | x |  |  |  |
+| Déploiement géré par la modification du pipeline | Permet la modification de l’option Supervision par l’ingénieur du service client. |  | x |  |  |  |
 | Lecture de solution | Lire les ICP du programme | x | x | x | x | x |
-| Écriture de solution | Configurer le programme (ICP compris)/Modifier le pipeline | x |
+| Écriture de solution | Configurer le programme (ICP compris)/Modifier le pipeline | x |  |  |  |  |
 | Lecture de l’étape | Voir les résultats des mesures de qualité de l’étape. | x | x | x | x | x |
 
 ## Isolation de ressource {#resource-isolation}
