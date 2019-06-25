@@ -1,14 +1,14 @@
 ---
 title: Concepts clés
 seo-title: Concepts clés
-description: Cette page répertorie les termes clés associés à Cloud Manager.
+description: Cette page répertorie les termes clés associés à Cloud Manager.
 seo-description: Consultez cette page pour comprendre les termes clés associés à Cloud Manager.
 uuid: 2a37810b-98f8-4f01-90de-1e52c754ad16
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: b702dfc0-3534-4d90-af19-8559d8baf6a6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 ---
