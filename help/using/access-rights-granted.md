@@ -7,7 +7,7 @@ uuid: 9aa90a99-f049-422e-9e06-b00b843ed98b
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: conditions requises
 discoiquuid: 072dbc1b-e608-4b1f-b0e8-0e4f88c8ad12
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 ---
