@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: conditions requises
 discoiquuid: f90f0f4c-c1ff-47f6-8d97-ff5018561bf2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 ---
@@ -32,5 +32,5 @@ Dans certains cas, vous disposez déjà d’un référentiel git et souhaitez co
 
 >[!NOTE]
 >
->Pour afficher les commandes Git courantes, reportez-vous à [la feuille de référence Git](https://education.github.com/git-cheat-sheet-education.pdf).
+>Pour afficher les commandes git courantes, consultez l’[Aide-mémoire Git](https://education.github.com/git-cheat-sheet-education.pdf).
 
