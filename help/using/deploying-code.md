@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 ---
@@ -35,7 +35,7 @@ Une fois que vous avez configuré le **pipeline** (référentiel, environnement 
    Les étapes suivantes sont impliquées dans le processus de création :
 
    1. Déploiement dans l’environnement intermédiaire
-   1. Test des phases
+   1. Test dans l’environnement intermédiaire
    1. Déploiement dans l’environnement de production
    >[!NOTE]
    >
@@ -48,7 +48,7 @@ Une fois que vous avez configuré le **pipeline** (référentiel, environnement 
    * Déploiement en environnement intermédiaire.
    ![](assets/Stage_Testing.png)
 
-   Le test **Stage (Tests** Stage) implique les étapes suivantes :
+   Le **test dans l’environnement intermédiaire** comprend les étapes suivantes :
 
    * Test de sécurité
    * Test de performance
@@ -65,7 +65,7 @@ Une fois que vous avez configuré le **pipeline** (référentiel, environnement 
    >La **planification du déploiement en production** est activée lors de la configuration du pipeline.
    >
    >
-   >Grâce à cette option, vous pouvez planifier le délimiteur de production ou cliquer **sur Maintenant** pour exécuter immédiatement le déploiement de production.
+   >Grâce à cette option, vous pouvez planifier le déploiement en production ou cliquer sur **Maintenant** pour exécuter immédiatement le déploiement en production.
    >
    >
    >La date et l’heure planifiées sont indiquées dans le fuseau horaire de l’utilisateur.
@@ -77,7 +77,7 @@ Une fois que vous avez configuré le **pipeline** (référentiel, environnement 
 
    Une fois que vous avez confirmé la planification du déploiement, votre déploiement du code se termine.
 
-   L&#39;écran suivant s&#39;affiche, lorsque **l** &#39;option Maintenant est sélectionnée à l&#39;étape précédente.
+   L’écran suivant s’affiche lorsque l’option **Maintenant** est sélectionnée à l’étape précédente.
 
    ![](assets/Production_Deployment2.png)
 
