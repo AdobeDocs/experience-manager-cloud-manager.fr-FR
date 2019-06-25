@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: Guide de démarrage
 discoiquuid: 8888dd80-d908-464e-927d-779db1a832a4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 ---
@@ -38,7 +38,7 @@ Pour effectuer le processus initial de configuration du dispatcher, procédez co
 
 >[!NOTE]
 >
->Il est possible de migrer les configurations de répartiteur et de serveur Web vers **Git Repository** pendant l&#39;intégration de Cloud Manager, mais aussi ultérieurement.
+>Il est possible de migrer les configurations du Dispatcher et du serveur web vers le **référentiel Git** pendant l’intégration de Cloud Manager, mais aussi ultérieurement.
 
 ### Exemple {#example}
 
