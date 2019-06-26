@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 translation-type: tm+mt
-source-git-commit: f76b8e6a036ab920f11fb913d3ad29818f1e153f
+source-git-commit: 4881ff8be97451aa90c3430259ce13faef182e4f
 
 ---
 
@@ -617,6 +617,27 @@ Voici un problème courant qui se produit sur les projets complexes : le même c
 **Depuis** : version 2019.6.0
 
 For security reasons, paths containing */config/ and /install/* are only readable by administrative users in AEM and should be used only for OSGi configuration and OSGi bundles. Placer d&#39;autres types de contenu sous chemins qui contiennent ces segments donne un comportement d&#39;application qui varie involontairement entre les utilisateurs administratifs et non administrateurs.
+
+A common problem is use of nodes named `config` within component dialogs or when specifying the rich text editor configuration for inline editing. Pour résoudre ce problème, le nœud offré doit être renommé en un nom compatible. For the rich text editor configuration make use of the `configPath` property on the `cq:inplaceEditing` node to specify the new location.
+
+#### Non Compliant Code {#non-compliant-code-config-install}
+
+```
++ cq:editConfig [cq:EditConfig]
+  + cq:inplaceEditing [cq:InplaceEditConfig]
+    + config [nt:unstructured]
+      + rtePlugins [nt:unstructured]
+```
+
+#### Code conforme {#compliant-code-config-install}
+
+```
++ cq:editConfig [cq:EditConfig]
+  + cq:inplaceEditing [cq:InplaceEditConfig]
+    ./configPath = inplaceEditingConfig (String)
+    + inplaceEditingConfig [nt:unstructured]
+      + rtePlugins [nt:unstructured]
+```
 
 ### Packages Should Not Overlap {#oakpal-no-overlap}
 
