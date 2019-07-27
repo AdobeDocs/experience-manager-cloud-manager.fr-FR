@@ -1,51 +1,51 @@
 ---
-title: Evaluation
-seo-title: Evaluation
-description: 'Cette page sert de point de départ à la phase d''évaluation dans l''Assistant de mise à jour des produits. '
-seo-description: Cette page sert de point de départ à la phase d'évaluation dans l'Assistant de mise à jour des produits.
+title: Évaluation
+seo-title: Évaluation
+description: 'Cette page sert de point de départ à l’apprentissage de la phase d’évaluation dans l’assistant de mise à jour du produit. '
+seo-description: Cette page sert de point de départ à l’apprentissage de la phase d’évaluation dans l’assistant de mise à jour du produit.
 uuid: 62d68e79-c2ba-4d8b-ba7d-33709014d5b6
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9e33b90818c686f0b7aacaf0955c3f2eba05488f
 
 ---
 
 
-# Evaluation Phase {#evaluation}
+# Phase d’évaluation {#evaluation}
 
-The first phase in the Product Update wizard is **[!UICONTROL Evaluation]** phase.
-Vous pouvez ici évaluer la complexité de la mise à niveau avec le détecteur de modèle accessible directement à partir de l&#39;assistant. A la fin de cette étape, vous avez accès au rapport d&#39;évaluation.
+La première phase de l’assistant de mise à jour du produit est la phase **[!UICONTROL Évaluation]**.
+Pendant cette phase, vous pouvez évaluer la complexité de la mise à niveau avec l’outil de détection des motifs accessible directement à partir de l’assistant. À la fin de cette étape, vous avez accès au rapport d’évaluation.
 
-Le rapport généré vous permet de vérifier l&#39;instance Auteur pour la mise à niveau en détectant les modèles qui :
+Le rapport généré permet de vérifier l’instance Auteur pour la mise à niveau en détectant les motifs qui :
 
-* Enfreindre certaines règles et les domaines qui seront affectés ou remplacés par la mise à niveau.
+* enfreignent certaines règles et qui sont exécutés dans des zones qui seront affectées ou écrasées par la mise à niveau ;
 
-* Utilisez une fonctionnalité AEM 6. x ou une API qui n&#39;est pas rétrocompatible sur le nouvel AEM et qui peut se briser après la mise à niveau.
+* utilisent une API ou une fonctionnalité d’AEM 6.x non rétrocompatible sur AEM et qui risque d’échouer après la mise à niveau.
 
-Ceci donne une évaluation de l&#39;effort de développement impliqué dans la mise à niveau vers Adobe Experience Manager (AEM) 6.5.
+Cela peut servir à évaluer l’ampleur des tâches de développement nécessaires pour effectuer une mise à niveau vers Adobe Experience Manager (AEM) 6.5.
 
 >[!NOTE]
->To learn more about pattern detector, refer to [Assessing the Upgrade Complexity with the Pattern Detector](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/pattern-detector.html)
+>Pour en savoir plus sur le détecteur de motifs, consultez [Évaluation de la complexité de la mise à niveau à l’aide de l’outil de détection des motifs](https://helpx.adobe.com/fr/experience-manager/6-4/sites/deploying/using/pattern-detector.html)
 
-## Running the Evaluator {#running-evaluator}
+## Exécution de l’évaluateur {#running-evaluator}
 
-Pour générer un rapport d&#39;évaluation, procédez comme suit :
+Pour générer un rapport d’évaluation, procédez comme suit :
 
-1. Click on **[!UICONTROL Run Evaluation]**.
+1. Cliquez sur **[!UICONTROL Exécuter l’évaluation]**.
 
    >[!NOTE]
-   >Le détecteur de motif peut s&#39;exécuter dans n&#39;importe quel environnement. Toutefois, afin d&#39;augmenter le taux de détection et d&#39;éviter tout ralentissement des instances critiques, Cloud Manager l&#39;exécute sur l&#39;environnement d&#39;évaluation de l&#39;instance d&#39;auteur.
+   >Le détecteur de motifs peut s’exécuter dans n’importe quel environnement. Toutefois, pour augmenter le taux de détection et éviter tout ralentissement des instances métier critiques, Cloud Manager l’exécute dans l’environnement d’évaluation de l’instance Auteur.
 
    ![](assets/Run-Evaluation.png)
 
-1. L&#39;assistant vous informe de l&#39;état de votre action. You will notice **In progress** or **completed** as applicable when the evaluation report is being generated.
+1. L’assistant vous informe de l’état de votre action. Vous remarquerez les états **en cours** ou **terminé** le cas échéant une fois le rapport d'évaluation généré.
 
-   Once the report is generated, you can click on **[!UICONTROL Download report]** to save a copy.
+   Une fois le rapport généré, vous pouvez cliquer sur **[!UICONTROL Télécharger le rapport]** pour enregistrer une copie.
 
    ![](assets/Evaluation-1.png)
 
 
 >[!NOTE]
->The current release of Product Update wizard in Cloud Manager supports the **Evaluation** phase only. The other four phases namely **Remediation**, **Execution**, **Validation**, and **Completion** are coming soon.
+>La version actuelle de l’assistant de mise à jour du produit de Cloud Manager prend uniquement en charge la phase **Évaluation**. Les quatre autres phases appelées **Correction**, **Exécution**, **Validation** et **Achèvement** seront bientôt disponibles.
