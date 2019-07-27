@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e8db535b09f0b273de2d3908a85176f38d307c80
 
 ---
@@ -36,11 +36,11 @@ Pour chaque point de contrôle, il existe une structure à trois niveaux pour le
 
 >[!NOTE]
 >
->Dans un pipeline Qualité du code uniquement, les échecs importants de la ligne Test de qualité du code ne peuvent pas être remplacés puisque l&#39;étape Test qualité du code est la dernière étape du pipeline.
+>Dans un pipeline de qualité du code uniquement, les échecs importants du point de contrôle Test de qualité du code ne peuvent pas être remplacés car l’étape Test de qualité du code est la dernière du pipeline.
 
 ## Test de qualité du code {#code-quality-testing}
 
-Dans le cadre du pipeline, le code source est analysé afin de garantir que les déploiements respectent certains critères de qualité. Actuellement, cette méthode est implémentée par une combinaison de sonarqube et d&#39;examens au niveau du package de contenu utilisant oakpal. Il existe plus de 100 règles combinant des règles Java génériques et des règles spécifiques à AEM. Le tableau suivant résume l’évaluation des critères de test :
+Dans le cadre du pipeline, le code source est analysé afin de garantir que les déploiements respectent certains critères de qualité. Actuellement, cette analyse est implémentée par une combinaison de SonarQube et d’examens au niveau du package de contenu à l’aide de OakPAL. Il existe plus de 100 règles combinant des règles Java génériques et des règles spécifiques à AEM. Le tableau suivant résume l’évaluation des critères de test :
 
 | Nom | Définition | Catégorie | Seuil d’échec |
 |--- |--- |--- |--- |
@@ -55,13 +55,13 @@ Dans le cadre du pipeline, le code source est analysé afin de garantir que les 
 
 >[!NOTE]
 >
->Refer to [Metric Definitions](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) for more detailed definitions.
+>Pour des définitions plus détaillées, consultez [Définitions des mesures](https://docs.sonarqube.org/display/SONAR/Metric+Definitions).
 
-You can download the list of rules here [code-quality-rules.xlsx](/help/using/assets/CodeQuality-Rules-new.xlsx)
+Vous pouvez télécharger la liste des règles ici : [code-quality-rules.xlsx](/help/using/assets/CodeQuality-Rules-new.xlsx).
 
 >[!NOTE]
 >
->To learn more about the custom code quality rules executed by [!UICONTROL Cloud Manager], please refer to [Custom Code Quality Rules](custom-code-quality-rules.md).
+>Pour en savoir plus sur les règles de qualité du code personnalisé exécutées par [!UICONTROL  Cloud Manager ], reportez-vous à la section [Règles de qualité du code personnalisé](custom-code-quality-rules.md).
 
 ### Traitement des faux positifs {#dealing-with-false-positives}
 
@@ -120,7 +120,7 @@ Le tableau suivant répertorie les contrôles actuels :
 | Le filtre référent Sling est configuré pour empêcher les attaques CSRF. | Filtre référent Sling | Critique |
 | SSL est correctement configuré. | Configuration SSL | Critique |
 | Aucune stratégie de profil d’utilisateur évidemment risquée trouvée | Accès par défaut au profil utilisateur | Critique |
-| Le lot de prise en charge de CRXDE est désactivé. | Prise en charge de CRXDE | Important |
+| Le lot de prise en charge de CRXDE  est désactivé. | Prise en charge de CRXDE | Important |
 | Le lot DavEx Sling et le servlet sont désactivés. | Contrôle d’intégrité DavEx | Important |
 | L’exemple de contenu n’est pas installé. | Packages d’exemple de contenu | Important |
 | Le filtre de requête WCM et le filtre de débogage WCM sont désactivés. | Configuration des filtres WCM | Important |
