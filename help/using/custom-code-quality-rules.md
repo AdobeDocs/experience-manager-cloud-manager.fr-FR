@@ -1,14 +1,14 @@
 ---
 title: Règles de qualité du code personnalisé
 seo-title: Règles de qualité du code personnalisé
-description: Suivez cette page pour en savoir plus sur les règles de qualité du code personnalisées exécutées par Cloud Manager.
-seo-description: Suivez cette page pour en savoir plus sur les règles de qualité du code personnalisées exécutées par Adobe Experience Manager Cloud Manager.
+description: Consultez cette page pour en savoir plus sur les règles de qualité du code personnalisé exécutées par Cloud Manager.
+seo-description: Consultez cette page pour en savoir plus sur les règles de qualité du code personnalisé exécutées par Adobe Experience Manager Cloud Manager.
 uuid: a7feb465-1982-46be-9e57-e67b59849579
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4881ff8be97451aa90c3430259ce13faef182e4f
 
 ---
@@ -16,7 +16,7 @@ source-git-commit: 4881ff8be97451aa90c3430259ce13faef182e4f
 
 # Règles de qualité du code personnalisé {#custom-code-quality-rules}
 
-Cette page décrit les règles de qualité du code personnalisées exécutées par Cloud Manager, créées en fonction des bonnes pratiques d&#39;AEM Engineering.
+Cette page décrit les règles de qualité du code personnalisé exécutées par Cloud Manager qui sont créées selon les bonnes pratiques en matière d’ingénierie AEM.
 
 >[!NOTE]
 >
@@ -266,7 +266,7 @@ public void orDoThis(Session session) throws Exception {
 
 **Depuis** : version 2018.4.0
 
-As described in the [Sling documentation](http://sling.apache.org/documentation/the-sling-engine/servlets.html), bindings servlets by paths is discouraged. Les servlets liés au chemin ne peuvent pas utiliser les contrôles d’accès JCR standard et, par conséquent, nécessitent une rigueur de sécurité supplémentaire. Plutôt que d’utiliser des servlets liés au chemin d’accès, il est recommandé de créer des nœuds dans le référentiel et d’enregistrer les servlets par type de ressource.
+Comme décrit dans [la documentation Sling]( http://sling.apache.org/documentation/the-sling-engine/servlets.html), il est déconseillé de lier les servlets aux chemins. Les servlets liés au chemin ne peuvent pas utiliser les contrôles d’accès JCR standard et, par conséquent, nécessitent une rigueur de sécurité supplémentaire. Plutôt que d’utiliser des servlets liés au chemin d’accès, il est recommandé de créer des nœuds dans le référentiel et d’enregistrer les servlets par type de ressource.
 
 #### Code non conforme {#non-compliant-code-5}
 
@@ -556,28 +556,28 @@ public void doThis(Resource resource) {
 ```
 
 
-## OakPAL Content Rules {#oakpal-rules}
+## Règles de contenu OakPAL {#oakpal-rules}
 
-Veuillez trouver ci-dessous les vérifications oakpal exécutées par Cloud Manager.
+Vous trouverez ci-dessous les vérifications OakPAL exécutées par Cloud Manager.
 
 >[!NOTE]
->Oakpal est une structure développée par un partenaire AEM (et l&#39;étoile 2019 AEM Rock l&#39;Amérique du Nord) qui valide des packages de contenu à l&#39;aide d&#39;un référentiel Oak autonome.
+>OakPAL est une infrastructure développée par un partenaire AEM (ayant remporté le prix AEM Rockstar North America 2019) qui valide des packages de contenu à l’aide d’un référentiel Oak autonome.
 
-### Customer Packages Should Not Create or Modify Nodes Under /libs {#oakpal-customer-package}
+### Les packages des clients ne doivent pas créer ni modifier les nœuds sous /libs {#oakpal-customer-package}
 
-**Clé**: Bannedpaths
+**Clé** : Bannedpaths
 
 **Type** : bogue
 
-**Gravité**: Blocage
+**Gravité** : bloqueur
 
 **Depuis** : version 2019.6.0
 
-Le /libs de contenu d&#39;AEM dans le référentiel de contenu AEM doit être considéré en lecture seule par les clients. Modifying nodes and properties under */libs* creates significant risk for major and minor updates. Modifications to */libs* should only be made by Adobe through official channels.
+Il a été établi depuis longtemps que l’arborescence de contenu /libs dans le référentiel de contenu AEM doit être considéré comme étant en lecture seule par les clients. La modification des nœuds et des propriétés sous */libs* crée un risque significatif pour les mises à jour majeures et mineures. Les modifications apportées à */libs* ne doivent être effectuées que par Adobe par le biais de canaux officiels.
 
-### Packages Should Not Contain Duplicate OSGi Configurations {#oakpal-package-osgi}
+### Les packages ne doivent pas contenir de configurations OSGi en double {#oakpal-package-osgi}
 
-**Clé**: Duplicateosgiconfigurations
+**Clé** : Duplicateosgiconfigurations
 
 **Type** : bogue
 
@@ -585,9 +585,9 @@ Le /libs de contenu d&#39;AEM dans le référentiel de contenu AEM doit être co
 
 **Depuis** : version 2019.6.0
 
-Voici un problème courant qui se produit sur les projets complexes : le même composant osgi est configuré plusieurs fois. Ainsi, la configuration sera ambiguë. Cette règle est « compatible avec le mode d&#39;exécution » en ce qu&#39;elle identifie uniquement les problèmes où le même composant est configuré plusieurs fois dans le même mode d&#39;exécution (ou combinaison de modes d&#39;exécution).
+Le fait qu’un même composant OSGi soit configuré plusieurs fois est un problème courant qui se produit sur les projets complexes. Cela crée une ambiguïté quant à la configuration qui sera exploitable. Cette règle est « compatible avec le mode d'exécution » en ce qu’elle identifie uniquement les problèmes où le même composant est configuré plusieurs fois dans le même mode d'exécution (ou combinaison de modes d’exécution).
 
-#### Non Compliant Code {#non-compliant-code-osgi}
+#### Code non conforme {#non-compliant-code-osgi}
 
 ```+ apps
   + projectA
@@ -606,9 +606,9 @@ Voici un problème courant qui se produit sur les projets complexes : le même c
       + com.day.cq.commons.impl.ExternalizerImpl
 ```
 
-### Config and Install Folders Should Only Contain OSGi Nodes {#oakpal-config-install}
+### Les dossiers de configuration et d’installation ne doivent contenir que des nœuds OSGi {#oakpal-config-install}
 
-**Clé**: Configandinstallsuppordonlycontainosginodes
+**Clé** : Configandinstallsuppordonlycontainosginodes
 
 **Type** : bogue
 
@@ -616,11 +616,11 @@ Voici un problème courant qui se produit sur les projets complexes : le même c
 
 **Depuis** : version 2019.6.0
 
-For security reasons, paths containing */config/ and /install/* are only readable by administrative users in AEM and should be used only for OSGi configuration and OSGi bundles. Placer d&#39;autres types de contenu sous chemins qui contiennent ces segments donne un comportement d&#39;application qui varie involontairement entre les utilisateurs administratifs et non administrateurs.
+Pour des raisons de sécurité, les chemins contenant */config/ et /install/* ne sont lisibles que par les utilisateurs administratifs dans AEM et doivent être utilisés uniquement pour la configuration OSGi et les lots OSGi. Placer d’autres types de contenu sous les chemins contenant ces segments donne un comportement d’application qui varie involontairement entre les utilisateurs administratifs et non administrateurs.
 
-A common problem is use of nodes named `config` within component dialogs or when specifying the rich text editor configuration for inline editing. Pour résoudre ce problème, le nœud offré doit être renommé en un nom compatible. For the rich text editor configuration make use of the `configPath` property on the `cq:inplaceEditing` node to specify the new location.
+Un problème courant est l’utilisation de nœuds nommés `config` dans les boîtes de dialogue des composants ou lors de la spécification de la configuration de l’éditeur de texte enrichi pour la modification statique. Pour résoudre ce problème, le nœud incriminé doit être renommé avec un nom compatible. Pour la configuration de l’éditeur de texte enrichi, utilisez la propriété `configPath` sur le nœud `cq:inplaceEditing` pour spécifier le nouvel emplacement.
 
-#### Non Compliant Code {#non-compliant-code-config-install}
+#### Code non conforme {#non-compliant-code-config-install}
 
 ```
 + cq:editConfig [cq:EditConfig]
@@ -639,9 +639,9 @@ A common problem is use of nodes named `config` within component dialogs or when
       + rtePlugins [nt:unstructured]
 ```
 
-### Packages Should Not Overlap {#oakpal-no-overlap}
+### Les packages ne doivent pas se chevaucher {#oakpal-no-overlap}
 
-**Clé**: Packageoverlaps
+**Clé** : Packageoverlaps
 
 **Type** : bogue
 
@@ -649,4 +649,4 @@ A common problem is use of nodes named `config` within component dialogs or when
 
 **Depuis** : version 2019.6.0
 
-Similar to the *Packages Should Not Contain Duplicate OSGi Configurations* this is a common problem on complex projects where the same node path is written to by multiple separate content packages. Bien que l&#39;utilisation des dépendances des modules de contenu puisse être utilisée pour garantir un résultat cohérent, il est préférable d&#39;éviter tout chevauchement.
+Tout comme *Les packages ne doivent pas contenir de configurations OSGi en double*, il s’agit d’un problème courant sur les projets complexes où le même chemin de nœud est écrit par plusieurs packages de contenu distincts. Bien que l’utilisation des dépendances des packages de contenu puisse servir à garantir un résultat cohérent, il est préférable d’éviter tout chevauchement.
