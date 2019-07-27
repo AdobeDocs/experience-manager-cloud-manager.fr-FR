@@ -1,13 +1,13 @@
 ---
-title: Assistant de mise à jour des produits
-seo-title: Assistant de mise à jour des produits
-description: 'Cette page sert de point de départ à l''Assistant de mise à jour des produits. '
-seo-description: 'Cette page sert de point de départ à l''Assistant de mise à jour des produits. '
+title: Assistant de mise à jour du produit
+seo-title: Assistant de mise à jour du produit
+description: 'Cette page sert de point de départ à l’apprentissage de l’assistant de mise à jour du produit. '
+seo-description: 'Cette page sert de point de départ à l’apprentissage de l’assistant de mise à jour du produit. '
 uuid: 62d68e79-c2ba-4d8b-ba7d-33709014d5b6
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7769911253c149f4b1f7d9dec5d94888ccdbcb59
 
 ---
@@ -15,26 +15,26 @@ source-git-commit: 7769911253c149f4b1f7d9dec5d94888ccdbcb59
 
 # Présentation {#overview-product-update-wizard}
 
-L&#39;Assistant Mise à jour des produits est une expérience guidée et pas à pas destinée aux clients Cloud Manager qui effectuent la mise à niveau vers Adobe Experience Manager (AEM) 6.5. Il simplifie le processus complet, garantit l&#39;acceptation des bonnes pratiques AEM à l&#39;aide de la structure CI/CD de Cloud Manager et des tests automatisés intégrés.
+L’assistant de mise à jour du produit est une expérience guidée, destinée aux clients Cloud Manager qui effectuent une mise à niveau vers la dernière version 6.5 d’Adobe Experience Manager (AEM). Il simplifie le processus de bout-en-bout et garantit l’adhérence aux bonnes pratiques AEM à l’aide de l’infrastructure d’intégration et de distribution continues de Cloud Manager et des tests automatisés intégrés.
 
-L&#39;assistant comprend cinq phases qui guident l&#39;utilisateur lors d&#39;une mise à jour de produit AEM :
+L’assistant comprend cinq phases qui guident l’utilisateur lors d’une mise à jour du produit AEM :
 
-* **Evaluation**
+* **Évaluation**
 * **Correction**
 * **Exécution**
 * **Validation**
 * **Fin**
 
 
-## Using Product Update Wizard {#using-product-update-wizard}
+## Utilisation de l’assistant de mise à jour du produit {#using-product-update-wizard}
 
 >[!NOTE]
->Les clients intégrés à Cloud Manager et souhaitant effectuer la mise à niveau vers AEM 6.5 pourront profiter de l&#39;Assistant Product Update. Pour plus d&#39;informations, contactez votre ingénieur de succès client (CSE).
+>Les clients intégrés à Cloud Manager et souhaitant effectuer une mise à niveau vers AEM 6.5 pourront tirer parti de l’assistant de mise à jour du produit. Pour plus d’informations, contactez l’ingénieur du service client (CSE).
 
-1. Vous recevrez une notification Push via Cloud Manager pour vous informer qu&#39;AEM 6.5 est disponible pour votre programme.
+1. Vous recevrez une notification Pulse via Cloud Manager pour vous informer qu’AEM 6.5 est disponible pour votre offre.
 
-1. An **[!UICONTROL AEM 6.5 Update]** card displays on the overview screen of [!UICONTROL Cloud Manager]. Cette carte vous aidera à déterminer la phase du processus de mise à jour que vous recherchez et vous informera de l&#39;étape à suivre. Select **[!UICONTROL Start Update]** to launch the wizard.
+1. Une vignette **[!UICONTROL Mise à jour AEM 6.5]** s’affiche sur l’écran d’aperçu de [!UICONTROL Cloud Manager]. Cette vignette permet de déterminer dans quelle phase du processus de mise à jour vous vous trouvez actuellement et vous informe de la prochaine étape à suivre. Sélectionnez **[!UICONTROL Démarrer la mise à jour]** pour lancer l’assistant.
 
    ![](assets/Start-Update.png)
 
-   The wizard now displays the first phase of **[!UICONTROL AEM 6.5 Update]** process as seen in the [Evaluation Phase](evaluation.md).
+   L’assistant affiche désormais la première phase du processus de **[!UICONTROL mise à jour AEM 6.5]**, comme le montre la [phase d’évaluation](evaluation.md).
