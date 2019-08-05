@@ -8,8 +8,8 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: Guide de démarrage
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
-translation-type: ht
-source-git-commit: b39fc865e3c34052fb94b223d9eebc0fce3495d2
+translation-type: tm+mt
+source-git-commit: 81f4e0b3b31a8be1f0620b70442b0268159e4ec0
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: b39fc865e3c34052fb94b223d9eebc0fce3495d2
 
 Lorsque les clients se connectent à Cloud Manager, ils reçoivent un référentiel git vide. Les clients Adobe Managed Services (AMS) actuels (ou clients AEM sur site qui migrent vers AMS) auront généralement déjà leur code de projet dans git (ou un autre système de contrôle de version) et importeront leur projet dans le référentiel git Cloud Manager. Toutefois, les nouveaux clients n’ont pas de projets existants.
 
-Pour faciliter la prise en main des nouveaux clients, Cloud Manager peut désormais créer un projet AEM minimal comme point de départ. Ce processus est basé sur l’[**AEM Project Archetype**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
+Pour faciliter la prise en main des nouveaux clients, Cloud Manager peut désormais créer un projet AEM minimal comme point de départ. This process is based on the [**AEM Project Archetype**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
 
 <!-- 
 
@@ -90,9 +90,9 @@ Last Modified Date: 2018-10-08T09:20:10.106-0400
 
 ## Détails de l’environnement de génération {#build-environment-details}
 
-Cloud Manager génère et teste votre code à l’aide d’un **environnement** d’exécution de génération spécialisé. Cet environnement comporte les attributs suivants :
+Cloud Manager crée et teste votre code à l'aide d'un environnement de création spécialisé. Cet environnement comporte les attributs suivants :
 
-* L’environnement de génération est basé sur Linux.
+* L'environnement de création est basé sur Linux, dérivé de Ubuntu 18.04.
 * Apache Maven 3.6.0 est installé.
 * La version Java installée est Oracle JDK 8u202.
 * D’autres packages système nécessaires sont installés :
@@ -102,15 +102,15 @@ Cloud Manager génère et teste votre code à l’aide d’un **environnement**
    * libpng
    * imagemagick
    * graphicsmagick
-   * Si vous avez besoin d’autres packages, vous devez les demander auprès des ingénieurs du service client.
 
+* D'autres packs peuvent être installés au moment de la création, comme décrit [ci-dessous](#installing-additional-system-packages).
 * Chaque génération a lieu dans un environnement vierge ; le conteneur de génération ne conserve aucun état entre les exécutions.
 * Maven est toujours exécuté avec la commande : *mvn --batch-mode clean org.jacoco:jacoco-maven-plugin:prepare-agent package*.
-* Maven est configuré au niveau du système avec un fichier settings.xml qui inclut automatiquement le référentiel public Adobe **Artifact**. (Pour plus d’informations, consultez le [référentiel Maven public d’Adobe]( https://repo.adobe.com/)).
+* Maven est configuré au niveau du système avec un fichier settings.xml qui inclut automatiquement le référentiel public Adobe **Artifact**. (Refer to [Adobe Public Maven Repository](https://repo.adobe.com/) for more details).
 
 ## Activation des profils Maven dans Cloud Manager {#activating-maven-profiles-in-cloud-manager}
 
-Dans certains cas, vous devrez peut-être légèrement modifier le processus de génération lors de l’exécution dans Cloud Manager, contrairement à celui qui s’exécute sur les postes de travail des développeurs. Dans ce cas, les [profils Maven]( https://maven.apache.org/guides/introduction/introduction-to-profiles.html) peuvent être utilisés pour définir la manière dont la génération doit être différente dans différents environnements, notamment Cloud Manager.
+Dans certains cas, vous devrez peut-être légèrement modifier le processus de génération lors de l’exécution dans Cloud Manager, contrairement à celui qui s’exécute sur les postes de travail des développeurs. Dans ce cas, les [profils Maven](https://maven.apache.org/guides/introduction/introduction-to-profiles.html)   peuvent être utilisés pour définir la manière dont la génération doit être différente dans différents environnements, notamment Cloud Manager.
 
 L’activation d’un profil Maven dans l’environnement de génération Cloud Manager doit se faire en recherchant la présence d’une variable d’environnement appelée `CM_BUILD`. Cette variable sera toujours définie dans l’environnement de génération de Cloud Manager. Par contre, un profil destiné à être utilisé uniquement en dehors de l’environnement de génération Cloud Manager doit être créé en recherchant l’absence de cette variable.
 
@@ -210,6 +210,67 @@ Une fois configurées, ces variables seront disponibles en tant que variables d�
 >
 >Les noms des variables d’environnement ne peuvent contenir que des caractères alphanumériques et des caractères de soulignement (_). Par convention, les noms doivent être entièrement en majuscules.
 
+## Installation de modules système supplémentaires {#installing-additional-system-packages}
+
+Certaines versions nécessitent d'autres packs système pour fonctionner entièrement. Par exemple, une version peut appeler un script Python ou ruby et, par conséquent, doit avoir installé un interprète de langue approprié. Pour ce faire, appelez [exec-maven-plugin](https://www.mojohaus.org/exec-maven-plugin/) pour appeler APT. Cette exécution doit généralement être encapsulée dans un profil Maven spécifique à Cloud Manager. Par exemple, pour installer python :
+
+```xml
+        <profile>
+            <id>install-python</id>
+            <activation>
+                <property>
+                        <name>env.CM_BUILD</name>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>exec-maven-plugin</artifactId>
+                        <version>1.6.0</version>
+                        <executions>
+                            <execution>
+                                <id>apt-get-update</id>
+                                <phase>validate</phase>
+                                <goals>
+                                    <goal>exec</goal>
+                                </goals>
+                                <configuration>
+                                    <executable>apt-get</executable>
+                                    <arguments>
+                                        <argument>update</argument>
+                                    </arguments>
+                                </configuration>
+                            </execution>
+                            <execution>
+                                <id>install-python</id>
+                                <phase>validate</phase>
+                                <goals>
+                                    <goal>exec</goal>
+                                </goals>
+                                <configuration>
+                                    <executable>apt-get</executable>
+                                    <arguments>
+                                        <argument>install</argument>
+                                        <argument>-y</argument>
+                                        <argument>--no-install-recommends</argument>
+                                        <argument>python</argument>
+                                    </arguments>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+```
+
+Cette même technique peut être utilisée pour installer des packages spécifiques à la langue, c'est-à-dire pour `gem` les packages rubygems ou `pip` Python.
+
+>[!NOTE]
+>
+>L'installation d'un pack système de cette manière **ne** l'installe pas dans l'environnement d'exécution utilisé pour l'exécution d'Adobe Experience Manager. Si vous avez besoin d'un pack système installé sur l'environnement AEM, contactez vos ingénieurs de succès client (CSE).
+
 ## Développement du code en fonction des bonnes pratiques {#develop-your-code-based-on-best-practices}
 
-Les équipes d’ingénierie et de conseil Adobe ont développé [un ensemble complet de bonnes pratiques pour les développeurs AEM ](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/best-practices.html).
+Adobe Engineering and Consulting teams have developed a [comprehensive set of best practices for AEM developers](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/best-practices.html).
