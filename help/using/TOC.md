@@ -3,8 +3,8 @@ product: adobe experience manager
 sub-product: adobe experience manager cloud manager
 archetype: administrator
 user-guide-title: Aide d’Experience Manager Cloud Manager
-translation-type: ht
-source-git-commit: c5f26158bd4268b866a0726fbd63009a779ddcf1
+translation-type: tm+mt
+source-git-commit: 365cd6dfe65059c0c529f774bbcda946d47b0db5
 
 ---
 
@@ -35,14 +35,16 @@ source-git-commit: c5f26158bd4268b866a0726fbd63009a779ddcf1
    + [Présentation des résultats de tests](understand-your-test-results.md)
    + [Gestion des environnements](manage-your-environment.md)
    + [Surveillance des environnements](monitor-your-environments.md)
-   + [API Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
+   + [API de Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
+   + [Interface de ligne de commande de Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/master/README.md)
    + [Notifications](notifications.md)
    + [Règles de qualité du code personnalisé](custom-code-quality-rules.md)
 + Assistant de mise à jour du produit {#product-update-wizard}
    + [Présentation](overview-productupdate-wizard.md)
    + [Évaluation](evaluation.md)
 + Notes de mise à jour {#release-notes}
-   + [Notes de mise à jour actuelles (2019.7.0)](release-notes-current.md)
+   + [Notes de mise à jour actuelles (2019.8.0)](release-notes-current.md)
+   + [Notes de mise à jour actuelles (2019.7.0)](release-notes-2019-7-0.md)
    + [Notes de mise à jour de la version 2019.6.0](release-notes-2019-6-0.md)
    + [Notes de mise à jour de la version 2019.5.0](release-notes-2019-5-0.md)
    + [Notes de mise à jour de la version 2019.4.0](release-notes-2019-4-0.md)
