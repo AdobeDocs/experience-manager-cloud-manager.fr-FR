@@ -3,7 +3,7 @@ product: adobe experience manager
 sub-product: experience manager cloud manager
 archetype: administrator
 user-guide-title: Aide d’Experience Manager Cloud Manager
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5ebc83e089f889da9746828ecc362c2760ff79e9
 
 ---
@@ -35,8 +35,8 @@ source-git-commit: 5ebc83e089f889da9746828ecc362c2760ff79e9
    + [Présentation des résultats de tests](understand-your-test-results.md)
    + [Gestion des environnements](manage-your-environment.md)
    + [Surveillance des environnements](monitor-your-environments.md)
-   + [API de Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
-   + [Interface de ligne de commande de Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/master/README.md)
+   + [API Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
+   + [Interface de ligne de commande Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/master/README.md)
    + [Notifications](notifications.md)
    + [Règles de qualité du code personnalisé](custom-code-quality-rules.md)
 + Assistant de mise à jour du produit {#product-update-wizard}
