@@ -1,33 +1,41 @@
 ---
-title: Notes de mise à jour de la version 2019.8.0
-seo-title: Notes de mise à jour d’AEM Cloud Manager pour la version 2019.8.0
-description: Consultez cette page pour obtenir des informations sur la version 2019.8.0 de Cloud Manager.
-seo-description: Consultez cette page pour plus d’informations sur la version 2019.8.0 d’AEM Cloud Manager.
-translation-type: ht
-source-git-commit: 365cd6dfe65059c0c529f774bbcda946d47b0db5
+title: Notes de mise à jour de la version 2019.9.0
+seo-title: Notes de mise à jour d’AEM Cloud Manager pour la version 2019.9.0
+description: Consultez cette page pour obtenir des informations sur la version 2019.9.0 de Cloud Manager.
+seo-description: Consultez cette page pour plus d’informations sur la version 2019.9.0 d’AEM Cloud Manager.
+translation-type: tm+mt
+source-git-commit: 548d18f251cf8c4c827d2208fec04cde235ce731
 
 ---
 
-# Notes de mise à jour de la version 2019.8.0 {#release-notes-for}
+# Notes de mise à jour de la version 2019.9.0 {#release-notes-for}
 
-La version 2019.8.0 [!UICONTROL de Cloud Manager] prend en charge les modules de contenu créés de manière sélective, améliore les performances des compilations et corrige divers bogues mineurs.
+[!UICONTROL La version] 2019.9.0 de Cloud ajoute des mises à jour des graphiques de contrôle de l'intégrité et des graphiques de surveillance Sling Referrer.
 
 ## Date de publication {#release-date}
 
-La date de publication de la mise à jour 2019.8.0 de [!UICONTROL Cloud Manager] est le 19 août 2019.
+La date de publication de la mise à jour 2019.9.0 de [!UICONTROL Cloud Manager] est le lundi 11 septembre 2019.
 
 ## Nouveautés {#whats-new}
 
-* Nouvelle interface de ligne de commande pour l’API Cloud Manager, optimisée par l’[interface de ligne de commande Adobe I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager).
-* Les modules de contenu spécifiques générés par la compilation peuvent être déclarés comme pouvant être ignorés et ne seront pas déployés. Pour plus d’informations, consultez la section ***Omission des packages de contenu*** dans [Création d’un projet d’application AEM](create-an-application-project.md).
-* Le jeu de dépendances préchargées dans le conteneur de génération a été retravaillé afin d’éviter toute requête réseau inutile.
-* Le message sur la page d’aperçu de certains programmes configurés incorrectement a été amélioré.
+* La catégorisation de la vérification de l'intégrité du filtre de référents Sling a été changée de Critique en Important.
+* La classification de la vérification de l'intégrité du gestionnaire de bibliothèque HTML a été changée de Critique en Important.
+* Les graphiques de surveillance peuvent désormais être téléchargés. Pour plus d’informations, consultez [Surveillance de vos environnements](monitor-your-environments.md).
+* Si un programme n'a pas d'environnement AEM Production, cliquez sur la carte de programme de la page d'entrée pour accéder à la page d'aperçu de Cloud Manager, sans produire de boîte de dialogue d'erreur.
+* La Carte Paramètres du pipeline sur la page Aperçu a été renommée Paramètres du pipeline **de production**.
+* Les boutons radio importants Comportement d'échec ont été supprimés des pipelines de qualité du code uniquement.
+* La page d'activité affiche désormais le nom du canal pour chaque exécution.
+* La page d'exécution affiche désormais le nom du canal.
+* La boîte de dialogue de résumé Qualité du code affiche désormais une description de chaque évaluation.
 
 ## Correctifs {#bug-fixes}
 
-* Lors de l’accès aux rapports SLA, l’année par défaut était 2018, et non 2019.
-* Pour les noms d’environnement longs, le sélecteur d’environnement dans l’écran Rapports n’augmentait pas correctement la taille.
-* La règle de qualité du code ***ConfigAndInstallShouldOnlyContainOsgiNodes*** a généré des faux positifs lors de l’utilisation du composant Sling Rewriter.
-* La règle de qualité du code ***ConfigAndInstallShouldOnlyContainOsgiNodes*** a généré des faux positifs pour certaines structures de chemin d’accès peu courantes.
-* Les clients de ressources uniquement n’ont peut-être pas toujours été capables de naviguer vers leurs environnements AEM.
-* La boîte de dialogue [!UICONTROL Create a Branch and Project] (Créer un embranchement et un projet) est rendue différemment dans différents navigateurs.
+* Certains utilisateurs n'ont pas pu afficher les détails d'exécution lorsqu'ils attendaient l'approbation.
+* Sur la page Aperçu, la marge droite n'était pas cohérente.
+* Le conteneur de création peut manquer de mémoire dans les projets volumineux.
+* Dans certains cas, la règle oakpal bannedpaths n'a pas identifié le contenu installé sous /libs.
+* Lorsqu'une barrière de qualité a été rejetée, l'en-tête de dialogue affiche toujours « Partiellement transmis ».
+
+## Problèmes connus {#known-issues}
+
+Le téléchargement des graphiques de surveillance n'est pas disponible dans Safari.
