@@ -8,8 +8,8 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
-translation-type: ht
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+translation-type: tm+mt
+source-git-commit: 548d18f251cf8c4c827d2208fec04cde235ce731
 
 ---
 
@@ -46,13 +46,13 @@ Une fois que vous avez configuré le **pipeline** (référentiel, environnement 
    * Test unitaire et version
    * Analyse du code
    * Déploiement en environnement intermédiaire.
-   ![](assets/Stage_Testing.png)
+   ![](assets/Stage_Deployment1.png)
 
    Le **test dans l’environnement intermédiaire** comprend les étapes suivantes :
 
    * Test de sécurité
    * Test de performance
-   ![](assets/Stage_Deployment.png)
+   ![](assets/Stage_Testing1.png)
 
    Le **déploiement en environnement de production** comprend les étapes suivantes :
 
@@ -60,6 +60,8 @@ Une fois que vous avez configuré le **pipeline** (référentiel, environnement 
    * **Planification du déploiement en production** (si activée).
    * **Assistance de l’ingénieur du service client** (si activée).
    * **Déploiement en environnement de production**
+   ![](assets/Prod_Deployment1.png)
+
    >[!NOTE]
    >
    >La **planification du déploiement en production** est activée lors de la configuration du pipeline.
