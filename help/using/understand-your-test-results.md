@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 translation-type: tm+mt
-source-git-commit: 548d18f251cf8c4c827d2208fec04cde235ce731
+source-git-commit: 26014cfabfee6226033ba2fc1167d8f5509e17c6
 
 ---
 
@@ -114,13 +114,13 @@ Le tableau suivant répertorie les contrôles actuels :
 | Les mots de passe par défaut ont été modifiés. | Comptes de connexion par défaut | Critique |
 | Le servlet GET par défaut Sling est protégé contre les attaques par DOS. | Servlet Sling Get | Critique |
 | Le Dispatcher effectue correctement le filtrage des requêtes. | Configuration du Dispatcher CQ | Critique |
-| Le gestionnaire de bibliothèque HTML Adobe Granite est correctement configuré. | Configuration de gestionnaire de bibliothèque HTML CQ | Important |
 | Le gestionnaire de script Java Sling est correctement configuré. | Gestionnaire de script Java Sling | Critique |
 | Le gestionnaire de script JSP Sling est correctement configuré. | Gestionnaire de script JSP Sling | Critique |
-| Le filtre référent Sling est configuré pour empêcher les attaques CSRF. | Filtre référent Sling | Important |
 | SSL est correctement configuré. | Configuration SSL | Critique |
 | Aucune stratégie de profil d’utilisateur évidemment risquée trouvée | Accès par défaut au profil utilisateur | Critique |
-| Le lot de prise en charge de CRXDE  est désactivé. | Prise en charge de CRXDE | Important |
+| Le filtre référent Sling est configuré pour empêcher les attaques CSRF. | Filtre référent Sling | Important |
+| Le gestionnaire de bibliothèque HTML Adobe Granite est correctement configuré. | Configuration de gestionnaire de bibliothèque HTML CQ | Important |
+| Le lot Prise en charge CRXDE est désactivé. | Prise en charge de CRXDE | Important |
 | Le lot DavEx Sling et le servlet sont désactivés. | Contrôle d’intégrité DavEx | Important |
 | L’exemple de contenu n’est pas installé. | Packages d’exemple de contenu | Important |
 | Le filtre de requête WCM et le filtre de débogage WCM sont désactivés. | Configuration des filtres WCM | Important |
