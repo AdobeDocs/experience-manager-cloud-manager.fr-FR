@@ -6,8 +6,8 @@ seo-description: Consultez cette section pour en savoir plus sur le pipeline CI/
 uuid: 763ddb24-05cd-463f-8d72-a2e69bbe6b7e
 topic-tags: introduction
 discoiquuid: 1cdb76eb-1a91-4689-8579-0fa9fccc0592
-translation-type: ht
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+translation-type: tm+mt
+source-git-commit: 949d3cf0239a02875ba4ad1888e081f104dec2e2
 
 ---
 
