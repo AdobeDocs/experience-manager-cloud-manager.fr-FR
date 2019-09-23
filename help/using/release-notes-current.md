@@ -10,7 +10,7 @@ source-git-commit: 26014cfabfee6226033ba2fc1167d8f5509e17c6
 
 # Notes de mise à jour de la version 2019.9.0 {#release-notes-for}
 
-La version 2019.9.0 [!UICONTROL de Cloud Manager] met à jour les critères de test de sécurité, ajoute des graphiques de surveillance téléchargeables et corrige certains problèmes de convivialité signalés par les utilisateurs.
+La version 2019.9.0 de [!UICONTROL Cloud Manager] 2019 met à jour les critères de test de sécurité, ajoute des graphiques de surveillance téléchargeables et corrige certains problèmes de convivialité signalés par les clients.
 
 ## Date de publication {#release-date}
 
@@ -18,24 +18,24 @@ La date de publication de la mise à jour 2019.9.0 de [!UICONTROL Cloud Manager
 
 ## Nouveautés {#whats-new}
 
-* La catégorisation de la vérification de l'intégrité du filtre de référents Sling a été changée de Critique en Important.
-* La classification de la vérification de l'intégrité du gestionnaire de bibliothèque HTML a été changée de Critique en Important.
-* Les graphiques de surveillance peuvent désormais être téléchargés. Pour plus d’informations, consultez [Surveillance de vos environnements](monitor-your-environments.md).
-* Si un programme n'a pas d'environnement AEM Production, cliquez sur la carte de programme de la page d'entrée pour accéder à la page d'aperçu de Cloud Manager, sans produire de boîte de dialogue d'erreur.
-* La Carte **Paramètres** du pipeline sur la **page Aperçu** a été renommée Paramètres du pipeline **de production**.
-* Les boutons radio importants Comportement d'échec ont été supprimés des pipelines de qualité du code uniquement.
-* La page **Activité** affiche désormais le nom du canal pour chaque exécution.
-* La page d'exécution affiche désormais le nom du canal.
-* La boîte de dialogue de résumé Qualité du code affiche désormais une description de chaque évaluation.
+* La classification de la vérification de l’intégrité du filtre de référents Sling a été changée de Critique à Important.
+* La classification de la vérification de l’intégrité de la configuration du Gestionnaire de bibliothèques HTML a été changée de Critique à Important.
+* Les graphiques de surveillance peuvent maintenant être téléchargés. Pour plus d’informations, consultez [Surveillance de vos environnements](monitor-your-environments.md).
+* Si un programme ne dispose pas d’un environnement AEM de production, cliquer sur la carte du programme dans la page d’entrée permet d’accéder à la page d’aperçu de Cloud Manager et non de générer une boîte de dialogue d’erreur.
+* La carte des paramètres **du** pipeline sur la page **Aperçu** a été remplacée par Paramètres **du pipeline de** production.
+* Les boutons radio Comportement d’échec important ont été supprimés des tuyaux de qualité de code uniquement.
+* La page **Activité** affiche désormais le nom du pipeline pour chaque exécution.
+* La page d’exécution affiche désormais le nom du pipeline.
+* The Code Quality summary dialog now shows a description for each rating.
 
 ## Correctifs {#bug-fixes}
 
-* Certains utilisateurs n'ont pas pu afficher les détails d'exécution lorsqu'ils attendaient l'approbation.
-* Sur **la page Aperçu** , la marge droite n'était pas cohérente.
-* Le conteneur de création peut manquer de mémoire dans les projets volumineux.
-* Dans certains cas, la règle oakpal bannedpaths n'a pas identifié le contenu installé sous /libs.
-* Lorsqu'une barrière de qualité a été rejetée, l'en-tête de dialogue affiche *toujours Partiellement transmis*.
+* Some users could not view an execution details when it was waiting for approval.
+* Sur la page **Aperçu** , la marge droite n’était pas cohérente.
+* Le conteneur de génération peut manquer de mémoire dans les projets volumineux.
+* Under certain circumstances, the BannedPaths OakPAL rule did not identify installed content under /libs.
+* Lorsqu’une grille de qualité est rejetée, l’en-tête de la boîte de dialogue affiche toujours *Partiellement transmise*.
 
 ## Problèmes connus {#known-issues}
 
-* Le téléchargement des graphiques de surveillance n'est pas disponible dans Safari.
+* Downloading of monitoring graphs is not available in Safari.
