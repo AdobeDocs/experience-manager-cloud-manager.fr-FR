@@ -8,8 +8,8 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: 67a54bae-99a9-4405-91e3-9a0a8b3ccc98
-translation-type: ht
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+translation-type: tm+mt
+source-git-commit: 949d3cf0239a02875ba4ad1888e081f104dec2e2
 
 ---
 
@@ -22,7 +22,7 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 ### Rôles d’utilisateur {#user-roles}
 
-La gestion des rôles de [!UICONTROL Cloud Manager] est effectuée dans [Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html). Tout utilisateur de [!UICONTROL Cloud Manager] doit être membre de l’organisation IMS du client et avoir le contexte du produit Adobe Managed Services. Des rôles spécifiques sont fournis en ajoutant un utilisateur à un profil de produit [!UICONTROL Cloud Manager] dans Admin Console.
+La gestion des rôles pour [!UICONTROL Cloud Manager] est effectuée dans la console d’administration [Adobe](https://helpx.adobe.com/enterprise/using/admin-console.html). Tout utilisateur de [!UICONTROL Cloud Manager] doit être membre de l’organisation IMS du client et avoir le contexte du produit Adobe Managed Services. Des rôles spécifiques sont fournis en ajoutant un utilisateur à un profil de produit [!UICONTROL Cloud Manager] dans Admin Console.
 
 Pour plus d’informations sur la configuration de vos rôles, consultez la rubrique [Configuration des utilisateurs et des rôles](setting-up-users-and-roles.md).
 
