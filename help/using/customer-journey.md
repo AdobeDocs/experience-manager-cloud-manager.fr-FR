@@ -8,8 +8,8 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: bc9a0d63-ae6b-4fe9-81e5-bf9844f04e54
-translation-type: ht
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+translation-type: tm+mt
+source-git-commit: 15f75ca67c3d52ae511357c5b564daaa3d9def6b
 
 ---
 
@@ -36,7 +36,7 @@ En tant que client, vous commencez peut-être à utiliser Adobe Experience Man
 
    Votre projet AEM existant devra également se conformer aux bonnes pratiques recommandées, car vous commencerez à utiliser [!UICONTROL Cloud Manager] pour déployer de nouveaux changements de code dans vos environnements AEM.
 
-   Pour obtenir des informations supplémentaires sur les avantages de la mise à niveau vers AEM 6.4, consultez la section [Mise à niveau vers AEM 6.4](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/upgrade.html).
+   To get additional information on the benefits of upgrading to AEM 6.4, see [Upgrading to AEM 6.4](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/upgrade.html).
 
 ## Accès à [!UICONTROL Cloud Manager] {#accessing-cloud-manager}
 
@@ -44,7 +44,7 @@ Vous avez accès à [!UICONTROL Cloud Manager] et à vos environnements AEM en v
 
 Après la première connexion à [!UICONTROL Cloud Manager], vous avez accès à vos environnements AEM directement depuis l’interface utilisateur de [!UICONTROL Cloud Manager]. À ce stade, vous êtes prêt à explorer toutes les possibilités de [!UICONTROL Cloud Manager], une fois que votre première branche de code est prête à être déployée dans vos environnements intermédiaire et de production.
 
-Pour découvrir [!UICONTROL Cloud Manager] et commencer à utiliser la solution, consultez la section [Première connexion](first-time-login.md). Pour plus d’informations sur AEM, consultez la section [Prise en main d’AEM 6.4](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/deploy.html). Vous pouvez également consulter [Ressources AEM ](https://www.adobe.com/marketing-cloud/experience-manager/resources.html?promoid=759X6WV8&amp;mv=other) pour plus d’informations.
+Pour découvrir [!UICONTROL Cloud Manager] et commencer à utiliser la solution, consultez la section [Première connexion](first-time-login.md). For additional information about AEM, see [Getting Started with AEM 6.4](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/deploy.html). Pour plus d’informations, reportez-vous à la section Ressources [](https://www.adobe.com/marketing-cloud/experience-manager/resources.html?promoid=759X6WV8&mv=other) AEM.
 
 ## Prise en main de [!UICONTROL Cloud Manager] {#getting-started-with-cloud-manager}
 
