@@ -3,8 +3,8 @@ title: Notes de mise à jour de la version 2019.3.0
 seo-title: Notes de mise à jour d’AEM Cloud Manager pour la version 2019.3.0
 description: Consultez cette page pour obtenir des informations sur la version 2019.3.0 de Cloud Manager.
 seo-description: Consultez cette page pour plus d’informations sur la version 2019.3.0 d’AEM Cloud Manager.
-translation-type: ht
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+translation-type: tm+mt
+source-git-commit: 28780dc73a6787b7f3e715965e580534344f3602
 
 ---
 
