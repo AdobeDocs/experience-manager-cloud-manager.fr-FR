@@ -8,8 +8,8 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: conditions requises
 discoiquuid: 1b421993-22c3-4de0-ba64-c1080d07ad5e
-translation-type: ht
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+translation-type: tm+mt
+source-git-commit: 73203dca7b20570103af429cf933610941b787be
 
 ---
 
@@ -56,7 +56,7 @@ Le tableau suivant résume les rôles :
 
 Les rôles sont gérés pour [!UICONTROL Cloud Manager] à partir d’Adobe Admin Console. Des rôles spécifiques sont fournis en ajoutant un utilisateur à un profil de produit [!UICONTROL Cloud Manager] dans Admin Console.
 
-Vous pouvez affecter des rôles spécifiques en ajoutant un utilisateur à un [!UICONTROL Profil de produit] **Cloud Manager** dans Adobe Admin Console, un emplacement central pour gérer les droits Adobe dans l’ensemble de l’organisation. Pour en savoir plus sur Adobe Admin Console, consultez la documentation relative à [Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html).
+Vous pouvez affecter des rôles spécifiques en ajoutant un utilisateur à un [!UICONTROL Profil de produit] **Cloud Manager** dans Adobe Admin Console, un emplacement central pour gérer les droits Adobe dans l’ensemble de l’organisation. Pour en savoir plus sur Adobe Admin Console, consultez la documentation de [Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html).
 
 >[!NOTE]
 >
@@ -71,7 +71,7 @@ Pour accorder les autorisations appropriées basées sur les rôles aux utilisat
 * Développeur
 * Responsable de programme
 
-Vous pouvez créer, ou ajouter, des utilisateurs/groupes à ces profils de produit avec [Admin Console](https://adminconsole.adobe.com/) pour [!UICONTROL Cloud Manager], comme illustré dans la figure ci-dessous :
+You can create, or add, users/groups to these Product Profiles with the [Admin Console](https://adminconsole.adobe.com/) for [!UICONTROL Cloud Manager], as shown in the figure below:
 
 1. Connectez-vous à Admin Console et cliquez sur **Nouveau profil** pour ajouter un nouveau profil.
 
