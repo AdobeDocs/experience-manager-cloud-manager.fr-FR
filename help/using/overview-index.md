@@ -6,7 +6,7 @@ seo-description: Présentation de l’aide d’Adobe AEM Cloud Manager
 uuid: d4a23a6e-347e-41c3-9e3b-b7b7469c4754
 contentOwner: jsyal
 discoiquuid: 5ca5a413-639e-43fb-93dd-16ce8935a3fd
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 617b04e7465fa41542606b733ded76a32467738d
 
 ---
@@ -26,7 +26,7 @@ Le schéma ci-dessous illustre la feuille de route de votre apprentissage de [!U
 
 Consultez les ressources figurant dans la section Présentation pour une introduction à [!UICONTROL Cloud Manager] :
 
-* **[[!UICONTROL Présentation de Cloud Manager]](introduction-to-cloud-manager.md)**
+* **[Introduction à [!UICONTROL Cloud Manager]](introduction-to-cloud-manager.md)**
 * **[Concepts clés](key-concepts.md)**
 * **[[!UICONTROL Parcours du client]](customer-journey.md)**
 
