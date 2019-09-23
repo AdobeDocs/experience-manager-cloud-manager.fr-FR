@@ -8,8 +8,8 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: Guide de démarrage
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
-translation-type: ht
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+translation-type: tm+mt
+source-git-commit: fea7cbe19989272100d76092198afcfac17c1c3a
 
 ---
 
@@ -40,4 +40,4 @@ Une fois que vous avez terminé les configurations générales de [!UICONTROL Cl
 
    >[!NOTE]
    >
-   >Voir [Configuration de votre programme]( https://helpx.adobe.com/experience-manager/cloud-manager/using/setting-up-program.html) pour terminer les étapes suivantes.
+   >Please see [Setup your Program](https://helpx.adobe.com/experience-manager/cloud-manager/using/setting-up-program.html) to complete the next steps.
