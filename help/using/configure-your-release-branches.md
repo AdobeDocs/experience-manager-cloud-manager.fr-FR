@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: Guide de démarrage
 discoiquuid: 53807ea6-9464-429d-9322-85c9f405dff6
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 9c0df236c1e800802d62dea09996bb8e1e7033f7
 
 ---
@@ -80,4 +80,4 @@ Une branche `master` unique peut suffire pour des projets très simples, mais da
 
 >[!NOTE]
 >
->Pour afficher les commandes git courantes, consultez l’[Aide-mémoire Git](https://github.github.com/training-kit/downloads/github-git-cheat-sheet).
+>To view the common git commands, see the [Git Cheat Sheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet).
