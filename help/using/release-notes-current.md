@@ -10,7 +10,7 @@ source-git-commit: 26014cfabfee6226033ba2fc1167d8f5509e17c6
 
 # Notes de mise à jour de la version 2019.9.0 {#release-notes-for}
 
-La version 2019.9.0 de [!UICONTROL Cloud Manager] 2019 met à jour les critères de test de sécurité, ajoute des graphiques de surveillance téléchargeables et corrige certains problèmes de convivialité signalés par les clients.
+The Cloud Manager 2019.9.0 Release updates the security test criteria, adds downloadable monitoring graphs, and fixes some customer-reported usability issues.
 
 ## Date de publication {#release-date}
 
@@ -26,16 +26,16 @@ La date de publication de la mise à jour 2019.9.0 de [!UICONTROL Cloud Manager
 * Les boutons radio Comportement d’échec important ont été supprimés des tuyaux de qualité de code uniquement.
 * La page **Activité** affiche désormais le nom du pipeline pour chaque exécution.
 * La page d’exécution affiche désormais le nom du pipeline.
-* The Code Quality summary dialog now shows a description for each rating.
+* La boîte de dialogue Résumé de la qualité du code affiche désormais une description de chaque évaluation.
 
 ## Correctifs {#bug-fixes}
 
-* Some users could not view an execution details when it was waiting for approval.
+* Certains utilisateurs n’ont pas pu afficher les détails d’une exécution en attente d’approbation.
 * Sur la page **Aperçu** , la marge droite n’était pas cohérente.
 * Le conteneur de génération peut manquer de mémoire dans les projets volumineux.
-* Under certain circumstances, the BannedPaths OakPAL rule did not identify installed content under /libs.
+* Dans certaines circonstances, la règle OakPAL BanningPaths n'a pas identifié le contenu installé sous /libs.
 * Lorsqu’une grille de qualité est rejetée, l’en-tête de la boîte de dialogue affiche toujours *Partiellement transmise*.
 
 ## Problèmes connus {#known-issues}
 
-* Downloading of monitoring graphs is not available in Safari.
+* Le téléchargement des graphiques de surveillance n’est pas disponible dans Safari.
