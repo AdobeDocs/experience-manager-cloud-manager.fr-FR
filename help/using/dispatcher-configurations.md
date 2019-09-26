@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: Guide de démarrage
 discoiquuid: 8888dd80-d908-464e-927d-779db1a832a4
 translation-type: tm+mt
-source-git-commit: 66ed6bdc8a98c77464c7324806cb5d2cb81da469
+source-git-commit: e0a280efddb1e31f5aef65f0f52fc5b4e71de3da
 
 ---
 
@@ -20,11 +20,11 @@ source-git-commit: 66ed6bdc8a98c77464c7324806cb5d2cb81da469
 
 Cloud Manager peut déployer les fichiers de configuration du serveur web et du Dispatcher en supposant qu’ils soient stockés dans le **référentiel Git**, en plus des packages de contenu AEM normaux.
 
-Pour tirer parti de cette fonctionnalité, la compilation Maven doit produire un fichier zip contenant au moins deux répertoires : ***conf*** et ***conf.d***. Ce fichier zip peut être créé à l’aide de maven-assembly-plugin. Les projets générés par Cloud Manager à l’aide de l’[assistant](create-an-application-project.md) intégré ont une structure de projet Maven correcte déjà créée dans le cadre de la création du projet.
+Pour tirer parti de cette fonctionnalité, la compilation Maven doit produire un fichier zip contenant au moins deux répertoires : ***conf*** et ***conf.d***. Ce fichier zip peut être créé à l’aide de maven-assembly-plugin. Les projets générés par Cloud Manager à l’aide de l’[assistant](create-an-application-project.md) intégré ont une structure de projet Maven correcte déjà créée dans le cadre de la création du projet. This is the recommended path for new Managed Services customers.
 
-Lors du déploiement sur une **Instance** de Dispatcher, le contenu de ces répertoires remplacera celui de ces répertoires sur l’instance de Dispatcher. Comme les fichiers de configuration du serveur web et du Dispatcher requièrent souvent des informations spécifiques à l’environnement, vous devez d’abord collaborer avec les ingénieurs du service client pour extraire ces variables d’environnement dans ***/etc/sysconfig/httpd***. [](create-an-application-project.md)
+Lors du déploiement sur une **Instance** de Dispatcher, le contenu de ces répertoires remplacera celui de ces répertoires sur l’instance de Dispatcher. Since web server and Dispatcher configuration files frequently require environment-specific information, in order for this capability to be used correctly, you will first need to work with your Customer Success Engineers (CSE) to set these environment variables in ***/etc/sysconfig/httpd***.
 
-### Procédure de configuration du Dispatcher {#steps-for-configuring-dispatcher}
+### Procédure de configuration du répartiteur pour les clients de services gérés existants {#steps-for-configuring-dispatcher}
 
 Pour effectuer le processus initial de configuration du dispatcher, procédez comme suit :
 
