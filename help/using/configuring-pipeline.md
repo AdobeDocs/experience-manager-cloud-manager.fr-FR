@@ -7,9 +7,9 @@ uuid: 35fd56ac-dc9c-4aca-8ad6-36c29c4ec497
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
-content-type: référence
+content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 862501f28f5104d0829a6d2d2ad5f5ce9f8ba341
 
 ---
@@ -161,7 +161,7 @@ Pour configurer les invalidations du Dispatcher, procédez comme suit :
 
    >[!NOTE]
    >
-   >Additionally, once you have setup the pipeline, you can still edit settings for the same using **Production Pipeline Settings** tile from the [!UICONTROL Cloud Manager] UI.
+   >Une fois que vous avez configuré le pipeline, vous pouvez toujours modifier les paramètres à l’aide de la vignette **Paramètres du pipeline de production** depuis l’interface utilisateur de [!UICONTROL Cloud Manager].
 
    ![](assets/Prod-Pipeline-Settings-Dialog.png)
 
