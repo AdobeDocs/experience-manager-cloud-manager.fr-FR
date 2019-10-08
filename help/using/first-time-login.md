@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: Guide de démarrage
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
 translation-type: tm+mt
-source-git-commit: ec35af20dceeb50610bc365c8e00d5ee0374ea34
+source-git-commit: eea425b9bfa178720cbea0653cf8c8f17702281b
 
 ---
 
@@ -22,12 +22,9 @@ Une fois que vous avez terminé les configurations générales de [!UICONTROL Cl
 >
 >Selon les rôles affectés dans [!UICONTROL Cloud Manager] et l’état de l’application, vous verrez plusieurs écrans lors de l’utilisation de l’interface utilisateur de [!UICONTROL Cloud Manager].
 
-## An Overview to Programs {#programs-video}
+## Présentation des programmes {#programs-video}
 
-The following video provides an overview to Cloud Manager Programs that represent sets of AEM environments supporting logical sets of business initiatives, typically corresponding to a purchased Service Level Agreement (SLA).
-
-
-[!VIDEO](https://video.tv.adobe.com/v/26313/?quality=12&captions=fre_fr)
+La vidéo suivante présente un aperçu des programmes Cloud Manager qui représentent des ensembles d’environnements AEM prenant en charge des ensembles logiques d’initiatives commerciales, généralement correspondant à un contrat de niveau de service (SLA) acheté.
 
 
 ## Première connexion {#logging-in-for-the-first-time}
