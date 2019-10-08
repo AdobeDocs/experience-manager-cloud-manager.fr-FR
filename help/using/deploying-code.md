@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 translation-type: tm+mt
-source-git-commit: 548d18f251cf8c4c827d2208fec04cde235ce731
+source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
 
 ---
 
@@ -93,6 +93,13 @@ Lorsque Cloud Manager se déploie sur des topologies autres que de production, 
 
 1. Cloud Manager détermine si chaque artefact est un package AEM ou dispatcher.
 1. Cloud Manager supprime tous les dispatchers de l’équilibreur de charge pour isoler l’environnement pendant le déploiement.
+
+   Sauf configuration contraire, vous pouvez ignorer les modifications de l’équilibreur de charge dans les déploiements de développement et d’évaluation, c’est-à-dire détacher et attacher des étapes dans les deux pipelines hors production, pour les environnements de développement et le pipeline de production, pour les environnements d’évaluation.
+
+   >[!NOTE]
+   >
+   >Cette fonctionnalité devrait être principalement utilisée par les clients 1-1-1.
+
 1. Chaque artefact AEM est déployé sur chaque instance AEM par le biais des API de Package Manager, avec des dépendances de packages qui déterminent l’ordre de déploiement.
 
    Pour en savoir plus sur l’utilisation de packages pour installer de nouvelles fonctionnalités, transférer du contenu entre des instances et sauvegarder le contenu du référentiel, reportez-vous à la section Utilisation de packages.
@@ -113,6 +120,10 @@ Lorsque Cloud Manager se déploie sur des topologies autres que de production, 
    >Cloud Manager exige que l’artefact du dispatcher contienne le jeu de fichiers complet.  Tous les fichiers de configuration du dispatcher doivent être présents dans le référentiel git. Les fichiers ou dossiers manquants entraînent l’échec du déploiement.
 
 1. Après le déploiement réussi de tous les packages AEM et de dispatcher sur tous les nœuds, les dispatchers sont ajoutés à l’équilibreur de charge et le déploiement est terminé.
+
+   >[!NOTE]
+   >
+   >Vous pouvez ignorer les modifications de l’équilibreur de charge dans les déploiements de développement et d’étape, c’est-à-dire, détacher et attacher des étapes dans les deux pipelines hors production, pour les environnements de développement et le pipeline de production, pour les environnements d’étape. Cette fonctionnalité devrait être principalement utilisée par les clients 1-1-1.
 
 ### Phase de déploiement en production {#deployment-production-phase}
 
