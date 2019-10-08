@@ -4,7 +4,7 @@ sub-product: experience manager cloud manager
 archetype: administrator
 user-guide-title: Aide d’Experience Manager Cloud Manager
 translation-type: tm+mt
-source-git-commit: 548d18f251cf8c4c827d2208fec04cde235ce731
+source-git-commit: de9d2834ffa6c235e580227bd020fb8a0b94d22c
 
 ---
 
@@ -43,7 +43,8 @@ source-git-commit: 548d18f251cf8c4c827d2208fec04cde235ce731
    + [Présentation](overview-productupdate-wizard.md)
    + [Évaluation](evaluation.md)
 + Notes de mise à jour {#release-notes}
-   + [Notes de mise à jour actuelles (2019.9.0)](release-notes-current.md)
+   + [Notes de mise à jour actuelles (2019.10.0)](release-notes-current.md)
+   + [Notes de mise à jour de la version 2019.9.0](release-notes-2019-9-0.md)
    + [Notes de mise à jour de la version 2019.8.0](release-notes-2019-8-0.md)
    + [Notes de mise à jour de la version 2019.7.0](release-notes-2019-7-0.md)
    + [Notes de mise à jour de la version 2019.6.0](release-notes-2019-6-0.md)
