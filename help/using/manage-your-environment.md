@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: c5b39de2-3a9b-437f-98e8-e6e6249a5b3a
 translation-type: tm+mt
-source-git-commit: 2b71bb61e00d462a43519ec0a2dcfe9231fe53ff
+source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
 
 ---
 
@@ -21,6 +21,13 @@ La page **Aperçu** de Cloud Manager comprend la vignette **Environnements** qui
 Chacun des environnements répertoriés affiche l’état associé.
 
 ![](assets/Manage_Environments1.png)
+
+## Vidéo de présentation vers les environnements {#environments-video}
+
+La vidéo suivante présente un aperçu des environnements Cloud Manager composés d’instances Auteur AEM, Publication AEM et Répartiteur.
+Consultez la vidéo ci-dessous pour plus de détails.
+
+>[!VIDEO](https://video.tv.adobe.com/v/26318/?captions=fre_fr)
 
 ## Accès aux environnements dans Cloud Manager {#accessing-environments-in-cloud-manager}
 
