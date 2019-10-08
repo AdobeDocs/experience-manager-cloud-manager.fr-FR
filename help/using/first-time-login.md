@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: Guide de démarrage
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
 translation-type: tm+mt
-source-git-commit: de9d2834ffa6c235e580227bd020fb8a0b94d22c
+source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
 
 ---
 
@@ -22,7 +22,7 @@ Une fois que vous avez terminé les configurations générales de [!UICONTROL Cl
 >
 >Selon les rôles affectés dans [!UICONTROL Cloud Manager] et l’état de l’application, vous verrez plusieurs écrans lors de l’utilisation de l’interface utilisateur de [!UICONTROL Cloud Manager].
 
-## Présentation des programmes {#programs-video}
+## Vidéo de présentation aux programmes {#programs-video}
 
 La vidéo suivante présente un aperçu des programmes Cloud Manager qui représentent des ensembles d’environnements AEM prenant en charge des ensembles logiques d’initiatives commerciales, généralement correspondant à un contrat de niveau de service (SLA) acheté.
 
@@ -47,3 +47,9 @@ La vidéo suivante présente un aperçu des programmes Cloud Manager qui représ
    >[!NOTE]
    >
    >Please see [Setup your Program](https://helpx.adobe.com/experience-manager/cloud-manager/using/setting-up-program.html) to complete the next steps.
+
+## Onglet Activité {#activity-video}
+
+Cloud Manager fournit une vue consolidée de l’activité d’un programme, répertoriant toutes les exécutions de pipeline de CI/CD, tant en production qu’en non-production, ce qui permet de connaître l’activité passée et présente, et les détails de toute activité peuvent être examinés.
+
+>[!VIDEO](https://video.tv.adobe.com/v/26313/?captions=fre_fr)
