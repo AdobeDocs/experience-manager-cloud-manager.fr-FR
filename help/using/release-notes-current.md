@@ -1,41 +1,34 @@
 ---
-title: Notes de mise à jour de la version 2019.9.0
-seo-title: Notes de mise à jour d’AEM Cloud Manager pour la version 2019.9.0
-description: Consultez cette page pour obtenir des informations sur la version 2019.9.0 de Cloud Manager.
-seo-description: Consultez cette page pour plus d’informations sur la version 2019.9.0 d’AEM Cloud Manager.
-translation-type: ht
-source-git-commit: 26014cfabfee6226033ba2fc1167d8f5509e17c6
+title: Notes de mise à jour de la version 2019.10.0
+seo-title: Notes de mise à jour d’AEM Cloud Manager pour la version 2019.10.0
+description: Consultez cette page pour obtenir des informations sur la version 2019.10.0 de Cloud Manager.
+seo-description: Consultez cette page pour plus d’informations sur la version 2019.10.0 d’AEM Cloud Manager.
+translation-type: tm+mt
+source-git-commit: de9d2834ffa6c235e580227bd020fb8a0b94d22c
 
 ---
 
-# Notes de mise à jour de la version 2019.9.0 {#release-notes-for}
+# Notes de mise à jour de la version 2019.10.0 {#release-notes-for}
 
-La version 2019.9.0 de [!UICONTROL Cloud Manager] met à jour les critères de test de sécurité, ajoute des graphiques de surveillance téléchargeables et corrige certains problèmes d’utilisation signalés par les clients.
+La version 2019.10.0 de [!UICONTROL Cloud Manager] met à jour les critères de test de sécurité, ajoute des graphiques de surveillance téléchargeables et corrige certains problèmes d’utilisation signalés par les clients.
 
 ## Date de publication {#release-date}
 
-La date de publication de [!UICONTROL Cloud Manager] Version 2019.9.0 est le 12 septembre 2019.
+The Release Date for [!UICONTROL Cloud Manager] Version 2019.10.0 is October 12, 2019.
 
 ## Nouveautés {#whats-new}
 
-* La classification de la vérification de l’intégrité du filtre de référents Sling a été changée de Critique à Important.
-* La classification de la vérification de l’intégrité de la configuration du gestionnaire de bibliothèques HTML a été changée de Critique à Important.
-* Les graphiques de surveillance peuvent maintenant être téléchargés. Pour plus d’informations, consultez [Surveillance de vos environnements](monitor-your-environments.md).
-* Si le programme ne dispose pas d’un environnement AEM de production, cliquer sur la carte du programme sur la page d’entrée permet d’accéder à la page d’aperçu de Cloud Manager et ne produit pas de boîte de dialogue d’erreur.
-* La carte **Paramètres du pipeline** de la page **Aperçu** a été remplacée par **Paramètres du pipeline de production**.
-* Les cases d’option de comportement en cas d’échec important ont été supprimées des pipelines de qualité de code uniquement.
-* La page **Activité** affiche désormais le nom du pipeline pour chaque exécution.
-* La page d’exécution affiche désormais le nom du pipeline.
-* La boîte de dialogue de résumé de la qualité du code affiche désormais une description de chaque évaluation.
+* Une partie importante des étapes du déploiement a été rendue plus performante.
+* Le cas échéant, la version du projet Maven incorporera désormais la version du projet dans git.
+* Au moment de la création, de nouvelles variables d’environnement sont disponibles.
+* Il est possible de supprimer des pipelines hors production de la carte sur la page Aperçu, ainsi que de l’API.
+* Il existe une nouvelle étape d’approbation facultative juste après l’étape de déploiement de l’étape, mais avant l’étape de test de sécurité.
+* Lors de la configuration d’un pipeline CI/CD, le détachement et l’association des instances de répartiteur de l’équilibreur de charge peuvent être ignorés pour les environnements de développement et d’évaluation.
+* L’interface de ligne de commande de Cloud Manager a été augmentée pour prendre en charge l’accès aux journaux des étapes d’exécution.
+* L’API Cloud Manager prend désormais en charge la modification de la branche configurée d’un pipeline.
+* Les requêtes exécutées lors des tests de performances incluent désormais un jeton spécifique ("CloudManagerTest") dans l’agent utilisateur.
 
 ## Correctifs {#bug-fixes}
 
-* Certains utilisateurs ne pouvaient pas afficher les détails d’une exécution en attente d’approbation.
-* Dans la page **Aperçu**, la marge de droite n’était pas cohérente.
-* Le conteneur de génération pouvait manquer de mémoire dans les projets volumineux.
-* Dans certaines circonstances, la règle OakPAL BannedPaths n’identifiait pas le contenu installé sous /libs.
-* Lorsqu’un point de contrôle qualité était rejeté, l’en-tête de la boîte de dialogue affichait toujours *Réussite partielle*.
-
-## Problèmes connus {#known-issues}
-
-* Le téléchargement des graphiques de surveillance n’est pas disponible dans Safari.
+* Certaines cartes de la page Aperçu n’étaient pas correctement alignées verticalement.
+* Certaines conditions d’échec n’entraînaient pas le marquage correct des exécutions de pipeline et empêchaient les exécutions ultérieures.
