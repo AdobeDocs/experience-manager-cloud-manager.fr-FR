@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-translation-type: ht
-source-git-commit: 862501f28f5104d0829a6d2d2ad5f5ce9f8ba341
+translation-type: tm+mt
+source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
 
 ---
 
@@ -168,6 +168,13 @@ Pour configurer les invalidations du Dispatcher, procédez comme suit :
 ## Pipelines de qualité de code et hors production uniquement
 
 En plus du pipeline principal qui se déploie vers les environnements intermédiaire et de production, les clients peuvent configurer des pipelines supplémentaires, appelés **Pipelines hors production**. Ces pipelines exécutent toujours les étapes de génération et de qualité de code. Si besoin est, elles peuvent aussi déployer vers l’environnement Adobe Managed Services.
+
+### Vidéo sur les pipelines hors production et qualité du code uniquement
+
+Les pipelines de non-production CI/CD sont divisés en deux catégories : les pipelines de qualité du code et les pipelines de déploiement. La qualité du code canalise tout le code d’une branche Git pour créer et être évaluée par rapport à l’analyse de la qualité du code de Cloud Manager.
+Consultez la vidéo suivante pour en savoir plus.
+
+>[!VIDEO](https://video.tv.adobe.com/v/26316/?captions=fre_fr)
 
 Sur l’écran d’accueil, ces pipelines sont répertoriés dans une nouvelle carte :
 
