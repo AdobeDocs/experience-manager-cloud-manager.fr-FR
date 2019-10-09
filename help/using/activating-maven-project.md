@@ -4,7 +4,7 @@ seo-title: Gestion des versions du projet expert
 description: En savoir plus sur la gestion des versions du projet Maven.
 seo-description: Suivez cette page pour en savoir plus sur la gestion des versions du projet Maven
 translation-type: tm+mt
-source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
+source-git-commit: f5ff89820eb843b35b617d300dbbc07f19ca2c17
 
 ---
 
@@ -29,4 +29,4 @@ Si la version d’origine ne répond pas à ces critères, la version générée
 
 >[!NOTE]
 >
->Que la version d’origine ait été ou non incorporée dans la version initialisée de Cloud Manager, la version d’origine est disponible sous la forme d’une propriété Maven nommée *cloudManagerOriginalVersion*.
+>Que la version d’origine ait été incorporée ou non dans la version initialisée de Cloud Manager, la version d’origine est disponible sous la forme d’une propriété Maven nommée *cloudManagerOriginalVersion.*
