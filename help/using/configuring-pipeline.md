@@ -10,7 +10,7 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: f5ff89820eb843b35b617d300dbbc07f19ca2c17
+source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
 
 ---
 
@@ -129,9 +129,17 @@ Pour configurer les invalidations du Dispatcher, procédez comme suit :
    ![](assets/image2018-8-7_15-4-30.png)
 
    **Approuver après le déploiement** d’étape Il existe une étape facultative **Approuver après le déploiement** d’étape qui peut être configurée dans le pipeline de production.
+Cette option est activée dans une nouvelle option de l’écran de modification **du** pipeline :
+
+   ![](assets/post_deployment1.png)
+
+   Il s’affiche ensuite sous la forme d’une étape distincte lors de l’exécution du pipeline :
+   ![](assets/post_deployment2.png)
+
    >[!NOTE]
    >
    >**Approuver après le déploiement** d’étape fonctionne de la même manière que l’approbation avant le déploiement en production, mais ce processus se produit immédiatement après l’étape de déploiement d’étape, c’est-à-dire avant que les tests ne soient effectués, par rapport à l’approbation avant le déploiement en production, qui est effectuée une fois tous les tests terminés.
+
 
 1. Accédez à l’onglet **Tests** pour définir les critères de test du programme.
 
