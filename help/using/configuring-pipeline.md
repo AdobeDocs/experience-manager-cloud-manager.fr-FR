@@ -10,7 +10,7 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: 316ec3ec088271a6524d4c8fd4c84fd36e2ac4db
+source-git-commit: 581e78ef4163e8e9b2b26613512b82223c214071
 
 ---
 
@@ -193,8 +193,6 @@ Pour configurer les invalidations du Dispatcher, procédez comme suit :
 ## Pipelines de qualité de code et hors production uniquement
 
 En plus du pipeline principal qui se déploie vers les environnements intermédiaire et de production, les clients peuvent configurer des pipelines supplémentaires, appelés **Pipelines hors production**. Ces pipelines exécutent toujours les étapes de génération et de qualité de code. Si besoin est, elles peuvent aussi déployer vers l’environnement Adobe Managed Services.
-
-## Vidéo sur les pipelines hors production et qualité du code uniquement
 
 ## Didacticiel vidéo {#video-tutorial-two}
 
