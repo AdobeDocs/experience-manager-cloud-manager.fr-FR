@@ -4,7 +4,7 @@ seo-title: Surveillance des environnements
 description: 'null'
 seo-description: Consultez cette page pour en savoir plus sur la surveillance du système dans Cloud Manager, en observant les instances dans un environnement et en suivant diverses mesures pour chaque instance.
 translation-type: tm+mt
-source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
+source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
 
 ---
 
@@ -49,7 +49,9 @@ L’état de chaque catégorie est une synthèse des mesures. Si une mesure d’
 >
 >Par défaut, lorsque vous accédez à cette page, les instances d’environnement de production sont visibles, mais d’autres environnements peuvent également être ouverts.
 
-## Vidéo de présentation vers les rapports {#video-reports}
+## Didacticiel vidéo {#video-tutorial}
+
+### Présentation des rapports Cloud Manager {#reports-video}
 
 Les rapports Cloud Manager fournissent une vue des environnements du programme et des instances AEM au moyen d’un ensemble de graphiques qui génèrent des rapports et effectuent le suivi de diverses mesures pour chaque instance AEM.
 Consultez la vidéo ci-dessous pour plus de détails.
