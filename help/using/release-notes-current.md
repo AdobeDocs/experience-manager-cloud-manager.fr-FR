@@ -4,7 +4,7 @@ seo-title: Notes de mise à jour d’AEM Cloud Manager pour la version 2019.1
 description: Consultez cette page pour obtenir des informations sur la version 2019.10.0 de Cloud Manager.
 seo-description: Consultez cette page pour plus d’informations sur la version 2019.10.0 d’AEM Cloud Manager.
 translation-type: tm+mt
-source-git-commit: 2028569406bcaacb27c42879a79832dec7ec91f4
+source-git-commit: 5a9d5fc71968741948c519681bcc25bb40d4da45
 
 ---
 
@@ -15,7 +15,7 @@ Pour plus d’informations, consultez les sections ci-après.
 
 ## Date de publication {#release-date}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2019.10.0 is October 12, 2019.
+The Release Date for [!UICONTROL Cloud Manager] Version 2019.10.0 is October 10, 2019.
 
 ## Nouveautés {#whats-new}
 
