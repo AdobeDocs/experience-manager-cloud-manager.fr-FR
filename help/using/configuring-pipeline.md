@@ -10,7 +10,7 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: 581e78ef4163e8e9b2b26613512b82223c214071
+source-git-commit: bc419b96554a40b84878140f8f532c9f4e10c9f3
 
 ---
 
@@ -109,9 +109,9 @@ Sélectionnez votre branche Git et cliquez **Suivant**.
 >
 >L’option **Utiliser la supervision par l’ingénieur du service client** n’est pas disponible pour tous les clients.
 
-**Approbation après le déploiement d’étape**
+**Approuver après le déploiement de l’étape**
 
-Il existe une étape facultative **Approuver après le déploiement** d’étape qui peut être configurée dans le pipeline de production.
+There is an optional step **Approve after Stage Deployment** which can be configured in the Production Pipeline.
 Cette option est activée dans une nouvelle option de l’écran de modification **du** pipeline :
 
 ![](assets/post_deployment1.png)
@@ -122,7 +122,7 @@ Il s’affiche ensuite sous la forme d’une étape distincte lors de l’exécu
 
 >[!NOTE]
 >
->**Approuver après le déploiement** d’étape fonctionne de la même manière que l’approbation avant le déploiement en production, mais ce processus se produit immédiatement après l’étape de déploiement d’étape, c’est-à-dire avant que les tests ne soient effectués, par rapport à l’approbation avant le déploiement en production, qui est effectuée une fois tous les tests terminés.
+>Les fonctions **Approbation après le déploiement dans l’environnement intermédiaire** fonctionnent de la même manière que l’approbation avant le déploiement en production, mais ce processus se produit immédiatement après l’étape de déploiement dans l’environnement intermédiaire, c’est-à-dire avant que les tests ne soient effectués, contrairement à l’approbation avant le déploiement en production, qui est effectuée une fois tous les tests terminés.
 
 **Invalidation du Dispatcher**
 
@@ -198,13 +198,13 @@ En plus du pipeline principal qui se déploie vers les environnements intermédi
 
 ### Codage et non production de Cloud Manager et qualité du code uniquement {#non-prod-video}
 
-Les pipelines de non-production CI/CD sont divisés en deux catégories : les pipelines de qualité du code et les pipelines de déploiement. La qualité du code canalise tout le code d’une branche Git pour créer et être évaluée par rapport à l’analyse de la qualité du code de Cloud Manager.
+Les pipelines CI/CD hors production sont divisés en deux catégories : les pipelines de qualité du code et les pipelines de déploiement. Les pipelines de qualité du code canalisent tout le code d’une branche Git pour génération et évaluation par rapport à l’analyse de la qualité du code de Cloud Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26316/?captions=fre_fr)
 
 Sur l’écran d’accueil, ces pipelines sont répertoriés dans une nouvelle carte :
 
-1. Accédez à la vignette **Pipelines hors production** depuis l’écran d’accueil de Cloud Manager.
+1. Access the **Non-Production Pipelines** tile from the Cloud Manager home screen.
 
    ![](assets/Configuring_Pipeline_Add-Production.png)
 
@@ -218,7 +218,7 @@ Sur l’écran d’accueil, ces pipelines sont répertoriés dans une nouvelle c
 
    * **Modifier** : permet de modifier les paramètres du pipeline.
    * **Détail** : affiche la dernière exécution du pipeline (si existante).
-   * **Génération** : permet d’accède à la page d’exécution, à partir de laquelle le pipeline peut être exécuté.
+   * **Génération** : permet d’accéder à la page d’exécution, à partir de laquelle le pipeline peut être exécuté.
    ![](assets/Configuring_Pipeline_Add-Production3.png)
 
    >[!NOTE]
