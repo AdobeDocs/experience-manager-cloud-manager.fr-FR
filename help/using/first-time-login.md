@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: Guide de démarrage
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 316ec3ec088271a6524d4c8fd4c84fd36e2ac4db
 
 ---
@@ -22,11 +22,11 @@ Une fois que vous avez terminé les configurations générales de [!UICONTROL Cl
 >
 >Selon les rôles affectés dans [!UICONTROL Cloud Manager] et l’état de l’application, vous verrez plusieurs écrans lors de l’utilisation de l’interface utilisateur de [!UICONTROL Cloud Manager].
 
-## Didacticiel vidéo {#video-tutorial-one}
+## Tutoriel vidéo {#video-tutorial-one}
 
-### Programmes Cloud Manager {#programs-video}
+### Programmes Cloud Manager {#programs-video}
 
-La vidéo suivante présente un aperçu des programmes Cloud Manager qui représentent des ensembles d’environnements AEM prenant en charge des ensembles logiques d’initiatives commerciales, généralement correspondant à un contrat de niveau de service (SLA) acheté.
+La vidéo suivante présente un aperçu des programmes Cloud Manager qui représentent des ensembles d’environnements AEM prenant en charge des ensembles logiques d’initiatives commerciales, correspondant généralement à un contrat de niveau de service (SLA) acheté.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26313/?captions=fre_fr)
 
@@ -48,12 +48,12 @@ La vidéo suivante présente un aperçu des programmes Cloud Manager qui représ
 
    >[!NOTE]
    >
-   >Please see [Setup your Program](https://helpx.adobe.com/experience-manager/cloud-manager/using/setting-up-program.html) to complete the next steps.
+   >Voir [Configuration de votre programme](https://helpx.adobe.com/experience-manager/cloud-manager/using/setting-up-program.html) pour exécuter les étapes suivantes.
 
-## Didacticiel vidéo {#video-tutorial-two}
+## Tutoriel vidéo {#video-tutorial-two}
 
-### Onglet Activité de Cloud Manager {#activity-video}
+### Onglet Activité de Cloud Manager {#activity-video}
 
-Cloud Manager fournit une vue consolidée de l’activité d’un programme, répertoriant toutes les exécutions de pipeline de CI/CD, tant en production qu’en non-production, ce qui permet de connaître l’activité passée et présente, et les détails de toute activité peuvent être examinés.
+Cloud Manager fournit une vue consolidée de l’activité d’un programme, répertoriant toutes les exécutions de pipeline CI/CD, tant en production que hors production, ce qui permet de connaître l’activité passée et présente, et permet aux détails de toute activité d’être examinés.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26313/?captions=fre_fr)
