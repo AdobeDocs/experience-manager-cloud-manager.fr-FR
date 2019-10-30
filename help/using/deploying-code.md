@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5a9d5fc71968741948c519681bcc25bb40d4da45
 
 ---
@@ -94,13 +94,13 @@ Lorsque Cloud Manager se déploie sur des topologies autres que de production, 
 1. Cloud Manager détermine si chaque artefact est un package AEM ou dispatcher.
 1. Cloud Manager supprime tous les dispatchers de l’équilibreur de charge pour isoler l’environnement pendant le déploiement.
 
-   Sauf configuration contraire, vous pouvez ignorer les modifications de l’équilibreur de charge dans les déploiements de développement et d’évaluation, c’est-à-dire détacher et attacher des étapes dans les deux pipelines hors production, pour les environnements de développement et le pipeline de production, pour les environnements d’évaluation.
+   Sauf configuration contraire, vous pouvez ignorer les modifications de l’équilibreur de charge dans les déploiements de développement et en environnement intermédiaire, c’est-à-dire détacher et attacher des étapes dans les deux pipelines hors production, pour les environnements de développement et le pipeline de production, pour les environnements intermédiaires.
 
    ![](assets/load_balancer.png)
 
    >[!NOTE]
    >
-   >Cette fonctionnalité devrait être principalement utilisée par les clients 1-1-1.
+   >Cette fonctionnalité devrait principalement être utilisée par les clients 1-1-1.
 
 1. Chaque artefact AEM est déployé sur chaque instance AEM par le biais des API de Package Manager, avec des dépendances de packages qui déterminent l’ordre de déploiement.
 
@@ -125,7 +125,7 @@ Lorsque Cloud Manager se déploie sur des topologies autres que de production, 
 
    >[!NOTE]
    >
-   >Vous pouvez ignorer les modifications de l’équilibreur de charge dans les déploiements de développement et d’étape, c’est-à-dire, détacher et attacher des étapes dans les deux pipelines hors production, pour les environnements de développement et le pipeline de production, pour les environnements d’étape.
+   >Vous pouvez ignorer les modifications de l’équilibreur de charge dans les déploiements de développement et en environnement intermédiaire, c’est-à-dire, détacher et attacher des étapes dans les deux pipelines hors production, pour les environnements de développement et le pipeline de production, pour les environnements intermédiaires.
 
 ### Phase de déploiement en production {#deployment-production-phase}
 
