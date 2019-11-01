@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 translation-type: tm+mt
-source-git-commit: f9df9c05fb708aed3f9ea91780f7a92c24e04673
+source-git-commit: bc9454120c92181503efbf8270ce621af26801d9
 
 ---
 
@@ -51,8 +51,8 @@ Une fois que vous avez configuré le **pipeline** (référentiel, environnement 
 
    Le **test dans l’environnement intermédiaire** comprend les étapes suivantes :
 
-   * Tests de sécurité : cette étape évalue l’impact de votre code d’application sur la sécurité de l’environnement AEM. Voir [Comprendre vos résultats](understand-your-test-results.md) de test pour en savoir plus sur le processus de test.
-   * Tests de performances: cette étape évalue les performances du code de votre application. Voir [Comprendre vos résultats](understand-your-test-results.md) de test pour en savoir plus sur le processus de test.
+   * Tests de sécurité : Cette étape évalue l’impact de votre code d’application sur la sécurité de l’environnement AEM. Voir [Comprendre vos résultats](understand-your-test-results.md) de test pour en savoir plus sur le processus de test.
+   * Tests de performances : Cette étape évalue les performances du code de votre application. Voir [Comprendre vos résultats](understand-your-test-results.md) de test pour en savoir plus sur le processus de test.
    ![](assets/Stage_Testing1.png)
 
    Le **déploiement en environnement de production** comprend les étapes suivantes :
