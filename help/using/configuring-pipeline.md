@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bc419b96554a40b84878140f8f532c9f4e10c9f3
 
 ---
@@ -19,11 +19,11 @@ source-git-commit: bc419b96554a40b84878140f8f532c9f4e10c9f3
 
 La page suivante explique comment configurer le **pipeline**. Pour consulter d’autres informations conceptuelles sur le fonctionnement du pipeline, voir la section [Présentation du pipeline CI/CD](ci-cd-pipeline.md).
 
-## Didacticiel vidéo {#video-tutorial-one}
+## Tutoriel vidéo {#video-tutorial-one}
 
-### Configuration du pipeline dans Cloud Manager {#config-pipeline-video}
+### Configuration du pipeline dans Cloud Manager {#config-pipeline-video}
 
-La configuration du pipeline de production CI/CD définit le déclencheur qui déclenchera le pipeline, les paramètres contrôlant le déploiement de production et les paramètres d'essai de performance.
+La configuration du pipeline de production CI/CD définit le déclencheur qui lancera le pipeline, les paramètres contrôlant le déploiement en production et les paramètres de test de performances.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26314/?captions=fre_fr)
 
@@ -111,12 +111,12 @@ Sélectionnez votre branche Git et cliquez **Suivant**.
 
 **Approuver après le déploiement de l’étape**
 
-There is an optional step **Approve after Stage Deployment** which can be configured in the Production Pipeline.
-Cette option est activée dans une nouvelle option de l’écran de modification **du** pipeline :
+Il existe une étape facultative **Approbation après déploiement dans l’environnement intermédiaire** qui peut être configurée dans le pipeline de production.
+Elle est activée dans une nouvelle option de l’écran **Modifier un pipeline** :
 
 ![](assets/post_deployment1.png)
 
-Il s’affiche ensuite sous la forme d’une étape distincte lors de l’exécution du pipeline :
+Elle s’affiche ensuite sous la forme d’une étape distincte lors de l’exécution du pipeline :
 
 ![](assets/post_deployment2.png)
 
@@ -194,9 +194,9 @@ Pour configurer les invalidations du Dispatcher, procédez comme suit :
 
 En plus du pipeline principal qui se déploie vers les environnements intermédiaire et de production, les clients peuvent configurer des pipelines supplémentaires, appelés **Pipelines hors production**. Ces pipelines exécutent toujours les étapes de génération et de qualité de code. Si besoin est, elles peuvent aussi déployer vers l’environnement Adobe Managed Services.
 
-## Didacticiel vidéo {#video-tutorial-two}
+## Tutoriel vidéo {#video-tutorial-two}
 
-### Codage et non production de Cloud Manager et qualité du code uniquement {#non-prod-video}
+### Pipelines hors production et de la qualité du code uniquement de Cloud Manager{#non-prod-video}
 
 Les pipelines CI/CD hors production sont divisés en deux catégories : les pipelines de qualité du code et les pipelines de déploiement. Les pipelines de qualité du code canalisent tout le code d’une branche Git pour génération et évaluation par rapport à l’analyse de la qualité du code de Cloud Manager.
 
@@ -204,7 +204,7 @@ Les pipelines CI/CD hors production sont divisés en deux catégories : les pip
 
 Sur l’écran d’accueil, ces pipelines sont répertoriés dans une nouvelle carte :
 
-1. Access the **Non-Production Pipelines** tile from the Cloud Manager home screen.
+1. Accédez à la vignette **Pipelines hors production** depuis l’écran d’accueil de Cloud Manager.
 
    ![](assets/Configuring_Pipeline_Add-Production.png)
 
