@@ -3,8 +3,8 @@ title: Surveillance des environnements
 seo-title: Surveillance des environnements
 description: 'null'
 seo-description: Consultez cette page pour en savoir plus sur la surveillance du système dans Cloud Manager, en observant les instances dans un environnement et en suivant diverses mesures pour chaque instance.
-translation-type: ht
-source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
+translation-type: tm+mt
+source-git-commit: 1edfbc0adb04026cd29ba93b4ba155d3b61439dc
 
 ---
 
@@ -43,7 +43,7 @@ La page d’aperçu de la surveillance du système répertorie les environnement
 
 L’état de chaque catégorie est une synthèse des mesures. Si une mesure d’une catégorie est dans un état critique, la catégorie entière est dans un état critique sur la page d’aperçu. La même synthèse peut être affichée au niveau d’un environnement et au niveau d’une instance.
 
-![](assets/Reports.png)
+![](assets/System-Monitoring-Reports.png)
 
 >[!NOTE]
 >
@@ -107,11 +107,11 @@ Par exemple, si vous cliquez sur la série de seuil d’avertissement, vous ne v
 Les clients peuvent voir les performances de leur environnement AEM de production correspondant au contrat de niveau de service auquel ils ont souscrit. Cette option est disponible dans un sous-menu de l’écran Rapports.
 Par exemple, le graphique ci-dessous illustre les résultats mensuels du contrat de niveau de service spécifique à l’année 2018.
 
-![](assets/sla-reporting1.png)
+![](assets/SLA-Reports-one.png)
 
 Comme pour les graphiques de surveillance du système, le fait de survoler un point de données affiche les valeurs correspondant à ce mois.
 
-![](assets/sla-reporting2.png)
+![](assets/SLA-Reports-two.png)
 
 La section Analyse des événements, située sous ce graphique, affiche l’ensemble des incidents survenus pour le programme au cours de l’année sélectionnée. Chaque incident comporte une période, une cause et un ensemble de commentaires.
 
