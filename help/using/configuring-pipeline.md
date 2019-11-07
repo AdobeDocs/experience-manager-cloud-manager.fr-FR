@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-translation-type: ht
-source-git-commit: bc419b96554a40b84878140f8f532c9f4e10c9f3
+translation-type: tm+mt
+source-git-commit: 06154ad565168d25e18de49c10e5944f39a293c2
 
 ---
 
@@ -58,7 +58,7 @@ Pour configurer le comportement et les préférences de votre pipeline, procéde
 
 1. Cliquez sur **Configurer le pipeline** pour configurer votre pipeline.
 
-   ![](assets/Configure_ci-cd-1.png)
+   ![](assets/Setup-Pipeline.png)
 
 1. L’écran **Configurer un pipeline** s’affiche.
 
@@ -188,7 +188,7 @@ Pour configurer les invalidations du Dispatcher, procédez comme suit :
    >
    >Une fois que vous avez configuré le pipeline, vous pouvez toujours modifier les paramètres à l’aide de la vignette **Paramètres du pipeline de production** depuis l’interface utilisateur de [!UICONTROL Cloud Manager].
 
-   ![](assets/Prod-Pipeline-Settings-Dialog.png)
+   ![](assets/Production-Pipeline.png)
 
 ## Pipelines de qualité de code et hors production uniquement
 
@@ -206,7 +206,7 @@ Sur l’écran d’accueil, ces pipelines sont répertoriés dans une nouvelle c
 
 1. Accédez à la vignette **Pipelines hors production** depuis l’écran d’accueil de Cloud Manager.
 
-   ![](assets/Configuring_Pipeline_Add-Production.png)
+   ![](assets/Non-Production-Pipeline.png)
 
 1. Cliquez sur le bouton Ajouter pour spécifier le nom du pipeline, le type de pipeline et la branche Git.
 
