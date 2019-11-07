@@ -8,8 +8,8 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: c5b39de2-3a9b-437f-98e8-e6e6249a5b3a
-translation-type: ht
-source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
+translation-type: tm+mt
+source-git-commit: 72daabd54cd6216743dfbf4d843f685b3b12b3aa
 
 ---
 
@@ -20,7 +20,7 @@ La page **Aperçu** de Cloud Manager comprend la vignette **Environnements** qui
 
 Chacun des environnements répertoriés affiche l’état associé.
 
-![](assets/Manage_Environments1.png)
+![](assets/Manage-Environments1.png)
 
 ## Tutoriel vidéo {#video-tutorial}
 
@@ -37,7 +37,7 @@ La vignette **Environnements** affiche les environnements intermédiaires et de 
 
 Le statut est l’état d’alimentation cumulée sur les nœuds de l’environnement. Il est vert si tous les nœuds sont en cours d’exécution, rouge si même un seul nœud est à l’arrêt, bleu si même un seul nœud est à venir et jaune si même un seul nœud a un état d’alimentation indisponible (dans cet ordre de priorité).
 
-![](assets/manage_environments-screen2.png)
+![](assets/Environments-card-new.png)
 
 ### Environnements {#environments}
 
@@ -49,4 +49,4 @@ L’écran **Environnements** affiche une carte pour les environnements de *prod
 >
 >Le **statut** du nœud représente l’état d’alimentation de la VM et ne reflète pas l’état d’AEM sur le serveur. L’état peut être **En cours d’exécution** (cercle vert), **Arrêté** (cercle rouge), **À venir** (cercle bleu) ou **Indisponible** (cercle jaune).
 
-![](assets/Manage_Environments2.png)
+![](assets/Environments-tab.png)
