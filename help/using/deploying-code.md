@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bc9454120c92181503efbf8270ce621af26801d9
 
 ---
@@ -43,16 +43,16 @@ Une fois que vous avez configuré le **pipeline** (référentiel, environnement 
 
    Le **déploiement en environnement intermédiaire** comprend les étapes suivantes :
 
-   * Validation : Cette étape permet de s’assurer que le pipeline est configuré pour utiliser les ressources actuellement disponibles, par exemple que la branche configurée existe, que les environnements sont disponibles.
-   * Test de la création et de l'unité : Cette étape exécute un processus de création conteneurisé. Voir [Création d’un projet](create-an-application-project.md) d’application AEM pour en savoir plus sur l’environnement de création.
-   * Analyse du code : Cette étape évalue la qualité du code de votre application. Voir [Comprendre vos résultats](understand-your-test-results.md) de test pour en savoir plus sur le processus de test.
+   * Validation : cette étape permet de s’assurer que le pipeline est configuré pour utiliser les ressources actuellement disponibles ; par exemple, la branche configurée existe, les environnements sont disponibles, etc.
+   * Test de création et d’unité : cette étape exécute un processus de création en conteneur. Pour plus d’informations sur l’environnement de création, voir [Création d’un projet d’application AEM](create-an-application-project.md).
+   * Analyse du code : cette étape évalue la qualité du code de votre application. Pour plus d’informations sur le processus de test, voir [Comprendre vos résultats de test](understand-your-test-results.md).
    * Déploiement en environnement intermédiaire.
    ![](assets/Stage_Deployment1.png)
 
    Le **test dans l’environnement intermédiaire** comprend les étapes suivantes :
 
-   * Tests de sécurité : Cette étape évalue l’impact de votre code d’application sur la sécurité de l’environnement AEM. Voir [Comprendre vos résultats](understand-your-test-results.md) de test pour en savoir plus sur le processus de test.
-   * Tests de performances : Cette étape évalue les performances du code de votre application. Voir [Comprendre vos résultats](understand-your-test-results.md) de test pour en savoir plus sur le processus de test.
+   * Tests de sécurité : cette étape évalue l’impact du code de votre application sur la sécurité de l’environnement AEM. Pour plus d’informations sur le processus de test, voir [Comprendre vos résultats de test](understand-your-test-results.md).
+   * Tests de performances : cette étape évalue les performances du code de votre application. Pour plus d’informations sur le processus de test, voir [Comprendre vos résultats de test](understand-your-test-results.md).
    ![](assets/Stage_Testing1.png)
 
    Le **déploiement en environnement de production** comprend les étapes suivantes :
