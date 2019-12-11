@@ -2,13 +2,13 @@
 title: Notifications
 seo-title: Notifications
 description: Comment les utilisateurs reçoivent des notifications dans AEM Cloud Manager
-seo-description: Consultez cette page pour découvrir comment les utilisateurs reçoivent des notifications lorsqu’un pipeline démarre et se termine, avec succès ou non, dans AEM Cloud Manager.
+seo-description: Consultez cette page pour découvrir comment les utilisateurs reçoivent des notifications lorsqu’un pipeline démarre et se termine, avec succès ou non, dans AEM Cloud Manager.
 uuid: 73e4bb80-36c1-4408-bdbd-1ac5328359d1
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 8ef574c8-47d9-404b-8e9c-9c6716c1f49a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: be0350b98c19b3b84519947c04a7e362b46bba21
 
 ---
@@ -16,7 +16,7 @@ source-git-commit: be0350b98c19b3b84519947c04a7e362b46bba21
 
 # Notifications {#notifications}
 
-[!UICONTROL Cloud Manager] permet à l’utilisateur de recevoir des notifications lorsque le pipeline de production démarre et se termine (avec succès ou non), au début d’un déploiement de production, ainsi que lorsque les étapes d’approbation **en direct et** planifiées **** sont atteintes. Ces notifications sont envoyées via le système de notification Adobe [!UICONTROL Experience Cloud].
+[!UICONTROL Cloud Manager] permet aux utilisateurs de recevoir des notifications lorsque le pipeline de production commence et se termine (avec succès ou non), au début d’un déploiement de production, ainsi que lorsque les étapes **Approbation d’activation** et **Planifié** sont atteintes. Ces notifications sont envoyées via le système de notification Adobe [!UICONTROL Experience Cloud].
 
 >[!NOTE]
 >
