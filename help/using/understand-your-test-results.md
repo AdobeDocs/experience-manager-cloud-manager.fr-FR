@@ -8,8 +8,8 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
-translation-type: ht
-source-git-commit: 26014cfabfee6226033ba2fc1167d8f5509e17c6
+translation-type: tm+mt
+source-git-commit: 1f31e654272afa60cac3376ce4dc3bc76f0d9dda
 
 ---
 
@@ -55,7 +55,7 @@ Dans le cadre du pipeline, le code source est analysé afin de garantir que les 
 
 >[!NOTE]
 >
->Pour des définitions plus détaillées, consultez [Définitions des mesures](https://docs.sonarqube.org/display/SONAR/Metric+Definitions).
+>Refer to [Metric Definitions](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) for more detailed definitions.
 
 Vous pouvez télécharger la liste des règles ici : [code-quality-rules.xlsx](/help/using/assets/CodeQuality-Rules-new.xlsx).
 
@@ -113,7 +113,6 @@ Le tableau suivant répertorie les contrôles actuels :
 | L’implémentation d’AuthorizableNodeName n’expose pas l’ID autorisable dans le nom/chemin du nœud. | Génération de nom de nœud autorisé | Critique |
 | Les mots de passe par défaut ont été modifiés. | Comptes de connexion par défaut | Critique |
 | Le servlet GET par défaut Sling est protégé contre les attaques par DOS. | Servlet Sling Get | Critique |
-| Le Dispatcher effectue correctement le filtrage des requêtes. | Configuration du Dispatcher CQ | Critique |
 | Le gestionnaire de script Java Sling est correctement configuré. | Gestionnaire de script Java Sling | Critique |
 | Le gestionnaire de script JSP Sling est correctement configuré. | Gestionnaire de script JSP Sling | Critique |
 | SSL est correctement configuré. | Configuration SSL | Critique |
