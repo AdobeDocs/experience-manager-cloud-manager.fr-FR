@@ -3,14 +3,14 @@ title: Notes de mise à jour de la version 2019.11.0
 seo-title: Notes de mise à jour d’AEM Cloud Manager pour la version 2019.11.0
 description: Consultez cette page pour obtenir des informations sur la version 2019.11.0 de Cloud Manager.
 seo-description: Consultez cette page pour plus d’informations sur la version 2019.11.0 d’AEM Cloud Manager.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1f31e654272afa60cac3376ce4dc3bc76f0d9dda
 
 ---
 
 # Notes de mise à jour de la version 2019.11.0 {#release-notes-for}
 
-La section suivante décrit les notes de mise à jour générales de la version 2019.10.0 de [!UICONTROL Cloud Manager], et ajoute des mises à jour au processus de validation de pipeline, ainsi que des améliorations au niveau des tests de performances des ressources.
+La section suivante décrit les notes de mise à jour générales de la version 2019.11.0 de [!UICONTROL Cloud Manager], et ajoute des mises à jour au processus de validation de pipeline, ainsi que des améliorations au niveau des tests de performances des ressources.
 Pour plus d’informations, consultez les sections ci-après.
 
 ## Date de publication {#release-date}
