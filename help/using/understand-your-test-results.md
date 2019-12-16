@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1f31e654272afa60cac3376ce4dc3bc76f0d9dda
 
 ---
@@ -55,13 +55,13 @@ Dans le cadre du pipeline, le code source est analysé afin de garantir que les 
 
 >[!NOTE]
 >
->Refer to [Metric Definitions](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) for more detailed definitions.
+>Pour des définitions plus détaillées, consultez [Définitions des mesures](https://docs.sonarqube.org/display/SONAR/Metric+Definitions).
 
 Vous pouvez télécharger la liste des règles ici : [code-quality-rules.xlsx](/help/using/assets/CodeQuality-Rules-new.xlsx).
 
 >[!NOTE]
 >
->Pour en savoir plus sur les règles de qualité du code personnalisé exécutées par [!UICONTROL  Cloud Manager ], reportez-vous à la section [Règles de qualité du code personnalisé](custom-code-quality-rules.md).
+>Pour en savoir plus sur les règles de qualité du code personnalisé exécutées par [!UICONTROL Cloud Manager], reportez-vous à la section [Règles de qualité du code personnalisé](custom-code-quality-rules.md).
 
 ### Traitement des faux positifs {#dealing-with-false-positives}
 
