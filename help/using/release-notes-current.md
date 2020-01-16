@@ -1,36 +1,30 @@
 ---
-title: Notes de mise à jour de la version 2019.12.0
-seo-title: Notes de mise à jour de la version 2019.12.0 d’AEM Cloud Manager
-description: Consultez cette page pour obtenir des informations sur la version 2019.12.0 de Cloud Manager.
-seo-description: Consultez cette page pour obtenir des informations sur la version 2019.12.0 d’AEM Cloud Manager.
-translation-type: ht
-source-git-commit: 1f31e654272afa60cac3376ce4dc3bc76f0d9dda
+title: Notes de mise à jour de la version 2020.1.0
+seo-title: Notes de mise à jour de la version 2020.1.0 d’AEM Cloud Manager
+description: Consultez cette page pour obtenir des informations sur la version 2020.1.0 de Cloud Manager
+seo-description: Consultez cette page pour obtenir des informations sur la version 2020.1.0 d’AEM Cloud Manager
+translation-type: tm+mt
+source-git-commit: e22345e23731cf97502e6a8654d254d68f884ba7
 
 ---
 
-# Notes de mise à jour de la version 2019.12.0 {#release-notes-for}
+# Notes de mise à jour de la version 2020.1.0 {#release-notes-for}
 
-La section suivante décrit les notes de mise à jour générales de la version 2019.12.0 de [!UICONTROL Cloud Manager], et ajoute des mises à jour à l’exécution de pipeline, ainsi que des améliorations au niveau des analyses de qualité du code.
-Pour plus d’informations, consultez les sections ci-après.
+La section suivante décrit les Notes de mise à jour générales de [!UICONTROL Cloud Manager] version 2020.1.0 et ajoute des mises à jour aux informations d’identification Git et à l’expérience de connexion.
 
 ## Date de publication {#release-date}
 
-La date de publication de la mise à jour 2019.12.0 de [!UICONTROL Cloud Manager] est le 12 décembre 2019.
+La date de publication de la mise à jour 2020.1.0 de [!UICONTROL Cloud Manager] est le jeudi 16 janvier 2020.
 
 ## Nouveautés {#whats-new}
 
-* Les étapes d’exécution de pipeline indiquent désormais l’horodatage d’achèvement de chaque étape.
-* Les analyses de qualité du code pour les projets qui ne contiennent pas de code Java indiquent désormais un taux de couverture du code de 100 %.
-* Le contrôle de l’intégrité de la configuration du Dispatcher CQ a été supprimé.
+* Vous pouvez désormais obtenir des informations d’identification Git à partir de l’interface utilisateur de Cloud Manager. Consultez [Accès au Git](/help/using/accessing-git.md) pour plus d’informations.
+* L’expérience de connexion et la structure des URL ont changé dans le cadre d’une initiative à l’échelle d’Adobe. Les anciens signets redirigent vers les nouvelles URL.
 
 
 ## Correctifs {#bug-fixes}
 
-* Les dates ne s’affichaient pas correctement dans certains navigateurs.
-* Dans de rares cas, le pipeline de production passait à l’étape d’approbation alors que les tests de performances étaient toujours en cours d’exécution.
-* Dans certains états, les boutons situés en haut de la page d’aperçu n’étaient pas correctement alignés.
-* Dans certaines circonstances, des utilisateurs non autorisés voyaient un bouton pour démarrer le pipeline sans pouvoir cliquer dessus.
-* Les boutons d’action pour les pipelines hors production s’affichaient parfois au mauvais endroit.
-* Les modules présentant le type de nœud granite:Ranking ne pouvaient pas être analysés pour détecter certaines violations de règles de qualité.
-* Certaines défaillances du processus de qualité du code étaient comptées comme des bogues de manière erronée.
-* Il était impossible de charger les données de surveillance pour certaines topologies.
+* Les déploiements vers des topologies exclusivement créées n’ont pas déployé les modifications de configuration du répartiteur.
+* Dans certaines configurations, un pipeline de qualité de code uniquement n’a pas pu être créé.
+* La carte de résumé de l’environnement sur la page d’aperçu ne s’affichait pas toujours correctement.
+* Les exécutions de pipeline peuvent expirer sur les grandes topologies.
