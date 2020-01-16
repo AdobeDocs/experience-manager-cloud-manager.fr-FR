@@ -6,15 +6,15 @@ seo-description: Vous pouvez affecter des rôles spécifiques en ajoutant un uti
 uuid: fa204c28-83df-48bb-8360-e158f080dee7
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: conditions requises
+topic-tags: requirements
 discoiquuid: 1b421993-22c3-4de0-ba64-c1080d07ad5e
 translation-type: tm+mt
-source-git-commit: 73203dca7b20570103af429cf933610941b787be
+source-git-commit: a96500b57c980d31d3a70341d8be7b92ae73a1c5
 
 ---
 
 
-# Ajout d’utilisateurs et de rôles{#add-users-and-roles}
+# Ajout d’utilisateurs et de rôles {#add-users-and-roles}
 
 La plupart des fonctionnalités de [!UICONTROL Cloud Manager] nécessitent des autorisations spécifiques. Par exemple, seuls certains utilisateurs sont autorisés à définir les indicateurs de performance clés (IPC) d’un programme. Ces autorisations sont regroupées de manière logique en rôles.
 
@@ -41,16 +41,10 @@ Le tableau suivant résume les rôles :
 |--- |--- |
 | Propriétaire de l’entreprise | Est responsable de la définition des ICP, approuve les déploiements en production et contourne les échecs de trois niveaux. |
 | Responsable de programme | Utilise [!UICONTROL Cloud Manager] pour configurer les équipes et passer en revue les statuts et les IPC. Peut approuver des échecs importants de 3 niveaux. |
-| Responsable de déploiement | Gère les opérations de déploiement. Utilise [!UICONTROL Cloud Manager] pour exécuter les déploiements dans les environnements intermédiaires/de production. Peut modifier les pipelines CI/CD. Peut approuver des échecs importants de 3 niveaux. Peut accéder au référentiel Git. Contactez l’ingénieur du service client/représentant AMS pour le demander. |
-| Développeur | Développe et teste du code d’application personnalisé. Utilise principalement [!UICONTROL Cloud Manager] pour consulter les statuts. Doit avoir accès au référentiel Git pour la validation du code. Contactez l’ingénieur du service client/représentant AMS lorsque vous ajoutez un utilisateur bénéficiant de ce rôle pour accorder l’accès au référentiel Git. |
+| Responsable de déploiement | Gère les opérations de déploiement. Utilise [!UICONTROL Cloud Manager] pour exécuter les déploiements dans les environnements intermédiaires/de production. Peut modifier les pipelines CI/CD. Peut approuver des échecs importants de 3 niveaux. Peut accéder au référentiel Git. |
+| Développeur | Développe et teste du code d’application personnalisé. Utilise principalement [!UICONTROL Cloud Manager] pour consulter les statuts. Peut accéder au référentiel Git pour la validation de code. |
 | Ingénieur du service client | Prend en charge généralement les stratégies du service client pour les clients AMS. Interagit avec [!UICONTROL Cloud Manager] dans le but d’exécuter des déploiements nécessitant la supervision de l’ingénieur du service client. |
 | Auteur de contenu | N’interagit généralement pas avec [!UICONTROL Cloud Manager]. Peut utiliser le commutateur de programmes de [!UICONTROL Cloud Manager] (depuis [!UICONTROL Experience Cloud]) pour accéder à AEM. |
-
->[!NOTE]
->
->L’accès au référentiel Git de [!UICONTROL Cloud Manager] est géré par l’ingénieur du service client. Contactez-le pour ajouter et supprimer des utilisateurs.
->
->Si un utilisateur nouvellement ajouté doit accéder au référentiel Git, vous devez contacter l’ingénieur du service client/représentant AMS pour que l’accès soit accordé. Ces rôles ne fournissent pas d’accès automatique au référentiel Git. Seuls 3 utilisateurs aux maximum peuvent disposer d’un accès au référentiel Git.
 
 ## Utilisation d’Admin Console pour créer un profil {#using-admin-console-to-create-a-profile}
 
