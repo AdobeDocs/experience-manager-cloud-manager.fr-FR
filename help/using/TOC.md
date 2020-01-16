@@ -3,8 +3,8 @@ product: adobe experience manager
 sub-product: experience manager cloud manager
 archetype: administrator
 user-guide-title: Experience Manager Cloud Manager Help
-translation-type: ht
-source-git-commit: 1f31e654272afa60cac3376ce4dc3bc76f0d9dda
+translation-type: tm+mt
+source-git-commit: e22345e23731cf97502e6a8654d254d68f884ba7
 
 ---
 
@@ -41,12 +41,14 @@ source-git-commit: 1f31e654272afa60cac3376ce4dc3bc76f0d9dda
    + [Règles de qualité du code personnalisé](custom-code-quality-rules.md)
 + Gestion du code {#managing-code}
    + [Gestion des versions du projet Maven](activating-maven-project.md)
+   + [Accès à Git](accessing-git.md)
    + [Intégration à Git](setup-cloud-manager-git-integration.md)
 + Assistant de mise à jour du produit {#product-update-wizard}
    + [Présentation](overview-productupdate-wizard.md)
    + [Évaluation](evaluation.md)
 + Notes de mise à jour {#release-notes}
-   + [Notes de mise à jour actuelles (2019.12.0)](release-notes-current.md)
+   + [Notes de mise à jour actuelles (2020.1.0)](release-notes-current.md)
+   + [Notes de mise à jour de la version 2019.12.0](release-notes-2019-12-0.md)
    + [Notes de mise à jour de la version 2019.11.0](release-notes-2019-11-0.md)
    + [Notes de mise à jour de la version 2019.10.0](release-notes-2019-10-0.md)
    + [Notes de mise à jour de la version 2019.9.0](release-notes-2019-9-0.md)
