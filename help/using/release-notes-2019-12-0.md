@@ -4,9 +4,10 @@ seo-title: Notes de mise à jour de la version 2019.12.0 d’AEM Cloud Manage
 description: Consultez cette page pour obtenir des informations sur la version 2019.12.0 de Cloud Manager.
 seo-description: Consultez cette page pour obtenir des informations sur la version 2019.12.0 d’AEM Cloud Manager.
 translation-type: tm+mt
-source-git-commit: a96500b57c980d31d3a70341d8be7b92ae73a1c5
+source-git-commit: 0fa1fedccb013e82c8df5838a612ce26a1efb7e8
 
 ---
+
 
 # Notes de mise à jour de la version 2019.12.0 {#release-notes-for}
 
@@ -22,7 +23,6 @@ La date de publication de la mise à jour 2019.12.0 de [!UICONTROL Cloud Manage
 * Les étapes d’exécution de pipeline indiquent désormais l’horodatage d’achèvement de chaque étape.
 * Les analyses de qualité du code pour les projets qui ne contiennent pas de code Java indiquent désormais un taux de couverture du code de 100 %.
 * Le contrôle de l’intégrité de la configuration du Dispatcher CQ a été supprimé.
-
 
 ## Correctifs {#bug-fixes}
 
