@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: requirements
 discoiquuid: 1b421993-22c3-4de0-ba64-c1080d07ad5e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a96500b57c980d31d3a70341d8be7b92ae73a1c5
 
 ---
@@ -42,7 +42,7 @@ Le tableau suivant résume les rôles :
 | Propriétaire de l’entreprise | Est responsable de la définition des ICP, approuve les déploiements en production et contourne les échecs de trois niveaux. |
 | Responsable de programme | Utilise [!UICONTROL Cloud Manager] pour configurer les équipes et passer en revue les statuts et les IPC. Peut approuver des échecs importants de 3 niveaux. |
 | Responsable de déploiement | Gère les opérations de déploiement. Utilise [!UICONTROL Cloud Manager] pour exécuter les déploiements dans les environnements intermédiaires/de production. Peut modifier les pipelines CI/CD. Peut approuver des échecs importants de 3 niveaux. Peut accéder au référentiel Git. |
-| Développeur | Développe et teste du code d’application personnalisé. Utilise principalement [!UICONTROL Cloud Manager] pour consulter les statuts. Peut accéder au référentiel Git pour la validation de code. |
+| Développeur | Développe et teste du code d’application personnalisé. Utilise principalement [!UICONTROL Cloud Manager] pour consulter les statuts. Peut accéder au référentiel Git pour la validation du code. |
 | Ingénieur du service client | Prend en charge généralement les stratégies du service client pour les clients AMS. Interagit avec [!UICONTROL Cloud Manager] dans le but d’exécuter des déploiements nécessitant la supervision de l’ingénieur du service client. |
 | Auteur de contenu | N’interagit généralement pas avec [!UICONTROL Cloud Manager]. Peut utiliser le commutateur de programmes de [!UICONTROL Cloud Manager] (depuis [!UICONTROL Experience Cloud]) pour accéder à AEM. |
 
@@ -50,7 +50,7 @@ Le tableau suivant résume les rôles :
 
 Les rôles sont gérés pour [!UICONTROL Cloud Manager] à partir d’Adobe Admin Console. Des rôles spécifiques sont fournis en ajoutant un utilisateur à un profil de produit [!UICONTROL Cloud Manager] dans Admin Console.
 
-Vous pouvez affecter des rôles spécifiques en ajoutant un utilisateur à un [!UICONTROL Profil de produit] **Cloud Manager** dans Adobe Admin Console, un emplacement central pour gérer les droits Adobe dans l’ensemble de l’organisation. Pour en savoir plus sur Adobe Admin Console, consultez la documentation de [Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html).
+Vous pouvez affecter des rôles spécifiques en ajoutant un utilisateur à un **Profil de produit** [!UICONTROL Cloud Manager] dans Adobe Admin Console, un emplacement central pour gérer les droits Adobe dans l’ensemble de l’organisation. Pour en savoir plus sur Adobe Admin Console, consultez la documentation d’[Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html).
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ Pour accorder les autorisations appropriées basées sur les rôles aux utilisat
 * Développeur
 * Responsable de programme
 
-You can create, or add, users/groups to these Product Profiles with the [Admin Console](https://adminconsole.adobe.com/) for [!UICONTROL Cloud Manager], as shown in the figure below:
+Vous pouvez créer, ou ajouter, des utilisateurs/groupes à ces profils de produit avec [Admin Console](https://adminconsole.adobe.com/) pour [!UICONTROL Cloud Manager], comme illustré dans la figure ci-dessous :
 
 1. Connectez-vous à Admin Console et cliquez sur **Nouveau profil** pour ajouter un nouveau profil.
 
