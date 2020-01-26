@@ -1,9 +1,9 @@
 ---
 title: Accès à Git
 seo-title: Accès à Git
-description: Cette page décrit comment accéder au référentiel Git et le gérer.
-seo-description: Suivez cette page pour apprendre à accéder à votre référentiel Git et à le gérer.
-translation-type: tm+mt
+description: Cette page vous explique comment accéder au référentiel Git et le gérer.
+seo-description: Consultez cette page pour découvrir comment accéder à votre référentiel Git et le gérer.
+translation-type: ht
 source-git-commit: 027408326960153963d2e8604dc0ed33d921df66
 
 ---
@@ -11,24 +11,24 @@ source-git-commit: 027408326960153963d2e8604dc0ed33d921df66
 
 # Accès à Git {#accessing-git}
 
-Vous pouvez accéder à votre référentiel Git et le gérer à l’aide de la gestion de compte Git en libre-service à partir de l’interface utilisateur de Cloud Manager.
+Vous pouvez accéder à votre référentiel Git et le gérer à l’aide de la gestion de compte Git en libre-service à partir de l’interface utilisateur de Cloud Manager.
 
-## Utilisation De La Gestion De Compte Git En Libre-Service {#self-service-git}
+## Utilisation de la gestion de compte Git en libre-service {#self-service-git}
 
-Utilisez le bouton **Gérer l’extraction** disponible dans l’interface utilisateur de Cloud Manager, principalement sur la carte du pipeline.
+Utilisez le bouton **Gérer Git** disponible dans l’interface utilisateur de Cloud Manager, bien en vue sur la carte du pipeline.
 
-1. Accédez à la page Aperçu *du* programme et à la carte Pipelines.
+1. Accédez à la page *Aperçu du programme* et à la carte Pipelines.
 
-1. Vous verrez l’option **Gérer Git** pour accéder à votre référentiel Git et le gérer.
+1. L’option **Gérer Git** permettant d’accéder à votre référentiel Git et de le gérer est alors visible.
 
    ![](assets/manage-git1.png)
 
-   De plus, si vous sélectionnez l’onglet **Conduite hors production** , vous verrez également l’option **Gérer Git** .
+   Si vous sélectionnez l’onglet de pipeline **Hors production**, l’option **Gérer Git** est également disponible à cet endroit.
 
    ![](assets/manage-git-new2.png)
 
 >[!NOTE]
->L’option **Gérer Git** est visible par les utilisateurs dans le rôle Développeur ou Gestionnaire de déploiement. Cliquez sur ce bouton pour ouvrir une boîte de dialogue qui permet à l’utilisateur de trouver l’URL de son référentiel Git Cloud Manager, ainsi que son nom d’utilisateur et son mot de passe.
+>L’option **Gérer Git** est visible par les utilisateurs avec le rôle Développeur ou Gestionnaire de déploiement. Lorsque l’utilisateur clique sur ce bouton, il accède à une boîte de dialogue qui lui permet de trouver l’URL de son référentiel Git Cloud Manager, ainsi que son nom d’utilisateur et son mot de passe.
 
 ![](assets/manage-git3.png)
 
