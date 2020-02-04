@@ -7,11 +7,11 @@ uuid: 763ddb24-05cd-463f-8d72-a2e69bbe6b7e
 topic-tags: introduction
 discoiquuid: 1cdb76eb-1a91-4689-8579-0fa9fccc0592
 translation-type: tm+mt
-source-git-commit: 949d3cf0239a02875ba4ad1888e081f104dec2e2
+source-git-commit: 2d7b18ea55e2bd5879cf8bd896cafed4d46c0011
 
 ---
 
-
+SHANKARI_TEST_CHANGE
 # Pipeline CI/CD {#ci-cd-pipeline}
 
 ## Présentation du pipeline {#pipeline-overview}
@@ -65,4 +65,4 @@ Voici un exemple d’analyse de code avec des problèmes identifiés au niveau d
 
 ### Configuration des points de contrôle {#how-to-setup-gates}
 
-Voir **[Configuration de points de contrôle](configuring-pipeline.md)** pour obtenir plus d’informations sur la configuration de votre code et sur les points de contrôle de performance et de qualité.
+Voir **[Configuration de points de contrôle](configuring-pipeline.md)**pour obtenir plus d’informations sur la configuration de votre code et sur les points de contrôle de performance et de qualité.
