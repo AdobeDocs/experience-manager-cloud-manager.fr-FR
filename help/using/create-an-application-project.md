@@ -6,10 +6,10 @@ seo-description: Consultez cette page pour en savoir plus sur la configuration d
 uuid: 7b976ebf-5358-49d8-a58d-0bae026303fa
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: Guide de démarrage
+topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
-translation-type: ht
-source-git-commit: 8daee34e6cfaddb31fc447f64de9ce5ca7ed54ba
+translation-type: tm+mt
+source-git-commit: dd892ddb2ac2d003229f5a9e2c8e0013b0f11e1b
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: 8daee34e6cfaddb31fc447f64de9ce5ca7ed54ba
 
 Lorsque les clients se connectent à Cloud Manager, ils reçoivent un référentiel git vide. Les clients Adobe Managed Services (AMS) actuels (ou clients AEM sur site qui migrent vers AMS) auront généralement déjà leur code de projet dans git (ou un autre système de contrôle de version) et importeront leur projet dans le référentiel git Cloud Manager. Toutefois, les nouveaux clients n’ont pas de projets existants.
 
-Pour faciliter la prise en main des nouveaux clients, Cloud Manager peut désormais créer un projet AEM minimal comme point de départ. Ce processus est basé sur l’[**AEM Project Archetype**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
+Pour faciliter la prise en main des nouveaux clients, Cloud Manager peut désormais créer un projet AEM minimal comme point de départ. Ce processus est basé sur l’[**AEM Project Archetype **](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
 
 <!-- 
 
@@ -38,6 +38,7 @@ Suivez les étapes ci-dessous pour créer un projet d’application AEM dans Clo
 
    ![](assets/image2018-10-3_14-29-44.png)
 
+[Shankari] , la deuxième étape décrite ci-dessous est incorrecte. supprimez-le, je vous prie.
 1. Cliquez sur **Créer** pour accéder à l’écran **Configuration du pipeline**.
 
    ![](assets/image2018-10-3_14-30-22.png)
@@ -90,9 +91,9 @@ Last Modified Date: 2018-10-08T09:20:10.106-0400
 
 ## Détails de l’environnement de génération {#build-environment-details}
 
-Cloud Manager crée et teste votre code à l'aide d'un environnement de création spécialisé. Cet environnement comporte les attributs suivants :
+Cloud Manager crée et teste votre code à l&#39;aide d&#39;un environnement de création spécialisé. Cet environnement comporte les attributs suivants :
 
-* L'environnement de création est basé sur Linux, dérivé de Ubuntu 18.04.
+* L&#39;environnement de création est basé sur Linux, dérivé de Ubuntu 18.04.
 * Apache Maven 3.6.0 est installé.
 * La version Java installée est Oracle JDK 8u202.
 * D’autres packages système nécessaires sont installés :
@@ -103,7 +104,7 @@ Cloud Manager crée et teste votre code à l'aide d'un environnement de créatio
    * imagemagick
    * graphicsmagick
 
-* D'autres packages peuvent être installés au moment de la création, comme décrit [ci-dessous](#installing-additional-system-packages).
+* D&#39;autres packages peuvent être installés au moment de la création, comme décrit [ci-dessous](#installing-additional-system-packages).
 * Chaque génération a lieu dans un environnement vierge ; le conteneur de génération ne conserve aucun état entre les exécutions.
 * Maven est toujours exécuté avec la commande : *mvn --batch-mode clean org.jacoco:jacoco-maven-plugin:prepare-agent package*.
 * Maven est configuré au niveau du système avec un fichier settings.xml qui inclut automatiquement le référentiel public Adobe **Artifact**. (Pour plus d’informations, consultez le [référentiel Maven public d’Adobe](https://repo.adobe.com/)).
@@ -121,7 +122,7 @@ Pour la prise en charge, Cloud Manager ajoute ces variables d’environnement s
 
 | **Nom de variable** | **Définition** |
 |---|---|
-| CM_BUILD | Toujours définie sur "true" |
+| CM_BUILD | Toujours définie sur &quot;true&quot; |
 | BRANCHE | Branche configurée pour l’exécution |
 | CM_PIPELINE_ID | Identifiant numérique de pipeline |
 | CM_PIPELINE_NAME | Nom du pipeline |
@@ -234,7 +235,7 @@ Si vous souhaitez générer un message de sortie simple uniquement lorsque la g�
 
 ## Installation de packages système supplémentaires {#installing-additional-system-packages}
 
-Certaines versions nécessitent d'autres packages système pour fonctionner entièrement. Par exemple, une version peut appeler un script Python ou ruby et, par conséquent, doit se voir installer un interprète de langue approprié. Pour ce faire, appelez le plug-in [exec-maven-plugin](https://www.mojohaus.org/exec-maven-plugin/) pour invoquer APT. Cette exécution doit généralement être encapsulée dans un profil Maven spécifique à Cloud Manager. Par exemple, pour installer Python :
+Certaines versions nécessitent d&#39;autres packages système pour fonctionner entièrement. Par exemple, une version peut appeler un script Python ou ruby et, par conséquent, doit se voir installer un interprète de langue approprié. Pour ce faire, appelez le plug-in [exec-maven-plugin](https://www.mojohaus.org/exec-maven-plugin/) pour invoquer APT. Cette exécution doit généralement être encapsulée dans un profil Maven spécifique à Cloud Manager. Par exemple, pour installer Python :
 
 ```xml
         <profile>
@@ -291,7 +292,7 @@ Cette même technique peut être utilisée pour installer des packages spécifiq
 
 >[!NOTE]
 >
->Installer un package système de cette manière ne l'installe **pas** dans l'environnement d'exécution utilisé pour exécuter Adobe Experience Manager. Si vous avez besoin d'installer un package système dans l'environnement AEM, contactez vos ingénieurs de la réussite client (CSE).
+>Installer un package système de cette manière ne l&#39;installe **pas** dans l&#39;environnement d&#39;exécution utilisé pour exécuter Adobe Experience Manager. Si vous avez besoin d&#39;installer un package système dans l&#39;environnement AEM, contactez vos ingénieurs de la réussite client (CSE).
 
 ## Omission des modules de contenu{#skipping-content-packages}
 
