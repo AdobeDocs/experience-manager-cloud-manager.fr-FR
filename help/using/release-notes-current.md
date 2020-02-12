@@ -1,30 +1,34 @@
 ---
-title: Notes de mise à jour de la version 2020.1.0
-seo-title: Notes de mise à jour de la version 2020.1.0 d’AEM Cloud Manager
-description: Consultez cette page pour obtenir des informations sur la version 2020.1.0 de Cloud Manager
-seo-description: Consultez cette page pour obtenir des informations sur la version 2020.1.0 d’AEM Cloud Manager
-translation-type: ht
-source-git-commit: e22345e23731cf97502e6a8654d254d68f884ba7
+title: Notes de mise à jour de la version 2020.2.0
+seo-title: Notes de mise à jour de la version 2020.2.0 d’AEM Cloud Manager
+description: Consultez cette page pour obtenir des informations sur la version 2020.2.0 de Cloud Manager
+seo-description: Consultez cette page pour obtenir des informations sur la version 2020.2.0 d’AEM Cloud Manager
+translation-type: tm+mt
+source-git-commit: 854c09878a633bd46e4d7e9d604a8335c225a1c4
 
 ---
 
 # Notes de mise à jour de la version 2020.1.0 {#release-notes-for}
 
-La section suivante décrit les notes de mise à jour générales de la version 2020.1.0 de [!UICONTROL Cloud Manager], et ajoute des mises à jour relatives à l’accès aux informations d’identification Git et à l’expérience de connexion.
+La section suivante décrit les notes de mise à jour générales de la version 2020.2.0 de [!UICONTROL Cloud Manager], et ajoute des mises à jour relatives à l’accès aux informations d’identification Git et à l’expérience de connexion.
 
 ## Date de publication {#release-date}
 
-La date de publication de la mise à jour 2020.1.0 de [!UICONTROL Cloud Manager] est le jeudi 16 janvier 2020.
+The Release Date for [!UICONTROL Cloud Manager] Version 2020.2.0 is February 13, 2020.
 
 ## Nouveautés {#whats-new}
 
-* Vous pouvez désormais obtenir des informations d’identification Git à partir de l’interface utilisateur de Cloud Manager. Pour plus d’informations, voir [Accès à Git](/help/using/accessing-git.md).
-* La modification de l’expérience de connexion et de la structure des URL s’inscrit dans un programme global initié par Adobe. Les anciens signets redirigent les utilisateurs vers les nouvelles URL.
-
+* La version de l’archétype d’Adobe Experience Manager a été mise à jour vers la version 22.
+* Ajout d’instances actives dans les journaux de déploiement d’étape
+* Les URL utilisées dans les notifications Experience Cloud ont été optimisées afin d’éviter une redirection supplémentaire.
+* Les étapes d’exécution du pipeline qui ont expiré indiquent maintenant explicitement ceci.
+* L’étape d’analyse du code comporte désormais un journal téléchargeable.
+* L’étape Tests de sécurité comporte désormais un journal téléchargeable.
+* La liste des pages consultées pendant les tests de performances est maintenant téléchargeable.
+* La feuille de calcul contenant les problèmes détectés lors de l’analyse du code comporte désormais une colonne avec un lien vers la documentation de la règle spécifique.
+* Si l’étape Tests de performances ne démarre pas, la raison de l’échec est maintenant affichée.
 
 ## Correctifs {#bug-fixes}
 
-* Les déploiements vers des topologies de type Auteur uniquement ne déployaient pas les modifications de configuration du Dispatcher.
-* Dans certaines configurations, la création d’un pipeline de type Qualité de code uniquement s’avérait impossible.
-* La carte de résumé de l’environnement sur la page d’aperçu ne s’affichait pas toujours correctement.
-* Les exécutions de pipeline pouvaient expirer sur les topologies de grande taille.
+* Les stratégies de sécurité du navigateur empêchaient parfois certains boutons de l’écran d’exécution du pipeline de fonctionner correctement.
+* Les liens Aperçu, Environnements et Activité étaient parfois disponibles sur la page d’entrée de Cloud Manager.
