@@ -4,13 +4,13 @@ seo-title: Notes de mise à jour de la version 2020.2.0 d’AEM Cloud Manager
 description: Consultez cette page pour obtenir des informations sur la version 2020.2.0 de Cloud Manager
 seo-description: Consultez cette page pour obtenir des informations sur la version 2020.2.0 d’AEM Cloud Manager
 translation-type: tm+mt
-source-git-commit: 854c09878a633bd46e4d7e9d604a8335c225a1c4
+source-git-commit: f9c8c1d7b63749e6994481324392aee7330046fb
 
 ---
 
 # Notes de mise à jour de la version 2020.1.0 {#release-notes-for}
 
-La section suivante décrit les notes de mise à jour générales de la version 2020.2.0 de [!UICONTROL Cloud Manager], et ajoute des mises à jour relatives à l’accès aux informations d’identification Git et à l’expérience de connexion.
+La section ci-dessous présente les notes générales de mise à jour de la version 2020.2.0 de [!UICONTROL Cloud Manager].
 
 ## Date de publication {#release-date}
 
