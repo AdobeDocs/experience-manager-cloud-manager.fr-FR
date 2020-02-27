@@ -3,18 +3,18 @@ title: Notes de mise à jour de la version 2020.1.0
 seo-title: Notes de mise à jour de la version 2020.1.0 d’AEM Cloud Manager
 description: Consultez cette page pour obtenir des informations sur la version 2020.1.0 de Cloud Manager
 seo-description: Consultez cette page pour obtenir des informations sur la version 2020.1.0 d’AEM Cloud Manager
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 854c09878a633bd46e4d7e9d604a8335c225a1c4
 
 ---
 
 # Notes de mise à jour de la version 2020.1.0 {#release-notes-for}
 
-La section suivante décrit les notes de mise à jour générales de la version 2020.1.0 de [!UICONTROL Cloud Manager], et ajoute des mises à jour relatives à l’accès aux informations d’identification Git et à l’expérience de connexion.
+La section suivante décrit les notes de mise à jour générales de la version 2020.1.0 de [!UICONTROL Cloud Manager], et ajoute des mises à jour relatives à l’accès aux informations d’identification Git et à l’expérience de connexion.
 
 ## Date de publication {#release-date}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2020.1.0 is January 16, 2020.
+La date de publication de la mise à jour 2020.1.0 de [!UICONTROL Cloud Manager] est le jeudi 16 janvier 2020.
 
 ## Nouveautés {#whats-new}
 
