@@ -6,7 +6,7 @@ seo-description: Consultez cette section pour en savoir plus sur le pipeline CI/
 uuid: 763ddb24-05cd-463f-8d72-a2e69bbe6b7e
 topic-tags: introduction
 discoiquuid: 1cdb76eb-1a91-4689-8579-0fa9fccc0592
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8580cec50ac5dafb4e2525371a39d58c82f1cbc9
 
 ---
@@ -32,13 +32,13 @@ Le tableau suivant détaille ce qui se passe à chaque étape du processus :
 |---|---|
 | 1. Démarrage d’une version | Un responsable de déploiement déclenche une version manuellement, avec une validation Git ou selon une planification récurrente. |
 | 2. Création d’une balise de version | [!UICONTROL Cloud Manager] crée une balise Git pour marquer la version à l’aide d’un numéro de version généré automatiquement. Par exemple : 2018.531.245527.0000001222 |
-| 3. Génération de l’application avec la version générée automatiquement | [!UICONTROL Cloud Manager] crée l’application avec le numéro de version nouvellement attribué. |
+| 3. Génération de l’application avec la version générée automatiquement | [!UICONTROL Cloud Manager] génère l’application avec le numéro de version nouvellement attribué. |
 | 4. Évaluation de la qualité du code | [!UICONTROL Cloud Manager] analyse le code source et fournit un résumé avant que le code puisse être déployé dans l’environnement intermédiaire. |
 | 5. Artefact(s) avec version(s) stocké(s) | Les artefacts de version sont stockés pour une utilisation ultérieure dans les étapes de déploiement. |
 | 6. Déploiement automatique du ou des artefacts à l’étape AMS AEM | L’artefact de version est déployé dans l’environnement intermédiaire. |
 | 7. Déclenchement des tests automatisés | [!UICONTROL Cloud Manager] exécute les tests de performances et de sécurité sur l’artefact. |
 | 8. Déploiement en production | Une fois les tests automatisés terminés, [!UICONTROL Cloud Manager] démarre le déploiement en production. |
-| 9. [!UICONTROL Cloud Manager] gets Artifacts(s) to Deploy | [!UICONTROL Cloud Manager] extrait les artefacts de version stockés. |
+| 9. [!UICONTROL Cloud Manager] reçoit des artefacts à déployer | [!UICONTROL Cloud Manager] extrait les artefacts de version stockés. |
 | 10. Déploiement du ou des artefacts en production | Les artefacts de version sont déployés dans l’environnement de production. |
 
 ### Configuration d’un pipeline CI/CD {#how-to-setup-a-ci-cd-pipeline}
