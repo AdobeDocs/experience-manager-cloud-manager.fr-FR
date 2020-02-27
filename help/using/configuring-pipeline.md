@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fb84c2d41c76c64fc0be1e9f86356ee0cb5bcf9c
 
 ---
@@ -25,7 +25,7 @@ La page suivante explique comment configurer le **pipeline**. Pour consulter d�
 
 La configuration du pipeline de production CI/CD définit le déclencheur qui lancera le pipeline, les paramètres contrôlant le déploiement en production et les paramètres de test de performances.
 
->[!VIDEO](https://video.tv.adobe.com/v/26314/)
+>[!VIDEO](https://video.tv.adobe.com/v/26314/?captions=fre_fr)
 
 
 ## Présentation du flux {#understanding-the-flow}
@@ -50,7 +50,7 @@ Avant de commencer le déploiement du code, vous devez configurer les paramètre
 >
 >Vous pouvez modifier les paramètres du pipeline après la configuration initiale.
 
-### Configuring the Pipeline Settings from [!UICONTROL Cloud Manager] {#configuring-the-pipeline-settings-from-cloud-manager}
+### Configuration des paramètres du pipeline à partir de [!UICONTROL Cloud Manager] {#configuring-the-pipeline-settings-from-cloud-manager}
 
 Une fois que vous avez configuré votre programme à l’aide de l’interface utilisateur de [!UICONTROL Cloud Manager], vous êtes prêt à configurer votre pipeline.
 
@@ -185,7 +185,7 @@ Pour configurer les invalidations du Dispatcher, procédez comme suit :
 
    >[!NOTE]
    >
-   >Une fois que vous avez configuré le pipeline, vous pouvez toujours modifier les paramètres à l’aide de la vignette **Paramètres du pipeline de production** depuis l’interface utilisateur de [!UICONTROL Cloud Manager].
+   >Une fois que vous avez configuré le pipeline, vous pouvez toujours modifier les paramètres à l’aide de la vignette **Paramètres du pipeline de production** depuis l’interface utilisateur de [!UICONTROL Cloud Manager].
 
    ![](assets/Production-Pipeline.png)
 
@@ -199,7 +199,7 @@ En plus du pipeline principal qui se déploie vers les environnements intermédi
 
 Les pipelines CI/CD hors production sont divisés en deux catégories : les pipelines de qualité du code et les pipelines de déploiement. Les pipelines de qualité du code canalisent tout le code d’une branche Git pour génération et évaluation par rapport à l’analyse de la qualité du code de Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/26316/)
+>[!VIDEO](https://video.tv.adobe.com/v/26316/?captions=fre_fr)
 
 Sur l’écran d’accueil, ces pipelines sont répertoriés dans une nouvelle carte :
 
