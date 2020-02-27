@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dd892ddb2ac2d003229f5a9e2c8e0013b0f11e1b
 
 ---
@@ -38,7 +38,7 @@ Suivez les étapes ci-dessous pour créer un projet d’application AEM dans Clo
 
    ![](assets/image2018-10-3_14-29-44.png)
 
-[Shankari] , la deuxième étape décrite ci-dessous est incorrecte. supprimez-le, je vous prie.
+[Shankari], la deuxième étape décrite ci-dessous est incorrecte. Merci de la supprimer.
 1. Cliquez sur **Créer** pour accéder à l’écran **Configuration du pipeline**.
 
    ![](assets/image2018-10-3_14-30-22.png)
@@ -50,7 +50,7 @@ Suivez les étapes ci-dessous pour créer un projet d’application AEM dans Clo
    * **Nouveau nom de branche** : par défaut, il s’agit d’un *gabarit*.
    ![](assets/screen_shot_2018-10-08at55825am.png)
 
-   La boîte de dialogue comporte un tiroir qui peut être ouvert en cliquant sur la poignée vers le bas de la boîte de dialogue. Dans le formulaire développé, la boîte de dialogue affiche tous les paramètres de configuration d’Archetype. La plupart de ces paramètres comportent des valeurs par défaut générées en fonction du **titre**.
+   La boîte de dialogue comporte un tiroir qui peut être ouvert en cliquant sur la poignée vers le bas de la boîte de dialogue. Sous sa forme développée, la boîte de dialogue affiche tous les paramètres de configuration d’Archetype. La plupart de ces paramètres comportent des valeurs par défaut générées en fonction du **titre**.
 
    ![](assets/screen_shot_2018-10-08at60032am.png)
 
