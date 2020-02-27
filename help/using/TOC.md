@@ -4,7 +4,7 @@ sub-product: experience manager cloud manager
 archetype: administrator
 user-guide-title: Experience Manager Cloud Manager Help
 translation-type: tm+mt
-source-git-commit: 854c09878a633bd46e4d7e9d604a8335c225a1c4
+source-git-commit: 6b6fa995e156fe928c88f55e89a9202c22ec18bc
 
 ---
 
@@ -21,6 +21,7 @@ source-git-commit: 854c09878a633bd46e4d7e9d604a8335c225a1c4
 + Éléments requis {#requirements}
    + [Droits d’accès accordés](access-rights-granted.md)
    + [Référentiel de code source](source-code-repository.md)
+   + [Autorisations basées sur les rôles](role-based-permissions.md)
    + [Ajout d’utilisateurs et de rôles](setting-up-users-and-roles.md)
    + [Environnements configurés](environments-provisioned.md)
 + Prise en main {#getting-started}
