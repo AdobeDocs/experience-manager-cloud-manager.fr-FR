@@ -35,4 +35,4 @@ Chaque client obtient son propre **référentiel Git**. Le code est sécurisé e
 
 [!UICONTROL Cloud Manager] respecte les principes de confidentialité définis par Adobe. Les développeurs affectent le code en toute sécurité dans le **référentiel Git** sur HTTPS.
 
-L’[interface utilisateur (IU) !DNL de [!UICONTROL Cloud Manager]] est créée sur des services conformes à une structure de contrôle courante qui est définie par Adobe. L’[interface utilisateur (IU) !DNL de [!UICONTROL Cloud Manager]] utilise des services sécurisés de plusieurs fournisseurs cloud.
+The User Interface (UI) for [!UICONTROL Cloud Manager]  is built on top of services that comply to a common control framework that is defined by Adobe. User Interface for [!UICONTROL Cloud Manager] uses secure services from several cloud providers.
