@@ -1,12 +1,12 @@
 ---
 title: Autorisations basées sur les rôles
-description: Suivez cette page pour en savoir plus sur les autorisations basées sur les rôles.
+description: Consultez cette page pour en savoir plus sur les autorisations basées sur les rôles.
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: 67a54bae-99a9-4405-91e3-9a0a8b3ccc98
 translation-type: tm+mt
-source-git-commit: a038a3d6e35ff28190441e9d11d9c539641a85af
+source-git-commit: 45548c965b57d53ce931a3c740b0b72ff0496815
 
 ---
 
@@ -15,9 +15,9 @@ source-git-commit: a038a3d6e35ff28190441e9d11d9c539641a85af
 
 [!UICONTROL Cloud Manager] a des rôles préconfigurés avec les autorisations appropriées. Par exemple, un développeur développe du code et a l’autorisation de placer le code dans le **référentiel Git**. Un propriétaire d’entreprise dispose d’autorisations différentes qui lui permettent de définir des indicateurs de performance clés et d’approuver les déploiements.
 
-## Rôles d’utilisateur {#user-roles}
+## Rôles utilisateur {#user-roles}
 
-La gestion des rôles [!UICONTROL Cloud Manager] est effectuée dans la console [d’administration](https://helpx.adobe.com/enterprise/using/admin-console.html)Adobe. Tout utilisateur de [!UICONTROL Cloud Manager] doit être membre de l’organisation IMS du client et avoir le contexte du produit Adobe Managed Services. Des rôles spécifiques sont fournis en ajoutant un utilisateur à un profil de produit [!UICONTROL Cloud Manager] dans Admin Console.
+La gestion des rôles pour [!UICONTROL Cloud Manager] s’effectue dans [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html). Tout utilisateur de [!UICONTROL Cloud Manager] doit être membre de l’organisation IMS du client et avoir le contexte du produit Adobe Managed Services. Des rôles spécifiques sont fournis en ajoutant un utilisateur à un profil de produit [!UICONTROL Cloud Manager] dans Admin Console.
 
 Pour plus d’informations sur la configuration de vos rôles, consultez la rubrique [Configuration des utilisateurs et des rôles](setting-up-users-and-roles.md).
 
@@ -26,7 +26,7 @@ La liste suivante définit les rôles que vous pouvez attribuer dans Admin Conso
 | **[!UICONTROL Cloud Manager]Rôle ** | **Description** |
 |---|---|
 | Propriétaire de l’entreprise | Primary user who completes the initial [!UICONTROL Cloud Manager] setup. Est responsable de la définition des ICP, approuve les déploiements en production et contourne les échecs de trois niveaux. |
-| Responsable de programme | Utilise [!UICONTROL Cloud Manager] pour configurer les équipes et passer en revue les statuts et les IPC. Peut approuver des échecs importants de trois niveaux. |
+| Responsable de programme | Utilise [!UICONTROL Cloud Manager] pour configurer les équipes et passer en revue les statuts et les ICP. Peut approuver des échecs importants de trois niveaux. |
 | Responsable de déploiement | Gère les opérations de déploiement. Uses [!UICONTROL Cloud Manager] to execute stage and production deployments. Peut approuver des échecs importants de trois niveaux. Dispose d’un accès au référentiel Git. |
 | Développeur | Développe et teste du code d’application personnalisé. Primarily uses [!UICONTROL Cloud Manager] to view status. Dispose d’un accès en validation au référentiel Git. |
 | Ingénieur du service client | Prend en charge généralement les stratégies du service client pour les clients AMS. Interagit avec [!UICONTROL Cloud Manager] dans le but d’exécuter des déploiements nécessitant la supervision de l’ingénieur du service client. |
@@ -36,12 +36,13 @@ La liste suivante définit les rôles que vous pouvez attribuer dans Admin Conso
 
 Chacun des rôles dispose d’autorisations spécifiques, de tâches préconfigurées, ou de permissions, inhérentes à chaque rôle. Ce tableau récapitule les fonctions disponibles et les rôles associés à chaque fonction.
 
-Pour en savoir plus sur le configuration de vos utilisateurs, consultez [Configuration des rôles et des utilisateurs](setting-up-users-and-roles.md).
+Pour en savoir plus sur la configuration de vos utilisateurs, voir [Configuration des rôles et des utilisateurs](setting-up-users-and-roles.md).
 
 | Autorisation | Description | Propriétaire de l’entreprise | Responsable de déploiement | Responsable de programme | Développeur | Ingénieur du service client |
 |--- |--- |--- |--- |--- |--- |--- |
-| Lecture de l’application | Lisez les IPC du programme. | x | x | x | x | x |
+| Lecture de l’application | Lecture des indicateurs clés de performance du programme. | x | x | x | x | x |
 | Écriture de l’application | Configuration ou modification du programme. | x |  |  |  |  |
+| Ajouter le programme | Ajouter un nouveau programme. | x |  |  |  |  |
 | Lecture de l’environnement | Voir les détails de l’environnement. | x | x | x | x | x |
 | Création de l’exécution | Démarrage du pipeline. | x | x | x |  |  |
 | Lecture de l’exécution | Voir le statut de l’exécution. | x | x | x | x | x |
