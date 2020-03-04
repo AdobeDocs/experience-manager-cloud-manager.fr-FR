@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: 67a54bae-99a9-4405-91e3-9a0a8b3ccc98
 translation-type: tm+mt
-source-git-commit: 45548c965b57d53ce931a3c740b0b72ff0496815
+source-git-commit: 157370b193c104915be063d1a4375f81839b88a2
 
 ---
 
@@ -58,3 +58,5 @@ Pour en savoir plus sur la configuration de vos utilisateurs, voir [Configuratio
 | Approbation de la modification d’un pipeline | Permet la modification de l’option Propriétaire de l’entreprise. |  | x |  |  |  |
 | Déploiement géré par la modification du pipeline | Permet la modification de l’option Supervision par l’ingénieur du service client. |  | x |  |  |  |
 | Lecture de l’étape | Voir les résultats des mesures de qualité de l’étape. | x | x | x | x | x |
+| Générer un jeton d’accès personnel | Accéder à Git. |  | x |  | x |  |
+
