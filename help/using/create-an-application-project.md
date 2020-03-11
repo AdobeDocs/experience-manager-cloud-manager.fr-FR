@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: b093f1712d9ca9e91b87e925a43e2992a4f11cc0
+source-git-commit: 25edab26146d7d98ef5a38a45b4fe67b0d5e564e
 
 ---
 
@@ -28,10 +28,6 @@ Suivez les étapes ci-dessous pour créer un projet d’application AEM dans Clo
 1. Une fois que vous vous êtes connecté à Cloud Manager et que la configuration du programme de base est terminée, une vignette d’appel à action spéciale s’affiche sur l’écran **Vue d’ensemble**, si le référentiel est vide.
 
    ![](assets/image2018-10-3_14-29-44.png)
-
-1. Cliquez sur **Créer** pour accéder à l’écran **Configuration du pipeline**.
-
-   ![](assets/image2018-10-3_14-30-22.png)
 
 1. Cliquez sur **Créer** pour ouvrir une boîte de dialogue qui permet à l’utilisateur de fournir les paramètres requis par AEM Project Archetype. Dans le formulaire par défaut, la boîte de dialogue demande deux valeurs :
 
