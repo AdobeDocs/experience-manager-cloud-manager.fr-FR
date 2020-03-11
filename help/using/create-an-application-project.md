@@ -8,8 +8,8 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
-translation-type: ht
-source-git-commit: dd892ddb2ac2d003229f5a9e2c8e0013b0f11e1b
+translation-type: tm+mt
+source-git-commit: b093f1712d9ca9e91b87e925a43e2992a4f11cc0
 
 ---
 
@@ -22,15 +22,6 @@ Lorsque les clients se connectent à Cloud Manager, ils reçoivent un référen
 
 Pour faciliter la prise en main des nouveaux clients, Cloud Manager peut désormais créer un projet AEM minimal comme point de départ. Ce processus est basé sur l’[**AEM Project Archetype **](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
 
-<!-- 
-
-Comment Type: annotation
-Last Modified By: jsyal
-Last Modified Date: 2018-10-08T12:52:50.071-0400
-
-2018.8.0: Added this new section
-
- -->
 
 Suivez les étapes ci-dessous pour créer un projet d’application AEM dans Cloud Manager :
 
@@ -38,7 +29,6 @@ Suivez les étapes ci-dessous pour créer un projet d’application AEM dans Clo
 
    ![](assets/image2018-10-3_14-29-44.png)
 
-[Shankari], la deuxième étape décrite ci-dessous est incorrecte. Merci de la supprimer.
 1. Cliquez sur **Créer** pour accéder à l’écran **Configuration du pipeline**.
 
    ![](assets/image2018-10-3_14-30-22.png)
