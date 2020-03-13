@@ -3,7 +3,7 @@ product: adobe experience manager
 sub-product: experience manager cloud manager
 archetype: administrator
 user-guide-title: Experience Manager Cloud Manager Help
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bf97120559429e0d5e16df7c14d4e118417c270a
 
 ---
@@ -48,7 +48,7 @@ source-git-commit: bf97120559429e0d5e16df7c14d4e118417c270a
    + [Présentation](overview-productupdate-wizard.md)
    + [Évaluation](evaluation.md)
 + Notes de mise à jour {#release-notes}
-   + [Notes de mise à jour actuelles (2020.3.0)](release-notes-current.md)
+   + [Notes de mise à jour de la version actuelle (2020.3.0)](release-notes-current.md)
    + [Notes de mise à jour de la version 2020.2.0](release-notes-2020-2-0.md)
    + [Notes de mise à jour de la version 2020.1.0](release-notes-2020-1-0.md)
    + [Notes de mise à jour de la version 2019.12.0](release-notes-2019-12-0.md)
