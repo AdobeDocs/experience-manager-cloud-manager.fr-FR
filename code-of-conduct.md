@@ -1,5 +1,5 @@
 ---
-source-git-commit: a80615b7ed7dcf8c1743f7f12ecf0fd8c76d4cc5
+source-git-commit: 633bd4b3f18933cda4dfea729f773a8c486e5b6c
 translation-type: tm+mt
 
 ---
@@ -61,5 +61,4 @@ foi s’exposent temporairement ou de façon permanente à des répercussions d�
 
 ## Attribution
 
-Ce code de conduite provient de l’adaptation de la [Charte du contributeur](https://contributor-covenant.org), version 1.4,
-disponible à l’adresse [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/).
+This Code of Conduct is adapted from the [Contributor Covenant](https://contributor-covenant.org), version 1.4, available at [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/).
