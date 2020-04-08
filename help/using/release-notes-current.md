@@ -1,31 +1,35 @@
 ---
-title: Notes de mise à jour de la version 2020.3.0
-seo-title: Notes de mise à jour de la version 2020.3.0 d’AEM Cloud Manager
-description: Consultez cette page pour obtenir des informations sur la version 2020.3.0 de Cloud Manager
-seo-description: Consultez cette page pour obtenir des informations sur la version 2020.3.0 d’AEM Cloud Manager
-translation-type: ht
-source-git-commit: 44671d89edad0ccb6ded998b62beb5fa012678e9
+title: Notes de mise à jour de la version 2020.4.0
+seo-title: Notes de mise à jour de la version 2020.4.0 d’AEM Cloud Manager
+description: Consultez cette page pour obtenir des informations sur la version 2020.4.0 de Cloud Manager
+seo-description: Consultez cette page pour obtenir des informations sur la version 2020.4.0 d’AEM Cloud Manager
+translation-type: tm+mt
+source-git-commit: e7da473a22bec1d3d9b3d39bf654af0c596fe86d
 
 ---
 
-# Notes de mise à jour de la version 2020.3.0 {#release-notes-for}
+# Notes de mise à jour de la version 2020.4.0 {#release-notes-for}
 
-La section ci-dessous présente les notes générales de mise à jour de la version 2020.3.0 de [!UICONTROL Cloud Manager].
+La section ci-dessous présente les notes générales de mise à jour de la version 2020.4.0 de [!UICONTROL Cloud Manager].
 
 ## Date de publication {#release-date}
 
-La date de publication de la mise à jour 2020.3.0 de [!UICONTROL Cloud Manager] est le 5 mars 2020.
+The Release Date for [!UICONTROL Cloud Manager] Version 2020.4.0 is April 09, 2020.
 
 ## Nouveautés {#whats-new}
 
-* Le journal de l’étape de création est désormais disponible pendant l’exécution de l’étape.
-* Certains messages de la page des détails d’exécution de pipeline ont été modifiés pour plus de clarté.
+* Changements de la page d’aperçu de CM de navigation pour permettre à l’utilisateur de modifier ou de changer de de la page d’aperçu de CM.
+* Modifications permettant à l’utilisateur de modifier le  à partir de la carte de  sur CM .
+* Le nouvel état de pipeline &quot;Pipeline Running&quot; s’affichait par rapport au  auquel il est associé.
+* Améliorations de la lisibilité de la page d&#39;exécution du pipeline. Ceci inclut l’affichage du nom du pipeline (canal non en production uniquement) et du type, ainsi qu’un badge pour indiquer si l’état du pipeline est En cours/Annulé/Échec.
+* Le processus utilisé pour générer les mots de passe Git a été rendu plus résistant aux problèmes de la couche de service sous-jacente.
 
 ## Correctifs {#bug-fixes}
 
-* Certaines configurations de déploiement peuvent rendre indisponibles les journaux des étapes de déploiement en cas d’échec du déploiement.
-* Des échecs spécifiques au cours des étapes de déploiement des programmes Managed Services peuvent entraîner l’échec des exécutions ultérieures au démarrage.
-* Le démarrage de l’instance éphémère SonarQube utilisée lors de l’étape de création échouait parfois au cours du délai d’expiration configuré.
-* Dans le cas de projets spécifiques, la règle *Les objets ResourceResolver doivent toujours être fermés* entraînait une exception de pointeur nul ; cela n’avait toutefois pas d’incidence sur l’exécution du pipeline.
-
+* Les données de surveillance peuvent parfois être affichées de manière incorrecte ou pas du tout en fonction de variations mineures des valeurs techniques.
+* La configuration Maven utilisée dans le de génération a été mise à jour afin d’éviter les blocages lors du téléchargement des métadonnées d’artefact.
+* Le processus de test des performances des ressources n’a pas pu déchiffrer le mot de passe AEM, ce qui a provoqué l’échec des tests.
+* Certaines topologies avec des instances de secours peuvent avoir de faux négatifs dans les tests de sécurité.
+* Si l’étape  contenait une instance arrêtée, l’étape de test de sécurité échouait parfois.
+* Les notifications Experience Cloud n’ont pas été reçues de manière cohérente.
 
