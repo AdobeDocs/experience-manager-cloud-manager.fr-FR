@@ -3,8 +3,8 @@ title: Surveillance des environnements
 seo-title: Surveillance des environnements
 description: 'null'
 seo-description: Consultez cette page pour en savoir plus sur la surveillance du système dans Cloud Manager, en observant les instances dans un environnement et en suivant diverses mesures pour chaque instance.
-translation-type: ht
-source-git-commit: 1edfbc0adb04026cd29ba93b4ba155d3b61439dc
+translation-type: tm+mt
+source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
 
 ---
 
@@ -23,9 +23,9 @@ Vous pouvez accéder à la fonction Surveillance du système de deux manières d
 
    ![](assets/ProgramLanding.png)
 
-1. Cliquez sur la troisième icône de la carte du programme.
+1. Cliquez sur la quatrième icône de la carte .
 
-   ![](assets/program-card.png)
+   ![](assets/first-timea1.png)
 
    *Ou*,
 
@@ -56,7 +56,7 @@ L’état de chaque catégorie est une synthèse des mesures. Si une mesure d’
 Les rapports Cloud Manager fournissent une vue des environnements du programme et des instances AEM au moyen d’un ensemble de graphiques qui génèrent des rapports et effectuent le suivi de diverses mesures pour chaque instance AEM.
 Pour plus d’informations, consultez la vidéo ci-dessous.
 
->[!VIDEO](https://video.tv.adobe.com/v/26315/?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26315/)
 
 ## Détails de la surveillance du système {#system-monitoring-detail}
 
@@ -123,9 +123,9 @@ La section Analyse des événements, située sous ce graphique, affiche l’ense
 
 * **Contrat SLA d’auteur AMS** : il s’agit de la période de disponibilité mesurée du niveau auteur de production comptabilisant les incidents causés par Adobe ou par nos fournisseurs.
 
-* **Contrat SLA d’auteur** : il s’agit de la période de disponibilité mesurée du niveau auteur ignorant le temps d'arrêt planifié, tel que les fenêtres de maintenance.
+* **Contrat SLA d’auteur** : il s’agit de la période de disponibilité mesurée du niveau auteur ignorant le temps d&#39;arrêt planifié, tel que les fenêtres de maintenance.
 
-* **Contrat utilisateur final** : il s'agit du contrat SLA défini dans votre contrat avec Adobe Managed Services pour le niveau publication.
+* **Contrat utilisateur final** : il s&#39;agit du contrat SLA défini dans votre contrat avec Adobe Managed Services pour le niveau publication.
 
 * **Contrat SLA utilisateur final AMS** : il s’agit de la période de disponibilité mesurée du niveau publication de production comptabilisant les incidents causés par Adobe ou par nos fournisseurs.
 
