@@ -4,7 +4,7 @@ seo-title: Notes de mise à jour de la version 2020.4.0 d’AEM Cloud Manager
 description: Consultez cette page pour obtenir des informations sur la version 2020.4.0 de Cloud Manager
 seo-description: Consultez cette page pour obtenir des informations sur la version 2020.4.0 d’AEM Cloud Manager
 translation-type: tm+mt
-source-git-commit: e7da473a22bec1d3d9b3d39bf654af0c596fe86d
+source-git-commit: ee7fc8a23dd0719eda84638c810842c2dc1772bb
 
 ---
 
@@ -18,9 +18,9 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.4.0 is April 09, 20
 
 ## Nouveautés {#whats-new}
 
-* Changements de la page d’aperçu de CM de navigation pour permettre à l’utilisateur de modifier ou de changer de de la page d’aperçu de CM.
-* Modifications permettant à l’utilisateur de modifier le  à partir de la carte de  sur CM .
-* Le nouvel état de pipeline &quot;Pipeline Running&quot; s’affichait par rapport au  auquel il est associé.
+* Modifications de la page d’aperçu de navigation Cloud Manager pour permettre à l’utilisateur de modifier ou de changer de  de.
+* Modifications permettant à l’utilisateur de modifier des  à partir de la carte  sur la  de Cloud Manager.
+* Nouvel état du pipeline **Pipeline En cours d’exécution** s’affichait par rapport au  auquel il est associé.
 * Améliorations de la lisibilité de la page d&#39;exécution du pipeline. Ceci inclut l’affichage du nom du pipeline (canal non en production uniquement) et du type, ainsi qu’un badge pour indiquer si l’état du pipeline est En cours/Annulé/Échec.
 * Le processus utilisé pour générer les mots de passe Git a été rendu plus résistant aux problèmes de la couche de service sous-jacente.
 
