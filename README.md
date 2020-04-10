@@ -1,11 +1,11 @@
 ---
 source-git-commit: a80615b7ed7dcf8c1743f7f12ecf0fd8c76d4cc5
-translation-type: tm+mt
+translation-type: ht
 
 ---
 # Documentation d’Adobe Experience Manager Cloud Manager
 
-Il s’agit du référentiel de la documentation d’Adobe Experience Manager Cloud Manager.
+Il s’agit du référentiel pour la documentation d’Adobe Experience Manager Cloud Manager.
 
 Vos contributions à la documentation sont les bienvenues. Veuillez consulter les ressources suivantes :
 
