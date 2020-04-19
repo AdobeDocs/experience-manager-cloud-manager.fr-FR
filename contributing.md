@@ -1,6 +1,6 @@
 ---
 source-git-commit: a70b04bd5bb6ac6465a5da4b276e9faf1dc470ae
-translation-type: tm+mt
+translation-type: ht
 
 ---
 # Contribution à la documentation d’Adobe Experience Manager Cloud Service
@@ -47,7 +47,7 @@ Toutes les requêtes d’extraction doivent être accompagnées d’un [contrat 
 
 Regardez la vidéo suivante pour un aperçu rapide de la création de problèmes et de requêtes d’extraction.
 
->[!VIDEO](https://video.tv.adobe.com/v/27069)
+>[!VIDEO](https://video.tv.adobe.com/v/27069?captions=fre_fr)
 
 ### Contributions des employés d’Adobe
 
