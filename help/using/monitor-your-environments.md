@@ -3,7 +3,7 @@ title: Surveillance des environnements
 seo-title: Surveillance des environnements
 description: 'null'
 seo-description: Consultez cette page pour en savoir plus sur la surveillance du système dans Cloud Manager, en observant les instances dans un environnement et en suivant diverses mesures pour chaque instance.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
 
 ---
@@ -23,7 +23,7 @@ Vous pouvez accéder à la fonction Surveillance du système de deux manières d
 
    ![](assets/ProgramLanding.png)
 
-1. Cliquez sur la quatrième icône de la carte .
+1. Cliquez sur la quatrième icône de la carte du programme.
 
    ![](assets/first-timea1.png)
 
@@ -56,7 +56,7 @@ L’état de chaque catégorie est une synthèse des mesures. Si une mesure d’
 Les rapports Cloud Manager fournissent une vue des environnements du programme et des instances AEM au moyen d’un ensemble de graphiques qui génèrent des rapports et effectuent le suivi de diverses mesures pour chaque instance AEM.
 Pour plus d’informations, consultez la vidéo ci-dessous.
 
->[!VIDEO](https://video.tv.adobe.com/v/26315/)
+>[!VIDEO](https://video.tv.adobe.com/v/26315/?captions=fre_fr)
 
 ## Détails de la surveillance du système {#system-monitoring-detail}
 
