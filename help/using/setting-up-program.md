@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: c2393540-e852-4f7c-aafd-1427209065d2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
 
 ---
@@ -28,7 +28,7 @@ Les IPC définis servent de référence pour les tests de performance qui sont e
 >
 >De plus, de nombreux utilisateurs disposeront d’un réseau de diffusion de contenu (CDN), tel que Akamai ou CloudFront devant leur environnement de production. Puisque [!UICONTROL Cloud Manager] effectue directement des tests par rapport à l’environnement intermédiaire, l’indicateur de performance clé doit refléter uniquement le trafic prévu pour transiter via le CDN, c’est-à-dire les pertes dans le cache. En règle générale, il s’agira d’un sous-ensemble relativement petit du trafic de production total.
 
-## Using [!UICONTROL Cloud Manager] to Setup your Program {#using-cloud-manager-to-setup-your-program}
+## Utilisation [!UICONTROL de Cloud Manager] pour configurer votre programme {#using-cloud-manager-to-setup-your-program}
 
 Pour configurer le programme et définir les indicateurs de performance clés, procédez comme suit :
 
@@ -37,7 +37,7 @@ Pour configurer le programme et définir les indicateurs de performance clés, p
    ![image1](assets/set-up-program/setup1.png)
 
    >[!NOTE]
-   > Vous pouvez toujours changer, modifier ou ajouter un nouveau à partir de la barre d’actions, comme illustré dans la figure ci-dessous.
+   > Vous pouvez toujours changer, modifier ou ajouter un nouveau programme à partir de la barre d’actions, comme illustré dans la figure ci-dessous.
 
    ![image1](assets/set-up-program/setup2.png)
 
@@ -103,4 +103,4 @@ Lors de la configuration du programme, des indicateurs de performance clés spé
 
 Si vous avez déjà configuré le **pipeline**, l’exécution suivante prendra en compte vos paramètres mis à jour. Si vous n’avez pas encore configuré le pipeline, suivez d’abord les étapes de configuration de celui-ci.
 
-Please see [Configure your CI/CD Pipeline](https://helpx.adobe.com/fr/experience-manager/cloud-manager/using/configuring-pipeline.html) for setting up the pipeline.
+Voir [Configuration de votre pipeline CI/CD](https://helpx.adobe.com/fr/experience-manager/cloud-manager/using/configuring-pipeline.html) pour configurer le pipeline.
