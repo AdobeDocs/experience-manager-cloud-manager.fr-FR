@@ -8,8 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
-translation-type: ht
-source-git-commit: 1f31e654272afa60cac3376ce4dc3bc76f0d9dda
+translation-type: tm+mt
+source-git-commit: 278858465592482449080fedc3c0165805db223d
+workflow-type: tm+mt
+source-wordcount: '1469'
+ht-degree: 99%
 
 ---
 
@@ -47,17 +50,18 @@ Dans le cadre du pipeline, le code source est analysé afin de garantir que les 
 | Cote de sécurité | A = 0 vulnérabilité <br/>B = au moins 1 vulnérabilité mineure<br/> C = au moins 1 vulnérabilité majeure <br/>D = au moins 1 vulnérabilité critique <br/>E = au moins 1 vulnérabilité de blocage | Critique | &lt; B |
 | Cote de fiabilité | A = 0 bogue <br/>B = au moins 1 bogue mineur <br/>C = au moins 1 bogue majeur <br/>D = au moins 1 bogue critique E = au moins 1 bogue bloqueur | Important | &lt; C |
 | Évaluation de maintenabilité | Le coût de correction en suspens pour les smells du code est : <br/><ul><li>&lt;=5% du temps qui s’est déjà écoulé dans l’application, la note est A </li><li>entre 6 et 10 % la note est B </li><li>entre 11 et 20 % la note est C </li><li>entre 21 et 50 % la note est D</li><li>tout ce qui dépasse 50 % est E</li></ul> | Important | &lt; A |
-| Couverture | Combinaison de couverture de ligne de tests unitaires et de couverture de condition utilisant cette formule : <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <br/>où : CT = conditions qui ont été évaluées comme « vrai » au moins une fois lors de l’exécution de tests unitaires <br/>CF = conditions qui ont été évaluées comme « faux » au moins une fois <br/>LC = lignes couvertes = lines_ to_ cover - uncover_ lines <br/><br/> B = nombre total de conditions <br/>EL = nombre total de lignes exécutables (lines_to_cover) | Important | &lt; 50% |
-| Tests unitaires ignorés | Nombre de tests unitaires ignorés. | Infos | &gt; 1 |
-| Problèmes en cours | Types de problèmes généraux - Vulnérabilités, bogues et smells de code | Infos | &gt; 1 |
-| Lignes dupliquées | Nombre de lignes impliquées dans des blocs dupliqués. <br/>Pour qu’un bloc de code soit considéré comme dupliqué : <br/><ul><li>**Projets non Java :**</li><li>Il doit y avoir au moins 100 jetons successifs et dupliqués.</li><li>Ces jetons doivent être répartis au moins sur : </li><li>30 lignes de code pour COBOL </li><li>20 lignes de code pour ABAP </li><li>10 lignes de code pour d’autres langages</li><li>**Projets Java :**</li><li> Il devrait y avoir au moins 10 instructions successives et dupliquées, quel que soit le nombre de jetons et de lignes.</li></ul> <br/>Les différences dans la mise en retrait ainsi que dans les littéraux de chaîne sont ignorées lors de la détection des doublons. | Infos | &gt; 1% |
+| Couverture | Combinaison de couverture de ligne de tests unitaires et de couverture de condition utilisant cette formule : <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`<br/> où : CT = conditions qui ont été évaluées comme « vrai » au moins une fois lors de l’exécution de tests unitaires <br/>CF = conditions qui ont été évaluées comme « faux » au moins une fois <br/>LC = lignes couvertes = lines_ to_ cover - uncover_ lines <br/><br/> B = nombre total de conditions <br/>EL = nombre total de lignes exécutables (lines_to_cover) | Important | &lt; 50% |
+| Tests unitaires ignorés | Nombre de tests unitaires ignorés. | Infos | > 1 |
+| Problèmes en cours | Types de problèmes généraux - Vulnérabilités, bogues et smells de code | Infos | > 1 |
+| Lignes dupliquées | Nombre de lignes impliquées dans des blocs dupliqués. <br/>Pour qu’un bloc de code soit considéré comme dupliqué : <br/><ul><li>**Projets non Java :**</li><li>Il doit y avoir au moins 100 jetons successifs et dupliqués.</li><li>Ces jetons doivent être répartis au moins sur : </li><li>30 lignes de code pour COBOL </li><li>20 lignes de code pour ABAP </li><li>10 lignes de code pour d’autres langages</li><li>**Projets Java :**</li><li> Il devrait y avoir au moins 10 instructions successives et dupliquées, quel que soit le nombre de jetons et de lignes.</li></ul> <br/>Les différences dans la mise en retrait ainsi que dans les littéraux de chaîne sont ignorées lors de la détection des doublons. | Infos | > 1% |
+| Compatibilité du service Cloud | Nombre de problèmes de compatibilité des services Cloud identifiés. | Infos | >0 |
 
 
 >[!NOTE]
 >
 >Pour des définitions plus détaillées, consultez [Définitions des mesures](https://docs.sonarqube.org/display/SONAR/Metric+Definitions).
 
-Vous pouvez télécharger la liste des règles ici : [code-quality-rules.xlsx](/help/using/assets/CodeQuality-Rules-new.xlsx).
+Vous pouvez télécharger la liste des règles ici : [code-quality-rules.xlsx](/help/using/assets/CodeQuality-rules-latest.xlsx).
 
 >[!NOTE]
 >
@@ -143,14 +147,14 @@ Le tableau suivant résume la matrice des tests de performance à l’aide du sy
 
 | **Mesure** | **Catégorie** | **Seuil d’échec** |
 |---|---|---|
-| Taux d’erreur de demande de page % | Critique | &gt;= 2 % |
-| Taux d’utilisation de l’UC | Critique | &gt;= 80 % |
-| Délai d’attente d’E/S de disque | Critique | &gt;= 50 % |
-| Délai de réponse du 95e percentile | Important | &gt;= ICP de niveau programme |
-| Délai de réponse max. | Important | &gt;= 18 secondes |
+| Taux d’erreur de demande de page % | Critique | >= 2 % |
+| Taux d’utilisation de l’UC | Critique | >= 80 % |
+| Délai d’attente d’E/S de disque | Critique | >= 50 % |
+| Délai de réponse du 95e percentile | Important | >= ICP de niveau programme |
+| Délai de réponse max. | Important | >= 18 secondes |
 | Nombre de pages vues par minute | Important | &lt; ICP de niveau programme |
-| Utilisation de la bande passante de disque | Important | &gt;= 90 % |
-| Utilisation de la bande passante réseau | Important | &gt;= 90 % |
+| Utilisation de la bande passante de disque | Important | >= 90 % |
+| Utilisation de la bande passante réseau | Important | >= 90 % |
 | Demandes par minute | Infos | &lt; 6 000 |
 
 ### Graphiques des résultats de tests de performance {#performance-testing-results-graphs}
