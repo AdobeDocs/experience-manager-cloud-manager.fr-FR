@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 translation-type: tm+mt
-source-git-commit: 4881ff8be97451aa90c3430259ce13faef182e4f
+source-git-commit: 278858465592482449080fedc3c0165805db223d
+workflow-type: tm+mt
+source-wordcount: '2289'
+ht-degree: 78%
 
 ---
 
@@ -36,7 +39,7 @@ La section suivante met en évidence les règles SonarQube :
 
 **Depuis** : version 2018.4.0
 
-Les méthodes ***Thread.stop()*** et ***Thread.interrupt()*** peuvent produire des problèmes difficiles à reproduire et, dans certains cas, des vulnérabilités de sécurité. Leur utilisation doit être minutieusement surveillée et validée. En règle générale, la transmission de messages est une méthode plus sûre pour atteindre des objectifs similaires.
+Les méthodes ***Thread.stop()*** et ***Thread.interrupt()*** peuvent générer des problèmes difficiles à reproduire et, dans certains cas, des vulnérabilités en matière de sécurité. Leur utilisation doit être minutieusement surveillée et validée. En règle générale, la transmission de messages est une méthode plus sûre pour atteindre des objectifs similaires.
 
 #### Code non conforme {#non-compliant-code}
 
@@ -197,7 +200,7 @@ public void orDoThis() {
 
 L’API AEM contient des classes et interfaces Java qui sont censées être utilisées, mais pas implémentées, par du code personnalisé. Par exemple, l’interface *com.day.cq.wcm.api.Page* est conçue pour être implémentée par ***AEM uniquement***.
 
-Lorsque de nouvelles méthodes sont ajoutées à ces interfaces, celles-ci n’ont aucun impact sur le code existant qui utilise ces interfaces et, par conséquent, l’ajout de nouvelles méthodes à ces interfaces est considéré comme rétrocompatible. Cependant, si le code personnalisé ***implémente*** l’une de ces interfaces, il a introduit un risque de rétrocompatibilité pour le client.
+Lorsque de nouvelles méthodes sont ajoutées à ces interfaces, celles-ci n’ont aucun impact sur le code existant qui utilise ces interfaces et, par conséquent, l’ajout de nouvelles méthodes à ces interfaces est considéré comme rétrocompatible. Cependant, si le code personnalisé ***implémente*** l’une de ces interfaces, il introduit un risque de rétrocompatibilité pour le client.
 
 Les interfaces (et les classes) destinées uniquement à être implémentées par AEM sont annotées de *org.osgi.annotation.version.ProviderType* (ou, dans certains cas, une annotation héritée similaire *aqute.bnd.annotation.providertype*). Cette règle identifie les cas où une telle interface est implémentée (ou une classe est étendue) par code personnalisé.
 
@@ -266,7 +269,7 @@ public void orDoThis(Session session) throws Exception {
 
 **Depuis** : version 2018.4.0
 
-As described in the [Sling documentation](http://sling.apache.org/documentation/the-sling-engine/servlets.html), bindings servlets by paths is discouraged. Les servlets liés au chemin ne peuvent pas utiliser les contrôles d’accès JCR standard et, par conséquent, nécessitent une rigueur de sécurité supplémentaire. Plutôt que d’utiliser des servlets liés au chemin d’accès, il est recommandé de créer des nœuds dans le référentiel et d’enregistrer les servlets par type de ressource.
+Comme décrit dans la [documentation Sling](http://sling.apache.org/documentation/the-sling-engine/servlets.html), il est déconseillé de lier les servlets aux chemins. Les servlets liés au chemin ne peuvent pas utiliser les contrôles d’accès JCR standard et, par conséquent, nécessitent une rigueur de sécurité supplémentaire. Plutôt que d’utiliser des servlets liés au chemin d’accès, il est recommandé de créer des nœuds dans le référentiel et d’enregistrer les servlets par type de ressource.
 
 #### Code non conforme {#non-compliant-code-5}
 
@@ -353,7 +356,7 @@ public void doThis() throws Exception {
 }
 ```
 
-### Évitez de journaliser les informations lors de la gestion des demandes GET ou HEAD. {#avoid-logging-at-info-when-handling-get-or-head-requests}
+### Évitez de journaliser les informations lors de la gestion des requêtes GET ou HEAD. {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
 **Clé** : CQRules:CQBP-44---LogInfoInGetOrHeadRequests
 
@@ -361,7 +364,7 @@ public void doThis() throws Exception {
 
 **Gravité** : mineure
 
-En règle général, le niveau de journal Informations doit être utilisé pour délimiter les actions importantes et, par défaut, AEM est configuré pour le journal au niveau Information ou au-dessus. Les méthodes GET et HEAD ne doivent jamais être en lecture seule et ne constituent donc pas des actions importantes. La journalisation au niveau d’Informations en réponse aux demandes GET ou HEAD est susceptible de créer un bruit journal significatif, rendant ainsi plus difficile l’identification des informations utiles dans les fichiers journaux. La journalisation lors de la gestion des demandes GET ou HEAD doit être soit aux niveaux d’avertissement ou d’erreur lorsque quelque chose est erroné, soit aux niveaux DEBUG ou TRACE si des informations de dépannage plus approfondies seraient utiles.
+En règle générale, le niveau de journal Informations doit être utilisé pour délimiter les actions importantes et, par défaut, AEM est configuré pour le journal au niveau Information ou au-dessus. Les méthodes GET et HEAD ne doivent jamais être en lecture seule et ne constituent donc pas des actions importantes. La journalisation au niveau d’Informations en réponse aux demandes GET ou HEAD est susceptible de créer un bruit journal significatif, rendant ainsi plus difficile l’identification des informations utiles dans les fichiers journaux. La journalisation lors de la gestion des demandes GET ou HEAD doit être soit au niveau d’avertissement ou d’erreur lorsque quelque chose est erroné, soit aux niveaux DEBUG ou TRACE si des informations de dépannage plus approfondies étaient utiles.
 
 >[!CAUTION]
 >
@@ -393,7 +396,7 @@ public void doGet() throws Exception {
 
 **Depuis** : version 2018.4.0
 
-Il est recommandé que les messages de journal fournissent des informations contextuelles sur l’emplacement d’une exception dans l’application. Bien que le contexte puisse également être déterminé par l’utilisation des arborescences des appels de procédure, il est généralement plus facile de lire et de comprendre le message du journal. Par conséquent, lors de la journalisation d’une exception, il est déconseillé d’utiliser le message de l’exception comme message du journal : le message d’exception contiendra ce qu’il s’est passé, alors que le message du journal doit servir à indiquer à un lecteur ce que faisait l’application lorsque l’exception s’est produite. Le message d’exception sera toujours consigné ; en spécifiant votre propre message, les journaux seront simplement plus faciles à comprendre.
+Il est recommandé que les messages de journal fournissent des informations contextuelles sur l’emplacement d’une exception dans l’application. Bien que le contexte puisse également être déterminé par l’utilisation des arborescences des appels de procédure, il est généralement plus facile de lire et de comprendre le message du journal. Par conséquent, lors de la journalisation d’une exception, il est déconseillé d’utiliser le message de l’exception comme message du journal : le message d’exception contiendra ce qu’il s’est passé, alors que le message du journal doit servir à indiquer à un lecteur ce que faisait l’application lorsque l’exception s’est produite. Le message d’exception sera toujours consigné ; en spécifiant votre propre message, les journaux seront simplement plus faciles à comprendre.
 
 #### Code non conforme {#non-compliant-code-9}
 
@@ -573,7 +576,7 @@ Vous trouverez ci-dessous les vérifications OakPAL exécutées par Cloud Manag
 
 **Depuis** : version 2019.6.0
 
-Il a été établi depuis longtemps que l’arborescence de contenu /libs dans le référentiel de contenu AEM doit être considéré comme étant en lecture seule par les clients. La modification des nœuds et des propriétés sous */libs* crée un risque significatif pour les mises à jour majeures et mineures. Les modifications apportées à */libs* ne doivent être effectuées que par Adobe par le biais de canaux officiels.
+Il a été établi depuis longtemps que l’arborescence de contenu /libs dans le référentiel de contenu AEM doit être considérée comme étant en lecture seule par les clients. La modification des nœuds et des propriétés sous */libs* crée un risque significatif pour les mises à jour majeures et mineures. Les modifications apportées à */libs* ne doivent être effectuées que par Adobe par le biais de canaux officiels.
 
 ### Les packages ne doivent pas contenir de configurations OSGi en double {#oakpal-package-osgi}
 
@@ -585,7 +588,7 @@ Il a été établi depuis longtemps que l’arborescence de contenu /libs dans l
 
 **Depuis** : version 2019.6.0
 
-Le fait qu’un même composant OSGi soit configuré plusieurs fois est un problème courant qui se produit sur les projets complexes. Cela crée une ambiguïté quant à la configuration qui sera exploitable. Cette règle est « compatible avec le mode d'exécution » en ce qu’elle identifie uniquement les problèmes où le même composant est configuré plusieurs fois dans le même mode d'exécution (ou combinaison de modes d’exécution).
+Le fait qu’un même composant OSGi soit configuré plusieurs fois est un problème courant qui se produit sur les projets complexes. Cela crée une ambiguïté quant à la configuration qui sera exploitable. Cette règle est « compatible avec le mode d’exécution » en ce qu’elle identifie uniquement les problèmes où le même composant est configuré plusieurs fois dans le même mode d’exécution (ou combinaison de modes d’exécution).
 
 #### Code non conforme {#non-compliant-code-osgi}
 
@@ -639,7 +642,7 @@ Un problème courant est l’utilisation de nœuds nommés `config` dans les bo�
       + rtePlugins [nt:unstructured]
 ```
 
-### Les packages ne doivent pas se chevaucher {#oakpal-no-overlap}
+#### Les packages ne doivent pas se chevaucher {#oakpal-no-overlap}
 
 **Clé** : Packageoverlaps
 
@@ -650,3 +653,94 @@ Un problème courant est l’utilisation de nœuds nommés `config` dans les bo�
 **Depuis** : version 2019.6.0
 
 Tout comme *Les packages ne doivent pas contenir de configurations OSGi en double*, il s’agit d’un problème courant sur les projets complexes où le même chemin de nœud est écrit par plusieurs packages de contenu distincts. Bien que l’utilisation des dépendances des packages de contenu puisse servir à garantir un résultat cohérent, il est préférable d’éviter tout chevauchement.
+
+#### OakPAL - Le mode de création par défaut ne doit pas être une interface utilisateur classique {#oakpal-default-authoring}
+
+**Clé**: ClassicUIAuthoringMode
+
+**Type** : code Smell
+
+**Gravité** : mineure
+
+**Depuis** : version 2020.5.0
+
+La configuration OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` définit le mode de création par défaut dans AEM. Comme l’interface utilisateur classique a été abandonnée depuis AEM 6.4, un problème survient maintenant lorsque le mode de création par défaut est configuré sur l’interface utilisateur classique.
+
+#### OakPal - Les composants contenant des boîtes de dialogue doivent avoir des boîtes de dialogue d&#39;interface utilisateur tactile {#oakpal-components-dialogs}
+
+**Clé**: ComponentWithOnlyClassicUIDialog
+
+**Type** : code Smell
+
+**Gravité** : mineure
+
+**Depuis** : version 2020.5.0
+
+Les composants AEM disposant d’une boîte de dialogue d’interface utilisateur classique doivent toujours avoir une boîte de dialogue d’interface utilisateur tactile correspondante, afin de fournir une expérience de création optimale et d’être compatibles avec le modèle de déploiement du service Cloud, où l’interface utilisateur classique n’est pas prise en charge. Cette règle vérifie les scénarios suivants :
+
+* Un composant avec une boîte de dialogue d’interface utilisateur classique (c’est-à-dire un noeud enfant dialog) doit avoir une boîte de dialogue d’interface utilisateur tactile correspondante (c’est-à-dire un noeud `cq:dialog` enfant).
+* Un composant doté d’une boîte de dialogue de conception d’interface utilisateur classique (c’est-à-dire un noeud design_dialog) doit avoir une boîte de dialogue de conception d’interface utilisateur tactile correspondante (c’est-à-dire un noeud `cq:design_dialog` enfant).
+* Un composant avec une boîte de dialogue d’interface utilisateur classique et une boîte de dialogue de conception d’interface utilisateur classique doit comporter à la fois une boîte de dialogue d’interface utilisateur tactile correspondante et une boîte de dialogue de conception d’interface utilisateur tactile correspondante.
+
+La documentation des outils de modernisation d’AEM fournit de la documentation et des outils pour convertir les composants de l’interface utilisateur classique en interface utilisateur tactile. Consultez [les outils](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) de modernisation d’AEM pour en savoir plus.
+
+#### OakPal - Les packages ne doivent pas mélanger du contenu mutant et immuable {#oakpal-packages-immutable}
+
+**Clé**: ImmutableMutableMixedPackage
+
+**Type** : code Smell
+
+**Gravité** : mineure
+
+**Depuis** : version 2020.5.0
+
+Pour être compatible avec le modèle de déploiement du service Cloud, les packages de contenu individuels doivent contenir soit du contenu pour les zones immuables du référentiel (c’est-à-dire qu’ils ne `/apps and /libs, although /libs` doivent pas être modifiés par le code client et provoqueront une violation distincte), soit la zone modifiable (c’est-à-dire tout le reste), mais pas les deux. Par exemple, un package qui inclut les deux `/apps/myco/components/text and /etc/clientlibs/myco` est incompatible avec le service Cloud et provoquera la génération de rapports d’un problème.
+
+Pour plus d’informations, reportez-vous à Structure [de projet](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) AEM.
+
+### OakPal - Les agents de réplication inversée ne doivent pas être utilisés {#oakpal-reverse-replication}
+
+**Clé**: Réplication inverse
+
+**Type** : code Smell
+
+**Gravité** : mineure
+
+**Depuis** : version 2020.5.0
+
+La prise en charge de la réplication inverse n’est pas disponible dans les déploiements du service Cloud, comme décrit dans les Notes de [mise à jour : Suppression des agents](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents)de réplication.
+
+Les clients qui utilisent la réplication inverse doivent contacter Adobe pour obtenir d’autres solutions.
+
+### SonarQube - Le Planificateur Sling ne doit pas être utilisé {#sonarqube-sling-scheduler}
+
+**Clé**: CQRules:AMSCORE-554
+
+**Type** : code Smell
+
+**Gravité** : mineure
+
+**Depuis** : version 2020.5.0
+
+Le Planificateur Sling ne doit pas être utilisé pour les tâches qui nécessitent une exécution garantie. Sling Scheduled Jobs garantit l’exécution et convient mieux aux environnements organisés en grappes et non en grappes.
+
+Reportez-vous à [Apache Sling Eging et Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) pour en savoir plus sur la façon dont les tâches Sling sont gérées dans des environnements organisés en grappes.
+
+### SonarQube - SonarQube - Les API obsolètes AEM ne doivent pas être utilisées {#sonarqube-aem-deprecated}
+
+**Clé**: AMSCORE-553
+
+**Type** : code Smell
+
+**Gravité** : mineure
+
+**Depuis** : version 2020.5.0
+
+La surface de l’API AEM est constamment revue pour identifier les API pour lesquelles l’utilisation est découragée et donc considérée comme obsolète.
+
+Dans de nombreux cas, ces API sont abandonnées à l’aide de l’annotation standard Java *@Deprecated* et, en tant que telles, identifiées par `squid:CallToDeprecatedMethod`.
+
+Cependant, il arrive qu’une API soit déconseillée dans le contexte d’AEM, mais qu’elle ne l’soit pas dans d’autres contextes. Cette règle identifie cette seconde classe.
+
+
+
