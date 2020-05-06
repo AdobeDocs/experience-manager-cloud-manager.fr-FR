@@ -1,35 +1,43 @@
 ---
-title: Notes de mise à jour de la version 2020.4.0
-seo-title: Notes de mise à jour de la version 2020.4.0 d’AEM Cloud Manager
-description: Consultez cette page pour obtenir des informations sur la version 2020.4.0 de Cloud Manager
-seo-description: Consultez cette page pour obtenir des informations sur la version 2020.4.0 d’AEM Cloud Manager
-translation-type: ht
-source-git-commit: ee7fc8a23dd0719eda84638c810842c2dc1772bb
+title: Notes de mise à jour de la version 2020.5.0
+seo-title: Notes de mise à jour de la version 2020.5.0 d’AEM Cloud Manager
+description: Consultez cette page pour obtenir des informations sur la version 2020.5.0 de Cloud Manager
+seo-description: Consultez cette page pour obtenir des informations sur la version 2020.5.0 d’AEM Cloud Manager
+translation-type: tm+mt
+source-git-commit: 278858465592482449080fedc3c0165805db223d
+workflow-type: tm+mt
+source-wordcount: '191'
+ht-degree: 31%
 
 ---
 
-# Notes de mise à jour de la version 2020.4.0 {#release-notes-for}
+# Notes de mise à jour de la version 2020.5.0 {#release-notes-for}
 
-La section ci-dessous présente les notes générales de mise à jour de la version 2020.4.0 de [!UICONTROL Cloud Manager].
+La section ci-dessous présente les notes générales de mise à jour de la version 2020.5.0 de [!UICONTROL Cloud Manager].
 
 ## Date de publication {#release-date}
 
-La date de publication de la version 2020.4.0 de [!UICONTROL Cloud Manager] est le 9 avril 2020.
+La date de publication de la version 2020.5.0 de [!UICONTROL Cloud Manager] est le 07 mai 2020.
 
 ## Nouveautés {#whats-new}
 
-* Modifications de la page d’aperçu de navigation de Cloud Manager pour permettre à l’utilisateur de modifier un programme ou d’en changer.
-* Modifications permettant à l’utilisateur de modifier un programme à partir de la carte de programme sur la page d’entrée de Cloud Manager.
-* Nouveau statut du pipeline **Exécution de pipeline** affiché au niveau de l’environnement auquel il est associé.
-* Améliorations de la lisibilité de la page d’exécution de pipeline. Cela inclut l’affichage du nom du pipeline (pipeline hors production uniquement) et du type, ainsi qu’un badge pour indiquer si le statut du pipeline est En cours/Annulé/Échec.
-* Le processus utilisé pour générer les mots de passe Git est maintenant plus résilient face aux problèmes de la couche de service sous-jacente.
+* Six autres règles de qualité du code ont été ajoutées pour aider les clients à identifier les problèmes potentiels lors de la planification d’une migration vers le service Cloud.
+
+* Une nouvelle mesure Compatibilité *des services* Cloud a été ajoutée pour résumer le nombre de problèmes de compatibilité.
+
+* Les performances de la page Activité et de l&#39;API de Liste Pipeline Executions ont été améliorées.
+
+* Le journal de la qualité du code contient désormais des traces de pile complètes pour les exceptions.
 
 ## Correctifs {#bug-fixes}
 
-* Les données de surveillance pouvaient parfois s’afficher de manière incorrecte ou pas du tout en fonction de variations mineures des valeurs techniques.
-* La configuration Maven utilisée dans le conteneur de build a été mise à jour afin d’éviter les blocages lors du téléchargement des métadonnées d’artefact.
-* Le processus de test des performances d’Assets ne parvenait parfois pas à déchiffrer le mot de passe AEM, ce qui provoquait l’échec des tests.
-* Certaines topologies avec des instances de secours pouvaient présenter des faux négatifs lors des tests de sécurité.
-* Si l’environnement d’évaluation contenait une instance arrêtée, l’étape de test de sécurité échouait parfois.
-* Les notifications Experience Cloud n’étaient pas toujours reçues.
+* Une carte trompeuse s’affichait sur la page d’aperçu pendant l’exécution du pipeline de production.
+
+* La règle de qualité du code *DontImplementOrExtendProviderTypesPomCheck* peut parfois générer une exception de pointeur de valeur NULL.
+
+* Certains liens de documentation de la page d’aperçu ne fonctionnaient pas correctement.
+
+* Certaines cartes de la page d&#39;aperçu n&#39;affichaient pas correctement les noms d&#39;entité.
+
+* Certaines configurations de topologie provoqueraient une erreur lors de l’étape de test des performances, plutôt que de rapports des mesures manquantes.
 
