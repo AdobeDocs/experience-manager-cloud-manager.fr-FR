@@ -9,8 +9,11 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-translation-type: ht
-source-git-commit: fb84c2d41c76c64fc0be1e9f86356ee0cb5bcf9c
+translation-type: tm+mt
+source-git-commit: 18b539951e286cb14d5c10404b42ba80682bbef0
+workflow-type: tm+mt
+source-wordcount: '1575'
+ht-degree: 97%
 
 ---
 
@@ -25,12 +28,12 @@ La page suivante explique comment configurer le **pipeline**. Pour consulter d�
 
 La configuration du pipeline de production CI/CD définit le déclencheur qui lancera le pipeline, les paramètres contrôlant le déploiement en production et les paramètres de test de performances.
 
->[!VIDEO](https://video.tv.adobe.com/v/26314/?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26314/)
 
 
 ## Présentation du flux {#understanding-the-flow}
 
-Vous pouvez configurer votre pipeline à partir de la vignette **Paramètres du pipeline** dans l’interface utilisateur de [!UICONTROL Cloud Manager].
+Vous pouvez configurer votre pipeline à partir de la vignette **Paramètres du pipeline** dans l’interface utilisateur de [!UICONTROL Cloud Manager].
 
 Le responsable de déploiement est chargé de la configuration du pipeline. Pour ce faire, vous devez d’abord sélectionner une branche dans le **référentiel git**. La configuration du pipeline comprend :
 
@@ -44,7 +47,7 @@ Le responsable de déploiement est chargé de la configuration du pipeline. Pour
 >
 >Le pipeline ne peut être configuré que si le référentiel Git dispose d’au moins une branche et que la [configuration du programme](setting-up-program.md) est terminée.
 
-Avant de commencer le déploiement du code, vous devez configurer les paramètres de votre pipeline à partir de [!UICONTROL Cloud Manager].
+Avant de commencer le déploiement du code, vous devez configurer les paramètres de votre pipeline à partir de [!UICONTROL Cloud Manager].
 
 >[!NOTE]
 >
@@ -125,7 +128,7 @@ Elle s’affiche ensuite sous la forme d’une étape distincte lors de l’exé
 
 **Invalidation du Dispatcher**
 
-En tant que responsable de déploiement, vous avez la possibilité de configurer un ensemble de chemins qui seront **invalidés** ou **purgés** du cache du Dispatcher AEM, lors de la configuration ou de la modification du pipeline.
+As a Deployment Manager, you have the opportunity to configure a set of content paths which will either be **invalidated** or **flushed** from the AEM Dispatcher cache, while setting up or editing pipeline.
 
 Vous pouvez configurer un ensemble distinct de chemins pour le déploiement Intermédiaire et Production. Si elles sont configurées, ces actions de cache sont exécutées dans le cadre de l’étape du pipeline de déploiement, juste après le déploiement des packages de contenu. Ces paramètres utilisent le comportement du Dispatcher AEM standard : invalider effectue une invalidation du cache, comme lorsque le contenu est activé de Author vers Publish ; purger effectue une suppression de cache.
 
@@ -199,7 +202,7 @@ En plus du pipeline principal qui se déploie vers les environnements intermédi
 
 Les pipelines CI/CD hors production sont divisés en deux catégories : les pipelines de qualité du code et les pipelines de déploiement. Les pipelines de qualité du code canalisent tout le code d’une branche Git pour génération et évaluation par rapport à l’analyse de la qualité du code de Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/26316/?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26316/)
 
 Sur l’écran d’accueil, ces pipelines sont répertoriés dans une nouvelle carte :
 
