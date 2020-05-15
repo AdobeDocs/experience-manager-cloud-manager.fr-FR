@@ -8,8 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: 67a54bae-99a9-4405-91e3-9a0a8b3ccc98
-translation-type: ht
-source-git-commit: 7cbc42108a6ccc8f7303eb76fd8ca2e9027f49e0
+translation-type: tm+mt
+source-git-commit: e2187565e7f06d64841eb2af9b4b1a56feb5ebe4
+workflow-type: tm+mt
+source-wordcount: '249'
+ht-degree: 94%
 
 ---
 
@@ -27,7 +30,7 @@ Les clients qui utilisent [!UICONTROL Cloud Manager] auront besoin de leurs info
 
 ## Sécurité des données {#data-security}
 
-Le code dans [!UICONTROL Cloud Manager] est chiffré en transit. Les binaires créées par Cloud Manager sont également chiffrées en transit et chiffrées lors de leur stockage.
+Le code dans [!UICONTROL Cloud Manager] est chiffré en transit. Les binaires créés par Cloud Manager sont également chiffrés en transit et chiffrés lorsqu’ils sont stockés.
 
 Chaque client obtient son propre **référentiel Git**. Le code est sécurisé et n’est partagé avec aucune autre **organisation**.
 
