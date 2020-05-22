@@ -5,7 +5,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: 67a54bae-99a9-4405-91e3-9a0a8b3ccc98
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9cbe8f58cf04001ba9851ba321f03c7687e58014
 
 ---
@@ -13,24 +13,24 @@ source-git-commit: 9cbe8f58cf04001ba9851ba321f03c7687e58014
 
 # Autorisations basées sur les rôles {#role-based-permissions}
 
-[!UICONTROL Cloud Manager] a des rôles préconfigurés avec les autorisations appropriées. Par exemple, un développeur développe du code et a l’autorisation de placer le code dans le **référentiel Git**. Un propriétaire d’entreprise dispose d’autorisations différentes qui lui permettent de définir des indicateurs de performance clés et d’approuver les déploiements.
+[!UICONTROL Cloud Manager] dispose de rôles préconfigurés avec les autorisations appropriées. Par exemple, un développeur développe du code et a l’autorisation de placer le code dans le **référentiel Git**. Un propriétaire d’entreprise dispose d’autorisations différentes qui lui permettent de définir des indicateurs de performance clés et d’approuver les déploiements.
 
 ## Rôles utilisateur {#user-roles}
 
-La gestion des rôles pour [!UICONTROL Cloud Manager] s’effectue dans [Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html). Tout utilisateur de [!UICONTROL Cloud Manager] doit être membre de l’organisation IMS du client et avoir le contexte du produit Adobe Managed Services. Des rôles spécifiques sont fournis en ajoutant un utilisateur à un profil de produit [!UICONTROL Cloud Manager] dans Admin Console.
+La gestion des rôles pour [!UICONTROL Cloud Manager] s’effectue dans [Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html). Tout utilisateur de [!UICONTROL Cloud Manager] doit être membre de l’organisation IMS du client et avoir le contexte du produit Adobe Managed Services. Des rôles spécifiques sont fournis en ajoutant un utilisateur à un profil de produit [!UICONTROL Cloud Manager] dans Admin Console.
 
 Pour plus d’informations sur la configuration de vos rôles, consultez la rubrique [Configuration des utilisateurs et des rôles](setting-up-users-and-roles.md).
 
 La liste suivante définit les rôles que vous pouvez attribuer dans Admin Console.
 
-| **[!UICONTROL Cloud Manager]Rôle ** | **Description** |
+| **[!UICONTROL Rôle dans]Cloud Manager ** | **Description** |
 |---|---|
-| Propriétaire de l’entreprise | Primary user who completes the initial [!UICONTROL Cloud Manager] setup. Est responsable de la définition des ICP, approuve les déploiements en production et contourne les échecs de trois niveaux. |
-| Responsable de programme | Utilise [!UICONTROL Cloud Manager] pour configurer les équipes et passer en revue les statuts et les ICP. Peut approuver des échecs importants de trois niveaux. |
-| Responsable de déploiement | Gère les opérations de déploiement. Uses [!UICONTROL Cloud Manager] to execute stage and production deployments. Peut approuver des échecs importants de trois niveaux. Dispose d’un accès au référentiel Git. |
-| Développeur | Développe et teste du code d’application personnalisé. Primarily uses [!UICONTROL Cloud Manager] to view status. Dispose d’un accès en validation au référentiel Git. |
+| Propriétaire de l’entreprise | Utilisateur principal qui effectue la configuration initiale de [!UICONTROL Cloud Manager]. Est responsable de la définition des ICP, approuve les déploiements en production et contourne les échecs de trois niveaux. |
+| Responsable de programme | Utilise [!UICONTROL Cloud Manager] pour configurer les équipes et passer en revue les statuts et les ICP. Peut approuver des échecs importants de trois niveaux. |
+| Responsable de déploiement | Gère les opérations de déploiement. Utilise [!UICONTROL Cloud Manager] pour exécuter les déploiements dans les environnements intermédiaires/de production. Peut approuver des échecs importants de trois niveaux. Dispose d’un accès au référentiel Git. |
+| Développeur | Développe et teste du code d’application personnalisé. Utilise principalement [!UICONTROL Cloud Manager] pour consulter les statuts. Dispose d’un accès en validation au référentiel Git. |
 | Ingénieur du service client | Prend en charge généralement les stratégies du service client pour les clients AMS. Interagit avec [!UICONTROL Cloud Manager] dans le but d’exécuter des déploiements nécessitant la supervision de l’ingénieur du service client. |
-| Auteur de contenu | Generally does not interact with [!UICONTROL Cloud Manager]. This user may use the [!UICONTROL Cloud Manager] Program Switcher (having navigated from [!UICONTROL Experience Cloud]) to access Adobe Experience Manager (AEM). |
+| Auteur de contenu | N’interagit généralement pas avec [!UICONTROL Cloud Manager]. Cet utilisateur peut utiliser le commutateur de programmes de [!UICONTROL Cloud Manager](depuis [!UICONTROL Experience Cloud]) pour accéder à Adobe Experience Manager (AEM). |
 
 ## Autorisations d’utilisateur {#user-permissions}
 
@@ -57,7 +57,7 @@ Pour en savoir plus sur la configuration de vos utilisateurs, voir [Configuratio
 | Écriture d’un pipeline | Configurer/modifier un pipeline. |  | x |  |  |  |
 | Approbation de la modification d’un pipeline | Permet la modification de l’option Propriétaire de l’entreprise. |  | x |  |  |  |
 | Déploiement géré par la modification du pipeline | Permet la modification de l’option Supervision par l’ingénieur du service client. |  | x |  |  |  |
-| Suppression du tuyau | Permet de supprimer un tuyau. |  | x |  |  |  |
+| Suppression de pipeline | Permet la suppression d’un pipeline. |  | x |  |  |  |
 | Lecture de l’étape | Voir les résultats des mesures de qualité de l’étape. | x | x | x | x | x |
 | Génération d’un jeton d’accès personnel | Accéder à Git. |  | x |  | x |  |
 
