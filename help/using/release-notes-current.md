@@ -1,43 +1,41 @@
 ---
-title: Notes de mise à jour de la version 2020.5.0
-seo-title: Notes de mise à jour de la version 2020.5.0 d’AEM Cloud Manager
-description: Consultez cette page pour obtenir des informations sur la version 2020.5.0 de Cloud Manager
-seo-description: Consultez cette page pour obtenir des informations sur la version 2020.5.0 d’AEM Cloud Manager
+title: Notes de mise à jour de la version 2020.6.0
+seo-title: Notes de mise à jour de la version 2020.6.0 d’AEM Cloud Manager
+description: Consultez cette page pour obtenir des informations sur la version 2020.6.0 de Cloud Manager
+seo-description: Consultez cette page pour obtenir des informations sur la version 2020.6.0 d’AEM Cloud Manager
 translation-type: tm+mt
-source-git-commit: 278858465592482449080fedc3c0165805db223d
+source-git-commit: 0652436ec0c1c95d270a06a600424dbfd0140b27
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 31%
+source-wordcount: '181'
+ht-degree: 33%
 
 ---
 
-# Notes de mise à jour de la version 2020.5.0 {#release-notes-for}
+# Notes de mise à jour de la version 2020.6.0 {#release-notes-for}
 
-La section ci-dessous présente les notes générales de mise à jour de la version 2020.5.0 de [!UICONTROL Cloud Manager].
+La section ci-dessous présente les notes générales de mise à jour de la version 2020.5.0 de [!UICONTROL Cloud Manager].
 
 ## Date de publication {#release-date}
 
-La date de publication de la version 2020.5.0 de [!UICONTROL Cloud Manager] est le 07 mai 2020.
+La date de publication de la version 2020.6.0 de [!UICONTROL Cloud Manager] est le 04 juin 2020.
 
 ## Nouveautés {#whats-new}
 
-* Six autres règles de qualité du code ont été ajoutées pour aider les clients à identifier les problèmes potentiels lors de la planification d’une migration vers le service Cloud.
+* Des repères de coaching sur le landing page pour informer et informer l&#39;utilisateur sur la navigation de base.
 
-* Une nouvelle mesure Compatibilité *des services* Cloud a été ajoutée pour résumer le nombre de problèmes de compatibilité.
+* Une page **LEARN** est désormais disponible dans Cloud Manager, accessible par le biais de la navigation supérieure. Cette page comprend des ressources destinées à aider les utilisateurs à en savoir plus sur les flux de travail les plus fréquemment utilisés en fonction de leurs rôles attribués dans Cloud Manager.
 
-* Les performances de la page Activité et de l&#39;API de Liste Pipeline Executions ont été améliorées.
+* La valeur maximale du temps de traitement du 95e centile des actifs a été augmentée à 500 secondes.
 
-* Le journal de la qualité du code contient désormais des traces de pile complètes pour les exceptions.
+* Le journal de création inclut désormais la liste des artefacts détectés, y compris les packages de contenu ignorés.
+
+* L’étape de création valide désormais que tous les packages de contenu générés comprennent toutes les propriétés obligatoires - nom, groupe et version.
 
 ## Correctifs {#bug-fixes}
 
-* Une carte trompeuse s’affichait sur la page d’aperçu pendant l’exécution du pipeline de production.
 
-* La règle de qualité du code *DontImplementOrExtendProviderTypesPomCheck* peut parfois générer une exception de pointeur de valeur NULL.
+* Lors de la configuration du pipeline de production, l’option Déploiement planifié n’était pas visible pour certains clients.
 
-* Certains liens de documentation de la page d’aperçu ne fonctionnaient pas correctement.
+* Certains messages de déploiement ont été tronqués.
 
-* Certaines cartes de la page d&#39;aperçu n&#39;affichaient pas correctement les noms d&#39;entité.
-
-* Certaines configurations de topologie provoqueraient une erreur lors de l’étape de test des performances, plutôt que de rapports des mesures manquantes.
 
