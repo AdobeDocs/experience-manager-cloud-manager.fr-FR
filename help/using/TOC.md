@@ -4,9 +4,9 @@ sub-product: experience manager cloud manager
 archetype: administrator
 user-guide-title: Aide d’Experience Manager Cloud Manager
 translation-type: tm+mt
-source-git-commit: 278858465592482449080fedc3c0165805db223d
+source-git-commit: 0652436ec0c1c95d270a06a600424dbfd0140b27
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '201'
 ht-degree: 100%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 100%
 + [Présentation de Cloud Manager](introduction-to-cloud-manager.md)
 + Présentation {#overview}
    + [Concepts clés](key-concepts.md)
-   + [Parcours du client](customer-journey.md)
+   + [Parcours client](customer-journey.md)
    + [Pipeline CI/CD](ci-cd-pipeline.md)
    + [Sécurité et confidentialité](security-and-privacy.md)
    + [Ressources d’aide](help-resources.md)
@@ -51,7 +51,8 @@ ht-degree: 100%
    + [Présentation](overview-productupdate-wizard.md)
    + [Évaluation](evaluation.md)
 + Notes de mise à jour {#release-notes}
-   + [Notes de mise à jour de la version actuelle (2020.5.0)](release-notes-current.md)
+   + [Notes de mise à jour de la version actuelle (2020.6.0)](release-notes-current.md)
+   + [Notes de mise à jour de la version 2020.5.0](release-notes-2020-5-0.md)
    + [Notes de mise à jour de la version 2020.4.0](release-notes-2020-4-0.md)
    + [Notes de mise à jour de la version 2020.3.0](release-notes-2020-3-0.md)
    + [Notes de mise à jour de la version 2020.2.0](release-notes-2020-2-0.md)
