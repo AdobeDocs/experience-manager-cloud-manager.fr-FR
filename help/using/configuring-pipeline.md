@@ -9,11 +9,11 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 18b539951e286cb14d5c10404b42ba80682bbef0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1575'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ La page suivante explique comment configurer le **pipeline**. Pour consulter d�
 
 La configuration du pipeline de production CI/CD définit le déclencheur qui lancera le pipeline, les paramètres contrôlant le déploiement en production et les paramètres de test de performances.
 
->[!VIDEO](https://video.tv.adobe.com/v/26314/)
+>[!VIDEO](https://video.tv.adobe.com/v/26314/?captions=fre_fr)
 
 
 ## Présentation du flux {#understanding-the-flow}
@@ -128,7 +128,7 @@ Elle s’affiche ensuite sous la forme d’une étape distincte lors de l’exé
 
 **Invalidation du Dispatcher**
 
-As a Deployment Manager, you have the opportunity to configure a set of content paths which will either be **invalidated** or **flushed** from the AEM Dispatcher cache, while setting up or editing pipeline.
+En tant que responsable de déploiement, vous avez la possibilité de configurer un ensemble de chemins de contenu qui seront **invalidés** ou **purgés** du cache du Dispatcher AEM, lors de la configuration ou de la modification du pipeline.
 
 Vous pouvez configurer un ensemble distinct de chemins pour le déploiement Intermédiaire et Production. Si elles sont configurées, ces actions de cache sont exécutées dans le cadre de l’étape du pipeline de déploiement, juste après le déploiement des packages de contenu. Ces paramètres utilisent le comportement du Dispatcher AEM standard : invalider effectue une invalidation du cache, comme lorsque le contenu est activé de Author vers Publish ; purger effectue une suppression de cache.
 
@@ -161,7 +161,7 @@ Pour configurer les invalidations du Dispatcher, procédez comme suit :
 
    Vous pouvez configurer des tests de performance *AEM Sites* et *AEM Assets*, selon les produits sous licence que vous possédez.
 
-   **AEM Sites:**
+   **AEM Sites :**
 
    Cloud Manager exécute les tests de performance pour les programmes AEM Sites, en demandant des pages (en tant qu’utilisateur non authentifié) sur le serveur de publication intermédiaire pendant une période de test de 30 minutes et en mesurant le temps de réponse pour chaque page, ainsi que les différentes mesures au niveau du système. Les pages sont sélectionnées par trois **ensembles de pages**. Vous pouvez en choisir un, deux ou trois. La répartition du trafic dépend du nombre d’ensembles sélectionnés. Si les trois ensembles sont sélectionnés, 33 % du nombre total des pages vues sont placées dans chaque ensemble, si deux ensembles sont sélectionnés, 50 % sont dirigées vers chaque ensemble, si un seul est sélectionné, 100 % du trafic va vers cet ensemble.
 
@@ -172,7 +172,7 @@ Pour configurer les invalidations du Dispatcher, procédez comme suit :
    * Chacune des 3 000 pages des nouvelles pages sera demandée une fois - ((200 x 0,5) : 3 000) x 30 = 1
    ![](assets/Configuring_Pipeline_AEM-Sites.png)
 
-   **AEM Assets:**
+   **AEM Assets :**
 
    Cloud Manager exécute des tests de performance pour les programmes AEM Assets en chargeant des ressources à plusieurs reprises pendant une période de test de 30 minutes et en mesurant le délai de traitement de chaque ressource, ainsi que diverses mesures au niveau du système. Cette fonctionnalité peut télécharger des images et des documents PDF. La répartition du nombre de ressources de chaque type qui sont téléchargées par minute est définie dans l’écran Configuration du pipeline ou Modifier.
 
@@ -202,7 +202,7 @@ En plus du pipeline principal qui se déploie vers les environnements intermédi
 
 Les pipelines CI/CD hors production sont divisés en deux catégories : les pipelines de qualité du code et les pipelines de déploiement. Les pipelines de qualité du code canalisent tout le code d’une branche Git pour génération et évaluation par rapport à l’analyse de la qualité du code de Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/26316/)
+>[!VIDEO](https://video.tv.adobe.com/v/26316/?captions=fre_fr)
 
 Sur l’écran d’accueil, ces pipelines sont répertoriés dans une nouvelle carte :
 
