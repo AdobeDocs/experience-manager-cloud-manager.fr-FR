@@ -3,9 +3,9 @@ title: Notes de mise à jour de la version 2020.6.0
 seo-title: Notes de mise à jour de la version 2020.6.0 d’AEM Cloud Manager
 description: Consultez cette page pour obtenir des informations sur la version 2020.6.0 de Cloud Manager
 seo-description: Consultez cette page pour obtenir des informations sur la version 2020.6.0 d’AEM Cloud Manager
-translation-type: ht
-source-git-commit: 0652436ec0c1c95d270a06a600424dbfd0140b27
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: fddfc8cef28bc07fb32d7f8ca6a815e888beefef
+workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Notes de mise à jour de la version 2020.6.0 {#release-notes-for}
 
-La section ci-dessous présente les notes générales de mise à jour de la version 2020.5.0 de [!UICONTROL Cloud Manager].
+La section ci-dessous présente les notes générales de mise à jour de la version 2020.6.0 de [!UICONTROL Cloud Manager].
 
 ## Date de publication {#release-date}
 
@@ -33,9 +33,6 @@ La date de publication de la version 2020.6.0 de [!UICONTROL Cloud Manager] es
 
 ## Correctifs {#bug-fixes}
 
-
 * Lors de la configuration du pipeline de production, l’option Déploiement planifié n’était pas visible pour certains clients.
 
 * Certains messages de déploiement étaient tronqués.
-
-
