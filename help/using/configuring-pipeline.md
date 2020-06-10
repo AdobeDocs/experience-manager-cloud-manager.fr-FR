@@ -81,6 +81,7 @@ Sélectionnez votre branche Git et cliquez **Suivant**.
 
    * **Lors des modifications Git** : démarre le pipeline CI/CD chaque fois que des validations sont ajoutées à la branche git configurée. Même si vous sélectionnez cette option, vous pouvez toujours démarrer le pipeline manuellement.
    * **Manuel** : l’utilisation de l’interface lance le pipeline manuellement.
+
    Lors de la configuration ou de la modification du pipeline, le responsable de déploiement peut définir le comportement du pipeline en cas d’échec important dans l’un des points de contrôle qualité tels que Qualité du code, Test de sécurité et Test de performance.
 
    Cela s’avère utile pour les clients qui souhaitent davantage de processus automatisés. Les options disponibles sont les suivantes :
@@ -170,6 +171,7 @@ Pour configurer les invalidations du Dispatcher, procédez comme suit :
    * Chacune des 25 pages des pages actives populaires est demandée 240 fois – ((200 x 0,5) : 25) x 30 = 120
 
    * Chacune des 3 000 pages des nouvelles pages sera demandée une fois - ((200 x 0,5) : 3 000) x 30 = 1
+
    ![](assets/Configuring_Pipeline_AEM-Sites.png)
 
    **AEM Assets :**
@@ -221,6 +223,7 @@ Sur l’écran d’accueil, ces pipelines sont répertoriés dans une nouvelle c
    * **Modifier** : permet de modifier les paramètres du pipeline.
    * **Détail** : affiche la dernière exécution du pipeline (si existante).
    * **Génération** : permet d’accéder à la page d’exécution, à partir de laquelle le pipeline peut être exécuté.
+
    ![](assets/Non-prod-2.png)
 
    >[!NOTE]
