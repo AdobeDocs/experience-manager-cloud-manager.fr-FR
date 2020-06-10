@@ -10,6 +10,9 @@ topic-tags: getting-started
 discoiquuid: c2393540-e852-4f7c-aafd-1427209065d2
 translation-type: ht
 source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
+workflow-type: ht
+source-wordcount: '697'
+ht-degree: 100%
 
 ---
 
@@ -60,6 +63,7 @@ Pour configurer le programme et définir les indicateurs de performance clés, p
    1. Combien de pages vues par minute sous le pic de charge ?
 
       * Valeur recommandée : 200 vues de page par minute.
+
    **AEM Assets**
 
    Depuis sa version initiale, Cloud Manager a été en mesure d’exécuter des tests de performance pour les programmes AEM Sites. Avec cette version, il est désormais possible d’exécuter des tests de performance pour les programmes AEM Assets. Les tests de performance des ressources sont effectués en chargeant plusieurs ressources à plusieurs reprises pendant une période de test de 30 minutes et en mesurant le temps de traitement de chaque ressource ainsi que diverses mesures au niveau du système.
@@ -67,6 +71,7 @@ Lors de la configuration du programme, des indicateurs de performance clés spé
 
    * Délai de traitement du 95e percentile
    * Ressources téléchargées par minute
+
    ![](assets/Setup_Program-KPIs.png)
 
 1. Sous **Mise en service**, vous pouvez afficher ou modifier la configuration des environnements de production et autres dans votre programme. **La mise à l’échelle automatique est activée** s’affiche si la mise à l’échelle automatique a été activée pour le programme.
