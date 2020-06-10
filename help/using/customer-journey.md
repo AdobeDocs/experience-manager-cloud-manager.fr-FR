@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: bc9a0d63-ae6b-4fe9-81e5-bf9844f04e54
 translation-type: tm+mt
-source-git-commit: 15f75ca67c3d52ae511357c5b564daaa3d9def6b
+source-git-commit: 77b7e2fc81880a7f1878fa9553ce2ae8078d1b78
+workflow-type: tm+mt
+source-wordcount: '586'
+ht-degree: 86%
 
 ---
 
@@ -44,11 +47,11 @@ Vous avez accès à [!UICONTROL Cloud Manager] et à vos environnements AEM en v
 
 Après la première connexion à [!UICONTROL Cloud Manager], vous avez accès à vos environnements AEM directement depuis l’interface utilisateur de [!UICONTROL Cloud Manager]. À ce stade, vous êtes prêt à explorer toutes les possibilités de [!UICONTROL Cloud Manager], une fois que votre première branche de code est prête à être déployée dans vos environnements intermédiaire et de production.
 
-Pour découvrir [!UICONTROL Cloud Manager] et commencer à utiliser la solution, consultez la section [Première connexion](first-time-login.md). For additional information about AEM, see [Getting Started with AEM 6.4](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/deploy.html). Pour plus d’informations, reportez-vous à la section Ressources [](https://www.adobe.com/marketing-cloud/experience-manager/resources.html?promoid=759X6WV8&mv=other) AEM.
+Pour découvrir [!UICONTROL Cloud Manager] et commencer à utiliser la solution, consultez la section [Première connexion](first-time-login.md). For additional information about AEM, see [Getting Started with AEM 6.4](https://helpx.adobe.com/fr/experience-manager/6-4/sites/deploying/using/deploy.html). En outre, reportez-vous aux ressources [](https://www.adobe.com/marketing-cloud/experience-manager/resources.html?promoid=759X6WV8&amp;mv=other) AEM pour plus d’informations.
 
 ## Prise en main de [!UICONTROL Cloud Manager] {#getting-started-with-cloud-manager}
 
-Une fois connecté à [!UICONTROL Cloud Manager], la première chose à faire est de configurer votre environnement de référentiel de code, puis votre équipe et vos rôles. De manière spécifique, les rôles sont affectés en ajoutant l’utilisateur à un profil [!UICONTROL Cloud Manager] à l’aide de l’interface utilisateur d’Admin Console.
+Once you are logged in to [!UICONTROL Cloud Manager], the first thing to do will be to set up your code repository environment, then your team and roles. De manière spécifique, les rôles sont affectés en ajoutant l’utilisateur à un profil [!UICONTROL Cloud Manager] à l’aide de l’interface utilisateur d’Admin Console.
 
 Ensuite, vous devez configurer vos branches de code source dans le **référentiel Git**, définir vos objectifs en termes d’ICP de chargement et de performance, puis tester les scénarios afin de déployer votre code dans vos environnements intermédiaire et de production, une fois que tous les contrôles de qualité ont été réussis.
 
