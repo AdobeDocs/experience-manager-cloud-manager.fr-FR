@@ -5,10 +5,13 @@ description: Découvrez l’Adobe ID et les ressources Experience Cloud.
 seo-description: Consultez cette page pour en savoir plus sur l’Adobe ID et les ressources AEM Experience Cloud.
 uuid: 9aa90a99-f049-422e-9e06-b00b843ed98b
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: conditions requises
+topic-tags: requirements
 discoiquuid: 072dbc1b-e608-4b1f-b0e8-0e4f88c8ad12
 translation-type: tm+mt
-source-git-commit: 0f29b3f9cf4bd53d0e57c7793fe05cd3afeea5e1
+source-git-commit: e8484052124c23d4849c59f6c76262a3284ef2ac
+workflow-type: tm+mt
+source-wordcount: '242'
+ht-degree: 97%
 
 ---
 
@@ -23,6 +26,6 @@ Pour commencer à utiliser un Adobe ID, consultez la page [Gérer les types d’
 
 ### Utilisateurs et rôles {#users-and-roles}
 
-Une fois qu’Adobe a créé une organisation pour votre entreprise, l’administrateur désigné sera ajouté en tant que premier membre à cette organisation. L’administrateur recevra les autorisations d’administrateur par défaut et recevra le **produit** [!UICONTROL AEM Managed Services], ainsi qu’un ou plusieurs **profils produits** [!UICONTROL Cloud Manager]. Consultez la section [Ajout d’utilisateurs et de rôles](setting-up-users-and-roles.md) pour en savoir plus sur la configuration et la gestion des utilisateurs de votre équipe à l’aide d’Admin Console.
+Une fois qu’Adobe a créé une organisation pour votre entreprise, l’administrateur désigné sera ajouté en tant que premier membre à cette organisation. Par défaut, l’administrateur se verra octroyer les autorisations d’administrateur et attribuer le **produit** [!UICONTROL AEM Managed Services] et un ou plusieurs **profils de produits** [!UICONTROL Cloud Manager]. Consultez la section [Ajout d’utilisateurs et de rôles](setting-up-users-and-roles.md) pour en savoir plus sur la configuration et la gestion des utilisateurs de votre équipe à l’aide d’Admin Console.
 
 Avec ces droits, votre administrateur dispose maintenant d’une authentification unique (à l’aide de l’Adobe ID) pour accéder aux services [!UICONTROL Experience Cloud], se connecter à vos environnements cloud AEM et utiliser [!UICONTROL Cloud Manager].
