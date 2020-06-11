@@ -8,11 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: c2393540-e852-4f7c-aafd-1427209065d2
-translation-type: ht
-source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
-workflow-type: ht
-source-wordcount: '697'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 6851884b08c0c0a971242a958f72a7673a1a1196
+workflow-type: tm+mt
+source-wordcount: '695'
+ht-degree: 97%
 
 ---
 
@@ -74,7 +74,7 @@ Lors de la configuration du programme, des indicateurs de performance clés spé
 
    ![](assets/Setup_Program-KPIs.png)
 
-1. Sous **Mise en service**, vous pouvez afficher ou modifier la configuration des environnements de production et autres dans votre programme. **La mise à l’échelle automatique est activée** s’affiche si la mise à l’échelle automatique a été activée pour le programme.
+1. Under **Provisioning**, you can view or edit the provisioning configuration for production and non-production environments in your program. **La mise à l’échelle automatique est activée** s’affiche si la mise à l’échelle automatique a été activée pour le programme.
 
    >[!NOTE]
    >
