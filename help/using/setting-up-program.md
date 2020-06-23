@@ -8,11 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: c2393540-e852-4f7c-aafd-1427209065d2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6851884b08c0c0a971242a958f72a7673a1a1196
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '695'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Les IPC définis servent de référence pour les tests de performance qui sont e
 >
 >De plus, de nombreux utilisateurs disposeront d’un réseau de diffusion de contenu (CDN), tel que Akamai ou CloudFront devant leur environnement de production. Puisque [!UICONTROL Cloud Manager] effectue directement des tests par rapport à l’environnement intermédiaire, l’indicateur de performance clé doit refléter uniquement le trafic prévu pour transiter via le CDN, c’est-à-dire les pertes dans le cache. En règle générale, il s’agira d’un sous-ensemble relativement petit du trafic de production total.
 
-## Utilisation [!UICONTROL de Cloud Manager] pour configurer votre programme {#using-cloud-manager-to-setup-your-program}
+## Utilisation de [!UICONTROL Cloud Manager] pour configurer votre programme {#using-cloud-manager-to-setup-your-program}
 
 Pour configurer le programme et définir les indicateurs de performance clés, procédez comme suit :
 
@@ -74,7 +74,7 @@ Lors de la configuration du programme, des indicateurs de performance clés spé
 
    ![](assets/Setup_Program-KPIs.png)
 
-1. Under **Provisioning**, you can view or edit the provisioning configuration for production and non-production environments in your program. **La mise à l’échelle automatique est activée** s’affiche si la mise à l’échelle automatique a été activée pour le programme.
+1. Sous **Mise en service**, vous pouvez afficher ou modifier la configuration des environnements de production et autres dans votre programme. **La mise à l’échelle automatique est activée** s’affiche si la mise à l’échelle automatique a été activée pour le programme.
 
    >[!NOTE]
    >
