@@ -8,9 +8,9 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
-translation-type: ht
-source-git-commit: 3663bd773c0043282359d690621de5023fa2974c
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 8c651bcb187d911448475f6031c93bf956277e9f
+workflow-type: tm+mt
 source-wordcount: '2282'
 ht-degree: 100%
 
@@ -621,7 +621,8 @@ Le fait qu’un même composant OSGi soit configuré plusieurs fois est un probl
 
 #### Code non conforme {#non-compliant-code-osgi}
 
-```+ apps
+```
++ apps
   + projectA
     + config
       + com.day.cq.commons.impl.ExternalizerImpl
@@ -632,7 +633,8 @@ Le fait qu’un même composant OSGi soit configuré plusieurs fois est un probl
 
 #### Code conforme {#compliant-code-osgi}
 
-```+ apps
+```
++ apps
   + shared-config
     + config
       + com.day.cq.commons.impl.ExternalizerImpl
@@ -648,7 +650,7 @@ Le fait qu’un même composant OSGi soit configuré plusieurs fois est un probl
 
 **Depuis** : version 2019.6.0
 
-Pour des raisons de sécurité, les chemins contenant */config/ et /install/* ne sont lisibles que par les utilisateurs administratifs dans AEM et doivent être utilisés uniquement pour la configuration OSGi et les lots OSGi. Placer d’autres types de contenu sous les chemins contenant ces segments donne un comportement d’application qui varie involontairement entre les utilisateurs administratifs et non administrateurs.
+Pour des raisons de sécurité, les chemins contenant */config/ et /install/* ne sont lisibles que par les utilisateurs administratifs dans AEM et doivent être utilisés uniquement pour la configuration OSGi et les bundles OSGi. Placer d’autres types de contenu sous les chemins contenant ces segments donne un comportement d’application qui varie involontairement entre les utilisateurs administratifs et non administrateurs.
 
 Un problème courant est l’utilisation de nœuds nommés `config` dans les boîtes de dialogue des composants ou lors de la spécification de la configuration de l’éditeur de texte enrichi pour la modification statique. Pour résoudre ce problème, le nœud incriminé doit être renommé avec un nom compatible. Pour la configuration de l’éditeur de texte enrichi, utilisez la propriété `configPath` sur le nœud `cq:inplaceEditing` pour spécifier le nouvel emplacement.
 
