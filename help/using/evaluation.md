@@ -8,7 +8,10 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
-source-git-commit: 9e33b90818c686f0b7aacaf0955c3f2eba05488f
+source-git-commit: 3bb435aae932b9446867c30b7dd6b0a8e0839ee2
+workflow-type: tm+mt
+source-wordcount: '294'
+ht-degree: 92%
 
 ---
 
@@ -27,6 +30,7 @@ Le rapport généré permet de vérifier l’instance Auteur pour la mise à niv
 Cela peut servir à évaluer l’ampleur des tâches de développement nécessaires pour effectuer une mise à niveau vers Adobe Experience Manager (AEM) 6.5.
 
 >[!NOTE]
+>
 >To learn more about pattern detector, refer to [Assessing the Upgrade Complexity with the Pattern Detector](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/pattern-detector.html)
 
 ## Exécution de l’évaluateur {#running-evaluator}
@@ -40,12 +44,13 @@ Pour générer un rapport d’évaluation, procédez comme suit :
 
    ![](assets/Run-Evaluation.png)
 
-1. L’assistant vous informe de l’état de votre action. Vous remarquerez les états **en cours** ou **terminé** le cas échéant une fois le rapport d'évaluation généré.
+1. L’assistant vous informe de l’état de votre action. Vous remarquerez les états **en cours** ou **terminé** le cas échéant une fois le rapport d&#39;évaluation généré.
 
    Une fois le rapport généré, vous pouvez cliquer sur **[!UICONTROL Télécharger le rapport]** pour enregistrer une copie.
 
    ![](assets/Evaluation-1.png)
 
 
->[!NOTE]
->La version actuelle de l’assistant de mise à jour du produit de Cloud Manager prend uniquement en charge la phase **Évaluation**. Les quatre autres phases appelées **Correction**, **Exécution**, **Validation** et **Achèvement** seront bientôt disponibles.
+   >[!NOTE]
+   >
+   >La version actuelle de l’assistant de mise à jour du produit de Cloud Manager prend uniquement en charge la phase **Évaluation**. Les quatre autres phases appelées **Correction**, **Exécution**, **Validation** et **Achèvement** seront bientôt disponibles.
