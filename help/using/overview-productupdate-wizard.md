@@ -8,7 +8,10 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
-source-git-commit: 7769911253c149f4b1f7d9dec5d94888ccdbcb59
+source-git-commit: 3bb435aae932b9446867c30b7dd6b0a8e0839ee2
+workflow-type: tm+mt
+source-wordcount: '210'
+ht-degree: 100%
 
 ---
 
@@ -29,6 +32,7 @@ L’assistant comprend cinq phases qui guident l’utilisateur lors d’une mise
 ## Utilisation de l’assistant de mise à jour du produit {#using-product-update-wizard}
 
 >[!NOTE]
+>
 >Les clients intégrés à Cloud Manager et souhaitant effectuer une mise à niveau vers AEM 6.5 pourront tirer parti de l’assistant de mise à jour du produit. Pour plus d’informations, contactez l’ingénieur du service client (CSE).
 
 1. Vous recevrez une notification Pulse via Cloud Manager pour vous informer qu’AEM 6.5 est disponible pour votre offre.
