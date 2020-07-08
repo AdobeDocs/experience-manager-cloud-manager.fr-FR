@@ -8,8 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
-translation-type: ht
-source-git-commit: 25edab26146d7d98ef5a38a45b4fe67b0d5e564e
+translation-type: tm+mt
+source-git-commit: c07e88564dc1419bd0305c9d25173a8e0e1f47cf
+workflow-type: tm+mt
+source-wordcount: '1514'
+ht-degree: 85%
 
 ---
 
@@ -81,7 +84,7 @@ Cloud Manager crée et teste votre code à l&#39;aide d&#39;un environnement de 
 
 * L&#39;environnement de création est basé sur Linux, dérivé de Ubuntu 18.04.
 * Apache Maven 3.6.0 est installé.
-* La version Java installée est Oracle JDK 8u202.
+* Les versions Java installées sont Oracle JDK 8u202 et 11.0.2.
 * D’autres packages système nécessaires sont installés :
 
    * bzip2
@@ -95,6 +98,37 @@ Cloud Manager crée et teste votre code à l&#39;aide d&#39;un environnement de 
 * Maven est toujours exécuté avec la commande : *mvn --batch-mode clean org.jacoco:jacoco-maven-plugin:prepare-agent package*.
 * Maven est configuré au niveau du système avec un fichier settings.xml qui inclut automatiquement le référentiel public Adobe **Artifact**. (Pour plus d’informations, consultez le [référentiel Maven public d’Adobe](https://repo.adobe.com/)).
 
+### Using Java 11 {#using-java-11}
+
+Cloud Manager prend désormais en charge la création de projets clients avec Java 8 et Java 11. Par défaut, les projets sont créés à l’aide de Java 8. Les clients qui ont l&#39;intention d&#39;utiliser Java 11 dans leurs projets peuvent le faire à l&#39;aide du module [Apache Maven Toolchain](https://maven.apache.org/plugins/maven-toolchains-plugin/).
+
+Pour ce faire, dans le fichier pom.xml, ajoutez une `<plugin>` entrée qui ressemble à celle-ci :
+
+```xml
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-toolchains-plugin</artifactId>
+            <version>1.1</version>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>toolchain</goal>
+                    </goals>
+                </execution>
+            </executions>
+            <configuration>
+                <toolchains>
+                    <jdk>
+                    <version>11</version>
+                    <vendor>oracle</vendor>
+                    </jdk>
+                </toolchains>
+            </configuration>
+        </plugin>
+```
+
+>[!NOTE]
+>Les fournisseurs pris en charge sont Oracle et Sun Microsystems et les versions prises en charge sont 1.8, 1.11 et 11.
 
 ## Variables d’environnement {#environment-variables}
 
@@ -116,29 +150,35 @@ Pour la prise en charge, Cloud Manager ajoute ces variables d’environnement s
 | CM_PROGRAM_NAME | Nom du programme |
 | ARTIFACTS_VERSION | Pour un pipeline intermédiaire ou de production, version synthétique générée par Cloud Manager |
 
-### Variables d’environnement personnalisées {#custom-environ-variables}
+### Variables de tuyau {#pipeline-variables}
 
-Dans certains cas, le processus de génération d’un client peut dépendre de variables de configuration spécifiques qu’il serait inadéquat de placer dans le référentiel git. Cloud Manager permet que ces variables soient configurées par un ingénieur du service client pour chaque client. Ces variables sont stockées à un emplacement de stockage sécurisé et ne sont visibles que dans le conteneur de génération pour le client spécifique. Les clients qui souhaitent utiliser cette fonctionnalité doivent contacter l’ingénieur du service client pour configurer leurs variables.
+Dans certains cas, le processus de génération d’un client peut dépendre de variables de configuration spécifiques qu’il serait inadéquat de placer dans le référentiel git. Cloud Manager permet de configurer ces variables par le biais de l’API Cloud Manager ou de l’interface de ligne de commande de Cloud Manager pour chaque pipeline. Les variables peuvent être stockées en texte brut ou chiffrées au repos. Dans les deux cas, les variables sont disponibles dans l’environnement de génération en tant que variable d’environnement, qui peut ensuite être référencée à partir du fichier pom.xml ou d’autres scripts de génération.
 
-Une fois configurées, ces variables seront disponibles en tant que variables d’environnement. Pour les utiliser comme propriétés Maven, vous pouvez les référencer dans votre fichier pom.xml, éventuellement dans un profil, comme décrit ci-dessus :
+Pour définir une variable à l’aide de l’interface de ligne de commande, exécutez une commande du type :
+
+`$ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test`
+
+Les variables actives peuvent être répertoriées :
+
+`$ aio cloudmanager:list-pipeline-variables PIPELINEID`
+
+Les noms de variable ne peuvent contenir que des caractères alphanumériques et des caractères de soulignement. Par convention, les noms doivent être entièrement en majuscules. Il existe une limite de 200 variables par pipeline, chaque nom doit comporter moins de 100 caractères et chaque valeur doit être inférieure à 2 048 caractères.
+
+Lorsqu’elle est utilisée dans un fichier maven pom.xml, il s’avère généralement utile de mapper ces variables aux propriétés Maven en utilisant une syntaxe similaire à celle-ci :
 
 ```xml
         <profile>
             <id>cmBuild</id>
             <activation>
-                  <property>
-                        <name>env.CM_BUILD</name>
-                  </property>
+            <property>
+                <name>env.CM_BUILD</name>
+            </property>
             </activation>
-            <properties>
-                  <my.custom.property>${env.MY_CUSTOM_PROPERTY}</my.custom.property>  
-            </properties>
+                <properties>
+                <my.custom.property>${env.MY_CUSTOM_VARIABLE}</my.custom.property> 
+                </properties>
         </profile>
 ```
-
->[!NOTE]
->
->Les noms des variables d’environnement ne peuvent contenir que des caractères alphanumériques et des caractères de soulignement (_). Par convention, les noms doivent être entièrement en majuscules.
 
 ## Activation des profils Maven dans Cloud Manager {#activating-maven-profiles-in-cloud-manager}
 
@@ -217,7 +257,6 @@ Si vous souhaitez générer un message de sortie simple uniquement lorsque la g�
             </build>
         </profile>
 ```
-
 
 ## Installation de packages système supplémentaires {#installing-additional-system-packages}
 
