@@ -6,10 +6,13 @@ seo-description: Consultez cette page pour en savoir plus sur la configuration d
 uuid: 3ecd8ca3-5241-4811-87fd-3284a8012eda
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: Guide de démarrage
+topic-tags: getting-started
 discoiquuid: 8888dd80-d908-464e-927d-779db1a832a4
-translation-type: ht
-source-git-commit: e0a280efddb1e31f5aef65f0f52fc5b4e71de3da
+translation-type: tm+mt
+source-git-commit: cdf2c82192c2e9c375316ae6e28646594ba2a462
+workflow-type: tm+mt
+source-wordcount: '603'
+ht-degree: 100%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: e0a280efddb1e31f5aef65f0f52fc5b4e71de3da
 
 Cloud Manager peut déployer les fichiers de configuration du serveur web et du Dispatcher en supposant qu’ils soient stockés dans le **référentiel Git**, en plus des packages de contenu AEM normaux.
 
-Pour tirer parti de cette fonctionnalité, la compilation Maven doit produire un fichier zip contenant au moins deux répertoires : ***conf*** et ***conf.d***. Ce fichier zip peut être créé à l’aide de maven-assembly-plugin. Les projets générés par Cloud Manager à l’aide de l’[assistant](create-an-application-project.md) intégré présentent une structure de projet Maven correcte qui est créée dans le cadre de la création du projet. Il s’agit du chemin recommandé pour les nouveaux clients des services gérés.
+Pour tirer parti de cette fonctionnalité, la compilation Maven doit produire un fichier zip contenant au moins deux répertoires : ***conf*** et ***conf.d***. Ce fichier zip peut être créé à l’aide de maven-assembly-plugin. Les projets générés par Cloud Manager à l’aide de l’[assistant](/help/using/create-an-application-project.md) intégré présentent une structure de projet Maven correcte qui est créée dans le cadre de la création du projet. Il s’agit du chemin recommandé pour les nouveaux clients des services gérés.
 
 Lors du déploiement sur une **Instance** de Dispatcher, le contenu de ces répertoires remplace celui de ces répertoires sur l’instance de Dispatcher. Comme les fichiers de configuration du serveur web et du Dispatcher requièrent souvent des informations spécifiques à l’environnement, vous devez d’abord collaborer avec les ingénieurs du service client pour définir ces variables d’environnement dans ***/etc/sysconfig/httpd***.
 
