@@ -4,7 +4,10 @@ seo-title: Notes de mise à jour d’AEM Cloud Manager pour la version 2019.8
 description: Consultez cette page pour obtenir des informations sur la version 2019.8.0 de Cloud Manager.
 seo-description: Consultez cette page pour plus d’informations sur la version 2019.8.0 d’AEM Cloud Manager.
 translation-type: tm+mt
-source-git-commit: 548d18f251cf8c4c827d2208fec04cde235ce731
+source-git-commit: c07e88564dc1419bd0305c9d25173a8e0e1f47cf
+workflow-type: tm+mt
+source-wordcount: '234'
+ht-degree: 94%
 
 ---
 
@@ -19,7 +22,7 @@ La date de publication de la mise à jour 2019.8.0 de [!UICONTROL Cloud Manage
 ## Nouveautés {#whats-new}
 
 * Nouvelle interface de ligne de commande pour l’API Cloud Manager, optimisée par l’[interface de ligne de commande Adobe I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager).
-* Les modules de contenu spécifiques générés par la compilation peuvent être déclarés comme pouvant être ignorés et ne seront pas déployés. Pour plus d’informations, consultez la section ***Omission des packages de contenu*** dans [Création d’un projet d’application AEM](create-an-application-project.md).
+* Les modules de contenu spécifiques générés par la compilation peuvent être déclarés comme pouvant être ignorés et ne seront pas déployés. Pour plus d’informations, consultez la section ***Omission des packages de contenu*** dans [Création d’un projet d’application AEM](/help/using/create-an-application-project.md).
 * Le jeu de dépendances préchargées dans le conteneur de génération a été retravaillé afin d’éviter toute requête réseau inutile.
 * Le message sur la page d’aperçu de certains programmes configurés incorrectement a été amélioré.
 
@@ -30,4 +33,4 @@ La date de publication de la mise à jour 2019.8.0 de [!UICONTROL Cloud Manage
 * La règle de qualité du code ***ConfigAndInstallShouldOnlyContainOsgiNodes*** a généré des faux positifs lors de l’utilisation du composant Sling Rewriter.
 * La règle de qualité du code ***ConfigAndInstallShouldOnlyContainOsgiNodes*** a généré des faux positifs pour certaines structures de chemin d’accès peu courantes.
 * Les clients de ressources uniquement n’ont peut-être pas toujours été capables de naviguer vers leurs environnements AEM.
-* La boîte de dialogue [!UICONTROL Create a Branch and Project] (Créer un embranchement et un projet) est rendue différemment dans différents navigateurs.
+* La boîte de dialogue Créer une branche et un projet s’affichait différemment selon les navigateurs.
