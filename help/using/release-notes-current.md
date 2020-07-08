@@ -1,38 +1,40 @@
 ---
-title: Notes de mise à jour de la version 2020.6.0
-seo-title: Notes de mise à jour de la version 2020.6.0 d’AEM Cloud Manager
-description: Consultez cette page pour obtenir des informations sur la version 2020.6.0 de Cloud Manager
-seo-description: Consultez cette page pour obtenir des informations sur la version 2020.6.0 d’AEM Cloud Manager
-translation-type: ht
-source-git-commit: fddfc8cef28bc07fb32d7f8ca6a815e888beefef
-workflow-type: ht
-source-wordcount: '181'
-ht-degree: 100%
+title: Notes de mise à jour de la version 2020.7.0
+seo-title: Notes de mise à jour de la version 2020.7.0 d’AEM Cloud Manager
+description: Consultez cette page pour obtenir des informations sur la version 2020.7.0 de Cloud Manager
+seo-description: Consultez cette page pour obtenir des informations sur la version 2020.7.0 d’AEM Cloud Manager
+translation-type: tm+mt
+source-git-commit: 26492dc02371d21670778f3cd60d26146439548e
+workflow-type: tm+mt
+source-wordcount: '170'
+ht-degree: 36%
 
 ---
 
-# Notes de mise à jour de la version 2020.6.0 {#release-notes-for}
+# Notes de mise à jour de la version 2020.7.0 {#release-notes-for}
 
-La section ci-dessous présente les notes générales de mise à jour de la version 2020.6.0 de [!UICONTROL Cloud Manager].
+La section ci-dessous présente les notes générales de mise à jour de la version 2020.7.0 de [!UICONTROL Cloud Manager].
 
 ## Date de publication {#release-date}
 
-La date de publication de la version 2020.6.0 de [!UICONTROL Cloud Manager] est le 4 juin 2020.
+La date de publication de la mise à jour 2020.6.0 de [!UICONTROL Cloud Manager] est le 09 juillet 2020.
 
 ## Nouveautés {#whats-new}
 
-* Repères sur la page d’entrée pour informer l’utilisateur sur la navigation de base.
+* Désormais, la détection et l’association d’instances de répartiteur à partir des équilibreurs de charge au cours des déploiements de production s’effectuent de manière plus cohérente.
 
-* Une page **APPRENDRE** est désormais disponible dans Cloud Manager, accessible par le biais de la navigation supérieure. Cette page comprend des ressources destinées à aider les utilisateurs à en savoir plus sur les workflows les plus fréquemment utilisés en fonction du rôle qui leur est attribué dans Cloud Manager.
+* Le conteneur de création de Cloud Manager prend désormais en charge Java 8 et Java 11.
 
-* La valeur maximale du temps de traitement du 95e percentile des ressources a été augmentée à 500 secondes.
-
-* Le journal de génération inclut désormais la liste des artefacts détectés, y compris les packages de contenu ignorés.
-
-* L’étape de création valide désormais que tous les packages de contenu générés comprennent toutes les propriétés obligatoires : nom, groupe et version.
+* Les pipelines de Cloud Manager prennent désormais en charge les variables et les secrets définis par le client.
 
 ## Correctifs {#bug-fixes}
 
-* Lors de la configuration du pipeline de production, l’option Déploiement planifié n’était pas visible pour certains clients.
+* Les options **Annuler** et **Enregistrer** sur la page Modification du pipeline hors production n’étaient pas toujours visibles.
 
-* Certains messages de déploiement étaient tronqués.
+* Certains échecs du processus de qualité du code peuvent entraîner la génération incorrecte du fichier journal.
+
+* Certains journaux d&#39;étape de pipeline volumineux n&#39;ont pas pu être téléchargés de manière cohérente via l&#39;interface utilisateur.
+
+## Problèmes connus {#known-issues}
+
+* Lorsqu’un environnement AMS contient une instance de secours, le message consigné indique que l’instance est hors service et non en mode de secours.
