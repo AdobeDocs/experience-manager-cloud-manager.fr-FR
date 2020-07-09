@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: 33aeba59c149e5ba3300b9d798356ec5e9bcd4b8
+source-git-commit: dd223d678450565c1c9e8f35503eda7e5444c674
 workflow-type: tm+mt
-source-wordcount: '1479'
-ht-degree: 91%
+source-wordcount: '1476'
+ht-degree: 92%
 
 ---
 
@@ -120,8 +120,8 @@ Pour ce faire, dans le fichier pom.xml, ajoutez une `<plugin>` entrée qui resse
             <configuration>
                 <toolchains>
                     <jdk>
-                    <version>11</version>
-                    <vendor>oracle</vendor>
+                        <version>11</version>
+                        <vendor>oracle</vendor>
                     </jdk>
                 </toolchains>
             </configuration>
@@ -129,7 +129,7 @@ Pour ce faire, dans le fichier pom.xml, ajoutez une `<plugin>` entrée qui resse
 ```
 
 >[!NOTE]
->Les fournisseurs pris en charge sont Oracle et Sun Microsystems et les versions prises en charge sont 1.8, 1.11 et 11.
+>Les `vendor` valeurs prises en charge sont `oracle` et `sun` et les `version` valeurs prises en charge sont `1.8`, `1.11`et `11`.
 
 ## Variables d’environnement {#environment-variables}
 
