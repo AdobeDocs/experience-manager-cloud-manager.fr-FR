@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: c07e88564dc1419bd0305c9d25173a8e0e1f47cf
+source-git-commit: 02515ac6e3ac54909e23a276a78f571ea5c249c4
 workflow-type: tm+mt
-source-wordcount: '1514'
-ht-degree: 85%
+source-wordcount: '1518'
+ht-degree: 83%
 
 ---
 
@@ -37,6 +37,7 @@ Suivez les étapes ci-dessous pour créer un projet d’application AEM dans Clo
    * **Titre** : par défaut, cette valeur est définie sur le *nom du programme*.
 
    * **Nouveau nom de branche** : par défaut, il s’agit d’un *gabarit*.
+
    ![](assets/screen_shot_2018-10-08at55825am.png)
 
    La boîte de dialogue comporte un tiroir qui peut être ouvert en cliquant sur la poignée vers le bas de la boîte de dialogue. Sous sa forme développée, la boîte de dialogue affiche tous les paramètres de configuration d’Archetype. La plupart de ces paramètres comportent des valeurs par défaut générées en fonction du **titre**.
@@ -152,13 +153,15 @@ Pour la prise en charge, Cloud Manager ajoute ces variables d’environnement s
 
 ### Variables de tuyau {#pipeline-variables}
 
-Dans certains cas, le processus de génération d’un client peut dépendre de variables de configuration spécifiques qu’il serait inadéquat de placer dans le référentiel git. Cloud Manager permet de configurer ces variables par le biais de l’API Cloud Manager ou de l’interface de ligne de commande de Cloud Manager pour chaque pipeline. Les variables peuvent être stockées en texte brut ou chiffrées au repos. Dans les deux cas, les variables sont disponibles dans l’environnement de génération en tant que variable d’environnement, qui peut ensuite être référencée à partir du fichier pom.xml ou d’autres scripts de génération.
+Dans certains cas, le processus de création d&#39;un client peut dépendre de variables de configuration spécifiques qui ne seraient pas appropriées pour être placées dans le référentiel Git. Cloud Manager permet de configurer ces variables par le biais de l’API Cloud Manager ou de l’interface de ligne de commande de Cloud Manager pour chaque pipeline.
 
-Pour définir une variable à l’aide de l’interface de ligne de commande, exécutez une commande du type :
+Les variables peuvent être stockées en texte brut ou chiffrées au repos. Dans les deux cas, les variables sont disponibles dans l’environnement de génération en tant que variable d’environnement, qui peut ensuite être référencée à partir du fichier pom.xml ou d’autres scripts de génération.
+
+Utilisez la commande ci-dessous pour définir une variable à l’aide de l’interface de ligne de commande :
 
 `$ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test`
 
-Les variables actives peuvent être répertoriées :
+Vous pouvez liste les variables actives, comme illustré ci-dessous :
 
 `$ aio cloudmanager:list-pipeline-variables PIPELINEID`
 
