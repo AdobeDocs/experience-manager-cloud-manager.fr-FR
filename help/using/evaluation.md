@@ -7,11 +7,11 @@ uuid: 62d68e79-c2ba-4d8b-ba7d-33709014d5b6
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3bb435aae932b9446867c30b7dd6b0a8e0839ee2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '294'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -31,13 +31,13 @@ Cela peut servir à évaluer l’ampleur des tâches de développement nécessai
 
 >[!NOTE]
 >
->To learn more about pattern detector, refer to [Assessing the Upgrade Complexity with the Pattern Detector](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/pattern-detector.html)
+>Pour en savoir plus sur le détecteur de motifs, consultez [Évaluation de la complexité de la mise à niveau à l’aide de l’outil de détection des motifs](https://helpx.adobe.com/fr/experience-manager/6-4/sites/deploying/using/pattern-detector.html)
 
 ## Exécution de l’évaluateur {#running-evaluator}
 
 Pour générer un rapport d’évaluation, procédez comme suit :
 
-1. Cliquez sur **[!UICONTROL Exécuter l’évaluation]**.
+1. Cliquez sur **[!UICONTROL Exécuter une évaluation]**.
 
    >[!NOTE]
    >Le détecteur de motifs peut s’exécuter dans n’importe quel environnement. Toutefois, pour augmenter le taux de détection et éviter tout ralentissement des instances métier critiques, Cloud Manager l’exécute dans l’environnement d’évaluation de l’instance Auteur.
