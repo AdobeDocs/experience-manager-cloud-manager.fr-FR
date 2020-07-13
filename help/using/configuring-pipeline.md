@@ -9,11 +9,11 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-translation-type: ht
-source-git-commit: 18b539951e286cb14d5c10404b42ba80682bbef0
-workflow-type: ht
-source-wordcount: '1575'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: afbb9a9f9f227309946f0d1891172a89d15de7a7
+workflow-type: tm+mt
+source-wordcount: '1646'
+ht-degree: 92%
 
 ---
 
@@ -28,7 +28,7 @@ La page suivante explique comment configurer le **pipeline**. Pour consulter d�
 
 La configuration du pipeline de production CI/CD définit le déclencheur qui lancera le pipeline, les paramètres contrôlant le déploiement en production et les paramètres de test de performances.
 
->[!VIDEO](https://video.tv.adobe.com/v/26314/?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26314/)
 
 
 ## Présentation du flux {#understanding-the-flow}
@@ -164,7 +164,11 @@ Pour configurer les invalidations du Dispatcher, procédez comme suit :
 
    **AEM Sites :**
 
-   Cloud Manager exécute les tests de performance pour les programmes AEM Sites, en demandant des pages (en tant qu’utilisateur non authentifié) sur le serveur de publication intermédiaire pendant une période de test de 30 minutes et en mesurant le temps de réponse pour chaque page, ainsi que les différentes mesures au niveau du système. Les pages sont sélectionnées par trois **ensembles de pages**. Vous pouvez en choisir un, deux ou trois. La répartition du trafic dépend du nombre d’ensembles sélectionnés. Si les trois ensembles sont sélectionnés, 33 % du nombre total des pages vues sont placées dans chaque ensemble, si deux ensembles sont sélectionnés, 50 % sont dirigées vers chaque ensemble, si un seul est sélectionné, 100 % du trafic va vers cet ensemble.
+   Cloud Manager exécute des tests de performances pour les programmes AEM Sites en demandant des pages (en tant qu’utilisateur non authentifié) sur le serveur de publication d’étape pendant une période de test de 30 minutes et en mesurant le temps de réponse de chaque page ainsi que diverses mesures au niveau du système.
+
+   Avant le début de la période de test de 30 minutes, Cloud Manager analysera l’environnement d’étape à l’aide d’un ensemble d’URL *sources* configurées par l’ingénieur de réussite client. À partir de ces URL, le code HTML de chaque page est inspecté et les liens sont parcourus d’abord en profondeur. Ce processus d’analyse est limité à un maximum de 5 000 pages. Les requêtes de l’analyseur ont un délai d’attente fixe de 10 secondes.
+
+   Les pages sont sélectionnées par trois jeux **de** pages ; vous pouvez choisir entre un jeu et les trois jeux. La répartition du trafic dépend du nombre d’ensembles sélectionnés. Si les trois ensembles sont sélectionnés, 33 % du nombre total des pages vues sont placées dans chaque ensemble, si deux ensembles sont sélectionnés, 50 % sont dirigées vers chaque ensemble, si un seul est sélectionné, 100 % du trafic va vers cet ensemble.
 
    Supposons, par exemple, qu’il y ait une répartition 50 %/50 % entre les pages actives populaires et les nouvelles pages (dans cet exemple, les autres pages actives se sont pas utilisées) et que les nouvelles pages contiennent 3 000 pages. L’indicateur de performance clé des pages vues par minute est défini sur 200. Pendant la période test de 30 minutes :
 
@@ -204,7 +208,7 @@ En plus du pipeline principal qui se déploie vers les environnements intermédi
 
 Les pipelines CI/CD hors production sont divisés en deux catégories : les pipelines de qualité du code et les pipelines de déploiement. Les pipelines de qualité du code canalisent tout le code d’une branche Git pour génération et évaluation par rapport à l’analyse de la qualité du code de Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/26316/?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26316/)
 
 Sur l’écran d’accueil, ces pipelines sont répertoriés dans une nouvelle carte :
 
