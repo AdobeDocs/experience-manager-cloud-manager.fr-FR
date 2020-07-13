@@ -8,11 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 509a74b2e85d5880bafa56cd0ab3bae9c57b0683
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '952'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -110,19 +110,19 @@ Lorsque Cloud Manager se déploie sur des topologies autres que de production, 
    >
    >Cette fonctionnalité devrait principalement être utilisée par les clients 1-1-1.
 
-1. Chaque artefact AEM est déployé sur chaque instance AEM via les API Package Manager, les dépendances des packages déterminant l’ordre de déploiement.
+1. Chaque artefact AEM est déployé sur chacune des instances AEM par le biais des API de Package Manager, avec des dépendances de packages qui déterminent l’ordre de déploiement.
 
    Pour en savoir plus sur l’utilisation de packages pour installer de nouvelles fonctionnalités, transférer du contenu entre des instances et sauvegarder le contenu du référentiel, reportez-vous à la section Utilisation de packages.
 
    >[!NOTE]
    >
-   >Tous les artefacts AEM sont déployés à la fois sur author et publishers. Les modes d&#39;exécution doivent être exploités lorsque des configurations spécifiques aux noeuds sont requises. Pour en savoir plus sur la façon dont les modes d’exécution vous permettent d’ajuster votre instance AEM à un objectif spécifique, consultez la section Modes d’exécution.
+   >Tous les artefacts AEM sont déployés à la fois sur author et publishers. Les modes d’exécution doivent être utilisés lorsque des configurations spécifiques à un nœud sont requises. Pour en savoir plus sur la façon dont les modes d’exécution vous permettent d’ajuster votre instance AEM à des fins spécifiques, consultez Modes d’exécution.
 
 1. L’artefact dispatcher est déployé sur chaque dispatcher comme suit :
 
    1. Les configurations actuelles sont sauvegardées et copiées vers un emplacement temporaire.
    1. Toutes les configurations sont supprimées, à l’exception des fichiers non modifiables. Pour plus d’informations, consultez la section Gestion des configurations du Dispatcher. Cela permet de vider les répertoires pour qu’aucun fichier orphelin ne soit abandonné.
-   1. The artifact is extracted to the `httpd` directory.  Les fichiers non modifiables ne sont pas remplacés. Toute modification apportée aux fichiers non modifiables dans votre référentiel git sera ignorée au moment du déploiement.  Ces fichiers sont essentiels à la structure du dispatcher AMS et ne peuvent pas être modifiés.
+   1. L’artefact est extrait dans le répertoire `httpd`. Les fichiers non modifiables ne sont pas remplacés. Toute modification apportée aux fichiers non modifiables dans votre référentiel git sera ignorée au moment du déploiement.  Ces fichiers sont essentiels à la structure du dispatcher AMS et ne peuvent pas être modifiés.
    1. Apache effectue un test de configuration. Si aucune erreur n’est trouvée, le service est rechargé. Si une erreur se produit, les configurations sont restaurées à partir de la sauvegarde, le service est rechargé et l’erreur est renvoyée à Cloud Manager.
    1. Chaque chemin spécifié dans la configuration de pipeline est invalidé ou purgé du cache du dispatcher.
 
@@ -134,7 +134,7 @@ Lorsque Cloud Manager se déploie sur des topologies autres que de production, 
 
    >[!NOTE]
    >
-   >Vous pouvez ignorer les modifications de l’équilibreur de charge dans le développement et les déploiements d’étape, c’est-à-dire, détacher et attacher des étapes dans les deux pipelines hors production, pour les environnements de développement et le pipeline de production, pour les environnements d’étape.
+   >Vous pouvez ignorer les modifications de l’équilibreur de charge dans les déploiements de développement et d’évaluation, c’est-à-dire, détacher et attacher des étapes dans les deux pipelines hors production pour les environnements de développement, ainsi que dans le pipeline de production, pour les environnements d’évaluation.
 
 ### Phase de déploiement en production {#deployment-production-phase}
 
