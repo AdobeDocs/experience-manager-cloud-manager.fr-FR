@@ -7,9 +7,9 @@ uuid: 62d68e79-c2ba-4d8b-ba7d-33709014d5b6
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3bb435aae932b9446867c30b7dd6b0a8e0839ee2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '210'
 ht-degree: 100%
 
@@ -37,8 +37,8 @@ L’assistant comprend cinq phases qui guident l’utilisateur lors d’une mise
 
 1. Vous recevrez une notification Pulse via Cloud Manager pour vous informer qu’AEM 6.5 est disponible pour votre offre.
 
-1. Une vignette **[!UICONTROL Mise à jour AEM 6.5]** s’affiche sur l’écran d’aperçu de [!UICONTROL Cloud Manager]. Cette vignette permet de déterminer dans quelle phase du processus de mise à jour vous vous trouvez actuellement et vous informe de la prochaine étape à suivre. Sélectionnez **[!UICONTROL Démarrer la mise à jour]** pour lancer l’assistant.
+1. Une carte **[!UICONTROL Mise à jour AEM 6.5]** s’affiche sur l’écran d’aperçu de [!UICONTROL Cloud Manager]. Cette carte permet de déterminer dans quelle phase du processus de mise à jour vous vous trouvez actuellement et vous informe de la prochaine étape à suivre. Sélectionnez **[!UICONTROL Démarrer la mise à jour]** pour lancer l’assistant.
 
    ![](assets/Start-Update.png)
 
-   L’assistant affiche désormais la première phase du processus de **[!UICONTROL mise à jour AEM 6.5]**, comme le montre la [phase d’évaluation](evaluation.md).
+   L’assistant affiche désormais la première phase du processus de **[!UICONTROL mise à jour AEM 6.5]**, comme dans la [phase d’évaluation](evaluation.md).
