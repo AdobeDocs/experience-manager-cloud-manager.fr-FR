@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: ae22e0641111096c19d5413f3e78f339010bf512
+source-git-commit: a4ea83c0b64515915871956c1cd3e53606f1c26b
 workflow-type: tm+mt
-source-wordcount: '1476'
-ht-degree: 92%
+source-wordcount: '1494'
+ht-degree: 98%
 
 ---
 
@@ -85,7 +85,7 @@ Cloud Manager crée et teste votre code à l&#39;aide d&#39;un environnement de 
 
 * L&#39;environnement de création est basé sur Linux, dérivé de Ubuntu 18.04.
 * Apache Maven 3.6.0 est installé.
-* Les versions Java installées sont Oracle JDK 8u202 et 11.0.2.
+* Les versions Java installées sont Oracle JDK 8u202 et 11.0.2.
 * D’autres packages système nécessaires sont installés :
 
    * bzip2
@@ -99,11 +99,14 @@ Cloud Manager crée et teste votre code à l&#39;aide d&#39;un environnement de 
 * Maven est toujours exécuté avec la commande : *mvn --batch-mode clean org.jacoco:jacoco-maven-plugin:prepare-agent package*.
 * Maven est configuré au niveau du système avec un fichier settings.xml qui inclut automatiquement le référentiel public Adobe **Artifact**. (Pour plus d’informations, consultez le [référentiel Maven public d’Adobe](https://repo.adobe.com/)).
 
-### Using Java 11 {#using-java-11}
+>[!NOTE]
+>Bien que Cloud Manager ne définisse pas de version spécifique du `jacoco-maven-plugin`logiciel, la version utilisée doit être au moins `0.7.5.201505241946`conforme.
 
-Cloud Manager prend désormais en charge la création de projets clients avec Java 8 et Java 11. Par défaut, les projets sont créés à l’aide de Java 8. Les clients qui ont l&#39;intention d&#39;utiliser Java 11 dans leurs projets peuvent le faire à l&#39;aide du module [Apache Maven Toolchain](https://maven.apache.org/plugins/maven-toolchains-plugin/).
+### Utilisation de Java 11 {#using-java-11}
 
-Pour ce faire, dans le fichier pom.xml, ajoutez une `<plugin>` entrée qui ressemble à celle-ci :
+Cloud Manager prend désormais en charge la création de projets clients avec Java 8 et Java 11. Par défaut, les projets sont créés à l’aide de Java 8. Les clients souhaitant utiliser Java 11 dans leurs projets peuvent le faire via le module [Apache Maven Toolchain](https://maven.apache.org/plugins/maven-toolchains-plugin/).
+
+À cet effet, dans le fichier pom.xml, ajoutez une `<plugin>` entrée du type suivant :
 
 ```xml
         <plugin>
@@ -129,7 +132,7 @@ Pour ce faire, dans le fichier pom.xml, ajoutez une `<plugin>` entrée qui resse
 ```
 
 >[!NOTE]
->Les `vendor` valeurs prises en charge sont `oracle` et `sun` et les `version` valeurs prises en charge sont `1.8`, `1.11`et `11`.
+>Les `vendor` valeurs prises en charge sont `oracle` et `sun`, et les `version` valeurs prises en charge sont `1.8`, `1.11`et `11`.
 
 ## Variables d’environnement {#environment-variables}
 
@@ -137,7 +140,7 @@ Pour ce faire, dans le fichier pom.xml, ajoutez une `<plugin>` entrée qui resse
 
 Dans certains cas, les clients jugent nécessaire de modifier le processus de génération en fonction des informations sur le programme ou le pipeline.
 
-Par exemple, si la minimisation JavaScript au moment de la génération est effectuée, par le biais d’un outil comme gulp, il peut y avoir une volonté d’utiliser un autre niveau de minimisation lors de la création pour un environnement de développement plutôt que de construire pour l’étape et la production.
+Par exemple, si la minification JavaScript au moment de la génération est effectuée via un outil comme gulp, il peut être nécessaire d’utiliser un autre niveau de minification lors de la génération pour un environnement de développement et pour des environnements intermédiaire et de production.
 
 Pour la prise en charge, Cloud Manager ajoute ces variables d’environnement standard au conteneur de build pour chaque exécution.
 
