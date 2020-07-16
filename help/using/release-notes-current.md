@@ -4,10 +4,10 @@ seo-title: Notes de mise à jour de la version 2020.7.0 d’AEM Cloud Manager
 description: Consultez cette page pour obtenir des informations sur la version 2020.7.0 de Cloud Manager
 seo-description: Consultez cette page pour obtenir des informations sur la version 2020.7.0 d’AEM Cloud Manager
 translation-type: tm+mt
-source-git-commit: a0917f5cecbe552807d9147cd20316e02c2dd1a0
+source-git-commit: a4ea83c0b64515915871956c1cd3e53606f1c26b
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 38%
+source-wordcount: '198'
+ht-degree: 81%
 
 ---
 
@@ -21,18 +21,20 @@ La date de publication de la mise à jour 2020.7.0 de [!UICONTROL Cloud Manager
 
 ## Nouveautés {#whats-new}
 
-* Désormais, la détection et l’association d’instances de répartiteur à partir des équilibreurs de charge au cours des déploiements de production s’effectuent de manière plus cohérente.
+* L’association et la dissociation d’instances de répartiteur depuis les équilibreurs de charge au cours des déploiements de production s’effectuent de manière plus cohérente.
 
-* Le conteneur de création de Cloud Manager prend désormais en charge Java 8 et Java 11.
+* Le conteneur de création Cloud Manager prend désormais en charge Java 8 et Java 11.
 
 ## Correctifs {#bug-fixes}
 
 * Les options **Annuler** et **Enregistrer** sur la page Modification du pipeline hors production n’étaient pas toujours visibles.
 
-* Certains échecs du processus de qualité du code peuvent entraîner la génération incorrecte du fichier journal.
+* Certaines erreurs liées au u processus de qualité du code peuvent entraîner la génération incorrecte du fichier journal.
 
 * Certains journaux d&#39;étape de pipeline volumineux n&#39;ont pas pu être téléchargés de manière cohérente via l&#39;interface utilisateur.
 
 ## Problèmes connus {#known-issues}
 
-* Lorsqu’un environnement AMS contient une instance de secours, le message consigné indique que l’instance est hors service et non en mode de secours.
+* Si un environnement AMS contient une instance de secours, le message consigné indique que l’instance est hors service, et non en mode de secours.
+
+* En raison d’un changement dans le mode de calcul de la couverture du code, la version _minimale_ du module externe Jacoco est désormais 0.7.5.201505241946 (publiée en mai 2015). Les clients référençant explicitement une ancienne version recevront un message d’erreur dans le processus de qualité du code.
