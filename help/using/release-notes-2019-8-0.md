@@ -3,11 +3,11 @@ title: Notes de mise à jour de la version 2019.8.0
 seo-title: Notes de mise à jour d’AEM Cloud Manager pour la version 2019.8.0
 description: Consultez cette page pour obtenir des informations sur la version 2019.8.0 de Cloud Manager.
 seo-description: Consultez cette page pour plus d’informations sur la version 2019.8.0 d’AEM Cloud Manager.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c07e88564dc1419bd0305c9d25173a8e0e1f47cf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '234'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -33,4 +33,4 @@ La date de publication de la mise à jour 2019.8.0 de [!UICONTROL Cloud Manage
 * La règle de qualité du code ***ConfigAndInstallShouldOnlyContainOsgiNodes*** a généré des faux positifs lors de l’utilisation du composant Sling Rewriter.
 * La règle de qualité du code ***ConfigAndInstallShouldOnlyContainOsgiNodes*** a généré des faux positifs pour certaines structures de chemin d’accès peu courantes.
 * Les clients de ressources uniquement n’ont peut-être pas toujours été capables de naviguer vers leurs environnements AEM.
-* La boîte de dialogue Créer une branche et un projet s’affichait différemment selon les navigateurs.
+* L’affichage de la boîte de dialogue Créer une branche et un projet varie selon le navigateur utilisé.
