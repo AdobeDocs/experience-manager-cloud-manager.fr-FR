@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: 0d46abc386460ccbaf7ba10b93286bc8e4af2395
 workflow-type: tm+mt
 source-wordcount: '214'
-ht-degree: 75%
+ht-degree: 92%
 
 ---
 
@@ -40,4 +40,4 @@ Pour plus d&#39;informations, consultez Variables [de](/help/using/create-an-app
 
 * Si un environnement AMS contient une instance de secours, le message consigné indique que l’instance est hors service, et non en mode de secours.
 
-* En raison d’un changement dans le mode de calcul de la couverture du code, la version _minimale_ du module externe Jacoco est désormais 0.7.5.201505241946 (publiée en mai 2015). Les clients référençant explicitement une ancienne version recevront un message d’erreur dans le processus de qualité du code.
+* En raison d’un changement au niveau du mode de calcul de la couverture du code, la version _minimale_ du plug-in Jacoco est désormais 0.7.5.201505241946 (publiée en mai 2015). Un message d’erreur sera généré dans le processus de qualité du code pour les clients qui référencent une version plus ancienne de manière explicite.
