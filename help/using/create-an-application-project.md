@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: 0d46abc386460ccbaf7ba10b93286bc8e4af2395
+source-git-commit: 0fda91c2fe319fb58b3a6dd09f75eac7a60d9038
 workflow-type: tm+mt
-source-wordcount: '1537'
-ht-degree: 87%
+source-wordcount: '1705'
+ht-degree: 79%
 
 ---
 
@@ -62,7 +62,7 @@ Pour créer et déployer dans Cloud Manager, les projets AEM existants doivent 
 * Les projets doivent être créés à l’aide d’Apache Maven.
 * Un fichier *pom.xml* doit se trouver à la racine du référentiel Git. Ce fichier *pom.xml* peut faire référence à autant de sous-modules (qui, à leur tour, peuvent comporter d’autres sous-modules, etc.) que nécessaire.
 
-* Vous pouvez ajouter des références à d’autres référentiels d’artefact Maven dans vos fichiers *pom.xml*. Cependant, l’accès aux référentiels d’artefacts protégés par mot de passe ou par réseau n’est pas pris en charge.
+* Vous pouvez ajouter des références à d’autres référentiels d’artefact Maven dans vos fichiers *pom.xml*. L’accès aux référentiels [d’artefacts protégés par](#password-protected-maven-repositories) mot de passe est pris en charge lorsqu’il est configuré. Cependant, l’accès aux référentiels d’artefacts protégés par le réseau n’est pas pris en charge.
 * Les packages de contenu déployables sont découverts en analysant les fichiers *zip* de package de contenu contenus dans un répertoire appelé *target*. Un nombre illimité de sous-modules peuvent produire des packages de contenu.
 
 * Les artefacts déployables de Dispatcher sont découverts en analysant les fichiers *zip* (contenus dans un répertoire appelé *target*) dont les répertoires sont appelés *conf* et *conf.d*.
@@ -100,7 +100,7 @@ Cloud Manager crée et teste votre code à l&#39;aide d&#39;un environnement de 
 * Maven est configuré au niveau du système avec un fichier settings.xml qui inclut automatiquement le référentiel public Adobe **Artifact**. (Pour plus d’informations, consultez le [référentiel Maven public d’Adobe](https://repo.adobe.com/)).
 
 >[!NOTE]
->Bien que Cloud Manager ne définisse pas de version spécifique du `jacoco-maven-plugin`logiciel, la version utilisée doit être au moins `0.7.5.201505241946`conforme.
+>Bien que Cloud Manager ne définisse pas de version spécifique du `jacoco-maven-plugin`, la version utilisée doit être au moins `0.7.5.201505241946`.
 
 ### Utilisation de Java 11 {#using-java-11}
 
@@ -262,6 +262,75 @@ Si vous souhaitez générer un message de sortie simple uniquement lorsque la g�
                 </plugins>
             </build>
         </profile>
+```
+
+## Prise en charge du référentiel Maven protégé par mot de passe {#password-protected-maven-repositories}
+
+Pour utiliser un référentiel Maven protégé par un mot de passe dans Cloud Manager, spécifiez le mot de passe (et éventuellement le nom d’utilisateur) en tant que variable [](#pipeline-variables) Pipeline secrète, puis référencez ce secret dans un fichier nommé `.cloudmanager/maven/settings.xml` dans le référentiel git. Ce fichier suit le schéma de fichier [](https://maven.apache.org/settings.html) Maven Settings. Lorsque Cloud Manager crée des débuts de processus, l’ `<servers>` élément de ce fichier est fusionné dans le `settings.xml` fichier par défaut fourni par Cloud Manager. Une fois ce fichier en place, l’ID de serveur est référencé à l’intérieur d’un élément `<repository>` et/ou `<pluginRepository>` dans le `pom.xml` fichier. En règle générale, ces éléments `<repository>` et/ou `<pluginRepository>` ces éléments sont contenus dans un profil [spécifique à]{#activating-maven-profiles-in-cloud-manager}Cloud Manager, bien que cela ne soit pas strictement nécessaire.
+
+Par exemple, supposons que le référentiel se trouve à l’adresse https://repository.myco.com/maven2, que le nom d’utilisateur que Cloud Manager doit utiliser soit `cloudmanager` et que le mot de passe soit `secretword`défini.
+
+Tout d&#39;abord, définissez le mot de passe comme secret sur le pipeline :
+
+`$ aio cloudmanager:set-pipeline-variables PIPELINEID --secret CUSTOM_MYCO_REPOSITORY_PASSWORD secretword`
+
+Faites ensuite référence à ceci à partir du `.cloudmanager/maven/settings.xml` fichier :
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <servers>
+        <server>
+            <id>myco-repository</id>
+            <username>cloudmanager</username>
+            <password>${env.CUSTOM_MYCO_REPOSITORY_PASSWORD}</password>
+        </server>
+    </servers>
+</settings>
+```
+
+Et enfin référencez l&#39;identifiant du serveur dans le `pom.xml` fichier :
+
+```xml
+<profiles>
+    <profile>
+        <id>cmBuild</id>
+        <activation>
+                <property>
+                    <name>env.CM_BUILD</name>
+                </property>
+        </activation>
+        <build>
+            <repositories>
+                <repository>
+                    <id>myco-repository</id>
+                    <name>MyCo Releases</name>
+                    <url>https://repository.myco.com/maven2</url>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>myco-repository</id>
+                    <name>MyCo Releases</name>
+                    <url>https://repository.myco.com/maven2</url>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                </pluginRepository>
+            </pluginRepositories>
+        </build>
+    </profile>
+</profiles>
 ```
 
 ## Installation de packages système supplémentaires {#installing-additional-system-packages}
