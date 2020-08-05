@@ -9,11 +9,11 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-translation-type: ht
-source-git-commit: afbb9a9f9f227309946f0d1891172a89d15de7a7
-workflow-type: ht
-source-wordcount: '1646'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 3be958aa21d5423ddf371c286825d01afd554c4b
+workflow-type: tm+mt
+source-wordcount: '1767'
+ht-degree: 90%
 
 ---
 
@@ -28,7 +28,7 @@ La page suivante explique comment configurer le **pipeline**. Pour consulter d�
 
 La configuration du pipeline de production CI/CD définit le déclencheur qui lancera le pipeline, les paramètres contrôlant le déploiement en production et les paramètres de test de performances.
 
->[!VIDEO](https://video.tv.adobe.com/v/26314/?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26314/)
 
 
 ## Présentation du flux {#understanding-the-flow}
@@ -164,7 +164,7 @@ Pour configurer les invalidations du Dispatcher, procédez comme suit :
 
    **AEM Sites :**
 
-   Cloud Manager exécute des tests de performance pour les programmes AEM Sites en demandant des pages (en tant qu’utilisateur non authentifié) sur le serveur de publication intermédiaire pendant une période de test de 30 minutes et en mesurant le temps de réponse pour chacune d’elles, ainsi que diverses mesures au niveau du système.
+   Cloud Manager exécute des tests de performances pour les programmes AEM Sites en demandant des pages (en tant qu’utilisateur non authentifié par défaut) sur le serveur de publication d’étape pendant une période de test de 30 minutes et en mesurant le temps de réponse pour chaque page ainsi que diverses mesures au niveau du système.
 
    Avant le début de cette période de test de 30 minutes, Cloud Manager explore l’environnement d’évaluation à l’aide d’une ou de plusieurs URL *sources* configurées par l’ingénieur du service client. À partir de ces URL, le code HTML de chaque page est examiné et les liens sont parcourus en largeur d’abord. Ce processus d’exploration est limité à un maximum de 5 000 pages. Les requêtes du robot d’exploration ont un délai d’expiration fixe de 10 secondes.
 
@@ -177,6 +177,9 @@ Pour configurer les invalidations du Dispatcher, procédez comme suit :
    * Chacune des 3 000 pages des nouvelles pages sera demandée une fois - ((200 x 0,5) : 3 000) x 30 = 1
 
    ![](assets/Configuring_Pipeline_AEM-Sites.png)
+
+
+   Reportez-vous au Test [de performances des sites](configuring-pipeline.md#authenticated-sites-performance) authentifiés pour savoir comment authentifier les tests de performances AEM Sites.
 
    **AEM Assets :**
 
@@ -198,6 +201,22 @@ Pour configurer les invalidations du Dispatcher, procédez comme suit :
 
    ![](assets/Production-Pipeline.png)
 
+### Test des performances des sites authentifiés {#authenticated-sites-performance}
+
+Les clients Adobe Managed Services (AMS) disposant de sites authentifiés peuvent spécifier un nom d’utilisateur et un mot de passe que Cloud Manager utilisera pour accéder au site Web lors des tests de performances des sites.
+
+Le nom d&#39;utilisateur et le mot de passe sont spécifiés sous la forme de variables de pipeline avec les noms `CM_PERF_TEST_BASIC_USERNAME` et `CM_PERF_TEST_BASIC_PASSWORD` .
+
+>[!NOTE]
+> Bien que cela ne soit pas strictement requis, il est recommandé d’utiliser le type de variable de chaîne pour le nom d’utilisateur et le type de variable secretString pour le mot de passe. Si ces deux éléments sont spécifiés, chaque requête du moteur de recherche de tests de performances et des utilisateurs virtuels de test contiendra ces informations d’identification sous forme d’authentification HTTP Basic.
+
+Pour définir ces variables à l’aide de l’interface de ligne de commande de Cloud Manager, exécutez :
+
+`$ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>`
+
+
+
+
 ## Pipelines de qualité de code et hors production uniquement
 
 En plus du pipeline principal qui se déploie vers les environnements intermédiaire et de production, les clients peuvent configurer des pipelines supplémentaires, appelés **Pipelines hors production**. Ces pipelines exécutent toujours les étapes de génération et de qualité de code. Si besoin est, elles peuvent aussi déployer vers l’environnement Adobe Managed Services.
@@ -208,7 +227,7 @@ En plus du pipeline principal qui se déploie vers les environnements intermédi
 
 Les pipelines CI/CD hors production sont divisés en deux catégories : les pipelines de qualité du code et les pipelines de déploiement. Les pipelines de qualité du code canalisent tout le code d’une branche Git pour génération et évaluation par rapport à l’analyse de la qualité du code de Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/26316/?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26316/)
 
 Sur l’écran d’accueil, ces pipelines sont répertoriés dans une nouvelle carte :
 
