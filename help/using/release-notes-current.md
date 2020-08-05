@@ -4,10 +4,10 @@ seo-title: Notes de mise à jour de la version 2020.8.0 d’AEM Cloud Manager
 description: Consultez cette page pour obtenir des informations sur la version 2020.8.0 de Cloud Manager
 seo-description: Consultez cette page pour obtenir des informations sur la version 2020.8.0 d’AEM Cloud Manager
 translation-type: tm+mt
-source-git-commit: 68330a3a6d9e1f95782418dbd72cbc0e6ee7362c
+source-git-commit: c0881ccf602a14b00b7cc68c3d1fc60e7b6954ed
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 47%
+source-wordcount: '195'
+ht-degree: 30%
 
 ---
 
@@ -43,8 +43,3 @@ La date de publication de la mise à jour 2020.8.0 de [!UICONTROL Cloud Manage
 
 * Il y avait une incohérence de couleur sur la page d&#39;aperçu.
 
-## Problèmes connus {#known-issues}
-
-* Si un environnement AMS contient une instance de secours, le message consigné indique que l’instance est hors service, et non en mode de secours.
-
-* En raison d’un changement au niveau du mode de calcul de la couverture du code, la version _minimale_ du plug-in Jacoco est désormais 0.7.5.201505241946 (publiée en mai 2015). Un message d’erreur sera généré dans le processus de qualité du code pour les clients qui référencent une version plus ancienne de manière explicite.
