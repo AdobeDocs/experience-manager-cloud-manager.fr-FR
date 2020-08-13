@@ -3,9 +3,9 @@ title: Notes de mise à jour de la version 2020.7.0
 seo-title: Notes de mise à jour de la version 2020.7.0 d’AEM Cloud Manager
 description: Consultez cette page pour obtenir des informations sur la version 2020.7.0 de Cloud Manager
 seo-description: Consultez cette page pour obtenir des informations sur la version 2020.7.0 d’AEM Cloud Manager
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3be958aa21d5423ddf371c286825d01afd554c4b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '214'
 ht-degree: 100%
 
@@ -32,9 +32,9 @@ Pour plus d’informations, consultez [Variables de pipeline](/help/using/create
 
 * Les options **Annuler** et **Enregistrer** sur la page Modification du pipeline hors production n’étaient pas toujours visibles.
 
-* Certaines erreurs liées au u processus de qualité du code peuvent entraîner la génération incorrecte du fichier journal.
+* Certaines erreurs liées au processus de qualité du code pouvaient entraîner la génération incorrecte du fichier journal.
 
-* Certains journaux d&#39;étape de pipeline volumineux n&#39;ont pas pu être téléchargés de manière cohérente via l&#39;interface utilisateur.
+* Certains journaux d’étape de pipeline volumineux ne pouvaient pas être téléchargés de manière cohérente via l’interface utilisateur.
 
 ## Problèmes connus {#known-issues}
 
