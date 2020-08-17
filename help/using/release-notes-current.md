@@ -4,10 +4,10 @@ seo-title: Notes de mise à jour de la version 2020.8.0 d’AEM Cloud Manager
 description: Consultez cette page pour obtenir des informations sur la version 2020.8.0 de Cloud Manager
 seo-description: Consultez cette page pour obtenir des informations sur la version 2020.8.0 d’AEM Cloud Manager
 translation-type: tm+mt
-source-git-commit: cff6f23a674fda2f57ea481d89644de9be3f5722
+source-git-commit: c2f5caf50f2e20c07807369aee7914c17fded4de
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 100%
+source-wordcount: '196'
+ht-degree: 87%
 
 ---
 
@@ -37,5 +37,9 @@ Les référentiels Maven privés liés à l’authentification sont désormais p
 
 * Les info-bulles des cartes de programme n’étaient pas toujours correctes.
 
-* Les couleurs n’étaient pas cohérentes sur la page d’aperçu.
+* There was a color mismatch on the **Overview** page.
+
+* Les tests de performances des sites prennent désormais en charge l’utilisation facultative de l’authentification.
+
+* Les caches du répartiteur pour les instances d’auteur sont automatiquement vidés lorsque les configurations du répartiteur sont déployées via Cloud Manager.
 
