@@ -10,10 +10,10 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: cff6f23a674fda2f57ea481d89644de9be3f5722
+source-git-commit: c2f5caf50f2e20c07807369aee7914c17fded4de
 workflow-type: tm+mt
-source-wordcount: '1648'
-ht-degree: 97%
+source-wordcount: '1763'
+ht-degree: 94%
 
 ---
 
@@ -104,7 +104,7 @@ Sélectionnez votre branche Git et cliquez **Suivant**.
 >
 >Si l’option **Planifié** est sélectionnée, vous pouvez planifier le déploiement en production sur le pipeline **après** le déploiement en environnement intermédiaire (et **Utiliser l’approbation GoLive**, si cette option a été activée) pour attendre la définition d’une planification. L’utilisateur peut également choisir d’exécuter le déploiement en production immédiatement.
 >
->Consultez [**Déploiement de votre code **](deploying-code.md)pour définir la planification du déploiement ou exécuter la production immédiatement.
+>Consultez [**Déploiement de votre code**](deploying-code.md) pour définir la planification du déploiement ou exécuter la production immédiatement.
 
 ![](assets/configure-pipeline3.png)
 
@@ -129,7 +129,7 @@ Elle s’affiche ensuite sous la forme d’une étape distincte lors de l’exé
 
 **Invalidation du Dispatcher**
 
-En tant que responsable de déploiement, vous avez la possibilité de configurer un ensemble de chemins de contenu qui seront **invalidés** ou **purgés** du cache du Dispatcher AEM, lors de la configuration ou de la modification du pipeline.
+As a Deployment Manager, you have the opportunity to configure a set of content paths which will either be **invalidated** or **flushed** from the AEM Dispatcher cache for publish instances, while setting up or editing pipeline.
 
 Vous pouvez configurer un ensemble distinct de chemins pour le déploiement Intermédiaire et Production. Si elles sont configurées, ces actions de cache sont exécutées dans le cadre de l’étape du pipeline de déploiement, juste après le déploiement des packages de contenu. Ces paramètres utilisent le comportement du Dispatcher AEM standard : invalider effectue une invalidation du cache, comme lorsque le contenu est activé de Author vers Publish ; purger effectue une suppression de cache.
 
@@ -164,7 +164,7 @@ Pour configurer les invalidations du Dispatcher, procédez comme suit :
 
    **AEM Sites :**
 
-   Cloud Manager exécute des tests de performances pour les programmes AEM Sites en demandant des pages (en tant qu’utilisateur non authentifié par défaut) sur le serveur de publication d’étape pendant une période de test de 30 minutes et en mesurant le temps de réponse pour chaque page ainsi que diverses mesures au niveau du système.
+   Cloud Manager exécute des tests de performance pour les programmes AEM Sites en demandant des pages (en tant qu’utilisateur non authentifié par défaut) sur le serveur de publication intermédiaire pendant une période de test de 30 minutes et en mesurant le temps de réponse pour chacune d’elles, ainsi que diverses mesures au niveau du système.
 
    Avant le début de cette période de test de 30 minutes, Cloud Manager explore l’environnement d’évaluation à l’aide d’une ou de plusieurs URL *sources* configurées par l’ingénieur du service client. À partir de ces URL, le code HTML de chaque page est examiné et les liens sont parcourus en largeur d’abord. Ce processus d’exploration est limité à un maximum de 5 000 pages. Les requêtes du robot d’exploration ont un délai d’expiration fixe de 10 secondes.
 
@@ -177,6 +177,8 @@ Pour configurer les invalidations du Dispatcher, procédez comme suit :
    * Chacune des 3 000 pages des nouvelles pages sera demandée une fois - ((200 x 0,5) : 3 000) x 30 = 1
 
    ![](assets/Configuring_Pipeline_AEM-Sites.png)
+
+   Pour plus d&#39;informations, reportez-vous à la section Tests [de performances](#authenticated-performance-testing) authentifiés.
 
    **AEM Assets :**
 
@@ -198,6 +200,17 @@ Pour configurer les invalidations du Dispatcher, procédez comme suit :
 
    ![](assets/Production-Pipeline.png)
 
+### Authenticated Performance Testing {#authenticated-performance-testing}
+
+Les clients AMS disposant de sites authentifiés peuvent spécifier un nom d’utilisateur et un mot de passe que Cloud Manager utilisera pour accéder au site Web lors des tests de performances des sites.
+
+The username and password are specified as [Pipeline Variables](/help/using/create-an-application-project.md#pipeline-variables) with the names `CM_PERF_TEST_BASIC_USERNAME` and `CM_PERF_TEST_BASIC_PASSWORD`.
+
+Bien que cela ne soit pas strictement requis, il est recommandé d’utiliser le type de variable de chaîne pour le nom d’utilisateur et le type de variable secretString pour le mot de passe. Si ces deux éléments sont spécifiés, chaque requête du robot de tests de performances et des utilisateurs virtuels de test contiendra ces informations d’identification sous forme d’authentification HTTP basique.
+
+To set these variables using the [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager), run:
+
+`$ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>`
 
 ## Pipelines de qualité de code et hors production uniquement
 
