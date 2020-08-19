@@ -9,17 +9,17 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 translation-type: tm+mt
-source-git-commit: 1143e58d4c3a02d85676f94fc1a30cc1c2856222
+source-git-commit: d38b6da61c552a3e9ad03dac49a64553f0cb00b4
 workflow-type: tm+mt
 source-wordcount: '1552'
-ht-degree: 92%
+ht-degree: 90%
 
 ---
 
 
 # Présentation des résultats de tests {#understand-your-test-results}
 
-Pendant le processus de **pipeline**, un certain nombre de mesures sont capturées et comparées soit aux indicateurs de performance clés (ICP) définis par le propriétaire de l’entreprise, soit aux normes définies par Adobe Managed Services.
+Au cours de l’exécution du pipeline, un certain nombre de mesures sont capturées et comparées soit aux indicateurs de performances clés (IPC) définis par le propriétaire de l’entreprise, soit aux normes définies par Adobe Managed Services.
 
 Celles-ci sont signalées à l’aide du système de contrôle à trois niveaux tel que défini dans cette section.
 
@@ -47,9 +47,10 @@ Cette étape évalue la qualité du code de votre application. Il s&#39;agit de 
 
 ### Understanding Code Quality Testing {#understanding-code-quality-testing}
 
-Dans le test de qualité du code, le code source est analysé afin de s’assurer qu’il se déploie selon certains critères de qualité. Actuellement, cette analyse est implémentée par une combinaison de SonarQube et d’examens au niveau du package de contenu à l’aide de OakPAL. Il existe plus de 100 règles combinant des règles Java génériques et des règles spécifiques à AEM. Certaines des règles spécifiques à l&#39;AEM sont créées en fonction des meilleures pratiques d&#39;AEM Engineering et sont appelées Règles [de qualité du code](/help/using/custom-code-quality-rules.md)personnalisé.
+Dans le test de qualité du code, le code source est analysé afin de s’assurer qu’il répond à certains critères de qualité. Actuellement, cette analyse est implémentée par une combinaison de SonarQube et d’examens au niveau du package de contenu à l’aide de OakPAL. Il existe plus de 100 règles combinant des règles Java génériques et des règles spécifiques à AEM. Certaines des règles spécifiques à l&#39;AEM sont créées en fonction des meilleures pratiques d&#39;AEM Engineering et sont appelées Règles [de qualité du code](/help/using/custom-code-quality-rules.md)personnalisé.
 
-You can download the list of rules [here](/help/using/assets/CodeQuality-rules-latest.xlsx).
+>[!NOTE]
+>You can download the complete list of rules [here](/help/using/assets/CodeQuality-rules-latest.xlsx).
 
 Les résultats de cette étape sont distribués sous forme de *cotation*. Le tableau ci-dessous résume les cotes attribuées à divers critères d&#39;examen :
 
