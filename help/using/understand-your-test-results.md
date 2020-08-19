@@ -8,11 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
-translation-type: ht
-source-git-commit: f062ee126ad12d164c36b2e1535ee709f43b6900
-workflow-type: ht
-source-wordcount: '1469'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 1143e58d4c3a02d85676f94fc1a30cc1c2856222
+workflow-type: tm+mt
+source-wordcount: '1552'
+ht-degree: 92%
 
 ---
 
@@ -43,7 +43,15 @@ Pour chaque point de contrôle, il existe une structure à trois niveaux pour le
 
 ## Test de qualité du code {#code-quality-testing}
 
-Dans le cadre du pipeline, le code source est analysé afin de garantir que les déploiements respectent certains critères de qualité. Actuellement, cette analyse est implémentée par une combinaison de SonarQube et d’examens au niveau du package de contenu à l’aide de OakPAL. Il existe plus de 100 règles combinant des règles Java génériques et des règles spécifiques à AEM. Le tableau suivant résume l’évaluation des critères de test :
+Cette étape évalue la qualité du code de votre application. Il s&#39;agit de l&#39;objectif principal d&#39;un pipeline de qualité code uniquement et il est exécuté immédiatement après l&#39;étape de construction dans tous les pipelines de non-production et de production. Reportez-vous à [Configuration de votre pipeline](/help/using/configuring-pipeline.md) CI-CD pour en savoir plus sur les différents types de conduites.
+
+### Understanding Code Quality Testing {#understanding-code-quality-testing}
+
+Dans le test de qualité du code, le code source est analysé afin de s’assurer qu’il se déploie selon certains critères de qualité. Actuellement, cette analyse est implémentée par une combinaison de SonarQube et d’examens au niveau du package de contenu à l’aide de OakPAL. Il existe plus de 100 règles combinant des règles Java génériques et des règles spécifiques à AEM. Certaines des règles spécifiques à l&#39;AEM sont créées en fonction des meilleures pratiques d&#39;AEM Engineering et sont appelées Règles [de qualité du code](/help/using/custom-code-quality-rules.md)personnalisé.
+
+You can download the list of rules [here](/help/using/assets/CodeQuality-rules-latest.xlsx).
+
+Les résultats de cette étape sont distribués sous forme de *cotation*. Le tableau ci-dessous résume les cotes attribuées à divers critères d&#39;examen :
 
 | Nom | Définition | Catégorie | Seuil d’échec |
 |--- |--- |--- |--- |
@@ -60,8 +68,6 @@ Dans le cadre du pipeline, le code source est analysé afin de garantir que les 
 >[!NOTE]
 >
 >Pour des définitions plus détaillées, consultez [Définitions des mesures](https://docs.sonarqube.org/display/SONAR/Metric+Definitions).
-
-Vous pouvez télécharger la liste des règles ici : [code-quality-rules.xlsx](/help/using/assets/CodeQuality-rules-latest.xlsx).
 
 >[!NOTE]
 >
