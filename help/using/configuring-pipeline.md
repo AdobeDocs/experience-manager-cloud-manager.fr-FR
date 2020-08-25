@@ -9,11 +9,11 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c2f5caf50f2e20c07807369aee7914c17fded4de
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1763'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ La page suivante explique comment configurer le **pipeline**. Pour consulter d�
 
 La configuration du pipeline de production CI/CD définit le déclencheur qui lancera le pipeline, les paramètres contrôlant le déploiement en production et les paramètres de test de performances.
 
->[!VIDEO](https://video.tv.adobe.com/v/26314/)
+>[!VIDEO](https://video.tv.adobe.com/v/26314/?captions=fre_fr)
 
 
 ## Présentation du flux {#understanding-the-flow}
@@ -129,7 +129,7 @@ Elle s’affiche ensuite sous la forme d’une étape distincte lors de l’exé
 
 **Invalidation du Dispatcher**
 
-As a Deployment Manager, you have the opportunity to configure a set of content paths which will either be **invalidated** or **flushed** from the AEM Dispatcher cache for publish instances, while setting up or editing pipeline.
+En tant que responsable de déploiement, vous avez la possibilité de configurer un ensemble de chemins de contenu qui seront **invalidés** ou **purgés** du cache du Dispatcher AEM des instances de publication, lors de la configuration ou de la modification du pipeline.
 
 Vous pouvez configurer un ensemble distinct de chemins pour le déploiement Intermédiaire et Production. Si elles sont configurées, ces actions de cache sont exécutées dans le cadre de l’étape du pipeline de déploiement, juste après le déploiement des packages de contenu. Ces paramètres utilisent le comportement du Dispatcher AEM standard : invalider effectue une invalidation du cache, comme lorsque le contenu est activé de Author vers Publish ; purger effectue une suppression de cache.
 
@@ -141,7 +141,7 @@ En règle générale, l’utilisation de l’action invalider est préférable m
 
 Pour configurer les invalidations du Dispatcher, procédez comme suit :
 
-1. Cliquez sur **Configurer** sous l’en-tête Configuration du dispatcher.
+1. Cliquez sur **Configurer** sous l’en-tête Configuration du Dispatcher.
 
    ![](assets/image2018-8-7_14-53-24.png)
 
@@ -178,7 +178,7 @@ Pour configurer les invalidations du Dispatcher, procédez comme suit :
 
    ![](assets/Configuring_Pipeline_AEM-Sites.png)
 
-   Pour plus d&#39;informations, reportez-vous à la section Tests [de performances](#authenticated-performance-testing) authentifiés.
+   Pour plus d’informations, voir [Tests de performances avec authentification](#authenticated-performance-testing).
 
    **AEM Assets :**
 
@@ -200,15 +200,15 @@ Pour configurer les invalidations du Dispatcher, procédez comme suit :
 
    ![](assets/Production-Pipeline.png)
 
-### Authenticated Performance Testing {#authenticated-performance-testing}
+### Test de performances avec authentification {#authenticated-performance-testing}
 
-Les clients AMS disposant de sites authentifiés peuvent spécifier un nom d’utilisateur et un mot de passe que Cloud Manager utilisera pour accéder au site Web lors des tests de performances des sites.
+Les clients AMS disposant de sites authentifiés peuvent spécifier un nom d’utilisateur et un mot de passe que Cloud Manager utilisera pour accéder au site web lors des tests de performances des sites.
 
-The username and password are specified as [Pipeline Variables](/help/using/create-an-application-project.md#pipeline-variables) with the names `CM_PERF_TEST_BASIC_USERNAME` and `CM_PERF_TEST_BASIC_PASSWORD`.
+Le nom d’utilisateur et le mot de passe sont spécifiés sous la forme de [variables de pipeline](/help/using/create-an-application-project.md#pipeline-variables) portant les noms `CM_PERF_TEST_BASIC_USERNAME` et `CM_PERF_TEST_BASIC_PASSWORD`.
 
 Bien que cela ne soit pas strictement requis, il est recommandé d’utiliser le type de variable de chaîne pour le nom d’utilisateur et le type de variable secretString pour le mot de passe. Si ces deux éléments sont spécifiés, chaque requête du robot de tests de performances et des utilisateurs virtuels de test contiendra ces informations d’identification sous forme d’authentification HTTP basique.
 
-To set these variables using the [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager), run:
+Pour définir ces variables à l’aide de l’[interface de ligne de commande de Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager), exécutez :
 
 `$ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>`
 
@@ -222,7 +222,7 @@ En plus du pipeline principal qui se déploie vers les environnements intermédi
 
 Les pipelines CI/CD hors production sont divisés en deux catégories : les pipelines de qualité du code et les pipelines de déploiement. Les pipelines de qualité du code canalisent tout le code d’une branche Git pour génération et évaluation par rapport à l’analyse de la qualité du code de Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/26316/)
+>[!VIDEO](https://video.tv.adobe.com/v/26316/?captions=fre_fr)
 
 Sur l’écran d’accueil, ces pipelines sont répertoriés dans une nouvelle carte :
 
