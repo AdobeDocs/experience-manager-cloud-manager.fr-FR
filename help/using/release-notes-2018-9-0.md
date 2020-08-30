@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 85a1dcf3-2eef-4ba8-b4d1-09e4a88c7bd0
 translation-type: tm+mt
-source-git-commit: 949d3cf0239a02875ba4ad1888e081f104dec2e2
+source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+workflow-type: tm+mt
+source-wordcount: '291'
+ht-degree: 96%
 
 ---
 
@@ -26,12 +29,12 @@ La date de publication de la mise à jour 2018.9.0 de [!UICONTROL Cloud Manager
 
 * **Pipeline CI/CD** : nouveau système d’API et d’événements pour l’intégration du pipeline CI/CD de [!UICONTROL Cloud Manager] à d’autres systèmes. Pour plus d’informations, reportez-vous à la documentation de l’API de [!UICONTROL Cloud Manager] (https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html).
 
-* **Interface utilisateur** : introduction de la nouvelle couche de l’interface utilisateur qui est plus réactive et performante.
+* **IU** - Introduction d’un nouveau calque d’interface qui est plus réactif.
 
 ## Correctifs {#bug-fixes}
 
 * Dans la version 2018.8.0 de [!UICONTROL Cloud Manager], les durées de la page Activité étaient répertoriées en minutes et en heures, mais ces informations n’étaient pas répercutées dans l’en-tête du tableau.
-* En de rares occasions, les clients ne pouvaient pas démarrer l’assistant de nouveau projet d'application.
+* En de rares occasions, les clients ne pouvaient pas démarrer l’assistant de nouveau projet d&#39;application.
 * L’étiquette du bouton dans la boîte de dialogue de l’assistant de nouveau projet d’application induisait en erreur.
 * Dans certains cas, cliquer sur le bouton Détails de la page Activité redirigeait vers la page Aperçu.
 * Certaines circonstances rares et inattendues entraînaient l’absence d’une carte sur la page Aperçu.
