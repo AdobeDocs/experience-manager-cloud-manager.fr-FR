@@ -8,11 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
-translation-type: ht
-source-git-commit: d38b6da61c552a3e9ad03dac49a64553f0cb00b4
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+workflow-type: tm+mt
 source-wordcount: '953'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -75,7 +75,7 @@ Une fois que vous avez configuré votre pipeline de production (référentiel, e
    >La **planification du déploiement en production** est activée lors de la configuration du pipeline.
    >
    >
-   >Grâce à cette option, vous pouvez planifier le déploiement en production ou cliquer sur **Maintenant** pour exécuter immédiatement le déploiement en production.
+   >Using this option, you can either schedule your production deployment or click **Now** to execute the production deployment immediately.
    >
    >
    >La date et l’heure planifiées sont indiquées dans le fuseau horaire de l’utilisateur.
@@ -127,13 +127,11 @@ Lorsque Cloud Manager se déploie sur des topologies autres que de production, 
    1. Chaque chemin spécifié dans la configuration de pipeline est invalidé ou purgé du cache du dispatcher.
 
    >[!NOTE]
-   >
    >Cloud Manager exige que l’artefact du dispatcher contienne le jeu de fichiers complet.  Tous les fichiers de configuration du dispatcher doivent être présents dans le référentiel git. Les fichiers ou dossiers manquants entraînent l’échec du déploiement.
 
 1. Après le déploiement réussi de tous les packages AEM et de dispatcher sur tous les nœuds, les dispatchers sont ajoutés à l’équilibreur de charge et le déploiement est terminé.
 
    >[!NOTE]
-   >
    >Vous pouvez ignorer les modifications de l’équilibreur de charge dans les déploiements de développement et d’évaluation, c’est-à-dire, détacher et attacher des étapes dans les deux pipelines hors production pour les environnements de développement, ainsi que dans le pipeline de production, pour les environnements d’évaluation.
 
 ### Phase de déploiement en production {#deployment-production-phase}
