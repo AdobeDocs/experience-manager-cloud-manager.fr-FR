@@ -6,10 +6,13 @@ seo-description: Consultez cette page pour afficher les environnements configur�
 uuid: d04ee39c-7112-4adc-ad4e-56f91cc4ecfa
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: conditions requises
+topic-tags: requirements
 discoiquuid: 7d32ba78-4ded-4656-aac2-c3e7cc0518de
 translation-type: tm+mt
-source-git-commit: 15f75ca67c3d52ae511357c5b564daaa3d9def6b
+source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+workflow-type: tm+mt
+source-wordcount: '322'
+ht-degree: 93%
 
 ---
 
@@ -26,6 +29,6 @@ Une fois le processus de configuration de l’environnement terminé, l’admini
 
 ## Étapes suivantes {#next-steps}
 
-Après avoir reçu l’e-mail de bienvenue, vous êtes prêt à vous connecter à [!UICONTROL Cloud Manager] en tant qu’administrateur en utilisant vos informations d’identification Adobe IMS. Une fois connecté, vous pouvez vérifier que vos environnements de production et vos autres environnements cloud AEM sont disponibles et s’exécutent correctement.
+Après avoir reçu l’e-mail de bienvenue, vous êtes prêt à vous connecter à [!UICONTROL Cloud Manager] en tant qu’administrateur en utilisant vos informations d’identification Adobe IMS. Une fois connecté, vous serez en mesure de vérifier que vos environnements de production AEM cloud et non de production sont disponibles et s’exécutent correctement.
 
 Ces environnements cloud AEM seront utilisés par [!UICONTROL Cloud Manager] pour exécuter le pipeline CI/CD lors du déploiement de votre code, à partir du référentiel Git de [!UICONTROL Cloud Manager], via l’**environnement** intermédiaire et jusqu’à votre environnement de production AEM. Vous pourrez également accéder à vos environnements cloud AEM directement depuis [!UICONTROL Cloud Manager], lorsque vous serez prêt à commencer à créer des expériences numériques pour vos propriétés web.
