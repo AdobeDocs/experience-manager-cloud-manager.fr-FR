@@ -8,17 +8,20 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
-translation-type: ht
-source-git-commit: d7c9ab3795fb3df02ab7dffd1328760ccd914a18
+translation-type: tm+mt
+source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+workflow-type: tm+mt
+source-wordcount: '688'
+ht-degree: 100%
 
 ---
 
 
-# Présentation de [!UICONTROL Cloud Manager]{#introduction-to-cloud-manager}
+# [!UICONTROL Présentation de Cloud Manager]{#introduction-to-cloud-manager}
 
 ## Présentation {#introduction}
 
-[!UICONTROL Cloud Manager], composant d’Adobe Managed Cloud Services, permet aux entreprises de gérer automatiquement Experience Manager dans le cloud. Il comprend une structure d’intégration et de diffusion continues (CI/CD) qui permet aux équipes informatiques et aux partenaires d’implémentation d’accélérer la diffusion des personnalisations ou des mises à jour sans compromettre les performances ou la sécurité.
+[!UICONTROL  Manager], composant d’Adobe Managed Cloud Services, permet aux entreprises de gérer automatiquement Experience Manager dans le cloud. Il comprend une structure d’intégration et de diffusion continues (CI/CD) qui permet aux équipes informatiques et aux partenaires d’implémentation d’accélérer la diffusion des personnalisations ou des mises à jour sans compromettre les performances ou la sécurité.
 
 Grâce au portail client libre-service de [!UICONTROL Cloud Manager], les **organisations** peuvent exécuter/exploiter les éléments suivants :
 
