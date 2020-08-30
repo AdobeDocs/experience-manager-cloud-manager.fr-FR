@@ -7,16 +7,19 @@ page-status-flag: never-activated
 uuid: 73436882-a3f7-4048-bb8d-7f5819d29c8f
 contentOwner: jsyal
 discoiquuid: 4ac3e831-2227-4ea8-abcc-c5734e023424
-preview: 'true'
+preview: true
 translation-type: tm+mt
-source-git-commit: f135526c6a47f1502395e6d53f9e286c0f935da5
+source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+workflow-type: tm+mt
+source-wordcount: '75'
+ht-degree: 100%
 
 ---
 
 
-# Environnement de déploiement{#deployment-environment}
+# Environnement de déploiement {#deployment-environment}
 
-Vous commencez peut-être à utiliser Adobe Experience Manager (AEM) 6.4 ou vous devez effectuer une mise à niveau vers la version 6.4 d’AEM.
+Vous commencez peut-être à utiliser Adobe Experience Manager (AEM) 6.4 ou vous devez effectuer une mise à niveau vers la version 6.4 d’AEM.
 
 Si vous commencez à utiliser AEM 6.4, vous avez déjà accès à Cloud Manager.
 
