@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: b702dfc0-3534-4d90-af19-8559d8baf6a6
 translation-type: tm+mt
-source-git-commit: aa4ff4eb2f3292fe4cb0baf8087b4d0213443cf4
+source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+workflow-type: tm+mt
+source-wordcount: '347'
+ht-degree: 89%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: aa4ff4eb2f3292fe4cb0baf8087b4d0213443cf4
 
 Cette page décrit la terminologie de base employée dans Cloud Manager. Il est vivement conseillé de lire cette page avant de consulter la documentation de Cloud Manager.
 
-**Application** Ensemble de personnalisations et de configurations créées par un client (ou son personnalisateur) pour adapter la solution sous-jacente en fonction de ses domaines d’application et besoins spécifiques. Une application est une unité logique pouvant être composée de plusieurs artefacts.
+**Application** Ensemble de personnalisations et de configurations créées par un client afin d’adapter la solution sous-jacente à ses besoins et à ses besoins spécifiques. Une application est une unité logique pouvant être composée de plusieurs artefacts.
 
 Par exemple, *We.Retail*.
 
@@ -36,7 +39,7 @@ Par exemple, *We.Retail*.
 
 **Pipeline** Ensemble d’étapes de déploiement exécutées les unes après les autres.
 
-**Produit** Ensemble spécifique de fonctionnalités au sein d’une solution mise sous licence par une organisation. Les différents programmes au sein d’une même organisation peuvent être associés à différents ensembles de produits. Par exemple, Sites, Ressources de Formulaires.
+**Produit** Ensemble spécifique de fonctionnalités au sein d’une solution mise sous licence par une organisation. Différents programmes d&#39;une organisation peuvent avoir droit à différents ensembles de produits. Par exemple, Sites, Ressources de Formulaires.
 
 **Programme** Ensemble d’environnements qui prennent en charge un regroupement logique d’initiatives client, correspondant en règle générale à un accord de niveau de service (SLA) acheté. Chaque programme comprend un environnement de production précis et peut intégrer un grand nombre d’environnements hors production.
 
