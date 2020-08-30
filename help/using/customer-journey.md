@@ -8,11 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: bc9a0d63-ae6b-4fe9-81e5-bf9844f04e54
-translation-type: ht
-source-git-commit: 77b7e2fc81880a7f1878fa9553ce2ae8078d1b78
-workflow-type: ht
-source-wordcount: '586'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+workflow-type: tm+mt
+source-wordcount: '585'
+ht-degree: 74%
 
 ---
 
@@ -29,13 +29,13 @@ En tant que client, vous commencez peut-être à utiliser Adobe Experience Man
 
 1. **Nouveau client AEM dans Adobe Managed Services**
 
-   En tant que nouveau client, vous intégrerez [!UICONTROL Cloud Manager] dans le cadre du processus d’intégration au service cloud géré Adobe.
+   As a new customer, you will be on-boarded to [!UICONTROL Cloud Manager] as part of the on-boarding process to the Adobe Managed Services.
 
-   L’URL d’accès à [!UICONTROL Cloud Manager] figure dans l’e-mail de bienvenue. Celui-ci comprend aussi des instructions pour se connecter à [!UICONTROL Experience Cloud] et utiliser Adobe Admin Console afin de gérer vos utilisateurs et leurs autorisations respectives, pour ceux qui doivent avoir accès à [!UICONTROL Cloud Manager].
+   The URL to access [!UICONTROL Cloud Manager] will be included in the welcome email, along with the instructions to login to [!UICONTROL Experience Cloud], and use the Adobe Admin Console for managing your users and their respective permissions, for those users who need to access [!UICONTROL Cloud Manager].
 
 1. **Client AEM actuel dans Adobe Managed Services**
 
-   En tant que client actuel, vous devrez d’abord mettre à niveau vos environnements de production et vos autres environnements existants pour la version AEM 6.4. Lors de la mise à niveau, vous serez intégré et recevrez l’URL pour avoir accès à [!UICONTROL Cloud Manager]. De plus, vous devrez commencer à utiliser Adobe Admin Console pour gérer vos utilisateurs et leurs autorisations respectives, pour ceux qui doivent avoir accès à [!UICONTROL Cloud Manager].
+   En tant que client actuel, vous devrez d’abord mettre à niveau vos environnements de production et vos autres environnements existants pour la version AEM 6.4. Lors de la mise à niveau, vous serez intégré et recevrez l’URL pour avoir accès à [!UICONTROL Cloud Manager]. Additionally, you will need to start using the Adobe Admin Console for managing your users and their respective permissions, for those users who need to access [!UICONTROL Cloud Manager].
 
    Votre projet AEM existant devra également se conformer aux bonnes pratiques recommandées, car vous commencerez à utiliser [!UICONTROL Cloud Manager] pour déployer de nouveaux changements de code dans vos environnements AEM.
 
@@ -43,7 +43,7 @@ En tant que client, vous commencez peut-être à utiliser Adobe Experience Man
 
 ## Accès à [!UICONTROL Cloud Manager] {#accessing-cloud-manager}
 
-Vous avez accès à [!UICONTROL Cloud Manager] et à vos environnements AEM en vous connectant simplement sur la page d’entrée [!UICONTROL Experience Cloud], à l’aide de vos informations d’identification fournies par la gestion des identités Adobe, et en sélectionnant AEM dans l’interface de commutation de solution.
+You will get access to [!UICONTROL Cloud Manager] and your AEM environments by simply logging in to the [!UICONTROL Experience Cloud] landing page, using your Adobe Identity Management credentials, and selecting AEM from the solution switcher interface.
 
 Après la première connexion à [!UICONTROL Cloud Manager], vous avez accès à vos environnements AEM directement depuis l’interface utilisateur de [!UICONTROL Cloud Manager]. À ce stade, vous êtes prêt à explorer toutes les possibilités de [!UICONTROL Cloud Manager], une fois que votre première branche de code est prête à être déployée dans vos environnements intermédiaire et de production.
 
@@ -51,7 +51,7 @@ Pour découvrir [!UICONTROL Cloud Manager] et commencer à utiliser la solution,
 
 ## Prise en main de [!UICONTROL Cloud Manager] {#getting-started-with-cloud-manager}
 
-Une fois connecté à [!UICONTROL Cloud Manager], la première chose à faire est de configurer votre environnement de référentiel de code, puis votre équipe et vos rôles. De manière spécifique, les rôles sont affectés en ajoutant l’utilisateur à un profil [!UICONTROL Cloud Manager] à l’aide de l’interface utilisateur d’Admin Console.
+Une fois connecté à [!UICONTROL Cloud Manager], la première chose à faire est de configurer votre environnement de référentiel de code, puis votre équipe et vos rôles. Specifically, the role memberships are assigned by adding the user to a [!UICONTROL Cloud Manager] profile using the Admin Console UI.
 
 Ensuite, vous devez configurer vos branches de code source dans le **référentiel Git**, définir vos objectifs en termes d’ICP de chargement et de performance, puis tester les scénarios afin de déployer votre code dans vos environnements intermédiaire et de production, une fois que tous les contrôles de qualité ont été réussis.
 
