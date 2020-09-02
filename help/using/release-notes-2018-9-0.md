@@ -27,7 +27,7 @@ La date de publication de la mise à jour 2018.9.0 de [!UICONTROL Cloud Manager
 
 ## Nouveautés {#whats-new}
 
-* **Pipeline CI/CD** : nouveau système d’API et d’événements pour l’intégration du pipeline CI/CD de [!UICONTROL Cloud Manager] à d’autres systèmes. Pour plus d’informations, reportez-vous à la documentation de l’API de [!UICONTROL Cloud Manager] (https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html).
+* **Pipeline CI/CD** : nouveau système d’API et d’événements pour l’intégration du pipeline CI/CD de [!UICONTROL Cloud Manager] à d’autres systèmes. Pour plus d’informations, reportez-vous à la documentation de l’API de [!UICONTROL Cloud Manager]&#x200B;(https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html).
 
 * **IU** - Introduction d’un nouveau calque d’interface qui est plus réactif.
 
