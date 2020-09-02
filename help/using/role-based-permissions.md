@@ -30,7 +30,7 @@ La liste suivante définit les rôles que vous pouvez attribuer dans Admin Conso
 | Responsable de déploiement | Gère les opérations de déploiement. Utilise [!UICONTROL Cloud Manager] pour exécuter les déploiements dans les environnements intermédiaires/de production. Peut approuver des échecs importants de trois niveaux. Dispose d’un accès au référentiel Git. |
 | Développeur | Développe et teste du code d’application personnalisé. Utilise principalement [!UICONTROL Cloud Manager] pour consulter les statuts. Dispose d’un accès en validation au référentiel Git. |
 | Ingénieur du service client | Prend en charge généralement les stratégies du service client pour les clients AMS. Interagit avec [!UICONTROL Cloud Manager] dans le but d’exécuter des déploiements nécessitant la supervision de l’ingénieur du service client. |
-| Auteur de contenu | N’interagit généralement pas avec [!UICONTROL Cloud Manager]. Cet utilisateur peut utiliser le commutateur de programmes de [!UICONTROL Cloud Manager](depuis [!UICONTROL Experience Cloud]) pour accéder à Adobe Experience Manager (AEM). |
+| Auteur de contenu | N’interagit généralement pas avec [!UICONTROL Cloud Manager]. Cet utilisateur peut utiliser le commutateur de programmes de [!UICONTROL Cloud Manager] (depuis [!UICONTROL Experience Cloud]) pour accéder à Adobe Experience Manager (AEM). |
 
 ## Autorisations d’utilisateur {#user-permissions}
 
