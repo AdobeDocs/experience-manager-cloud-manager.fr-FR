@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 8888dd80-d908-464e-927d-779db1a832a4
 translation-type: tm+mt
-source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+source-git-commit: 2ada697ca21acd0c73dbce2bce3e9481ac50272c
 workflow-type: tm+mt
 source-wordcount: '597'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,17 +23,17 @@ ht-degree: 96%
 
 Cloud Manager peut déployer les fichiers de configuration du serveur web et du Dispatcher en supposant qu’ils soient stockés dans le **référentiel Git**, en plus des packages de contenu AEM normaux.
 
-Pour tirer parti de cette fonctionnalité, la compilation Maven doit produire un fichier zip contenant au moins deux répertoires : ***conf*** et ***conf.d***. Ce fichier zip peut être créé à l’aide de maven-assembly-plugin. Les projets générés par Cloud Manager à l’aide de l’[assistant](/help/using/create-an-application-project.md) intégré présentent une structure de projet Maven correcte qui est créée dans le cadre de la création du projet. Il s’agit du chemin recommandé pour les nouveaux clients des services gérés.
+Pour tirer parti de cette fonctionnalité, la compilation Maven doit produire un fichier zip contenant au moins deux répertoires : ***conf*** et ***conf.d***. Ce fichier zip peut être créé à l’aide de maven-assembly-plugin. Les projets générés par Cloud Manager à l’aide de l’[assistant](/help/using/using-the-wizard.md) intégré présentent une structure de projet Maven correcte qui est créée dans le cadre de la création du projet. Il s’agit du chemin recommandé pour les nouveaux clients Managed Services.
 
 Lors du déploiement sur une **Instance** de Dispatcher, le contenu de ces répertoires remplace celui de ces répertoires sur l’instance de Dispatcher. Comme les fichiers de configuration du serveur web et du Dispatcher requièrent souvent des informations spécifiques à l’environnement, vous devez d’abord collaborer avec les ingénieurs du service client pour définir ces variables d’environnement dans `/etc/sysconfig/httpd`.
 
-### Procédure de configuration du Dispatcher pour les clients existants des services gérés {#steps-for-configuring-dispatcher}
+### Procédure de configuration du Dispatcher pour les clients Managed Services existants {#steps-for-configuring-dispatcher}
 
 Pour effectuer le processus initial de configuration du dispatcher, procédez comme suit :
 
 1. Récupérez les fichiers de configuration de production actuels auprès de l’ingénieur du service client.
 1. Supprimez les données de l’environnement codées en dur (par exemple, l’IP de rendu de publication) et remplacez-les par des variables.
-1. Define required variables in key-value pairs for each target Dispatcher and request your CSE to add to `/etc/sysconfig/httpd` on each instance.
+1. Définissez les variables requises dans les paires clé/valeur pour chaque Dispatcher cible et demandez à l’ingénieur du service client d’ajouter `/etc/sysconfig/httpd` sur chaque instance.
 1. Testez les configurations mises à jour sur votre environnement intermédiaire, puis demandez à l’ingénieur du service client d’effectuer un déploiement en production.
 1. Validez les fichiers dans le **référentiel Git**.
 
