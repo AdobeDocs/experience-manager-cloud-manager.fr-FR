@@ -8,11 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 85a1dcf3-2eef-4ba8-b4d1-09e4a88c7bd0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '291'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -27,9 +27,9 @@ La date de publication de la mise à jour 2018.9.0 de [!UICONTROL Cloud Manager
 
 ## Nouveautés {#whats-new}
 
-* **Pipeline CI/CD** : nouveau système d’API et d’événements pour l’intégration du pipeline CI/CD de [!UICONTROL Cloud Manager] à d’autres systèmes. Pour plus d’informations, reportez-vous à la documentation de l’API de [!UICONTROL Cloud Manager]&#x200B;(https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html).
+* **Pipeline CI/CD** : nouveau système d’API et d’événements pour l’intégration du pipeline CI/CD de [!UICONTROL Cloud Manager] à d’autres systèmes. Pour plus d’informations, reportez-vous à la documentation de l’API de [!UICONTROL Cloud Manager] (https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html).
 
-* **IU** - Introduction d’un nouveau calque d’interface qui est plus réactif.
+* **Interface utilisateur** : introduction de la nouvelle couche de l’interface utilisateur qui est plus réactive.
 
 ## Correctifs {#bug-fixes}
 
