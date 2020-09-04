@@ -8,11 +8,11 @@ contentOwner: jsyal
 topic-tags: release-notes
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: b64bf9ab-27ed-4f33-adc8-d73d34094f1b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '360'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -35,9 +35,9 @@ La date de publication de la mise à jour 2018.7.0 de [!UICONTROL Cloud Manager
 
 * **Analyse de la qualité du code** : nouvelle règle pour identifier une utilisation incorrecte de l’API. Pour en savoir plus, consultez la section [Règles de qualité du code personnalisé](custom-code-quality-rules.md).
 
-* **Tests de performance** : en consultant les résultats des tests de performance, les graphiques suivants sont disponibles : Utilisation de l’UC, Délai d’attente d’E/S de disque, Taux d’erreur de page, Utilisation de la bande passante de disque, Utilisation de la bande passante réseau, Délai de réponse de page max. et Délai de réponse de page du 95e percentile. Please refer to *Performance Testing* section on [Understand your Test Results](understand-your-test-results.md) page.
+* **Tests de performance** : en consultant les résultats des tests de performance, les graphiques suivants sont disponibles : Utilisation de l’UC, Délai d’attente d’E/S de disque, Taux d’erreur de page, Utilisation de la bande passante de disque, Utilisation de la bande passante réseau, Délai de réponse de page max. et Délai de réponse de page du 95e percentile. Reportez-vous à la section *Test de performance* de la page [ Présentation des résultats des tests](understand-your-test-results.md).
 
-* **Tests de performance** : lors de la consultation des résultats des tests de performance, la liste des erreurs de page et des demandes lentes peut être téléchargée. Please refer to *Performance Testing* section on [Understand your Test Results](understand-your-test-results.md) page.
+* **Tests de performance** : lors de la consultation des résultats des tests de performance, la liste des erreurs de page et des demandes lentes peut être téléchargée. Reportez-vous à la section *Test de performance* de la page [Présentation des résultats des tests](understand-your-test-results.md).
 
 ## Correctifs {#bug-fixes}
 
