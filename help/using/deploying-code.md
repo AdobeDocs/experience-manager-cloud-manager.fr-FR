@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 translation-type: tm+mt
-source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+source-git-commit: c35398110e9d8311bf58f217efdd082cf0cfd90a
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '952'
 ht-degree: 98%
 
 ---
@@ -48,7 +48,7 @@ Une fois que vous avez configuré votre pipeline de production (référentiel, e
    Le **déploiement en environnement intermédiaire** comprend les étapes suivantes :
 
    * Validation : cette étape permet de s’assurer que le pipeline est configuré pour utiliser les ressources actuellement disponibles ; par exemple, la branche configurée existe, les environnements sont disponibles, etc.
-   * Test de création et d’unité : cette étape exécute un processus de création en conteneur. Pour plus d’informations sur l’environnement de création, voir [Création d’un projet d’application AEM](create-an-application-project.md).
+   * Test de création et d’unité : cette étape exécute un processus de création en conteneur. Voir [Présentation de l’Environnement](/help/using/build-environment-details.md) de création pour plus d’informations sur l’environnement de création.
    * Analyse du code : cette étape évalue la qualité du code de votre application. Pour plus d’informations sur le processus de test, voir [Comprendre vos résultats de test](understand-your-test-results.md).
    * Déploiement en environnement intermédiaire.
 
@@ -75,7 +75,7 @@ Une fois que vous avez configuré votre pipeline de production (référentiel, e
    >La **planification du déploiement en production** est activée lors de la configuration du pipeline.
    >
    >
-   >Using this option, you can either schedule your production deployment or click **Now** to execute the production deployment immediately.
+   >Grâce à cette option, vous pouvez planifier le déploiement en production ou cliquer sur **Maintenant** pour exécuter immédiatement le déploiement en production.
    >
    >
    >La date et l’heure planifiées sont indiquées dans le fuseau horaire de l’utilisateur.
