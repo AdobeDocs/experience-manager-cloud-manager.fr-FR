@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-translation-type: ht
-source-git-commit: c2f5caf50f2e20c07807369aee7914c17fded4de
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: c35398110e9d8311bf58f217efdd082cf0cfd90a
+workflow-type: tm+mt
 source-wordcount: '1763'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ La page suivante explique comment configurer le **pipeline**. Pour consulter d�
 
 La configuration du pipeline de production CI/CD définit le déclencheur qui lancera le pipeline, les paramètres contrôlant le déploiement en production et les paramètres de test de performances.
 
->[!VIDEO](https://video.tv.adobe.com/v/26314/?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26314/)
 
 
 ## Présentation du flux {#understanding-the-flow}
@@ -204,7 +204,7 @@ Pour configurer les invalidations du Dispatcher, procédez comme suit :
 
 Les clients AMS disposant de sites authentifiés peuvent spécifier un nom d’utilisateur et un mot de passe que Cloud Manager utilisera pour accéder au site web lors des tests de performances des sites.
 
-Le nom d’utilisateur et le mot de passe sont spécifiés sous la forme de [variables de pipeline](/help/using/create-an-application-project.md#pipeline-variables) portant les noms `CM_PERF_TEST_BASIC_USERNAME` et `CM_PERF_TEST_BASIC_PASSWORD`.
+Le nom d’utilisateur et le mot de passe sont spécifiés sous la forme de [variables de pipeline](/help/using/build-environment-details.md#pipeline-variables) portant les noms `CM_PERF_TEST_BASIC_USERNAME` et `CM_PERF_TEST_BASIC_PASSWORD`.
 
 Bien que cela ne soit pas strictement requis, il est recommandé d’utiliser le type de variable de chaîne pour le nom d’utilisateur et le type de variable secretString pour le mot de passe. Si ces deux éléments sont spécifiés, chaque requête du robot de tests de performances et des utilisateurs virtuels de test contiendra ces informations d’identification sous forme d’authentification HTTP basique.
 
@@ -222,7 +222,7 @@ En plus du pipeline principal qui se déploie vers les environnements intermédi
 
 Les pipelines CI/CD hors production sont divisés en deux catégories : les pipelines de qualité du code et les pipelines de déploiement. Les pipelines de qualité du code canalisent tout le code d’une branche Git pour génération et évaluation par rapport à l’analyse de la qualité du code de Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/26316/?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26316/)
 
 Sur l’écran d’accueil, ces pipelines sont répertoriés dans une nouvelle carte :
 
