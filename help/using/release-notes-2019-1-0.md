@@ -8,10 +8,10 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 85a1dcf3-2eef-4ba8-b4d1-09e4a88c7bd0
-translation-type: ht
-source-git-commit: cdf2c82192c2e9c375316ae6e28646594ba2a462
-workflow-type: ht
-source-wordcount: '349'
+translation-type: tm+mt
+source-git-commit: c35398110e9d8311bf58f217efdd082cf0cfd90a
+workflow-type: tm+mt
+source-wordcount: '339'
 ht-degree: 100%
 
 ---
@@ -29,7 +29,7 @@ La date de publication de la mise à jour 2019.1.0 de [!UICONTROL Cloud Manager
 
 * Ajout de la prise en charge des tests de performance d’AEM Assets. Pour plus d’informations, consultez la section [Configuration de votre pipeline CI/CD](configuring-pipeline.md).
 * Ajout de la prise en charge des pipelines qui exécutent uniquement des étapes de génération et de contrôle qualité de code et du déploiement des pipelines dans des environnements hors production. Pour plus d’informations, reportez-vous à la section **Pipelines de qualité de code et hors production uniquement** dans [Configuration de votre pipeline CI/CD](configuring-pipeline.md).
-* Ajout de la prise en charge des variables d’environnement personnalisées dans l’environnement de génération. Pour plus d’informations, consultez la section [Création d’un projet d’application AEM](/help/using/create-an-application-project.md).
+* Ajout de la prise en charge des variables d’environnement personnalisées dans l’environnement de génération.
 * Pour les clients disposant de plusieurs environnements intermédiaires ou de production, la sélection de l’environnement qui sera déployé dans le cadre du pipeline de production est disponible dans la page [Configuration de votre pipeline CI/CD](configuring-pipeline.md).
 * Ajout de httxt2dbm au conteneur de génération.
 * Tous les éléments de menu d’aide ouvrent un nouvel onglet.
