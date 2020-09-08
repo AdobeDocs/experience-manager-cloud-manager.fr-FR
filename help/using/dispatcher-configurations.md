@@ -8,9 +8,9 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 8888dd80-d908-464e-927d-779db1a832a4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2ada697ca21acd0c73dbce2bce3e9481ac50272c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '597'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ Lors du déploiement sur une **Instance** de Dispatcher, le contenu de ces répe
 
 ### Procédure de configuration du Dispatcher pour les clients Managed Services existants {#steps-for-configuring-dispatcher}
 
-Pour effectuer le processus initial de configuration du dispatcher, procédez comme suit :
+Pour effectuer le processus initial de configuration du Dispatcher, procédez comme suit :
 
 1. Récupérez les fichiers de configuration de production actuels auprès de l’ingénieur du service client.
 1. Supprimez les données de l’environnement codées en dur (par exemple, l’IP de rendu de publication) et remplacez-les par des variables.
@@ -50,7 +50,7 @@ Le fichier et la structure de répertoires spécifiques peuvent varier en foncti
 1. Créez un sous-répertoire appelé `dispatcher`.
 
    >[!NOTE]
-   Attribuez-le le nom de votre choix, mais le nom du répertoire créé au cours de cette étape doit être identique à celui utilisé à l’étape 6.
+   Attribuez-lui le nom de votre choix, mais le nom du répertoire créé au cours de cette étape doit être identique à celui utilisé à l’étape 6.
 
 1. Ce sous-répertoire contient un module Maven qui crée le fichier zip de Dispatcher à l’aide du module externe d’assemblage Maven. Pour commencer, dans le répertoire `dispatcher`, créez un fichier `pom.xml` avec ce contenu, en modifiant la référence parent, l’identifiant d’artefact et son nom si nécessaire.
 
