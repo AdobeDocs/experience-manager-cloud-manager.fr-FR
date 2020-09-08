@@ -5,8 +5,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: 67a54bae-99a9-4405-91e3-9a0a8b3ccc98
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 9cbe8f58cf04001ba9851ba321f03c7687e58014
+workflow-type: tm+mt
+source-wordcount: '543'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +26,7 @@ Pour plus d’informations sur la configuration de vos rôles, consultez la rubr
 
 La liste suivante définit les rôles que vous pouvez attribuer dans Admin Console.
 
-| **[!UICONTROL Rôle dans]Cloud Manager ** | **Description** |
+| **Rôle dans** **[!UICONTROL Cloud Manager]** | **Description** |
 |---|---|
 | Propriétaire de l’entreprise | Utilisateur principal qui effectue la configuration initiale de [!UICONTROL Cloud Manager]. Est responsable de la définition des ICP, approuve les déploiements en production et contourne les échecs de trois niveaux. |
 | Responsable de programme | Utilise [!UICONTROL Cloud Manager] pour configurer les équipes et passer en revue les statuts et les ICP. Peut approuver des échecs importants de trois niveaux. |
