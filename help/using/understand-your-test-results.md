@@ -8,9 +8,9 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
-translation-type: ht
-source-git-commit: d38b6da61c552a3e9ad03dac49a64553f0cb00b4
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 39e6af753cdd43da96746c7609a8f502b3ac9e77
+workflow-type: tm+mt
 source-wordcount: '1552'
 ht-degree: 100%
 
@@ -162,7 +162,7 @@ Le tableau suivant résume la matrice des tests de performance à l’aide du sy
 | Nombre de pages vues par minute | Important | &lt; ICP de niveau programme |
 | Utilisation de la bande passante de disque | Important | >= 90 % |
 | Utilisation de la bande passante réseau | Important | >= 90 % |
-| Demandes par minute | Infos | &lt; 6 000 |
+| Demandes par minute | Infos | >= 6 000 |
 
 ### Graphiques des résultats de tests de performance {#performance-testing-results-graphs}
 
