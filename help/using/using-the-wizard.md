@@ -1,16 +1,16 @@
 ---
-title: Utilisation de l’Assistant
-description: Suivez cette page pour savoir comment utiliser l'assistant pour créer un projet d'application AEM
-translation-type: tm+mt
+title: Utilisation de l’assistant
+description: Suivez cette page pour savoir comment utiliser l’assistant afin de créer un projet d’application AEM
+translation-type: ht
 source-git-commit: 7146a41d64365c9de03d32f4fc4c33f9e366c244
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '332'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 
-# Utilisation de l’Assistant {#using-wizard-to-create-an-aem-application-project}
+# Utilisation de l’assistant {#using-wizard-to-create-an-aem-application-project}
 
 Lorsque les clients se connectent à Cloud Manager, ils reçoivent un référentiel git vide. Les clients Adobe Managed Services (AMS) actuels (ou clients AEM sur site qui migrent vers AMS) auront généralement déjà leur code de projet dans git (ou un autre système de contrôle de version) et importeront leur projet dans le référentiel git Cloud Manager. Toutefois, les nouveaux clients n’ont pas de projets existants.
 
