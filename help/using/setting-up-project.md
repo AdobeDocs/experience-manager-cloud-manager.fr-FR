@@ -1,11 +1,11 @@
 ---
 title: Configuration du projet
-description: Suivez cette page pour savoir comment configurer un projet
-translation-type: tm+mt
+description: Consultez cette page pour savoir comment configurer un projet
+translation-type: ht
 source-git-commit: 2ada697ca21acd0c73dbce2bce3e9481ac50272c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '873'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -17,10 +17,10 @@ ht-degree: 78%
 Pour créer et déployer dans Cloud Manager, les projets AEM existants doivent se conformer à certaines règles de base :
 
 * Les projets doivent être créés à l’aide d’Apache Maven.
-* Un fichier *pom.xml* doit se trouver à la racine du référentiel Git. This *pom.xml* file can refer to as many sub-modules (which in turn may have other sub-modules, etc.) que nécessaire.
+* Un fichier *pom.xml* doit se trouver à la racine du référentiel Git. Ce fichier *pom.xml* peut faire référence à autant de sous-modules (qui, à leur tour, peuvent comporter d’autres sous-modules, etc.) que nécessaire.
 
 * Vous pouvez ajouter des références à d’autres référentiels d’artefact Maven dans vos fichiers *pom.xml*. L’accès aux [référentiels d’artefacts protégés par mot de passe](#password-protected-maven-repositories) est pris en charge s’il est configuré. Cependant, l’accès aux référentiels d’artefacts protégés par réseau n’est pas pris en charge.
-* Les packages de contenu déployables sont découverts en analysant les fichiers *zip* de package de contenu contenus dans un répertoire appelé *target*. Tout nombre de sous-modules peut produire des packages de contenu.
+* Les packages de contenu déployables sont découverts en analysant les fichiers *zip* de package de contenu se trouvant dans un répertoire appelé *target*. Un nombre illimité de sous-modules peut produire des packages de contenu.
 
 * Les artefacts déployables de Dispatcher sont découverts en analysant les fichiers *zip* (contenus dans un répertoire appelé *target*) dont les répertoires sont appelés *conf* et *conf.d*.
 
@@ -31,7 +31,7 @@ Pour créer et déployer dans Cloud Manager, les projets AEM existants doivent 
 
 Dans certains cas, vous devrez peut-être légèrement modifier le processus de génération lors de l’exécution dans Cloud Manager, contrairement à celui qui s’exécute sur les postes de travail des développeurs. Dans ce cas, les [profils Maven](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) peuvent être utilisés pour définir la manière dont la génération doit être différente dans différents environnements, notamment Cloud Manager.
 
-L’activation d’un profil Maven dans l’environnement de génération Cloud Manager doit se faire en recherchant la présence de la variable d’environnement appelée CM_BUILD, décrite plus haut. Inversement, un profil destiné à être utilisé uniquement en dehors de l’environnement de création de Cloud Manager doit être effectué en recherchant l’absence de cette variable.
+L’activation d’un profil Maven dans l’environnement de génération Cloud Manager doit se faire en recherchant la présence de la variable d’environnement appelée CM_BUILD, décrite plus haut. Par contre, un profil destiné à être utilisé uniquement en dehors de l’environnement de création Cloud Manager doit être généré en vérifiant l’absence de cette variable.
 
 Par exemple, si vous souhaitez générer un message de sortie simple uniquement lorsque la génération est exécutée dans Cloud Manager, procédez comme suit :
 
@@ -108,7 +108,7 @@ Si vous souhaitez générer un message de sortie simple uniquement lorsque la g�
 ## Prise en charge d’un référentiel Maven protégé par mot de passe {#password-protected-maven-repositories}
 
 >[!NOTE]
->Les artefacts d’un référentiel Maven protégé par un mot de passe ne doivent être utilisés que très prudemment, car le code déployé par ce mécanisme n’est actuellement pas exécuté par les barrières de qualité de Cloud Manager. Par conséquent, il ne devrait être utilisé que dans de rares cas et pour le code non lié à l&#39;AEM. Il est conseillé de déployer également les sources Java ainsi que l&#39;ensemble du code source du projet avec le binaire.
+>Les artefacts d’un référentiel Maven protégé par mot de passe ne doivent être utilisés que très prudemment, car le code déployé par ce mécanisme ne passe actuellement pas par les points de contrôle de qualité de Cloud Manager. Par conséquent, ce mécanisme ne devrait être utilisé que dans de rares cas et pour le code non lié à AEM. Il est conseillé de déployer les sources Java ainsi que l’ensemble du code source du projet avec le binaire.
 
 Pour utiliser un référentiel Maven protégé par mot de passe dans Cloud Manager, spécifiez le mot de passe (et éventuellement le nom d’utilisateur) en tant que [Variable pipeline](/help/using/build-environment-details.md#pipeline-variables) secrète, puis référencez ce secret dans un fichier nommé `.cloudmanager/maven/settings.xml` dans le référentiel git. Ce fichier suit le schéma de [fichier de paramètres Maven](https://maven.apache.org/settings.html). Au démarrage du processus de création de Cloud Manager, l’élément `<servers>` de ce fichier est fusionné dans le fichier `settings.xml` par défaut fourni par Cloud Manager. Les ID de serveur commençant par `adobe` et `cloud-manager` sont considérés comme réservés et ne doivent pas être utilisés par des serveurs personnalisés. Les ID de serveur **ne correspondant pas** à l’un de ces préfixes ou à l’ID par défaut `central` ne seront jamais mis en miroir par Cloud Manager. Une fois ce fichier en place, l’ID de serveur est référencé à l’intérieur d’un élément `<repository>` et/ou `<pluginRepository>` dans le fichier `pom.xml`. En règle générale, ces éléments `<repository>` et/ou `<pluginRepository>` sont contenus dans un [profil spécifique à Cloud Manager](#activating-maven-profiles-in-cloud-manager), bien que cela ne soit pas strictement nécessaire.
 
@@ -181,7 +181,7 @@ Enfin référencez l’identifiant du serveur dans le fichier `pom.xml` :
 
 Il est recommandé de déployer les sources Java avec le binaire dans un référentiel Maven.
 
-Configurez le module maven-source-plugin dans votre projet :
+Configurez le module maven-source-plugin dans votre projet :
 
 ```xml
         <plugin>
@@ -200,9 +200,9 @@ Configurez le module maven-source-plugin dans votre projet :
 
 ### Déploiement de sources de projet {#deploying-project-sources}
 
-Il est recommandé de déployer la source du projet dans son intégralité avec le binaire dans un référentiel Maven, ce qui permet de reconstruire l&#39;artefact exact.
+Il est recommandé de déployer la source du projet dans son intégralité avec le binaire dans un référentiel Maven, ce qui permet de reconstruire l’artefact exact.
 
-Configurez le module maven-assembly-plugin dans votre projet :
+Configurez le module maven-assembly-plugin dans votre projet :
 
 ```xml
         <plugin>
@@ -264,4 +264,4 @@ Avec content-package-maven-plugin, il est similaire :
 
 ## Développement du code en fonction des bonnes pratiques {#develop-your-code-based-on-best-practices}
 
-Les équipes d’ingénierie et de conseil Adobe ont développé [un ensemble complet de bonnes pratiques pour les développeurs AEM](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/best-practices.html).
+Les équipes d’ingénierie et de conseil Adobe ont développé [un ensemble complet de bonnes pratiques pour les développeurs AEM](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/best-practices.html).
