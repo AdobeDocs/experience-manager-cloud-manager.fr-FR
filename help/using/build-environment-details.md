@@ -1,16 +1,16 @@
 ---
-title: Présentation de l'Environnement de création
-description: Suivez cette page pour en savoir plus sur les environnements
-translation-type: tm+mt
+title: Présentation de l’environnement de création
+description: Consultez cette page pour en savoir plus sur les environnements
+translation-type: ht
 source-git-commit: f73ea3db4bc50891518bebbe5da2d69dd2890a81
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '663'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
-# Présentation de l&#39;Environnement de création {#build-environment-details}
+# Présentation de l’environnement de création {#build-environment-details}
 
 Cloud Manager crée et teste votre code à l&#39;aide d&#39;un environnement de création spécialisé. Cet environnement comporte les attributs suivants :
 
@@ -27,7 +27,7 @@ Cloud Manager crée et teste votre code à l&#39;aide d&#39;un environnement de 
 
 * D&#39;autres packages peuvent être installés au moment de la création, comme décrit [ci-dessous](#installing-additional-system-packages).
 * Chaque génération a lieu dans un environnement vierge ; le conteneur de génération ne conserve aucun état entre les exécutions.
-* Maven est toujours exécuté avec les trois commandes suivantes :
+* Maven est toujours exécuté avec les trois commandes suivantes :
 
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
