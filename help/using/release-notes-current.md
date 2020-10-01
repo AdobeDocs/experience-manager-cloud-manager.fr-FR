@@ -1,28 +1,28 @@
 ---
-title: Notes de mise à jour de la version 2020.9.0
-seo-title: Notes de mise à jour de la version 2020.9.0 d’AEM Cloud Manager
-description: Consultez cette page pour obtenir des informations sur la version 2020.9.0 de Cloud Manager
-seo-description: Consultez cette page pour obtenir des informations sur la version 2020.9.0 d’AEM Cloud Manager
-translation-type: ht
-source-git-commit: 92249cbb7134082fcc66455c90dda8bdcb9dbf1d
-workflow-type: ht
-source-wordcount: '103'
-ht-degree: 100%
+title: Notes de mise à jour de la version 2020.10.0
+seo-title: Notes de mise à jour de la version 2020.10.0 d’AEM Cloud Manager
+description: Consultez cette page pour obtenir des informations sur la version 2020.10.0 de Cloud Manager
+seo-description: Consultez cette page pour obtenir des informations sur la version 2020.10.0 d’AEM Cloud Manager
+translation-type: tm+mt
+source-git-commit: aad2da58e5934999884553619dd97d42cc725d88
+workflow-type: tm+mt
+source-wordcount: '106'
+ht-degree: 54%
 
 ---
 
-# Notes de mise à jour de la version 2020.9.0 {#release-notes-for}
+# Notes de mise à jour de la version 2020.10.0 {#release-notes-for}
 
-La section ci-dessous présente les notes générales de mise à jour de la version 2020.9.0 de [!UICONTROL Cloud Manager].
+La section ci-dessous présente les notes générales de mise à jour de la version 2020.10.0 de [!UICONTROL Cloud Manager].
 
 ## Date de publication {#release-date}
 
-La date de publication de [!UICONTROL Cloud Manager] version 2020.9.0 est le 3 septembre 2020.
+[!UICONTROL Cloud Manager] version 2020.10.0 a été publié le 01 octobre 2020.
 
-## Nouveautés {#whats-new}
+## Correctifs {#bug-fixes}
 
-* Le processus de création a été divisé en trois commandes Maven distinctes.
-* Si le clonage du référentiel git échoue, il sera tenté à nouveau jusqu’à trois fois.
-* Il existe maintenant un indicateur sur la page des détails d’exécution du pipeline lorsque l’authentification est utilisée pendant les tests de performances.
+* L’analyseur de liens utilisé pour les tests de performances considérait incorrectement certains types de ressources comme des liens Web valides.
 
+* Dans certains cas, l’étape d’achèvement des tests de performances n’était pas correctement gérée, ce qui entraînait des étapes à long terme.
 
+* Lorsque l’invalidation du cache du répartiteur était configurée pour les déploiements de production, l’invalidation était parfois exécutée deux fois.
