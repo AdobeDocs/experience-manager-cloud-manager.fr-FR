@@ -7,9 +7,9 @@ uuid: 62d68e79-c2ba-4d8b-ba7d-33709014d5b6
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
-translation-type: ht
-source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 8d1a100420129d234fe21911f165621405a04a9b
+workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 100%
 
@@ -40,6 +40,7 @@ Pour générer un rapport d’évaluation, procédez comme suit :
 1. Cliquez sur **[!UICONTROL Exécuter une évaluation]**.
 
    >[!NOTE]
+   >
    >Le détecteur de motifs peut s’exécuter dans n’importe quel environnement. Toutefois, pour augmenter le taux de détection et éviter tout ralentissement des instances métier critiques, Cloud Manager l’exécute dans l’environnement d’évaluation de l’instance Auteur.
 
    ![](assets/Run-Evaluation.png)
