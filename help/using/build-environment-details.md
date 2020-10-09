@@ -1,11 +1,11 @@
 ---
 title: Présentation de l’environnement de création
 description: Consultez cette page pour en savoir plus sur les environnements
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 57a99792e151bd5fe69c8372b6a9d3b100036a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '709'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ Cloud Manager prend désormais en charge la création de projets clients avec J
 >Les `vendor` valeurs prises en charge sont `oracle` et `sun`, et les `version` valeurs prises en charge sont `1.8`, `1.11`et `11`.
 
 >[!NOTE]
->La génération du projet Cloud Manager utilise toujours Java 8 pour appeler Maven. Par conséquent, la vérification ou l’application de la version Java configurée dans le module externe de la chaîne d’outils via des modules externes tels que le module externe [](https://maven.apache.org/enforcer/maven-enforcer-plugin/) Apache Maven Enforcer ne fonctionne pas et ces modules externes ne doivent pas être utilisés.
+>La création du projet Cloud Manager continue à utiliser Java 8 pour appeler Maven. De ce fait, la vérification ou l’application de la version Java configurée dans le module externe de la chaîne d’outils par le biais de modules externes comme [Apache Maven Enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/) ne fonctionne pas et ils ne doivent pas être utilisés.
 
 ## Variables d’environnement {#environment-variables}
 
