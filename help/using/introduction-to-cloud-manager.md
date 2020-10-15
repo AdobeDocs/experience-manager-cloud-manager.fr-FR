@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
-source-git-commit: 4838de3d6c78884333d8088eb38f388fbcd0e707
+source-git-commit: 2005b7e7689d3bc0656f92ecdbe368519f0d52a9
 workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 97%
@@ -70,4 +70,7 @@ Pour en savoir plus sur le déploiement des contrôles de code et de qualité, c
 
 Lors d’un événement de mise à l’échelle automatique, [!UICONTROL Cloud Manager] déclenche automatiquement le processus de mise à l’échelle automatique, envoie une notification de l’événement de mise à l’échelle automatique et ajoute la capacité supplémentaire en quelques minutes. La capacité supplémentaire sera configurée dans l’environnement de production, dans les mêmes régions et conformément aux spécifications système des nœuds Dispatcher/Publish exécutés.
 
-La fonction de mise à l’échelle automatique s’applique uniquement à la couche Dispatcher/Publish et sera toujours exécutée à l’aide d’une méthode de mise à l’échelle horizontale, avec au moins un segment supplémentaire d’une paire Dispatcher/Publish et jusqu’à dix segments au maximum. Toute capacité supplémentaire configurée sera mise à l’échelle manuellement dans un délai de dix jours ouvrés, selon les indications de l’ingénieur du service client. Les clients qui souhaitent déterminer si la mise à l’échelle automatique est appropriée ou non pour leur application doivent contacter leur représentant du CST ou de l’Adobe.
+La fonction de mise à l’échelle automatique s’applique uniquement à la couche Dispatcher/Publish et sera toujours exécutée à l’aide d’une méthode de mise à l’échelle horizontale, avec au moins un segment supplémentaire d’une paire Dispatcher/Publish et jusqu’à dix segments au maximum. Toute capacité supplémentaire configurée sera mise à l’échelle manuellement dans un délai de dix jours ouvrés, selon les indications de l’ingénieur du service client.
+
+>[!NOTE]
+>Les clients qui souhaitent déterminer si la mise à l’échelle automatique est appropriée ou non pour leur application doivent contacter leur représentant du CST ou de l’Adobe.
