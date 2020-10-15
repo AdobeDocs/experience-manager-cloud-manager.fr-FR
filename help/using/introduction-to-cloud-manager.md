@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
-source-git-commit: 2005b7e7689d3bc0656f92ecdbe368519f0d52a9
+source-git-commit: d3f17b1fd4fcc1c75836c9dd67d54e22422db120
 workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 97%
