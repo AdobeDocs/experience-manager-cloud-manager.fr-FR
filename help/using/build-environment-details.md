@@ -1,11 +1,11 @@
 ---
 title: Présentation de l’environnement de création
 description: Consultez cette page pour en savoir plus sur les environnements
-translation-type: ht
-source-git-commit: 57a99792e151bd5fe69c8372b6a9d3b100036a51
-workflow-type: ht
-source-wordcount: '709'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 000843f902a180181981de2b1307fd2777d32994
+workflow-type: tm+mt
+source-wordcount: '723'
+ht-degree: 92%
 
 ---
 
@@ -107,7 +107,7 @@ Les variables actives peuvent être répertoriées :
 
 `$ aio cloudmanager:list-pipeline-variables PIPELINEID`
 
-Les noms des variables ne peuvent contenir que des caractères alphanumériques et des caractères de soulignement (_). Par convention, les noms doivent être entièrement en majuscules. Il existe une limite de 200 variables par pipeline, chaque nom doit comporter moins de 100 caractères et chaque valeur doit être inférieure à 2 048 caractères.
+Les noms des variables ne peuvent contenir que des caractères alphanumériques et des caractères de soulignement (_). Par convention, les noms doivent être entièrement en majuscules. Il existe une limite de 200 variables par pipeline, chaque nom doit comporter moins de 100 caractères et chaque valeur doit comporter moins de 2 048 caractères dans le cas des variables de type chaîne et 500 caractères dans le cas des variables de type chaîne secrète.
 
 En cas d’utilisation dans un fichier `Maven pom.xml`, il est généralement utile de mapper ces variables aux propriétés Maven en suivant une syntaxe similaire à celle-ci :
 
@@ -183,5 +183,4 @@ Certaines versions nécessitent d&#39;autres packages système pour fonctionner 
 Cette même technique peut être utilisée pour installer des packages spécifiques à la langue, c’est-à-dire utilisée `gem` pour les packages RubyGems ou `pip` pour les packages Python.
 
 >[!NOTE]
->
->Installer un package système de cette manière ne l&#39;installe **pas** dans l&#39;environnement d&#39;exécution utilisé pour exécuter Adobe Experience Manager. Si vous avez besoin d&#39;installer un package système dans l&#39;environnement AEM, contactez vos ingénieurs de la réussite client (CSE).
+>Installer un package système de cette manière ne l&#39;installe **pas** dans l&#39;environnement d&#39;exécution utilisé pour exécuter Adobe Experience Manager. Si vous avez besoin d&#39;un package système installé sur l&#39;environnement AEM, contactez votre représentant Adobe.
