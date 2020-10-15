@@ -8,8 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
-translation-type: ht
-source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
+translation-type: tm+mt
+source-git-commit: 2005b7e7689d3bc0656f92ecdbe368519f0d52a9
+workflow-type: tm+mt
+source-wordcount: '261'
+ht-degree: 100%
 
 ---
 
@@ -19,7 +22,6 @@ source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
 Une fois que vous avez terminé les configurations générales de [!UICONTROL Cloud Manager], vous êtes prêt à utiliser l’interface utilisateur (IU) de [!UICONTROL Cloud Manager].
 
 >[!NOTE]
->
 >Selon les rôles affectés dans [!UICONTROL Cloud Manager] et l’état de l’application, vous verrez plusieurs écrans lors de l’utilisation de l’interface utilisateur de [!UICONTROL Cloud Manager].
 
 ## Tutoriel vidéo {#video-tutorial-one}
@@ -28,11 +30,11 @@ Une fois que vous avez terminé les configurations générales de [!UICONTROL Cl
 
 La vidéo suivante présente un aperçu des programmes Cloud Manager qui représentent des ensembles d’environnements AEM prenant en charge des ensembles logiques d’initiatives commerciales, correspondant généralement à un contrat de niveau de service (SLA) acheté.
 
->[!VIDEO](https://video.tv.adobe.com/v/26313/?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26313/)
 
 ## Première connexion {#logging-in-for-the-first-time}
 
-1. Connectez-vous à **Adobe[!UICONTROL Experience Cloud ]**. La liste des**programmes **s’affiche alors.
+1. Connectez-vous à **Adobe [!UICONTROL Experience Cloud]**. La liste des **programmes** s’affiche alors.
 
    ![](assets/screen_shot_2018-06-04at120643pm.png)
 
@@ -56,4 +58,4 @@ La vidéo suivante présente un aperçu des programmes Cloud Manager qui repré
 
 Cloud Manager fournit une vue consolidée de l’activité d’un programme, répertoriant toutes les exécutions de pipeline CI/CD, tant en production que hors production, ce qui permet de connaître l’activité passée et présente, et permet aux détails de toute activité d’être examinés.
 
->[!VIDEO](https://video.tv.adobe.com/v/26313/?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26313/)
