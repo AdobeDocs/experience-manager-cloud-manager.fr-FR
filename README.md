@@ -1,9 +1,16 @@
 ---
-source-git-commit: a80615b7ed7dcf8c1743f7f12ecf0fd8c76d4cc5
-translation-type: ht
+source-git-commit: 4979307a5e7e9223775b25584e17cde68b76a711
+workflow-type: tm+mt
+translation-type: tm+mt
+source-wordcount: '157'
+ht-degree: 51%
 
 ---
 # Documentation d’Adobe Experience Manager Cloud Manager
+
+| EXL-PR | EXL | Aperçu | Activer | Publié | Aide |
+|--- |--- |--- |--- |--- |--- |
+| [![État de la création](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-cloud-manager.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-cloud-manager.en_pr-exl/lastBuild/) | [![État de la création](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-cloud-manager.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-cloud-manager.en_exl/lastBuild/lastBuild) | [URL de la prévisualisation](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [URL en direct](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=en) | [Guide de création](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 Il s’agit du référentiel pour la documentation d’Adobe Experience Manager Cloud Manager.
 
