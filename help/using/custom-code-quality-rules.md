@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 translation-type: tm+mt
-source-git-commit: 3bb435aae932b9446867c30b7dd6b0a8e0839ee2
+source-git-commit: a8cd1ac2448b9f875c1d925c62e7fe42c8ceec2a
 workflow-type: tm+mt
-source-wordcount: '2282'
-ht-degree: 100%
+source-wordcount: '2296'
+ht-degree: 99%
 
 ---
 
@@ -22,8 +22,7 @@ ht-degree: 100%
 Cette page décrit les règles de qualité du code personnalisé exécutées par Cloud Manager qui sont créées selon les bonnes pratiques en matière d’ingénierie AEM.
 
 >[!NOTE]
->
->Les exemples de code utilisés ici ne sont fournis qu’à titre d’exemple.
+>Les exemples de code utilisés ici ne sont fournis qu’à titre d’exemple. Voir [Concepts](https://docs.sonarqube.org/7.4/user-guide/concepts/) pour en savoir plus sur les concepts et les règles de qualité de SonarQube.
 
 ## Règles SonarQube {#sonarqube-rules}
 
