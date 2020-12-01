@@ -6,8 +6,11 @@ seo-description: Consultez cette section pour en savoir plus sur le pipeline CI/
 uuid: 763ddb24-05cd-463f-8d72-a2e69bbe6b7e
 topic-tags: introduction
 discoiquuid: 1cdb76eb-1a91-4689-8579-0fa9fccc0592
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 8580cec50ac5dafb4e2525371a39d58c82f1cbc9
+workflow-type: tm+mt
+source-wordcount: '550'
+ht-degree: 100%
 
 ---
 
@@ -65,4 +68,4 @@ Voici un exemple d’analyse de code avec des problèmes identifiés au niveau d
 
 ### Configuration des points de contrôle {#how-to-setup-gates}
 
-Voir **[Configuration de points de contrôle](configuring-pipeline.md)**pour obtenir plus d’informations sur la configuration de votre code et sur les points de contrôle de performance et de qualité.
+Voir **[Configuration de points de contrôle](configuring-pipeline.md)** pour obtenir plus d’informations sur la configuration de votre code et sur les points de contrôle de performance et de qualité.
