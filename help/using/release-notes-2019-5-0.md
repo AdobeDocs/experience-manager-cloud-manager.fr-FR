@@ -5,6 +5,9 @@ description: Consultez cette page pour obtenir des informations sur la version 
 seo-description: Consultez cette page pour plus d’informations sur la version 2019.5.0 d’AEM Cloud Manager.
 translation-type: tm+mt
 source-git-commit: 75563d3f4b2a27d943c052993c97d830338ead9c
+workflow-type: tm+mt
+source-wordcount: '119'
+ht-degree: 100%
 
 ---
 
