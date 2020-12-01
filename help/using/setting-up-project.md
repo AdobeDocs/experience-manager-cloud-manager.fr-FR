@@ -1,9 +1,9 @@
 ---
 title: Configuration du projet
 description: Consultez cette page pour savoir comment configurer un projet
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 2ada697ca21acd0c73dbce2bce3e9481ac50272c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 100%
 
