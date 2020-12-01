@@ -1,9 +1,9 @@
 ---
 title: Présentation de l’environnement de création
 description: Consultez cette page pour en savoir plus sur les environnements
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 000843f902a180181981de2b1307fd2777d32994
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 100%
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Cloud Manager crée et teste votre code à l’aide d’un environnement de création spécialisé. Cet environnement comporte les attributs suivants :
 
-* L’environnement de création est basé sur Linux, dérivé de Ubuntu 18.04.
+* L’environnement de génération est basé sur Linux, dérivé de Ubuntu 18.04.
 * Apache Maven 3.6.0 est installé.
 * Les versions Java installées sont Oracle JDK 8u202 et 11.0.2.
 * D’autres packages système nécessaires sont installés :
@@ -25,7 +25,7 @@ Cloud Manager crée et teste votre code à l’aide d’un environnement de cré
    * imagemagick
    * graphicsmagick
 
-* D’autres packages peuvent être installés au moment de la création, comme décrit [ci-dessous](#installing-additional-system-packages).
+* D’autres packages peuvent être installés au moment de la génération, comme décrit [ci-dessous](#installing-additional-system-packages).
 * Chaque génération a lieu dans un environnement vierge ; le conteneur de génération ne conserve aucun état entre les exécutions.
 * Maven est toujours exécuté avec les trois commandes suivantes :
 
@@ -183,4 +183,4 @@ Certaines versions nécessitent d’autres packages système pour fonctionner en
 Cette même technique peut être utilisée pour installer des packages spécifiques à la langue, c’est-à-dire utilisée `gem` pour les packages RubyGems ou `pip` pour les packages Python.
 
 >[!NOTE]
->Installer un package système de cette manière ne l’installe **pas** dans l’environnement d’exécution utilisé pour exécuter Adobe Experience Manager. Si vous avez besoin d’installer un package système dans l’environnement AEM, contactez votre représentant Adobe.
+>Installer un package système de cette manière ne l’installe **pas** dans l’environnement d’exécution utilisé pour Adobe Experience Manager. Si vous avez besoin d’installer un package système dans l’environnement AEM, contactez votre représentant Adobe.
