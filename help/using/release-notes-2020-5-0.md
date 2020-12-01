@@ -3,9 +3,9 @@ title: Notes de mise à jour de la version 2020.5.0
 seo-title: Notes de mise à jour de la version 2020.5.0 d’AEM Cloud Manager
 description: Consultez cette page pour obtenir des informations sur la version 2020.5.0 de Cloud Manager
 seo-description: Consultez cette page pour obtenir des informations sur la version 2020.5.0 d’AEM Cloud Manager
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 0652436ec0c1c95d270a06a600424dbfd0140b27
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ La date de publication de la version 2020.5.0 de [!UICONTROL Cloud Manager] est
 
 ## Nouveautés {#whats-new}
 
-* Six autres règles de qualité du code ont été ajoutées afin d’aider les clients à identifier les problèmes potentiels lors de la planification d’une migration vers Cloud Service.
+* Six règles de qualité de code ont été ajoutées pour aider les clients à identifier les problèmes potentiels lors de la planification d’une migration vers Cloud Service.
 
 * Une nouvelle mesure *Compatibilité Cloud Service* a été ajoutée pour résumer le nombre de problèmes de compatibilité.
 
@@ -33,7 +33,7 @@ La date de publication de la version 2020.5.0 de [!UICONTROL Cloud Manager] est
 
 * Une carte trompeuse s’affichait sur la page d’aperçu pendant l’exécution du pipeline de production.
 
-* La règle de qualité du code *DontImplementOrExtendProviderTypesPomCheck* générait parfois une exception de pointeur nul.
+* La règle de qualité du code *DontImplementOrExtendProviderTypesPomCheck* pouvait parfois générer une exception de pointeur de valeur NULL.
 
 * Certains liens de documentation de la page d’aperçu ne fonctionnaient pas correctement.
 
