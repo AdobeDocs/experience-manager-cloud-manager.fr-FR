@@ -3,9 +3,9 @@ title: Notes de mise à jour de la version 2020.8.0
 seo-title: Notes de mise à jour de la version 2020.8.0 d’AEM Cloud Manager
 description: Consultez cette page pour obtenir des informations sur la version 2020.8.0 de Cloud Manager
 seo-description: Consultez cette page pour obtenir des informations sur la version 2020.8.0 d’AEM Cloud Manager
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: c1d07c95088a279376ef495001a5165c7e459642
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 100%
 
