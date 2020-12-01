@@ -10,6 +10,9 @@ topic-tags: release-notes
 discoiquuid: 6d1e7098-b56e-4172-8373-486f186f3d53
 translation-type: tm+mt
 source-git-commit: 15f75ca67c3d52ae511357c5b564daaa3d9def6b
+workflow-type: tm+mt
+source-wordcount: '185'
+ht-degree: 100%
 
 ---
 
