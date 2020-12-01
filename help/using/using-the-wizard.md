@@ -1,9 +1,9 @@
 ---
 title: Utilisation de l’assistant
 description: Suivez cette page pour savoir comment utiliser l’assistant afin de créer un projet d’application AEM
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 7146a41d64365c9de03d32f4fc4c33f9e366c244
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 100%
 
