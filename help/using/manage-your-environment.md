@@ -8,8 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: c5b39de2-3a9b-437f-98e8-e6e6249a5b3a
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: c81243708d938a8bffdec8a35f32a2cf552c1c95
+workflow-type: tm+mt
+source-wordcount: '265'
+ht-degree: 100%
 
 ---
 
@@ -29,7 +32,7 @@ Chacun des environnements répertoriés affiche l’état associé.
 La vidéo suivante présente un aperçu des environnements Cloud Manager composés d’instances AEM Author, AEM Publish et Dispatcher
 
 
->[!VIDEO](https://video.tv.adobe.com/v/26318/?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26318/)
 
 ## Accès aux environnements dans Cloud Manager {#accessing-environments-in-cloud-manager}
 
