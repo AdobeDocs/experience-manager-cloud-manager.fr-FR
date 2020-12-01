@@ -6,10 +6,13 @@ seo-description: Consultez cette page pour savoir comment configurer vos branche
 uuid: d12a8b85-b7fd-4b55-a05a-a0f874ce598c
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: Guide de démarrage
+topic-tags: getting-started
 discoiquuid: 53807ea6-9464-429d-9322-85c9f405dff6
 translation-type: tm+mt
 source-git-commit: 9c0df236c1e800802d62dea09996bb8e1e7033f7
+workflow-type: tm+mt
+source-wordcount: '313'
+ht-degree: 94%
 
 ---
 
@@ -80,4 +83,4 @@ Une branche `master` unique peut suffire pour des projets très simples, mais da
 
 >[!NOTE]
 >
->To view the common git commands, see the [Git Cheat Sheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet).
+>Pour vue des commandes git courantes, consultez la [Feuille de calcul Git](https://github.github.com/training-kit/downloads/github-git-cheat-sheet).
