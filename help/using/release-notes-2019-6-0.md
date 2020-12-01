@@ -5,6 +5,9 @@ description: Consultez cette page pour obtenir des informations sur la version 
 seo-description: Consultez cette page pour plus d’informations sur la version 2019.6.0 d’AEM Cloud Manager.
 translation-type: tm+mt
 source-git-commit: 7cfa0cf66efd5891263bfcc83a5149daec5c8b67
+workflow-type: tm+mt
+source-wordcount: '166'
+ht-degree: 100%
 
 ---
 
@@ -20,7 +23,7 @@ La date de publication de la version 2019.6.0 de [!UICONTROL Cloud Manager] es
 
 * Nouvel assistant de mise à jour du produit pour permettre aux clients d’exécuter une mise à jour d’AEM. Pour en savoir plus, consultez [Assistant de mise à jour du produit](overview-productupdate-wizard.md).
 * Règles de qualité du code examinant les structures de contenu. Pour plus d’informations, consultez [Règles de qualité du code personnalisé](custom-code-quality-rules.md).
-* La taille maximale d'un push git a été augmentée à 1 Go.
+* La taille maximale d&#39;un push git a été augmentée à 1 Go.
 
 ## Correctifs {#bug-fixes}
 
