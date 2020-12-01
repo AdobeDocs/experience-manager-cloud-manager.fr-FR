@@ -3,9 +3,9 @@ title: Gestion des versions du projet Maven
 seo-title: Gestion des versions du projet Maven
 description: En savoir plus sur la gestion des versions du projet Maven.
 seo-description: Suivez cette page pour en savoir plus sur la gestion des versions du projet Maven..
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e2187565e7f06d64841eb2af9b4b1a56feb5ebe4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ Si la version d’origine ne répond pas à ces critères, la version générée
 |---|---|---|
 | 1.0.0 | 1.0.0.2019_0926_121356_0000020490 | Version originale correctement formée |
 | 1.0.0-SNAPSHOT | 2019.926.121356.0000020490 | Version Snapshot, écrasée |
-| 1 | 2019.926.121356.0000020490 | Version incomplète, écrasée |
+| 1 | 2019.926.121356.000020490 | Version incomplète, écrasée |
 
 >[!NOTE]
 >
