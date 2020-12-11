@@ -1,36 +1,24 @@
 ---
-title: Notes de mise à jour de la version 2020.11.0
-seo-title: Notes de mise à jour de la version 2020.11.0 d’AEM Cloud Manager
-description: Consultez cette page pour obtenir des informations sur la version 2020.11.0 de Cloud Manager
-seo-description: Consultez cette page pour obtenir des informations sur la version 2020.11.0 d’AEM Cloud Manager
+title: Notes de mise à jour de la version 2020.12.0
+seo-title: Notes de mise à jour de la version 2020.12.0 d’AEM Cloud Manager
+description: Consultez cette page pour obtenir des informations sur la version 2020.12.0 de Cloud Manager
+seo-description: Consultez cette page pour obtenir des informations sur la version 2020.12.0 d’AEM Cloud Manager
 translation-type: tm+mt
-source-git-commit: 30d782f5a095b1b07ec4f2039def9ba30a559325
+source-git-commit: 4767e782019998564f4fd238ef2555ab0a4f6d62
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 100%
+source-wordcount: '70'
+ht-degree: 82%
 
 ---
 
-# Notes de mise à jour de la version 2020.11.0 {#release-notes-for}
+# Notes de mise à jour de la version 2020.12.0 {#release-notes-for}
 
-La section ci-dessous présente les notes générales de mise à jour de la version 2020.11.0 de [!UICONTROL Cloud Manager].
+La section ci-dessous présente les notes générales de mise à jour de la version 2020.12.0 de [!UICONTROL Cloud Manager].
 
 ## Date de publication {#release-date}
 
-La date de publication de [!UICONTROL Cloud Manager] version 2020.11.0 est le 12 novembre 2020.
-
-## Nouveautés {#whats-new}
-
-* L’onglet **Apprendre** de Cloud Manager est actualisé avec de nouvelles images dans l’interface utilisateur.
+La date de publication de la mise à jour 2020.12.0 de [!UICONTROL Cloud Manager] est le 10 décembre 2020.
 
 ## Correctifs {#bug-fixes}
 
-* Certaines erreurs de déploiement provoquées par les clients seront désormais explicitement affichées dans les journaux de déploiement.
-
-* Le chargement des dépendances effectué avant l’exécution du build nécessitait le téléchargement d’un module externe Maven.
-
-* Le lien du pied de page de Cloud Manager destiné à sélectionner une langue dirige désormais vers l’emplacement approprié.
-
-* Parfois, pendant la numérisation du code, le processus SonarQube ne démarrait pas. Désormais, il sera automatiquement détecté et un redémarrage sera tenté.
-
-* Au cours du processus d’analyse du site utilisé lors des tests de performances, les demandes qui atteignent le délai d’expiration aux trois premiers niveaux du parcours en profondeur feront automatiquement l’objet d’une nouvelle tentative.
+* Certaines occurrences d’échecs au stade de l’analyse du code sans fournir de résultats corrigés.
