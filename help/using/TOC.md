@@ -9,7 +9,7 @@ translation-type: tm+mt
 source-git-commit: 5688e956c4c21968ce691b560a6ce519496f7563
 workflow-type: tm+mt
 source-wordcount: '252'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 97%
 + Présentation {#overview}
    + [Concepts clés](key-concepts.md)
    + [Parcours client](customer-journey.md)
-   + [Pipeline CI/CD](ci-cd-pipeline.md)
+   + [CI/CD Pipeline](ci-cd-pipeline.md)
    + [Sécurité et confidentialité](security-and-privacy.md)
    + [Ressources d’aide](help-resources.md)
 + Éléments requis {#requirements}
@@ -39,7 +39,7 @@ ht-degree: 97%
    + [Configuration des branches de versions](configure-your-release-branches.md)
    + [Gestion des configurations du Dispatcher](dispatcher-configurations.md)
 + Procédure d’utilisation {#how-to-use}
-   + [Configuration de votre pipeline CI/CD](configuring-pipeline.md)
+   + [Configuration de votre CI/CD Pipeline](configuring-pipeline.md)
    + [Déploiement de votre code](deploying-code.md)
    + [Présentation des résultats de tests](understand-your-test-results.md)
    + [Gestion des environnements](manage-your-environment.md)
