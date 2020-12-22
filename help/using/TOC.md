@@ -5,9 +5,9 @@ archetype: administrator
 user-guide-title: Guide d’Experience Manager Cloud Manager
 breadcrumb-title: Guide de Cloud Manager
 user-guide-description: Apprenez à utiliser les Managed Services d’Adobe pour gérer de manière autonome Experience Manager en mode cloud.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5688e956c4c21968ce691b560a6ce519496f7563
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '252'
 ht-degree: 100%
 
