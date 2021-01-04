@@ -10,7 +10,7 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: 30d782f5a095b1b07ec4f2039def9ba30a559325
+source-git-commit: d02292e4f6369e0e0bf8fcf60cb8fe299854b3cc
 workflow-type: tm+mt
 source-wordcount: '1788'
 ht-degree: 100%
@@ -71,8 +71,6 @@ Sélectionnez votre branche Git et cliquez **Suivant**.
    >[!NOTE]
    >
    >Les branches trouvées dans le référentiel Git sont associées au programme.
-
-   ![](assets/Configure_ci-cd-2.png)
 
 
 1. Accédez à l’onglet **Environnements** pour sélectionner les options **Intermédiaire** et **Production**.
