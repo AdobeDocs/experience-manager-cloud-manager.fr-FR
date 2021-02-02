@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-translation-type: ht
-source-git-commit: d02292e4f6369e0e0bf8fcf60cb8fe299854b3cc
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: bbcd5e59a9f9e8cb83cefb8af79d3ce7987bf388
+workflow-type: tm+mt
 source-wordcount: '1788'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ La page suivante explique comment configurer le **pipeline**. Pour consulter d�
 
 La configuration du pipeline de production CI/CD définit le déclencheur qui lancera le pipeline, les paramètres contrôlant le déploiement en production et les paramètres de test de performances.
 
->[!VIDEO](https://video.tv.adobe.com/v/26314/?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26314/)
 
 
 ## Présentation du flux {#understanding-the-flow}
@@ -170,7 +170,7 @@ Pour configurer les invalidations du Dispatcher, procédez comme suit :
 
    Supposons, par exemple, qu’il y ait une répartition 50 %/50 % entre les pages actives populaires et les nouvelles pages (dans cet exemple, les autres pages actives se sont pas utilisées) et que les nouvelles pages contiennent 3 000 pages. L’indicateur de performance clé des pages vues par minute est défini sur 200. Pendant la période test de 30 minutes :
 
-   * Chacune des 25 pages des pages actives populaires est demandée 240 fois – ((200 x 0,5) : 25) x 30 = 120
+   * Chacune des 25 pages des pages actives populaires est demandée 120 fois – ((200 x 0,5) : 25) x 30 = 120
 
    * Chacune des 3 000 pages des nouvelles pages sera demandée une fois - ((200 x 0,5) : 3 000) x 30 = 1
 
@@ -220,7 +220,7 @@ En plus du pipeline principal qui se déploie vers les environnements intermédi
 
 Les pipelines CI/CD hors production sont divisés en deux catégories : les pipelines de qualité du code et les pipelines de déploiement. Les pipelines de qualité du code canalisent tout le code d’une branche Git pour génération et évaluation par rapport à l’analyse de la qualité du code de Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/26316/?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26316/)
 
 Sur l’écran d’accueil, ces pipelines sont répertoriés dans une nouvelle carte :
 
