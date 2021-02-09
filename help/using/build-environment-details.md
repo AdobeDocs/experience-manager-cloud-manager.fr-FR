@@ -2,10 +2,10 @@
 title: Présentation de l’environnement de création
 description: Consultez cette page pour en savoir plus sur les environnements
 translation-type: tm+mt
-source-git-commit: 000843f902a180181981de2b1307fd2777d32994
+source-git-commit: 60270a7adb612355ff6d6928adcff8e94cabe092
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 100%
+source-wordcount: '768'
+ht-degree: 95%
 
 ---
 
@@ -37,6 +37,14 @@ Cloud Manager crée et teste votre code à l’aide d’un environnement de cré
 
 >[!NOTE]
 >Bien que Cloud Manager ne définisse pas de version spécifique du `jacoco-maven-plugin`, la version utilisée doit être au moins `0.7.5.201505241946`.
+
+
+>[!NOTE]
+>Consultez les ressources supplémentaires suivantes pour savoir comment utiliser les API de Cloud Manager :
+> * [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+>* [Création d’une intégration d’API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md)
+>* [Autorisations d’API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/permissions.md)
+
 
 ## Utilisation de Java 11 {#using-java-11}
 
@@ -124,6 +132,7 @@ En cas d’utilisation dans un fichier `Maven pom.xml`, il est généralement ut
             </properties>
         </profile>
 ```
+
 
 ## Installation de packages système supplémentaires {#installing-additional-system-packages}
 
