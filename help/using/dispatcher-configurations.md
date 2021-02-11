@@ -1,7 +1,7 @@
 ---
 title: Gestion des configurations du Dispatcher
 seo-title: Gestion des configurations du Dispatcher
-description: 'null'
+description: Découvrez comment déployer les fichiers de configuration du répartiteur à l’aide de Cloud Manager
 seo-description: Consultez cette page pour en savoir plus sur la configuration du Dispatcher.
 uuid: 3ecd8ca3-5241-4811-87fd-3284a8012eda
 contentOwner: jsyal
@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 8888dd80-d908-464e-927d-779db1a832a4
 translation-type: tm+mt
-source-git-commit: 2ada697ca21acd0c73dbce2bce3e9481ac50272c
+source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 100%
+source-wordcount: '606'
+ht-degree: 98%
 
 ---
 
@@ -50,8 +50,7 @@ Le fichier et la structure de répertoires spécifiques peuvent varier en foncti
 1. Créez un sous-répertoire appelé `dispatcher`.
 
    >[!NOTE]
-   >
-   >Attribuez-lui le nom de votre choix, mais le nom du répertoire créé au cours de cette étape doit être identique à celui utilisé à l’étape 6.
+   Attribuez-lui le nom de votre choix, mais le nom du répertoire créé au cours de cette étape doit être identique à celui utilisé à l’étape 6.
 
 1. Ce sous-répertoire contient un module Maven qui crée le fichier zip de Dispatcher à l’aide du module externe d’assemblage Maven. Pour commencer, dans le répertoire `dispatcher`, créez un fichier `pom.xml` avec ce contenu, en modifiant la référence parent, l’identifiant d’artefact et son nom si nécessaire.
 
@@ -94,8 +93,7 @@ Le fichier et la structure de répertoires spécifiques peuvent varier en foncti
    ```
 
    >[!NOTE]
-   >
-   >Comme à l’étape 1, vous pouvez choisir d’autres valeurs pour le nom et l’identifiant de l’artefact. Ici, `dispatcher` est utilisé pour plus de simplicité.
+   Comme à l’étape 1, vous pouvez choisir d’autres valeurs pour le nom et l’identifiant de l’artefact. Ici, `dispatcher` est utilisé pour plus de simplicité.
 
 1. Le module externe d’assemblage Maven requiert un *descripteur* pour définir la manière dont le fichier zip est créé. Pour créer ce descripteur, créez un fichier (à nouveau, dans le sous-répertoire `dispatcher`) appelé `assembly.xml` avec ce contenu. Ce fichier est référencé à la ligne 26 du fichier `pom.xml` ci-dessus.
 
@@ -220,8 +218,7 @@ Le fichier et la structure de répertoires spécifiques peuvent varier en foncti
    ```
 
    >[!NOTE]
-   >
-   >Comme nous l’avons vu à l’étape 1, la valeur de l’élément `<module>` **doit** correspondre au nom du répertoire créé.
+   Comme nous l’avons vu à l’étape 1, la valeur de l’élément `<module>` **doit** correspondre au nom du répertoire créé.
 
 1. Enfin, pour procéder à un test, exécutez le package mvn clean dans le répertoire racine du projet. La sortie doit contenir des lignes comme celles-ci.
 
