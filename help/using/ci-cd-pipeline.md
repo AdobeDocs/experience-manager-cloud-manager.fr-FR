@@ -1,16 +1,16 @@
 ---
 title: Pipeline CI/CD
 seo-title: Pipeline CI/CD
-description: 'null'
-seo-description: Consultez cette section pour en savoir plus sur le pipeline CI/CD, qui gère les déploiements en environnements intermédiaire et de production dans Cloud Manager.
+description: Présentation du pipeline CI/CD, qui gère les déploiements en vue de l’évaluation et de la production dans Cloud Manager
+seo-description: Consultez cette section pour en savoir plus sur le pipeline CI/CD, qui gère les déploiements en environnements intermédiaire et de production dans Cloud Manager
 uuid: 763ddb24-05cd-463f-8d72-a2e69bbe6b7e
 topic-tags: introduction
 discoiquuid: 1cdb76eb-1a91-4689-8579-0fa9fccc0592
 translation-type: tm+mt
-source-git-commit: 8580cec50ac5dafb4e2525371a39d58c82f1cbc9
+source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 100%
+source-wordcount: '564'
+ht-degree: 97%
 
 ---
 
