@@ -1,18 +1,18 @@
 ---
 title: Déploiement de votre code
 seo-title: Déploiement de votre code
-description: 'null'
-seo-description: Une fois que vous avez configuré le pipeline (référentiel, environnement et environnement de test), vous êtes prêt à déployer le code. Consultez cette page pour en savoir plus.
+description: Fournit un aperçu du processus de déploiement dans Cloud Manager.
+seo-description: Découvrez comment déployer votre code une fois que vous avez configuré votre pipeline (référentiel, environnement et environnement de test)
 uuid: 4e3807e1-437e-4922-ba48-0bcadf293a99
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 translation-type: tm+mt
-source-git-commit: c35398110e9d8311bf58f217efdd082cf0cfd90a
+source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 100%
+source-wordcount: '957'
+ht-degree: 93%
 
 ---
 
@@ -122,12 +122,12 @@ Lorsque Cloud Manager se déploie sur des topologies autres que de production, 
 
    1. Les configurations actuelles sont sauvegardées et copiées vers un emplacement temporaire.
    1. Toutes les configurations sont supprimées, à l’exception des fichiers non modifiables. Pour plus d’informations, consultez la section Gestion des configurations du Dispatcher. Cela permet de vider les répertoires pour qu’aucun fichier orphelin ne soit abandonné.
-   1. L’artefact est extrait dans le répertoire `httpd`. Les fichiers non modifiables ne sont pas remplacés. Toute modification apportée aux fichiers non modifiables dans votre référentiel git sera ignorée au moment du déploiement.  Ces fichiers sont essentiels à la structure du dispatcher AMS et ne peuvent pas être modifiés.
+   1. L’artefact est extrait dans le répertoire `httpd`. Les fichiers non modifiables ne sont pas remplacés. Toute modification apportée aux fichiers non modifiables dans votre référentiel git sera ignorée au moment du déploiement. Ces fichiers sont essentiels à la structure du dispatcher AMS et ne peuvent pas être modifiés.
    1. Apache effectue un test de configuration. Si aucune erreur n’est trouvée, le service est rechargé. Si une erreur se produit, les configurations sont restaurées à partir de la sauvegarde, le service est rechargé et l’erreur est renvoyée à Cloud Manager.
    1. Chaque chemin spécifié dans la configuration de pipeline est invalidé ou purgé du cache du dispatcher.
 
    >[!NOTE]
-   >Cloud Manager exige que l’artefact du dispatcher contienne le jeu de fichiers complet.  Tous les fichiers de configuration du dispatcher doivent être présents dans le référentiel git. Les fichiers ou dossiers manquants entraînent l’échec du déploiement.
+   >Cloud Manager exige que l’artefact du dispatcher contienne le jeu de fichiers complet. Tous les fichiers de configuration du dispatcher doivent être présents dans le référentiel git. Les fichiers ou dossiers manquants entraînent l’échec du déploiement.
 
 1. Après le déploiement réussi de tous les packages AEM et de dispatcher sur tous les nœuds, les dispatchers sont ajoutés à l’équilibreur de charge et le déploiement est terminé.
 
@@ -142,10 +142,10 @@ Les déploiements en production suivent généralement les mêmes étapes que ci
 
 1. Déploiement des packages AEM sur author.
 1. Détachement de dispatcher1 de l’équilibreur de charge.
-1. Déploiement des packages AEM sur publish1 et le package dispatcher sur dispatcher1. Purge du cache du dispatcher.
+1. Déployez AEM packages sur publish1 et le package dispatcher sur dispatcher1 en parallèle, videz le cache dispatcher.
 1. Replacement du dispatcher1 dans l’équilibreur de charge.
 1. Lorsque dispatcher1 fonctionne à nouveau, détachement de dispatcher2 de l’équilibreur de charge.
-1. Déploiement des packages AEM sur publish2 et le package dispatcher sur dispatcher2. Purge du cache du dispatcher.
+1. Déployez AEM packages sur publish2 et le package dispatcher sur dispatcher2 en parallèle, videz le cache dispatcher.
 1. Replacement du dispatcher2 dans l’équilibreur de charge.
 Ce processus se poursuit jusqu’à ce que le déploiement ait atteint toutes les instances de publication et tous les Dispatchers dans la topologie.
 
