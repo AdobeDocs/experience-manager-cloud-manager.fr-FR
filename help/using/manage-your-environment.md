@@ -1,7 +1,7 @@
 ---
 title: Gestion des environnements
 seo-title: Gestion des environnements
-description: 'null'
+description: En savoir plus sur l’environnement de Cloud Manager
 seo-description: Consultez cette page pour afficher la liste des environnements de production et des environnements hors production utilisés pour configurer et exécuter le pipeline CI/CD dans Cloud Manager.
 uuid: 04e67572-11db-4d5d-acf3-fd7f644a95f0
 contentOwner: jsyal
@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: c5b39de2-3a9b-437f-98e8-e6e6249a5b3a
 translation-type: tm+mt
-source-git-commit: c81243708d938a8bffdec8a35f32a2cf552c1c95
+source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 100%
+source-wordcount: '269'
+ht-degree: 98%
 
 ---
 
