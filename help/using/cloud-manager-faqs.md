@@ -4,9 +4,9 @@ seo-title: FAQ sur Cloud Manager
 description: Consultez la FAQ de Cloud Manager pour obtenir quelques conseils de dépannage
 seo-description: Suivez cette page pour obtenir des réponses aux questions fréquentes sur Cloud Manager
 translation-type: tm+mt
-source-git-commit: 0db6a6a4e430cd2619db1739fd322224e4e129e7
+source-git-commit: da3346852df4e421a69321830d7efee81d58e20c
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '880'
 ht-degree: 2%
 
 ---
@@ -55,9 +55,9 @@ Quelques remarques sur l&#39;étape du test de performances :
 
 1. Cloud Manager ajoute automatiquement sa version aux versions d’évaluation et de production et crée même une branche Git. Aucune configuration spéciale n’est requise. Si l’étape 3 ci-dessus est ignorée, le déploiement fonctionnera correctement et une version sera automatiquement définie.
 
-1. Si vous laissez la version avec `-SNAPSHOT` pour les versions d’étape et de production ou les déploiements, alors même c’est ok. Cloud Manager définit automatiquement un numéro de version approprié et crée une balise pour vous dans Git. Cette balise peut être référencée ultérieurement, si nécessaire.
+1. Il n’y a aucun problème, si vous laissez la version avec `-SNAPSHOT` pour les versions ou déploiements d’étape et de production. Cloud Manager définit automatiquement un numéro de version approprié et crée une balise pour vous dans Git. Cette balise peut être référencée ultérieurement, si nécessaire.
 
-1. Si vous souhaitez tester du code expérimental sur l&#39;environnement de développement, vous pouvez créer une nouvelle branche Git et définir le pipeline pour qu&#39;il utilise cette autre branche. Cela s’avère utile lorsque le début des déploiements échoue et que vous souhaitez tester les versions plus anciennes du code pour déterminer à quel moment il a échoué.
+1. Si vous souhaitez tester du code expérimental sur l&#39;environnement de développement, vous pouvez créer une nouvelle branche Git et définir le pipeline pour utiliser cette autre branche. Cela s’avère utile lorsque le début des déploiements échoue et que vous souhaitez tester les versions plus anciennes du code pour déterminer à quel moment il a échoué.
 
    La commande Git ci-dessous crée une branche distante nommée *testbranch1* par rapport à une validation préexistante spécifique `485548e4fbafbc83b11c3cb12b035c9d26b6532b`.  Cette branche spéciale peut être utilisée dans Cloud Manager sans affecter les autres branches :
 
