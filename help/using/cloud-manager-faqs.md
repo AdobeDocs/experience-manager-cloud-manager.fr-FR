@@ -4,9 +4,9 @@ seo-title: FAQ sur Cloud Manager
 description: Consultez la FAQ de Cloud Manager pour obtenir quelques conseils de dépannage
 seo-description: Suivez cette page pour obtenir des réponses aux questions fréquentes sur Cloud Manager
 translation-type: tm+mt
-source-git-commit: cb63a8bbe30b28668313dc851f17aa34fc166474
+source-git-commit: 1d4f07ba0aa4630585ccbb35f2d48f0c7e1f3df2
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '881'
 ht-degree: 2%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 2%
 
 # FAQ sur Cloud Manager {#cloud-manager-faqs}
 
-La section suivante fournit des réponses à quelques-unes des questions fréquentes relatives à Cloud Manager.
+La section suivante fournit des réponses à certaines questions fréquentes relatives à Cloud Manager.
 
 ## 1. Est-il possible d’utiliser Java 11 avec les versions de Cloud Manager ? {#java-11-cloud-manager}
 
-AEM création de Cloud Manager échoue lors de la tentative de basculement de la version Java 8 à Java 11. Le problème peut avoir de nombreuses causes et la plupart des causes les plus courantes sont documentées ci-dessous :
+AEM version de Cloud Manager échoue lors de la tentative de basculement de la version Java 8 à 11. Le problème peut avoir de nombreuses causes et la plupart des causes les plus courantes sont documentées ci-dessous :
 
 * Ajoutez le maven-toolchain-plugin avec les paramètres appropriés pour Java 11, comme indiqué [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/create-application-project/using-the-wizard.html?lang=en#getting-started).  Par exemple, voir l&#39;exemple de code de projet [wknd](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
@@ -43,7 +43,7 @@ Quelques remarques sur l’étape du test de performances :
 * L&#39;*étape de performances* est une étape de performances Web, ce qui signifie qu&#39;il est temps de charger la page à l&#39;aide d&#39;un navigateur Web.
 * Les URL répertoriées dans le fichier CSV résultant sont chargées dans un navigateur Chrome dans l’infrastructure de Cloud Manager pendant le test.
 * Une mesure courante qui échoue est le *taux d&#39;erreur*. Pour qu’une URL soit transmise, l’URL principale doit se charger avec 200 états et en moins de 20 secondes. Les chargements de pages qui dépassent 20 secondes sont marqués comme des erreurs 504.
-* Si votre site nécessite une authentification des utilisateurs, consultez cette documentation pour configurer le test afin de l’authentifier sur votre site.
+* Si votre site requiert l’authentification de l’utilisateur, consultez [Test des performances authentifiées](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) pour configurer le test afin de l’authentifier sur votre site.
 
 ## 4. Sommes-nous autorisés à utiliser SNAPSHOT dans la version du projet maven ? Comment le contrôle de version des packages et des fichiers jar d’assemblage fonctionne-t-il pour les déploiements d’étape et de production ? {#snapshot-version}
 
@@ -75,7 +75,7 @@ Voir [Git Resource](https://github.com/cqsupport/cloud-manager/blob/main/cm-buil
 
 ## 6. Impossible de définir une variable via les variables de pipeline définies par le gestionnaire aio cloud. Comment déboguer ces problèmes ? {#set-variable}
 
-Si vous obtenez une erreur 403 lors de la tentative de liste ou de définition de variables de pipeline au moyen de commandes similaires à celles ci-dessous, vous devez être ajouté en tant que rôle de produit *Deployment Manager* Cloud Manager dans la console d’administration.\
+Si vous obtenez une erreur 403 lors de la tentative de liste ou de définition de variables de pipeline au moyen de commandes similaires à celles ci-dessous, vous devez être ajouté en tant que rôle de produit *Deployment Manager* Cloud Manager dans le Admin Console.\
 Voir [Autorisations d’API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/permissions.md) pour plus d’informations.
 
 Commandes et erreurs connexes :
