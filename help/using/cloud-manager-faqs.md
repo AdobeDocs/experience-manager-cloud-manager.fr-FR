@@ -4,9 +4,9 @@ seo-title: FAQ sur Cloud Manager
 description: Consultez la FAQ de Cloud Manager pour obtenir quelques conseils de dépannage
 seo-description: Suivez cette page pour obtenir des réponses aux questions fréquentes sur Cloud Manager
 translation-type: tm+mt
-source-git-commit: 31627bf11a46b2e6f1d0aa196bc4a9cf9648e775
+source-git-commit: fbf91ad0d200a9f1cbde4e87cf6b78a8479d0614
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '881'
 ht-degree: 2%
 
 ---
@@ -43,7 +43,7 @@ Quelques remarques sur l&#39;étape du test de performances :
 * L&#39;*étape de performances* est une étape de performances Web, c&#39;est-à-dire le temps de chargement de la page à l&#39;aide d&#39;un navigateur Web.
 * Les URL répertoriées dans le fichier de résultat *CSV* sont chargées dans un navigateur Chrome dans l’infrastructure de Cloud Manager pendant le test.
 * Une mesure courante qui échoue est le *taux d&#39;erreur*. Pour qu’une URL soit transmise, l’URL principale doit se charger avec l’état `200` et en moins de `20` secondes. Les chargements de page qui dépassent `20` secondes sont marqués comme des erreurs `504`.
-* Si votre site requiert l’authentification de l’utilisateur, consultez [Test des performances authentifiées](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) pour configurer le test afin de l’authentifier sur votre site.
+* Si votre site requiert l’authentification des utilisateurs, voir [Test des performances authentifiées](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) pour configurer le test afin de l’authentifier sur votre site.
 
 ## Sommes-nous autorisés à utiliser SNAPSHOT dans la version du projet Maven ? Comment le contrôle de version des packages et des fichiers jar d’assemblage fonctionne-t-il pour les déploiements d’étape et de production ? {#snapshot-version}
 
