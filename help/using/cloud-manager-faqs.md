@@ -4,7 +4,7 @@ seo-title: FAQ sur Cloud Manager
 description: Consultez la FAQ de Cloud Manager pour obtenir quelques conseils de dépannage
 seo-description: Suivez cette page pour obtenir des réponses aux questions fréquentes sur Cloud Manager
 translation-type: tm+mt
-source-git-commit: fbf91ad0d200a9f1cbde4e87cf6b78a8479d0614
+source-git-commit: 0db6a6a4e430cd2619db1739fd322224e4e129e7
 workflow-type: tm+mt
 source-wordcount: '881'
 ht-degree: 2%
@@ -47,11 +47,11 @@ Quelques remarques sur l&#39;étape du test de performances :
 
 ## Sommes-nous autorisés à utiliser SNAPSHOT dans la version du projet Maven ? Comment le contrôle de version des packages et des fichiers jar d’assemblage fonctionne-t-il pour les déploiements d’étape et de production ? {#snapshot-version}
 
-1. Pour les déploiements de développement, les fichiers de la branche Git `pom.xml` doivent contenir `-SNAPSHOT` à la fin de la valeur `<version>`. Ceci permet un déploiement ultérieur lorsque la version ne change pas pour être toujours installée. Dans les déploiements de développement, aucune version automatique n’est ajoutée ou générée pour la création de maven.
+1. Pour les déploiements de développeurs, les fichiers de la branche Git `pom.xml` doivent contenir `-SNAPSHOT` à la fin de la valeur `<version>`. Ceci permet un déploiement ultérieur lorsque la version ne change pas pour être toujours installée. Dans les déploiements de développeurs, aucune version automatique n’est ajoutée ou générée pour la création d’expert.
 
 1. Dans le déploiement d’étape et de production, une version automatique est générée comme indiqué [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/activating-maven-project.html?lang=en#managing-code).
 
-1. Pour le contrôle de version personnalisé dans les déploiements d’étape et de production, définissez une version d’expert en 3 parties telle que `1.0.0`. Augmentez la version chaque fois que vous devez effectuer un autre déploiement en production.
+1. Pour le contrôle de version personnalisé dans les déploiements d’étape et de production, définissez une version d’expert en 3 parties, telle que `1.0.0`. Augmentez la version chaque fois que vous devez effectuer un autre déploiement en production.
 
 1. Cloud Manager ajoute automatiquement sa version aux versions d’évaluation et de production et crée même une branche Git. Aucune configuration spéciale n’est requise. Si l’étape 3 ci-dessus est ignorée, le déploiement fonctionnera correctement et une version sera automatiquement définie.
 
@@ -82,8 +82,8 @@ Commandes et erreurs connexes :
 
 `$ aio cloudmanager:list-pipeline-variables 222`
 
-Erreur: `Cannot get variables: https://cloudmanager.adobe.io/api/program/111/pipeline/222/variables (403 Forbidden)`
+*Erreur*: `Cannot get variables: https://cloudmanager.adobe.io/api/program/111/pipeline/222/variables (403 Forbidden)`
 
 `$ aio cloudmanager:set-pipeline-variables 222 --variable TEST 1`
 
-Erreur: `Cannot get variables: https://cloudmanager.adobe.io/api/program/111/pipeline/222/variables (403 Forbidden)`
+*Erreur*: `Cannot get variables: https://cloudmanager.adobe.io/api/program/111/pipeline/222/variables (403 Forbidden)`
