@@ -4,9 +4,9 @@ seo-title: FAQ sur Cloud Manager
 description: Consultez la FAQ de Cloud Manager pour obtenir quelques conseils de dépannage
 seo-description: Suivez cette page pour obtenir des réponses aux questions fréquentes sur Cloud Manager
 translation-type: tm+mt
-source-git-commit: d901fd27626640e71d367d3f138d7ba2e907fa9a
+source-git-commit: 31627bf11a46b2e6f1d0aa196bc4a9cf9648e775
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '882'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # FAQ sur Cloud Manager {#cloud-manager-faqs}
 
-La section suivante fournit des réponses à certaines questions fréquentes relatives à Cloud Manager.
+La section suivante fournit des réponses aux questions fréquentes relatives à Cloud Manager.
 
 ## Est-il possible d’utiliser Java 11 avec les versions de Cloud Manager ? {#java-11-cloud-manager}
 
@@ -22,7 +22,7 @@ AEM version de Cloud Manager échoue lors de la tentative de basculement de la v
 
 * Ajoutez le maven-toolchain-plugin avec les paramètres appropriés pour Java 11, comme indiqué [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/create-application-project/using-the-wizard.html?lang=en#getting-started).  Par exemple, voir l&#39;exemple de code de projet [wknd](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
-* Si vous rencontrez l&#39;erreur ci-dessous, vous devez supprimer l&#39;utilisation de maven-scr-plugin et convertir toutes les annotations OSGi en annotations OSGi R6. Pour obtenir des instructions, voir [ici](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/).
+* Si vous rencontrez l&#39;erreur ci-dessous, vous devez supprimer l&#39;utilisation de `maven-scr-plugin` et convertir toutes les annotations OSGi en annotations OSGi R6. Pour obtenir des instructions, voir [ici](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/).
 
    `[main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]`
 
@@ -47,11 +47,11 @@ Quelques remarques sur l&#39;étape du test de performances :
 
 ## Sommes-nous autorisés à utiliser SNAPSHOT dans la version du projet Maven ? Comment le contrôle de version des packages et des fichiers jar d’assemblage fonctionne-t-il pour les déploiements d’étape et de production ? {#snapshot-version}
 
-1. Pour les déploiements de développement, les fichiers de la branche Git `pom.xml` doivent contenir -SNAPSHOT à la fin de la valeur `<version>`. Ceci permet un déploiement ultérieur lorsque la version ne change pas pour être toujours installée. Dans les déploiements de développement, aucune version automatique n’est ajoutée ou générée pour la version mven.
+1. Pour les déploiements de développement, les fichiers de la branche Git `pom.xml` doivent contenir `-SNAPSHOT` à la fin de la valeur `<version>`. Ceci permet un déploiement ultérieur lorsque la version ne change pas pour être toujours installée. Dans les déploiements de développement, aucune version automatique n’est ajoutée ou générée pour la création de maven.
 
 1. Dans le déploiement d’étape et de production, une version automatique est générée comme indiqué [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/activating-maven-project.html?lang=en#managing-code).
 
-1. Pour le contrôle de version personnalisé dans les déploiements d’étape et de production, définissez une version Maven en 3 parties, telle que `1.0.0`. Augmentez la version chaque fois que vous devez effectuer un autre déploiement en production.
+1. Pour le contrôle de version personnalisé dans les déploiements d’étape et de production, définissez une version d’expert en 3 parties telle que `1.0.0`. Augmentez la version chaque fois que vous devez effectuer un autre déploiement en production.
 
 1. Cloud Manager ajoute automatiquement sa version aux versions d’évaluation et de production et crée même une branche Git. Aucune configuration spéciale n’est requise. Si l’étape 3 ci-dessus est ignorée, le déploiement fonctionnera correctement et une version sera automatiquement définie.
 
