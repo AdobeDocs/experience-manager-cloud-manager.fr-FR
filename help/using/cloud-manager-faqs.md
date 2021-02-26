@@ -4,9 +4,9 @@ seo-title: FAQ sur Cloud Manager
 description: Consultez la FAQ de Cloud Manager pour obtenir quelques conseils de dépannage
 seo-description: Suivez cette page pour obtenir des réponses aux questions fréquentes sur Cloud Manager
 translation-type: tm+mt
-source-git-commit: da3346852df4e421a69321830d7efee81d58e20c
+source-git-commit: cf5c02c8c594015b6baa00e1a8aaa2d898aa60a9
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '901'
 ht-degree: 2%
 
 ---
@@ -45,7 +45,9 @@ Quelques remarques sur l&#39;étape du test de performances :
 * Une mesure courante qui échoue est le *taux d&#39;erreur*. Pour qu’une URL soit transmise, l’URL principale doit se charger avec l’état `200` et en moins de `20` secondes. Les chargements de page qui dépassent `20` secondes sont marqués comme des erreurs `504`.
 * Si votre site requiert l’authentification des utilisateurs, voir [Test des performances authentifiées](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) pour configurer le test afin de l’authentifier sur votre site.
 
-## Sommes-nous autorisés à utiliser SNAPSHOT dans la version du projet Maven ? Comment le contrôle de version des packages et des fichiers jar d’assemblage fonctionne-t-il pour les déploiements d’étape et de production ? {#snapshot-version}
+## Sommes-nous autorisés à utiliser SNAPSHOT dans la version du projet Maven ? Comment le contrôle de version des packages et des fichiers jar d’assemblage fonctionne-t-il pour les déploiements Stage et Production ? {#snapshot-version}
+
+Reportez-vous aux scénarios suivants pour en savoir plus sur le contrôle de version des packages et des fichiers jar d’assemblage pour les déploiements Stage et Production :
 
 1. Pour les déploiements de développeurs, les fichiers de la branche Git `pom.xml` doivent contenir `-SNAPSHOT` à la fin de la valeur `<version>`. Ceci permet un déploiement ultérieur lorsque la version ne change pas pour être toujours installée. Dans les déploiements de développeurs, aucune version automatique n’est ajoutée ou générée pour la création d’expert.
 
