@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 translation-type: tm+mt
-source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
+source-git-commit: b5233e1932888b515d8dc26a6493cbd26686bc3c
 workflow-type: tm+mt
-source-wordcount: '1564'
-ht-degree: 99%
+source-wordcount: '1571'
+ht-degree: 97%
 
 ---
 
@@ -47,10 +47,10 @@ Cette étape évalue la qualité du code de votre application. Il s’agit de l�
 
 ### Présentation du test de qualité du code {#understanding-code-quality-testing}
 
-Au cours du test de qualité du code, le code source est analysé afin de s’assurer qu’il répond à certains critères de qualité. Actuellement, cette analyse est implémentée par une combinaison de SonarQube et d’examens au niveau du package de contenu à l’aide de OakPAL. Il existe plus de 100 règles combinant des règles Java génériques et des règles spécifiques à AEM. Certaines des règles spécifiques à AEM sont créées en fonction des bonnes pratiques de l’équipe d’ingénierie AEM et sont appelées [Règles de qualité du code personnalisées](/help/using/custom-code-quality-rules.md).
+Au cours du test de qualité du code, le code source est analysé afin de s’assurer qu’il répond à certains critères de qualité. Actuellement, ceci est mis en oeuvre par une combinaison de SonarQube, d’examen au niveau du package de contenu à l’aide d’OakPAL et de validation du répartiteur à l’aide de l’outil d’optimisation du répartiteur. Il existe plus de 100 règles combinant des règles Java génériques et des règles spécifiques à AEM. Certaines des règles spécifiques à AEM sont créées en fonction des bonnes pratiques de l’équipe d’ingénierie AEM et sont appelées [Règles de qualité du code personnalisées](/help/using/custom-code-quality-rules.md).
 
 >[!NOTE]
->Vous pouvez télécharger la liste complète des règles [ici](/help/using/assets/CodeQuality-rules-latest-AMS.xlsx).
+>Vous pouvez télécharger la liste complète des règles [ici](/help/using/assets/CodeQuality-rules-AMS.xlsx).
 
 Les résultats de cette étape sont fournis sous forme de *note*. Le tableau ci-dessous résume les notes attribuées à divers critères de test :
 
