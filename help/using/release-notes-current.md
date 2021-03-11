@@ -1,44 +1,40 @@
 ---
-title: Notes de mise à jour de la version 2021.2.0
-seo-title: Notes de mise à jour de la version 2021.2.0 d’AEM Cloud Manager
-description: Consultez cette page pour obtenir des informations sur la version 2021.2.0 de Cloud Manager
-seo-description: Consultez cette page pour obtenir des informations sur la version 2021.2.0 d’AEM Cloud Manager
+title: Notes de mise à jour de la version 2021.3.0
+seo-title: Notes de mise à jour de la version 2021.3.0 d’AEM Cloud Manager
+description: Consultez cette page pour obtenir des informations sur la version 2021.3.0 de Cloud Manager
+seo-description: Consultez cette page pour obtenir des informations sur la version 2021.3.0 d’AEM Cloud Manager
 translation-type: tm+mt
-source-git-commit: d956c7a2d3833e357920a9602e4f5a5b37f2c98a
+source-git-commit: b5233e1932888b515d8dc26a6493cbd26686bc3c
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 24%
+source-wordcount: '225'
+ht-degree: 26%
 
 ---
 
-# Notes de mise à jour de la version 2021.2.0 {#release-notes-for}
+# Notes de mise à jour de la version 2021.3.0 {#release-notes-for}
 
-La section ci-dessous présente les notes générales de mise à jour de la version 2021.2.0 de [!UICONTROL Cloud Manager].
+La section ci-dessous présente les notes générales de mise à jour de la version 2021.3.0 de [!UICONTROL Cloud Manager].
 
 ## Date de publication {#release-date}
 
-La date de publication de la mise à jour de [!UICONTROL Cloud Manager] 2021.2.0 est le 11 février 2021.
+La date de publication de la mise à jour 2021.3.0 de [!UICONTROL Cloud Manager] est le 11 mars 2021.
 
 ## Nouveautés {#whats-new}
 
-* L&#39;archétype de projet AEM utilisé dans Project and Sandbox Creation a été mis à jour vers la version 25.
+* Un nouvel outil de qualité du code a été introduit pour valider la configuration du répartiteur client (outil d&#39;optimisation du répartiteur).
 
-* La liste des API obsolètes identifiées lors de l’analyse du code a été affinée afin d’inclure d’autres classes et méthodes obsolètes dans les dernières versions du SDK Cloud Service.
+* Les utilisateurs peuvent désormais voir leur ou leurs rôles Cloud Manager en sélectionnant l&#39;option **Rôle(s) de Vue Cloud Manager** après avoir accédé à l&#39;icône Profil utilisateur (en haut à droite) de l&#39;environnement de travail unifié.
 
-* Désormais, les déploiements de production sont déployés en parallèle sur les instances de publication et de répartiteur paires.
+* Pour plus de clarté, l&#39;étiquette **Demande d&#39;approbation** a été réétiquetée à **Approbation de production**.
 
-* Profil SonarQube pour Cloud Manager mis à jour pour supprimer la règle Sonar `squid:S2142`. Ceci ne sera plus en conflit avec les vérifications d&#39;interruption de thread.
+* Le libellé **Version** a été réétiqueté en **Balise Git** dans l&#39;écran d&#39;exécution du pipeline de production.
 
-* Les propriétés définies dans les fichiers `pom.xml` client précédés d&#39;un sonar seront désormais supprimées dynamiquement afin d&#39;éviter les échecs d&#39;analyse de la génération et de la qualité.
+* Les étiquettes qui définissent le comportement lorsque des mesures importantes ne respectent pas le seuil défini ont été réétiquetées pour refléter leur comportement réel : Annuler immédiatement et Approuver immédiatement.
 
-* Des règles de qualité de code supplémentaires ont été ajoutées pour couvrir les problèmes de compatibilité des Cloud Service.
+* Les listes de classe et de méthode d’obsolescence ont été mises à jour en fonction de la version `2021.3.4997.20210303T022849Z-210225` du SDK Cloud Service AEM.
 
 ## Correctifs {#bug-fixes}
 
-* À l&#39;occasion, le pipeline CI/CD (déploiement) a échoué lors d&#39;une étape d&#39;essai de performances en raison d&#39;un conteneur exécutant le test de charge qui a rencontré une erreur.
+* Certains problèmes de qualité n&#39;ont pas été correctement détectés lorsque des paquets étaient incorporés dans d&#39;autres paquets.
 
-* Le conteneur de test de charge peut parfois signaler l’échec de l’exécution, même si une seule exception se produit. L&#39;échec ne sera signalé que si le processus de test ne peut pas être restauré.
-
-* Certaines discordances de casse entre la façon dont les noms d&#39;environnement étaient stockés conduiraient à des échecs de test des performances.
-
-* Certains échecs de pipeline étaient incorrectement signalés comme des erreurs de pipeline.
+* Parfois, si l’utilisateur quitte la page d’exécution du pipeline immédiatement après le démarrage d’un pipeline, un message d’erreur s’affiche indiquant que l’action a échoué, bien que l’exécution ait effectivement début.
