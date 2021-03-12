@@ -10,10 +10,10 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: bbcd5e59a9f9e8cb83cefb8af79d3ce7987bf388
+source-git-commit: 5542942da33efc2926e62cce00ea39e3c65b3e16
 workflow-type: tm+mt
 source-wordcount: '1788'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -85,8 +85,8 @@ Sélectionnez votre branche Git et cliquez **Suivant**.
    Cela s’avère utile pour les clients qui souhaitent davantage de processus automatisés. Les options disponibles sont les suivantes :
 
 * **Demander à chaque fois** : il s’agit du paramètre par défaut, qui nécessite une intervention manuelle lors de n’importe quel échec important.
-* **Échec immédiatement** : si cette option est sélectionnée, le pipeline sera annulé chaque fois qu’un échec important se produira. Cette option émule essentiellement un utilisateur rejetant manuellement chaque échec.
-* **Continuer immédiatement** : si cette option est sélectionnée, le pipeline se poursuit automatiquement chaque fois qu’un échec important se produit. Cette option émule essentiellement la validation manuelle de l’utilisateur à chaque échec.
+* **Annuler immédiatement**  - Si cette option est sélectionnée, le pipeline sera annulé chaque fois qu&#39;une défaillance importante se produit. Cette option émule essentiellement un utilisateur rejetant manuellement chaque échec.
+* **Approuver immédiatement**  - Si cette option est sélectionnée, le pipeline se poursuit automatiquement chaque fois qu&#39;une défaillance importante se produit. Cette option émule essentiellement la validation manuelle de l’utilisateur à chaque échec.
 
    Définissez maintenant les paramètres contrôlant le déploiement en production. Les trois options disponibles sont les suivantes :
 
@@ -104,7 +104,7 @@ Sélectionnez votre branche Git et cliquez **Suivant**.
 >
 >Consultez [**Déploiement de votre code**](deploying-code.md) pour définir la planification du déploiement ou exécuter la production immédiatement.
 
-![](assets/configure-pipeline3.png)
+![](assets/configure-pipeline-new.png)
 
 >[!NOTE]
 >
