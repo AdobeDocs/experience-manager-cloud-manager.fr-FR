@@ -4,10 +4,10 @@ seo-title: Notes de mise à jour de la version 2021.3.0 d’AEM Cloud Manager
 description: Consultez cette page pour obtenir des informations sur la version 2021.3.0 de Cloud Manager
 seo-description: Consultez cette page pour obtenir des informations sur la version 2021.3.0 d’AEM Cloud Manager
 translation-type: tm+mt
-source-git-commit: b5233e1932888b515d8dc26a6493cbd26686bc3c
+source-git-commit: b0c29ed6712abd556458aea6d49f6382f183cdae
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 26%
+source-wordcount: '283'
+ht-degree: 21%
 
 ---
 
@@ -21,6 +21,12 @@ La date de publication de la mise à jour 2021.3.0 de [!UICONTROL Cloud Manager
 
 ## Nouveautés {#whats-new}
 
+* Les utilisateurs disposant des autorisations requises peuvent désormais modifier le programme, ce qui leur permet d’effectuer les opérations suivantes en libre-service :
+
+   *Ajouter la solution Sites à un programme existant avec Ressources (ou inversement).
+   * Supprimez des sites (ou des ressources) d’un programme existant avec des sites et des ressources.
+   * Ajouter (en arrière) une solution peut être apportée au programme existant ou en tant que nouveau Programme.
+
 * Un nouvel outil de qualité du code a été introduit pour valider la configuration du répartiteur client (outil d&#39;optimisation du répartiteur).
 
 * Les utilisateurs peuvent désormais voir leur ou leurs rôles Cloud Manager en sélectionnant l&#39;option **Rôle(s) de Vue Cloud Manager** après avoir accédé à l&#39;icône Profil utilisateur (en haut à droite) de l&#39;environnement de travail unifié.
@@ -29,7 +35,7 @@ La date de publication de la mise à jour 2021.3.0 de [!UICONTROL Cloud Manager
 
 * Le libellé **Version** a été réétiqueté en **Balise Git** dans l&#39;écran d&#39;exécution du pipeline de production.
 
-* Les étiquettes qui définissent le comportement lorsque des mesures importantes ne respectent pas le seuil défini ont été réétiquetées pour refléter leur comportement réel : Annuler immédiatement et Approuver immédiatement.
+* Les étiquettes qui définissent le comportement lorsque des mesures importantes ne respectent pas le seuil défini ont été réétiquetées pour refléter leur comportement réel : *Annuler immédiatement* et Approuver *immédiatement*.
 
 * Les listes de classe et de méthode d’obsolescence ont été mises à jour en fonction de la version `2021.3.4997.20210303T022849Z-210225` du SDK Cloud Service AEM.
 
