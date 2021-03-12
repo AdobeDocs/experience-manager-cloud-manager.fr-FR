@@ -4,7 +4,7 @@ seo-title: Notes de mise à jour de la version 2021.3.0 d’AEM Cloud Manager
 description: Consultez cette page pour obtenir des informations sur la version 2021.3.0 de Cloud Manager
 seo-description: Consultez cette page pour obtenir des informations sur la version 2021.3.0 d’AEM Cloud Manager
 translation-type: tm+mt
-source-git-commit: b0c29ed6712abd556458aea6d49f6382f183cdae
+source-git-commit: e12adf3549af6ecd5e7487ef27f25abc44eaa794
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 21%
@@ -23,7 +23,7 @@ La date de publication de la mise à jour 2021.3.0 de [!UICONTROL Cloud Manager
 
 * Les utilisateurs disposant des autorisations requises peuvent désormais modifier le programme, ce qui leur permet d’effectuer les opérations suivantes en libre-service :
 
-   *Ajouter la solution Sites à un programme existant avec Ressources (ou inversement).
+   * Ajouter la solution Sites à un programme existant avec Ressources (ou inversement).
    * Supprimez des sites (ou des ressources) d’un programme existant avec des sites et des ressources.
    * Ajouter (en arrière) une solution peut être apportée au programme existant ou en tant que nouveau Programme.
 
