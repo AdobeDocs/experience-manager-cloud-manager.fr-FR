@@ -4,10 +4,10 @@ seo-title: Notes de mise à jour de la version 2021.3.0 d’AEM Cloud Manager
 description: Consultez cette page pour obtenir des informations sur la version 2021.3.0 de Cloud Manager
 seo-description: Consultez cette page pour obtenir des informations sur la version 2021.3.0 d’AEM Cloud Manager
 translation-type: tm+mt
-source-git-commit: 5542942da33efc2926e62cce00ea39e3c65b3e16
+source-git-commit: 090505e737b8cb224d87f117a9b5e786a4f99851
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 20%
+source-wordcount: '315'
+ht-degree: 19%
 
 ---
 
@@ -35,7 +35,7 @@ La date de publication de la mise à jour 2021.3.0 de [!UICONTROL Cloud Manager
 
 * Le libellé **Version** a été réétiqueté en **Balise Git** dans l&#39;écran d&#39;exécution du pipeline de production.
 
-* Les étiquettes qui définissent le comportement lorsque des mesures importantes ne respectent pas le seuil défini ont été réétiquetées afin de refléter leur comportement réel : **Annuler immédiatement** et **Approuver immédiatement**.
+* Les étiquettes qui définissent le comportement lorsque des mesures importantes ne respectent pas le seuil défini ont été réétiquetées afin de refléter leur comportement réel : **Annuler immédiatement** et **Approuver immédiatement**. Voir [Configuration des paramètres du pipeline à partir de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#configuring-the-pipeline-settings-from-cloud-manager) pour plus d’informations.
 
 * Les listes de classe et de méthode d’obsolescence ont été mises à jour en fonction de la version `2021.3.4997.20210303T022849Z-210225` du SDK Cloud Service AEM.
 
