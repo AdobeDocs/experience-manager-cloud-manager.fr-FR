@@ -4,10 +4,10 @@ seo-title: Notes de mise à jour de la version 2021.3.0 d’AEM Cloud Manager
 description: Consultez cette page pour obtenir des informations sur la version 2021.3.0 de Cloud Manager
 seo-description: Consultez cette page pour obtenir des informations sur la version 2021.3.0 d’AEM Cloud Manager
 translation-type: tm+mt
-source-git-commit: 47424ea0e087f1f69db0aef8ca2122de2352a6e0
+source-git-commit: fde8cbd22ff36e0d30409f68e8a0523c814ccf90
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 19%
+source-wordcount: '319'
+ht-degree: 18%
 
 ---
 
@@ -18,6 +18,7 @@ La section ci-dessous présente les notes générales de mise à jour de la vers
 ## Date de publication {#release-date}
 
 La date de publication de la mise à jour 2021.3.0 de [!UICONTROL Cloud Manager] est le 11 mars 2021.
+La prochaine version est prévue pour le 8 avril 2021.
 
 ## Nouveautés {#whats-new}
 
