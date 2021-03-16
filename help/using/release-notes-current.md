@@ -4,10 +4,10 @@ seo-title: Notes de mise à jour de la version 2021.3.0 d’AEM Cloud Manager
 description: Consultez cette page pour obtenir des informations sur la version 2021.3.0 de Cloud Manager
 seo-description: Consultez cette page pour obtenir des informations sur la version 2021.3.0 d’AEM Cloud Manager
 translation-type: tm+mt
-source-git-commit: fde8cbd22ff36e0d30409f68e8a0523c814ccf90
+source-git-commit: 8c057ca2d3dfe8c8575300084b7bc83c95556d67
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 18%
+source-wordcount: '261'
+ht-degree: 22%
 
 ---
 
@@ -21,12 +21,6 @@ La date de publication de la mise à jour 2021.3.0 de [!UICONTROL Cloud Manager
 La prochaine version est prévue pour le 8 avril 2021.
 
 ## Nouveautés {#whats-new}
-
-* Les utilisateurs disposant des autorisations requises peuvent désormais modifier le programme, ce qui leur permet d’effectuer les opérations suivantes en libre-service :
-
-   * Ajouter la solution Sites à un programme existant avec Ressources (ou inversement).
-   * Supprimez des sites (ou des ressources) d’un programme existant avec des sites et des ressources.
-   * Ajouter (en arrière) une solution peut être apportée au programme existant ou en tant que nouveau Programme.
 
 * Un nouvel outil de qualité du code [Outil d&#39;optimisation du répartiteur](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/custom-code-quality-rules.html?lang=en#dispatcher-optimization-tool-rules) a été introduit pour valider la configuration du répartiteur client.
 
