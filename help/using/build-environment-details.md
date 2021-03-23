@@ -1,10 +1,11 @@
 ---
 title: Présentation de l’environnement de création
 description: Consultez cette page pour en savoir plus sur les environnements
+feature: Environnements
 translation-type: tm+mt
-source-git-commit: 5a6148fd7750544def87147c5f012c09077b2b60
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '769'
 ht-degree: 95%
 
 ---
