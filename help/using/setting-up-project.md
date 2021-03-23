@@ -1,11 +1,12 @@
 ---
 title: Configuration du projet
 description: Consultez cette page pour savoir comment configurer un projet
+feature: Prise en main, production
 translation-type: tm+mt
-source-git-commit: 2ada697ca21acd0c73dbce2bce3e9481ac50272c
+source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 100%
+source-wordcount: '876'
+ht-degree: 99%
 
 ---
 
@@ -225,7 +226,7 @@ Configurez le module maven-assembly-plugin dans votre projet :
         </plugin>
 ```
 
-## Omission des modules de contenu{#skipping-content-packages}
+## Omission des modules de contenu {#skipping-content-packages}
 
 Dans Cloud Manager, chaque compilation peut produire un certain nombre de modules de contenu.
 Pour diverses raisons, il peut être préférable de produire un module de contenu, mais de ne pas le déployer. Cela peut s’avérer utile, par exemple, lors de la création de modules de contenu utilisés uniquement à des fins de test ou qui seront recompilés lors d’une autre étape du processus de compilation, c’est-à-dire sous la forme d’un sous-module d’un autre module.
