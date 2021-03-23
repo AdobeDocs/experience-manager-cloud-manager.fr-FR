@@ -1,17 +1,18 @@
 ---
 title: Notes de mise à jour de la version 2018.6.0
 seo-title: Notes de mise à jour d’AEM Cloud Manager pour la version 2018.6.0
-description: Consultez cette page pour obtenir des informations sur la mise à jour 2018.6.0 de Cloud Manager.
+description: Consultez cette page pour obtenir des informations sur la version 2018.6.0 de Cloud Manager.
 seo-description: Consultez cette page pour obtenir des informations sur la version 2018.6.0 d’AEM Cloud Manager.
 uuid: 211b6e1b-10fb-46b0-b591-44d5e44abd77
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 8584f467-3e61-41ea-98e4-f79e68c86469
+feature: Informations sur la version
 translation-type: tm+mt
-source-git-commit: 15f75ca67c3d52ae511357c5b564daaa3d9def6b
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '340'
 ht-degree: 100%
 
 ---
