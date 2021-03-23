@@ -1,15 +1,15 @@
 ---
 title: Notes de mise à jour de la version 2021.3.0
-seo-title: Notes de mise à jour de la version 2021.3.0 d’AEM Cloud Manager
 description: Consultez cette page pour obtenir des informations sur la version 2021.3.0 de Cloud Manager
-seo-description: Consultez cette page pour obtenir des informations sur la version 2021.3.0 d’AEM Cloud Manager
+feature: Informations sur la version
 translation-type: tm+mt
-source-git-commit: 8c057ca2d3dfe8c8575300084b7bc83c95556d67
+source-git-commit: 12a7d6199983e2d19ef401051f60e3f24bb6d4f8
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 22%
+source-wordcount: '246'
+ht-degree: 18%
 
 ---
+
 
 # Notes de mise à jour de la version 2021.3.0 {#release-notes-for}
 
