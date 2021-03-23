@@ -10,10 +10,10 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: 5542942da33efc2926e62cce00ea39e3c65b3e16
+source-git-commit: 7a33d6dc2240b61c9413bba34880ee5e7d49e02d
 workflow-type: tm+mt
-source-wordcount: '1788'
-ht-degree: 98%
+source-wordcount: '1261'
+ht-degree: 96%
 
 ---
 
@@ -99,7 +99,6 @@ Sélectionnez votre branche Git et cliquez **Suivant**.
 * **Planifié** : cette option permet à l’utilisateur d’activer le déploiement en production planifié.
 
 >[!NOTE]
->
 >Si l’option **Planifié** est sélectionnée, vous pouvez planifier le déploiement en production sur le pipeline **après** le déploiement en environnement intermédiaire (et **Utiliser l’approbation GoLive**, si cette option a été activée) pour attendre la définition d’une planification. L’utilisateur peut également choisir d’exécuter le déploiement en production immédiatement.
 >
 >Consultez [**Déploiement de votre code**](deploying-code.md) pour définir la planification du déploiement ou exécuter la production immédiatement.
@@ -153,62 +152,17 @@ Pour configurer les invalidations du Dispatcher, procédez comme suit :
 
    ![](assets/image2018-8-7_15-4-30.png)
 
+1. Accédez à l’onglet **Tests** pour définir les critères de test du programme. Vous pouvez désormais configurer les paramètres de test de performances.
 
-1. Accédez à l’onglet **Tests** pour définir les critères de test du programme.
-
-   Vous pouvez maintenant configurer les paramètres de test de performance.
-
-   Vous pouvez configurer des tests de performance *AEM Sites* et *AEM Assets*, selon les produits sous licence que vous possédez.
-
-   **AEM Sites :**
-
-   Cloud Manager exécute des tests de performance pour les programmes AEM Sites en demandant des pages (en tant qu’utilisateur non authentifié par défaut) sur le serveur de publication intermédiaire pendant une période de test de 30 minutes et en mesurant le temps de réponse pour chacune d’elles, ainsi que diverses mesures au niveau du système. Ces demandes sont effectuées à partir d’un ensemble d’adresses dédiées connues. Vous pouvez obtenir les plages d’adresses auprès de votre ingénieur de service client ou de votre représentant Adobe.
-
-   Avant le début de cette période de test de 30 minutes, Cloud Manager explore l’environnement d’évaluation à l’aide d’une ou de plusieurs URL *sources* configurées par l’ingénieur du service client. À partir de ces URL, le code HTML de chaque page est examiné et les liens sont parcourus en largeur d’abord. Ce processus d’exploration est limité à un maximum de 5 000 pages. Les requêtes du robot d’exploration ont un délai d’expiration fixe de 10 secondes.
-
-   Les pages sont sélectionnées par trois **ensembles** ; vous pouvez choisir entre un jeu et trois ensembles. La répartition du trafic dépend du nombre d’ensembles sélectionnés. Si les trois ensembles sont sélectionnés, 33 % du nombre total des pages vues sont placées dans chaque ensemble, si deux ensembles sont sélectionnés, 50 % sont dirigées vers chaque ensemble, si un seul est sélectionné, 100 % du trafic va vers cet ensemble.
-
-   Supposons, par exemple, qu’il y ait une répartition 50 %/50 % entre les pages actives populaires et les nouvelles pages (dans cet exemple, les autres pages actives se sont pas utilisées) et que les nouvelles pages contiennent 3 000 pages. L’indicateur de performance clé des pages vues par minute est défini sur 200. Pendant la période test de 30 minutes :
-
-   * Chacune des 25 pages des pages actives populaires est demandée 120 fois – ((200 x 0,5) : 25) x 30 = 120
-
-   * Chacune des 3 000 pages des nouvelles pages sera demandée une fois - ((200 x 0,5) : 3 000) x 30 = 1
-
-   ![](assets/Configuring_Pipeline_AEM-Sites.png)
-
-   Pour plus d’informations, voir [Tests de performances avec authentification](#authenticated-performance-testing).
-
-   **AEM Assets :**
-
-   Cloud Manager exécute des tests de performance pour les programmes AEM Assets en chargeant des ressources à plusieurs reprises pendant une période de test de 30 minutes et en mesurant le délai de traitement de chaque ressource, ainsi que diverses mesures au niveau du système. Cette fonctionnalité peut télécharger des images et des documents PDF. La répartition du nombre de ressources de chaque type qui sont téléchargées par minute est définie dans l’écran Configuration du pipeline ou Modifier.
-
-   Par exemple, si une répartition 70/30 est utilisée, comme illustré dans le schéma ci-dessous. Dix ressources sont téléchargées par minute, 7 images et 3 documents.
-
-   ![](assets/Configuring_Pipeline_AEM-Assets.png)
-
-   >[!NOTE]
-   >
-   >Il existe une image et un document PDF par défaut, mais dans la plupart des cas, les clients souhaitent télécharger leurs propres ressources. Vous pouvez le faire à partir de l’écran Configuration du pipeline ou Modifier. Les formats d’image courants tels que JPEG, PNG, GIF et BMP sont pris en charge, ainsi que les fichiers Photoshop, Illustrator et Postscript.
+   Vous pouvez configurer des tests de performance *AEM Sites* et *AEM Assets*, selon les produits sous licence que vous possédez. Consultez [Performance Testing](understand-your-test-results.md#performance-testing) pour plus de détails.
 
 1. Cliquez sur **Enregistrer** pour terminer la configuration du processus de pipeline.
 
    >[!NOTE]
-   >
    >Une fois que vous avez configuré le pipeline, vous pouvez toujours modifier les paramètres à l’aide de la vignette **Paramètres du pipeline de production** depuis l’interface utilisateur de [!UICONTROL Cloud Manager].
 
    ![](assets/Production-Pipeline.png)
 
-### Test de performances avec authentification {#authenticated-performance-testing}
-
-Les clients AMS disposant de sites authentifiés peuvent spécifier un nom d’utilisateur et un mot de passe que Cloud Manager utilisera pour accéder au site web lors des tests de performances des sites.
-
-Le nom d’utilisateur et le mot de passe sont spécifiés sous la forme de [variables de pipeline](/help/using/build-environment-details.md#pipeline-variables) portant les noms `CM_PERF_TEST_BASIC_USERNAME` et `CM_PERF_TEST_BASIC_PASSWORD`.
-
-Bien que cela ne soit pas strictement requis, il est recommandé d’utiliser le type de variable de chaîne pour le nom d’utilisateur et le type de variable secretString pour le mot de passe. Si ces deux éléments sont spécifiés, chaque requête du robot de tests de performances et des utilisateurs virtuels de test contiendra ces informations d’identification sous forme d’authentification HTTP basique.
-
-Pour définir ces variables à l’aide de l’[interface de ligne de commande de Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager), exécutez :
-
-`$ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>`
 
 ## Pipelines de qualité de code et hors production uniquement
 
