@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 translation-type: tm+mt
-source-git-commit: 7061910ae2cb0aae10876faf448838570f02d9be
+source-git-commit: f62c967feec3960499de93443548422167fedfa7
 workflow-type: tm+mt
-source-wordcount: '2599'
-ht-degree: 70%
+source-wordcount: '2687'
+ht-degree: 68%
 
 ---
 
@@ -112,28 +112,30 @@ La bonne solution consiste alors à supprimer le mot de passe codé en dur.
 
 [!UICONTROL Cloud Manager] exécute les ***contrôles de sécurité AEM*** à sur l’instance d’évaluation suite au déploiement et indique leur statut via l’interface utilisateur. Les résultats sont agrégés à partir de toutes les instances AEM de l’environnement.
 
+Ces mêmes contrôles d&#39;intégrité peuvent être exécutés à tout moment par l&#39;intermédiaire de la console Web ou du Tableau de bord d&#39;opérations.
+
 Si l’une des **instances** signale un échec pour un contrôle d’intégrité donné, l’**environnement** entier ne réussit pas ce contrôle. Comme pour les tests de qualité du code et de performance, ces contrôles sont classés en catégories et signalés à l’aide du système de point de contrôle à trois niveaux. La seule différence réside dans le fait qu’il n’existe aucun seuil dans le cas des tests de sécurité. Tous les contrôles d’intégrité réussissent ou non.
 
 Le tableau suivant répertorie les contrôles actuels :
 
 | **Nom** | **Implémentation de la vérification de l’intégrité** | **Catégorie** |
 |---|---|---|
-| La disponibilité de l’API d’ajout de pare-feu de désérialisation est dans un état acceptable. | Disponibilité de l’API d’ajout de pare-feu de désérialisation | Critique |
-| Le pare-feu de désérialisation est fonctionnel. | Pare-feu de désérialisation fonctionnel | Critique |
-| Le pare-feu de désérialisation est chargé. | Pare-feu de désérialisation chargé | Critique |
-| L’implémentation d’AuthorizableNodeName n’expose pas l’ID autorisable dans le nom/chemin du nœud. | Génération de nom de nœud autorisé | Critique |
-| Les mots de passe par défaut ont été modifiés. | Comptes de connexion par défaut | Critique |
+| La disponibilité de l’API d’ajout de pare-feu de désérialisation est dans un état acceptable. | [Disponibilité de l’API d’ajout de pare-feu de désérialisation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=en#security) | Critique |
+| Le pare-feu de désérialisation est fonctionnel. | [Pare-feu de désérialisation fonctionnel](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=en#security) | Critique |
+| Le pare-feu de désérialisation est chargé. | [Pare-feu de désérialisation chargé](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=en#security) | Critique |
+| L’implémentation d’AuthorizableNodeName n’expose pas l’ID autorisable dans le nom/chemin du nœud. | [Génération de nom de nœud autorisé](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/security-checklist.html?lang=en#security) | Critique |
+| Les mots de passe par défaut ont été modifiés. | [Comptes de connexion par défaut](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=en#users-and-groups-in-aem) | Critique |
 | Le servlet GET par défaut Sling est protégé contre les attaques par DOS. | Servlet Sling Get | Critique |
 | Le gestionnaire de script Java Sling est correctement configuré. | Gestionnaire de script Java Sling | Critique |
 | Le gestionnaire de script JSP Sling est correctement configuré. | Gestionnaire de script JSP Sling | Critique |
 | SSL est correctement configuré. | Configuration SSL | Critique |
 | Aucune stratégie de profil d’utilisateur évidemment risquée trouvée | Accès par défaut au profil utilisateur | Critique |
-| Le filtre référent Sling est configuré pour empêcher les attaques CSRF. | Filtre référent Sling | Important |
+| Le filtre référent Sling est configuré pour empêcher les attaques CSRF. | [Filtre référent Sling](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=en#security) | Important |
 | Le gestionnaire de bibliothèque HTML Adobe Granite est correctement configuré. | Configuration de gestionnaire de bibliothèque HTML CQ | Important |
 | Le lot Prise en charge CRXDE est désactivé. | Prise en charge de CRXDE | Important |
 | Le lot DavEx Sling et le servlet sont désactivés. | Contrôle d’intégrité DavEx | Important |
 | L’exemple de contenu n’est pas installé. | Packages d’exemple de contenu | Important |
-| Le filtre de requête WCM et le filtre de débogage WCM sont désactivés. | Configuration des filtres WCM | Important |
+| Le filtre de requête WCM et le filtre de débogage WCM sont désactivés. | [Configuration des filtres WCM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html?lang=en#configuring) | Important |
 | Le lot WebDAV Sling et le servlet sont correctement configurés. | Contrôle d’intégrité WebDAV | Important |
 | Le serveur web est configuré pour empêcher les clics publicitaires. | Configuration du serveur web | Important |
 | La réplication n’utilise pas l’utilisateur « admin ». | Utilisateurs de réplication et de transport | Infos |
@@ -172,7 +174,7 @@ Cloud Manager exécute des tests de performances pour les programmes AEM Sites. 
 
       * Chacune des 3 000 pages des nouvelles pages sera demandée une fois - ((200 x 0,5) : 3 000) x 30 = 1
 
-### Tests et Rapports {#testing-reporting}
+#### Tests et Rapports {#testing-reporting}
 
 Cloud Manager exécute des tests de performances pour les programmes AEM Sites en demandant des pages (en tant qu’utilisateur non authentifié par défaut) sur le serveur de publication d’étape pendant une période de test de 30 minutes et en mesurant les mesures générées par l’utilisateur (virtuel) (temps de réponse, taux d’erreur, vues par minute, etc.). pour chaque page, ainsi que pour différentes mesures au niveau du système (UC, mémoire, données réseau) pour toutes les instances.\
 Le tableau suivant récapitule les mesures des tests de performances par rapport à l&#39;utilisation du système de portes à trois niveaux :
@@ -230,10 +232,10 @@ Par exemple, si une répartition 70/30 est utilisée, comme illustré dans le sc
 
 1. **Tests et Rapports**
 
-   Cloud Manager crée un dossier sur l’instance d’auteur, en utilisant le nom d’utilisateur et le mot de passe configurés par le CSE à l’étape 1 (Exigences d’Onbbrading), comme mentionné ci-dessus, et télécharge des fichiers dans le dossier à l’aide d’une bibliothèque opensource. Les tests exécutés par l’étape de test des ressources sont écrits à l’aide de cette bibliothèque open source - https://github.com/adobe/toughday2. Le temps de traitement de chaque ressource ainsi que diverses mesures au niveau du système sont mesurés sur la durée de test de 30 minutes. Cette fonctionnalité peut télécharger des images et des documents PDF.
+   Cloud Manager crée un dossier sur l’instance d’auteur, en utilisant le nom d’utilisateur et le mot de passe configurés par le CSE à l’étape 1 (Configuration requise pour l’intégration), comme mentionné ci-dessus, et en téléchargeant des fichiers dans le dossier à l’aide d’une bibliothèque open source. Les tests exécutés par l&#39;étape de test Ressources sont écrits à l&#39;aide de cette [bibliothèque open source](https://github.com/adobe/toughday2). Le temps de traitement de chaque ressource ainsi que diverses mesures au niveau du système sont mesurés sur la durée de test de 30 minutes. Cette fonctionnalité peut télécharger des images et des documents PDF.
 
    >[!NOTE]
-   >Pour en savoir plus sur la configuration des tests de performances, consultez la rubrique [Configuration de votre pipeline CI/CD](configuring-pipeline.md). Reportez-vous à [Configuration de votre Programme](setting-up-program.md) pour savoir comment configurer votre programme et définir vos IPC, voir .
+   >Pour en savoir plus sur la configuration des tests de performances, consultez la rubrique [Configuration de votre pipeline CI/CD](configuring-pipeline.md). Reportez-vous à [Configuration de votre Programme](setting-up-program.md) pour savoir comment configurer votre programme et définir vos IPC.
 
 ### Graphiques des résultats de tests de performance {#performance-testing-results-graphs}
 
