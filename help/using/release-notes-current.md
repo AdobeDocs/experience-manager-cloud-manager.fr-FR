@@ -4,7 +4,7 @@ description: Consultez cette page pour obtenir des informations sur la version 
 feature: Informations sur la version
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 translation-type: tm+mt
-source-git-commit: 0c33fd9f1af4c98564c9fd14a468fc3bf27744ee
+source-git-commit: 1f7f87a4b944d1fadc708958a96a1bda7d41da5d
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 22%
@@ -32,11 +32,11 @@ La prochaine version est prévue pour le 6 mai 2021.
 
 * Le message d&#39;erreur lors du démarrage d&#39;un pipeline lorsqu&#39;un environnement a été supprimé a été clarifié.
 
-* Les lots OSGi fournis par les projets Eclipse sont maintenant exclus de la règle.
+* Les lots OSGi fournis par les projets Eclipse sont maintenant exclus de la règle `CQBP-84--dependencies`.
 
 ## Correctifs {#bug-fixes}
 
-* Erreurs rares et transitoires pouvant survenir à l’étape Test des ressources du pipeline de production.
+* Erreurs rares et transitoires pouvant survenir à l’étape *Test des ressources* du pipeline de production.
 
 * Une barre oblique de fin dans le test de charge du pipeline de production provoquait une panne 404.
 
