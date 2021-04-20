@@ -1,7 +1,7 @@
 ---
 title: Configuration du projet
 description: Consultez cette page pour savoir comment configurer un projet
-feature: Prise en main, production
+feature: Getting Started, Production
 translation-type: tm+mt
 source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
 workflow-type: tm+mt

@@ -1,7 +1,7 @@
 ---
 title: Utilisation de l’assistant
 description: Suivez cette page pour savoir comment utiliser l’assistant afin de créer un projet d’application AEM
-feature: Prise en main
+feature: Getting Started
 translation-type: tm+mt
 source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt

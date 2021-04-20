@@ -3,7 +3,7 @@ title: Gestion des versions du projet Maven
 seo-title: Gestion des versions du projet Maven
 description: En savoir plus sur la gestion des versions du projet Maven.
 seo-description: Suivez cette page pour en savoir plus sur la gestion des versions du projet Maven..
-feature: Prise en main
+feature: Getting Started
 translation-type: tm+mt
 source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
