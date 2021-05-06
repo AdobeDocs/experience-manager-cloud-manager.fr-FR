@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 2021.5.0
 description: Consultez cette page pour obtenir des informations sur la version 2021.5.0 de Cloud Manager
 feature: Informations sur la version
 translation-type: tm+mt
-source-git-commit: 3d6f9a760a1e5bafdae6ece5627358524467a0d2
+source-git-commit: 849a2df2f272973740c1dd8580daaa518f2c9ec4
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 21%
+source-wordcount: '185'
+ht-degree: 24%
 
 ---
 
@@ -32,8 +32,6 @@ La prochaine version est prévue pour le 3 juin 2021.
 * L’expérience Modifier le programme a été actualisée.
 
 ## Correctifs {#bug-fixes}
-
-* Il arrive que l’utilisateur voit un état *principal* vert en regard d’une Liste autorisée IP même si cette configuration n’a pas été déployée.
 
 * Au lieu de supprimer les variables &quot;supprimées&quot;, l&#39;API des variables de pipeline les marquerait uniquement avec l&#39;état &quot;SUPPRIMÉ&quot;.
 
