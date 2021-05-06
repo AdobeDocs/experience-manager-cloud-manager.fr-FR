@@ -8,15 +8,15 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
-feature: Code Deployment
+feature: Déploiement du code
+exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
 translation-type: tm+mt
-source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
+source-git-commit: 9e7c6f7241900432155a1a32abfb440fb3f93172
 workflow-type: tm+mt
-source-wordcount: '959'
-ht-degree: 93%
+source-wordcount: '994'
+ht-degree: 92%
 
 ---
-
 
 # Déploiement de votre code {#deploy-your-code}
 
@@ -92,6 +92,19 @@ Une fois que vous avez configuré votre pipeline de production (référentiel, e
 
    ![](assets/Production_Deployment2.png)
 
+## Délais d’expiration {#timeouts}
+
+Les étapes suivantes expirent si l’utilisateur n’attend pas les commentaires de l’utilisateur :
+
+| Étape | Délai dépassé |
+|--- |--- |
+| Test de qualité du code | 7 jours |
+| Test de sécurité | 7 jours |
+| Test de performance | 7 jours |
+| Application à approuver | 7 jours |
+| Planning du déploiement en production | 7 jours |
+| Assistance de l’ingénieur du service client | 7 jours |
+
 ## Processus de déploiement {#deployment-process}
 
 La section suivante décrit le déploiement des packages AEM et dispatcher dans les phases intermédiaires et de production.
@@ -149,5 +162,3 @@ Les déploiements en production suivent généralement les mêmes étapes que ci
 1. Déployez AEM packages sur publish2 et le package dispatcher sur dispatcher2 en parallèle, videz le cache dispatcher.
 1. Replacement du dispatcher2 dans l’équilibreur de charge.
 Ce processus se poursuit jusqu’à ce que le déploiement ait atteint toutes les instances de publication et tous les Dispatchers dans la topologie.
-
-
