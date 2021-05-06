@@ -9,10 +9,10 @@ feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Administrator
 level: Intermediate
 translation-type: tm+mt
-source-git-commit: cf19c7dfd593810779c03c51e08081954f8fc11e
+source-git-commit: 5f81fdb86b1dfa6c748bb7784ef00dc062c9f8ef
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -61,7 +61,8 @@ ht-degree: 97%
    + [Présentation](overview-productupdate-wizard.md)
    + [Évaluation](evaluation.md)
 + Notes de mise à jour {#release-notes}
-   + [Notes de mise à jour de la version actuelle (2021.4.0)](release-notes-current.md)
+   + [Notes de mise à jour de la version actuelle (2021.5.0)](release-notes-current.md)
+   + [Notes de mise à jour de la version 2021.4.0](release-notes-2021-4-0.md)
    + [Notes de mise à jour de la version 2021.3.0](release-notes-2021-3-0.md)
    + [Notes de mise à jour de la version 2021.2.0](release-notes-2021-2-0.md)
    + [Notes de mise à jour de la version 2020.12.0](release-notes-2020-12-0.md)
