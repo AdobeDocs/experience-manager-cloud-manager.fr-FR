@@ -3,16 +3,15 @@ product: adobe experience manager
 sub-product: experience manager cloud manager
 archetype: administrator
 user-guide-title: Guide d’Experience Manager Cloud Manager
-breadcrumb-title: Guide de Cloud Manager
+breadcrumb-title: Guide de Cloud Manager pour AEM 6.x
 user-guide-description: Apprenez à utiliser les Managed Services d’Adobe pour gérer de manière autonome Experience Manager en mode cloud.
 feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Administrator
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: 5f81fdb86b1dfa6c748bb7784ef00dc062c9f8ef
+source-git-commit: 9cca6fd7d4ef3351fa024bac0f95f5592105dbae
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '270'
+ht-degree: 96%
 
 ---
 
@@ -23,7 +22,7 @@ ht-degree: 0%
 + Présentation {#overview}
    + [Concepts clés](key-concepts.md)
    + [Parcours client](customer-journey.md)
-   + [CI/CD Pipeline](ci-cd-pipeline.md)
+   + [Pipeline CI/CD](ci-cd-pipeline.md)
    + [Sécurité et confidentialité](security-and-privacy.md)
    + [Ressources d’aide](help-resources.md)
    + [FAQ sur Cloud Manager](cloud-manager-faqs.md)
@@ -42,8 +41,8 @@ ht-degree: 0%
       + [Présentation de l’environnement de création](build-environment-details.md)
    + [Configuration des branches de versions](configure-your-release-branches.md)
    + [Gestion des configurations du Dispatcher](dispatcher-configurations.md)
-+ Procédure d’utilisation {#how-to-use}
-   + [Configuration de votre CI/CD Pipeline](configuring-pipeline.md)
++ Utilisation {#how-to-use}
+   + [Configuration de votre pipeline CI/CD](configuring-pipeline.md)
    + [Déploiement de votre code](deploying-code.md)
    + [Présentation des résultats de tests](understand-your-test-results.md)
    + [Gestion des environnements](manage-your-environment.md)
@@ -55,7 +54,7 @@ ht-degree: 0%
 + Gestion du code {#managing-code}
    + [Gestion des versions du projet Maven](activating-maven-project.md)
    + [Accès à Git](accessing-git.md)
-   + [Intégration à Git](setup-cloud-manager-git-integration.md)
+   + [Intégration de Git](setup-cloud-manager-git-integration.md)
    + [Utilisation de plusieurs référentiels Git source](/help/using/working-with-multiple-source-git-repos.md)
 + Assistant de mise à jour du produit {#product-update-wizard}
    + [Présentation](overview-productupdate-wizard.md)
@@ -93,4 +92,4 @@ ht-degree: 0%
    + [Notes de mise à jour de la version 2018.8.0](release-notes-2018-8-0.md)
    + [Notes de mise à jour de la version 2018.7.0](release-notes-2018-7-0.md)
    + [Notes de mise à jour de la version 2018.6.0](release-notes-2018-6-0.md)
-   + [Notes de mise à jour de la version 2018.5.0](release-notes-2018-5-0.md)
+   + [Notes de mise à jour pour la version 2018.5.0](release-notes-2018-5-0.md)
