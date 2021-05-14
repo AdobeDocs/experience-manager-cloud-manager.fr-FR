@@ -2,11 +2,10 @@
 title: Notes de mise à jour de la version 2021.5.0
 description: Consultez cette page pour obtenir des informations sur la version 2021.5.0 de Cloud Manager
 feature: Informations sur la version
-translation-type: tm+mt
-source-git-commit: 849a2df2f272973740c1dd8580daaa518f2c9ec4
+source-git-commit: b9adcc700edb7ba54a92037e86e86df812c93c83
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 24%
+source-wordcount: '208'
+ht-degree: 21%
 
 ---
 
@@ -38,3 +37,5 @@ La prochaine version est prévue pour le 3 juin 2021.
 * Certains problèmes de qualité du type de code ont eu une incidence incorrecte sur la cote de fiabilité.
 
 * Lorsqu’une exécution de pipeline a été démarrée entre minuit et 1h heure UTC, la version d’artefact générée par Cloud Manager n’était pas garantie supérieure à une version créée le jour précédent.
+
+* Certains clients d’Adobe Managed Services (AMS) n’ont pas pu créer de nouveaux projets dans Adobe I/O Developer Console à l’aide de l’API Cloud Manager.
