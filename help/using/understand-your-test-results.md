@@ -10,15 +10,17 @@ topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 feature: Tuyau CI-CD, résultats des essais
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-translation-type: tm+mt
-source-git-commit: 9e7c6f7241900432155a1a32abfb440fb3f93172
+source-git-commit: df2f598f91201d362f54b17e4092ff6bd6a72cec
 workflow-type: tm+mt
-source-wordcount: '2700'
+source-wordcount: '2728'
 ht-degree: 67%
 
 ---
 
 # Présentation des résultats de tests {#understand-your-test-results}
+
+>[!NOTE]
+>Pour en savoir plus sur les résultats des tests et les tests pris en charge par Cloud Manager pour Cloud Services Pipeline, voir [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/overview-test-results.html?lang=fr#using-cloud-manager).
 
 Pendant l’exécution de pipeline, un certain nombre de mesures sont capturées et comparées soit aux indicateurs de performance clés (ICP) définis par le propriétaire de l’entreprise, soit aux normes définies par Adobe Managed Services.
 
