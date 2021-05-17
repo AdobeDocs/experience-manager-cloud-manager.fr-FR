@@ -9,17 +9,19 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-feature: CI-CD Pipeline
-translation-type: tm+mt
-source-git-commit: 12a7d6199983e2d19ef401051f60e3f24bb6d4f8
+feature: Pipeline CI-CD
+exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
+source-git-commit: 83fcc49c7e3e3742930a7179b27f899bff3c4ae1
 workflow-type: tm+mt
-source-wordcount: '1263'
-ht-degree: 96%
+source-wordcount: '1292'
+ht-degree: 95%
 
 ---
 
-
 # Configuration de votre pipeline CI/CD {#configure-your-ci-cd-pipeline}
+
+>[!NOTE]
+>Pour savoir comment configurer le pipeline CI/CD pour Cloud Manager en AEM Cloud Service, voir [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=fr#using-cloud-manager).
 
 La page suivante explique comment configurer le **pipeline**. Pour consulter d’autres informations conceptuelles sur le fonctionnement du pipeline, voir la section [Présentation du pipeline CI/CD](ci-cd-pipeline.md).
 
