@@ -10,17 +10,19 @@ topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 feature: Déploiement du code
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-translation-type: tm+mt
-source-git-commit: 9e7c6f7241900432155a1a32abfb440fb3f93172
+source-git-commit: df2f598f91201d362f54b17e4092ff6bd6a72cec
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 92%
+source-wordcount: '1020'
+ht-degree: 91%
 
 ---
 
 # Déploiement de votre code {#deploy-your-code}
 
 ## Déploiement du code avec Cloud Manager {#deploying-code-with-cloud-manager}
+
+>[!NOTE]
+>Pour en savoir plus sur le déploiement du code pour Cloud Manager en AEM Cloud Service, voir [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=fr#using-cloud-manager).
 
 Une fois que vous avez configuré votre pipeline de production (référentiel, environnement et environnement de test), vous êtes prêt à déployer votre code.
 
