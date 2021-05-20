@@ -8,15 +8,14 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 53807ea6-9464-429d-9322-85c9f405dff6
-feature: Git Repositories
-translation-type: tm+mt
-source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
+feature: Référentiels Git
+exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 94%
 
 ---
-
 
 # Configuration des branches de versions {#configure-your-release-branches}
 
@@ -84,4 +83,4 @@ Une branche `master` unique peut suffire pour des projets très simples, mais da
 
 >[!NOTE]
 >
->Pour vue des commandes git courantes, consultez la [Feuille de calcul Git](https://github.github.com/training-kit/downloads/github-git-cheat-sheet).
+>Pour afficher les commandes git courantes, consultez la [Aide-mémoire Git](https://github.github.com/training-kit/downloads/github-git-cheat-sheet).
