@@ -1,9 +1,8 @@
 ---
 title: Configuration du projet
 description: Consultez cette page pour savoir comment configurer un projet
-feature: Prise en main, Programmes de production
+feature: Prise en main, programmes de production
 exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
-translation-type: tm+mt
 source-git-commit: cf19c7dfd593810779c03c51e08081954f8fc11e
 workflow-type: tm+mt
 source-wordcount: '877'
