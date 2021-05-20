@@ -1,8 +1,8 @@
 ---
 title: Déploiement de votre code
 seo-title: Déploiement de votre code
-description: Fournit un aperçu du processus de déploiement dans Cloud Manager.
-seo-description: Découvrez comment déployer votre code une fois que vous avez configuré votre pipeline (référentiel, environnement et environnement de test)
+description: Présentation du processus de déploiement dans Cloud Manager
+seo-description: Découvrez comment déployer votre code une fois que vous avez configuré votre pipeline (référentiel, environnement et environnement de test).
 uuid: 4e3807e1-437e-4922-ba48-0bcadf293a99
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
@@ -22,7 +22,7 @@ ht-degree: 91%
 ## Déploiement du code avec Cloud Manager {#deploying-code-with-cloud-manager}
 
 >[!NOTE]
->Pour en savoir plus sur le déploiement du code pour Cloud Manager en AEM Cloud Service, voir [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=fr#using-cloud-manager).
+>Pour en savoir plus sur le déploiement du code pour Cloud Manager dans AEM as a Cloud Service, voir [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=fr#using-cloud-manager).
 
 Une fois que vous avez configuré votre pipeline de production (référentiel, environnement et environnement de test), vous êtes prêt à déployer votre code.
 
@@ -96,7 +96,7 @@ Une fois que vous avez configuré votre pipeline de production (référentiel, e
 
 ## Délais d’expiration {#timeouts}
 
-Les étapes suivantes expirent si l’utilisateur n’attend pas les commentaires de l’utilisateur :
+Les étapes suivantes expirent si l’utilisateur attend les commentaires :
 
 | Étape | Délai dépassé |
 |--- |--- |
@@ -158,9 +158,9 @@ Les déploiements en production suivent généralement les mêmes étapes que ci
 
 1. Déploiement des packages AEM sur author.
 1. Détachement de dispatcher1 de l’équilibreur de charge.
-1. Déployez AEM packages sur publish1 et le package dispatcher sur dispatcher1 en parallèle, videz le cache dispatcher.
+1. Déployez AEM packages sur publish1 et le package dispatcher sur dispatcher1 en parallèle, videz le cache du dispatcher.
 1. Replacement du dispatcher1 dans l’équilibreur de charge.
 1. Lorsque dispatcher1 fonctionne à nouveau, détachement de dispatcher2 de l’équilibreur de charge.
-1. Déployez AEM packages sur publish2 et le package dispatcher sur dispatcher2 en parallèle, videz le cache dispatcher.
+1. Déployez AEM packages sur publish2 et le package dispatcher sur dispatcher2 en parallèle, videz le cache du dispatcher.
 1. Replacement du dispatcher2 dans l’équilibreur de charge.
 Ce processus se poursuit jusqu’à ce que le déploiement ait atteint toutes les instances de publication et tous les Dispatchers dans la topologie.
