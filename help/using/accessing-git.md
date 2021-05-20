@@ -3,15 +3,14 @@ title: Accès à Git
 seo-title: Accès à Git
 description: Cette page vous explique comment accéder au référentiel Git et le gérer.
 seo-description: Consultez cette page pour découvrir comment accéder à votre référentiel Git et le gérer.
-feature: Git Repositories
-translation-type: tm+mt
-source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
+feature: Référentiels Git
+exl-id: 403fc93d-60fc-4439-8c9d-0a512ca34458
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 98%
 
 ---
-
 
 # Accès à Git {#accessing-git}
 
@@ -36,6 +35,3 @@ Utilisez le bouton **Gérer Git** disponible dans l’interface utilisateur de C
 >L’option **Gérer Git** est visible par les utilisateurs avec le rôle Développeur ou Gestionnaire de déploiement. Lorsque l’utilisateur clique sur ce bouton, il accède à une boîte de dialogue qui lui permet de trouver l’URL de son référentiel Git Cloud Manager, ainsi que son nom d’utilisateur et son mot de passe.
 
 ![](assets/manage-git3.png)
-
-
-
