@@ -1,14 +1,13 @@
 ---
 title: Environnement de déploiement
 seo-title: Environnement de déploiement
-description: Découvrez comment déployer l'environnement
+description: Découvrez comment déployer l’environnement
 seo-description: Environnement de déploiement
 page-status-flag: never-activated
 uuid: 73436882-a3f7-4048-bb8d-7f5819d29c8f
 contentOwner: jsyal
 discoiquuid: 4ac3e831-2227-4ea8-abcc-c5734e023424
 preview: true
-translation-type: tm+mt
 source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
 workflow-type: tm+mt
 source-wordcount: '80'
