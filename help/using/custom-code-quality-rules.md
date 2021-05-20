@@ -20,7 +20,7 @@ ht-degree: 67%
 # Règles de qualité du code personnalisé {#custom-code-quality-rules}
 
 >[!NOTE]
->Pour en savoir plus sur les règles de qualité du code personnalisé pour Cloud Manager en tant que Cloud Service, voir [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html?lang=en#using-cloud-manager).
+>Pour en savoir plus sur les règles de qualité du code personnalisé pour Cloud Manager dans AEM as a Cloud Service, voir [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html?lang=en#using-cloud-manager).
 
 Cette page décrit les règles de qualité du code personnalisé exécutées par Cloud Manager qui sont créées selon les bonnes pratiques en matière d’ingénierie AEM.
 
@@ -746,7 +746,7 @@ La prise en charge de la réplication inverse n’est pas disponible dans les d�
 
 Les clients qui utilisent la réplication inverse doivent contacter Adobe pour obtenir d’autres solutions.
 
-### OakPAL - Les ressources contenues dans les bibliothèques client activées par proxy doivent se trouver dans un dossier nommé resources {#oakpal-resources-proxy}
+### OakPAL - Les ressources contenues dans les bibliothèques clientes activées par proxy doivent se trouver dans un dossier nommé resources {#oakpal-resources-proxy}
 
 **Clé** : ClientlibProxyResource
 
@@ -756,7 +756,7 @@ Les clients qui utilisent la réplication inverse doivent contacter Adobe pour o
 
 **Depuis** : version 2021.2.0
 
-AEM bibliothèques clientes peuvent contenir des ressources statiques telles que des images et des polices. Comme décrit dans [Utilisation de préprocesseurs](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors), lorsque vous utilisez des bibliothèques clientes proxy, ces ressources statiques doivent être contenues dans un dossier enfant nommé ressources afin d’être référencées efficacement sur les instances de publication.
+AEM bibliothèques clientes peuvent contenir des ressources statiques telles que des images et des polices. Comme décrit dans la section [Utilisation de préprocesseurs](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors), lorsque vous utilisez des bibliothèques clientes proxy, ces ressources statiques doivent être contenues dans un dossier enfant nommé ressources afin d’être référencées efficacement sur les instances de publication.
 
 #### Code non conforme {#non-compliant-proxy-enabled}
 
@@ -780,7 +780,7 @@ AEM bibliothèques clientes peuvent contenir des ressources statiques telles que
         + myimage.jpg
 ```
 
-### OakPAL - Utilisation de processus de flux de travaux non compatibles avec les Cloud Service {#oakpal-usage-cloud-service}
+### OakPAL - Utilisation de processus de Cloud Service incompatibles {#oakpal-usage-cloud-service}
 
 **Clé** : CloudServiceIncompatibleWorkflowProcess
 
@@ -790,11 +790,11 @@ AEM bibliothèques clientes peuvent contenir des ressources statiques telles que
 
 **Depuis** : version 2021.2.0
 
-Avec le passage à des micro-services d’actifs pour le traitement des actifs sur l’Cloud Service AEM, plusieurs processus de workflow utilisés dans les versions sur site et AMS des AEM sont devenus soit non pris en charge, soit inutiles. L’outil de migration de [aem-cloud-migration](https://github.com/adobe/aem-cloud-migration) peut être utilisé pour mettre à jour les modèles de flux de travail lors de la migration des Cloud Service AEM.
+Avec le passage aux microservices de ressources pour le traitement des ressources sur AEM Cloud Service, plusieurs processus de workflow utilisés dans les versions On-Premise et AMS d’AEM sont devenus non pris en charge ou inutiles. L’outil de migration sous [aem-cloud-migration](https://github.com/adobe/aem-cloud-migration) peut être utilisé pour mettre à jour les modèles de workflow lors de la migration des Cloud Service AEM.
 
-### OakPAL - L&#39;utilisation de modèles statiques est découragée en faveur de modèles modifiables {#oakpal-static-template}
+### OakPAL - L’utilisation des modèles statiques est déconseillée en faveur des modèles modifiables {#oakpal-static-template}
 
-**Clé** : UtilisationModèleStatique
+**Clé** : StaticTemplateUsage
 
 **Type** : code smell
 
@@ -802,9 +802,9 @@ Avec le passage à des micro-services d’actifs pour le traitement des actifs s
 
 **Depuis** : version 2021.2.0
 
-Bien que l&#39;utilisation de modèles statiques ait toujours été très fréquente dans AEM projets, les modèles modifiables sont fortement recommandés car ils offrent la plus grande flexibilité et prennent en charge les fonctionnalités supplémentaires qui ne sont pas présentes dans les modèles statiques. Pour plus d&#39;informations, consultez [Modèles de page - modifiable](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=en). La migration de modèles statiques vers des modèles modifiables peut être largement automatisée à l&#39;aide des [outils de modernisation de l&#39;AEM](https://opensource.adobe.com/aem-modernize-tools/).
+Bien que l’utilisation de modèles statiques ait toujours été très courante dans AEM projets, les modèles modifiables sont vivement recommandés, car ils offrent la plus grande flexibilité et prennent en charge des fonctionnalités supplémentaires qui ne sont pas présentes dans les modèles statiques. Vous trouverez plus d’informations sur [Modèles de page - Modifiables](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=en). La migration de modèles statiques vers des modèles modifiables peut être largement automatisée à l’aide des [outils de modernisation AEM](https://opensource.adobe.com/aem-modernize-tools/).
 
-### OakPAL - L&#39;utilisation des composants hérités de la fondation est découragée {#oakpal-usage-legacy}
+### OakPAL - L’utilisation des composants de base hérités est déconseillée {#oakpal-usage-legacy}
 
 **Clé** : LegacyFoundationComponentUsage
 
@@ -814,11 +814,11 @@ Bien que l&#39;utilisation de modèles statiques ait toujours été très fréqu
 
 **Depuis** : version 2021.2.0
 
-Les composants de base hérités (c&#39;est-à-dire les composants situés sous `/libs/foundation`) ont été abandonnés pour plusieurs versions AEM au profit des composants de base WCM. L’utilisation des composants de base hérités comme base pour les composants personnalisés, que ce soit par recouvrement ou par héritage, est découragée et doit être convertie en composant principal correspondant. Cette conversion peut être facilitée par les [outils de modernisation de l&#39;AEM](https://opensource.adobe.com/aem-modernize-tools/).
+Les composants de base hérités (c’est-à-dire les composants situés sous `/libs/foundation`) ont été abandonnés pour plusieurs versions AEM au profit des composants principaux de la gestion de contenu web. L’utilisation des composants de base hérités comme base des composants personnalisés (par recouvrement ou héritage) est déconseillée et doit être convertie en composant principal correspondant. Cette conversion peut être facilitée par les [outils de modernisation AEM](https://opensource.adobe.com/aem-modernize-tools/).
 
-### OakPAL - Seuls les noms et les commandes du mode d’exécution pris en charge doivent être utilisés {#oakpal-supported-runmodes}
+### OakPAL : seuls les noms et commandes du mode d’exécution pris en charge doivent être utilisés {#oakpal-supported-runmodes}
 
-**Clé** : Prise en chargeRunmode
+**Clé** : SupportedRunmode
 
 **Type** : code smell
 
@@ -826,9 +826,9 @@ Les composants de base hérités (c&#39;est-à-dire les composants situés sous 
 
 **Depuis** : version 2021.2.0
 
-AEM Cloud Service applique une politique de nommage stricte pour les noms de mode d&#39;exécution et un ordre strict pour ces modes d&#39;exécution. La liste des modes d&#39;exécution pris en charge se trouve sur [Modes d&#39;exécution](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=fr#runmodes) et tout écart par rapport à cela sera identifié comme un problème.
+AEM Cloud Service applique une stratégie d’attribution de noms stricte pour les noms de mode d’exécution et un ordre strict pour ces modes d’exécution. La liste des modes d’exécution pris en charge se trouve sur [Modes d’exécution](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=fr#runmodes) et toute déviation par rapport à cela sera identifiée comme un problème.
 
-### OakPAL - Définition d&#39;index de recherche personnalisée Les noeuds doivent être des enfants directs de /oak:index {#oakpal-custom-search}
+### OakPAL - Les noeuds de définition d’index de recherche personnalisée doivent être des enfants directs de /oak:index {#oakpal-custom-search}
 
 **Clé** : OakIndexLocation
 
@@ -838,9 +838,9 @@ AEM Cloud Service applique une politique de nommage stricte pour les noms de mod
 
 **Depuis** : version 2021.2.0
 
-AEM Cloud Service exige que les définitions d&#39;index de recherche personnalisée (c&#39;est-à-dire les noeuds de type oak:QueryIndexDefinition) soient des noeuds enfants directs de `/oak:index`. Les index d&#39;autres emplacements doivent être déplacés pour être compatibles avec AEM Cloud Service. Vous trouverez plus d&#39;informations sur les index de recherche dans [Recherche de contenu et indexation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=fr).
+AEM Cloud Service exige que les définitions d’index de recherche personnalisée (c’est-à-dire les noeuds de type oak:QueryIndexDefinition) soient des noeuds enfants directs de `/oak:index`. Les index situés à d’autres emplacements doivent être déplacés pour être compatibles avec AEM Cloud Service. Vous trouverez plus d’informations sur les index de recherche sur [Recherche et indexation de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=fr).
 
-### OakPAL - Définition d&#39;index de recherche personnalisée Les noeuds doivent avoir une version compatVersion de 2 {#oakpal-custom-search-compatVersion}
+### OakPAL - Les noeuds de définition d’index de recherche personnalisée doivent avoir une version compatVersion de 2 {#oakpal-custom-search-compatVersion}
 
 **Clé** : IndexCompatVersion
 
@@ -850,9 +850,9 @@ AEM Cloud Service exige que les définitions d&#39;index de recherche personnali
 
 **Depuis** : version 2021.2.0
 
-AEM Cloud Service exige que la propriété compatVersion soit définie sur 2 pour les définitions d&#39;index de recherche personnalisée (c&#39;est-à-dire les noeuds de type oak:QueryIndexDefinition). Toute autre valeur n’est pas prise en charge par AEM Cloud Service. Vous trouverez plus d&#39;informations sur les index de recherche dans [Recherche de contenu et indexation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en).
+AEM Cloud Service exige que la propriété compatVersion soit définie sur 2 pour les définitions d’index de recherche personnalisée (c’est-à-dire les noeuds de type oak:QueryIndexDefinition). Toute autre valeur n’est pas prise en charge par AEM Cloud Service. Vous trouverez plus d’informations sur les index de recherche sur [Recherche et indexation de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en).
 
-### OakPAL - Noeuds descendants des noeuds de définition d&#39;index de recherche personnalisée Doit être de type nt:unstructured {#oakpal-descendent-nodes}
+### OakPAL - Les noeuds descendants des noeuds de définition d’index de recherche personnalisée doivent être de type nt:unstructured {#oakpal-descendent-nodes}
 
 **Clé** : IndexDescendantNodeType
 
@@ -862,9 +862,9 @@ AEM Cloud Service exige que la propriété compatVersion soit définie sur 2 pou
 
 **Depuis** : version 2021.2.0
 
-Les problèmes difficiles à résoudre peuvent survenir lorsqu’un noeud de définition d’index de recherche personnalisé comporte des noeuds enfants non ordonnés. Pour éviter cela, il est recommandé que tous les noeuds descendants d&#39;un noeud `oak:QueryIndexDefinition` soient de type nt:unstructured.
+Les problèmes difficiles à résoudre peuvent se produire lorsqu’un noeud de définition d’index de recherche personnalisé comporte des noeuds enfants non triés. Pour éviter cela, il est recommandé que tous les noeuds descendants d’un noeud `oak:QueryIndexDefinition` soient de type nt:unstructured.
 
-### OakPAL - Définition d&#39;index de recherche personnalisée Les noeuds doivent contenir un noeud enfant nommé indexRules qui a des enfants {#oakpal-custom-search-index}
+### OakPAL - Les noeuds de définition d’index de recherche personnalisée doivent contenir un noeud enfant nommé indexRules qui comporte des enfants {#oakpal-custom-search-index}
 
 **Clé** : IndexRulesNode
 
@@ -874,9 +874,9 @@ Les problèmes difficiles à résoudre peuvent survenir lorsqu’un noeud de dé
 
 **Depuis** : version 2021.2.0
 
-Un noeud de définition d&#39;index de recherche personnalisé correctement défini doit contenir un noeud enfant appelé indexRules qui, à son tour, doit avoir au moins un enfant. Vous trouverez plus d&#39;informations sur [Oak Documentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+Un noeud de définition d’index de recherche personnalisé correctement défini doit contenir un noeud enfant nommé indexRules qui, à son tour, doit comporter au moins un enfant. Vous trouverez plus d’informations sur la [documentation Oak](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
-### OakPAL - Définition d&#39;index de recherche personnalisée Les noeuds doivent respecter les conventions d&#39;attribution de noms {#oakpal-custom-search-definitions}
+### OakPAL - Les noeuds de définition d’index de recherche personnalisée doivent respecter les conventions d’appellation {#oakpal-custom-search-definitions}
 
 **Clé** : IndexName
 
@@ -886,9 +886,9 @@ Un noeud de définition d&#39;index de recherche personnalisé correctement déf
 
 **Depuis** : version 2021.2.0
 
-AEM Cloud Service exige que les définitions d&#39;index de recherche personnalisée (c&#39;est-à-dire les noeuds de type `oak:QueryIndexDefinition`) soient nommés selon un modèle spécifique décrit dans [Recherche de contenu et indexation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use).
+AEM Cloud Service exige que les définitions d’index de recherche personnalisée (c’est-à-dire les noeuds de type `oak:QueryIndexDefinition`) soient nommés selon un modèle spécifique décrit sur [Recherche et indexation de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use).
 
-### OakPAL - Définition d&#39;index de recherche personnalisée Les noeuds doivent utiliser le type d&#39;index lucene {#oakpal-index-type-lucene}
+### OakPAL - Les noeuds de définition d’index de recherche personnalisée doivent utiliser le type d’index lucene {#oakpal-index-type-lucene}
 
 **Clé** : IndexType
 
@@ -898,9 +898,9 @@ AEM Cloud Service exige que les définitions d&#39;index de recherche personnali
 
 **Depuis** : version 2021.2.0
 
-AEM Cloud Service exige que les définitions d&#39;index de recherche personnalisée (c&#39;est-à-dire les noeuds de type oak:QueryIndexDefinition) aient une propriété de type avec la valeur **lucene**. L’indexation à l’aide des types d’index hérités doit être mise à jour avant la migration vers AEM Cloud Service. Voir [Recherche de contenu et indexation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) pour plus d’informations.
+AEM Cloud Service exige que les définitions d’index de recherche personnalisée (c’est-à-dire les noeuds de type oak:QueryIndexDefinition) aient une propriété type avec la valeur définie sur **lucene**. L’indexation à l’aide des types d’index hérités doit être mise à jour avant la migration vers AEM Cloud Service. Voir [Recherche et indexation de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) pour plus d’informations.
 
-### OakPAL - Définition d&#39;index de recherche personnalisée Les noeuds ne doivent pas contenir de propriété nommée graine {#oakpal-property-name-seed}
+### OakPAL - Les noeuds de définition d’index de recherche personnalisée ne doivent pas contenir de propriété nommée seed {#oakpal-property-name-seed}
 
 **Clé** : IndexSeedProperty
 
@@ -910,9 +910,9 @@ AEM Cloud Service exige que les définitions d&#39;index de recherche personnali
 
 **Depuis** : version 2021.2.0
 
-AEM Cloud Service interdit les définitions d&#39;index de recherche personnalisée (c&#39;est-à-dire les noeuds de type `oak:QueryIndexDefinition`) de contenir une propriété nommée seed. L’indexation à l’aide de cette propriété doit être mise à jour avant la migration vers AEM Cloud Service. Voir [Recherche de contenu et indexation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) pour plus d’informations.
+AEM Cloud Service interdit aux définitions d’index de recherche personnalisée (c’est-à-dire les noeuds de type `oak:QueryIndexDefinition`) de contenir une propriété nommée seed. L’indexation à l’aide de cette propriété doit être mise à jour avant la migration vers AEM Cloud Service. Voir [Recherche et indexation de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) pour plus d’informations.
 
-### OakPAL - Définition d&#39;index de recherche personnalisée Les noeuds ne doivent pas contenir de propriété nommée reindex {#oakpal-reindex-property}
+### OakPAL - Les noeuds de définition d’index de recherche personnalisée ne doivent pas contenir de propriété nommée reindex {#oakpal-reindex-property}
 
 **Clé** : IndexReindexProperty
 
@@ -922,44 +922,44 @@ AEM Cloud Service interdit les définitions d&#39;index de recherche personnalis
 
 **Depuis** : version 2021.2.0
 
-AEM Cloud Service interdit les définitions d&#39;index de recherche personnalisée (c&#39;est-à-dire les noeuds de type `oak:QueryIndexDefinition`) de contenir une propriété nommée reindex. L’indexation à l’aide de cette propriété doit être mise à jour avant la migration vers AEM Cloud Service. Voir [Recherche de contenu et indexation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) pour plus d’informations.
+AEM Cloud Service interdit aux définitions d’index de recherche personnalisée (c’est-à-dire les noeuds de type `oak:QueryIndexDefinition`) de contenir une propriété nommée reindex. L’indexation à l’aide de cette propriété doit être mise à jour avant la migration vers AEM Cloud Service. Voir [Recherche et indexation de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) pour plus d’informations.
 
-## Outil d&#39;optimisation du répartiteur {#dispatcher-optimization-tool-rules}
+## Outil d’optimisation de Dispatcher {#dispatcher-optimization-tool-rules}
 
 La section suivante présente les vérifications DOT exécutées par Cloud Manager :
 
-* [DOT - Analyse des violations - Configuration du répartiteur Jetons inattendus](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-unexpected-tokens)
+* [DOT - Analyse de la violation - Configuration du Dispatcher Jetons inattendus](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-unexpected-tokens)
 
-* [DOT - Violation d&#39;analyse - Configuration du répartiteur Devis sans correspondance](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-unmatched-quote)
+* [DOT - Analyse de la violation - Configuration du Dispatcher Guote sans correspondance](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-unmatched-quote)
 
-* [DOT - Analyse de la violation - Accolade manquante de la configuration du répartiteur](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-missing-brace)
+* [DOT - Analyse de la violation - Paramètre de configuration du Dispatcher Accolade manquante](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-missing-brace)
 
-* [DOT - Violation d&#39;analyse - Accolade supplémentaire de configuration du répartiteur](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-extra-brace)
+* [DOT - Analyse de la violation - Accolade supplémentaire de configuration du Dispatcher](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-extra-brace)
 
-* [DOT - Violation d&#39;analyse - Configuration du répartiteur Propriété obligatoire manquante](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-missing-mandatory-property)
+* [DOT - Analyse de la violation - Configuration du Dispatcher Propriété obligatoire manquante](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-missing-mandatory-property)
 
-* [DOT - Violation d&#39;analyse - Propriété obsolète de la configuration du répartiteur](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-deprecated-property)
+* [DOT - Analyse de la violation - Propriété obsolète de la configuration du Dispatcher](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-deprecated-property)
 
-* [DOT - Violation d&#39;analyse - Configuration du répartiteur introuvable](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-not-found)
+* [DOT - Violation de l’analyse - Configuration du Dispatcher introuvable](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-not-found)
 
-* [DOT - Violation d&#39;analyse - Fichier d&#39;inclusion de configuration Httpd introuvable](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---httpd-configuration-include-file-not-found)
+* [DOT - Violation d’analyse - Fichier d’inclusion de configuration Httpd introuvable](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---httpd-configuration-include-file-not-found)
 
-* [DOT - Analyse de la violation - Configuration du répartiteur Général](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-general)
+* [DOT - Analyse de la violation - Général de la configuration du Dispatcher](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-general)
 
-* [DOT - Le cache de la batterie de publication du répartiteur doit avoir la fonction serverStaleOnError activée](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-servestaleonerror-enabled)
+* [DOT - Le cache de la ferme de publication de Dispatcher doit avoir la fonction serveStaleOnError activée](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-servestaleonerror-enabled)
 
-* [DOT - Les filtres de la batterie de publication du répartiteur doivent contenir les règles de refus par défaut de la version 6.x.x de l&#39;archétype AEM.](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-contain-the-default-deny-rules-from-the-6xx-version-of-the-aem-archetype)
+* [DOT - Les filtres de ferme de publication de Dispatcher doivent contenir les règles de refus par défaut de la version 6.x.x de l’archétype AEM.](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-contain-the-default-deny-rules-from-the-6xx-version-of-the-aem-archetype)
 
-* [DOT - La propriété de niveau de niveaux de cache de batterie de publication du répartiteur doit être >= 2](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-statfileslevel-property-should-be--2)
+* [DOT - La propriété statfileslevel du cache de la ferme de publication de Dispatcher doit être >= 2](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-statfileslevel-property-should-be--2)
 
-* [DOT - La propriété gracePeriod de publication du répartiteur doit être >= 2](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-graceperiod-property-should-be--2)
+* [DOT - La propriété gracePeriod de la ferme de publication de Dispatcher doit être >= 2](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-graceperiod-property-should-be--2)
 
-* [DOT - Chaque batterie de répartiteurs doit avoir un nom unique.](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---each-dispatcher-farm-should-have-a-unique-name)
+* [DOT - Chaque ferme de serveurs de Dispatcher doit avoir un nom unique.](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---each-dispatcher-farm-should-have-a-unique-name)
 
-* [DOT - Le cache de la batterie de publication du répartiteur doit avoir ses règles ignoreUrlParams configurées de manière liste autorisée.](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner)
+* [DOT - Les règles ignoreUrlParams du cache de la ferme de publication de Dispatcher doivent être configurées de manière liste autorisée.](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner)
 
-* [DOT - Les filtres de la batterie de publication du répartiteur doivent spécifier les sélecteurs Sling autorisés de manière liste autorisée.](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-selectors-in-an-allow-list-manner)
+* [DOT - Les filtres de ferme de publication de Dispatcher doivent spécifier les sélecteurs Sling autorisés de manière liste autorisée.](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-selectors-in-an-allow-list-manner)
 
-* [DOT - Les filtres de publication des exploitations du répartiteur doivent spécifier les modèles de suffixes Sling autorisés de manière liste autorisée.](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-suffix-patterns-in-an-allow-list-manner)
+* [DOT - Les filtres de ferme de publication de Dispatcher doivent spécifier les modèles de suffixes Sling autorisés de manière liste autorisée.](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-suffix-patterns-in-an-allow-list-manner)
 
-* [DOT - La directive &quot;Require all authorized&quot; ne doit pas être utilisée dans une section VirtualHost Directory avec un répertoire racine-path](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-require-all-granted-directive-should-not-be-used-in-a-virtualhost-directory-section-with-a-root-directory-path)
+* [DOT - La directive &quot;Require all authorized&quot; ne doit pas être utilisée dans une section de répertoire VirtualHost avec un chemin d’accès au répertoire racine.](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-require-all-granted-directive-should-not-be-used-in-a-virtualhost-directory-section-with-a-root-directory-path)
