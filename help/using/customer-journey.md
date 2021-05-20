@@ -8,16 +8,15 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: bc9a0d63-ae6b-4fe9-81e5-bf9844f04e54
-feature: Getting Started
+feature: Prise en main
 level: Beginner
-translation-type: tm+mt
-source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
+exl-id: deb3429c-dfcf-4e52-9aba-d9368aa240e6
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 99%
+source-wordcount: '587'
+ht-degree: 100%
 
 ---
-
 
 # Parcours client {#customer-journey}
 
@@ -62,4 +61,3 @@ Ensuite, vous devez configurer vos branches de code source dans le **référenti
 Le diagramme suivant illustre le parcours général client, lors de l’utilisation du pipeline CI/CD de [!UICONTROL Cloud Manager] pour déployer vos changements de code dans vos environnements intermédiaire et de production.
 
 ![](assets/screen_shot_2018-05-15at124004pm.png)
-
