@@ -8,15 +8,14 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 9222ac3b-525e-47c1-b481-ac9d22e3d559
-feature: Release Information
-translation-type: tm+mt
-source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
+feature: Informations sur la version
+exl-id: 20f87048-30f7-4869-aad0-13ca383a404b
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 100%
 
 ---
-
 
 # Notes de mise à jour de la version 2018.8.0 {#release-notes-for}
 
@@ -56,4 +55,3 @@ La date de publication de la mise à jour 2018.8.0 de [!UICONTROL Cloud Manager
 
 * Les branches créées à l’aide de l’assistant de projet d’application ne peuvent pas contenir de tirets.
 * La barre latérale de notification [!UICONTROL Experience Cloud] peut ne pas charger les notifications de manière cohérente. Toutefois, les notifications sont visibles dans [!UICONTROL Experience Cloud] et, si elles sont configurées, elles sont toujours envoyées par e-mail.
-
