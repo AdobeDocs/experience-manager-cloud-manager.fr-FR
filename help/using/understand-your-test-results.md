@@ -1,14 +1,14 @@
 ---
 title: Présentation des résultats de tests
 seo-title: Présentation des résultats de tests
-description: En savoir plus sur les portes à trois niveaux lors de l’exécution d’un pipeline dans Cloud Manager
+description: En savoir plus sur les points de contrôle à trois niveaux lors de l’exécution d’un pipeline dans Cloud Manager
 seo-description: Consultez cette page pour en savoir plus sur les points de contrôle à trois niveaux lors de l’exécution d’un pipeline, l’analyse de code et les tests de performance et de sécurité validant votre programme dans Cloud Manager.
 uuid: 93caa01f-0df2-4a6f-81dc-23dfee24dc93
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
-feature: Tuyau CI-CD, résultats des essais
+feature: Pipeline CI-CD, résultats des tests
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 source-git-commit: df2f598f91201d362f54b17e4092ff6bd6a72cec
 workflow-type: tm+mt
@@ -20,7 +20,7 @@ ht-degree: 67%
 # Présentation des résultats de tests {#understand-your-test-results}
 
 >[!NOTE]
->Pour en savoir plus sur les résultats des tests et les tests pris en charge par Cloud Manager pour Cloud Services Pipeline, voir [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/overview-test-results.html?lang=fr#using-cloud-manager).
+>Pour en savoir plus sur les résultats de test et les tests pris en charge par Cloud Manager pour le pipeline Cloud Services, voir [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/overview-test-results.html?lang=fr#using-cloud-manager).
 
 Pendant l’exécution de pipeline, un certain nombre de mesures sont capturées et comparées soit aux indicateurs de performance clés (ICP) définis par le propriétaire de l’entreprise, soit aux normes définies par Adobe Managed Services.
 
@@ -37,7 +37,7 @@ Le pipeline comprend trois points de contrôle :
 Pour chaque point de contrôle, il existe une structure à trois niveaux pour les problèmes identifiés.
 
 * **Critique** : il s’agit des problèmes identifiés par le point de contrôle qui entraînent l’échec immédiat du pipeline.
-* **Important** : il s’agit des problèmes identifiés par le point de contrôle qui entraînent la suspension du pipeline. Un responsable de déploiement, un responsable de projet ou un propriétaire d’entreprise peuvent soit contourner les problèmes, auquel cas le pipeline continue, soit accepter les problèmes, auquel cas le pipeline s’arrête avec un échec. Le remplacement des échecs importants est soumis à un délai d&#39;expiration [](deploying-code.md#timeouts).
+* **Important** : il s’agit des problèmes identifiés par le point de contrôle qui entraînent la suspension du pipeline. Un responsable de déploiement, un responsable de projet ou un propriétaire d’entreprise peuvent soit contourner les problèmes, auquel cas le pipeline continue, soit accepter les problèmes, auquel cas le pipeline s’arrête avec un échec. Le remplacement des échecs importants est soumis à un [dépassement de délai](deploying-code.md#timeouts).
 * **Informations** : il s’agit des problèmes identifiés par le point de contrôle qui sont fournis uniquement à titre d’information et qui n’ont aucune incidence sur l’exécution du pipeline.
 
 >[!NOTE]
@@ -50,7 +50,7 @@ Cette étape évalue la qualité du code de votre application. Il s’agit de l�
 
 ### Présentation du test de qualité du code {#understanding-code-quality-testing}
 
-Au cours du test de qualité du code, le code source est analysé afin de s’assurer qu’il répond à certains critères de qualité. Actuellement, ceci est mis en oeuvre par une combinaison de SonarQube, d’examen au niveau du package de contenu à l’aide d’OakPAL et de validation du répartiteur à l’aide de l’outil d’optimisation du répartiteur. Il existe plus de 100 règles combinant des règles Java génériques et des règles spécifiques à AEM. Certaines des règles spécifiques à AEM sont créées en fonction des bonnes pratiques de l’équipe d’ingénierie AEM et sont appelées [Règles de qualité du code personnalisées](/help/using/custom-code-quality-rules.md).
+Au cours du test de qualité du code, le code source est analysé afin de s’assurer qu’il répond à certains critères de qualité. Actuellement, cette opération est implémentée par une combinaison de SonarQube, d’examen au niveau du module de contenu à l’aide d’OakPAL et de validation du Dispatcher à l’aide de l’outil d’optimisation de Dispatcher. Il existe plus de 100 règles combinant des règles Java génériques et des règles spécifiques à AEM. Certaines des règles spécifiques à AEM sont créées en fonction des bonnes pratiques de l’équipe d’ingénierie AEM et sont appelées [Règles de qualité du code personnalisées](/help/using/custom-code-quality-rules.md).
 
 >[!NOTE]
 >Vous pouvez télécharger la liste complète des règles [ici](/help/using/assets/CodeQuality-rules-AMS.xlsx).
@@ -115,7 +115,7 @@ La bonne solution consiste alors à supprimer le mot de passe codé en dur.
 
 [!UICONTROL Cloud Manager] exécute les ***contrôles de sécurité AEM*** à sur l’instance d’évaluation suite au déploiement et indique leur statut via l’interface utilisateur. Les résultats sont agrégés à partir de toutes les instances AEM de l’environnement.
 
-Ces mêmes contrôles d&#39;intégrité peuvent être exécutés à tout moment par l&#39;intermédiaire de la console Web ou du Tableau de bord d&#39;opérations.
+Ces mêmes contrôles de l’intégrité peuvent être exécutés à tout moment via la console web ou le tableau de bord des opérations.
 
 Si l’une des **instances** signale un échec pour un contrôle d’intégrité donné, l’**environnement** entier ne réussit pas ce contrôle. Comme pour les tests de qualité du code et de performance, ces contrôles sont classés en catégories et signalés à l’aide du système de point de contrôle à trois niveaux. La seule différence réside dans le fait qu’il n’existe aucun seuil dans le cas des tests de sécurité. Tous les contrôles d’intégrité réussissent ou non.
 
@@ -147,40 +147,40 @@ Le tableau suivant répertorie les contrôles actuels :
 
 ### AEM Sites {#aem-sites}
 
-Cloud Manager exécute des tests de performances pour les programmes AEM Sites. Le test de performances est exécuté pendant environ 30 minutes en faisant tourner des utilisateurs virtuels (conteneurs) qui simulent des utilisateurs réels pour accéder aux pages sur l’environnement de la scène et simuler le trafic. Ces pages se trouvent à l’aide d’un analyseur de liens.
+Cloud Manager exécute des tests de performance pour les programmes AEM Sites. Le test de performance est exécuté pendant environ 30 minutes en faisant tourner des utilisateurs virtuels (conteneurs) qui simulent les utilisateurs réels pour accéder aux pages dans l’environnement intermédiaire et simuler le trafic. Ces pages se trouvent à l’aide d’un moteur de recherche.
 
 1. **Utilisateurs virtuels**
 
-   Le nombre d’utilisateurs ou de conteneurs virtuels qui sont déclenchés par Cloud Manager est déterminé par les indicateurs de performance clés (temps de réponse et pages vues/min) définis par l’utilisateur dans le rôle Propriétaire de l’entreprise, tandis que [la création ou la modification du programme](setting-up-program.md) est effectuée. En fonction des indicateurs de performance clés définis, jusqu’à 10 conteneurs de simulation des utilisateurs réels seront exécutés. Les pages sélectionnées pour le test sont fractionnées et attribuées à chaque virtuel.
+   Le nombre d’utilisateurs ou de conteneurs virtuels qui sont générés par Cloud Manager est déterminé par les IPC (temps de réponse et pages vues/min) définis par l’utilisateur dans le rôle Propriétaire de l’entreprise lors de la [création ou de la modification du programme](setting-up-program.md). En fonction des indicateurs de performance clés définis, jusqu’à 10 conteneurs qui simulent les utilisateurs réels seront démarrés. Les pages sélectionnées pour le test sont fractionnées et affectées à chaque page virtuelle.
 
 1. **Crawler**
 
    Avant le début de cette période de test de 30 minutes, Cloud Manager explore l’environnement d’évaluation à l’aide d’une ou de plusieurs URL sources configurées par l’ingénieur du service client. À partir de ces URL, le code HTML de chaque page est examiné et les liens sont parcourus en largeur d’abord. Ce processus d’exploration est limité à un maximum de 5 000 pages. Les requêtes du robot d’exploration ont un délai d’expiration fixe de 10 secondes.
 
-1. **Jeux de pages à tester**
+1. **Jeux de pages pour les tests**
 
-   Les pages sont sélectionnées par trois jeux de pages. Cloud Manager utilise les journaux d’accès des instances AEM dans Production et Stage pour déterminer les trois compartiments suivants :
+   Les pages sont sélectionnées par trois jeux de pages. Cloud Manager utilise les journaux d’accès des instances AEM dans les environnements de production et d’évaluation pour déterminer les trois lots suivants :
 
-   * *Pages* dynamiques populaires : Cette option est sélectionnée pour vérifier que les pages les plus populaires consultées par les clients en direct sont testées. Cloud Manager lit le journal d’accès et détermine les 25 pages les plus consultées par les clients en direct afin de générer une liste de `Popular Live Pages` principales pages. L’intersection de ces éléments qui sont également présents dans Stage est ensuite analysée sur Stage environnement.
+   * *Pages actives populaires* : Cette option est sélectionnée pour vous assurer que les pages les plus populaires consultées par les clients en direct sont testées. Cloud Manager lira le journal des accès et déterminera les 25 pages les plus consultées par les clients en direct pour générer une liste des `Popular Live Pages` principales pages. L’intersection de celles-ci, également présentes dans l’environnement d’évaluation, est ensuite analysée dans l’environnement d’évaluation.
 
-   * *Autres pages* actives : Cette option est sélectionnée pour vous assurer que les pages qui ne figurent pas dans les 25 premières pages en direct populaires qui ne sont pas populaires mais qui sont importantes à tester sont testées. Tout comme les pages en direct populaires, elles sont extraites du journal d’accès et doivent également être présentes sur la scène.
+   * *Autres pages actives* : Cette option est sélectionnée afin de vous assurer que les pages qui se trouvent en dehors des 25 premières pages actives populaires et qui peuvent ne pas être populaires, mais qui sont importantes pour le test sont testées. Comme pour les pages actives populaires, elles sont extraites du journal d’accès et doivent également être présentes sur l’évaluation.
 
-   * *Nouvelles pages* : Cette option est sélectionnée pour tester les nouvelles pages qui n&#39;ont peut-être été déployées qu&#39;à l&#39;état et pas encore à la production, mais qui doivent être testées.
+   * *Nouvelles pages* : Cette option est sélectionnée pour tester les nouvelles pages qui peuvent n’avoir été déployées que dans l’environnement intermédiaire et pas encore dans l’environnement de production, mais qui doivent être testées.
 
       **Répartition du trafic entre les jeux de pages sélectionnés**
 
-      Vous pouvez choisir n&#39;importe quel jeu entre un et les trois jeux dans l&#39;onglet &quot;Tests&quot; de votre configuration de pipeline (Insérer un lien). La répartition du trafic dépend du nombre d’ensembles sélectionnés. Si les trois ensembles sont sélectionnés, 33 % du nombre total des pages vues sont placées dans chaque ensemble, si deux ensembles sont sélectionnés, 50 % sont dirigées vers chaque ensemble, si un seul est sélectionné, 100 % du trafic va vers cet ensemble.
+      Vous pouvez choisir entre un et les trois ensembles dans l&#39;onglet &quot;Tests&quot; de la configuration de votre pipeline (lien d&#39;insertion). La répartition du trafic dépend du nombre d’ensembles sélectionnés. Si les trois ensembles sont sélectionnés, 33 % du nombre total des pages vues sont placées dans chaque ensemble, si deux ensembles sont sélectionnés, 50 % sont dirigées vers chaque ensemble, si un seul est sélectionné, 100 % du trafic va vers cet ensemble.
 
-      Par exemple, supposons qu’il y ait une division de 50 à 50 % entre les pages en direct les plus populaires et le jeu Nouvelles pages (dans cet exemple, Autres pages en direct n’est pas utilisé) et le jeu Nouvelles pages contient 3 000 pages. L’indicateur de performance clé des pages vues par minute est défini sur 200. Pendant la période test de 30 minutes :
+      Par exemple, supposons qu’il existe une répartition 50 à 50 % entre les pages actives populaires et les nouvelles pages (dans cet exemple, les autres pages actives ne sont pas utilisées) et que l’ensemble Nouvelles pages contient 3 000 pages. L’indicateur de performance clé des pages vues par minute est défini sur 200. Pendant la période test de 30 minutes :
 
       * Chacune des 25 pages des pages actives populaires est demandée 120 fois – ((200 x 0,5) : 25) x 30 = 120
 
       * Chacune des 3 000 pages des nouvelles pages sera demandée une fois - ((200 x 0,5) : 3 000) x 30 = 1
 
-#### Tests et Rapports {#testing-reporting}
+#### Test et création de rapports {#testing-reporting}
 
-Cloud Manager exécute des tests de performances pour les programmes AEM Sites en demandant des pages (en tant qu’utilisateur non authentifié par défaut) sur le serveur de publication d’étape pendant une période de test de 30 minutes et en mesurant les mesures générées par l’utilisateur (virtuel) (temps de réponse, taux d’erreur, vues par minute, etc.). pour chaque page, ainsi que pour différentes mesures au niveau du système (UC, mémoire, données réseau) pour toutes les instances.\
-Le tableau suivant récapitule les mesures des tests de performances par rapport à l&#39;utilisation du système de portes à trois niveaux :
+Cloud Manager exécute des tests de performance pour les programmes AEM Sites en demandant des pages (en tant qu’utilisateur non authentifié par défaut) sur le serveur de publication intermédiaire pendant une période de test de 30 minutes et en mesurant les mesures (virtuelles) générées par l’utilisateur (temps de réponse, taux d’erreur, vues par minute, etc.). pour chaque page, ainsi que diverses mesures au niveau du système (processeur, mémoire, données réseau) pour toutes les instances.\
+Le tableau suivant résume les mesures de test de performance par rapport à l’utilisation du système de point de contrôle à trois niveaux :
 
 Le tableau suivant résume la matrice des tests de performance à l’aide du système de point de contrôle à trois niveaux :
 
@@ -196,14 +196,14 @@ Le tableau suivant résume la matrice des tests de performance à l’aide du sy
 | Utilisation de la bande passante réseau | Important | >= 90 % |
 | Demandes par minute | Infos | >= 6 000 |
 
-Pour plus d&#39;informations sur l&#39;utilisation de l&#39;authentification de base pour les tests de performances des sites et ressources, consultez la section **Authenticated Performance Testing** ci-dessous.
+Pour plus d’informations sur l’utilisation de l’authentification de base pour les tests de performances des sites et des ressources, reportez-vous à la section **Test de performance authentifiée** ci-dessous.
 
 >[!NOTE]
->Chaque instance est surveillée pendant la période du test, tant pour la publication que pour l’auteur. Si aucune mesure n’est obtenue pour une seule instance, cette mesure est signalée comme inconnue et l’étape correspondante échoue.
+>Chaque instance est surveillée pendant la période du test, tant pour la publication que pour l’auteur. Si aucune mesure n’est obtenue, même pour une instance, cette mesure est signalée comme inconnue et l’étape correspondante échoue.
 
 #### Test de performances avec authentification {#authenticated-performance-testing}
 
-Cette fonctionnalité est facultative Sites.
+Cette fonctionnalité est en option dans Sites.
 Les clients AMS disposant de sites authentifiés peuvent spécifier un nom d’utilisateur et un mot de passe que Cloud Manager utilisera pour accéder au site web lors des tests de performances des sites.
 Le nom d’utilisateur et le mot de passe sont spécifiés sous la forme de variables de pipeline avec les noms `CM_PERF_TEST_BASIC_USERNAME` et `CM_PERF_TEST_BASIC_PASSWORD`.
 Bien que cela ne soit pas strictement requis, il est recommandé d’utiliser le type de variable de chaîne pour le nom d’utilisateur et le type de variable secretString pour le mot de passe. Si ces deux éléments sont spécifiés, chaque requête du robot de tests de performances et des utilisateurs virtuels de test contiendra ces informations d’identification sous forme d’authentification HTTP basique.
@@ -214,31 +214,31 @@ Pour définir ces variables à l’aide de l’interface de ligne de commande de
 $ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>
 ```
 
-Consultez [Variables](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchPipelineVariables) pour savoir comment utiliser l&#39;API.
+Reportez-vous à la section [Variables](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchPipelineVariables) pour savoir comment utiliser l’API.
 
 ### AEM Assets {#aem-assets}
 
-Cloud Manager exécute des tests de performances pour les programmes AEM Assets en téléchargeant régulièrement des fichiers pendant une période de test de 30 minutes.
+Cloud Manager exécute des tests de performance pour les programmes AEM Assets en chargeant des ressources à plusieurs reprises pendant une période de test de 30 minutes.
 
-1. **Configuration requise pour l’intégration**
+1. **Exigence d’intégration**
 
-   Pour les tests de performances des ressources, votre ingénieur de réussite client créera un utilisateur `cloudmanager` (et un mot de passe) lors de l’intégration de l’environnement Auteur à l’étape. Les étapes du test de performances nécessitent l’utilisateur nommé `cloudmanager` et le mot de passe associé configuré par votre CSE. Il ne doit pas être supprimé de l’auteur ni modifié en autorisations par écrit. Ce faisant, les tests de performances des ressources échoueront probablement.
+   Pour les tests de performances d’Assets, l’ingénieur du service client créera un utilisateur `cloudmanager` (et un mot de passe) lors de l’intégration de l’environnement de création à évaluation. Les étapes de test de performances requièrent l’utilisateur nommé `cloudmanager` et le mot de passe associé configuré par votre ingénieur du service client. Cela ne doit pas être supprimé de l’auteur ni modifié en autorisations. Le test de performances d’Assets échouera probablement.
 
 1. **Images et ressources à tester**
 
-   Les clients peuvent télécharger leurs propres fichiers pour les tester. Vous pouvez le faire à partir de l’écran Configuration du pipeline ou Modifier. Les formats d’image courants tels que JPEG, PNG, GIF et BMP sont pris en charge, ainsi que les fichiers Photoshop, Illustrator et Postscript. Cependant, si aucune image n’est téléchargée, Cloud Manager utilise une image par défaut et un document PDF à des fins de test.
+   Les clients peuvent charger leurs propres ressources à des fins de test. Vous pouvez le faire à partir de l’écran Configuration du pipeline ou Modifier. Les formats d’image courants tels que JPEG, PNG, GIF et BMP sont pris en charge, ainsi que les fichiers Photoshop, Illustrator et Postscript. Toutefois, si aucune image n’est téléchargée, Cloud Manager utilise une image par défaut et un document PDF à des fins de test.
 
-1. **Distribution des ressources pour les tests**
+1. **Distribution des ressources à des fins de test**
 
    La répartition du nombre de ressources de chaque type qui sont téléchargées par minute est définie dans l’écran Configuration du pipeline ou Modifier.
 Par exemple, si une répartition 70/30 est utilisée, comme illustré dans le schéma ci-dessous. Dix ressources sont téléchargées par minute, 7 images et 3 documents.
 
-1. **Tests et Rapports**
+1. **Test et création de rapports**
 
-   Cloud Manager crée un dossier sur l’instance d’auteur, en utilisant le nom d’utilisateur et le mot de passe configurés par le CSE à l’étape 1 (Configuration requise pour l’intégration), comme mentionné ci-dessus, et en téléchargeant des fichiers dans le dossier à l’aide d’une bibliothèque open source. Les tests exécutés par l&#39;étape de test Ressources sont écrits à l&#39;aide de cette [bibliothèque open source](https://github.com/adobe/toughday2). Le temps de traitement de chaque ressource ainsi que diverses mesures au niveau du système sont mesurés sur la durée de test de 30 minutes. Cette fonctionnalité peut télécharger des images et des documents PDF.
+   Cloud Manager crée un dossier sur l’instance d’auteur à l’aide du nom d’utilisateur et du mot de passe configurés par l’ingénieur du service client à l’étape #1 (Conditions requises pour l’intégration), comme mentionné ci-dessus, et charge les ressources dans le dossier à l’aide d’une bibliothèque open source. Les tests exécutés par l’étape de test des ressources sont écrits à l’aide de cette [bibliothèque open source](https://github.com/adobe/toughday2). Le temps de traitement de chaque ressource ainsi que diverses mesures au niveau du système sont mesurés sur la durée des tests de 30 minutes. Cette fonctionnalité peut télécharger des images et des documents PDF.
 
    >[!NOTE]
-   >Pour en savoir plus sur la configuration des tests de performances, consultez la rubrique [Configuration de votre pipeline CI/CD](configuring-pipeline.md). Reportez-vous à [Configuration de votre Programme](setting-up-program.md) pour savoir comment configurer votre programme et définir vos IPC.
+   >Pour plus d’informations sur la configuration des tests de performance, voir [Configuration de votre pipeline CI/CD](configuring-pipeline.md). Reportez-vous à la section [Configuration de votre programme](setting-up-program.md) pour savoir comment configurer votre programme et définir vos indicateurs clés de performance.
 
 ### Graphiques des résultats de tests de performance {#performance-testing-results-graphs}
 
