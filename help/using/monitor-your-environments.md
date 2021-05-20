@@ -3,15 +3,14 @@ title: Surveillance des environnements
 seo-title: Surveillance des environnements
 description: Découvrez comment surveiller vos environnements dans Cloud Manager
 seo-description: Consultez cette page pour en savoir plus sur la surveillance du système dans Cloud Manager, en observant les instances dans un environnement et en suivant diverses mesures pour chaque instance.
-feature: Environments
-translation-type: tm+mt
-source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
+feature: Environnements
+exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '973'
 ht-degree: 99%
 
 ---
-
 
 # Surveillance du système {#system-monitoring}
 
