@@ -3,15 +3,14 @@ title: Intégration Git à Adobe Cloud Manager
 description: Série de vidéos qui décrit la configuration et l’intégration d’un référentiel Git géré par le client (sur site) avec Adobe Cloud Manager.
 seo-title: Intégration Git à Adobe Cloud Manager
 seo-description: Série de vidéos qui décrit la configuration et l’intégration d’un référentiel Git géré par le client (sur site) avec Adobe Cloud Manager.
-feature: Git Repositories
-translation-type: tm+mt
-source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
+feature: Référentiels Git
+exl-id: e517f8a4-23f0-4486-8278-91396dba76ec
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 99%
 
 ---
-
 
 # Intégration Git à Adobe Cloud Manager
 
