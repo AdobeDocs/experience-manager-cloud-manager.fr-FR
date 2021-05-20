@@ -3,8 +3,8 @@ title: Notes de mise à jour de la version 2021.2.0
 seo-title: Notes de mise à jour de la version 2021.2.0 d’AEM Cloud Manager
 description: Consultez cette page pour obtenir des informations sur la version 2021.2.0 de Cloud Manager
 seo-description: Consultez cette page pour obtenir des informations sur la version 2021.2.0 d’AEM Cloud Manager
-translation-type: tm+mt
-source-git-commit: b5233e1932888b515d8dc26a6493cbd26686bc3c
+exl-id: 4f3c3a63-141b-414f-a24e-1870e985873a
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 24%
@@ -21,24 +21,24 @@ La date de publication de la mise à jour de [!UICONTROL Cloud Manager] 2021.2
 
 ## Nouveautés {#whats-new}
 
-* L&#39;archétype de projet AEM utilisé dans Project and Sandbox Creation a été mis à jour vers la version 25.
+* L’archétype de projet AEM utilisé dans Project et Sandbox Creation a été mis à jour vers la version 25.
 
 * La liste des API obsolètes identifiées lors de l’analyse du code a été affinée afin d’inclure d’autres classes et méthodes obsolètes dans les dernières versions du SDK Cloud Service.
 
-* Désormais, les déploiements de production sont déployés en parallèle sur les instances de publication et de répartiteur paires.
+* Les déploiements de production sont désormais déployés en parallèle sur les instances de publication et de dispatcher couplées.
 
-* Profil SonarQube pour Cloud Manager mis à jour pour supprimer la règle Sonar `squid:S2142`. Ceci ne sera plus en conflit avec les vérifications d&#39;interruption de thread.
+* Profil SonarQube pour Cloud Manager mis à jour afin de supprimer la règle Sonar `squid:S2142`. Cela n’entre plus en conflit avec les vérifications d’interruption de thread.
 
-* Les propriétés définies dans les fichiers `pom.xml` client précédés d&#39;un sonar seront désormais supprimées dynamiquement afin d&#39;éviter les échecs d&#39;analyse de la génération et de la qualité.
+* Les propriétés définies dans les fichiers `pom.xml` clients avec le préfixe sonar seront désormais supprimées dynamiquement afin d’éviter les échecs d’analyse de génération et de qualité.
 
-* Des règles de qualité de code supplémentaires ont été ajoutées pour couvrir les problèmes de compatibilité des Cloud Service.
+* Des règles de qualité du code supplémentaires ont été ajoutées pour couvrir les problèmes de compatibilité du Cloud Service.
 
 ## Correctifs {#bug-fixes}
 
-* À l&#39;occasion, le pipeline CI/CD (déploiement) a échoué lors d&#39;une étape d&#39;essai de performances en raison d&#39;un conteneur exécutant le test de charge qui a rencontré une erreur.
+* Parfois, le pipeline CI/CD (déploiement) échouait lors d’une étape de test des performances en raison d’un conteneur exécutant le test de chargement qui entraînait une erreur.
 
-* Le conteneur de test de charge peut parfois signaler l’échec de l’exécution, même si une seule exception se produit. L&#39;échec ne sera signalé que si le processus de test ne peut pas être restauré.
+* Parfois, le conteneur de test de chargement peut signaler l’exécution comme ayant échoué, même si une seule exception se produit. L’échec ne sera signalé que si le processus de test ne peut pas être restauré.
 
-* Certaines discordances de casse entre la façon dont les noms d&#39;environnement étaient stockés conduiraient à des échecs de test des performances.
+* Certaines incohérences de casse entre la manière dont les noms d’environnement étaient stockés entraînaient des échecs de test de performances.
 
 * Certains échecs de pipeline étaient incorrectement signalés comme des erreurs de pipeline.
