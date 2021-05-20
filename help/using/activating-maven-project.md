@@ -5,10 +5,10 @@ description: En savoir plus sur la gestion des versions du projet Maven.
 seo-description: Suivez cette page pour en savoir plus sur la gestion des versions du projet Maven..
 feature: Prise en main
 exl-id: a1d676e0-27cc-4b0d-8799-527c0520946a
-source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
+source-git-commit: aa2d7cb3d0fa3d6038d364659ce8d5eacb6825c5
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 100%
+source-wordcount: '276'
+ht-degree: 92%
 
 ---
 
@@ -21,6 +21,9 @@ Pour les déploiements dans l’environnement intermédiaire et dans l’environ
 Cette version est affichée sur la page des détails d’exécution du pipeline, ainsi que sur la page d’activité. Lorsqu’une génération est exécutée, le projet Maven est mis à jour pour utiliser cette version et une balise est créée dans le référentiel Git avec cette version comme nom.
 
 Si la version originale du projet répond à certains critères, la version mise à jour du projet Maven fusionne la version originale du projet et la version générée par Cloud Manager. Toutefois, la balise utilise toujours la version générée. Pour que cette fusion se produise, la version originale du projet doit être formée avec exactement trois segments de version, par exemple 1.0.0 ou 1.2.3, mais pas 1.0 ou 1, et la version originale ne doit pas se terminer par -SNAPSHOT.
+
+>[!NOTE]
+>Cette valeur de version de projet d’origine doit être définie de manière statique dans l’élément `<version>` du fichier `pom.xml` de niveau supérieur dans la branche du référentiel git.
 
 Si la version d’origine ne répond pas à ces critères, la version générée sera ajoutée à la version d’origine en tant que segment de nouvelle version. La version générée sera également légèrement modifiée pour inclure un tri et une gestion corrects des versions. Par exemple, en supposant une version générée de 2019.926.121356.0000020490 :
 
