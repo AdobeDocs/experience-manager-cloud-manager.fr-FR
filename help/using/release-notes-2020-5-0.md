@@ -3,9 +3,9 @@ title: Notes de mise à jour de la version 2020.5.0
 seo-title: Notes de mise à jour de la version 2020.5.0 d’AEM Cloud Manager
 description: Consultez cette page pour obtenir des informations sur la version 2020.5.0 de Cloud Manager
 seo-description: Consultez cette page pour obtenir des informations sur la version 2020.5.0 d’AEM Cloud Manager
-feature: Release Information
-translation-type: tm+mt
-source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
+feature: Informations sur la version
+exl-id: f8a80419-e480-450a-8768-6d9ab690a425
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 100%
@@ -41,4 +41,3 @@ La date de publication de la version 2020.5.0 de [!UICONTROL Cloud Manager] est
 * Certaines cartes de la page d’aperçu n’affichaient pas correctement les noms d’entité.
 
 * Certaines configurations de topologie provoquaient une erreur lors de l’étape de test des performances, plutôt que de signaler les mesures manquantes.
-
