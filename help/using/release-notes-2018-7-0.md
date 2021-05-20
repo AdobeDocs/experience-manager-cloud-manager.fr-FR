@@ -1,22 +1,21 @@
 ---
 title: Notes de mise à jour de la version 2018.7.0
 seo-title: Notes de mise à jour de la version 2018.7.0
-description: En savoir plus sur Cloud Manager version 2018.7.0
+description: En savoir plus sur la version 2018.7.0 de Cloud Manager
 seo-description: Consultez cette page pour obtenir des informations sur la version 2018.7.0 de Cloud Manager.
 uuid: d7b49e32-01dc-48ce-b744-e6a806fbdd8a
 contentOwner: jsyal
 topic-tags: release-notes
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: b64bf9ab-27ed-4f33-adc8-d73d34094f1b
-feature: Release Information
-translation-type: tm+mt
-source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
+feature: Informations sur la version
+exl-id: fc0214b4-d138-470a-9b04-191224927f7b
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 98%
 
 ---
-
 
 # Notes de mise à jour de la version 2018.7.0 {#release-notes-for}
 
@@ -50,4 +49,3 @@ La date de publication de la mise à jour 2018.7.0 de [!UICONTROL Cloud Manager
 
 * Bien que les clients puissent sélectionner le déclencheur de validation, il se peut que le pipeline ne démarre pas lors de nouvelles validations.
 * La barre latérale de notification [!UICONTROL Experience Cloud] peut ne pas charger les notifications de manière cohérente. Toutefois, les notifications sont visibles dans [!UICONTROL Experience Cloud] et, si elles sont configurées, elles sont toujours envoyées par e-mail.
-
