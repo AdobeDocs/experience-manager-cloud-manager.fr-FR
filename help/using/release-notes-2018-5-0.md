@@ -8,15 +8,14 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 6d1e7098-b56e-4172-8373-486f186f3d53
-feature: Release Information
-translation-type: tm+mt
-source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
+feature: Informations sur la version
+exl-id: 0034bcaf-00d3-410d-b2f6-a2a232888a2b
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 100%
 
 ---
-
 
 # Notes de mise à jour pour la version 2018.5.0 {#release-notes-for}
 
@@ -46,4 +45,3 @@ La date de publication de la mise à jour 2018.5.0 de [!UICONTROL Cloud Manager
 ## Problèmes connus {#known-issues}
 
 * Les liens vers **AEM** et **Surveillance** de l’écran Liste des programmes remplacent l’onglet actuel du navigateur et s’ouvrent dans un nouvel onglet.
-
