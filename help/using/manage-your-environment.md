@@ -1,7 +1,7 @@
 ---
 title: Gestion des environnements
 seo-title: Gestion des environnements
-description: En savoir plus sur l’environnement de Cloud Manager
+description: En savoir plus sur l’environnement Cloud Manager
 seo-description: Consultez cette page pour afficher la liste des environnements de production et des environnements hors production utilisés pour configurer et exécuter le pipeline CI/CD dans Cloud Manager.
 uuid: 04e67572-11db-4d5d-acf3-fd7f644a95f0
 contentOwner: jsyal
@@ -20,7 +20,7 @@ ht-degree: 92%
 # Gestion des environnements {#manage-your-environments}
 
 >[!NOTE]
->Pour en savoir plus sur la gestion des environnements pour Cloud Manager en tant que Cloud Service, voir [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=fr#using-cloud-manager).
+>Pour en savoir plus sur la gestion des environnements pour Cloud Manager dans AEM as a Cloud Service, voir [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=fr#using-cloud-manager).
 
 La page **Aperçu** de Cloud Manager comprend la vignette **Environnements** qui répertorie tous les environnements AEM gérés.
 
