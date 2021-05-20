@@ -1,10 +1,9 @@
 ---
 title: Notes de mise à jour de la version 2021.3.0
 description: Consultez cette page pour obtenir des informations sur la version 2021.3.0 de Cloud Manager
-feature: Release Information
-exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea,e05b22fe-f071-4b69-9db1-e3d7ee4cfbcc
-translation-type: tm+mt
-source-git-commit: 9c3e748f8aed969af861b505ee336eb5501d826f
+feature: Informations sur la version
+exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
+source-git-commit: 503d9b25855633737c49e3e278a3a76052ed84d1
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 18%
@@ -22,20 +21,20 @@ La prochaine version est prévue pour le 8 avril 2021.
 
 ## Nouveautés {#whats-new}
 
-* Un nouvel outil de qualité du code [Outil d&#39;optimisation du répartiteur](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/custom-code-quality-rules.html?lang=en#dispatcher-optimization-tool-rules) a été introduit pour valider la configuration du répartiteur client.
+* Un nouvel outil de qualité du code [Outil d’optimisation du Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/custom-code-quality-rules.html?lang=en#dispatcher-optimization-tool-rules) a été introduit pour valider la configuration du Dispatcher client.
 
-* Les utilisateurs peuvent désormais voir leur ou leurs rôles Cloud Manager en sélectionnant l&#39;option **Rôle(s) de Vue Cloud Manager** après avoir accédé à l&#39;icône Profil utilisateur (en haut à droite) de l&#39;environnement de travail unifié.
+* Les utilisateurs peuvent désormais voir leur ou leurs rôles Cloud Manager en sélectionnant l’option **Afficher le ou les rôles Cloud Manager** après avoir accédé à l’icône Profil utilisateur (en haut à droite) de Shell unifié.
 
-* Pour plus de clarté, l&#39;étiquette **Demande d&#39;approbation** a été réétiquetée à **Approbation de production**.
+* Le libellé **Demande d’approbation** a été renommé **Approbation de production** pour plus de clarté.
 
-* Le libellé **Version** a été réétiqueté en **Balise Git** dans l&#39;écran d&#39;exécution du pipeline de production.
+* Le libellé **Version** a été renommé **Balise Git** dans l’écran d’exécution du pipeline de production.
 
-* Les étiquettes qui définissent le comportement lorsque des mesures importantes ne respectent pas le seuil défini ont été réétiquetées afin de refléter leur comportement réel : **Annuler immédiatement** et **Approuver immédiatement**. Voir [Configuration des paramètres du pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#configuring-the-pipeline-settings-from-cloud-manager) pour plus de détails.
+* Les étiquettes qui définissent le comportement lorsque des mesures importantes ne correspondent pas au seuil défini ont été réétiquetées afin de refléter leur comportement réel : **Annuler immédiatement** et **Approuver immédiatement**. Pour plus d’informations, voir [Configuration des paramètres du pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#configuring-the-pipeline-settings-from-cloud-manager) .
 
-* Les listes de classe et de méthode d’obsolescence ont été mises à jour en fonction de la version `2021.3.4997.20210303T022849Z-210225` du SDK Cloud Service AEM.
+* Les listes d’obsolescence des classes et des méthodes ont été mises à jour en fonction de la version `2021.3.4997.20210303T022849Z-210225` du SDK Cloud Service AEM.
 
 ## Correctifs {#bug-fixes}
 
-* Certains problèmes de qualité n&#39;ont pas été correctement détectés lorsque des paquets étaient incorporés dans d&#39;autres paquets.
+* Certains problèmes de qualité n’ont pas été correctement découverts lorsque des modules étaient incorporés dans d’autres modules.
 
-* Parfois, si l’utilisateur quitte la page d’exécution du pipeline immédiatement après le démarrage d’un pipeline, un message d’erreur s’affiche indiquant que l’action a échoué, bien que l’exécution ait effectivement début.
+* Parfois, si l’utilisateur quitte la page d’exécution du pipeline immédiatement après le démarrage d’un pipeline, un message d’erreur s’affiche indiquant que l’action a échoué, bien que l’exécution ait réellement commencé.
