@@ -11,10 +11,10 @@ discoiquuid: b702dfc0-3534-4d90-af19-8559d8baf6a6
 feature: Prise en main
 level: Beginner
 exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
-source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
+source-git-commit: f9b33de0f1f2203175f66f261c8ee553f47e0c3b
 workflow-type: tm+mt
 source-wordcount: '349'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -40,7 +40,7 @@ Par exemple, *We.Retail*.
 
 **Pipeline** Ensemble d’étapes de déploiement exécutées les unes après les autres.
 
-**Produit** Ensemble spécifique de fonctionnalités au sein d’une solution mise sous licence par une organisation. Les différents programmes au sein d’une même organisation peuvent être associés à différents ensembles de produits. Par exemple, Sites, Ressources de Formulaires.
+**Produit** Ensemble spécifique de fonctionnalités au sein d’une solution mise sous licence par une organisation. Les différents programmes au sein d’une même organisation peuvent être associés à différents ensembles de produits. Par exemple, Sites, Ressources ou Forms.
 
 **Programme** Ensemble d’environnements qui prennent en charge un regroupement logique d’initiatives client, correspondant en règle générale à un accord de niveau de service (SLA) acheté. Chaque programme comprend un environnement de production précis et peut intégrer un grand nombre d’environnements hors production.
 
