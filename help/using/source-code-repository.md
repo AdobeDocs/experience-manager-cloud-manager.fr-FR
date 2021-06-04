@@ -12,8 +12,8 @@ feature: Configuration
 exl-id: af551e33-3623-4fcd-8d25-4362d8871411
 source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 96%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -35,4 +35,4 @@ Dans certains cas, vous disposez déjà d’un référentiel git et souhaitez co
 
 >[!NOTE]
 >
->Pour afficher les commandes Git courantes, consultez la [Aide-mémoire Git](https://education.github.com/git-cheat-sheet-education.pdf).
+>Pour afficher les commandes Git courantes, consultez l’[Aide-mémoire Git](https://education.github.com/git-cheat-sheet-education.pdf).
