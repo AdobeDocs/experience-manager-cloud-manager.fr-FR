@@ -5,8 +5,8 @@ feature: Prise en main
 exl-id: 9d7c6f4c-9379-471c-8dad-772a7099da54
 source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,7 @@ Suivez les étapes ci-dessous pour créer un projet d’application AEM dans Clo
 
    * **Titre** : par défaut, cette valeur est définie sur le *nom du programme*.
 
-   * **Nouveau nom de branche** : par défaut, il s’agit d’un *gabarit*.
+   * **Nouveau nom de la branche** : par défaut, il s’agit d’un *gabarit*.
 
    ![](assets/screen_shot_2018-10-08at55825am.png)
 
