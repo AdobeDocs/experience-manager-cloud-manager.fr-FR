@@ -1,7 +1,7 @@
 ---
 title: Ajout d’utilisateurs et de rôles
 seo-title: Ajout d’utilisateurs et de rôles
-description: En savoir plus sur les utilisateurs et les rôles et comment utiliser Admin Console pour créer un profil
+description: Découvrez les utilisateurs et les rôles, et apprenez à utiliser Admin Console pour créer un profil
 seo-description: Vous pouvez affecter des rôles spécifiques en ajoutant un utilisateur à un profil de produit Cloud Manager dans Admin Console. Pour en savoir plus, consultez cette section.
 uuid: fa204c28-83df-48bb-8360-e158f080dee7
 contentOwner: jsyal
@@ -12,8 +12,8 @@ feature: Rôles utilisateur
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
 source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
