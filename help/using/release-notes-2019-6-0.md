@@ -7,8 +7,8 @@ feature: Informations sur la version
 exl-id: 5a87f191-8203-4cb9-a810-247aece41605
 source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +24,7 @@ La date de publication de la version 2019.6.0 de [!UICONTROL Cloud Manager] es
 
 * Nouvel assistant de mise à jour du produit pour permettre aux clients d’exécuter une mise à jour d’AEM. Pour en savoir plus, consultez [Assistant de mise à jour du produit](overview-productupdate-wizard.md).
 * Règles de qualité du code examinant les structures de contenu. Pour plus d’informations, consultez [Règles de qualité du code personnalisé](custom-code-quality-rules.md).
-* La taille maximale d&#39;un push git a été augmentée à 1 Go.
+* La taille maximale d’un push git a été augmentée à 1 Go.
 
 ## Correctifs {#bug-fixes}
 
