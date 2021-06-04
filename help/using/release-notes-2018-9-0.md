@@ -12,8 +12,8 @@ feature: Informations sur la version
 exl-id: bf611743-ded2-4503-97c8-12b12454c7b7
 source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ La date de publication de la mise à jour 2018.9.0 de [!UICONTROL Cloud Manager
 ## Correctifs {#bug-fixes}
 
 * Dans la version 2018.8.0 de [!UICONTROL Cloud Manager], les durées de la page Activité étaient répertoriées en minutes et en heures, mais ces informations n’étaient pas répercutées dans l’en-tête du tableau.
-* En de rares occasions, les clients ne pouvaient pas démarrer l’assistant de nouveau projet d&#39;application.
+* En de rares occasions, les clients ne pouvaient pas démarrer l’assistant de nouveau projet d’application.
 * L’étiquette du bouton dans la boîte de dialogue de l’assistant de nouveau projet d’application induisait en erreur.
 * Dans certains cas, cliquer sur le bouton Détails de la page Activité redirigeait vers la page Aperçu.
 * Certaines circonstances rares et inattendues entraînaient l’absence d’une carte sur la page Aperçu.
