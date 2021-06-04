@@ -13,15 +13,15 @@ feature: Pipeline CI-CD
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 source-git-commit: 83fcc49c7e3e3742930a7179b27f899bff3c4ae1
 workflow-type: tm+mt
-source-wordcount: '1292'
-ht-degree: 95%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Configuration de votre pipeline CI/CD {#configure-your-ci-cd-pipeline}
 
 >[!NOTE]
->Pour savoir comment configurer le pipeline CI/CD pour Cloud Manager dans AEM en tant que Cloud Service, voir [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=fr#using-cloud-manager).
+>Pour savoir comment configurer le pipeline CI/CD pour Cloud Manager dans AEM as a Cloud Service, consultez [ce lien](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=fr#using-cloud-manager).
 
 La page suivante explique comment configurer le **pipeline**. Pour consulter d’autres informations conceptuelles sur le fonctionnement du pipeline, voir la section [Présentation du pipeline CI/CD](ci-cd-pipeline.md).
 
@@ -88,8 +88,8 @@ Sélectionnez votre branche Git et cliquez **Suivant**.
    Cela s’avère utile pour les clients qui souhaitent davantage de processus automatisés. Les options disponibles sont les suivantes :
 
 * **Demander à chaque fois** : il s’agit du paramètre par défaut, qui nécessite une intervention manuelle lors de n’importe quel échec important.
-* **Annuler immédiatement**  : si cette option est sélectionnée, le pipeline est annulé chaque fois qu’un échec important se produit. Cette option émule essentiellement un utilisateur rejetant manuellement chaque échec.
-* **Approuver immédiatement**  : si cette option est sélectionnée, le pipeline se poursuit automatiquement chaque fois qu’un échec important se produit. Cette option émule essentiellement la validation manuelle de l’utilisateur à chaque échec.
+* **Annuler immédiatement** : si cette option est sélectionnée, le pipeline sera annulé chaque fois qu’un échec important se produira. Cette option émule essentiellement un utilisateur rejetant manuellement chaque échec.
+* **Approuver immédiatement** : si cette option est sélectionnée, le pipeline se poursuit automatiquement chaque fois qu’un échec important se produit. Cette option émule essentiellement la validation manuelle de l’utilisateur à chaque échec.
 
    Définissez maintenant les paramètres contrôlant le déploiement en production. Les trois options disponibles sont les suivantes :
 
@@ -157,7 +157,7 @@ Pour configurer les invalidations du Dispatcher, procédez comme suit :
 
 1. Accédez à l’onglet **Tests** pour définir les critères de test du programme. Vous pouvez maintenant configurer les paramètres de test de performance.
 
-   Vous pouvez configurer des tests de performance *AEM Sites* et *AEM Assets*, selon les produits sous licence que vous possédez. Pour plus d’informations, voir [Test de performance](understand-your-test-results.md#performance-testing) .
+   Vous pouvez configurer des tests de performance *AEM Sites* et *AEM Assets*, selon les produits sous licence que vous possédez. Pour plus d’informations, consultez [Tests de performances](understand-your-test-results.md#performance-testing).
 
 1. Cliquez sur **Enregistrer** pour terminer la configuration du processus de pipeline.
 
