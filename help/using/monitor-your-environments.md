@@ -1,14 +1,14 @@
 ---
 title: Surveillance des environnements
 seo-title: Surveillance des environnements
-description: Découvrez comment surveiller vos environnements dans Cloud Manager
+description: Découvrez comment surveiller vos environnements dans Cloud Manager
 seo-description: Consultez cette page pour en savoir plus sur la surveillance du système dans Cloud Manager, en observant les instances dans un environnement et en suivant diverses mesures pour chaque instance.
 feature: Environnements
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
 source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
-source-wordcount: '973'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -126,9 +126,9 @@ La section Analyse des événements, située sous ce graphique, affiche l’ense
 
 * **Contrat SLA d’auteur AMS** : il s’agit de la période de disponibilité mesurée du niveau auteur de production comptabilisant les incidents causés par Adobe ou par nos fournisseurs.
 
-* **Contrat SLA d’auteur** : il s’agit de la période de disponibilité mesurée du niveau auteur ignorant le temps d&#39;arrêt planifié, tel que les fenêtres de maintenance.
+* **Contrat SLA d’auteur** : il s’agit de la période de disponibilité mesurée du niveau auteur ignorant le temps d’arrêt planifié, tel que les fenêtres de maintenance.
 
-* **Contrat utilisateur final** : il s&#39;agit du contrat SLA défini dans votre contrat avec Adobe Managed Services pour le niveau publication.
+* **Contrat utilisateur final** : il s’agit du contrat SLA défini dans votre contrat avec Adobe Managed Services pour le niveau publication.
 
 * **Contrat SLA utilisateur final AMS** : il s’agit de la période de disponibilité mesurée du niveau publication de production comptabilisant les incidents causés par Adobe ou par nos fournisseurs.
 
