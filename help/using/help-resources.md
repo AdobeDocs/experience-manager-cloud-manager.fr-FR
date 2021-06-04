@@ -12,8 +12,8 @@ feature: Prise en main
 exl-id: 6a4573a6-d9f0-41bc-8ce2-289ba9cc9f47
 source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
-source-wordcount: '105'
-ht-degree: 71%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -21,4 +21,4 @@ ht-degree: 71%
 
 Vous devriez d’abord contacter l’[!UICONTROL ingénieur du service client Adobe Managed Services] pour toute assistance sur [!UICONTROL Cloud Manager]. Votre ingénieur du service client vous informera s’il peut vous aider à résoudre votre problème ou si vous devez créer un ticket d’assistance auprès du service clientèle.
 
-Vous pouvez accéder à [Enterprise Support](https://helpx.adobe.com/fr/contact/enterprise-support.ec.html) pour créer des tickets d’assistance. Voir [Accès au portail d’assistance AEM](https://help.adobe.com/experience-manager/kb/accessing-aem-support-portal.html) pour plus d’informations sur la création de tickets d’assistance auprès de l’assistance clientèle.
+Vous pouvez accéder à l’[Assistance Grands comptes](https://helpx.adobe.com/fr/contact/enterprise-support.ec.html) pour créer des tickets d’assistance. Pour plus d’informations sur la création de tickets d’assistance auprès du service clientèle, reportez-vous à la section [Accès au Portail d’Assistance AEM](https://help.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
