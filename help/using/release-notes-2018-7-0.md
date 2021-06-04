@@ -1,7 +1,7 @@
 ---
 title: Notes de mise à jour de la version 2018.7.0
 seo-title: Notes de mise à jour de la version 2018.7.0
-description: En savoir plus sur la version 2018.7.0 de Cloud Manager
+description: En savoir plus sur la mise à jour 2018.7.0 de Cloud Manager
 seo-description: Consultez cette page pour obtenir des informations sur la version 2018.7.0 de Cloud Manager.
 uuid: d7b49e32-01dc-48ce-b744-e6a806fbdd8a
 contentOwner: jsyal
@@ -12,8 +12,8 @@ feature: Informations sur la version
 exl-id: fc0214b4-d138-470a-9b04-191224927f7b
 source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +35,7 @@ La date de publication de la mise à jour 2018.7.0 de [!UICONTROL Cloud Manager
 
 * **Analyse de la qualité du code** : nouvelle règle pour identifier une utilisation incorrecte de l’API. Pour en savoir plus, consultez la section [Règles de qualité du code personnalisé](custom-code-quality-rules.md).
 
-* **Tests de performance** : en consultant les résultats des tests de performance, les graphiques suivants sont disponibles : Utilisation de l’UC, Délai d’attente d’E/S de disque, Taux d’erreur de page, Utilisation de la bande passante de disque, Utilisation de la bande passante réseau, Délai de réponse de page max. et Délai de réponse de page du 95e percentile. Reportez-vous à la section *Test de performance* de la page [ Présentation des résultats des tests](understand-your-test-results.md).
+* **Tests de performance** : en consultant les résultats des tests de performance, les graphiques suivants sont disponibles : Utilisation de l’UC, Délai d’attente d’E/S de disque, Taux d’erreur de page, Utilisation de la bande passante de disque, Utilisation de la bande passante réseau, Délai de réponse de page max. et Délai de réponse de page du 95e percentile. Reportez-vous à la section *Test de performance* de la page [Présentation des résultats des tests](understand-your-test-results.md).
 
 * **Tests de performance** : lors de la consultation des résultats des tests de performance, la liste des erreurs de page et des demandes lentes peut être téléchargée. Reportez-vous à la section *Test de performance* de la page [Présentation des résultats des tests](understand-your-test-results.md).
 
