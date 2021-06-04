@@ -9,8 +9,8 @@ feature: Rôles utilisateur
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
 source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
