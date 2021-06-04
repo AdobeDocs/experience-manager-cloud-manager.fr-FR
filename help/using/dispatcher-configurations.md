@@ -1,7 +1,7 @@
 ---
 title: Gestion des configurations du Dispatcher
 seo-title: Gestion des configurations du Dispatcher
-description: Découvrez comment déployer des fichiers de configuration du Dispatcher à l’aide de Cloud Manager
+description: Découvrez comment déployer les fichiers de configuration du Dispatcher à l’aide de Cloud Manager
 seo-description: Consultez cette page pour en savoir plus sur la configuration du Dispatcher.
 uuid: 3ecd8ca3-5241-4811-87fd-3284a8012eda
 contentOwner: jsyal
@@ -12,8 +12,8 @@ feature: Dispatcher
 exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
 source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
