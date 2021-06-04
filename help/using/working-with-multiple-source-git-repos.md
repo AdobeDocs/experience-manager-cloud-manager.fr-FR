@@ -5,8 +5,8 @@ feature: Référentiels Git
 exl-id: 53bf78bb-489a-4a83-8459-c361f532d54a
 source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 99%
 
 ## Synchronisation des référentiels Git gérés par le client {#syncing-customer-managed-git-repositories}
 
-Au lieu de travailler directement avec le référentiel Git de Cloud Manager, les clients peuvent travailler avec un ou plusieurs référentiels Git qu’ils détiennent. Dans ce cas, un processus de synchronisation automatique doit être configuré pour s’assurer que le référentiel Git de Cloud Manager soit toujours à jour. Selon l’emplacement d’hébergement du référentiel Git du client, il est possible d’utiliser une action GitHub ou une solution d’intégration continue comme Jenkins pour configurer l’automatisation. Si une automatisation a été mise en place, il est possible de transférer automatiquement vers le référentiel Git de Cloud Manager les transmissions destinées à un référentiel Git détenu par le client. 
+Au lieu de travailler directement avec le référentiel Git de Cloud Manager, les clients peuvent travailler avec un ou plusieurs référentiels Git qu’ils détiennent. Dans ce cas, un processus de synchronisation automatique doit être configuré pour s’assurer que le référentiel Git de Cloud Manager soit toujours à jour. Selon l’emplacement d’hébergement du référentiel Git du client, il est possible d’utiliser une action GitHub ou une solution d’intégration continue comme Jenkins pour configurer l’automatisation. Si une automatisation a été mise en place, il est possible de transférer automatiquement vers le référentiel Git de Cloud Manager les transmissions destinées à un référentiel Git détenu par le client.
 
-Bien que cette automatisation d’un seul référentiel Git détenu par le client soit simple, la configuration de ce processus pour plusieurs référentiels nécessite une configuration initiale. Le contenu des référentiels Git doit être mappé avec différents répertoires dans le référentiel Git unique de Cloud Manager. Ce référentiel doit être mis en service avec un modèle pom Maven racine qui répertorie les différents sous-projets dans la section des modules.
+Bien que cette automatisation d’un seul référentiel Git détenu par le client soit simple, la configuration de ce processus pour plusieurs référentiels nécessite une configuration initiale. Le contenu des référentiels Git doit être mappé avec différents répertoires dans le référentiel Git unique de Cloud Manager.  Ce référentiel doit être mis en service avec un modèle pom Maven racine qui répertorie les différents sous-projets dans la section des modules.
 
 Vous trouverez ci-dessous un exemple de modèle pom pour deux référentiels Git détenus par le client : le premier projet sera placé dans le répertoire `project-a`, le second dans le répertoire `project-b`.
 
