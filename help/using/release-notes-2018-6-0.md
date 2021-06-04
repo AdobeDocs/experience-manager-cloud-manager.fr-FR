@@ -12,8 +12,8 @@ feature: Informations sur la version
 exl-id: 456f7892-c64c-4b3f-b845-15682d034aaa
 source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
