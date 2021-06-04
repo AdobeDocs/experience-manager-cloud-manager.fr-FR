@@ -3,15 +3,15 @@ product: adobe experience manager
 sub-product: experience manager cloud manager
 archetype: administrator
 user-guide-title: Guide d’Experience Manager Cloud Manager
-breadcrumb-title: Guide de Cloud Manager pour AEM 6.x
+breadcrumb-title: Guide de Cloud Manager pour AEM 6.x
 user-guide-description: Apprenez à utiliser les Managed Services d’Adobe pour gérer de manière autonome Experience Manager en mode cloud.
 feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Administrator
 level: Intermediate
 source-git-commit: 9cca6fd7d4ef3351fa024bac0f95f5592105dbae
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 96%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 96%
    + [Pipeline CI/CD](ci-cd-pipeline.md)
    + [Sécurité et confidentialité](security-and-privacy.md)
    + [Ressources d’aide](help-resources.md)
-   + [FAQ sur Cloud Manager](cloud-manager-faqs.md)
+   + [FAQ sur Cloud Manager](cloud-manager-faqs.md)
 + Éléments requis {#requirements}
    + [Droits d’accès accordés](access-rights-granted.md)
    + [Référentiel de code source](source-code-repository.md)
@@ -44,7 +44,7 @@ ht-degree: 96%
 + Utilisation {#how-to-use}
    + [Configuration de votre pipeline CI/CD](configuring-pipeline.md)
    + [Déploiement de votre code](deploying-code.md)
-   + [Présentation des résultats de tests](understand-your-test-results.md)
+   + [Présentation des résultats des tests](understand-your-test-results.md)
    + [Gestion des environnements](manage-your-environment.md)
    + [Surveillance des environnements](monitor-your-environments.md)
    + [API Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
@@ -92,4 +92,4 @@ ht-degree: 96%
    + [Notes de mise à jour de la version 2018.8.0](release-notes-2018-8-0.md)
    + [Notes de mise à jour de la version 2018.7.0](release-notes-2018-7-0.md)
    + [Notes de mise à jour de la version 2018.6.0](release-notes-2018-6-0.md)
-   + [Notes de mise à jour pour la version 2018.5.0](release-notes-2018-5-0.md)
+   + [Notes de mise à jour de la version 2018.5.0](release-notes-2018-5-0.md)
