@@ -1,7 +1,7 @@
 ---
 title: Gestion des environnements
 seo-title: Gestion des environnements
-description: En savoir plus sur l’environnement Cloud Manager
+description: En savoir plus sur l’environnement Cloud Manager
 seo-description: Consultez cette page pour afficher la liste des environnements de production et des environnements hors production utilisés pour configurer et exécuter le pipeline CI/CD dans Cloud Manager.
 uuid: 04e67572-11db-4d5d-acf3-fd7f644a95f0
 contentOwner: jsyal
@@ -12,15 +12,15 @@ feature: Environnements
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
 source-git-commit: df2f598f91201d362f54b17e4092ff6bd6a72cec
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 92%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Gestion des environnements {#manage-your-environments}
 
 >[!NOTE]
->Pour en savoir plus sur la gestion des environnements pour Cloud Manager dans AEM as a Cloud Service, voir [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=fr#using-cloud-manager).
+>Pour en savoir plus sur la gestion des environnements pour Cloud Manager dans AEM as a Cloud Service, consultez [ce lien](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=fr#using-cloud-manager).
 
 La page **Aperçu** de Cloud Manager comprend la vignette **Environnements** qui répertorie tous les environnements AEM gérés.
 
@@ -32,8 +32,7 @@ Chacun des environnements répertoriés affiche l’état associé.
 
 ### Présentation de l’environnement de Cloud Manager {#environ-video}
 
-La vidéo suivante présente un aperçu des environnements Cloud Manager composés d’instances AEM Author, AEM Publish et Dispatcher
-
+La vidéo suivante présente un aperçu des environnements Cloud Manager composés d’instances AEM Author, AEM Publish et Dispatcher.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26318/)
 
