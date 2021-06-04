@@ -5,8 +5,8 @@ feature: Environnements
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
 source-git-commit: 0a5556729e64c9e8736d13b357db001dd57bc03a
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 93%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -33,15 +33,15 @@ Cloud Manager crée et teste votre code à l’aide d’un environnement de cré
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 
-* Maven est configuré au niveau du système avec un fichier settings.xml qui inclut automatiquement le référentiel **Artifact** de l’Adobe public à l’aide d’un profil nommé `adobe-public`.
-Pour plus d’informations, consultez le [référentiel Maven public d’Adobe.](https://repo.adobe.com/)
+* Maven est configuré au niveau du système grâce à un fichier settings.xml qui inclut automatiquement le référentiel public Adobe **Artifact** à l’aide d’un profil nommé `adobe-public`.
+Pour plus d’informations, consultez le [référentiel Maven public d’Adobe](https://repo.adobe.com/).
 
 >[!NOTE]
 >Bien que Cloud Manager ne définisse pas de version spécifique du `jacoco-maven-plugin`, la version utilisée doit être au moins `0.7.5.201505241946`.
 
 
 >[!NOTE]
->Reportez-vous aux ressources supplémentaires suivantes pour savoir comment utiliser les API de Cloud Manager :
+>Consultez les ressources supplémentaires suivantes pour savoir comment utiliser les API de Cloud Manager :
 > * [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 >* [Création d’une intégration d’API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md)
 >* [Autorisations d’API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/permissions.md)
