@@ -12,8 +12,8 @@ feature: Référentiels Git
 exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
 source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -55,7 +55,7 @@ $ git commit -m "initial commit"
 
 >[!NOTE]
 >
->Il n’est pas nécessaire d’utiliser le client de la ligne de commande. Il existe divers clients graphiques Git disponibles en tant qu’applications autonomes ou composants d’un IDE (environnement de développement intégré, par exemple), tel qu’Eclipse ou intelliJ. Tant que l’application cliente prend en charge Git avec HTTPS, elle doit être compatible avec [!UICONTROL Cloud Manager].
+>Il n’est pas nécessaire d’utiliser le client de la ligne de commande. Il existe divers clients graphiques Git disponibles en tant qu’applications autonomes ou composants d’un IDE (environnement de développement intégré, par exemple), tel qu’Eclipse ou IntelliJ. Tant que l’application cliente prend en charge Git avec HTTPS, elle doit être compatible avec [!UICONTROL Cloud Manager].
 
 ## Création de la première branche {#pushing-your-first-branch}
 
@@ -83,4 +83,4 @@ Une branche `master` unique peut suffire pour des projets très simples, mais da
 
 >[!NOTE]
 >
->Pour afficher les commandes git courantes, consultez la [Aide-mémoire Git](https://github.github.com/training-kit/downloads/github-git-cheat-sheet).
+>Pour afficher les commandes Git courantes, consultez l’[Aide-mémoire Git](https://github.github.com/training-kit/downloads/github-git-cheat-sheet).
