@@ -7,8 +7,8 @@ feature: Informations sur la version
 exl-id: e7198efa-4a73-42e5-bb17-8dea255e056e
 source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
-source-wordcount: '405'
-ht-degree: 96%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -26,8 +26,8 @@ La date de publication de la mise à jour de [!UICONTROL Cloud Manager] 2019.2.
 * Nouvelle fonctionnalité de surveillance système. Pour en savoir plus, consultez [Surveillance de vos environnements](monitor-your-environments.md).
 * Le module de dispatcher dans les projets générés par l’assistant contient désormais un fichier Lisez-moi.
 * L’ordre de tri des problèmes d’analyse du code a été amélioré afin de correspondre à la priorité du problème.
-* Les instances intermédiaires sont maintenant toujours restaurées à l&#39;équilibreur de charge, même dans le cas d’un échec de déploiement.
-* Un nouveau rôle de développeur API est disponible dans Admin Console, ce qui permet à des utilisateurs spécifiques d’obtenir l’autorisation de créer des intégrations dans la console Adobe I/O. Pour en savoir plus, voir [Gestion des développeurs](https://www.adobe.com/go/aac_api_prod_learn) .
+* Les instances intermédiaires sont maintenant toujours restaurées à l’équilibreur de charge, même dans le cas d’un échec de déploiement.
+* Un nouveau rôle de développeur API est disponible dans Admin Console, ce qui permet à des utilisateurs spécifiques d’obtenir l’autorisation de créer des intégrations dans la console Adobe I/O. Consultez [Gestion des développeurs](https://www.adobe.com/go/aac_api_prod_learn_fr) pour en savoir plus.
 * La version de Maven Archetype a été mise à jour vers la version 16.
 * La version de Maven a été mise à jour vers la version 3.6.0.
 
@@ -43,7 +43,7 @@ La date de publication de la mise à jour de [!UICONTROL Cloud Manager] 2019.2.
 * Le lien En savoir plus sur la carte Pipelines hors production redirigeait à un endroit incorrect.
 * Lorsqu’un point de contrôle qualité était remplacé, l’état s’affichait de manière incohérente.
 * Les clients qui utilisaient des topologies de secours à froid recevaient des résultats incorrects pour les tests de sécurité.
-* Lors de la création d’un projet à l&#39;aide de l’assistant, il n’était pas possible de créer une branche contenant le caractère « tiret ».
+* Lors de la création d’un projet à l’aide de l’assistant, il n’était pas possible de créer une branche contenant le caractère « tiret ».
 
 ## Problèmes connus {#known-issues}
 
