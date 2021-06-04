@@ -1,8 +1,8 @@
 ---
 title: Déploiement de votre code
 seo-title: Déploiement de votre code
-description: Présentation du processus de déploiement dans Cloud Manager
-seo-description: Découvrez comment déployer votre code une fois que vous avez configuré votre pipeline (référentiel, environnement et environnement de test).
+description: Fournit un aperçu du processus de déploiement dans Cloud Manager.
+seo-description: Découvrez comment déployer votre code une fois que vous avez configuré votre pipeline (référentiel, environnement et environnement de test)
 uuid: 4e3807e1-437e-4922-ba48-0bcadf293a99
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
@@ -12,8 +12,8 @@ feature: Déploiement du code
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
 source-git-commit: df2f598f91201d362f54b17e4092ff6bd6a72cec
 workflow-type: tm+mt
-source-wordcount: '1020'
-ht-degree: 91%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 91%
 ## Déploiement du code avec Cloud Manager {#deploying-code-with-cloud-manager}
 
 >[!NOTE]
->Pour en savoir plus sur le déploiement du code pour Cloud Manager dans AEM as a Cloud Service, voir [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=fr#using-cloud-manager).
+>Pour en savoir plus sur le déploiement du code pour Cloud Manager dans AEM as a Cloud Service, consultez [ce lien](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=fr#using-cloud-manager).
 
 Une fois que vous avez configuré votre pipeline de production (référentiel, environnement et environnement de test), vous êtes prêt à déployer votre code.
 
@@ -52,15 +52,15 @@ Une fois que vous avez configuré votre pipeline de production (référentiel, e
 
    * Validation : cette étape permet de s’assurer que le pipeline est configuré pour utiliser les ressources actuellement disponibles ; par exemple, la branche configurée existe, les environnements sont disponibles, etc.
    * Test de création et d’unité : cette étape exécute un processus de création en conteneur. Voir [Présentation de l’environnement de création](/help/using/build-environment-details.md) pour plus d’informations sur l’environnement de création.
-   * Analyse du code : cette étape évalue la qualité du code de votre application. Pour plus d’informations sur le processus de test, voir [Comprendre vos résultats de test](understand-your-test-results.md).
+   * Analyse du code : cette étape évalue la qualité du code de votre application. Pour plus d’informations sur le processus de test, voir [Présentation des résultats des tests](understand-your-test-results.md).
    * Déploiement en environnement intermédiaire.
 
    ![](assets/Stage_Deployment1.png)
 
    Le **test dans l’environnement intermédiaire** comprend les étapes suivantes :
 
-   * Tests de sécurité : cette étape évalue l’impact du code de votre application sur la sécurité de l’environnement AEM. Pour plus d’informations sur le processus de test, voir [Comprendre vos résultats de test](understand-your-test-results.md).
-   * Tests de performances : cette étape évalue les performances du code de votre application. Pour plus d’informations sur le processus de test, voir [Comprendre vos résultats de test](understand-your-test-results.md).
+   * Tests de sécurité : cette étape évalue l’impact du code de votre application sur la sécurité de l’environnement AEM. Pour plus d’informations sur le processus de test, voir [Présentation des résultats des tests](understand-your-test-results.md).
+   * Tests de performances : cette étape évalue les performances du code de votre application. Pour plus d’informations sur le processus de test, voir [Présentation des résultats des tests](understand-your-test-results.md).
 
    ![](assets/Stage_Testing1.png)
 
@@ -96,7 +96,7 @@ Une fois que vous avez configuré votre pipeline de production (référentiel, e
 
 ## Délais d’expiration {#timeouts}
 
-Les étapes suivantes expirent si l’utilisateur attend les commentaires :
+Les étapes suivantes expirent s’ils sont en attente de commentaires de l’utilisateur :
 
 | Étape | Délai dépassé |
 |--- |--- |
@@ -111,7 +111,7 @@ Les étapes suivantes expirent si l’utilisateur attend les commentaires :
 
 La section suivante décrit le déploiement des packages AEM et dispatcher dans les phases intermédiaires et de production.
 
-Cloud Manager télécharge tous les fichiers target/*.zip générés par le processus de création vers un emplacement de stockage. Ces artefacts sont récupérés à partir de cet emplacement pendant les phases de déploiement du pipeline.
+Cloud Manager télécharge tous les fichiers target/*.zip générés par le processus de création vers un emplacement de stockage.  Ces artefacts sont récupérés à partir de cet emplacement pendant les phases de déploiement du pipeline.
 
 Lorsque Cloud Manager se déploie sur des topologies autres que de production, l’objectif est de réaliser le déploiement aussi rapidement que possible ; les artefacts sont donc déployés simultanément sur tous les nœuds, comme suit :
 
@@ -138,12 +138,12 @@ Lorsque Cloud Manager se déploie sur des topologies autres que de production, 
 
    1. Les configurations actuelles sont sauvegardées et copiées vers un emplacement temporaire.
    1. Toutes les configurations sont supprimées, à l’exception des fichiers non modifiables. Pour plus d’informations, consultez la section Gestion des configurations du Dispatcher. Cela permet de vider les répertoires pour qu’aucun fichier orphelin ne soit abandonné.
-   1. L’artefact est extrait dans le répertoire `httpd`. Les fichiers non modifiables ne sont pas remplacés. Toute modification apportée aux fichiers non modifiables dans votre référentiel git sera ignorée au moment du déploiement. Ces fichiers sont essentiels à la structure du dispatcher AMS et ne peuvent pas être modifiés.
+   1. L’artefact est extrait dans le répertoire `httpd`.  Les fichiers non modifiables ne sont pas remplacés. Toute modification apportée aux fichiers non modifiables dans votre référentiel git sera ignorée au moment du déploiement.  Ces fichiers sont essentiels à la structure du dispatcher AMS et ne peuvent pas être modifiés.
    1. Apache effectue un test de configuration. Si aucune erreur n’est trouvée, le service est rechargé. Si une erreur se produit, les configurations sont restaurées à partir de la sauvegarde, le service est rechargé et l’erreur est renvoyée à Cloud Manager.
    1. Chaque chemin spécifié dans la configuration de pipeline est invalidé ou purgé du cache du dispatcher.
 
    >[!NOTE]
-   >Cloud Manager exige que l’artefact du dispatcher contienne le jeu de fichiers complet. Tous les fichiers de configuration du dispatcher doivent être présents dans le référentiel git. Les fichiers ou dossiers manquants entraînent l’échec du déploiement.
+   >Cloud Manager exige que l’artefact du dispatcher contienne le jeu de fichiers complet.  Tous les fichiers de configuration du dispatcher doivent être présents dans le référentiel git. Les fichiers ou dossiers manquants entraînent l’échec du déploiement.
 
 1. Après le déploiement réussi de tous les packages AEM et de dispatcher sur tous les nœuds, les dispatchers sont ajoutés à l’équilibreur de charge et le déploiement est terminé.
 
@@ -158,9 +158,9 @@ Les déploiements en production suivent généralement les mêmes étapes que ci
 
 1. Déploiement des packages AEM sur author.
 1. Détachement de dispatcher1 de l’équilibreur de charge.
-1. Déployez AEM packages sur publish1 et le package dispatcher sur dispatcher1 en parallèle, videz le cache du dispatcher.
+1. Déploiement en parallèle des packages AEM sur publish1 et du package dispatcher sur dispatcher1. Purge du cache du Dispatcher.
 1. Replacement du dispatcher1 dans l’équilibreur de charge.
 1. Lorsque dispatcher1 fonctionne à nouveau, détachement de dispatcher2 de l’équilibreur de charge.
-1. Déployez AEM packages sur publish2 et le package dispatcher sur dispatcher2 en parallèle, videz le cache du dispatcher.
+1. Déploiement en parallèle des packages AEM sur publish2 et du package dispatcher sur dispatcher2. Purge du cache du Dispatcher.
 1. Replacement du dispatcher2 dans l’équilibreur de charge.
 Ce processus se poursuit jusqu’à ce que le déploiement ait atteint toutes les instances de publication et tous les Dispatchers dans la topologie.
