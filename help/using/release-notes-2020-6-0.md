@@ -7,8 +7,8 @@ feature: Informations sur la version
 exl-id: 92eda9ea-f916-429e-97e3-be3a1ecef7cb
 source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
