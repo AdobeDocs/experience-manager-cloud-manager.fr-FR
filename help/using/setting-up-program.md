@@ -3,17 +3,12 @@ title: Configuration de votre programme
 seo-title: Configuration de votre programme
 description: Après l’intégration, le propriétaire de l’entreprise devra effectuer une configuration initiale du programme.
 seo-description: 'Après l’intégration, le propriétaire de l’entreprise devra effectuer une configuration initiale d’Adobe AEM Cloud Manager. Il devra notamment établir la description du programme et définir les indicateurs de performance clés qui serviront à tester les performances. '
-uuid: 9ecf8743-1f5a-4744-86af-e2256567642f
-contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: getting-started
-discoiquuid: c2393540-e852-4f7c-aafd-1427209065d2
 feature: Prise en main
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
+source-git-commit: a65c413e9ffa96f950cf1c59771b45ce0f810bc0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '734'
+ht-degree: 86%
 
 ---
 
@@ -24,11 +19,8 @@ Après l’intégration, le propriétaire de l’entreprise devra effectuer une 
 Les IPC définis servent de référence pour les tests de performance qui sont effectués chaque fois que le pipeline s’exécute.
 
 >[!NOTE]
->
 >Les indicateurs de performance clés définis sont mesurés sur les tests exécutés sur l’environnement **intermédiaire**. En règle générale, ils sont adaptés aux capacités de l’environnement intermédiaire.
->
 >Par exemple, un utilisateur qui attend une moyenne de 1 000 vues de page par minute dans **l’environnement** de production et qui dispose de quatre dispatchers/serveurs de publication en production doit réduire cette valeur à 250 vues de page par minute (en supposant que son environnement intermédiaire se compose d’une seule paire de serveurs de publication et de dispatcher).
->
 >De plus, de nombreux utilisateurs disposeront d’un réseau de diffusion de contenu (CDN), tel que Akamai ou CloudFront devant leur environnement de production. Puisque [!UICONTROL Cloud Manager] effectue directement des tests par rapport à l’environnement intermédiaire, l’indicateur de performance clé doit refléter uniquement le trafic prévu pour transiter via le CDN, c’est-à-dire les pertes dans le cache. En règle générale, il s’agira d’un sous-ensemble relativement petit du trafic de production total.
 
 ## Utilisation de [!UICONTROL Cloud Manager] pour configurer votre programme {#using-cloud-manager-to-setup-your-program}
@@ -77,17 +69,13 @@ Lors de la configuration du programme, des indicateurs de performance clés spé
 1. Sous **Mise en service**, vous pouvez afficher ou modifier la configuration des environnements de production et autres dans votre programme. **La mise à l’échelle automatique est activée** s’affiche si la mise à l’échelle automatique a été activée pour le programme.
 
    >[!NOTE]
-   >
-   >* La fonction de mise à l’échelle automatique s’applique uniquement à l’environnement de production et peut ne pas être disponible pour tous les programmes clients.
-   >* La mise à l’échelle On-demand n’est pas disponible pour cette version de [!UICONTROL Cloud Manager].
-
+   >La fonction de mise à l’échelle automatique s’applique uniquement à l’environnement de production et peut ne pas être disponible pour tous les programmes clients.
 
    ![](assets/Setup_Program-Provisioning.png)
 
 1. Cliquez sur **Enregistrer** pour terminer l’assistant de configuration.
 
    >[!NOTE]
-   >
    >Vous pouvez toujours modifier le programme une fois le programme initial configuré. Pour plus d’informations, suivez les étapes ci-après.
 
 ## Modification d’un programme
@@ -98,14 +86,26 @@ Lors de la configuration du programme, des indicateurs de performance clés spé
 
 1. Sélectionnez la solution et cliquez sur **Modifier** pour mettre à jour ou modifier votre programme, comme illustré dans la figure ci-dessous.
 
-   ![](assets/SetUpProgram6.png)
+   ![](assets/set-up-program/edit-program1.png)
 
 1. L’écran **Modifier le programme** vous permet de mettre à jour ou de modifier votre programme.
 
-   ![](assets/Editing_Program-screen3.png)
+   Vous pouvez mettre à jour le nom et la description de votre programme à partir de l&#39;onglet **Général**.
+
+   ![](assets/set-up-program/edit-program-general.png)
+
+   Accédez à l’onglet **KPI** pour mettre à jour les informations sur AEM Sites et Assets.
+
+   ![](assets/set-up-program/edit-program-kpi.png)
+
+   De plus, vous pouvez accéder à l’onglet **Mise en service** pour modifier la configuration de mise en service des environnements de production et autres dans votre programme.
+
+   ![](assets/set-up-program/edit-program-provision.png)
+
+1. Cliquez sur **Mettre à jour** pour enregistrer vos modifications.
 
 ## Étapes suivantes {#the-next-steps}
 
-Si vous avez déjà configuré le **pipeline**, l’exécution suivante prendra en compte vos paramètres mis à jour. Si vous n’avez pas encore configuré le pipeline, suivez d’abord les étapes de configuration de celui-ci.
+Si vous avez déjà configuré le pipeline, l’exécution suivante prendra en compte vos paramètres mis à jour. Si vous n’avez pas encore configuré le pipeline, suivez d’abord les étapes de configuration de ce dernier.
 
 Voir [Configuration de votre pipeline CI/CD](https://helpx.adobe.com/fr/experience-manager/cloud-manager/using/configuring-pipeline.html) pour configurer le pipeline.
