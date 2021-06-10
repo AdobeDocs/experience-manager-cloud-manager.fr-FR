@@ -10,10 +10,10 @@ topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 feature: Pipeline CI-CD, résultats des tests
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: df2f598f91201d362f54b17e4092ff6bd6a72cec
+source-git-commit: 5111a918b8063ab576ef587dc3c8d66ad976fc1a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2728'
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Cette étape évalue la qualité du code de votre application. Il s’agit de l�
 Au cours du test de qualité du code, le code source est analysé afin de s’assurer qu’il répond à certains critères de qualité. Cette analyse est actuellement mise en œuvre en associant SonarQube, un examen au niveau du package de contenu à l’aide d’OakPAL et une validation du Dispatcher à l’aide de l’outil d’optimisation du Dispatcher. Il existe plus de 100 règles combinant des règles Java génériques et des règles spécifiques à AEM. Certaines des règles spécifiques à AEM sont créées en fonction des bonnes pratiques de l’équipe d’ingénierie AEM et sont appelées [Règles de qualité du code personnalisées](/help/using/custom-code-quality-rules.md).
 
 >[!NOTE]
->Vous pouvez télécharger la liste complète des règles [ici](/help/using/assets/CodeQuality-rules-AMS.xlsx).
+>Vous pouvez télécharger la liste complète des règles [ici](/help/using/assets/CodeQuality-rules-latest-AMS.xlsx).
 
 Les résultats de cette étape sont fournis sous forme de *note*. Le tableau ci-dessous résume les notes attribuées à divers critères de test :
 
