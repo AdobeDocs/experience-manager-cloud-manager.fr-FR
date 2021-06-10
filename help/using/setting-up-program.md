@@ -5,7 +5,7 @@ description: Après l’intégration, le propriétaire de l’entreprise devra e
 seo-description: 'Après l’intégration, le propriétaire de l’entreprise devra effectuer une configuration initiale d’Adobe AEM Cloud Manager. Il devra notamment établir la description du programme et définir les indicateurs de performance clés qui serviront à tester les performances. '
 feature: Prise en main
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: f14725f87d5c4c3afe63d4bfc924962a92705c7c
+source-git-commit: c39390f34cf4ab6c9b2d5957b169c3c2cb43e6d3
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 82%
@@ -78,7 +78,7 @@ Lors de la configuration du programme, des indicateurs de performance clés spé
    >[!NOTE]
    >Vous pouvez toujours modifier le programme une fois le programme initial configuré. Pour plus d’informations, suivez les étapes ci-après.
 
-## Modification d’un programme
+## Modification d’un programme {#editing-program}
 
 1. Accédez au programme à partir de l’écran d’accueil de **Cloud Manager**.
 
