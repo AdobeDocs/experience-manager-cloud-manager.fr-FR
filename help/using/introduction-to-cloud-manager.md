@@ -13,8 +13,8 @@ level: Beginner
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
 source-git-commit: 81c14382821de6b2d249000a79799747a6d9cb19
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '833'
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 [!UICONTROL Cloud Manager], qui fait partie d’Adobe Experience Manager (AEM) dans le cloud, permet aux entreprises de gérer elles-mêmes Experience Manager dans le cloud. Il comprend une structure d’intégration et de diffusion continues (CI/CD) qui permet aux équipes informatiques et aux partenaires d’implémentation d’accélérer la diffusion des personnalisations ou des mises à jour sans compromettre les performances ou la sécurité.
 
-Ce site de documentation décrit spécifiquement les fonctionnalités de Cloud Manager disponibles pour les clients Adobe Managed Services (AMS). Vous trouverez de la documentation sur les fonctionnalités de Cloud Manager pour les clients d’AEM en tant que Cloud Service dans la section [Implémentation des applications pour AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/home.html?lang=en).
+Ce site de documentation décrit spécifiquement les fonctionnalités et les caractéristiques de Cloud Manager disponibles pour les clients Adobe Managed Services (AMS). Vous trouverez de la documentation sur les fonctionnalités de Cloud Manager pour les clients AEM as a Cloud Service dans la section [Implémentation des applications pour AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/home.html?lang=fr).
 
 Grâce au portail client libre-service de [!UICONTROL Cloud Manager], les **organisations** peuvent exécuter/exploiter les éléments suivants :
 
