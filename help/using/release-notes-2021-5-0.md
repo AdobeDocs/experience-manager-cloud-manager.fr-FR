@@ -3,7 +3,7 @@ title: Notes de mise à jour de la version 2021.5.0
 description: Consultez cette page pour obtenir des informations sur la version 2021.5.0 de Cloud Manager
 feature: Informations sur la version
 source-git-commit: 196e9947b732b8cd70a8a0f7fc72ef9900561125
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '232'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ La section ci-dessous présente les notes générales de mise à jour de la vers
 
 ## Date de publication {#release-date}
 
-La date de publication de la version 2021.5.0 de [!UICONTROL Cloud Manager] est le 06 mai 2021.
+La date de publication de la version 2021.5.0 de [!UICONTROL Cloud Manager] est le 6 mai 2021.
 
 ## Nouveautés {#whats-new}
 
@@ -26,7 +26,7 @@ La date de publication de la version 2021.5.0 de [!UICONTROL Cloud Manager] es
 
 * Le point d’entrée du référentiel dans l’API publique inclut désormais l’URL Git.
 
-* Dans le workflow Modifier le programme, l’utilisateur n’est autorisé à définir que des valeurs d’IPC non décimales.
+* Dans le workflow Modifier le programme, l’utilisateur n’est autorisé à définir que des valeurs de KPI non décimales.
 
 * Les échecs intermittents rencontrés lors de la publication du code dans le Git Adobe ont maintenant été résolus.
 
