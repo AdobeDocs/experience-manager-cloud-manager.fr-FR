@@ -11,9 +11,9 @@ discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 feature: Règles de qualité du code
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
 source-git-commit: 5111a918b8063ab576ef587dc3c8d66ad976fc1a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3652'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -574,7 +574,7 @@ Vous trouverez ci-dessous les vérifications OakPAL exécutées par Cloud Manag
 
 ### Les API de produit annotées avec @ProviderType ne doivent pas être implémentées ni étendues par les clients {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
 
-**Clé** : CQBP-84
+**Clé** : CQBP-84
 
 **Type** : bogue
 
@@ -850,7 +850,7 @@ Le Cloud Service AEM exige que les définitions d’index de recherche personna
 
 **Depuis** : version 2021.2.0
 
-Le Cloud Service AEM exige que la propriété compatVersion soit définie sur 2 pour les définitions d’index de recherche personnalisée (c’est-à-dire pour les nœuds de type oak:QueryIndexDefinition). Toute autre valeur n’est pas prise en charge par le Cloud Service AEM. Vous trouverez plus d’informations sur les index de recherche dans [Recherche et indexation de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en).
+Le Cloud Service AEM exige que la propriété compatVersion soit définie sur 2 pour les définitions d’index de recherche personnalisée (c’est-à-dire pour les nœuds de type oak:QueryIndexDefinition). Toute autre valeur n’est pas prise en charge par le Cloud Service AEM. Vous trouverez plus d’informations sur les index de recherche dans [Recherche et indexation de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=fr).
 
 ### OakPAL – Les nœuds descendants des nœuds de définition d’index de recherche personnalisée doivent être de type nt:unstructured {#oakpal-descendent-nodes}
 
@@ -898,7 +898,7 @@ Le Cloud Service AEM exige que les définitions d’index de recherche personna
 
 **Depuis** : version 2021.2.0
 
-Le Cloud Service AEM exige que les définitions d’index de recherche personnalisée (c’est-à-dire les nœuds de type oak:QueryIndexDefinition) aient une propriété de type **lucene**. L’indexation avec ces types d’index hérités doit être mise à jour avant la migration vers le Cloud Service AEM. Consultez [Recherche et indexation de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) pour plus d’informations.
+Le Cloud Service AEM exige que les définitions d’index de recherche personnalisée (c’est-à-dire les nœuds de type oak:QueryIndexDefinition) aient une propriété de type **lucene**. L’indexation avec ces types d’index hérités doit être mise à jour avant la migration vers le Cloud Service AEM. Consultez [Recherche et indexation de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=fr#how-to-use) pour plus d’informations.
 
 ### OakPAL – Les nœuds de définition d’index de recherche personnalisée ne doivent pas contenir de propriété nommée « seed » {#oakpal-property-name-seed}
 
@@ -910,7 +910,7 @@ Le Cloud Service AEM exige que les définitions d’index de recherche personna
 
 **Depuis** : version 2021.2.0
 
-Le Cloud Service AEM interdit que les définitions d’index de recherche personnalisée (c’est-à-dire les nœuds de type `oak:QueryIndexDefinition`) contiennent une propriété nommée seed. L’indexation avec cette propriété doit être mise à jour avant la migration vers le Cloud Service AEM. Consultez [Recherche et indexation de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) pour plus d’informations.
+Le Cloud Service AEM interdit que les définitions d’index de recherche personnalisée (c’est-à-dire les nœuds de type `oak:QueryIndexDefinition`) contiennent une propriété nommée seed. L’indexation avec cette propriété doit être mise à jour avant la migration vers le Cloud Service AEM. Consultez [Recherche et indexation de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=fr#how-to-use) pour plus d’informations.
 
 ### OakPAL – Les nœuds de définition d’index de recherche personnalisée ne doivent pas contenir de propriété nommée « reindex » {#oakpal-reindex-property}
 
@@ -922,7 +922,7 @@ Le Cloud Service AEM interdit que les définitions d’index de recherche perso
 
 **Depuis** : version 2021.2.0
 
-Le Cloud Service AEM interdit les définitions d’index de recherche personnalisée (c’est-à-dire les nœuds de type `oak:QueryIndexDefinition`) de contenir une propriété nommée reindex. L’indexation avec cette propriété doit être mise à jour avant la migration vers le Cloud Service AEM. Consultez [Recherche et indexation de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) pour plus d’informations.
+Le Cloud Service AEM interdit les définitions d’index de recherche personnalisée (c’est-à-dire les nœuds de type `oak:QueryIndexDefinition`) de contenir une propriété nommée reindex. L’indexation avec cette propriété doit être mise à jour avant la migration vers le Cloud Service AEM. Consultez [Recherche et indexation de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=fr#how-to-use) pour plus d’informations.
 
 ## Outil d’optimisation du Dispatcher {#dispatcher-optimization-tool-rules}
 
