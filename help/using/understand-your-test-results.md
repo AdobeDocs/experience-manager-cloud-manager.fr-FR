@@ -11,7 +11,7 @@ discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 feature: Pipeline CI-CD, résultats des tests
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 source-git-commit: 5111a918b8063ab576ef587dc3c8d66ad976fc1a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2728'
 ht-degree: 100%
 
@@ -124,8 +124,8 @@ Le tableau suivant répertorie les contrôles actuels :
 | **Nom** | **Implémentation de la vérification de l’intégrité** | **Catégorie** |
 |---|---|---|
 | La disponibilité de l’API d’ajout de pare-feu de désérialisation est dans un état acceptable. | [Disponibilité de l’API d’ajout de pare-feu de désérialisation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=fr#security) | Critique |
-| Le pare-feu de désérialisation est fonctionnel. | [Pare-feu de désérialisation fonctionnel](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=en#security) | Critique |
-| Le pare-feu de désérialisation est chargé. | [Pare-feu de désérialisation chargé](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=en#security) | Critique |
+| Le pare-feu de désérialisation est fonctionnel. | [Pare-feu de désérialisation fonctionnel](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=fr#security) | Critique |
+| Le pare-feu de désérialisation est chargé. | [Pare-feu de désérialisation chargé](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=fr#security) | Critique |
 | L’implémentation d’AuthorizableNodeName n’expose pas l’ID autorisable dans le nom/chemin du nœud. | [Génération de nom de nœud autorisé](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/security-checklist.html?lang=fr#security) | Critique |
 | Les mots de passe par défaut ont été modifiés. | [Comptes de connexion par défaut](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=fr#users-and-groups-in-aem) | Critique |
 | Le servlet GET par défaut Sling est protégé contre les attaques par DOS. | Servlet Sling Get | Critique |
@@ -151,7 +151,7 @@ Cloud Manager exécute des tests de performances pour les programmes AEM Sites
 
 1. **Utilisateurs virtuels**
 
-   Le nombre d’utilisateurs ou de conteneurs virtuels qui sont émulés par Cloud Manager est déterminé par les IPC (délai de réponse et pages vues/min) définis par l’utilisateur dans le rôle Propriétaire de l’entreprise lors de [la création ou de la modification du programme](setting-up-program.md). En fonction des IPC définis, Cloud Manager peut émuler jusqu’à 10 conteneurs de simulation d’utilisateurs réels. Les pages sélectionnées pour le test sont distribuées parmi les conteneurs virtuels.
+   Le nombre d’utilisateurs ou de conteneurs virtuels qui sont émulés par Cloud Manager est déterminé par les KPI (délai de réponse et pages vues/min) définis par l’utilisateur dans le rôle Propriétaire de l’entreprise lors de [la création ou de la modification du programme](setting-up-program.md). En fonction des KPI définis, Cloud Manager peut émuler jusqu’à 10 conteneurs de simulation d’utilisateurs réels. Les pages sélectionnées pour le test sont distribuées parmi les conteneurs virtuels.
 
 1. **Crawler**
 
@@ -238,7 +238,7 @@ Par exemple, si une répartition 70/30 est utilisée, comme illustré dans le sc
    Cloud Manager crée un dossier sur l’instance d’auteur, en utilisant le nom d’utilisateur et le mot de passe configurés par le CSE à l’étape 1 (Configuration requise pour l’intégration) mentionnée ci-dessus, et en chargeant des ressources dans le dossier à l’aide d’une bibliothèque open source. Les tests exécutés par l’étape de test Assets sont écrits à l’aide de cette [bibliothèque open source](https://github.com/adobe/toughday2). Le temps de traitement de chaque ressource et diverses mesures au niveau du système sont mesurés pendant le test d’une durée de 30 minutes. Cette fonctionnalité peut télécharger des images et des documents PDF.
 
    >[!NOTE]
-   >Vous pouvez obtenir des informations supplémentaires sur la configuration des tests de performance en consultant [Configuration de votre pipeline CI/CD](configuring-pipeline.md). Consultez [Configuration de votre programme](setting-up-program.md) pour savoir comment configurer votre programme et définir vos IPC.
+   >Vous pouvez obtenir des informations supplémentaires sur la configuration des tests de performance en consultant [Configuration de votre pipeline CI/CD](configuring-pipeline.md). Consultez [Configuration de votre programme](setting-up-program.md) pour savoir comment configurer votre programme et définir vos KPI.
 
 ### Graphiques des résultats de tests de performance {#performance-testing-results-graphs}
 
