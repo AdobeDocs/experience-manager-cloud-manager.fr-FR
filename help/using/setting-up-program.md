@@ -2,21 +2,21 @@
 title: Configuration de votre programme
 seo-title: Configuration de votre programme
 description: Après l’intégration, le propriétaire de l’entreprise devra effectuer une configuration initiale du programme.
-seo-description: 'Après l’intégration, le propriétaire de l’entreprise devra effectuer une configuration initiale d’Adobe AEM Cloud Manager. Il devra notamment établir la description du programme et définir les indicateurs de performance clés qui serviront à tester les performances. '
+seo-description: 'Après l’intégration, le propriétaire de l’entreprise devra effectuer une configuration initiale d’Adobe AEM Cloud Manager. Il devra notamment établir la description du programme et définir les indicateurs clés de performance (KPI) qui serviront à tester les performances. '
 feature: Prise en main
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
 source-git-commit: 71a6f2709efb9c4c3831deaa1ce89d93e30b775c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '733'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
 # Configuration de votre programme {#setup-your-program}
 
-Après l’intégration, le propriétaire de l’entreprise devra effectuer une configuration initiale du programme. Cela implique d’établir la description du programme et de définir les indicateurs de performance clés (IPC) qui serviront à tester les performances. Vous pouvez éventuellement télécharger une vignette. De plus, le propriétaire de l’entreprise peut configurer les environnements lors de la configuration du programme.
+Après l’intégration, le propriétaire de l’entreprise devra effectuer une configuration initiale du programme. Cela implique d’établir la description du programme et de définir les indicateurs clés de performance (KPI) qui serviront à tester les performances. Vous pouvez éventuellement télécharger une vignette. De plus, le propriétaire de l’entreprise peut configurer les environnements lors de la configuration du programme.
 
-Les IPC définis servent de référence pour les tests de performance qui sont effectués chaque fois que le pipeline s’exécute.
+Les KPI définis servent de référence pour les tests de performance qui sont effectués chaque fois que le pipeline s’exécute.
 
 >[!NOTE]
 >Les indicateurs de performance clés définis sont mesurés sur les tests exécutés sur l’environnement **intermédiaire**. En règle générale, ils sont adaptés aux capacités de l’environnement intermédiaire.
@@ -80,7 +80,7 @@ Lors de la configuration du programme, des indicateurs de performance clés spé
 
 ## Modification d’un programme {#editing-program}
 
-1. Accédez au programme à partir de l’écran d’accueil de **Cloud Manager**.
+1. Accédez au programme sur l’écran d’accueil de **Cloud Manager**.
 
 1. Cliquez sur **Modifier le programme** pour mettre à jour ou modifier votre programme à partir de la page **Aperçu**, comme illustré dans la figure ci-dessous.
 
@@ -92,7 +92,7 @@ Lors de la configuration du programme, des indicateurs de performance clés spé
 
    ![](assets/set-up-program/edit-program-general.png)
 
-   Accédez à l’onglet **KPI** pour mettre à jour les informations sur AEM Sites et Assets.
+   Accédez à l’onglet **KPI** pour mettre à jour les informations dans AEM Sites et Assets.
 
    ![](assets/set-up-program/edit-program-kpi.png)
 
@@ -104,6 +104,6 @@ Lors de la configuration du programme, des indicateurs de performance clés spé
 
 ## Étapes suivantes {#the-next-steps}
 
-Si vous avez déjà configuré le pipeline, l’exécution suivante prendra en compte vos paramètres mis à jour. Si vous n’avez pas encore configuré le pipeline, suivez d’abord les étapes de configuration de ce dernier.
+Si vous avez déjà configuré le pipeline, l’exécution suivante prendra en compte vos paramètres mis à jour. Si vous n’avez pas encore configuré le pipeline, suivez d’abord les étapes de configuration de celui-ci.
 
 Voir [Configuration de votre pipeline CI/CD](https://helpx.adobe.com/fr/experience-manager/cloud-manager/using/configuring-pipeline.html) pour configurer le pipeline.
