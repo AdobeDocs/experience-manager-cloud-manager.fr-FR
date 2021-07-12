@@ -6,10 +6,10 @@ user-guide-title: Guide d’Experience Manager Cloud Manager
 breadcrumb-title: Guide de Cloud Manager pour AEM 6.x
 user-guide-description: Apprenez à utiliser les Managed Services d’Adobe pour gérer de manière autonome Experience Manager en mode cloud.
 feature-set: Experience Manager Cloud Manager, Experience Manager
-role: Administrator
+role: Admin
 level: Intermediate
-source-git-commit: 0c082c7d24a50cfeaa8f452655e5abb609dc6915
-workflow-type: ht
+source-git-commit: 58ed9a96513c9d984286132f89f129038f177ee1
+workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 100%
 
