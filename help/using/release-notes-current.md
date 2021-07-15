@@ -1,48 +1,42 @@
 ---
-title: Notes de mise à jour de la version 2021.6.0
-description: Consultez cette page pour obtenir des informations sur la version 2021.6.0 de Cloud Manager
+title: Notes de mise à jour de la version 2021.7.0
+description: Consultez cette page pour obtenir des informations sur la version 2021.7.0 de Cloud Manager
 feature: Informations sur la version
-source-git-commit: 5ddbf718ad01b11dcba5dc2c5d1ab5d3cff2e9a9
+source-git-commit: ee701dd2d0c3921455a0960cbb6ca9a3ec4793e7
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 100%
+source-wordcount: '247'
+ht-degree: 31%
 
 ---
 
-# Notes de mise à jour de la version 2021.6.0 {#release-notes-for}
+# Notes de mise à jour de la version 2021.7.0 {#release-notes-for}
 
-La section ci-dessous présente les notes générales de mise à jour de la version 2021.6.0 de [!UICONTROL Cloud Manager].
+La section ci-dessous présente les notes générales de mise à jour de la version 2021.7.0 de [!UICONTROL Cloud Manager].
 
 >[!NOTE]
 >Reportez-vous aux [Notes de mise à jour actuelles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/release-notes-cloud-manager/release-notes-cm-current.html?lang=fr#getting-access) pour consulter les dernières notes de mise à jour de Cloud Manager dans AEM as a Cloud Service.
 
 ## Date de publication {#release-date}
 
-La date de publication de la version 2021.6.0 de [!UICONTROL Cloud Manager] est le 10 juin 2021.
-La prochaine version est prévue pour le 15 juillet 2021.
+La date de publication de la mise à jour 2021.7.0 de [!UICONTROL Cloud Manager] est le 15 juillet 2021.
+La prochaine version est prévue pour le 12 août 2021.
 
 ## Nouveautés {#whats-new}
 
-* Les tests d’Assets et de Sites s’exécuteront désormais en parallèle (le cas échéant), réduisant ainsi le temps total d’exécution du pipeline. Cette fonctionnalité sera activée pour les clients au cours des prochaines semaines.
+* Les clients peuvent désormais utiliser les JDK Azul 8 et 11 pour leurs processus de génération Cloud Manager et peuvent choisir d’utiliser l’un de ces JDK pour les modules externes Maven compatibles avec les chaînes d’outils *ou* l’exécution complète du processus Maven.
 
-* Les dépendances Maven téléchargées lors de l’étape de création seront désormais mises en cache entre les exécutions de pipeline. Cette fonctionnalité sera activée pour les clients au cours des prochaines semaines.
+* L’adresse IP sortante sortante sera désormais consignée dans le fichier journal de l’étape de création.
 
-* Le nom de branche par défaut utilisé lors de la création du projet et dans la commande push par défaut dans les workflows de gestion git a été remplacé par `main`.
+* Les boutons Gérer Git ont été renommés Accéder aux informations Git et la boîte de dialogue a été actualisée visuellement.
 
-* L’expérience de modification d’un programme dans l’interface utilisateur a été actualisée. Pour en savoir plus, consultez [Modification d’un programme](/help/using/setting-up-program.md#editing-program).
-
-* La règle de qualité `ImmutableMutableMixCheck` a été mise à jour afin de classer les nœuds `/oak:index` comme étant immuables.
-
-* Les règles de qualité `CQBP-84` et `CQBP-84--dependencies` ont été consolidées dans une seule règle. Dans le cadre de cette consolidation, l’analyse des dépendances identifie plus précisément les problèmes des dépendances tierces qui sont déployées sur l’environnement d’exécution AEM.
-
-* Dans certains cas, l’échec du calcul de la mesure Tests ignorés entraînait l’échec des exécutions de pipeline.
+* Certaines reconfigurations de topologie inattendues peuvent entraîner la fin de la disponibilité des rapports de test détaillés dans la page des détails d’exécution du pipeline.
 
 ## Correctifs {#bug-fixes}
 
-* Les définitions de nœud JCR contenant une nouvelle ligne après le nom de l’élément racine n’étaient pas correctement analysées.
+* La navigation manuelle vers la page des détails de l’exécution pour une exécution non existante n’affichait pas d’erreur, juste un écran de chargement sans fin.
 
-* L’API de liste des référentiels ne filtrait pas les référentiels supprimés.
+* Dans certains cas, la reprise automatique pour les conteneurs en échec utilisés dans les performances de Sites ne prendra pas effet pendant 2 heures, ce qui entraîne un échec du test.
 
-* Un message d’erreur incorrect s’affichait lorsqu’une valeur non valide était fournie lors de l’étape de planification.
+## Problèmes connus {#known-issues}
 
-* Dans certains cas, lorsque l’exécution du pipeline atteignait l’étape de déploiement en production et que l’utilisateur arrêtait cette exécution, le message d’état de déploiement dans l’interface utilisateur ne reflétait pas correctement ce qui se passait réellement.
+Les clients qui passent à l’utilisation des JDK Azul doivent savoir que toutes les applications existantes ne seront pas compilées sans erreur sur le JDK Azul. Il est vivement recommandé de tester localement avant de basculer.
