@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 feature: Pipeline CI-CD
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 83fcc49c7e3e3742930a7179b27f899bff3c4ae1
+source-git-commit: 1c103b1c43a1e5fe7a6fa27110fc692bba6fb8b2
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -56,7 +56,7 @@ Avant de commencer le déploiement du code, vous devez configurer les paramètre
 >
 >Vous pouvez modifier les paramètres du pipeline après la configuration initiale.
 
-### Configuration des paramètres du pipeline à partir de [!UICONTROL Cloud Manager] {#configuring-the-pipeline-settings-from-cloud-manager}
+### Configuration des paramètres du pipeline à partir de [!UICONTROL Cloud Manager] {#configuring-the-pipeline-settings-from-cloud-manager}
 
 Une fois que vous avez configuré votre programme à l’aide de l’interface utilisateur de [!UICONTROL Cloud Manager], vous êtes prêt à configurer votre pipeline.
 
@@ -181,24 +181,25 @@ Les pipelines CI/CD hors production sont divisés en deux catégories : les pip
 
 Sur l’écran d’accueil, ces pipelines sont répertoriés dans une nouvelle carte :
 
-1. Accédez à la vignette **Pipelines hors production** depuis l’écran d’accueil de Cloud Manager.
+1. Accédez à la vignette **Pipelines hors production** depuis l’écran d’accueil de Cloud Manager.
 
-   ![](assets/Non-Production-Pipeline.png)
+   ![](/help/using/assets/non-prod-add.png)
 
-1. Cliquez sur le bouton Ajouter pour spécifier le nom du pipeline, le type de pipeline et la branche Git.
+1. Cliquez sur le bouton **Ajouter** pour spécifier le nom du pipeline, le type de pipeline et la branche Git.
 
    Vous pouvez également configurer le déclencheur de déploiement et le comportement en cas d’échec important dans les options du pipeline.
 
    ![](assets/non-prod-pipe.png)
 
-1. Cliquez sur **Enregistrer** pour afficher le pipeline sur la carte de l’écran d’accueil avec trois actions :
+1. Cliquez sur **Enregistrer** et le pipeline s’affiche sur la carte de l’écran d’accueil avec cinq actions :
 
    * **Modifier** : permet de modifier les paramètres du pipeline.
-   * **Détail** : affiche la dernière exécution du pipeline (si existante).
-   * **Génération** : permet d’accéder à la page d’exécution, à partir de laquelle le pipeline peut être exécuté.
+   * **Détails**  : affiche la dernière exécution du pipeline (le cas échéant).
+   * **Compilation** : permet d’accéder à la page d’exécution, à partir de laquelle le pipeline peut être exécuté.
+   * **Accès aux informations sur le référentiel**  : permet à l’utilisateur d’obtenir les informations nécessaires pour accéder au référentiel Git de Cloud Manager.
+   * **En savoir plus**  : accède à la documentation du pipeline CI/CD.
 
-   ![](assets/Non-prod-2.png)
-
+      ![](assets/prod-one.png)
    >[!NOTE]
    >
    >Quand le pipeline est en cours d’exécution, l’étape actuelle est affichée et seule l’action **Détails** est disponible.
