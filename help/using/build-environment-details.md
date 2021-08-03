@@ -1,22 +1,22 @@
 ---
-title: Présentation de l’environnement de création
+title: Présentation de l’environnement de génération
 description: Consultez cette page pour en savoir plus sur les environnements
 feature: Environnements
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
 source-git-commit: ee701dd2d0c3921455a0960cbb6ca9a3ec4793e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '999'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
-# Présentation de l’environnement de création {#build-environment-details}
+# Présentation de l’environnement de génération {#build-environment-details}
 
 Cloud Manager crée et teste votre code à l’aide d’un environnement de génération spécialisé. Cet environnement comporte les attributs suivants :
 
 * L’environnement de génération est basé sur Linux, dérivé de Ubuntu 18.04.
 * Apache Maven 3.6.0 est installé.
-* Les versions Java installées sont les suivantes : Oracle JDK 8u202, Azul Zulu 8u292, Oracle JDK 11.0.2 et Azul Zulu 11.0.11.
+* Les versions de Java installées sont les suivantes : Oracle JDK 8u202, Azul Zulu 8u292, Oracle JDK 11.0.2 et Azul Zulu 11.0.11.
 * D’autres packages système nécessaires sont installés :
 
    * bzip2
@@ -47,13 +47,13 @@ Pour plus d’informations, consultez le [référentiel Maven public d’Adobe](
 >* [Autorisations d’API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/permissions.md)
 
 
-## Utilisation d’une version Java spécifique {#using-java-version}
+## Utilisation d’une version de Java spécifique {#using-java-version}
 
-Par défaut, les projets sont créés par le processus de génération Cloud Manager à l’aide du JDK Oracle 8. Les clients qui souhaitent utiliser un autre JDK ont deux options : Maven Toolchain et en sélectionnant une autre version du JDK pour l’ensemble du processus d’exécution Maven.
+Par défaut, les projets sont créés par le processus de génération Cloud Manager à l’aide du JDK Oracle 8. Les clients qui souhaitent utiliser un autre JDK disposent de deux options : en utilisant Maven Toolchains et en sélectionnant une autre version du JDK pour l’ensemble du processus d’exécution Maven.
 
-### Maven Toolchain {#maven-toolchains}
+### Maven Toolchains {#maven-toolchains}
 
-Le [module externe Maven Toolchain](https://maven.apache.org/plugins/maven-toolchains-plugin/) permet aux projets de sélectionner un JDK spécifique (ou *toolchain*) à utiliser dans le contexte des modules externes Maven compatibles avec les chaînes d’outils. Cette opération est effectuée dans le fichier `pom.xml` du projet en spécifiant un fournisseur et une valeur de version. Voici un exemple de section dans le fichier `pom.xml` :
+Le [plug-in Maven Toolchains](https://maven.apache.org/plugins/maven-toolchains-plugin/) permet aux projets de sélectionner un JDK spécifique (dit *toolchain*) pour l’utiliser dans le contexte des plug-ins Maven compatibles avec les chaînes d’outils. Cette opération est effectuée dans le fichier `pom.xml` du projet en spécifiant un fournisseur et une valeur de version. Voici un exemple de section dans le fichier `pom.xml` :
 
 ```xml
         <plugin>
@@ -78,30 +78,30 @@ Le [module externe Maven Toolchain](https://maven.apache.org/plugins/maven-toolc
 </plugin>
 ```
 
-Cela entraîne l’utilisation par tous les modules externes Maven compatibles avec les chaînes d’outils du JDK Oracle, version 11.
+Elle entraîne l’utilisation du JDK Oracle, version 11 dans tous les plug-ins Maven compatibles avec les chaînes d’outils.
 
-Lors de l’utilisation de cette méthode, Maven s’exécute toujours en utilisant le JDK par défaut (Oracle 8). Par conséquent, la vérification ou l’application de la version Java par le biais de modules externes tels que le [module externe Apache Maven Enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/) ne fonctionne pas et ces modules externes ne doivent pas être utilisés.
+Dans cette méthode, Maven s’exécute toujours en utilisant le JDK par défaut (Oracle 8). Par conséquent, la vérification ou l’application de la version Java par le biais de plug-ins tels que le [plug-in Apache Maven Enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/) ne fonctionne pas et ces plug-ins ne doivent pas être utilisés.
 
-Les combinaisons fournisseur/version actuellement disponibles sont les suivantes :
+Les combinaisons fournisseur/version actuellement disponibles sont les suivantes :
 
-* oracle 1.8
-* oracle 1.11
-* oracle 11
-* sun 1.8
-* sun 1.11
-* sun 11
-* azul 1.8
-* azul 1.11
-* azul 8
+* oracle 1.8
+* oracle 1.11
+* oracle 11
+* sun 1.8
+* sun 1.11
+* sun 11
+* azul 1.8
+* azul 1.11
+* azul 8
 
 ### Autre version du JDK d’exécution Maven {#alternate-maven}
 
-Il est également possible de sélectionner Azul 8 ou Azul 11 comme JDK pour l’ensemble de l’exécution Maven. Contrairement aux options des chaînes d’outils, cela modifie le JDK utilisé pour tous les modules externes, sauf si la configuration des chaînes d’outils est également définie, auquel cas la configuration des chaînes d’outils est toujours appliquée pour les modules externes Maven compatibles avec les chaînes d’outils. Par conséquent, la vérification et l’application de la version Java à l’aide du [module externe Apache Maven Enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/) fonctionneront.
+Il est également possible de sélectionner Azul 8 ou Azul 11 en tant que JDK pour l’ensemble de l’exécution Maven. Contrairement aux options de toolchains, un autre JDK sera utilisé pour tous les plug-ins, sauf si la configuration de toolchains est également définie, auquel cas la configuration de toolchains est toujours appliquée pour les plug-ins Maven compatibles avec les toolchains. Par conséquent, la vérification et l’application de la version Java à l’aide du [plug-in Apache Maven Enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/) fonctionneront.
 
-Pour ce faire, créez un fichier nommé `.cloudmanager/java-version` dans la branche de référentiel git utilisée par le pipeline. Ce fichier peut avoir le contenu 11 ou 8. Toute autre valeur est ignorée. Si 11 est spécifié, Azul 11 est utilisé. Si 8 est spécifié, Azul 8 est utilisé.
+Pour ce faire, créez un fichier nommé `.cloudmanager/java-version` dans la branche de référentiel git utilisée par le pipeline. Ce fichier peut contenir « 11 » ou « 8 ». Toute autre valeur est ignorée. S’il contient « 11 », Azul 11 sera utilisé. S’il contient « 8 », Azul 8 sera utilisé.
 
 >[!NOTE]
->Dans une prochaine version de Cloud Manager, estimée actuellement en octobre 2021, le JDK par défaut sera modifié et la valeur par défaut sera Azul 11. Les projets non compatibles avec Java 11 doivent créer ce fichier avec le contenu 8 dès que possible afin de s’assurer qu’ils ne sont pas impactés par ce commutateur.
+>Dans une prochaine version de Cloud Manager, estimée actuellement pour octobre 2021, le JDK par défaut sera modifié et la valeur par défaut sera Azul 11. Pour les projets non compatibles avec Java 11, vous devrez créer dès que possible un fichier contenant le chiffre « 8 » afin de vous assurer qu’ils ne sont pas impactés par ce changement.
 
 
 ## Variables d’environnement {#environment-variables}
