@@ -38,7 +38,7 @@ ht-degree: 100%
    + Création d’un projet d’application AEM {#create-application-project}
       + [Utilisation de l’assistant](using-the-wizard.md)
       + [Configuration du projet](setting-up-project.md)
-      + [Présentation de l’environnement de création](build-environment-details.md)
+      + [Présentation de l’environnement de génération](build-environment-details.md)
    + [Configuration des branches de versions](configure-your-release-branches.md)
    + [Gestion des configurations du Dispatcher](dispatcher-configurations.md)
 + Utilisation {#how-to-use}
