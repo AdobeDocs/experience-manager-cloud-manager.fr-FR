@@ -12,9 +12,9 @@ discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 feature: Pipeline CI-CD
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 source-git-commit: 1c103b1c43a1e5fe7a6fa27110fc692bba6fb8b2
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1320'
+ht-degree: 100%
 
 ---
 
@@ -112,9 +112,9 @@ Sélectionnez votre branche Git et cliquez **Suivant**.
 >
 >L’option **Utiliser la supervision par l’ingénieur du service client** n’est pas disponible pour tous les clients.
 
-**Approuver après le déploiement de l’étape**
+**Approuver après le déploiement dans l’environnement intermédiaire**
 
-Il existe une étape facultative **Approbation après déploiement dans l’environnement intermédiaire** qui peut être configurée dans le pipeline de production.
+Il existe une étape facultative **Approuver après le déploiement dans l’environnement intermédiaire** qui peut être configurée dans le pipeline de production.
 Elle est activée dans une nouvelle option de l’écran **Modifier un pipeline** :
 
 ![](assets/post_deployment1.png)
@@ -125,7 +125,7 @@ Elle s’affiche ensuite sous la forme d’une étape distincte lors de l’exé
 
 >[!NOTE]
 >
->Les fonctions **Approbation après le déploiement dans l’environnement intermédiaire** fonctionnent de la même manière que l’approbation avant le déploiement en production, mais ce processus se produit immédiatement après l’étape de déploiement dans l’environnement intermédiaire, c’est-à-dire avant que les tests ne soient effectués, contrairement à l’approbation avant le déploiement en production, qui est effectuée une fois tous les tests terminés.
+>Les fonctions **Approuver après le déploiement dans l’environnement intermédiaire** fonctionnent de la même manière que l’approbation avant le déploiement en production, mais ce processus se produit immédiatement après l’étape de déploiement dans l’environnement intermédiaire, c’est-à-dire avant que les tests ne soient effectués, contrairement à l’approbation avant le déploiement en production, qui est effectuée une fois tous les tests terminés.
 
 **Invalidation du Dispatcher**
 
@@ -191,13 +191,13 @@ Sur l’écran d’accueil, ces pipelines sont répertoriés dans une nouvelle c
 
    ![](assets/non-prod-pipe.png)
 
-1. Cliquez sur **Enregistrer** et le pipeline s’affiche sur la carte de l’écran d’accueil avec cinq actions :
+1. Cliquez sur **Enregistrer** pour afficher le pipeline sur la carte de l’écran d’accueil avec cinq actions :
 
    * **Modifier** : permet de modifier les paramètres du pipeline.
-   * **Détails**  : affiche la dernière exécution du pipeline (le cas échéant).
-   * **Compilation** : permet d’accéder à la page d’exécution, à partir de laquelle le pipeline peut être exécuté.
-   * **Accès aux informations sur le référentiel**  : permet à l’utilisateur d’obtenir les informations nécessaires pour accéder au référentiel Git de Cloud Manager.
-   * **En savoir plus**  : accède à la documentation du pipeline CI/CD.
+   * **Détails** : affiche la dernière exécution du pipeline (si existante).
+   * **Build** : permet d’accéder à la page d’exécution, à partir de laquelle le pipeline peut être exécuté.
+   * **Accéder aux informations sur le référentiel** : permet à l’utilisateur d’obtenir les informations nécessaires pour accéder au référentiel Git de Cloud Manager.
+   * **En savoir plus** : suivez ce lient pour en savoir plus sur les ressources de documentation du pipeline CI/CD.
 
       ![](assets/prod-one.png)
    >[!NOTE]
