@@ -3,9 +3,9 @@ title: Notes de mise à jour de la version 2021.7.0
 description: Consultez cette page pour obtenir des informations sur la version 2021.7.0 de Cloud Manager
 feature: Informations sur la version
 source-git-commit: fec742eb023e9811ee80951bd25fc2023df52d66
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '264'
-ht-degree: 29%
+ht-degree: 100%
 
 ---
 
@@ -18,27 +18,27 @@ La section ci-dessous présente les notes générales de mise à jour de la vers
 
 ## Date de publication {#release-date}
 
-La date de publication de la mise à jour 2021.7.0 de [!UICONTROL Cloud Manager] est le 15 juillet 2021.
-La prochaine version est prévue pour le 12 août 2021.
+La date de publication de la mise à jour 2021.7.0 de [!UICONTROL Cloud Manager] est le 15 juillet 2021.
+La prochaine version est prévue pour le 12 août 2021.
 
 ## Nouveautés {#whats-new}
 
-* Les clients peuvent désormais utiliser les JDK Azul 8 et 11 pour leurs processus de génération Cloud Manager et peuvent choisir d’utiliser l’un de ces JDK pour les modules externes Maven compatibles avec les chaînes d’outils *ou* l’exécution complète du processus Maven.
+* Les clients peuvent désormais utiliser les JDK Azul 8 et 11 pour leurs processus de génération Cloud Manager et peuvent choisir d’utiliser un de ces JDK pour les plug-ins Maven compatibles avec les chaînes d’outils *ou* pour l’exécution du processus Maven complet.
 
-* L’adresse IP sortante sortante sera désormais consignée dans le fichier journal de l’étape de création.
+* L’adresse IP sortante sera désormais consignée dans le fichier journal de l’étape de génération.
 
-* Les boutons **Gérer Git** ont été renommés **Accéder aux informations Git** et la boîte de dialogue a été actualisée visuellement.
+* Les boutons **Gérer Git** ont été renommés **Accéder aux informations Git** et le visuel de la boîte de dialogue a été rafraîchi.
 
-* La version de l’archétype de projet AEM utilisée par Cloud Manager a été mise à jour vers la version 28.
+* L’archétype de projet AEM utilisé par Cloud Manager a été mis à jour à la version 28.
 
-* Certaines reconfigurations de topologie inattendues peuvent entraîner la fin de la disponibilité des rapports de test détaillés dans la page des détails d’exécution du pipeline.
+* Des reconfigurations topologiques inattendues pouvaient entraîner l’indisponibilité des rapports de test détaillés dans la page des détails d’exécution du pipeline.
 
 ## Correctifs {#bug-fixes}
 
-* La navigation manuelle vers la page des détails de l’exécution pour une exécution non existante n’affichait pas d’erreur, juste un écran de chargement sans fin.
+* La navigation manuelle vers la page des détails de l’exécution pour une exécution non existante n’affichait pas d’erreur, mais simplement un écran de chargement sans fin.
 
-* Dans certains cas, la reprise automatique pour les conteneurs en échec utilisés dans les performances de Sites ne prendra pas effet pendant 2 heures, ce qui entraîne un échec du test.
+* Dans certains cas, la reprise automatique pour les conteneurs en échec utilisés dans les performances de Sites ne prenait pas effet pendant 2 heures, ce qui entraînait l’échec du test.
 
 ## Problèmes connus {#known-issues}
 
-Les clients qui passent à l’utilisation des JDK Azul doivent savoir que toutes les applications existantes ne seront pas compilées sans erreur sur le JDK Azul. Il est vivement recommandé de tester localement avant de basculer.
+Les clients basculant sur les JDK Azul doivent savoir que toutes les applications existantes ne seront pas compilées sans erreur sur le JDK Azul. Il est vivement recommandé d’exécuter un test local avant de basculer.
