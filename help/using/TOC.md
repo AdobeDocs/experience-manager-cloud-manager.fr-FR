@@ -8,9 +8,9 @@ user-guide-description: Apprenez à utiliser les Managed Services d’Adobe pour
 feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Admin
 level: Intermediate
-source-git-commit: ee701dd2d0c3921455a0960cbb6ca9a3ec4793e7
+source-git-commit: e490a8f1dd17e63f35ed00d4cdf95b6e7a07b150
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '280'
 ht-degree: 100%
 
 ---
@@ -60,7 +60,8 @@ ht-degree: 100%
    + [Présentation](overview-productupdate-wizard.md)
    + [Évaluation](evaluation.md)
 + Notes de mise à jour {#release-notes}
-   + [Notes de mise à jour de la version actuelle (2021.7.0)](release-notes-current.md)
+   + [Notes de mise à jour de la version actuelle (2021.8.0)](release-notes-current.md)
+   + [Notes de mise à jour de la version 2021.7.0](release-notes-2021-7-0.md)
    + [Notes de mise à jour de la version 2021.6.0](release-notes-2021-6-0.md)
    + [Notes de mise à jour de la version 2021.5.0](release-notes-2021-5-0.md)
    + [Notes de mise à jour de la version 2021.4.0](release-notes-2021-4-0.md)
