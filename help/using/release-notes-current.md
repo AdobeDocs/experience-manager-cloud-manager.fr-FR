@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2021.8.0
 description: Consultez cette page pour obtenir des informations sur la version 2021.8.0 de Cloud Manager
 feature: Informations sur la version
-source-git-commit: 460964e8882a30d9289a25ec7c4162221031b0da
+source-git-commit: 510c523423a8d7cf9ad4c5ba2af11ff12df2b1cc
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 48%
+source-wordcount: '173'
+ht-degree: 53%
 
 ---
 
@@ -32,7 +32,5 @@ La prochaine version est prévue pour le 9 septembre 2021.
 * L’archétype de projet AEM utilisé par Cloud Manager a été mis à jour à la version 28.
 
 ## Correctifs {#bug-fixes}
-
-* *La mise à jour* disponible ne doit pas s’afficher lorsque la dernière version est inférieure à la version actuelle.
 
 * Parfois, lorsqu’un pipeline est déclenché deux fois pour une raison quelconque, l’une des exécutions échoue avec l’erreur *impossible de mettre à jour l’état d’exécution du pipeline*.
