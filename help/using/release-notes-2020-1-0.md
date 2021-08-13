@@ -5,10 +5,10 @@ description: Consultez cette page pour obtenir des informations sur la version 
 seo-description: Consultez cette page pour obtenir des informations sur la version 2020.1.0 d’AEM Cloud Manager
 feature: Informations sur la version
 exl-id: 105e526f-b3c6-49d2-bb4d-d19a5afad6cc
-source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
+source-git-commit: f4b0957ce2dda55ad9b0d7a736263bece54d2139
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '157'
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ La date de publication de la mise à jour 2020.1.0 de [!UICONTROL Cloud Manager
 
 ## Nouveautés {#whats-new}
 
-* Vous pouvez désormais obtenir des informations d’identification Git à partir de l’interface utilisateur de Cloud Manager. Pour plus d’informations, voir [Accès à Git](/help/using/accessing-git.md).
+* Vous pouvez désormais obtenir des informations d’identification Git à partir de l’interface utilisateur de Cloud Manager. Pour plus d’informations, voir [Accès à Git](accessing-repos.md).
 * La modification de l’expérience de connexion et de la structure des URL s’inscrit dans un programme global initié par Adobe. Les anciens signets redirigent les utilisateurs vers les nouvelles URL.
 
 
