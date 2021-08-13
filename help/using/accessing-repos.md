@@ -1,14 +1,14 @@
 ---
-title: Accès à Git
+title: Accès aux référentiels
 seo-title: Accès aux référentiels
 description: Cette page vous explique comment accéder au référentiel Git et le gérer.
 seo-description: Consultez cette page pour découvrir comment accéder à votre référentiel Git et le gérer.
 feature: Référentiels Git
 exl-id: 403fc93d-60fc-4439-8c9d-0a512ca34458
-source-git-commit: c4deb06615652736ff7584566507a2b42a88bfb1
+source-git-commit: 1d278a47e74ddb50e70dc9d5d29e738a1616768b
 workflow-type: tm+mt
 source-wordcount: '154'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
