@@ -2,7 +2,7 @@
 title: Notes de mise à jour de la version 2021.8.0
 description: Consultez cette page pour obtenir des informations sur la version 2021.8.0 de Cloud Manager
 feature: Informations sur la version
-source-git-commit: 510c523423a8d7cf9ad4c5ba2af11ff12df2b1cc
+source-git-commit: c4deb06615652736ff7584566507a2b42a88bfb1
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 53%
@@ -29,7 +29,7 @@ La prochaine version est prévue pour le 9 septembre 2021.
 
 * Une API est désormais disponible pour invalider le cache de dépendance Maven par pipeline.
 
-* L’archétype de projet AEM utilisé par Cloud Manager a été mis à jour à la version 28.
+* L’archétype de projet AEM utilisé par Cloud Manager a été mis à jour à la version 29.
 
 ## Correctifs {#bug-fixes}
 
