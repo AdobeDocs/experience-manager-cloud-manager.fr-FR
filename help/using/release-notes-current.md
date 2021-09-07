@@ -3,7 +3,7 @@ title: Notes de mise à jour de la version 2021.8.0
 description: Consultez cette page pour obtenir des informations sur la version 2021.8.0 de Cloud Manager
 feature: Release Information
 source-git-commit: c4deb06615652736ff7584566507a2b42a88bfb1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '171'
 ht-degree: 100%
 
@@ -33,4 +33,4 @@ La prochaine version est prévue pour le 9 septembre 2021.
 
 ## Correctifs {#bug-fixes}
 
-* Parfois, lorsqu’un pipeline est déclenché deux fois pour une raison quelconque, l’une ou l’autre des occurrences échoue avec l’erreur *impossible de mettre à jour l’état d’exécution du pipeline*.
+* Parfois, lorsqu’un pipeline est déclenché deux fois pour une raison quelconque, l’une ou l’autre des exécutions échoue avec l’erreur *Impossible de mettre à jour l’état d’exécution du pipeline*.
