@@ -1,14 +1,14 @@
 ---
 title: Accès aux référentiels
-seo-title: Accès aux référentiels
+seo-title: Accessing Repositories
 description: Cette page vous explique comment accéder au référentiel Git et le gérer.
-seo-description: Consultez cette page pour découvrir comment accéder à votre référentiel Git et le gérer.
-feature: Référentiels Git
+seo-description: Follow this page to learn how to access and manage your Git repository.
+feature: Git Repositories
 exl-id: 403fc93d-60fc-4439-8c9d-0a512ca34458
 source-git-commit: 5bbe76a46b7a15ccbab85c4487d2a20aaf59a4e7
-workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 63%
+workflow-type: ht
+source-wordcount: '206'
+ht-degree: 100%
 
 ---
 
@@ -18,21 +18,21 @@ Vous pouvez accéder à votre référentiel Git et le gérer à l’aide de la g
 
 ## Utilisation de la gestion de compte Git en libre-service {#self-service-git}
 
-Utilisez le bouton **Accéder aux informations sur le référentiel** disponible dans l’interface utilisateur de Cloud Manager, notamment sur la carte du pipeline.
+Utilisez le bouton **Accéder aux informations sur le référentiel** disponible dans l’interface utilisateur de Cloud Manager, bien en vue sur la carte du pipeline.
 
 1. Accédez à la carte **Pipelines** à partir de votre page **Aperçu du programme**.
 
-1. Vous verrez l’option **Accéder à Repo Info** pour accéder à votre référentiel Git et le gérer.
+1. L’option **Accéder aux informations sur le référentiel** permettant d’accéder à votre référentiel Git est alors visible.
 
    ![](assets/access-repo1.png)
 
-   De plus, si vous sélectionnez l’onglet de pipeline **Non-production**, vous y verrez également l’option **Accéder à Repo Info**.
+   Si vous sélectionnez l’onglet de pipeline **Hors production**, l’option **Accéder aux informations sur référentiel** est également disponible à cet endroit.
 
    ![](assets/access-repo-nonprod.png)
 
 
    >[!NOTE]
-   >L’option **Accéder à Repo Info** est visible par les utilisateurs avec le rôle Développeur ou Gestionnaire de déploiement . Lorsque l’utilisateur clique sur ce bouton, il accède à une boîte de dialogue qui lui permet de trouver l’URL de son référentiel Git Cloud Manager, ainsi que son nom d’utilisateur et son mot de passe.
+   >L’option **Accéder aux informations sur le référentiel** est visible par les utilisateurs possédant le rôle Développeur ou Gestionnaire de déploiement. Lorsque l’utilisateur clique sur ce bouton, il accède à une boîte de dialogue qui lui permet de trouver l’URL de son référentiel Git Cloud Manager, ainsi que son nom d’utilisateur et son mot de passe.
 
    ![](assets/access-repo-create.png)
 
