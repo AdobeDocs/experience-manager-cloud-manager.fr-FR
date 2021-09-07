@@ -1,27 +1,27 @@
 ---
-title: Référentiels Cloud Manager
-description: Référentiels Cloud Manager
+title: Référentiels Cloud Manager
+description: Référentiels Cloud Manager
 source-git-commit: 7bda34be143d2d7587e61c09dab642f3419dfad9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '420'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Référentiels Cloud Manager {#cloud-manager-repos}
+# Référentiels Cloud Manager {#cloud-manager-repos}
 
-Les référentiels créés et disponibles dans Cloud Manager peuvent être affichés et gérés à partir de la page Référentiels .
+Les référentiels créés et disponibles dans Cloud Manager peuvent être affichés et gérés à partir de la page Référentiels.
 
-## Ajout et gestion des référentiels {#add-manage-repos}
+## Ajout et gestion de référentiels {#add-manage-repos}
 
-Suivez les étapes ci-dessous pour afficher et gérer les référentiels dans Cloud Manager :
+Suivez les étapes ci-dessous pour afficher et gérer les référentiels dans Cloud Manager :
 
 1. Sur la page **Aperçu du programme**, cliquez sur l’onglet **Référentiels** et accédez à la page **Référentiels**.
 
 1. Cliquez sur **Ajouter un référentiel** pour lancer l’assistant.
 
    >[!NOTE]
-   >Un utilisateur possédant le rôle Deployment Manager ou Propriétaire de l’entreprise doit être connecté pour pouvoir ajouter un référentiel.
+   >Un utilisateur possédant le rôle Gestionnaire de déploiement ou Propriétaire de l’entreprise doit être connecté pour pouvoir ajouter un référentiel.
 
    ![](assets/create-repo2.png)
 
@@ -37,13 +37,13 @@ Suivez les étapes ci-dessous pour afficher et gérer les référentiels dans Cl
    >[!NOTE]
    >Les référentiels créés dans Cloud Manager peuvent également être sélectionnés au cours des étapes d’ajout ou de modification du pipeline.
 
-1. Vous pouvez sélectionner le référentiel et cliquer sur les options de menu à l’extrémité droite de la table dans **Copier l’URL du référentiel**, **Afficher et mettre à jour** ou **Supprimer** votre référentiel, comme illustré dans la figure ci-dessous.
+1. Vous pouvez sélectionner le référentiel et cliquer sur les options de menu à l’extrémité droite de la table pour **Copier l’URL du référentiel**, **Afficher et mettre à jour** ou **Supprimer** votre référentiel, comme illustré dans la figure ci-dessous.
 
    ![](assets/create-repo3.png)
 
 
 
-## Prise En Charge Des Sous-Modules Git {#git-submodule-support}
+## Prise en charge des sous-modules Git {#git-submodule-support}
 
 Les sous-modules Git peuvent être utilisés pour fusionner le contenu de plusieurs branches dans des référentiels Git au moment de la création. Lorsque le processus de création de Cloud Manager s’exécute, une fois le référentiel configuré pour le pipeline cloné et la branche configurée extraite, si la branche contient un fichier `.gitmodules` dans le répertoire racine, la commande est exécutée.
 
@@ -51,9 +51,9 @@ Les sous-modules Git peuvent être utilisés pour fusionner le contenu de plusie
 $ git submodule update --init
 ```
 
-Cela extrait chaque sous-module dans le répertoire approprié. Cette technique constitue une alternative potentielle à https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/working-with-multiple-source-git-repositories.html pour les organisations qui maîtrisent l’utilisation des sous-modules git et qui ne souhaitent pas gérer de processus de fusion externe.
+Cette procédure extrait chaque sous-module dans le répertoire approprié. Cette technique constitue une alternative potentielle à https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/working-with-multiple-source-git-repositories.html?lang=fr pour les organisations qui maîtrisent l’utilisation des sous-modules git et qui ne souhaitent pas gérer de processus de fusion externe.
 
-Par exemple, supposons qu’il existe trois référentiels, chacun contenant une seule branche nommée main . Dans le référentiel &quot;Principal&quot;, c’est-à-dire celui configuré dans les pipelines, la branche principale dispose d’un fichier pom.xml déclarant les projets contenus dans les deux autres référentiels :
+Par exemple, supposons qu’il existe trois référentiels, chacun contenant une seule branche nommée « main ». Dans le référentiel « principal », c’est-à-dire celui qui est configuré dans les pipelines, la branche principale contient un fichier pom.xml qui déclare les projets contenus dans les deux autres référentiels :
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -74,14 +74,14 @@ Par exemple, supposons qu’il existe trois référentiels, chacun contenant une
 </project>
 ```
 
-Vous pouvez ensuite ajouter des sous-modules pour les deux autres référentiels :
+Vous pouvez ensuite ajouter des sous-modules pour les deux autres référentiels :
 
 ```
 $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/projectA/ project-a
 $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/projectB/ project-b
 ```
 
-Cela donne un fichier `.gitmodules` qui ressemble à ceci :
+Vous obtenez un fichier `.gitmodules` qui ressemble à ceci :
 
 ```
 [submodule "project-a"]
@@ -94,11 +94,11 @@ Cela donne un fichier `.gitmodules` qui ressemble à ceci :
     branch = main
 ```
 
-Vous trouverez plus d’informations sur les sous-modules git dans le [manuel de référence Git](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
+Vous trouverez plus d’informations sur les sous-modules Git dans le [Manuel de référence Git](https://git-scm.com/book/fr/v2/Git-Tools-Submodules).
 
-Lors de l’utilisation de sous-modules git, tenez compte des points suivants :
+Lors de l’utilisation de sous-modules Git, prenez en compte les points suivants :
 
 * L’URL Git doit se trouver exactement dans la syntaxe décrite ci-dessus. Pour des raisons de sécurité, n’incorporez pas les informations d’identification dans ces URL.
 * Seuls les sous-modules situés à la racine de la branche sont pris en charge.
-* Les références des sous-modules Git sont stockées vers des validations git spécifiques. Par conséquent, lorsque des modifications sont apportées au référentiel de sous-module, la validation référencée doit être mise à jour, par exemple à l’aide de `git submodule update --remote` .
+* Les références des sous-modules Git sont stockées vers des validations git spécifiques. Par conséquent, lorsque des modifications sont apportées au référentiel de sous-module, la validation référencée doit être mise à jour, par exemple à l’aide de `git submodule update --remote`.
 
