@@ -3,7 +3,7 @@ title: Notes de mise à jour de la version 2021.9.0
 description: Consultez cette page pour obtenir des informations sur la version 2021.9.0 de Cloud Manager
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 4bfd31875a2c1ac29ae93872406308ee1c1328c8
+source-git-commit: ec180b60b24676bf1affe6369b6af66a10d9e8a0
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -24,6 +24,8 @@ La prochaine version est prévue pour le 7 octobre 2021.
 
 ## Nouveautés {#whats-new}
 
+* L’archétype de projet AEM utilisé par Cloud Manager a été mis à jour à la version 30.
+
 * Les cartes de programme sur la page d’entrée de Cloud Manager et l’expérience associée ont été actualisées.
 
 * Le journal des étapes de qualité du code comprend désormais des informations de journalisation en mode verbeux sur le processus d’analyse OakPal.
@@ -31,8 +33,6 @@ La prochaine version est prévue pour le 7 octobre 2021.
 * Les options de menu de la page Activité comprennent désormais une option &quot;Télécharger le journal&quot; pour les exécutions du Générateur de code terminées. Si vous sélectionnez cette option, le journal de l’étape de création sera téléchargé.
 
 * Cliquez directement sur la carte Programme pour accéder à la page Aperçu de Cloud Manager .
-
-* L’archétype de projet AEM utilisé par Cloud Manager a été mis à jour à la version 30.
 
 ## Correctifs {#bug-fixes}
 
