@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 2021.9.0
 description: Consultez cette page pour obtenir des informations sur la version 2021.9.0 de Cloud Manager
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: ec180b60b24676bf1affe6369b6af66a10d9e8a0
+source-git-commit: 9e9836ad8793540a57048a6e43e4d158abf91579
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '183'
+ht-degree: 49%
 
 ---
 
@@ -32,7 +32,7 @@ La prochaine version est prévue pour le 7 octobre 2021.
 
 * Les options de menu de la page Activité comprennent désormais une option &quot;Télécharger le journal&quot; pour les exécutions du Générateur de code terminées. Si vous sélectionnez cette option, le journal de l’étape de création sera téléchargé.
 
-* Cliquez directement sur la carte Programme pour accéder à la page Aperçu de Cloud Manager .
+* Cliquez directement sur la carte Programme pour accéder à la page **Aperçu** de Cloud Manager.
 
 ## Correctifs {#bug-fixes}
 
