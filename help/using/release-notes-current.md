@@ -6,7 +6,7 @@ exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 9e9836ad8793540a57048a6e43e4d158abf91579
 workflow-type: tm+mt
 source-wordcount: '183'
-ht-degree: 49%
+ht-degree: 92%
 
 ---
 
@@ -20,20 +20,20 @@ La section ci-dessous présente les notes générales de mise à jour de la vers
 ## Date de publication {#release-date}
 
 La date de publication de [!UICONTROL Cloud Manager] Version 2021.9.0 est le 09 septembre 2021.
-La prochaine version est prévue pour le 7 octobre 2021.
+La prochaine version est prévue pour le 7 octobre 2021.
 
 ## Nouveautés {#whats-new}
 
 * L’archétype de projet AEM utilisé par Cloud Manager a été mis à jour à la version 30.
 
-* Les cartes de programme sur la page d’entrée de Cloud Manager et l’expérience associée ont été actualisées.
+* Les cartes de programme de la page d’entrée de Cloud Manager et l’expérience associée ont été actualisées.
 
 * Le journal des étapes de qualité du code comprend désormais des informations de journalisation en mode verbeux sur le processus d’analyse OakPal.
 
-* Les options de menu de la page Activité comprennent désormais une option &quot;Télécharger le journal&quot; pour les exécutions du Générateur de code terminées. Si vous sélectionnez cette option, le journal de l’étape de création sera téléchargé.
+* Les options de menu de la page Activité comprennent désormais une option « Télécharger le journal » pour les exécutions du générateur de code terminées. Si vous sélectionnez cette option, le journal de l’étape de compilation sera téléchargé.
 
 * Cliquez directement sur la carte Programme pour accéder à la page **Aperçu** de Cloud Manager.
 
 ## Correctifs {#bug-fixes}
 
-* Une URL incorrecte a été copiée lors de la sélection de l’option de menu Copier l’URL dans l’écran Référentiels .
+* Une URL erronée a été copiée lors de la sélection de l’option de menu Copier l’URL dans l’écran Référentiels.
