@@ -1,10 +1,11 @@
 ---
 title: Référentiels Cloud Manager
 description: Référentiels Cloud Manager
-source-git-commit: 7bda34be143d2d7587e61c09dab642f3419dfad9
-workflow-type: ht
-source-wordcount: '420'
-ht-degree: 100%
+exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
+source-git-commit: 2a1f471f2e4148a424688ab9858c534935c3fe69
+workflow-type: tm+mt
+source-wordcount: '425'
+ht-degree: 89%
 
 ---
 
@@ -12,7 +13,7 @@ ht-degree: 100%
 
 Les référentiels créés et disponibles dans Cloud Manager peuvent être affichés et gérés à partir de la page Référentiels.
 
-## Ajout et gestion de référentiels {#add-manage-repos}
+## Ajout et gestion des référentiels {#add-manage-repos}
 
 Suivez les étapes ci-dessous pour afficher et gérer les référentiels dans Cloud Manager :
 
@@ -51,7 +52,7 @@ Les sous-modules Git peuvent être utilisés pour fusionner le contenu de plusie
 $ git submodule update --init
 ```
 
-Cette procédure extrait chaque sous-module dans le répertoire approprié. Cette technique constitue une alternative potentielle à https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/working-with-multiple-source-git-repositories.html?lang=fr pour les organisations qui maîtrisent l’utilisation des sous-modules git et qui ne souhaitent pas gérer de processus de fusion externe.
+Cette procédure extrait chaque sous-module dans le répertoire approprié. Cette technique constitue une alternative potentielle à [l’utilisation de plusieurs référentiels Git source](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/working-with-multiple-source-git-repositories.html) pour les organisations qui maîtrisent l’utilisation des sous-modules Git et qui ne souhaitent pas gérer de processus de fusion externe.
 
 Par exemple, supposons qu’il existe trois référentiels, chacun contenant une seule branche nommée « main ». Dans le référentiel « principal », c’est-à-dire celui qui est configuré dans les pipelines, la branche principale contient un fichier pom.xml qui déclare les projets contenus dans les deux autres référentiels :
 
@@ -101,4 +102,3 @@ Lors de l’utilisation de sous-modules Git, prenez en compte les points suivant
 * L’URL Git doit se trouver exactement dans la syntaxe décrite ci-dessus. Pour des raisons de sécurité, n’incorporez pas les informations d’identification dans ces URL.
 * Seuls les sous-modules situés à la racine de la branche sont pris en charge.
 * Les références des sous-modules Git sont stockées vers des validations git spécifiques. Par conséquent, lorsque des modifications sont apportées au référentiel de sous-module, la validation référencée doit être mise à jour, par exemple à l’aide de `git submodule update --remote`.
-
