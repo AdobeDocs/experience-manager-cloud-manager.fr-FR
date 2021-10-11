@@ -11,9 +11,9 @@ discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
 feature: Getting Started
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 source-git-commit: d582f3681cc1b14fddee8decc9229adb5f75a6d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '211'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Une fois que vous avez terminé les configurations générales de [!UICONTROL Cl
 
 1. Connectez-vous à **Adobe [!UICONTROL Experience Cloud]**. La liste des **programmes** s’affiche alors.
 
-1. Sélectionnez le programme (par exemple, **We.Retail Global**). Une fois que la carte du programme s’affiche sur la landing page, sélectionnez la balise **...** pour afficher les options de menu disponibles.   Sélectionnez **Cloud Manager** pour accéder à la page **Aperçu** de Cloud Manager.
+1. Sélectionnez le programme (par exemple, **We.Retail Global**). Une fois que la carte du programme s’affiche sur la landing page, sélectionnez **...** pour afficher les options de menu disponibles.   Sélectionnez **Cloud Manager** pour accéder à la page **Aperçu** de Cloud Manager.
 
    ![](assets/navigate-cm1.png)
 
@@ -36,7 +36,7 @@ Une fois que vous avez terminé les configurations générales de [!UICONTROL Cl
 
    ![](assets/FirstLogin1.png)
 
-1. Cliquez sur **Configuration du programme** pour définir la description du **Programme** et les indicateurs de performance clés (IPC).
+1. Cliquez sur **Configurer le programme** pour définir la description du **Programme** et les indicateurs de performance clés (IPC).
 
    >[!NOTE]
    >
@@ -44,7 +44,7 @@ Une fois que vous avez terminé les configurations générales de [!UICONTROL Cl
 
 ## Tutoriel vidéo {#video-tutorial-two}
 
-### Onglet Activité de Cloud Manager {#activity-video}
+### Onglet Activité de Cloud Manager  {#activity-video}
 
 Cloud Manager fournit une vue consolidée de l’activité d’un programme, répertoriant toutes les exécutions de pipeline CI/CD, tant en production que hors production, ce qui permet de connaître l’activité passée et présente, et permet aux détails de toute activité d’être examinés.
 
