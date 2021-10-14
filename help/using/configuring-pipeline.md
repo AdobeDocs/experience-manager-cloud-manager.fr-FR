@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 feature: CI-CD Pipeline
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: bdbee51ff0a61c2a72ff7ae3a742e2dd817c671a
+source-git-commit: fd172a7168074630e85f3b110e032f783d39ddca
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '1499'
 ht-degree: 61%
 
 ---
@@ -98,7 +98,9 @@ Pour configurer le comportement et les préférences de votre pipeline de produc
       * Les fonctions **Approuver après le déploiement dans l’environnement intermédiaire** fonctionnent de la même manière que l’approbation avant le déploiement en production, mais ce processus se produit immédiatement après l’étape de déploiement dans l’environnement intermédiaire, c’est-à-dire avant que les tests ne soient effectués, contrairement à l’approbation avant le déploiement en production, qui est effectuée une fois tous les tests terminés.
 
       * **Ignorer l’équilibreur de charge**
-   1. Sélectionnez les **Configurations de Dispatcher** pour l’évaluation.
+   1. Sélectionnez les **Configurations de Dispatcher** pour l’évaluation. Saisissez le chemin, sélectionnez l’action à partir de **Type**, puis cliquez sur **Ajouter chemin**. Vous pouvez spécifier jusqu’à 100 chemins par environnement.
+
+      ![](/help/using/assets/configure-pipelines/dispatcher-stage.png)
 
    1. Sélectionnez les **Options de déploiement** pour Production. Définissez maintenant les paramètres contrôlant le déploiement en production. Les trois options disponibles sont les suivantes :
 
@@ -114,7 +116,9 @@ Pour configurer le comportement et les préférences de votre pipeline de produc
          >Si l’option **Planifié** est sélectionnée, vous pouvez planifier le déploiement en production sur le pipeline **après** le déploiement en environnement intermédiaire (et **Utiliser l’approbation GoLive**, si cette option a été activée) pour attendre la définition d’une planification. L’utilisateur peut également choisir d’exécuter le déploiement en production immédiatement.
          >
          >Consultez [Déploiement de votre code](deploying-code.md) pour définir la planification du déploiement ou exécuter la production immédiatement.
-   1. Configurez les **configurations du Dispatcher** pour la production.
+   1. Configurez les **configurations du Dispatcher** pour la production. Saisissez le chemin, sélectionnez l’action à partir de **Type**, puis cliquez sur **Ajouter chemin**. Vous pouvez spécifier jusqu’à 100 chemins par environnement.
+
+      ![](/help/using/assets/configure-pipelines/dispatcher-prod.png)
 
       En tant que responsable de déploiement, vous avez la possibilité de configurer un ensemble de chemins de contenu qui seront **invalidés** ou **purgés** du cache du Dispatcher AEM des instances de publication, lors de la configuration ou de la modification du pipeline.
 
