@@ -1,19 +1,19 @@
 ---
 title: Déploiement de votre code
-seo-title: Déploiement de votre code
+seo-title: Deploy your Code
 description: Fournit un aperçu du processus de déploiement dans Cloud Manager.
-seo-description: Découvrez comment déployer votre code une fois que vous avez configuré votre pipeline (référentiel, environnement et environnement de test)
+seo-description: Learn how to deploy your code once you have configured your pipeline (repository, environment, and testing environment)
 uuid: 4e3807e1-437e-4922-ba48-0bcadf293a99
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
-feature: Déploiement du code
+feature: Code Deployment
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: df2f598f91201d362f54b17e4092ff6bd6a72cec
+source-git-commit: 2fcefda1e30871d44e3a1353470a4728904d7598
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1220'
+ht-degree: 81%
 
 ---
 
@@ -164,3 +164,32 @@ Les déploiements en production suivent généralement les mêmes étapes que ci
 1. Déploiement en parallèle des packages AEM sur publish2 et du package dispatcher sur dispatcher2. Purge du cache du Dispatcher.
 1. Replacement du dispatcher2 dans l’équilibreur de charge.
 Ce processus se poursuit jusqu’à ce que le déploiement ait atteint toutes les instances de publication et tous les Dispatchers dans la topologie.
+
+## Mode d’exécution du pipeline d’urgence {#emergency-pipeline}
+
+Dans les situations critiques, les clients d’Adobe Managed Services peuvent devoir déployer les modifications de code dans leurs environnements intermédiaire et de production sans attendre l’exécution d’un cycle de test complet de Cloud Manager.
+
+Pour résoudre ces problèmes, le pipeline de production Cloud Manager peut être exécuté en mode *urgence*. Lorsque ce mode est utilisé, les étapes de test de sécurité et de performance ne sont pas exécutées ; toutes les autres étapes, y compris toute étape de validation configurée, sont exécutées comme dans le mode normal d’exécution du pipeline.
+
+>[!NOTE]
+>La fonctionnalité Mode d’exécution du pipeline d’urgence est activée sur une base de programme par les ingénieurs du succès client.
+
+### Utilisation du mode d’exécution du pipeline d’urgence {#using-emergency-pipeline}
+
+Lorsque vous démarrez l’exécution d’un pipeline de production, si cette fonctionnalité a été activée, vous pouvez démarrer l’exécution en mode normal ou d’urgence à partir de la boîte de dialogue, comme illustré dans la figure ci-dessous.
+
+![](assets/execution-emergency1.png)
+
+En outre, en affichant la page des détails d’exécution du pipeline pour une exécution en mode d’urgence, le chemin de navigation en haut de l’écran affiche un indicateur indiquant que le mode d’urgence a été utilisé pour cette exécution particulière.
+
+![](assets/execution-emergency2.png)
+
+
+La création d’une exécution de pipeline dans ce mode d’urgence peut également être effectuée via l’API Cloud Manager ou l’interface de ligne de commande. Pour démarrer une exécution en mode d’urgence, envoyez une requête du PUT au point de terminaison d’exécution du pipeline avec le paramètre de requête `?pipelineExecutionMode=EMERGENCY` ou, lors de l’utilisation de l’interface de ligne de commande :
+
+```
+$ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
+```
+
+>[!IMPORTANT]
+>L’utilisation de l’indicateur `--emergency` peut nécessiter une mise à jour vers la dernière version de `aio-cli-plugin-cloudmanager`.
