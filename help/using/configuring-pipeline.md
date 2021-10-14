@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 feature: CI-CD Pipeline
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: e748383fb627ac6ecf69f1b6e313bb5710fbf444
+source-git-commit: bdbee51ff0a61c2a72ff7ae3a742e2dd817c671a
 workflow-type: tm+mt
-source-wordcount: '1391'
-ht-degree: 84%
+source-wordcount: '1459'
+ht-degree: 61%
 
 ---
 
@@ -56,115 +56,126 @@ Avant de commencer le déploiement du code, vous devez configurer les paramètre
 >
 >Vous pouvez modifier les paramètres du pipeline après la configuration initiale.
 
-### Configuration des paramètres du pipeline à partir de [!UICONTROL Cloud Manager] {#configuring-the-pipeline-settings-from-cloud-manager}
+## Ajout d’un nouveau pipeline de production à partir d’une carte Pipelines {#adding-production-pipeline}
 
-Une fois que vous avez configuré votre programme à l’aide de l’interface utilisateur de [!UICONTROL Cloud Manager], vous êtes prêt à configurer votre pipeline.
+Une fois que vous avez configuré votre programme et que vous disposez au moins d’un environnement à l’aide de l’interface utilisateur [!UICONTROL Cloud Manager], vous êtes prêt à ajouter un pipeline de production.
 
-Pour configurer le comportement et les préférences de votre pipeline, procédez comme suit :
+Pour configurer le comportement et les préférences de votre pipeline de production, procédez comme suit :
+
+1. Accédez à la carte **Pipelines** à partir de la page **Aperçu du programme**.
+
+1. Cliquez sur **+Ajouter** et sélectionnez **Ajouter un pipeline de production**.
+
+   ![](/help/using/assets/configure-pipelines/add-prod1.png)
+
+1. **La boîte de dialogue Ajouter un** pipeline de production s’affiche.
+
+   1. Saisissez le nom du pipeline. Vous pouvez choisir le **référentiel** et la **branche Git**.
+
+      ![](/help/using/assets/configure-pipelines/add-prod2.png)
+
+   1. Vous pouvez configurer **Déclencheur de déploiement** et **Comportement d’échec important** à partir des **Options de déploiement**.
+
+      ![](/help/using/assets/configure-pipelines/add-prod3.png)
+
+
+      Vous pouvez définir le déclencheur pour démarrer le pipeline :
+
+      * **Manuel** : l’utilisation de l’interface lance le pipeline manuellement.
+      * **Lors des modifications Git** : démarre le pipeline CI/CD chaque fois que des validations sont ajoutées à la branche git configurée. Même si vous sélectionnez cette option, vous pouvez toujours démarrer le pipeline manuellement.
+
+         >[!NOTE]
+         >Lors de la configuration ou de la modification du pipeline, le responsable de déploiement peut définir le comportement du pipeline en cas d’échec important à l’un des points de contrôle qualité.
+      Cela s’avère utile pour les clients qui souhaitent davantage de processus automatisés. Les options disponibles sont les suivantes :
+
+      * **Demander à chaque fois** : il s’agit du paramètre par défaut, qui nécessite une intervention manuelle lors de n’importe quel échec important.
+      * **Annuler immédiatement** : si cette option est sélectionnée, le pipeline sera annulé chaque fois qu’un échec important se produira. Cette option émule essentiellement un utilisateur rejetant manuellement chaque échec.
+      * **Approuver immédiatement** : si cette option est sélectionnée, le pipeline se poursuit automatiquement chaque fois qu’un échec important se produit. Cette option émule essentiellement la validation manuelle de l’utilisateur à chaque échec.
+   1. Sélectionnez les **Options de déploiement**.
+
+      ![](/help/using/assets/configure-pipelines/add-prod4.png)
+
+      * Les fonctions **Approuver après le déploiement dans l’environnement intermédiaire** fonctionnent de la même manière que l’approbation avant le déploiement en production, mais ce processus se produit immédiatement après l’étape de déploiement dans l’environnement intermédiaire, c’est-à-dire avant que les tests ne soient effectués, contrairement à l’approbation avant le déploiement en production, qui est effectuée une fois tous les tests terminés.
+
+      * **Ignorer l’équilibreur de charge**
+   1. Sélectionnez les **Configurations de Dispatcher** pour l’évaluation.
+
+   1. Sélectionnez les **Options de déploiement** pour Production. Définissez maintenant les paramètres contrôlant le déploiement en production. Les trois options disponibles sont les suivantes :
+
+      * **Utiliser l’approbation GoLive** : un déploiement doit être approuvé manuellement par un propriétaire d’entreprise, un responsable de projet ou un responsable de déploiement via l’interface utilisateur [!UICONTROL Cloud Manager].
+      * **Utiliser la supervision par l’ingénieur du service client** : un ingénieur du service client participe au démarrage du déploiement. Lors de la configuration ou de la modification du pipeline lorsque la supervision par l’ingénieur du service client est activée, le responsable de déploiement peut sélectionner l’une des options suivantes :
+
+      * **Tout ingénieur du service client** : fait référence à tout ingénieur du service client disponible.
+      * **Mon ingénieur du service client** : fait référence à un ingénieur du service client spécifique affecté au client ou un remplaçant, si l’ingénieur du service client est absent du bureau.
+
+      * **Planifié** : cette option permet à l’utilisateur d’activer le déploiement en production planifié.
+
+         >[!NOTE]
+         >Si l’option **Planifié** est sélectionnée, vous pouvez planifier le déploiement en production sur le pipeline **après** le déploiement en environnement intermédiaire (et **Utiliser l’approbation GoLive**, si cette option a été activée) pour attendre la définition d’une planification. L’utilisateur peut également choisir d’exécuter le déploiement en production immédiatement.
+         >
+         >Consultez [Déploiement de votre code](deploying-code.md) pour définir la planification du déploiement ou exécuter la production immédiatement.
+   1. Configurez les **configurations du Dispatcher** pour la production.
+
+      En tant que responsable de déploiement, vous avez la possibilité de configurer un ensemble de chemins de contenu qui seront **invalidés** ou **purgés** du cache du Dispatcher AEM des instances de publication, lors de la configuration ou de la modification du pipeline.
+
+      Vous pouvez configurer un ensemble distinct de chemins pour le déploiement Intermédiaire et Production. Si elles sont configurées, ces actions de cache sont exécutées dans le cadre de l’étape du pipeline de déploiement, juste après le déploiement des packages de contenu. Ces paramètres utilisent le comportement du Dispatcher AEM standard : invalider effectue une invalidation du cache, comme lorsque le contenu est activé d’Author vers Publish ; purger effectue une suppression de cache.
+
+      En règle générale, l’utilisation de l’action invalider est préférable mais il se peut que la purge soit requise, notamment lors de l’utilisation des bibliothèques clients HTML AEM.
+
+      >[!NOTE]
+      >
+      >Pour plus d’informations sur la mise en cache du Dispatcher, consultez [Présentation du Dispatcher](dispatcher-configurations.md).
+
+
+
+
+
+1. Cliquez sur **Continuer** une fois que vous avez sélectionné toutes les options.
+
+1. Sélectionnez vos options à l’étape **Test d’évaluation** . Vous pouvez configurer des tests de performance *AEM Sites* et *AEM Assets*, selon les produits sous licence que vous possédez. Pour plus d’informations, consultez [Tests de performances](understand-your-test-results.md#performance-testing).
+
+   1. Sélectionnez vos options dans **Diffusion du contenu des sites/Poids de charge distribué**. Voir [AEM Sites dans Test de performance](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=en#aem-sites) pour plus d’informations.
+
+      ![](/help/using/assets/configure-pipelines/add-prod5.png)
+
+   1. Sélectionnez vos options dans **Distribution des tests de performances des ressources**. Voir [AEM Assets dans Test de performance](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=en#aem-assets) pour plus d’informations.
+
+      ![](/help/using/assets/configure-pipelines/add-prod6.png)
+
+1. Cliquez sur **Enregistrer** pour terminer l’ajout du pipeline de production.
+
+### Modification d’un pipeline de production {#editing-prod-pipeline}
+
+Vous pouvez modifier les configurations de pipeline à partir de la page **Aperçu du programme**.
+
+Pour modifier le pipeline configuré, procédez comme suit :
+
+1. Accédez à la carte **Pipelines** à partir de la page **Aperçu du programme**.
+
+1. Cliquez sur **...** à partir de la carte **Pipelines** et cliquez sur **Modifier**, comme illustré dans la figure ci-dessous.
+
+
+1. La boîte de dialogue **Modifier le pipeline de production** s’affiche.
+
+   1. L’onglet **Configuration** vous permet de mettre à jour le **Nom du pipeline**, **Déclencheur de déploiement** et **Comportement d’échec des mesures importantes**.
+
+      >[!NOTE]
+      >Voir [Ajout et gestion des référentiels](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) pour savoir comment ajouter et gérer des référentiels dans Cloud Manager.
+
+
+   1. L’onglet **Source** vous permet de cocher ou de décocher les options **Mettre en pause avant le déploiement en production** et **Planifié** à partir des **Options de déploiement en production**.
+
+
+   1. L’option **Audit de l’expérience** vous permet de mettre à jour ou d’ajouter de nouvelles pages.
+
+
+1. Cliquez sur **Mettre à jour** une fois la modification du pipeline terminée.
 
 1. Cliquez sur **Configurer un pipeline** pour configurer votre pipeline.
 
    ![](assets/Setup-Pipeline.png)
 
-1. L’écran **Configurer un pipeline** s’affiche.
 
-   L’assistant en trois étapes permet de configurer votre **branche**, vos **environnements** et votre environnement de **test**.
-Sélectionnez votre branche Git et cliquez **Suivant**.
-
-   >[!NOTE]
-   >
-   >Les branches trouvées dans le référentiel Git sont associées au programme.
-
-
-1. Accédez à l’onglet **Environnements** pour sélectionner les options **Intermédiaire** et **Production**.
-
-   Vous pouvez définir le déclencheur pour démarrer le pipeline :
-
-   * **Lors des modifications Git** : démarre le pipeline CI/CD chaque fois que des validations sont ajoutées à la branche git configurée. Même si vous sélectionnez cette option, vous pouvez toujours démarrer le pipeline manuellement.
-   * **Manuel** : l’utilisation de l’interface lance le pipeline manuellement.
-
-   Lors de la configuration ou de la modification du pipeline, le responsable de déploiement peut définir le comportement du pipeline en cas d’échec important dans l’un des points de contrôle qualité tels que Qualité du code, Test de sécurité et Test de performance.
-
-   Cela s’avère utile pour les clients qui souhaitent davantage de processus automatisés. Les options disponibles sont les suivantes :
-
-* **Demander à chaque fois** : il s’agit du paramètre par défaut, qui nécessite une intervention manuelle lors de n’importe quel échec important.
-* **Annuler immédiatement** : si cette option est sélectionnée, le pipeline sera annulé chaque fois qu’un échec important se produira. Cette option émule essentiellement un utilisateur rejetant manuellement chaque échec.
-* **Approuver immédiatement** : si cette option est sélectionnée, le pipeline se poursuit automatiquement chaque fois qu’un échec important se produit. Cette option émule essentiellement la validation manuelle de l’utilisateur à chaque échec.
-
-   Définissez maintenant les paramètres contrôlant le déploiement en production. Les trois options disponibles sont les suivantes :
-
-* **Utiliser l’approbation GoLive** : un déploiement doit être approuvé manuellement par un propriétaire d’entreprise, un responsable de projet ou un responsable de déploiement via l’interface utilisateur [!UICONTROL Cloud Manager].
-* **Utiliser la supervision par l’ingénieur du service client** : un ingénieur du service client participe au démarrage du déploiement. Lors de la configuration ou de la modification du pipeline lorsque la supervision par l’ingénieur du service client est activée, le responsable de déploiement peut sélectionner l’une des options suivantes :
-
-   * **Tout ingénieur du service client** : fait référence à tout ingénieur du service client disponible.
-   * **Mon ingénieur du service client** : fait référence à un ingénieur du service client spécifique affecté au client ou un remplaçant, si l’ingénieur du service client est absent du bureau.
-
-* **Planifié** : cette option permet à l’utilisateur d’activer le déploiement en production planifié.
-
->[!NOTE]
->Si l’option **Planifié** est sélectionnée, vous pouvez planifier le déploiement en production sur le pipeline **après** le déploiement en environnement intermédiaire (et **Utiliser l’approbation GoLive**, si cette option a été activée) pour attendre la définition d’une planification. L’utilisateur peut également choisir d’exécuter le déploiement en production immédiatement.
->
->Consultez [**Déploiement de votre code**](deploying-code.md) pour définir la planification du déploiement ou exécuter la production immédiatement.
-
-![](assets/configure-pipeline-new.png)
-
->[!NOTE]
->
->L’option **Utiliser la supervision par l’ingénieur du service client** n’est pas disponible pour tous les clients.
-
-**Approuver après le déploiement dans l’environnement intermédiaire**
-
-Il existe une étape facultative **Approuver après le déploiement dans l’environnement intermédiaire** qui peut être configurée dans le pipeline de production.
-Elle est activée dans une nouvelle option de l’écran **Modifier un pipeline** :
-
-![](assets/post_deployment1.png)
-
-Elle s’affiche ensuite sous la forme d’une étape distincte lors de l’exécution du pipeline :
-
-![](assets/post_deployment2.png)
-
->[!NOTE]
->
->Les fonctions **Approuver après le déploiement dans l’environnement intermédiaire** fonctionnent de la même manière que l’approbation avant le déploiement en production, mais ce processus se produit immédiatement après l’étape de déploiement dans l’environnement intermédiaire, c’est-à-dire avant que les tests ne soient effectués, contrairement à l’approbation avant le déploiement en production, qui est effectuée une fois tous les tests terminés.
-
-**Invalidation du Dispatcher**
-
-En tant que responsable de déploiement, vous avez la possibilité de configurer un ensemble de chemins de contenu qui seront **invalidés** ou **purgés** du cache du Dispatcher AEM des instances de publication, lors de la configuration ou de la modification du pipeline.
-
-Vous pouvez configurer un ensemble distinct de chemins pour le déploiement Intermédiaire et Production. Si elles sont configurées, ces actions de cache sont exécutées dans le cadre de l’étape du pipeline de déploiement, juste après le déploiement des packages de contenu. Ces paramètres utilisent le comportement du Dispatcher AEM standard : invalider effectue une invalidation du cache, comme lorsque le contenu est activé d’Author vers Publish ; purger effectue une suppression de cache.
-
-En règle générale, l’utilisation de l’action invalider est préférable mais il se peut que la purge soit requise, notamment lors de l’utilisation des bibliothèques clients HTML AEM.
-
->[!NOTE]
->
->Pour plus d’informations sur la mise en cache du Dispatcher, consultez [Présentation du Dispatcher](dispatcher-configurations.md).
-
-Pour configurer les invalidations du Dispatcher, procédez comme suit :
-
-1. Cliquez sur **Configurer** sous l’en-tête Configuration du Dispatcher.
-
-   ![](assets/image2018-8-7_14-53-24.png)
-
-1. Saisissez le chemin d’accès, sélectionnez l’action dans **Type**, puis cliquez sur **Ajouter**. Vous pouvez spécifier jusqu’à 100 chemins par environnement. Une fois les chemins ajoutés, cliquez sur **Appliquer**.
-
-   ![](assets/image2018-8-7_14-58-11.png)
-
-1. Une fois que vous êtes revenu sur la page **Paramètres du pipeline**, un résumé mis à jour des sélections s’affiche.
-
-   Cliquez sur **Enregistrer** pour conserver cette configuration.
-
-   ![](assets/image2018-8-7_15-4-30.png)
-
-1. Accédez à l’onglet **Tests** pour définir les critères de test du programme. Vous pouvez maintenant configurer les paramètres de test de performance.
-
-   Vous pouvez configurer des tests de performance *AEM Sites* et *AEM Assets*, selon les produits sous licence que vous possédez. Pour plus d’informations, consultez [Tests de performances](understand-your-test-results.md#performance-testing).
-
-1. Cliquez sur **Enregistrer** pour terminer la configuration du processus de pipeline.
-
-   >[!NOTE]
-   >Une fois que vous avez configuré le pipeline, vous pouvez toujours modifier les paramètres à l’aide de la vignette **Paramètres du pipeline de production** depuis l’interface utilisateur de [!UICONTROL Cloud Manager].
-
-   ![](assets/Production-Pipeline.png)
 
 
 ## Pipelines de qualité de code et hors production uniquement
