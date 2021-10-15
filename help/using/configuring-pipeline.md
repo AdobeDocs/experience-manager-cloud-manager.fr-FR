@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 feature: CI-CD Pipeline
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 973fec504cd5f35435b10e3d1d28f3ba20ff4ab9
+source-git-commit: 78a6c939cdb7c4335891e27209b221fc3e6efec2
 workflow-type: tm+mt
-source-wordcount: '1486'
-ht-degree: 61%
+source-wordcount: '1737'
+ht-degree: 58%
 
 ---
 
@@ -70,45 +70,45 @@ Pour configurer le comportement et les préférences de votre pipeline de produc
 
 1. **La boîte de dialogue Ajouter un** pipeline de production s’affiche.
 
-   1. Saisissez le nom du pipeline. Vous pouvez choisir le **référentiel** et la **branche Git**.
+   1. Saisissez le **Nom du pipeline**. Vous pouvez choisir le **référentiel** et la **branche Git**.
 
       ![](/help/using/assets/configure-pipelines/add-prod2.png)
 
-   1. Vous pouvez configurer **Déclencheur de déploiement** et **Comportement d’échec important** à partir des **Options de déploiement**.
+   1. Vous pouvez configurer **Déclencheur de déploiement** et **Comportement d’échec des mesures importantes** à partir des **Options de déploiement**.
 
       ![](/help/using/assets/configure-pipelines/add-prod3.png)
 
 
-      Vous pouvez définir le déclencheur pour démarrer le pipeline :
+      Vous pouvez affecter les déclencheurs de déploiement suivants au démarrage du pipeline :
 
       * **Manuel** : l’utilisation de l’interface lance le pipeline manuellement.
       * **Lors des modifications Git** : démarre le pipeline CI/CD chaque fois que des validations sont ajoutées à la branche git configurée. Même si vous sélectionnez cette option, vous pouvez toujours démarrer le pipeline manuellement.
 
-         >[!NOTE]
-         >Lors de la configuration ou de la modification du pipeline, le responsable de déploiement peut définir le comportement du pipeline en cas d’échec important à l’un des points de contrôle qualité.
+      Lors de la configuration ou de la modification du pipeline, le responsable de déploiement peut définir le comportement du pipeline en cas d’échec important à l’un des points de contrôle qualité.
+
       Cela s’avère utile pour les clients qui souhaitent davantage de processus automatisés. Les options disponibles sont les suivantes :
 
       * **Demander à chaque fois** : il s’agit du paramètre par défaut, qui nécessite une intervention manuelle lors de n’importe quel échec important.
-      * **Annuler immédiatement** : si cette option est sélectionnée, le pipeline sera annulé chaque fois qu’un échec important se produira. Cette option émule essentiellement un utilisateur rejetant manuellement chaque échec.
-      * **Approuver immédiatement** : si cette option est sélectionnée, le pipeline se poursuit automatiquement chaque fois qu’un échec important se produit. Cette option émule essentiellement la validation manuelle de l’utilisateur à chaque échec.
+      * **Échec immédiatement**  : si cette option est sélectionnée, le pipeline est annulé chaque fois qu’un échec important se produit. Cette option émule essentiellement un utilisateur rejetant manuellement chaque échec.
+      * **Continuer immédiatement** : si cette option est sélectionnée, le pipeline se poursuit automatiquement chaque fois qu’un échec important se produit. Cette option émule essentiellement la validation manuelle de l’utilisateur à chaque échec.
    1. Sélectionnez les **Options de déploiement**.
 
       ![](/help/using/assets/configure-pipelines/add-prod4.png)
 
       * Les fonctions **Approuver après le déploiement dans l’environnement intermédiaire** fonctionnent de la même manière que l’approbation avant le déploiement en production, mais ce processus se produit immédiatement après l’étape de déploiement dans l’environnement intermédiaire, c’est-à-dire avant que les tests ne soient effectués, contrairement à l’approbation avant le déploiement en production, qui est effectuée une fois tous les tests terminés.
 
-      * **Ignorer l’équilibreur de charge**
-   1. Sélectionnez les **Configurations de Dispatcher** pour l’évaluation. Saisissez le chemin, sélectionnez l’action à partir de **Type**, puis cliquez sur **Ajouter chemin**. Vous pouvez spécifier jusqu’à 100 chemins par environnement.
+      * **Ignorer l’équilibreur de charge** modifie les modifications.
+   1. Sélectionnez la **Configuration de Dispatcher** pour l’évaluation. Saisissez le chemin, sélectionnez l’action à partir de **Type**, puis cliquez sur **Ajouter chemin**. Vous pouvez spécifier jusqu’à 100 chemins par environnement.
 
       ![](/help/using/assets/configure-pipelines/dispatcher-stage.png)
 
-   1. Sélectionnez les **Options de déploiement** pour Production. Définissez maintenant les paramètres contrôlant le déploiement en production. Les trois options disponibles sont les suivantes :
+   1. Sélectionnez les **Options de déploiement** pour Production. Définissez maintenant les paramètres contrôlant le déploiement en production.
+
+      ![](/help/using/assets/configure-pipelines/prod-deploymentoptions.png)
+
+      Les trois options disponibles sont les suivantes :
 
       * **Utiliser l’approbation GoLive** : un déploiement doit être approuvé manuellement par un propriétaire d’entreprise, un responsable de projet ou un responsable de déploiement via l’interface utilisateur [!UICONTROL Cloud Manager].
-      * **Utiliser la supervision par l’ingénieur du service client** : un ingénieur du service client participe au démarrage du déploiement. Lors de la configuration ou de la modification du pipeline lorsque la supervision par l’ingénieur du service client est activée, le responsable de déploiement peut sélectionner l’une des options suivantes :
-
-      * **Tout ingénieur du service client** : fait référence à tout ingénieur du service client disponible.
-      * **Mon ingénieur du service client** : fait référence à un ingénieur du service client spécifique affecté au client ou un remplaçant, si l’ingénieur du service client est absent du bureau.
 
       * **Planifié** : cette option permet à l’utilisateur d’activer le déploiement en production planifié.
 
@@ -116,6 +116,11 @@ Pour configurer le comportement et les préférences de votre pipeline de produc
          >Si l’option **Planifié** est sélectionnée, vous pouvez planifier le déploiement en production sur le pipeline **après** le déploiement en environnement intermédiaire (et **Utiliser l’approbation GoLive**, si cette option a été activée) pour attendre la définition d’une planification. L’utilisateur peut également choisir d’exécuter le déploiement en production immédiatement.
          >
          >Consultez [Déploiement de votre code](deploying-code.md) pour définir la planification du déploiement ou exécuter la production immédiatement.
+
+         * **Utiliser la supervision par l’ingénieur du service client** : un ingénieur du service client participe au démarrage du déploiement. Lors de la configuration ou de la modification du pipeline lorsque la supervision par l’ingénieur du service client est activée, le responsable de déploiement peut sélectionner l’une des options suivantes :
+
+            * **Tout ingénieur du service client** : fait référence à tout ingénieur du service client disponible.
+            * **Mon ingénieur du service client** : fait référence à un ingénieur du service client spécifique affecté au client ou un remplaçant, si l’ingénieur du service client est absent du bureau.
    1. Configurez les **configurations du Dispatcher** pour la production. Saisissez le chemin, sélectionnez l’action à partir de **Type**, puis cliquez sur **Ajouter chemin**. Vous pouvez spécifier jusqu’à 100 chemins par environnement.
 
       ![](/help/using/assets/configure-pipelines/dispatcher-prod.png)
@@ -172,6 +177,28 @@ Pour modifier le pipeline configuré, procédez comme suit :
 
 1. Cliquez sur **Mettre à jour** une fois la modification du pipeline terminée.
 
+### Autres actions de pipeline de production {#additional-prod-actions}
+
+#### Exécution d’un pipeline de production {#run-prod}
+
+Vous pouvez exécuter le pipeline de production à partir de la carte Pipelines :
+
+1. Accédez à la carte **Pipelines** à partir de la page **Aperçu du programme**.
+
+1. Cliquez sur **...** à partir de la carte **Pipelines** et cliquez sur **Exécuter**, comme illustré dans la figure ci-dessous.
+
+   ![](/help/using/assets/configure-pipelines/prod-run.png)
+
+#### Suppression d’un pipeline de production {#delete-prod}
+
+Vous pouvez supprimer le pipeline de production de la carte Pipelines :
+
+1. Accédez à la carte **Pipelines** à partir de la page **Aperçu du programme**.
+
+1. Cliquez sur **...** dans la carte **Pipelines** et cliquez sur **Supprimer**, comme illustré dans la figure ci-dessous.
+
+   ![](/help/using/assets/configure-pipelines/prod-delete.png)
+
 ## Pipelines de qualité de code et hors production uniquement
 
 En plus du pipeline principal qui se déploie vers les environnements intermédiaire et de production, les clients peuvent configurer des pipelines supplémentaires, appelés **Pipelines hors production**. Ces pipelines exécutent toujours les étapes de génération et de qualité de code. Si besoin est, elles peuvent aussi déployer vers l’environnement Adobe Managed Services.
@@ -194,7 +221,7 @@ Sur l’écran d’accueil, ces pipelines sont répertoriés dans une nouvelle c
 
 1. **La boîte de dialogue Ajouter un**  pipeline hors production s’affiche. Sélectionnez le type de pipeline que vous souhaitez créer, **Pipeline de qualité du code** ou **Pipeline de déploiement**.
 
-   De plus, vous pouvez également configurer **Déclencheur de déploiement** et **Comportement d’échec important** à partir des **Options de déploiement**. Cliquez sur **Continuer**.
+   De plus, vous pouvez également configurer **Déclencheur de déploiement** et **Comportement d’échec des mesures importantes** à partir des **Options de déploiement**. Cliquez sur **Continuer**.
 
    ![](/help/using/assets/configure-pipelines/nonprod-pipeline-add2.png)
 
@@ -228,6 +255,17 @@ Suivez les étapes ci-dessous pour modifier le pipeline hors production configur
 
    >[!NOTE]
    >Voir [Ajout et gestion des référentiels](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) pour savoir comment ajouter et gérer des référentiels dans Cloud Manager.
+
+   Vous pouvez affecter les déclencheurs de déploiement suivants au démarrage du pipeline :
+
+   * **Manuel** : l’utilisation de l’interface lance le pipeline manuellement.
+   * **Lors des modifications Git** : démarre le pipeline CI/CD chaque fois que des validations sont ajoutées à la branche git configurée. Même si vous sélectionnez cette option, vous pouvez toujours démarrer le pipeline manuellement.
+
+   Lors de la configuration ou de la modification du pipeline, le responsable de déploiement peut définir le comportement du pipeline en cas d’échec important à l’un des points de contrôle qualité. Cela s’avère utile pour les clients qui souhaitent davantage de processus automatisés. Les options disponibles sont les suivantes :
+
+   * **Demander à chaque fois** : il s’agit du paramètre par défaut, qui nécessite une intervention manuelle lors de n’importe quel échec important.
+   * **Échec immédiatement**  : si cette option est sélectionnée, le pipeline est annulé chaque fois qu’un échec important se produit. Cette option émule essentiellement un utilisateur rejetant manuellement chaque échec.
+   * **Continuer immédiatement** : si cette option est sélectionnée, le pipeline se poursuit automatiquement chaque fois qu’un échec important se produit. Cette option émule essentiellement la validation manuelle de l’utilisateur à chaque échec.
 
 
 1. Cliquez sur **Mettre à jour** une fois la modification du pipeline hors production terminée.
