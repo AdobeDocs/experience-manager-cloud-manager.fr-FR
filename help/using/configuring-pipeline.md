@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 feature: CI-CD Pipeline
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: fd172a7168074630e85f3b110e032f783d39ddca
+source-git-commit: 973fec504cd5f35435b10e3d1d28f3ba20ff4ab9
 workflow-type: tm+mt
-source-wordcount: '1499'
+source-wordcount: '1486'
 ht-degree: 61%
 
 ---
@@ -158,29 +158,19 @@ Pour modifier le pipeline configuré, procédez comme suit :
 
 1. Cliquez sur **...** à partir de la carte **Pipelines** et cliquez sur **Modifier**, comme illustré dans la figure ci-dessous.
 
+   ![](/help/using/assets/configure-pipelines/edit-prod1.png)
 
 1. La boîte de dialogue **Modifier le pipeline de production** s’affiche.
 
-   1. L’onglet **Configuration** vous permet de mettre à jour le **Nom du pipeline**, **Déclencheur de déploiement** et **Comportement d’échec des mesures importantes**.
+   1. L’onglet **Configuration** vous permet de mettre à jour le **Nom du pipeline**, **Référentiel**, **Branche Git**, **Déclencheur de déploiement**, **Comportement d’échec des mesures importantes**, **Options de déploiement** et **Configurations du Dispatcher**.
 
       >[!NOTE]
       >Voir [Ajout et gestion des référentiels](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) pour savoir comment ajouter et gérer des référentiels dans Cloud Manager.
 
 
-   1. L’onglet **Source** vous permet de cocher ou de décocher les options **Mettre en pause avant le déploiement en production** et **Planifié** à partir des **Options de déploiement en production**.
-
-
-   1. L’option **Audit de l’expérience** vous permet de mettre à jour ou d’ajouter de nouvelles pages.
-
+   1. L’onglet **Test d’évaluation** vous offre la possibilité de sélectionner à nouveau vos options dans **Diffusion du contenu du site/Poids de charge distribué** et **Distribution des tests de performance des ressources**.
 
 1. Cliquez sur **Mettre à jour** une fois la modification du pipeline terminée.
-
-1. Cliquez sur **Configurer un pipeline** pour configurer votre pipeline.
-
-   ![](assets/Setup-Pipeline.png)
-
-
-
 
 ## Pipelines de qualité de code et hors production uniquement
 
