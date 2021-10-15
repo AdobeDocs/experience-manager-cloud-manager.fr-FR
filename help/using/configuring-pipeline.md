@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 feature: CI-CD Pipeline
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 78a6c939cdb7c4335891e27209b221fc3e6efec2
+source-git-commit: 1e3dc17d28ab69dcd6b2337280bb38ba07352beb
 workflow-type: tm+mt
-source-wordcount: '1737'
-ht-degree: 58%
+source-wordcount: '1842'
+ht-degree: 55%
 
 ---
 
@@ -199,6 +199,9 @@ Vous pouvez supprimer le pipeline de production de la carte Pipelines :
 
    ![](/help/using/assets/configure-pipelines/prod-delete.png)
 
+   >[!NOTE]
+   >Un utilisateur disposant du rôle Gestionnaire de déploiement peut désormais supprimer le pipeline de production en libre-service via l’option **Supprimer** de la carte Pipeline.
+
 ## Pipelines de qualité de code et hors production uniquement
 
 En plus du pipeline principal qui se déploie vers les environnements intermédiaire et de production, les clients peuvent configurer des pipelines supplémentaires, appelés **Pipelines hors production**. Ces pipelines exécutent toujours les étapes de génération et de qualité de code. Si besoin est, elles peuvent aussi déployer vers l’environnement Adobe Managed Services.
@@ -269,6 +272,28 @@ Suivez les étapes ci-dessous pour modifier le pipeline hors production configur
 
 
 1. Cliquez sur **Mettre à jour** une fois la modification du pipeline hors production terminée.
+
+### Autres actions de pipeline hors production {#additional-nonprod-actions}
+
+#### Exécution d’un pipeline hors production {#run-nonprod}
+
+Vous pouvez exécuter le pipeline de production à partir de la carte Pipelines :
+
+1. Accédez à la carte **Pipelines** à partir de la page **Aperçu du programme**.
+
+1. Cliquez sur **...** à partir de la carte **Pipelines** et cliquez sur **Exécuter**, comme illustré dans la figure ci-dessous.
+
+   ![](/help/using/assets/configure-pipelines/nonprod-run1.png)
+
+#### Suppression d’un pipeline hors production {#delete-nonprod}
+
+Vous pouvez supprimer le pipeline de production de la carte Pipelines :
+
+1. Accédez à la carte **Pipelines** à partir de la page **Aperçu du programme**.
+
+1. Cliquez sur **...** dans la carte **Pipelines** et cliquez sur **Supprimer**, comme illustré dans la figure ci-dessous.
+
+   ![](/help/using/assets/configure-pipelines/nonprod-delete.png)
 
 
 ## Étapes suivantes {#the-next-steps}
