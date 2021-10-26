@@ -5,7 +5,7 @@ exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
 source-git-commit: 17f79fdc7278cae532485570a6e2b8700683ef0d
 workflow-type: tm+mt
 source-wordcount: '443'
-ht-degree: 86%
+ht-degree: 95%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 86%
 
 Les référentiels créés et disponibles dans Cloud Manager peuvent être affichés et gérés à partir de la page Référentiels.
 
-## Ajout et gestion des référentiels {#add-manage-repos}
+## Ajout et gestion de référentiels {#add-manage-repos}
 
 Suivez les étapes ci-dessous pour afficher et gérer les référentiels dans Cloud Manager :
 
@@ -52,7 +52,7 @@ Les sous-modules Git peuvent être utilisés pour fusionner le contenu de plusie
 $ git submodule update --init
 ```
 
-Cette procédure extrait chaque sous-module dans le répertoire approprié. Cette technique constitue une alternative potentielle à [l’utilisation de plusieurs référentiels Git source](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/working-with-multiple-source-git-repositories.html) pour les organisations qui maîtrisent l’utilisation des sous-modules Git et qui ne souhaitent pas gérer de processus de fusion externe.
+Cette procédure extrait chaque sous-module dans le répertoire approprié. Cette technique constitue une alternative potentielle à l’[utilisation de plusieurs référentiels Git sources](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/working-with-multiple-source-git-repositories.html?lang=fr) pour les organisations qui maîtrisent l’utilisation des sous-modules Git et qui ne souhaitent pas gérer de processus de fusion externe.
 
 Par exemple, supposons qu’il existe trois référentiels, chacun contenant une seule branche nommée « main ». Dans le référentiel « principal », c’est-à-dire celui qui est configuré dans les pipelines, la branche principale contient un fichier pom.xml qui déclare les projets contenus dans les deux autres référentiels :
 
