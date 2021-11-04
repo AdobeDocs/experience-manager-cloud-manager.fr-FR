@@ -1,52 +1,55 @@
 ---
-title: Notes de mise à jour de la version 2021.10.0
-description: Consultez cette page pour obtenir des informations sur la version 2021.10.0 de Cloud Manager
+title: Notes de mise à jour de la version 2021.11.0
+description: Consultez cette page pour obtenir des informations sur la version 2021.11.0 de Cloud Manager
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: b28f8f1bedb92428d332716510cbf0fd714fada6
+source-git-commit: 0395fd4263ae37bce49c698e8e72ad7b08af046a
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 20%
+source-wordcount: '332'
+ht-degree: 22%
 
 ---
 
 # Notes de mise à jour de la version 2021.10.0 {#release-notes-for}
 
-La section ci-dessous présente les notes générales de mise à jour de la version 2021.10.0 de [!UICONTROL Cloud Manager].
+La section ci-dessous présente les notes générales de mise à jour de la version 2021.11.0 de [!UICONTROL Cloud Manager].
 
 >[!NOTE]
 >Reportez-vous aux [Notes de mise à jour actuelles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/release-notes-cloud-manager/release-notes-cm-current.html?lang=fr#getting-access) pour consulter les dernières notes de mise à jour de Cloud Manager dans AEM as a Cloud Service.
 
 ## Date de publication {#release-date}
 
-[!UICONTROL Cloud Manager] version 2021.10.0 a été publié le 14 octobre 2021.
-La prochaine version est prévue pour le 4 novembre 2021.
+La date de publication de [!UICONTROL Cloud Manager] version 2021.11.0 est le 04 novembre 2021.
+La prochaine version est prévue pour le 9 décembre 2021.
 
 ## Nouveautés {#whats-new}
 
-* Les pipelines de production peuvent désormais être exécutés en mode &quot;urgence&quot;, en contournant les étapes de test de sécurité et de performance pour les déploiements d’urgence.
+* L’identifiant de validation Git s’affiche désormais dans les détails d’exécution du pipeline, ce qui facilite le suivi du code qui a été créé.
 
-* Pour des raisons de cohérence avec Cloud Service, les pipelines de déploiement existants seront désormais référencés et étiquetés dans l’interface utilisateur comme pipelines &quot;Pile complète&quot;.
+* Le `x-request-id` L’en-tête de réponse est désormais visible dans le terrain de lecture de l’API sur [www.adobe.io](https://www.adobe.io/). Cet en-tête est utile lors de l’envoi de problèmes d’assistance clientèle à des fins de dépannage.
 
-* La carte du pipeline a été actualisée afin d’afficher désormais une seule face intégrée qui affiche les pipelines de production et hors production. L’utilisateur peut sélectionner Exécuter/Pause/Reprendre directement dans le menu d’actions associé à chaque pipeline.
+* En tant qu’utilisateur, je vois une carte Pipeline avec zéro pipeline me fournir des conseils appropriés.
 
-* Un utilisateur disposant du rôle Gestionnaire de déploiement peut désormais supprimer le pipeline de production en libre-service via l’interface utilisateur.
+* Une nouvelle page Pipelines avec une fenêtre contextuelle d’état et de survol permettant d’afficher facilement le résumé des détails est désormais disponible. Les exécutions de pipeline peuvent être visualisées avec les détails associés.
 
-* L’ajout et la modification d’expériences de pipeline ont été actualisés afin d’utiliser désormais des modèles familiers et modernes.
+* L’API Modifier le pipeline prend désormais en charge la définition des chemins d’invalidation et de purge du dispatcher.
 
-* Les utilisateurs de Cloud Manager peuvent désormais envoyer leurs commentaires directement depuis l’interface utilisateur via le bouton **Commentaires** en haut à droite de la page d’entrée.
+* L’API Edit Pipeline prend désormais en charge la modification de l’environnement utilisé dans les phases de déploiement.
 
-* Les graphiques SLA annuels peuvent désormais être téléchargés à partir de l’interface utilisateur de Cloud Manager.
+* Une optimisation du processus d’analyse OakPal a été introduite pour les modules volumineux.
 
-* Les exécutions de pipeline de qualité de code et hors production utilisent désormais un processus de clonage superficiel plus efficace au cours de l’étape de création, ce qui accélère la création pour les clients disposant de référentiels Git particulièrement volumineux.
+* Le fichier CSV de problème de qualité contient désormais l’horodatage de chaque problème de qualité.
 
-* La documentation de l’API Cloud Manager comprend désormais un terrain de lecture interactif qui permet aux utilisateurs connectés de tester l’API depuis leur navigateur. Voir [Jeu d’API Cloud Manager](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) pour plus d’informations.
-
-* L’info-bulle de la carte Programme est plus descriptive si une option de sélection sous &quot;Accéder à&quot; est désactivée. Il dira désormais &quot;Aucun environnement de production n’existe&quot;.
-
+* Le bouton Gérer de la page Environnements ne sera plus visible dans l’interface utilisateur.
 
 ## Correctifs {#bug-fixes}
 
-* Lorsque les données lues à partir des systèmes internes n’étaient pas entrées correctement, cela pouvait entraîner le mauvais reflet des données non liées fournies par les ingénieurs du service client dans Cloud Manager.
+* Certaines configurations de génération non orthodoxes entraînaient le stockage de fichiers inutiles dans le cache d’artefacts Maven du pipeline, ce qui entraînait des E/S réseau superflues lors du démarrage et de l’arrêt du conteneur de génération.
 
-* Dans des situations client spécifiques, les artefacts non valides téléchargés lors de l’étape de création qui aurait dû entraîner l’échec de la version étaient ignorés.
+* L’API du PATCH de pipeline échoue si la phase de déploiement n’existe pas.
+
+* Le `ClientlibProxyResourceCheck` la règle de qualité générait des problèmes de faux positifs lorsqu’il existait des bibliothèques clientes avec des chemins d’accès de base communs.
+
+* Un message d’erreur indiquant que le nombre maximal de référentiels a été atteint ne précisait pas la raison de l’erreur.
+
+* Dans de rares cas, les pipelines échouaient en raison d’une gestion inappropriée des reprises de certains codes de réponse.
