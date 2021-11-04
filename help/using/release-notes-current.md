@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 2021.11.0
 description: Consultez cette page pour obtenir des informations sur la version 2021.11.0 de Cloud Manager
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 0395fd4263ae37bce49c698e8e72ad7b08af046a
+source-git-commit: e6e5a17c16c42e0b0ed5aedd2f9a6360fd81d8cd
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 22%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -29,6 +29,8 @@ La prochaine version est prévue pour le 9 décembre 2021.
 * Le `x-request-id` L’en-tête de réponse est désormais visible dans le terrain de lecture de l’API sur [www.adobe.io](https://www.adobe.io/). Cet en-tête est utile lors de l’envoi de problèmes d’assistance clientèle à des fins de dépannage.
 
 * En tant qu’utilisateur, je vois une carte Pipeline avec zéro pipeline me fournir des conseils appropriés.
+
+* Une nouvelle page d’activité est désormais disponible, où vous pouvez afficher les activités telles que les exécutions de pipeline et de code, ainsi que les détails associés. Au fil du temps, les activités répertoriées dans cette page s’étendront avec le détail fourni.
 
 * Une nouvelle page Pipelines avec une fenêtre contextuelle d’état et de survol permettant d’afficher facilement le résumé des détails est désormais disponible. Les exécutions de pipeline peuvent être visualisées avec les détails associés.
 
