@@ -11,9 +11,9 @@ discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 feature: Code Deployment
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
 source-git-commit: 2fcefda1e30871d44e3a1353470a4728904d7598
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1220'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Une fois que vous avez configuré votre pipeline de production (référentiel, e
 
 1. L’écran **Exécution du pipeline** s’affiche.
 
-   Cliquez sur **Générer** pour lancer le processus.
+   Cliquez sur **Compilation** pour lancer le processus.
 
    ![](assets/Deploy2.png)
 
@@ -48,25 +48,25 @@ Une fois que vous avez configuré votre pipeline de production (référentiel, e
    >
    >En outre, vous pouvez examiner les étapes de divers processus de déploiement en affichant les journaux ou en examinant les résultats pour les critères de test.
 
-   Le **déploiement en environnement intermédiaire** comprend les étapes suivantes :
+   Le **Déploiement dans l’environnement intermédiaire** comprend les étapes suivantes :
 
    * Validation : cette étape permet de s’assurer que le pipeline est configuré pour utiliser les ressources actuellement disponibles ; par exemple, la branche configurée existe, les environnements sont disponibles, etc.
-   * Test de création et d’unité : cette étape exécute un processus de création en conteneur. Voir [Présentation de l’environnement de création](/help/using/build-environment-details.md) pour plus d’informations sur l’environnement de création.
+   * Test unitaire et version : cette étape exécute un processus de création en conteneur. Voir [Présentation de l’environnement de création](/help/using/build-environment-details.md) pour plus d’informations sur l’environnement de création.
    * Analyse du code : cette étape évalue la qualité du code de votre application. Pour plus d’informations sur le processus de test, voir [Présentation des résultats des tests](understand-your-test-results.md).
-   * Déploiement en environnement intermédiaire.
+   * Déployer dans l’environnement intermédiaire
 
    ![](assets/Stage_Deployment1.png)
 
    Le **test dans l’environnement intermédiaire** comprend les étapes suivantes :
 
    * Tests de sécurité : cette étape évalue l’impact du code de votre application sur la sécurité de l’environnement AEM. Pour plus d’informations sur le processus de test, voir [Présentation des résultats des tests](understand-your-test-results.md).
-   * Tests de performances : cette étape évalue les performances du code de votre application. Pour plus d’informations sur le processus de test, voir [Présentation des résultats des tests](understand-your-test-results.md).
+   * Tests de performance : cette étape évalue les performances du code de votre application. Pour plus d’informations sur le processus de test, voir [Présentation des résultats des tests](understand-your-test-results.md).
 
    ![](assets/Stage_Testing1.png)
 
    Le **déploiement en environnement de production** comprend les étapes suivantes :
 
-   * **Demande d’approbation** (si activée).
+   * **Application à approuver** (si activée).
    * **Planification du déploiement en production** (si activée).
    * **Assistance de l’ingénieur du service client** (si activée).
    * **Déploiement en environnement de production**
@@ -156,7 +156,7 @@ Le processus de déploiement des topologies de production diffère légèrement 
 
 Les déploiements en production suivent généralement les mêmes étapes que ci-dessus, mais par roulements :
 
-1. Déploiement des packages AEM sur author.
+1. Déploiement des packages AEM sur l’instance de création.
 1. Détachement de dispatcher1 de l’équilibreur de charge.
 1. Déploiement en parallèle des packages AEM sur publish1 et du package dispatcher sur dispatcher1. Purge du cache du Dispatcher.
 1. Replacement du dispatcher1 dans l’équilibreur de charge.
@@ -165,31 +165,31 @@ Les déploiements en production suivent généralement les mêmes étapes que ci
 1. Replacement du dispatcher2 dans l’équilibreur de charge.
 Ce processus se poursuit jusqu’à ce que le déploiement ait atteint toutes les instances de publication et tous les Dispatchers dans la topologie.
 
-## Mode d’exécution du pipeline d’urgence {#emergency-pipeline}
+## Mode d’exécution d’urgence du pipeline {#emergency-pipeline}
 
-Dans les situations critiques, les clients d’Adobe Managed Services peuvent devoir déployer les modifications de code dans leurs environnements intermédiaire et de production sans attendre l’exécution d’un cycle de test complet de Cloud Manager.
+Dans les situations critiques, les clients d’Adobe Managed Services peuvent devoir déployer les modifications de code dans leurs environnements intermédiaire et de production sans attendre l’exécution d’un cycle de test complet de Cloud Manager.
 
-Pour résoudre ces problèmes, le pipeline de production Cloud Manager peut être exécuté en mode *urgence*. Lorsque ce mode est utilisé, les étapes de test de sécurité et de performance ne sont pas exécutées ; toutes les autres étapes, y compris toute étape de validation configurée, sont exécutées comme dans le mode normal d’exécution du pipeline.
+Pour résoudre ces problèmes, le pipeline de production de Cloud Manager peut être exécuté en mode *d’urgence*. Lorsque ce mode est utilisé, les étapes de test de sécurité et de performance ne sont pas exécutées ; toutes les autres étapes, y compris les étape de validation configurées, sont exécutées comme dans le mode normal d’exécution du pipeline.
 
 >[!NOTE]
->La fonctionnalité Mode d’exécution du pipeline d’urgence est activée sur une base de programme par les ingénieurs du succès client.
+>La fonctionnalité Mode d’exécution d’urgence du pipeline est activée au niveau du programme par les ingénieurs de réussite client.
 
-### Utilisation du mode d’exécution du pipeline d’urgence {#using-emergency-pipeline}
+### Utilisation du mode d’exécution d’urgence de pipeline {#using-emergency-pipeline}
 
-Lorsque vous démarrez l’exécution d’un pipeline de production, si cette fonctionnalité a été activée, vous pouvez démarrer l’exécution en mode normal ou d’urgence à partir de la boîte de dialogue, comme illustré dans la figure ci-dessous.
+Lorsque vous démarrez l’exécution d’un pipeline de production, si cette fonctionnalité a été activée, vous pouvez le faire en mode normal ou d’urgence à partir de la boîte de dialogue, comme illustré ci-dessous.
 
 ![](assets/execution-emergency1.png)
 
-En outre, en affichant la page des détails d’exécution du pipeline pour une exécution en mode d’urgence, le chemin de navigation en haut de l’écran affiche un indicateur indiquant que le mode d’urgence a été utilisé pour cette exécution particulière.
+En outre, en affichant la page des détails d’exécution du pipeline pour une exécution en mode d’urgence, le chemin de navigation en haut de l’écran affiche un indicateur indiquant que le mode d’urgence a été utilisé pour cette exécution en particulier.
 
 ![](assets/execution-emergency2.png)
 
 
-La création d’une exécution de pipeline dans ce mode d’urgence peut également être effectuée via l’API Cloud Manager ou l’interface de ligne de commande. Pour démarrer une exécution en mode d’urgence, envoyez une requête du PUT au point de terminaison d’exécution du pipeline avec le paramètre de requête `?pipelineExecutionMode=EMERGENCY` ou, lors de l’utilisation de l’interface de ligne de commande :
+Vous pouvez également créer une exécution de pipeline dans ce mode d’urgence à l’aide de l’API Cloud Manager ou de l’interface de ligne de commande. Pour démarrer une exécution en mode d’urgence, envoyez une requête PUT au point d’entrée d’exécution du pipeline avec le paramètre de requête `?pipelineExecutionMode=EMERGENCY` ou lors de l’utilisation de l’interface de ligne de commande :
 
 ```
 $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 ```
 
 >[!IMPORTANT]
->L’utilisation de l’indicateur `--emergency` peut nécessiter une mise à jour vers la dernière version de `aio-cli-plugin-cloudmanager`.
+>L’utilisation de l’indicateur `--emergency` peut nécessiter une mise à jour vers la dernière version de l’`aio-cli-plugin-cloudmanager`.
