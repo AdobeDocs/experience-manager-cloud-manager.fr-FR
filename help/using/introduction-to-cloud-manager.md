@@ -12,13 +12,13 @@ feature: Getting Started
 level: Beginner
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
 source-git-commit: 08d831c560510d58062ed81fab809c12169810cb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '840'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
-# Présentation de [!UICONTROL Cloud Manager]{#introduction-to-cloud-manager}
+# Présentation de [!UICONTROL Cloud Manager] {#introduction-to-cloud-manager}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cloudmanager_introduction"
@@ -29,15 +29,15 @@ ht-degree: 79%
 
 ## Présentation {#introduction}
 
-[!UICONTROL Cloud Manager] pour Adobe Experience Manager permet aux développeurs de créer des expériences client percutantes grâce à des workflows rationalisés, reposant sur les bonnes pratiques Adobe Experience Manager. Les pipelines CI/CD optimisés pour Adobe Experience Manager vous permettent de fusionner facilement des processus de développement en archivant votre code et en vous déplaçant tout au long du processus de production. Pendant la phase de création, vos mises à jour de code personnalisé sont minutieusement testées à l’aide de bonnes pratiques éprouvées afin de fournir à vos clients des expériences numériques percutantes. Cloud Manager utilise une approche d’API ouverte et vous permet de l’intégrer à vos systèmes sans interrompre les processus et outils existants.
+[!UICONTROL Cloud Manager] for Adobe Experience Manager permet aux développeurs de créer des expériences client percutantes grâce à des workflows rationalisés, reposant sur les bonnes pratiques Adobe Experience Manager. Les pipelines CI/CD optimisés pour Adobe Experience Manager permettent de fusionner facilement des processus de développement en archivant votre code et en vous guidant tout au long du processus de production. Pendant la phase de création, vos mises à jour de code personnalisé sont minutieusement testées à l’aide de bonnes pratiques éprouvées afin de fournir à vos clients des expériences numériques percutantes. Cloud Manager utilise une approche d’API ouverte et vous permet de l’intégrer à vos systèmes sans interrompre les processus et outils existants.
 
-Ce site de documentation décrit spécifiquement les fonctionnalités de Cloud Manager pour les clients Adobe Managed Services (AMS). Vous trouverez la documentation équivalente pour AEM clients as a Cloud Service dans la section [Implémentation des applications pour AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/home.html?lang=fr).
+Ce site de documentation décrit spécifiquement les fonctionnalités et les caractéristiques de Cloud Manager pour les clients Adobe Managed Services (AMS). Vous trouverez la documentation équivalente pour les clients AEM as a Cloud Service dans la section [Implémentation des applications pour AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/home.html?lang=fr).
 
-Avec Cloud Manager, votre équipe de développement peut exploiter les fonctionnalités suivantes :
+Avec Cloud Manager, votre équipe de développement peut exploiter les fonctionnalités suivantes :
 
 * Intégration continue/diffusion continue du code pour réduire le délai de mise sur le marché de plusieurs mois/semaines à quelques jours/heures.
 
-* Inspection du code, tests de performance et validation de la sécurité basés sur les bonnes pratiques avant de passer en production afin de minimiser les interruptions de production.
+* Inspection du code, test de performance et validation de la sécurité basés sur les bonnes pratiques avant de passer à la production, pour minimiser les interruptions de production.
 
 * Connectivité de l’API pour compléter les processus DevOps existants.
 
