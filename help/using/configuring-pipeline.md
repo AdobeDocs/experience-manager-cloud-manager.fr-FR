@@ -12,7 +12,7 @@ discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 feature: CI-CD Pipeline
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 source-git-commit: 2be8f290b58fff2991f876c37dd1b499bc6c5352
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1842'
 ht-degree: 100%
 
