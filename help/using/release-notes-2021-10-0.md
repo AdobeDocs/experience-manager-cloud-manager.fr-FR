@@ -4,9 +4,9 @@ description: Consultez cette page pour obtenir des informations sur la version 
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: e89420ef9e5621cb10ef80715e96fd25e486c9bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '362'
-ht-degree: 20%
+ht-degree: 100%
 
 ---
 
@@ -23,29 +23,29 @@ La section ci-dessous présente les notes générales de mise à jour de la vers
 
 ## Nouveautés {#whats-new}
 
-* Les pipelines de production peuvent désormais être exécutés en mode &quot;urgence&quot;, en contournant les étapes de test de sécurité et de performance pour les déploiements d’urgence.
+* Les pipelines de production peuvent désormais être exécutés en mode « d’urgence », en contournant les étapes de test de sécurité et de performance pour les déploiements d’urgence.
 
-* Pour des raisons de cohérence avec Cloud Service, les pipelines de déploiement existants seront désormais référencés et étiquetés dans l’interface utilisateur comme pipelines &quot;Pile complète&quot;.
+* Pour des raisons de cohérence avec Cloud Service, les pipelines de production existants seront désormais référencés et étiquetés dans l’interface utilisateur en tant que pipelines « Pile complète » (Full Stack).
 
-* La carte du pipeline a été actualisée afin d’afficher désormais une seule face intégrée qui affiche les pipelines de production et hors production. L’utilisateur peut sélectionner Exécuter/Pause/Reprendre directement dans le menu d’actions associé à chaque pipeline.
+* La carte Pipeline a été actualisée afin d’afficher désormais une seule face intégrée qui affiche les pipelines de production et hors production. L’utilisateur peut sélectionner Exécuter/Pause/Reprendre directement dans le menu d’actions associé à chaque pipeline.
 
 * Un utilisateur disposant du rôle Gestionnaire de déploiement peut désormais supprimer le pipeline de production en libre-service via l’interface utilisateur.
 
-* L’ajout et la modification d’expériences de pipeline ont été actualisés afin d’utiliser désormais des modèles familiers et modernes.
+* Les expériences d’ajout et de modification de pipeline ont été actualisées afin d’utiliser désormais des modèles familiers et modernes.
 
-* Les utilisateurs de Cloud Manager peuvent désormais envoyer des commentaires directement depuis l’interface utilisateur via le **Commentaires** en haut à droite de la landing page.
+* Les utilisateurs de Cloud Manager peuvent désormais envoyer des commentaires directement depuis l’interface utilisateur via **Commentaires** en haut à droite de la page d’accueil.
 
-* Les graphiques SLA annuels peuvent désormais être téléchargés à partir de l’interface utilisateur de Cloud Manager.
+* Les graphiques annuels de SLA peuvent désormais être téléchargés à partir de l’interface utilisateur de Cloud Manager.
 
 * Les exécutions de pipeline de qualité de code et hors production utilisent désormais un processus de clonage superficiel plus efficace au cours de l’étape de création, ce qui accélère la création pour les clients disposant de référentiels Git particulièrement volumineux.
 
-* La documentation de l’API Cloud Manager comprend désormais un terrain de lecture interactif qui permet aux utilisateurs connectés de tester l’API depuis leur navigateur. Voir [Playground de l’API Cloud Manager](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) pour plus d’informations.
+* La documentation de l’API Cloud Manager comprend désormais un laboratoire interactif qui permet aux utilisateurs connectés de tester l’API depuis leur navigateur. Consultez [Laboratoire de l’API Cloud Manager](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) pour plus d’informations.
 
-* L’info-bulle de la carte Programme est plus descriptive si une option de sélection sous &quot;Accéder à&quot; est désactivée. Il dira désormais &quot;Aucun environnement de production n’existe&quot;.
+* L’info-bulle de la carte Programme offre des informations plus détaillées si une option de sélection est désactivée sous Accéder à. « Aucun environnement de production n’existe » s’affichera désormais.
 
 
 ## Correctifs {#bug-fixes}
 
-* Lorsque les données lues à partir des systèmes internes n’étaient pas entrées correctement, cela pouvait entraîner le mauvais reflet des données non liées fournies par les ingénieurs du service client dans Cloud Manager.
+* Lorsque les données lues à partir des systèmes internes n’étaient pas entrées correctement, cela pouvait entraîner la restitution incorrecte des données non liées fournies par les ingénieurs de service client dans Cloud Manager.
 
-* Dans des situations client spécifiques, les artefacts non valides téléchargés lors de l’étape de création qui aurait dû entraîner l’échec de la version étaient ignorés.
+* Dans des situations client spécifiques, les artefacts non valides téléchargés lors de l’étape de création qui auraient dû entraîner l’échec de la création étaient ignorés.
