@@ -1,57 +1,36 @@
 ---
-title: Notes de mise à jour de la version 2021.11.0
-description: Consultez cette page pour obtenir des informations sur la version 2021.11.0 de Cloud Manager
+title: Notes de mise à jour de la version 2021.12.0
+description: Il s’agit des notes de mise à jour de la version 2021.12.0 de Cloud Manager.
 feature: Release Information
-exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 096468d28d70b84286841dd9818c7aab54662b2b
-workflow-type: ht
-source-wordcount: '372'
-ht-degree: 100%
+source-git-commit: 910def6d82c09e0220a50a3cb34a61f2c7284cb9
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 3%
 
 ---
 
-# Notes de mise à jour de la version 2021.11.0 {#release-notes-for}
+# Notes de mise à jour de la version 2021.12.0 de Cloud Manager {#release-notes}
 
-La section ci-dessous présente les notes générales de mise à jour de la version 2021.11.0 de [!UICONTROL Cloud Manager].
+La section suivante présente les notes générales de mise à jour pour [!UICONTROL Cloud Manager] version 2021.12.0.
 
 >[!NOTE]
->Reportez-vous aux [Notes de mise à jour actuelles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/release-notes-cloud-manager/release-notes-cm-current.html?lang=fr#getting-access) pour consulter les dernières notes de mise à jour de Cloud Manager dans AEM as a Cloud Service.
+>
+>Pour consulter les dernières notes de mise à jour de Cloud Manager en AEM as a Cloud Service, reportez-vous à la section [Cloud Manager dans les notes de mise à jour actuelles d’AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/release-notes-cloud-manager/release-notes-cm-current.html)
 
 ## Date de publication {#release-date}
 
-La date de publication de [!UICONTROL Cloud Manager] version 2021.11.0 est le 04 novembre 2021.
-La prochaine version est prévue pour le 16 décembre 2021.
+La date de publication de [!UICONTROL Cloud Manager] version 2021.12.0 du 16 décembre 2021. La prochaine version est prévue pour janvier 2022.
 
 ## Nouveautés {#whats-new}
 
-* L’ID d’enregistrement Git s’affiche désormais dans les détails d’exécution du pipeline, ce qui facilite le suivi du code créé.
-
-* L’en-tête de réponse `x-request-id` est désormais visible dans le laboratoire de l’API sur [www.adobe.io](https://www.adobe.io/). Cet en-tête est utile pour signaler des problèmes à l’assistance clientèle à des fins de dépannage.
-
-* En tant qu’utilisateur, je vois une carte Pipeline sans pipeline. Pouvez-vous me fournir des conseils appropriés ?
-
-* Une nouvelle page d’activité est désormais disponible. Vous pouvez y afficher des activités telles que les exécutions de pipeline et de code, ainsi que les détails associés. Au fil du temps, les activités répertoriées dans cette page s’étendront, de même que les détails fournis.
-
-* Une nouvelle page Pipelines avec une fenêtre contextuelle d’état et de survol permettant d’afficher facilement le résumé des détails est désormais disponible. Il est possible de visualiser les exécutions de pipelines avec les détails associés.
-
-* L’API Modifier un pipeline prend désormais en charge la définition des chemins d’invalidation et de purge du dispatcher.
-
-* L’API Modifier un pipeline prend désormais en charge la modification de l’environnement utilisé lors des phases de déploiement.
-
-* Une optimisation du processus d’analyse OakPal a été introduite pour les modules volumineux.
-
-* Le fichier CSV de problème de qualité contient désormais l’horodatage de chaque problème.
-
-* Le bouton Gérer de la page Environnements ne sera plus visible dans l’interface utilisateur.
+* Le hachage de validation, déjà visible dans l’interface utilisateur, est désormais également fourni dans l’API.
+* La page Activité comprend désormais une fenêtre contextuelle pour l’exécution des pipelines qui fournit un résumé des détails du pipeline en un coup d’oeil.
+* Des mises à jour pour inclure des détails supplémentaires présentés dans la page Activités ont été ajoutées.
+* L’onglet Apprendre de Cloud Manager inclut désormais un accès rapide aux guides d’API et aux ressources associées.
+* Un utilisateur disposant du rôle Gestionnaire de déploiement peut désormais lancer l’assistant de création de projet/branche pour un référentiel sans branche dans le menu d’actions de la page Référentiels.
+* Le responsable de déploiement, qui se trouve dans le workflow d’ajout ou de modification de pipeline, est maintenant informé de la création d’une branche ou d’un projet si le référentiel sélectionné ne comporte aucune branche.
+* Dans la fenêtre Modifier le pipeline de production , lorsqu’il existe plusieurs environnements intermédiaires pour la production, une liste déroulante pour la sélection d’environnement est disponible.
 
 ## Correctifs {#bug-fixes}
 
-* Certaines configurations de génération non orthodoxes entraînaient le stockage de fichiers inutiles dans le cache d’artefacts Maven du pipeline, ce qui entraînait des E/S réseau superflues lors du démarrage et de l’arrêt du conteneur de génération.
-
-* L’API Pipeline PATCH échoue en l’absence de phase de déploiement.
-
-* La règle de qualité `ClientlibProxyResourceCheck` générait des faux positifs en présence de bibliothèques clientes avec des chemins d’accès de base communs.
-
-* Un message d’erreur indiquant que le nombre maximal de référentiels a été atteint ne précisait pas la raison de l’erreur.
-
-* Dans de rares cas, les pipelines échouaient en raison d’une gestion inappropriée des reprises de certains codes de réponse.
+* Les pipelines de production de pile complète restent nommés &quot;Pipeline de production&quot; même si l’utilisateur saisit un nom différent dans le champ du nom.

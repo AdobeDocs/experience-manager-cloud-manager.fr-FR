@@ -1,0 +1,57 @@
+---
+title: Notes de mise à jour de la version 2021.11.0
+description: Consultez cette page pour obtenir des informations sur la version 2021.11.0 de Cloud Manager
+feature: Release Information
+exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
+source-git-commit: 6852df51d4b9b4947f1d5ce0b5a284bef94d0589
+workflow-type: tm+mt
+source-wordcount: '372'
+ht-degree: 100%
+
+---
+
+# Notes de mise à jour de la version 2021.11.0 {#release-notes-for}
+
+La section ci-dessous présente les notes générales de mise à jour de la version 2021.11.0 de [!UICONTROL Cloud Manager].
+
+>[!NOTE]
+>Reportez-vous aux [Notes de mise à jour actuelles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/release-notes-cloud-manager/release-notes-cm-current.html?lang=fr#getting-access) pour consulter les dernières notes de mise à jour de Cloud Manager dans AEM as a Cloud Service.
+
+## Date de publication {#release-date}
+
+La date de publication de [!UICONTROL Cloud Manager] version 2021.11.0 est le 04 novembre 2021.
+La prochaine version est prévue pour le 16 décembre 2021.
+
+## Nouveautés {#whats-new}
+
+* L’ID d’enregistrement Git s’affiche désormais dans les détails d’exécution du pipeline, ce qui facilite le suivi du code créé.
+
+* L’en-tête de réponse `x-request-id` est désormais visible dans le laboratoire de l’API sur [www.adobe.io](https://www.adobe.io/). Cet en-tête est utile pour signaler des problèmes à l’assistance clientèle à des fins de dépannage.
+
+* En tant qu’utilisateur, je vois une carte Pipeline sans pipeline. Pouvez-vous me fournir des conseils appropriés ?
+
+* Une nouvelle page d’activité est désormais disponible. Vous pouvez y afficher des activités telles que les exécutions de pipeline et de code, ainsi que les détails associés. Au fil du temps, les activités répertoriées dans cette page s’étendront, de même que les détails fournis.
+
+* Une nouvelle page Pipelines avec une fenêtre contextuelle d’état et de survol permettant d’afficher facilement le résumé des détails est désormais disponible. Il est possible de visualiser les exécutions de pipelines avec les détails associés.
+
+* L’API Modifier un pipeline prend désormais en charge la définition des chemins d’invalidation et de purge du dispatcher.
+
+* L’API Modifier un pipeline prend désormais en charge la modification de l’environnement utilisé lors des phases de déploiement.
+
+* Une optimisation du processus d’analyse OakPal a été introduite pour les modules volumineux.
+
+* Le fichier CSV de problème de qualité contient désormais l’horodatage de chaque problème.
+
+* Le bouton Gérer de la page Environnements ne sera plus visible dans l’interface utilisateur.
+
+## Correctifs {#bug-fixes}
+
+* Certaines configurations de génération non orthodoxes entraînaient le stockage de fichiers inutiles dans le cache d’artefacts Maven du pipeline, ce qui entraînait des E/S réseau superflues lors du démarrage et de l’arrêt du conteneur de génération.
+
+* L’API Pipeline PATCH échoue en l’absence de phase de déploiement.
+
+* La règle de qualité `ClientlibProxyResourceCheck` générait des faux positifs en présence de bibliothèques clientes avec des chemins d’accès de base communs.
+
+* Un message d’erreur indiquant que le nombre maximal de référentiels a été atteint ne précisait pas la raison de l’erreur.
+
+* Dans de rares cas, les pipelines échouaient en raison d’une gestion inappropriée des reprises de certains codes de réponse.
