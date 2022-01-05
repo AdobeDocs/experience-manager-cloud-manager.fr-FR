@@ -3,7 +3,7 @@ title: Notes de mise à jour de la version 2021.9.0
 description: Consultez cette page pour obtenir des informations sur la version 2021.9.0 de Cloud Manager
 feature: Release Information
 source-git-commit: 09dd8fe608d95cd9dbc95129cf86b9693c2839b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '176'
 ht-degree: 100%
 
