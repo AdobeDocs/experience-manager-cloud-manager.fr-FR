@@ -2,10 +2,11 @@
 title: Notes de mise à jour de la version 2021.12.0
 description: Consultez les notes de mise à jour de la version 2021.12.0 de Cloud Manager ci-dessous.
 feature: Release Information
-source-git-commit: 910def6d82c09e0220a50a3cb34a61f2c7284cb9
-workflow-type: ht
-source-wordcount: '253'
-ht-degree: 100%
+exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
+source-git-commit: 61f2d1e0882b752d1a1d5e62f9c028aa71941efe
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -30,6 +31,7 @@ La date de publication de la version 2021.12.0 de [!UICONTROL Cloud Manager] es
 * Un utilisateur doté du rôle de Gestionnaire de déploiement peut désormais lancer l’assistant de création de projet/branche pour un référentiel sans branche, à partir du menu Action de la page des référentiels.
 * Le Gestionnaire de déploiement, présent dans le workflow d’ajout ou de modification de pipeline, est maintenant informé sur la manière de créer une branche ou un projet si le référentiel sélectionné ne comporte aucune branche.
 * Dans la fenêtre Modifier le pipeline de production, lorsque plusieurs environnements dʼévaluation pour la production sont disponibles, une liste déroulante permettant de sélectionner lʼenvironnement sʼaffiche.
+* L’archétype de projet AEM utilisé par Cloud Manager a été mis à jour à la version 32.
 
 ## Correctifs {#bug-fixes}
 
