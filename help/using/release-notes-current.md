@@ -4,9 +4,9 @@ description: Consultez les notes de mise à jour de la version 2021.12.0 de Clo
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 61f2d1e0882b752d1a1d5e62f9c028aa71941efe
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '269'
+ht-degree: 100%
 
 ---
 
