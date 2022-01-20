@@ -1,38 +1,33 @@
 ---
-title: Notes de mise à jour de la version 2021.12.0
-description: Consultez les notes de mise à jour de la version 2021.12.0 de Cloud Manager ci-dessous.
+title: Notes de mise à jour de la version 2022.01.0
+description: Consultez les notes de mise à jour de la version 2022.01.0 de Cloud Manager ci-dessous.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 61f2d1e0882b752d1a1d5e62f9c028aa71941efe
-workflow-type: ht
-source-wordcount: '269'
-ht-degree: 100%
+source-git-commit: ebbbbdca2bfd834bc3dc0ff06ffb318df42713ee
+workflow-type: tm+mt
+source-wordcount: '149'
+ht-degree: 40%
 
 ---
 
 # Notes de mise à jour de Cloud Manager version 2021.12.0 {#release-notes}
 
-La section ci-dessous présente les notes générales de mise à jour de la version 2021.12.0 de [!UICONTROL Cloud Manager].
+La section suivante présente les notes générales de mise à jour pour [!UICONTROL Cloud Manager] version 2022.01.0.
 
 >[!NOTE]
 >
->Pour consulter les notes de mise à jour les plus récentes de Cloud Manager dans AEM as a Cloud Service, reportez-vous à la section [Notes de mise à jour actuelles de Cloud Manager dans AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/release-notes-cloud-manager/release-notes-cm-current.html?lang=fr)
+>Pour consulter les notes de mise à jour les plus récentes de Cloud Manager dans AEM as a Cloud Service, reportez-vous à la section [Notes de mise à jour actuelles de Cloud Manager dans AEM as a Cloud Service.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/release-notes-cloud-manager/release-notes-cm-current.html?lang=fr)
 
 ## Date de publication {#release-date}
 
-La date de publication de la version 2021.12.0 de [!UICONTROL Cloud Manager] est le 16 décembre 2021. La prochaine version est prévue pour janvier 2022.
+La date de publication de [!UICONTROL Cloud Manager] version 2022.01.0 du 20 janvier 2022. La prochaine version est prévue pour le 10 février 2022.
 
 ## Nouveautés {#whats-new}
 
-* Le hachage de validation, déjà visible dans l’interface utilisateur, est désormais également fourni dans l’API.
-* La page Activité comprend désormais une fenêtre contextuelle consacrée aux pipelines en cours dʼexécution. Vous pouvez consulter en un coup d’œil un résumé des informations sur le pipeline.
-* Ajout de mises à jour pour afficher des informations supplémentaires sur la page Activités.
-* L’onglet Apprentissage dans Cloud Manager comprend désormais un accès rapide aux guides des API et aux ressources associées.
-* Un utilisateur doté du rôle de Gestionnaire de déploiement peut désormais lancer l’assistant de création de projet/branche pour un référentiel sans branche, à partir du menu Action de la page des référentiels.
-* Le Gestionnaire de déploiement, présent dans le workflow d’ajout ou de modification de pipeline, est maintenant informé sur la manière de créer une branche ou un projet si le référentiel sélectionné ne comporte aucune branche.
-* Dans la fenêtre Modifier le pipeline de production, lorsque plusieurs environnements dʼévaluation pour la production sont disponibles, une liste déroulante permettant de sélectionner lʼenvironnement sʼaffiche.
-* L’archétype de projet AEM utilisé par Cloud Manager a été mis à jour à la version 32.
+* Cloud Manager [évitez de reconstruire la base de code lorsqu’il détecte que la même validation git est utilisée.](/help/using/setting-up-project.md#build-artifact-reuse) dans plusieurs exécutions complètes de pipeline de pile.
+* Lors de la génération d’un mot de passe Git, la date d’expiration s’affiche.
 
 ## Correctifs {#bug-fixes}
 
-* Le nom des pipelines de production de pile complète reste « Pipeline de production », même si l’utilisateur saisit un nom différent dans le champ du nom.
+* Les occurrences peu fréquentes de défaillances de pipeline fausses positives ont été corrigées.
+* Pour les programmes ne comportant qu’un seul référentiel, l’écran d’exécution du pipeline affiche désormais le nom du référentiel.

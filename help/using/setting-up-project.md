@@ -3,10 +3,10 @@ title: Configuration du projet
 description: Consultez cette page pour savoir comment configurer un projet
 feature: Getting Started, Production Programs
 exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
-source-git-commit: 2a253abb98fa096f9f1c07bac94804849fad2ebb
-workflow-type: ht
-source-wordcount: '880'
-ht-degree: 100%
+source-git-commit: 8861b5e48b8e1d081b4c8653000a8f2cf16dd11f
+workflow-type: tm+mt
+source-wordcount: '1289'
+ht-degree: 68%
 
 ---
 
@@ -262,6 +262,40 @@ Avec content-package-maven-plugin, il est similaire :
         </plugin>
 ```
 
+## Réutilisation de l’artefact de création {#build-artifact-reuse}
+
+Dans de nombreux cas, le même code est déployé dans plusieurs environnements AEM. Dans la mesure du possible, Cloud Manager évite de reconstruire la base de code lorsqu’il détecte que la même validation Git est utilisée dans plusieurs exécutions de pipeline pleine pile.
+
+Lorsqu’une exécution est lancée, la validation de l’HEAD en cours pour le pipeline de branche est extraite. Le hachage de validation est visible dans l’interface utilisateur et via l’API. Une fois l’étape de création terminée, les artefacts obtenus sont stockés en fonction de ce hachage de validation et peuvent être réutilisés lors des exécutions suivantes du pipeline. Lorsqu’une réutilisation se produit, les étapes de création et de qualité du code sont effectivement remplacées par les résultats de l’exécution d’origine. Le fichier journal de l’étape de création répertorie les artefacts et les informations d’exécution qui ont été utilisés pour les créer initialement.
+
+Voici un exemple de ce type de sortie de journal.
+
+```shell
+The following build artifacts were reused from the prior execution 4 of pipeline 1 which used commit f6ac5e6943ba8bce8804086241ba28bd94909aef:
+build/aem-guides-wknd.all-2021.1216.1101633.0000884042.zip (content-package)
+build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatcher-configuration)
+```
+
+Le journal de l’étape de qualité du code contient des informations similaires.
+
+### Exclusion {#opting-out}
+
+Si vous le souhaitez, le comportement de réutilisation peut être désactivé pour des pipelines spécifiques en définissant la variable de pipeline. `CM_DISABLE_BUILD_REUSE` to `true`. Si cette variable est définie, le hachage de validation est toujours extrait et les artefacts résultants sont stockés en vue d’une utilisation ultérieure, mais aucun artefact précédemment stocké ne sera réutilisé. Pour comprendre ce comportement, envisagez le scénario suivant.
+
+1. Un nouveau pipeline est créé.
+1. Le pipeline est exécuté (exécution #1) et la validation de l’HEAD en cours est `becdddb`. L’exécution est réussie et les artefacts obtenus sont stockés.
+1. Le `CM_DISABLE_BUILD_REUSE` est définie.
+1. Le pipeline est exécuté à nouveau sans modifier le code. Bien qu’il existe des artefacts stockés associés à `becdddb`, elles ne sont pas réutilisées en raison de la variable `CM_DISABLE_BUILD_REUSE` .
+1. Le code est modifié et le pipeline est exécuté. La validation de l’HEAD est maintenant `f6ac5e6`. L’exécution est réussie et les artefacts obtenus sont stockés.
+1. Le `CM_DISABLE_BUILD_REUSE` est supprimée.
+1. Le pipeline est exécuté à nouveau sans modifier le code. Puisqu’il existe des artefacts stockés associés à `f6ac5e6`, ces artefacts sont réutilisés.
+
+### Restrictions {#caveats}
+
+* [Gestion des versions Maven](/help/using/activating-maven-project.md) remplacez la version du projet uniquement dans les pipelines de production. Par conséquent, si la même validation est utilisée à la fois sur une exécution de déploiement de développement et une exécution de pipeline de production, et que le pipeline de déploiement de développement est exécuté en premier, les versions sont déployées en environnement intermédiaire et en production sans être modifiées. Cependant, une balise sera toujours créée dans ce cas.
+* Si la récupération des artefacts stockés échoue, l’étape de création est exécutée comme si aucun artefact n’avait été stocké.
+* Variables de pipeline autres que `CM_DISABLE_BUILD_REUSE` ne sont pas prises en compte lorsque Cloud Manager décide de réutiliser des artefacts de version créés précédemment.
+
 ## Développement du code en fonction des bonnes pratiques {#develop-your-code-based-on-best-practices}
 
-Les équipes d’ingénierie et de conseil Adobe ont développé [un ensemble complet de bonnes pratiques pour les développeurs AEM](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/best-practices.html).
+Les équipes d’ingénierie et de conseil Adobe ont développé [un ensemble complet de bonnes pratiques pour les développeurs AEM.](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/best-practices.html)
