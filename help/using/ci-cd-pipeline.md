@@ -1,17 +1,17 @@
 ---
 title: Pipeline CI/CD
-seo-title: Pipeline CI/CD
+seo-title: CI/CD Pipeline
 description: Présentation du pipeline CI/CD, qui gère les déploiements d’évaluation et de production dans Cloud Manager
-seo-description: Consultez cette section pour en savoir plus sur le pipeline CI/CD, qui gère les déploiements en environnements intermédiaire et de production dans Cloud Manager
+seo-description: Follow this section to learn about the CI/CD pipeline, which handles deployments to stage and production in Cloud Manager
 uuid: 763ddb24-05cd-463f-8d72-a2e69bbe6b7e
 topic-tags: introduction
 discoiquuid: 1cdb76eb-1a91-4689-8579-0fa9fccc0592
-feature: Pipeline CI-CD
+feature: CI-CD Pipeline
 exl-id: 7130e5b7-6986-48c8-900c-90f3e4187f91
-source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
+source-git-commit: 4f0e1d163001fd18cfa838256c813152d65c3b4c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '551'
+ht-degree: 94%
 
 ---
 
@@ -46,7 +46,7 @@ Le tableau suivant détaille ce qui se passe à chaque étape du processus :
 
 ### Configuration d’un pipeline CI/CD {#how-to-setup-a-ci-cd-pipeline}
 
-Pour en savoir plus sur la configuration du pipeline, consultez [Configuration du pipeline](configuring-pipeline.md).
+Pour en savoir plus sur la configuration du pipeline, consultez les documents [Configuration des pipelines de production](configuring-production-pipelines.md) et [Configuration de pipelines hors production.](configuring-non-production-pipelines.md)
 
 ## Points de contrôle de qualité {#quality-gates}
 
@@ -68,4 +68,4 @@ Voici un exemple d’analyse de code avec des problèmes identifiés au niveau d
 
 ### Configuration des points de contrôle {#how-to-setup-gates}
 
-Voir **[Configuration de points de contrôle](configuring-pipeline.md)** pour obtenir plus d’informations sur la configuration de votre code et sur les points de contrôle de performance et de qualité.
+Voir le document [Configuration des pipelines de production](configuring-production-pipelines.md) pour plus d’informations sur la configuration de vos points de contrôle de code, de qualité et de performances.

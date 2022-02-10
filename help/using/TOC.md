@@ -8,10 +8,10 @@ user-guide-description: Apprenez à utiliser les Managed Services d’Adobe pour
 feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Admin
 level: Intermediate
-source-git-commit: e3f0759437707f73dfc6851608e06e30064c0f16
-workflow-type: ht
-source-wordcount: '294'
-ht-degree: 100%
+source-git-commit: 4f0e1d163001fd18cfa838256c813152d65c3b4c
+workflow-type: tm+mt
+source-wordcount: '303'
+ht-degree: 96%
 
 ---
 
@@ -42,7 +42,10 @@ ht-degree: 100%
    + [Configuration des branches de versions](configure-your-release-branches.md)
    + [Gestion des configurations du Dispatcher](dispatcher-configurations.md)
 + Utilisation {#how-to-use}
-   + [Configuration de votre pipeline CI/CD](configuring-pipeline.md)
+   + Pipelines CI/CD {#pipelines}
+      + [Configuration des pipelines de production](configuring-production-pipelines.md)
+      + [Configuration de pipelines hors production](configuring-non-production-pipelines.md)
+      + [Gestion des pipelines](managing-pipelines.md)
    + [Déploiement de votre code](deploying-code.md)
    + [Présentation des résultats des tests](understand-your-test-results.md)
    + [Gestion des environnements](manage-your-environment.md)
@@ -62,6 +65,7 @@ ht-degree: 100%
    + [Évaluation](evaluation.md)
 + Notes de mise à jour {#release-notes}
    + [Notes de mise à jour de la version actuelle](release-notes-current.md)
+   + [Notes de mise à jour de la version 2022.1.0](release-notes-2022-1-0.md)
    + [Notes de mise à jour de la version 2021.12.0](release-notes-2021-12-0.md)
    + [Notes de mise à jour de la version 2021.11.0](release-notes-2021-11-0.md)
    + [Notes de mise à jour de la version 2021.10.0](release-notes-2021-10-0.md)

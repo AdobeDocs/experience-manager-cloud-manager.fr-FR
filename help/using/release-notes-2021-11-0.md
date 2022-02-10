@@ -2,9 +2,8 @@
 title: Notes de mise à jour de la version 2021.11.0
 description: Consultez cette page pour obtenir des informations sur la version 2021.11.0 de Cloud Manager
 feature: Release Information
-exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 6852df51d4b9b4947f1d5ce0b5a284bef94d0589
-workflow-type: ht
+source-git-commit: 099a4490e3a8578b9f3485fd1514d1e97db977ab
+workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 100%
 

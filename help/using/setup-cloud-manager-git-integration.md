@@ -5,9 +5,9 @@ seo-title: Git Integration with Adobe Cloud Manager
 seo-description: A video series that walks through the set up and integration of a customer-managed (on-premise) git repository with Adobe Cloud Manager.
 feature: Git Repositories
 exl-id: e517f8a4-23f0-4486-8278-91396dba76ec
-source-git-commit: 0bc3e775ef2432cdb8d3bd5470953c07c6628148
-workflow-type: ht
-source-wordcount: '370'
+source-git-commit: 71d44c7e3673ca62fcd2203ecc0bc4ed9fa22002
+workflow-type: tm+mt
+source-wordcount: '363'
 ht-degree: 100%
 
 ---
@@ -42,7 +42,7 @@ Premières étapes de la synchronisation d’un référentiel Git géré par le 
 
 ## Stratégie d’embranchement de base {#branching-strategy}
 
-Configurez une stratégie d’embranchement de base afin de tirer parti des [pipelines de production et hors production](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=fr) de Cloud Manager.
+Configurez une stratégie d’embranchement de base afin de tirer parti des [](configuring-production-pipelines.md)[pipelines de production et hors production](configuring-non-production-pipelines.md) de Cloud Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12)
 
@@ -66,7 +66,7 @@ Synchronisez les balises de publication d’un référentiel Git Cloud Manager 
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Documentation Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=fr)
+* [Documentation Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Ressources GitHub](https://try.github.io)
 * [Didacticiels Atlassian Git](https://www.atlassian.com/git/tutorials/what-is-version-control)
 * [Antisèche Git](https://education.github.com/git-cheat-sheet-education.pdf)

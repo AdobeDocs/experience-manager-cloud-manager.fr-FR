@@ -1,14 +1,14 @@
 ---
 title: Configuration de votre programme
-seo-title: Configuration de votre programme
+seo-title: Set Up Your Program
 description: Après l’intégration, le propriétaire de l’entreprise devra effectuer une configuration initiale du programme.
-seo-description: 'Après l’intégration, le propriétaire de l’entreprise devra effectuer une configuration initiale d’Adobe AEM Cloud Manager. Il devra notamment établir la description du programme et définir les indicateurs clés de performance (KPI) qui serviront à tester les performances. '
-feature: Prise en main
+seo-description: After onboarding, the business owner will need to do some initial setup of Adobe AEM Cloud Manager. This involves setting the program description and defining the KPIs which will be used for performance testing.
+feature: Getting Started
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: 71a6f2709efb9c4c3831deaa1ce89d93e30b775c
-workflow-type: ht
-source-wordcount: '733'
-ht-degree: 100%
+source-git-commit: 71d44c7e3673ca62fcd2203ecc0bc4ed9fa22002
+workflow-type: tm+mt
+source-wordcount: '693'
+ht-degree: 97%
 
 ---
 
@@ -106,4 +106,4 @@ Lors de la configuration du programme, des indicateurs de performance clés spé
 
 Si vous avez déjà configuré le pipeline, l’exécution suivante prendra en compte vos paramètres mis à jour. Si vous n’avez pas encore configuré le pipeline, suivez d’abord les étapes de configuration de celui-ci.
 
-Voir [Configuration de votre pipeline CI/CD](https://helpx.adobe.com/fr/experience-manager/cloud-manager/using/configuring-pipeline.html) pour configurer le pipeline.
+Consultez les documents [Configuration des pipelines de production](configuring-production-pipelines.md) et [Configuration de pipelines hors production](configuring-non-production-pipelines.md) pour configurer le pipeline.

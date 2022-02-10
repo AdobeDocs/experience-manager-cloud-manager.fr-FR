@@ -1,19 +1,19 @@
 ---
 title: Référentiel de code source
-seo-title: Référentiel de code source pour Adobe AEM Cloud Manager
+seo-title: Source Code Repository for Adobe AEM Cloud Manager
 description: Consultez cette page pour en savoir plus sur le référentiel git qui est fourni pour chacun de vos programmes dans Cloud Manager.
-seo-description: Consultez cette page pour en savoir plus sur le référentiel git fourni pour chacun de vos programmes dans Adobe AEM Cloud Manager.
+seo-description: Follow this page to learn about the git repository that is provisioned for each program you have in Adobe AEM Cloud Manager.
 uuid: 2c42775f-8703-43f7-bad2-7dc086ea9dd7
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: requirements
 discoiquuid: f90f0f4c-c1ff-47f6-8d97-ff5018561bf2
-feature: Configuration
+feature: Provisioning
 exl-id: af551e33-3623-4fcd-8d25-4362d8871411
-source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
+source-git-commit: 4f0e1d163001fd18cfa838256c813152d65c3b4c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '261'
+ht-degree: 87%
 
 ---
 
@@ -27,7 +27,7 @@ En règle générale, vous devez toujours utiliser le référentiel git de Cloud
 
 Pour plus d’informations sur la configuration de branches dans git, consultez [Configuration des branches de versions](configure-your-release-branches.md).
 
-Pour plus d’informations sur l’utilisation du **référentiel Git** de Cloud Manager avec le pipeline CI/CD, consultez la section [Configuration du pipeline CI/CD](configuring-pipeline.md).
+Pour plus d’informations sur l’utilisation de la variable **Référentiel Git** avec le pipeline CI/CD, reportez-vous aux documents [Configuration des pipelines de production](configuring-production-pipelines.md) et [Configuration de pipelines hors production](configuring-non-production-pipelines.md) pour en savoir plus.
 
 ## Référentiel sur site {#on-premise-repository}
 

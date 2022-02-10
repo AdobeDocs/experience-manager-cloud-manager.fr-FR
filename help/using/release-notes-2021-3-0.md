@@ -2,10 +2,11 @@
 title: Notes de mise à jour de la version 2021.3.0
 description: Consultez cette page pour obtenir des informations sur la version 2021.3.0 de Cloud Manager
 feature: Release Information
-source-git-commit: 09dd8fe608d95cd9dbc95129cf86b9693c2839b5
-workflow-type: ht
-source-wordcount: '244'
-ht-degree: 100%
+exl-id: e05b22fe-f071-4b69-9db1-e3d7ee4cfbcc
+source-git-commit: 71d44c7e3673ca62fcd2203ecc0bc4ed9fa22002
+workflow-type: tm+mt
+source-wordcount: '235'
+ht-degree: 95%
 
 ---
 
@@ -28,9 +29,9 @@ La prochaine version est prévue pour le 8 avril 2021.
 
 * Le libellé **Version** a été renommé **Balise Git** dans l’écran d’exécution du pipeline de production.
 
-* Les libellés qui définissent le comportement lorsque des mesures importantes ne respectent pas le seuil défini ont été réétiquetés afin de refléter leur comportement réel : **Annuler immédiatement** et **Approuver immédiatement**. Pour en savoir plus, consultez [Configuration des paramètres du pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=fr#configuring-the-pipeline-settings-from-cloud-manager).
+* Les libellés qui définissent le comportement lorsque des mesures importantes ne respectent pas le seuil défini ont été réétiquetés afin de refléter leur comportement réel : **Annuler immédiatement** et **Approuver immédiatement**. Reportez-vous au document [Configuration des pipelines de production](configuring-production-pipelines.md) pour plus d’informations.
 
-* Les listes des classes et méthodes obsolètes ont été mises à jour en fonction de la version `2021.3.4997.20210303T022849Z-210225` du SDK AEM Cloud Service.
+* Les listes de classe et de méthode d’obsolescence ont été mises à jour en fonction de la version `2021.3.4997.20210303T022849Z-210225` du SDK AEM Cloud Service.
 
 ## Correctifs {#bug-fixes}
 

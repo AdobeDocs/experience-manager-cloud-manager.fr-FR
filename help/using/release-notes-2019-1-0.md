@@ -1,19 +1,19 @@
 ---
 title: Notes de mise à jour de la version 2019.1.0
-seo-title: Notes de mise à jour d’AEM Cloud Manager pour la version 2019.1.0
+seo-title: AEM Cloud Manager Release Notes for 2019.1.0
 description: Consultez cette page pour obtenir des informations sur la version 2019.1.0 de Cloud Manager.
-seo-description: Consultez cette page pour obtenir des informations sur la version 2019.1.0 d’AEM Cloud Manager.
+seo-description: Follow this page to get information for AEM Cloud Manager Release 2019.1.0.
 uuid: 3af5808f-828f-4846-bee4-1e62194b48ad
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 85a1dcf3-2eef-4ba8-b4d1-09e4a88c7bd0
-feature: Informations sur la version
+feature: Release Information
 exl-id: 383ca5a0-4b0b-48e9-aa48-1d1388875329
-source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
+source-git-commit: 4f0e1d163001fd18cfa838256c813152d65c3b4c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '319'
+ht-degree: 82%
 
 ---
 
@@ -27,10 +27,10 @@ La date de publication de la mise à jour 2019.1.0 de [!UICONTROL Cloud Manager
 
 ## Nouveautés {#whats-new}
 
-* Ajout de la prise en charge des tests de performance d’AEM Assets. Pour plus d’informations, consultez la section [Configuration de votre pipeline CI/CD](configuring-pipeline.md).
-* Ajout de la prise en charge des pipelines qui exécutent uniquement des étapes de génération et de contrôle qualité de code et du déploiement des pipelines dans des environnements hors production. Pour plus d’informations, reportez-vous à la section **Pipelines de qualité de code et hors production uniquement** dans [Configuration de votre pipeline CI/CD](configuring-pipeline.md).
+* Ajout de la prise en charge des tests de performance d’AEM Assets. Reportez-vous au document [Configuration des pipelines de production](configuring-production-pipelines.md) pour en savoir plus.
+* Ajout de la prise en charge des pipelines qui exécutent uniquement des étapes de génération et de contrôle qualité de code et du déploiement des pipelines dans des environnements hors production. Reportez-vous au document [Configuration de pipelines hors production](configuring-non-production-pipelines.md) pour en savoir plus.
 * Ajout de la prise en charge des variables d’environnement personnalisées dans l’environnement de création.
-* Pour les clients disposant de plusieurs environnements intermédiaires ou de production, la sélection de l’environnement qui sera déployé dans le cadre du pipeline de production est disponible dans la page [Configuration de votre pipeline CI/CD](configuring-pipeline.md).
+* Pour les clients disposant de plusieurs environnements intermédiaires ou de production, la sélection de l’environnement qui sera déployé dans le cadre du pipeline de production est disponible. Reportez-vous au document [Configuration des pipelines de production](configuring-production-pipelines.md) pour en savoir plus.
 * Ajout de httxt2dbm au conteneur de génération.
 * Tous les éléments de menu d’aide ouvrent un nouvel onglet.
 

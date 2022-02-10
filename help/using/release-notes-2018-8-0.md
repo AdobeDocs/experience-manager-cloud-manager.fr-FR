@@ -1,19 +1,19 @@
 ---
 title: Notes de mise à jour de la version 2018.8.0
-seo-title: Notes de mise à jour d’AEM Cloud Manager pour la version 2018.8.0
+seo-title: AEM Cloud Manager Release Notes for 2018.8.0
 description: Consultez cette page pour plus d’informations sur la mise à jour 2018.8.0 de Cloud Manager.
-seo-description: Consultez cette page pour plus d’informations sur la mise à jour 2018.8.0 d’AEM Cloud Manager.
+seo-description: Follow this page to get information for AEM Cloud Manager Release 2018.8.0.
 uuid: e8aaba32-89b4-4bc5-b295-09b753252612
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 9222ac3b-525e-47c1-b481-ac9d22e3d559
-feature: Informations sur la version
+feature: Release Information
 exl-id: 20f87048-30f7-4869-aad0-13ca383a404b
-source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
+source-git-commit: 4f0e1d163001fd18cfa838256c813152d65c3b4c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '324'
+ht-degree: 96%
 
 ---
 
@@ -29,7 +29,7 @@ La date de publication de la mise à jour 2018.8.0 de [!UICONTROL Cloud Manager
 
 * **Configuration de programme** : nouvel assistant pour créer un projet d’application dans git à l’aide de l’archétype de projet AEM
 
-* **Pipeline CI/CD** : les modifications ci-dessous ont été ajoutées au pipeline CI/CD. Pour en savoir plus, consultez la section [Configuration de votre pipeline CI/CD](configuring-pipeline.md).
+* **Pipeline CI/CD** : les modifications ci-dessous ont été ajoutées au pipeline CI/CD. Reportez-vous au document [Configuration des pipelines de production](configuring-production-pipelines.md) pour en savoir plus.
 
    * Ajout du déclencheur Lors des modifications Git qui démarre le pipeline CI/CD chaque fois que des validations sont ajoutées à la branche git configurée.
    * Sur l’écran d’accueil, les cartes sont désormais liées à des sections spécifiques de la page d’exécution du pipeline.
