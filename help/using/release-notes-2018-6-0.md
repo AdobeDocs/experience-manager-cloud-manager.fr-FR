@@ -11,27 +11,27 @@ discoiquuid: 8584f467-3e61-41ea-98e4-f79e68c86469
 feature: Release Information
 exl-id: 456f7892-c64c-4b3f-b845-15682d034aaa
 source-git-commit: 4f0e1d163001fd18cfa838256c813152d65c3b4c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '321'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 # Notes de mise à jour de la version 2018.6.0 {#release-notes-for}
 
-La section ci-dessous présente les mises à jour générales de la version 2018.6.0 de [!UICONTROL Cloud Manager]. Cette version prend en charge l’invalidation du dispatcher lors des déploiements et des notifications supplémentaires et contient des améliorations de la convivialité.
+La section suivante présente les notes de mises à jour générales de la version 2018.6.0 de [!UICONTROL Cloud Manager]. Cette version prend en charge l’invalidation du Dispatcher lors des déploiements, des notifications supplémentaires et des améliorations de la convivialité.
 
 ## Date de publication {#release-date}
 
-La date de publication de la mise à jour 2018.6.0 de [!UICONTROL Cloud Manager] est le jeudi 9 août 2018.
+La date de publication de la version 2018.6.0 de [!UICONTROL Cloud Manager] est le 9 août 2018.
 
 ## Nouveautés {#what-s-new}
 
-* **Pipeline CI/CD** : invalidation du Dispatcher configurable et purge de cache dans les environnements intermédiaire et de production lors de l’exécution du pipeline CI/CD. Reportez-vous au document [Configuration des pipelines de production](configuring-production-pipelines.md) pour en savoir plus.
+* **Pipeline CI/CD** : invalidation configurable du Dispatcher et purge du cache à la fois dans les environnements d’évaluation et de production lors de l’exécution du pipeline CI/CD. Reportez-vous au document [Configuration de pipelines de production](configuring-production-pipelines.md) pour en savoir plus.
 
-* **Pipeline CI/CD** : lors de la configuration du pipeline, il est désormais possible de définir le comportement de celui-ci lorsqu’il rencontre un échec important dans l’un des points de contrôle qualité. Reportez-vous au document [Configuration des pipelines de production](configuring-production-pipelines.md) pour en savoir plus.
+* **Pipeline CI/CD** : lors de la configuration du pipeline, il est désormais possible de définir le comportement de celui-ci lorsqu’il rencontre un échec important à l’un des points de contrôle qualité. Reportez-vous au document [Configuration de pipelines de production](configuring-production-pipelines.md) pour en savoir plus.
 
-* **Pipeline CI/CD** : lors de la configuration du pipeline, il est désormais possible de choisir par qui la supervision sera effectuée : votre ingénieur du service client ou tout autre ingénieur du service client disponible. Reportez-vous au document [Configuration des pipelines de production](configuring-production-pipelines.md) pour en savoir plus.
+* **Pipeline CI/CD** - lors de la configuration du pipeline, il est désormais possible de choisir si vous souhaitez que la supervision du CSE soit effectuée par votre CSE ou par tout CSE disponible. Reportez-vous au document [Configuration de pipelines de production](configuring-production-pipelines.md) pour en savoir plus.
 
 * **Pipeline CI/CD** : lorsque le pipeline CI/CD atteint l’étape d’approbation, une notification est envoyée aux utilisateurs autorisés à approuver le déploiement. Pour en savoir plus, reportez-vous à la section [Notifications](notifications.md).
 
