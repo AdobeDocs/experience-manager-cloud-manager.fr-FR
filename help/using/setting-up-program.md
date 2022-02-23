@@ -6,9 +6,9 @@ seo-description: After onboarding, the business owner will need to do some initi
 feature: Getting Started
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
 source-git-commit: 71d44c7e3673ca62fcd2203ecc0bc4ed9fa22002
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '693'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -102,8 +102,8 @@ Lors de la configuration du programme, des indicateurs de performance clés spé
 
 1. Cliquez sur **Mettre à jour** pour enregistrer vos modifications.
 
-## Étapes suivantes {#the-next-steps}
+## Les étapes suivantes {#the-next-steps}
 
 Si vous avez déjà configuré le pipeline, l’exécution suivante prendra en compte vos paramètres mis à jour. Si vous n’avez pas encore configuré le pipeline, suivez d’abord les étapes de configuration de celui-ci.
 
-Consultez les documents [Configuration des pipelines de production](configuring-production-pipelines.md) et [Configuration de pipelines hors production](configuring-non-production-pipelines.md) pour configurer le pipeline.
+Pour configurer le pipeline, consultez les documents [Configuration de pipelines de production](configuring-production-pipelines.md) et [Configuration de pipelines hors production](configuring-non-production-pipelines.md).
