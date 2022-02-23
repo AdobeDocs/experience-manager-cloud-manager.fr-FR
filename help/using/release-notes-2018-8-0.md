@@ -11,27 +11,27 @@ discoiquuid: 9222ac3b-525e-47c1-b481-ac9d22e3d559
 feature: Release Information
 exl-id: 20f87048-30f7-4869-aad0-13ca383a404b
 source-git-commit: 4f0e1d163001fd18cfa838256c813152d65c3b4c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '324'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Notes de mise à jour de la version 2018.8.0 {#release-notes-for}
 
-La mise à jour 2018.8.0 de [!UICONTROL Cloud Manager] prend désormais en charge le déclenchement automatique du pipeline CI/CD lors des validations git, ainsi qu’un nouvel assistant pour la création de projets d’application dans git basée sur AEM Project Archetype.
+La mise à jour 2018.8.0 de [!UICONTROL Cloud Manager] prend désormais en charge le déclenchement automatique du pipeline CI/CD lors des validations Git et propose un nouvel assistant pour la création de projets d’application dans Git basée sur l’archétype de projet AEM.
 
 ## Date de publication {#release-date}
 
-La date de publication de la mise à jour 2018.8.0 de [!UICONTROL Cloud Manager] est le jeudi 4 octobre 2018.
+La date de publication de la mise à jour 2018.8.0 de [!UICONTROL Cloud Manager] est le 4 octobre 2018.
 
 ## Nouveautés {#what-s-new}
 
 * **Configuration de programme** : nouvel assistant pour créer un projet d’application dans git à l’aide de l’archétype de projet AEM
 
-* **Pipeline CI/CD** : les modifications ci-dessous ont été ajoutées au pipeline CI/CD. Reportez-vous au document [Configuration des pipelines de production](configuring-production-pipelines.md) pour en savoir plus.
+* **Pipeline CI/CD** : les modifications ci-dessous ont été ajoutées au pipeline CI/CD. Reportez-vous au document [Configuration de pipelines de production](configuring-production-pipelines.md) pour en savoir plus.
 
-   * Ajout du déclencheur Lors des modifications Git qui démarre le pipeline CI/CD chaque fois que des validations sont ajoutées à la branche git configurée.
+   * Ajout du déclencheur Lors des modifications Git qui démarre le pipeline CI/CD chaque fois que des validations sont ajoutées à la branche Git configurée.
    * Sur l’écran d’accueil, les cartes sont désormais liées à des sections spécifiques de la page d’exécution du pipeline.
    * La page Activité répertorie désormais la branche spécifique utilisée pour chaque exécution.
    * La page Activité indique désormais la durée en heures et en minutes.
