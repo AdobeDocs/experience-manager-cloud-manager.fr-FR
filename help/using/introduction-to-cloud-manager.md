@@ -12,9 +12,9 @@ feature: Getting Started
 level: Beginner
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
 source-git-commit: 71d44c7e3673ca62fcd2203ecc0bc4ed9fa22002
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '838'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ Pour découvrir et commencer à utiliser l’interface utilisateur de [!UICONTRO
 
 Grâce à l’interface utilisateur de [!UICONTROL Cloud Manager], les clients peuvent configurer et déclencher leur pipeline CI/CD. Durant ce pipeline, une analyse approfondie du code est exécutée pour garantir que seules des applications de grande qualité transitent par l’environnement de production.
 
-Pour en savoir plus sur la configuration du pipeline depuis [!UICONTROL Cloud Manager]Interface utilisateur de , voir les documents [Configuration des pipelines de production](configuring-production-pipelines.md) et [Configuration de pipelines hors production.](configuring-non-production-pipelines.md)
+Pour en savoir plus sur la configuration du pipeline depuis l’interface utilisateur de [!UICONTROL Cloud Manager], consultez les documents [Configuration de pipelines de production](configuring-production-pipelines.md) et [Configuration de pipelines hors production](configuring-non-production-pipelines.md).
 
 ### Modes de déploiement flexibles {#flexible-deployment-modes}
 
