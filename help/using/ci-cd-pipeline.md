@@ -9,9 +9,9 @@ discoiquuid: 1cdb76eb-1a91-4689-8579-0fa9fccc0592
 feature: CI-CD Pipeline
 exl-id: 7130e5b7-6986-48c8-900c-90f3e4187f91
 source-git-commit: 4f0e1d163001fd18cfa838256c813152d65c3b4c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '551'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Le tableau suivant détaille ce qui se passe à chaque étape du processus :
 
 ### Configuration d’un pipeline CI/CD {#how-to-setup-a-ci-cd-pipeline}
 
-Pour en savoir plus sur la configuration du pipeline, consultez les documents [Configuration des pipelines de production](configuring-production-pipelines.md) et [Configuration de pipelines hors production.](configuring-non-production-pipelines.md)
+Pour en savoir plus sur la configuration du pipeline, consultez les documents [Configuration de pipelines de production](configuring-production-pipelines.md) et [Configuration de pipelines hors production](configuring-non-production-pipelines.md).
 
 ## Points de contrôle de qualité {#quality-gates}
 
@@ -68,4 +68,4 @@ Voici un exemple d’analyse de code avec des problèmes identifiés au niveau d
 
 ### Configuration des points de contrôle {#how-to-setup-gates}
 
-Voir le document [Configuration des pipelines de production](configuring-production-pipelines.md) pour plus d’informations sur la configuration de vos points de contrôle de code, de qualité et de performances.
+Consultez le document [Configuration de pipelines de production](configuring-production-pipelines.md) pour obtenir plus d’informations sur la configuration de points de contrôle concernant votre code, la qualité et les performances.
