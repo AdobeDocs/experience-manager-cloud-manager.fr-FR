@@ -6,17 +6,17 @@ seo-description: Follow this page to get answers on Cloud Manager FAQs
 feature: Getting Started
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
 source-git-commit: 71d44c7e3673ca62fcd2203ecc0bc4ed9fa22002
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '881'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# FAQ relative à Cloud Manager {#cloud-manager-faqs}
+# FAQ relatives à Cloud Manager {#cloud-manager-faqs}
 
 La section suivante fournit des réponses aux questions les plus fréquentes relatives à Cloud Manager.
 
-## Est-il possible d’utiliser Java 11 avec les builds de Cloud Manager ?  {#java-11-cloud-manager}
+## Est-il possible d’utiliser Java 11 avec les builds de Cloud Manager ? {#java-11-cloud-manager}
 
 Le build AEM Cloud Manager échoue en cas de tentative de basculement de la version Java 8 à Java 11. Le problème peut avoir de nombreuses causes et la plupart des causes les plus courantes sont documentées ci-dessous :
 
@@ -28,24 +28,24 @@ Le build AEM Cloud Manager échoue en cas de tentative de basculement de la vers
 
 * Pour les builds de Cloud Manager, le plug-in Maven Enforcer échoue en présentant l’erreur `"[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion"`. Il s’agit d’un problème connu dû au fait que Cloud Manager utilisait une version différente de Java pour exécuter la commande maven plutôt que de compiler le code. Pour l’instant, évitez d’utiliser `requireJavaVersion` dans vos configurations maven-force-application-plugin.
 
-## Notre déploiement est bloqué en raison de l’échec de la vérification de la qualité du code. Y a-t-il un moyen de contourner cette vérification ?  {#deployment-stuck}
+## Notre déploiement est bloqué en raison de l’échec de la vérification de la qualité du code. Y a-t-il un moyen de contourner cette vérification ? {#deployment-stuck}
 
 Tous les échecs de qualité du code, à l’exception de la *Cote de sécurité*, ne sont pas des mesures critiques ; ils peuvent donc être contournés en développant les éléments dans l’interface utilisateur des résultats.
 
 Un utilisateur ayant un rôle de [responsable de déploiement, responsable de projet ou propriétaire d’entreprise](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=fr#requirements) peut, au choix, contourner les problèmes, auquel cas le pipeline continue, ou les accepter, auquel cas le pipeline s’arrête avec un échec.  Pour plus d’informations, consultez [Points de contrôle à trois niveaux lors de l’exécution d’un pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=fr#how-to-use).
 
-## Les déploiements de Cloud Manager échouent à l’étape de test de performances dans les environnements Managed Services d’Adobe. Comment déboguer cette erreur pour transmettre les mesures critiques ?  {#debug-critical-metrics}
+## Les déploiements de Cloud Manager échouent à l’étape de test de performances dans les environnements Managed Services d’Adobe. Comment déboguer ceci pour passer les mesures critiques ? {#debug-critical-metrics}
 
-Consultez [Présentation des résultats des tests](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=en#how-to-use) pour comprendre les résultats.
+Consultez [Présentation des résultats des tests](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=fr#how-to-use) pour comprendre les résultats.
 
 Quelques remarques sur l’étape de test de performance :
 
 * L’*étape de performance* est une étape de performances web qui teste le temps de chargement de la page par un navigateur web.
 * Les URL répertoriées dans le fichier *CSV* de résultat sont chargées dans un navigateur Chrome dans l’infrastructure de Cloud Manager pendant le test.
 * Une des mesures échouant couramment est le *taux d’erreur*. Pour qu’une URL soit transmise, l’URL principale doit se charger avec l’état `200` et en moins de `20` secondes. Les chargements de page qui dépassent `20` secondes sont marqués comme des erreurs `504`.
-* Si votre site nécessite l’authentification de l’utilisateur, consultez le document . [Présentation des résultats de test](understand-your-test-results.md#authenticated-performance-testing) pour configurer le test afin de l’authentifier sur votre site.
+* Si votre site nécessite l’authentification de l’utilisateur, consultez le document [Présentation des résultats de test](understand-your-test-results.md#authenticated-performance-testing) pour configurer le test afin de l’authentifier sur votre site.
 
-## Sommes-nous autorisés à utiliser SNAPSHOT dans la version de projet Maven ? Comment le contrôle de version des packages et des fichiers jar par lots fonctionne-t-il pour les déploiements en évaluation et en production ?  {#snapshot-version}
+## Sommes-nous autorisés à utiliser SNAPSHOT dans la version de projet Maven ? Comment fonctionne le contrôle de version des packages et des fichiers jar par lot pour les déploiements des environnements d’évaluation et de production ? {#snapshot-version}
 
 Reportez-vous aux scénarios suivants pour en savoir plus sur le contrôle de version des packages et des fichiers jar par lots pour les déploiements en évaluation et en production :
 
@@ -71,11 +71,11 @@ Reportez-vous aux scénarios suivants pour en savoir plus sur le contrôle de ve
 
    `git push origin --delete testbranch1`
 
-## La compilation Maven échoue dans les déploiements de Cloud Manager, mais se crée localement sans erreurs. Débogage? {#maven-build-fail}
+## La compilation Maven échoue dans les déploiements de Cloud Manager, mais se crée localement sans erreurs. Comment déboguer ? {#maven-build-fail}
 
 Consultez [Ressource Git](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md) pour plus d’informations.
 
-## Impossible de définir une variable à l’aide des variables de pipeline définies par le Cloud Manager aio. Comment déboguer ces problèmes ?  {#set-variable}
+## Impossible de définir une variable à l’aide des variables de pipeline définies par le Cloud Manager aio. Comment déboguer ces problèmes ? {#set-variable}
 
 Si vous obtenez une erreur `403` lorsque vous tentez de référencer ou de définir des variables de pipeline au moyen de commandes similaires à celles ci-dessous, vous devez être ajouté en tant que rôle de produit *Responsable de déploiement* Cloud Manager dans Admin Console.\
 Consultez [Autorisations d’API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/permissions.md) pour plus d’informations.
