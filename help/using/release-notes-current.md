@@ -3,7 +3,7 @@ title: Notes de mise à jour de la version 2022.3.0
 description: Voici les notes de mise à jour de la version 2022.3.0 de Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 6e98f9d2fcd69799bad86d1e247212b26273bd0b
+source-git-commit: 0d14adda454889eebbb0a875978ceeaa5ee4f7ea
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 29%
@@ -25,8 +25,9 @@ La date de publication de [!UICONTROL Cloud Manager] la version 2022.3.0 est le 
 
 ## Nouveautés {#what-is-new}
 
-* [Le `reliability_rating` mesure critique](understand-your-test-results.md) a été désactivé.
-* Un utilisateur peut désormais trier les colonnes de la variable **Pipelines** dans Cloud Manager.
+* (Cloud Service uniquement) L’accès au journal de l’environnement AEM peut être effectué à l’aide du rôle Développeur.
+* Le [`reliability_rating` mesure critique](understand-your-test-results.md) a été désactivé.
+
 
 ## Correctifs {#bug-fixes}
 
