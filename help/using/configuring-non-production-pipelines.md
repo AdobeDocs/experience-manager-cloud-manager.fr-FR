@@ -1,13 +1,13 @@
 ---
 title: Configurer des pipelines hors production
 description: Découvrez comment utiliser Cloud Manager pour créer et configurer des pipelines hors production afin de déployer votre code.
-source-git-commit: 205113735cc743e11e140b1161413002844f5b79
-workflow-type: ht
-source-wordcount: '626'
-ht-degree: 100%
+exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
+source-git-commit: 154b95e1b43717097b9ae9076a15792517dd613d
+workflow-type: tm+mt
+source-wordcount: '629'
+ht-degree: 95%
 
 ---
-
 
 # Configurer des pipelines hors production {#configuring-non-production-pipelines}
 
@@ -23,7 +23,7 @@ Le rôle de **Responsable du déploiement** consiste à configurer le pipeline �
 
 Vous pouvez créer deux types de pipelines différents.
 
-* **Pipelines de production** - un pipeline de production est un pipeline spécialement conçu, composé d’une série d’étapes coordonnées pour mener le code source jusqu’à la production.
+* **Pipelines de production** - un pipeline de production est un pipeline spécialement conçu, composé d’une série d’étapes coordonnées permettant de mener le code source jusqu’à la production.
 * **Pipelines hors production** - un pipeline hors production sert principalement à exécuter des analyses de qualité du code ou à déployer le code source dans un environnement de développement.
 
 Ce document se concentre sur les pipelines hors production. Pour plus d’informations sur la configuration des pipelines hors production, voir le document [Configuration de pipelines hors production.](configuring-non-production-pipelines.md)
@@ -71,11 +71,11 @@ Une fois que vous avez configuré votre programme et que vous disposez d’au mo
 
       * **Manuel** - utilisez cette option pour démarrer manuellement le pipeline.
       * **Lors des modifications Git** - cette option démarre le pipeline chaque fois que des validations sont ajoutées à la branche Git configurée. Avec cette option, vous pouvez toujours démarrer le pipeline manuellement, si nécessaire.
-   1. Sous **Comportement en cas d’échecs de mesures importants**, définissez le comportement du pipeline en cas d’échec important à l’un des points de contrôle qualité.
+   1. Pour les pipelines de déploiement, sous **Comportement des échecs de mesure importants**, définissez le comportement du pipeline en cas d’échec important dans l’un des points de contrôle qualité.
 
-      * **Demander à chaque fois** - il s’agit du paramètre par défaut qui nécessite une intervention manuelle lors de tout échec important.
-      * **Défaillance immédiate** - si cette option est sélectionnée, le pipeline sera interrompu dès qu’une défaillance importante aura lieu. Cette option émule essentiellement un utilisateur rejetant manuellement chaque échec.
-      * **Continuer immédiatement** - si cette option est sélectionnée, le pipeline se poursuit automatiquement chaque fois qu’un échec important se produit. Il s&#39;agit essentiellement d&#39;émuler un utilisateur approuvant manuellement chaque échec.
+      * **Demander à chaque fois** - il s’agit du paramètre par défaut qui nécessite une intervention manuelle pour tout échec important.
+      * **Défaillance immédiate** : si cette option est sélectionnée, le pipeline sera interrompu chaque fois qu’une défaillance importante aura lieu. Il s’agit essentiellement d’imiter un utilisateur qui rejetterait manuellement chaque échec.
+      * **Continuer immédiatement** - si cette option est sélectionnée, le pipeline se poursuivra automatiquement chaque fois qu’une défaillance importante se produira. Il s&#39;agit essentiellement d&#39;émuler un utilisateur approuvant manuellement chaque échec.
 
 
 1. Cliquez sur **Enregistrer** pour enregistrer votre pipeline.
