@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 2022.3.0
 description: Voici les notes de mise à jour de la version 2022.3.0 de Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 0d14adda454889eebbb0a875978ceeaa5ee4f7ea
+source-git-commit: 79b2729814af483844d095ed8d6db6cead2ceaf7
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 29%
+source-wordcount: '233'
+ht-degree: 25%
 
 ---
 
@@ -26,13 +26,14 @@ La date de publication de [!UICONTROL Cloud Manager] la version 2022.3.0 est le 
 ## Nouveautés {#what-is-new}
 
 * (Cloud Service uniquement) L’accès au journal de l’environnement AEM peut être effectué à l’aide du rôle Développeur.
-* Le [`reliability_rating` mesure critique](understand-your-test-results.md) a été désactivé.
+* (AMS) : Les requêtes HTTP en sortie des tests de ressources proviennent désormais d’une plage d’adresses IP fixe.
 
 
 ## Correctifs {#bug-fixes}
 
-* [Le **Ignorer les modifications de l’équilibreur de charge** option](configuring-production-pipelines.md#adding-production-pipeline) peuvent désormais être correctement désactivés.
-* [Le **Ignorer les modifications de l’équilibreur de charge** option](configuring-production-pipelines.md#adding-production-pipeline) s’affiche maintenant pour le workflow de modification du pipeline de déploiement.
-* Un sous-ensemble de référentiels Git créés manuellement avait des valeurs de nom incorrectes qui affectaient [la fonction de réutilisation des artefacts de création.](setting-up-project.md#build-artifact-reuse) Les noms de ces référentiels ont été modifiés et les utilisateurs verront le nom corrigé dans l’API/interface utilisateur de Cloud Manager.
-* [Lors de l’ajout ou de la modification d’un pipeline de qualité du code,](configuring-non-production-pipelines.md) les options permettant de gérer les échecs de mesures ne s’affichent plus.
-* Les configurations de variable de pipeline inattendues ne provoquent plus d’erreurs lors de l’étape de création.
+* (AMS uniquement) La variable **Ignorer les modifications de l’équilibreur de charge** n’a pas pu être désactivée.
+* (AMS) La variable **Ignorer les modifications de l’équilibreur de charge** ne s’affichait pas sur l’option Déploiement AMS Dev. **Modifier le processus de pipeline**.
+* Un sous-ensemble de référentiels Git créés manuellement avait une valeur de nom incorrecte qui empêchait l’efficacité de la fonction de réutilisation des artefacts de build. Les noms de ces référentiels ont été modifiés et les utilisateurs verront le nom corrigé dans l’API/interface utilisateur de Cloud Manager.
+* Les artefacts de build des pipelines hors production ont été réutilisés de manière inappropriée sur les pipelines de pile complète de production.
+* Lors de l’ajout ou de la modification d’un pipeline de qualité du code, les options permettant de gérer les échecs de mesures ne s’affichent plus.
+* Certaines configurations de variable de pipeline inattendues peuvent provoquer dans l’étape de création.
