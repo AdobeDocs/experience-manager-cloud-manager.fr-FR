@@ -1,19 +1,19 @@
 ---
 title: Notes de mise à jour de la version 2022.3.0
-description: Voici les notes de mise à jour de la version 2022.3.0 de Cloud Manager.
+description: Voici les notes de mise à jour de la version 2022.3.0 de Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 4a5ddf3144ec50f1a7a4ac367b5c99bc9b486752
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '214'
-ht-degree: 28%
+ht-degree: 100%
 
 ---
 
 
-# Notes de mise à jour de la version 2022.3.0 de Cloud Manager {#release-notes}
+# Notes de mise à jour de la version 2022.3.0 de Cloud Manager {#release-notes}
 
-Cette page documente les notes de mise à jour pour [!UICONTROL Cloud Manager] version 2022.3.0.
+Cette page présente les notes de mise à jour de la version 2022.3.0 de [!UICONTROL Cloud Manager].
 
 >[!NOTE]
 >
@@ -21,18 +21,18 @@ Cette page documente les notes de mise à jour pour [!UICONTROL Cloud Manager] v
 
 ## Date de publication {#release-date}
 
-La date de publication de [!UICONTROL Cloud Manager] la version 2022.3.0 est le 10 mars 2022. La prochaine version est prévue pour le 7 avril 2022.
+La date de publication de la version 2022.3.0 de [!UICONTROL Cloud Manager] est le 10 mars 2022. La prochaine version est prévue pour le 7 avril 2022.
 
 ## Nouveautés {#what-is-new}
 
-* Les requêtes HTTP en sortie des tests de ressources proviennent désormais d’une plage d’adresses IP fixe.
+* Les requêtes HTTP sortantes des tests de ressources proviennent désormais d’une plage d’adresses IP fixe.
 
 
 ## Correctifs {#bug-fixes}
 
-* Le **Ignorer les modifications de l’équilibreur de charge** n’a pas pu être désactivée.
-* Le **Ignorer les modifications de l’équilibreur de charge** ne s’affichait pas sur l’option Déploiement AMS Dev. **Modifier le processus de pipeline**.
-* Un sous-ensemble de référentiels Git créés manuellement avait une valeur de nom incorrecte qui empêchait l’efficacité de la fonction de réutilisation des artefacts de build. Les noms de ces référentiels ont été modifiés et les utilisateurs verront le nom corrigé dans l’API/interface utilisateur de Cloud Manager.
-* Les artefacts de build des pipelines hors production ont été réutilisés de manière inappropriée sur les pipelines de pile complète de production.
+* L’option **Ignorer les modifications de la répartition de charge** n’a pas pu être désactivée.
+* L’option **Ignorer les modifications de la répartition de charge** ne s’affichait pas sur le Déploiement AMS Dev **Modifier le workflow de pipeline**.
+* Un sous-ensemble de référentiels Git créés manuellement avait une valeur de nom incorrecte qui empêchait la fonction de réutilisation des artefacts de build d’être efficace. Les noms de ces référentiels ont été modifiés et les utilisateurs verront le nom corrigé dans l’API/interface utilisateur de Cloud Manager.
+* Les artefacts de build des pipelines hors production ont été réutilisés de manière inappropriée sur les pipelines de production de pile pleine.
 * Lors de l’ajout ou de la modification d’un pipeline de qualité du code, les options permettant de gérer les échecs de mesures ne s’affichent plus.
-* Certaines configurations de variable de pipeline inattendues peuvent provoquer dans l’étape de création.
+* Certaines configurations de variable de pipeline inattendues peuvent se présenter dans l’étape de création.
