@@ -3,9 +3,9 @@ title: Configurer des pipelines hors production
 description: Découvrez comment utiliser Cloud Manager pour créer et configurer des pipelines hors production afin de déployer votre code.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
 source-git-commit: 154b95e1b43717097b9ae9076a15792517dd613d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '629'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -71,11 +71,11 @@ Une fois que vous avez configuré votre programme et que vous disposez d’au mo
 
       * **Manuel** - utilisez cette option pour démarrer manuellement le pipeline.
       * **Lors des modifications Git** - cette option démarre le pipeline chaque fois que des validations sont ajoutées à la branche Git configurée. Avec cette option, vous pouvez toujours démarrer le pipeline manuellement, si nécessaire.
-   1. Pour les pipelines de déploiement, sous **Comportement des échecs de mesure importants**, définissez le comportement du pipeline en cas d’échec important dans l’un des points de contrôle qualité.
+   1. Pour les pipelines de déploiement, sous **Comportement en cas d’échecs de mesures importants**, définissez le comportement du pipeline en cas d’échec important à l’un des points de contrôle qualité.
 
       * **Demander à chaque fois** - il s’agit du paramètre par défaut qui nécessite une intervention manuelle pour tout échec important.
       * **Défaillance immédiate** : si cette option est sélectionnée, le pipeline sera interrompu chaque fois qu’une défaillance importante aura lieu. Il s’agit essentiellement d’imiter un utilisateur qui rejetterait manuellement chaque échec.
-      * **Continuer immédiatement** - si cette option est sélectionnée, le pipeline se poursuivra automatiquement chaque fois qu’une défaillance importante se produira. Il s&#39;agit essentiellement d&#39;émuler un utilisateur approuvant manuellement chaque échec.
+      * **Continuer immédiatement** - si cette option est sélectionnée, le pipeline se poursuivra automatiquement chaque fois qu’une défaillance importante se produira. Il s’agit essentiellement d’émuler un utilisateur approuvant manuellement chaque échec.
 
 
 1. Cliquez sur **Enregistrer** pour enregistrer votre pipeline.
