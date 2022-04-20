@@ -3,7 +3,7 @@ title: Notes de mise à jour de la version 2022.3.0
 description: Voici les notes de mise à jour de la version 2022.3.0 de Cloud Manager.
 feature: Release Information
 source-git-commit: f1d359921a11ab8a6117a15cd5eb72362bbb8360
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '214'
 ht-degree: 100%
 
