@@ -10,8 +10,8 @@ topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 feature: Code Deployment
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: 2fcefda1e30871d44e3a1353470a4728904d7598
-workflow-type: ht
+source-git-commit: 0ba7c49b3550666030249562219b2d0dc51f4ae1
+workflow-type: tm+mt
 source-wordcount: '1220'
 ht-degree: 100%
 
@@ -100,12 +100,12 @@ Les étapes suivantes expirent s’ils sont en attente de commentaires de l’ut
 
 | Étape | Délai dépassé |
 |--- |--- |
-| Test de qualité du code | 7 jours |
-| Test de sécurité | 7 jours |
-| Test de performance | 7 jours |
-| Application à approuver | 7 jours |
-| Planning du déploiement en production | 7 jours |
-| Assistance de l’ingénieur du service client | 7 jours |
+| Test de qualité du code | 14 jours |
+| Test de sécurité | 14 jours |
+| Test de performance | 14 jours |
+| Application à approuver | 14 jours |
+| Planning du déploiement en production | 14 jours |
+| Assistance de l’ingénieur du service client | 14 jours |
 
 ## Processus de déploiement {#deployment-process}
 
