@@ -1,19 +1,19 @@
 ---
 title: Gestion des environnements
-seo-title: Gestion des environnements
+seo-title: Manage your Environments
 description: En savoir plus sur l’environnement Cloud Manager
-seo-description: Consultez cette page pour afficher la liste des environnements de production et des environnements hors production utilisés pour configurer et exécuter le pipeline CI/CD dans Cloud Manager.
+seo-description: Follow this page to view the list of production and non-production environments that are used for setting up and running the CI/CD pipeline in Cloud Manager.
 uuid: 04e67572-11db-4d5d-acf3-fd7f644a95f0
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: c5b39de2-3a9b-437f-98e8-e6e6249a5b3a
-feature: Environnements
+feature: Environments
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
-source-git-commit: df2f598f91201d362f54b17e4092ff6bd6a72cec
+source-git-commit: 6ff704ec11dd4a5f73d5b5df5721c4fee649527b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '280'
+ht-degree: 94%
 
 ---
 
@@ -55,3 +55,7 @@ L’écran **Environnements** affiche une carte pour les environnements de *prod
 >Le **statut** du nœud représente l’état d’alimentation de la VM et ne reflète pas l’état d’AEM sur le serveur. L’état peut être **En cours d’exécution** (cercle vert), **Arrêté** (cercle rouge), **À venir** (cercle bleu) ou **Indisponible** (cercle jaune).
 
 ![](assets/Environments-tab.png)
+
+>[!NOTE]
+>
+>Si vous avez besoin de vos journaux d’environnement, ils peuvent être demandés par l’intermédiaire de votre ingénieur du service client.
