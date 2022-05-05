@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 2022.5.0
 description: Voici les notes de mise à jour de la version 2022.5.0 de Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 84cc4352488002ad40102ea2c507af652d9012a1
+source-git-commit: 59e57e33e52b2749865f8c92a8d947c9a04ffe79
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 66%
+source-wordcount: '141'
+ht-degree: 54%
 
 ---
 
@@ -25,13 +25,11 @@ La date de publication de [!UICONTROL Cloud Manager] la version 2022.5.0 est le 
 
 ## Nouveautés {#what-is-new}
 
-Les requêtes HTTP sortantes des tests de ressources proviennent désormais d’une plage d’adresses IP fixe.
+* La page Environnements comporte une colonne pour afficher AEM version de l’environnement.
+* L’exécution du pipeline affichera désormais les erreurs de niveau supérieur de l’interface utilisateur dans l’écran d’exécution.
+* Mise à jour de la configuration par défaut pour inclure la mise en pause dans la configuration B/G.
 
 ## Correctifs {#bug-fixes}
 
-* L’option de modification &quot;Ignorer l’équilibreur de charge&quot; n’a pas pu être désactivée.
-* L’option Ignorer les modifications de l’équilibreur de charge ne s’affichait pas dans le workflow de pipeline de modification Déploiement de développement AMS .
-* Un sous-ensemble de référentiels GIT créés manuellement avait une valeur de nom incorrecte qui empêchait l’efficacité de la fonction de réutilisation des artefacts de build. Les noms de ces référentiels ont été modifiés et les utilisateurs verront le nom corrigé dans l’API/interface utilisateur de Cloud Manager.
-* Les artefacts de build des pipelines hors production ont été réutilisés de manière inappropriée sur les pipelines de production de pile pleine.
-* Lors de l’ajout ou de la modification d’un pipeline de qualité du code, les options permettant de gérer les échecs de mesures ne s’affichent plus.
-* Certaines configurations de variable de pipeline inattendues peuvent entraîner des erreurs lors de l’étape de création.
+* Résultat du test de performance erroné avec une erreur de délai d’expiration 504.
+* Certaines exécutions étaient bloquées dans le contexte du déclencheur de validation et de l&#39;annulation de l&#39;étape de validation.
