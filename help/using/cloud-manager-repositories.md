@@ -3,9 +3,9 @@ title: Référentiels Cloud Manager
 description: Référentiels Cloud Manager
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
 source-git-commit: 280d760766cf445e609b865f827c01b4ab1db69c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '443'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Les sous-modules Git peuvent être utilisés pour fusionner le contenu de plusie
 $ git submodule update --init
 ```
 
-Cette procédure extrait chaque sous-module dans le répertoire approprié. Cette technique constitue une alternative potentielle à l’[utilisation de plusieurs référentiels Git sources](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html) pour les organisations qui maîtrisent l’utilisation des sous-modules Git et qui ne souhaitent pas gérer de processus de fusion externe.
+Cette procédure extrait chaque sous-module dans le répertoire approprié. Cette technique constitue une alternative potentielle à l’[utilisation de plusieurs référentiels Git sources](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=fr) pour les organisations qui maîtrisent l’utilisation des sous-modules Git et qui ne souhaitent pas gérer de processus de fusion externe.
 
 Par exemple, supposons qu’il existe trois référentiels, chacun contenant une seule branche nommée « main ». Dans le référentiel « principal », c’est-à-dire celui qui est configuré dans les pipelines, la branche principale contient un fichier pom.xml qui déclare les projets contenus dans les deux autres référentiels :
 
