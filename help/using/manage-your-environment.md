@@ -11,9 +11,9 @@ discoiquuid: c5b39de2-3a9b-437f-98e8-e6e6249a5b3a
 feature: Environments
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
 source-git-commit: 6ff704ec11dd4a5f73d5b5df5721c4fee649527b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '280'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
