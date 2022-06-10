@@ -5,10 +5,10 @@ description: Consultez la FAQ sur Cloud Manager pour obtenir des conseils de d�
 seo-description: Follow this page to get answers on Cloud Manager FAQs
 feature: Getting Started
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
-source-git-commit: 71d44c7e3673ca62fcd2203ecc0bc4ed9fa22002
-workflow-type: ht
-source-wordcount: '881'
-ht-degree: 100%
+source-git-commit: 6dce1f48b66c6970c3ba025031f0adcbd01195dd
+workflow-type: tm+mt
+source-wordcount: '874'
+ht-degree: 93%
 
 ---
 
@@ -28,11 +28,13 @@ Le build AEM Cloud Manager échoue en cas de tentative de basculement de la vers
 
 * Pour les builds de Cloud Manager, le plug-in Maven Enforcer échoue en présentant l’erreur `"[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion"`. Il s’agit d’un problème connu dû au fait que Cloud Manager utilisait une version différente de Java pour exécuter la commande maven plutôt que de compiler le code. Pour l’instant, évitez d’utiliser `requireJavaVersion` dans vos configurations maven-force-application-plugin.
 
-## Notre déploiement est bloqué en raison de l’échec de la vérification de la qualité du code. Y a-t-il un moyen de contourner cette vérification ? {#deployment-stuck}
+## Notre déploiement est bloqué car la vérification de la qualité du code a échoué. Y a-t-il un moyen de contourner cette vérification ? {#deployment-stuck}
 
-Tous les échecs de qualité du code, à l’exception de la *Cote de sécurité*, ne sont pas des mesures critiques ; ils peuvent donc être contournés en développant les éléments dans l’interface utilisateur des résultats.
+Oui. Tous les échecs de qualité du code, à l’exception de *Note de sécurité* sont des mesures non critiques. Elles peuvent donc être contournées dans le cadre d’un pipeline de déploiement en développant les éléments dans l’interface utilisateur des résultats.
 
-Un utilisateur ayant un rôle de [responsable de déploiement, responsable de projet ou propriétaire d’entreprise](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=fr#requirements) peut, au choix, contourner les problèmes, auquel cas le pipeline continue, ou les accepter, auquel cas le pipeline s’arrête avec un échec.  Pour plus d’informations, consultez [Points de contrôle à trois niveaux lors de l’exécution d’un pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=fr#how-to-use).
+Un utilisateur ayant un rôle de [responsable de déploiement, responsable de projet ou propriétaire d’entreprise](/help/using/setting-up-users-and-roles.md#role-definitions) peut, au choix, contourner les problèmes, auquel cas le pipeline continue, ou les accepter, auquel cas le pipeline s’arrête avec un échec.
+
+Voir les documents [Points de contrôle à trois niveaux lors de l’exécution d’un pipeline](/help/using/understand-your-test-results.md#three-tier-gates-while-running-a-pipeline) et [Configuration de pipelines hors production](/help/using/configuring-non-production-pipelines.md#understanding-the-flow) pour plus d’informations.
 
 ## Les déploiements de Cloud Manager échouent à l’étape de test de performances dans les environnements Managed Services d’Adobe. Comment déboguer ceci pour passer les mesures critiques ? {#debug-critical-metrics}
 
