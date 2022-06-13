@@ -2,13 +2,13 @@
 title: Notes de mise à jour de la version 2022.5.0
 description: Voici les notes de mise à jour de la version 2022.5.0 de Cloud Manager.
 feature: Release Information
-source-git-commit: a0261c3bb9b931c743655d7d05138131a740db33
-workflow-type: tm+mt
+exl-id: c8759f81-4a7c-4f3e-aac6-b1bde8dd46a3
+source-git-commit: 4aba86d40977e57dc714d08836af1f6a9e49404e
+workflow-type: ht
 source-wordcount: '138'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
-
 
 # Notes de mise à jour de la version 2022.5.0 de Cloud Manager {#release-notes}
 
@@ -20,15 +20,15 @@ Cette page présente les notes de mise à jour de la version 2022.5.0 de [!UICO
 
 ## Date de publication {#release-date}
 
-La date de publication de [!UICONTROL Cloud Manager] la version 2022.5.0 est le 5 mai 2022. La prochaine version est prévue pour le 9 juin 2022.
+La date de publication de la version 2022.5.0 de [!UICONTROL Cloud Manager] est le 5 mai 2022. La prochaine version est prévue pour le 9 juin 2022.
 
 ## Nouveautés {#what-is-new}
 
 * L’exécution du pipeline affichera désormais les erreurs de niveau supérieur de l’interface utilisateur dans l’écran d’exécution.
-* Mise à jour de la configuration par défaut pour inclure la mise en pause dans la configuration B/G.
+* Mise à jour de la configuration par défaut pour inclure la mise en pause de la configuration B/G.
 * Exécutez à nouveau l’étape de déploiement en production via l’interface utilisateur de Cloud Manager.
 
 ## Correctifs {#bug-fixes}
 
 * Résultat du test de performance erroné avec une erreur de délai d’expiration 504.
-* Certaines exécutions étaient bloquées dans le contexte du déclencheur de validation et de l&#39;annulation de l&#39;étape de validation.
+* Certaines exécutions étaient bloquées dans le contexte du déclencheur de validation et de l’annulation de l’étape de validation.
