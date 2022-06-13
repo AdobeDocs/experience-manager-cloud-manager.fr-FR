@@ -4,9 +4,9 @@ description: Voici les notes de mise à jour de la version 2022.2.0 de Cloud Ma
 feature: Release Information
 exl-id: c13ee200-197e-4855-a08c-99d36b471bb6
 source-git-commit: 0ddfd152cb15731882d198d043dd8897b5073ab4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '140'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ La date de publication de la version 2022.2.0 de [!UICONTROL Cloud Manager] est
 
 Nouveautés de la version de février :
 
-* Vous pouvez accéder au journal de l’environnement AEM à l’aide du rôle Développeur .
+* Il est possible d’accéder au journal de l’environnement AEM à l’aide du rôle Développeur.
 * Vous pouvez désormais désactiver la mesure critique reliability_rating.
 
 ## Correctifs {#bug-fixes}
