@@ -11,9 +11,9 @@ discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 feature: Code Deployment
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
 source-git-commit: 9a9d7067a1369e80ccf9b2925369a466b3da2901
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1615'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -193,15 +193,15 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 >[!IMPORTANT]
 >L’utilisation de l’indicateur `--emergency` peut nécessiter une mise à jour vers la dernière version de l’`aio-cli-plugin-cloudmanager`.
 
-## Réexécution d’un déploiement en production {#Reexecute-Deployment}
+## Réexécuter un déploiement en production {#Reexecute-Deployment}
 
-La réexécution de l’étape de déploiement en production est prise en charge pour les exécutions où l’étape de déploiement en production est terminée. Le type d’achèvement n’est pas important : le déploiement peut être réussi (uniquement pour les programmes AMS), annulé ou non réussi. Cela dit, le cas d’utilisation Principal doit être celui où l’étape de déploiement en production a échoué pour des raisons transitoires. La réexécution crée une nouvelle exécution à l’aide du même pipeline. Cette nouvelle exécution se compose de trois étapes :
+La réexécution de l’étape de déploiement en production est prise en charge pour les exécutions où l’étape de déploiement en production est terminée. Le type d’achèvement n’est pas important : le déploiement peut être réussi (uniquement pour les programmes AMS), annulé ou non réussi. Cela dit, le cas d’utilisation principal doit être celui où l’étape de déploiement en production a échoué pour des raisons transitoires. La réexécution crée une nouvelle exécution à l’aide du même pipeline. Cette nouvelle exécution se compose de trois étapes :
 
-1. L’étape de validation : il s’agit essentiellement de la même validation qui se produit lors de l’exécution normale d’un pipeline.
-1. L’étape de création : dans le contexte d’une réexécution, l’étape de création consiste à copier des artefacts, sans réellement exécuter un nouveau processus de création.
-1. L’étape de déploiement en production : utilise la même configuration et les mêmes options que l’étape de déploiement en production dans une exécution normale de pipeline.
+1. L’étape de validation : il s’agit essentiellement de la même validation qui se produit lors de l’exécution normale d’un pipeline.
+1. L’étape de création : dans le contexte d’une réexécution, l’étape de création consiste à copier des artefacts, sans réellement exécuter un nouveau processus de création.
+1. L’étape de déploiement en production : elle utilise la même configuration et les mêmes options que l’étape de déploiement en production dans une exécution normale de pipeline.
 
-L’étape de création peut être légèrement étiquetée différemment dans l’interface utilisateur afin de refléter le fait qu’elle copie des artefacts, et non la reconstruction.
+L’étape de création peut être libellée de façon légèrement différente dans l’interface utilisateur afin de refléter le fait qu’elle copie (et ne récrée pas) des artefacts.
 
 ![](assets/Re-deploy.png)
 
@@ -210,18 +210,18 @@ Restrictions :
 * La réexécution de l’étape de déploiement en production n’est disponible que lors de la dernière exécution.
 * La réexécution n’est pas disponible pour les exécutions de restauration.
 * Si la dernière exécution est une exécution de restauration, la réexécution n’est pas possible.
-* Si la dernière exécution est une exécution de mise à jour push, la réexécution n’est pas possible.
+* Si la dernière exécution est une exécution de mise à jour des notifications push, la réexécution n’est pas possible.
 * Si la dernière exécution a échoué à un moment donné avant l’étape de déploiement en production, la réexécution n’est pas possible.
 
 ### Réexécuter l’API {#Reexecute-API}
 
 ### Identifier une exécution de réexécution
 
-Pour déterminer si une exécution est une exécution de nouvelle exécution, le champ déclencheur peut être examiné. Sa valeur sera *RE_EXECUTE*.
+Pour déterminer si une exécution est une exécution de ré-exécution, le champ déclencheur peut être examiné. Sa valeur sera *RE_EXECUTE*.
 
-### Déclenchement d&#39;une nouvelle exécution
+### Déclencher une nouvelle exécution
 
-Pour déclencher une réexécution, une demande de PUT doit être envoyée au lien HAL &lt;(<http://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)> à l’état de l’étape de déploiement en production. Si ce lien est présent, l&#39;exécution peut être redémarrée à partir de cette étape. En cas d’absence, l’exécution ne peut pas être redémarrée à partir de cette étape. Dans la version initiale, ce lien ne sera jamais présent que lors de l’étape de déploiement en production, mais les prochaines versions peuvent prendre en charge le démarrage du pipeline à partir d’autres étapes. Exemple :
+Pour déclencher une ré-exécution, une requête PUT doit être envoyée au lien HAL &lt;(<http://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)> à l’état d’étape de déploiement en production. Si ce lien est présent, l’exécution peut être redémarrée à partir de cette étape. En cas d’absence, l’exécution ne peut pas être redémarrée à partir de cette étape. Dans la version initiale, ce lien sera uniquement présent lors de l’étape de déploiement en production, mais les prochaines versions peuvent prendre en charge le démarrage du pipeline à partir d’autres étapes. Exemple :
 
 ```Javascript
  {
@@ -259,6 +259,6 @@ Pour déclencher une réexécution, une demande de PUT doit être envoyée au li
 ```
 
 
-Syntaxe du lien HAL *href*  La valeur ci-dessus n’est pas destinée à être utilisée comme point de référence. La valeur réelle doit toujours être lue à partir du lien HAL et non générée.
+La syntaxe de la valeur *href* du lien HAL ci-dessus n’est pas destinée à être utilisée comme point de référence. La valeur réelle doit toujours être lue à partir du lien HAL et non générée.
 
-Envoi d’un *PUT* une requête vers ce point de terminaison entraîne la génération d’une *201* en cas de réussite, le corps de la réponse est la représentation de la nouvelle exécution. Cela revient à lancer une exécution régulière via l’API.
+L’envoi d’une requête *PUT* vers ce point d’entrée entraîne la génération d’une réponse *201* en cas de réussite, le corps de la réponse étant la représentation de la nouvelle exécution. Cela revient à lancer une exécution régulière via l’API.
