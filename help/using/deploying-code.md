@@ -10,10 +10,10 @@ topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 feature: Code Deployment
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: 9a9d7067a1369e80ccf9b2925369a466b3da2901
-workflow-type: ht
+source-git-commit: 4c86446127c8cd66f964b192f3602f02fd2ddf8e
+workflow-type: tm+mt
 source-wordcount: '1615'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -221,7 +221,7 @@ Pour déterminer si une exécution est une exécution de ré-exécution, le cham
 
 ### Déclencher une nouvelle exécution
 
-Pour déclencher une ré-exécution, une requête PUT doit être envoyée au lien HAL &lt;(<http://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)> à l’état d’étape de déploiement en production. Si ce lien est présent, l’exécution peut être redémarrée à partir de cette étape. En cas d’absence, l’exécution ne peut pas être redémarrée à partir de cette étape. Dans la version initiale, ce lien sera uniquement présent lors de l’étape de déploiement en production, mais les prochaines versions peuvent prendre en charge le démarrage du pipeline à partir d’autres étapes. Exemple :
+Pour déclencher une réexécution, une demande de PUT doit être envoyée au lien HAL. ```http://ns.adobe.com/adobecloud/rel/pipeline/reExecute``` sur l’état de l’étape de déploiement en production. Si ce lien est présent, l’exécution peut être redémarrée à partir de cette étape. En cas d’absence, l’exécution ne peut pas être redémarrée à partir de cette étape. Dans la version initiale, ce lien sera uniquement présent lors de l’étape de déploiement en production, mais les prochaines versions peuvent prendre en charge le démarrage du pipeline à partir d’autres étapes. Exemple :
 
 ```Javascript
  {

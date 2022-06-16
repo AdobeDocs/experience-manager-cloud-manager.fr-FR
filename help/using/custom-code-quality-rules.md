@@ -1,16 +1,16 @@
 ---
 title: Règles de qualité du code personnalisé
-description: Cette page décrit les règles de qualité du code personnalisé exécutées par Cloud Manager dans le cadre du test de qualité du code. Elles sont basées sur les bonnes pratiques de l’ingénierie AEM.
+description: Cette page décrit les règles de qualité du code personnalisé exécutées par Cloud Manager dans le cadre du test de qualité du code. Elles sont basées sur les bonnes pratiques de l’ingénierie AEM.
 uuid: a7feb465-1982-46be-9e57-e67b59849579
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 feature: Code Quality Rules
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 834508109e34eb1e052abac482e981735c72d43d
-workflow-type: ht
-source-wordcount: '3611'
-ht-degree: 100%
+source-git-commit: d4c92a36ca3af123730d68fedf1dbf7ee819c66b
+workflow-type: tm+mt
+source-wordcount: '3609'
+ht-degree: 99%
 
 ---
 
@@ -21,7 +21,7 @@ Cette page décrit les règles de qualité du code personnalisé exécutées par
 
 >[!NOTE]
 >
->Pour en savoir plus sur les règles de qualité du code personnalisé pour Cloud Manager dans AEM as a Cloud Service, consultez [cette documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html?lang=fr#using-cloud-manager).
+>Pour en savoir plus sur les règles de qualité du code personnalisé pour Cloud Manager dans AEM as a Cloud Service, reportez-vous à la section [à cette documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html?lang=fr#using-cloud-manager).
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ Cette page décrit les règles de qualité du code personnalisé exécutées par
 
 ## Règles SonarQube {#sonarqube-rules}
 
-La section suivante détaille les règles SonarQube exécutées par Cloud Manager.
+La section suivante détaille les règles SonarQube exécutées par Cloud Manager.
 
 ### Ne pas utiliser de fonctions potentiellement dangereuses {#do-not-use-potentially-dangerous-functions}
 
@@ -651,7 +651,7 @@ Les composants AEM disposant d’une boîte de dialogue d’interface utilisateu
 * Un composant doté d’une boîte de dialogue d’interface utilisateur classique (c’est-à-dire un nœud `design_dialog`) doit avoir une boîte de dialogue de conception d’interface utilisateur tactile correspondante (c’est-à-dire un nœud enfant `cq:design_dialog`).
 * Un composant doté d’une boîte de dialogue d’interface utilisateur classique et d’une boîte de dialogue de conception d’interface utilisateur classique doit comporter à la fois une boîte de dialogue d’interface utilisateur tactile correspondante et une boîte de dialogue de conception d’interface utilisateur tactile correspondante.
 
-La documentation des outils de modernisation d’AEM contient des informations et des outils pour convertir les composants de l’interface utilisateur classique en interface utilisateur tactile. Consultez la [documentation relative aux outils de modernisation d’AEM](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) pour en savoir plus.
+La documentation des outils de modernisation d’AEM contient des informations et des outils pour convertir les composants de l’interface utilisateur classique en interface utilisateur tactile. Consultez la [documentation relative aux outils de modernisation d’AEM](https://opensource.adobe.com/aem-modernize-tools/) pour en savoir plus.
 
 ### Les packages ne doivent pas combiner du contenu modifiable et non modifiable {#oakpal-packages-immutable}
 
@@ -660,7 +660,7 @@ La documentation des outils de modernisation d’AEM contient des informations e
 * **Gravité** : mineure
 * **Depuis** : version 2020.5.0
 
-Pour être compatible avec le modèle de déploiement Cloud Service, les packages de contenu individuels doivent contenir du contenu pour les zones non modifiables du référentiel (c’est-à-dire, `/apps` et `/libs`) ou la zone modifiable (c’est-à-dire, tout ce qui ne se trouve pas dans `/apps` ou `/libs`), mais pas les deux. Par exemple, un package contenant à la fois `/apps/myco/components/text and /etc/clientlibs/myco` est incompatible avec Cloud Service et provoquera la notification d’un problème.
+Pour être compatible avec le modèle de déploiement Cloud Service, les packages de contenu individuels doivent contenir du contenu pour les zones non modifiables du référentiel (c’est-à-dire, `/apps` et `/libs`) ou la zone modifiable (c’est-à-dire, tout ce qui ne se trouve pas dans `/apps` ou `/libs`), mais pas les deux. Par exemple, un package contenant à la fois `/apps/myco/components/text and /etc/clientlibs/myco` est incompatible avec Cloud Service et provoquera la notification d’un problème.
 
 Consultez la [documentation relative à la structure de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=fr) pour en savoir plus.
 
@@ -710,7 +710,7 @@ Les bibliothèques clientes AEM peuvent contenir des ressources statiques telles
         + myimage.jpg
 ```
 
-### Utilisation de processus de workflow non compatibles avec Cloud Service {#oakpal-usage-cloud-service}
+### Utilisation de processus de workflow non compatibles avec Cloud Service {#oakpal-usage-cloud-service}
 
 * **Clé** : CloudServiceIncompatibleWorkflowProcess
 * **Type** : code smell
@@ -768,7 +768,7 @@ AEM Cloud Service exige que les définitions d’index de recherche personnalis�
 * **Gravité** : mineure
 * **Depuis** : version 2021.2.0
 
-AEM Cloud Service exige que la propriété `compatVersion` soit définie sur `2` pour les définitions d’index de recherche personnalisée (c’est-à-dire pour les nœuds de type `oak:QueryIndexDefinition`). AEM Cloud Service ne prend en charge aucune autre valeur. Vous trouverez plus d’informations sur les index de recherche dans la [documentation relative à la recherche et à l’indexation de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=fr).
+AEM Cloud Service exige que la propriété `compatVersion` soit définie sur `2` pour les définitions d’index de recherche personnalisée (c’est-à-dire pour les nœuds de type `oak:QueryIndexDefinition`). AEM Cloud Service ne prend en charge aucune autre valeur. Vous trouverez plus d’informations sur les index de recherche dans la [documentation relative à la recherche et à l’indexation de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html).
 
 ### Les nœuds descendants des nœuds de définition d’index de recherche personnalisée doivent être de type nt:unstructured {#oakpal-descendent-nodes}
 
@@ -804,7 +804,7 @@ AEM Cloud Service exige que les définitions d’index de recherche personnalis�
 * **Gravité** : mineure
 * **Depuis** : version 2021.2.0
 
-AEM Cloud Service exige que les définitions d’index de recherche personnalisée (c’est-à-dire les nœuds de type `oak:QueryIndexDefinition`) aient une propriété `type` dont la valeur est définie sur `lucene`. L’indexation avec ces types d’index hérités doit être mise à jour avant la migration vers AEM Cloud Service. Consultez la [documentation relative à la recherche et à l’indexation de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=fr#how-to-use) pour en savoir plus.
+AEM Cloud Service exige que les définitions d’index de recherche personnalisée (c’est-à-dire les nœuds de type `oak:QueryIndexDefinition`) aient une propriété `type` dont la valeur est définie sur `lucene`. L’indexation avec ces types d’index hérités doit être mise à jour avant la migration vers AEM Cloud Service. Consultez la [documentation relative à la recherche et à l’indexation de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#how-to-use) pour en savoir plus.
 
 ### Les nœuds de définition d’index de recherche personnalisée ne doivent pas contenir de propriété nommée seed {#oakpal-property-name-seed}
 
@@ -813,7 +813,7 @@ AEM Cloud Service exige que les définitions d’index de recherche personnalis�
 * **Gravité** : mineure
 * **Depuis** : version 2021.2.0
 
-AEM Cloud Service interdit aux définitions d’index de recherche personnalisée (c’est-à-dire les nœuds de type `oak:QueryIndexDefinition`) de contenir une propriété nommée `seed`. L’indexation avec cette propriété doit être mise à jour avant la migration vers AEM Cloud Service. Consultez la [documentation relative à la recherche et à l’indexation de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=fr#how-to-use) pour en savoir plus.
+AEM Cloud Service interdit aux définitions d’index de recherche personnalisée (c’est-à-dire les nœuds de type `oak:QueryIndexDefinition`) de contenir une propriété nommée `seed`. L’indexation avec cette propriété doit être mise à jour avant la migration vers AEM Cloud Service. Consultez la [documentation relative à la recherche et à l’indexation de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#how-to-use) pour en savoir plus.
 
 ### Les nœuds de définition d’index de recherche personnalisée ne doivent pas contenir de propriété nommée reindex {#oakpal-reindex-property}
 
@@ -822,7 +822,7 @@ AEM Cloud Service interdit aux définitions d’index de recherche personnalisé
 * **Gravité** : mineure
 * **Depuis** : version 2021.2.0
 
-AEM Cloud Service interdit aux définitions d’index de recherche personnalisée (c’est-à-dire les nœuds de type `oak:QueryIndexDefinition`) de contenir une propriété nommée `reindex`. L’indexation avec cette propriété doit être mise à jour avant la migration vers AEM Cloud Service. Consultez la [documentation relative à la recherche et à l’indexation de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=fr#how-to-use) pour en savoir plus.
+AEM Cloud Service interdit aux définitions d’index de recherche personnalisée (c’est-à-dire les nœuds de type `oak:QueryIndexDefinition`) de contenir une propriété nommée `reindex`. L’indexation avec cette propriété doit être mise à jour avant la migration vers AEM Cloud Service. Consultez la [documentation relative à la recherche et à l’indexation de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#how-to-use) pour en savoir plus.
 
 ## Outil d’optimisation du Dispatcher {#dispatcher-optimization-tool-rules}
 

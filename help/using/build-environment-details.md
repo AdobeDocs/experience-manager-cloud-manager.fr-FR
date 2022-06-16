@@ -3,9 +3,9 @@ title: Présentation de l’environnement de génération
 description: Consultez cette page pour en savoir plus sur les environnements
 feature: Environments
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: 17f79fdc7278cae532485570a6e2b8700683ef0d
-workflow-type: ht
-source-wordcount: '996'
+source-git-commit: 9959f649e553d0ff6d41a70a468bec3e2e854d75
+workflow-type: tm+mt
+source-wordcount: '997'
 ht-degree: 100%
 
 ---
@@ -35,7 +35,7 @@ Cloud Manager crée et teste votre code à l’aide d’un environnement de gén
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 
 * Maven est configuré au niveau du système grâce à un fichier settings.xml qui inclut automatiquement le référentiel public Adobe **Artifact** à l’aide d’un profil nommé `adobe-public`.
-Pour plus d’informations, consultez le [référentiel Maven public d’Adobe](https://repo.adobe.com/).
+Pour plus d’informations, consultez le [référentiel Maven public d’Adobe](https://repo1.maven.org/).
 
 >[!NOTE]
 >Bien que Cloud Manager ne définisse pas de version spécifique du `jacoco-maven-plugin`, la version utilisée doit être au moins `0.7.5.201505241946`.
@@ -99,7 +99,7 @@ Les combinaisons fournisseur/version actuellement disponibles sont les suivantes
 
 Il est également possible de sélectionner Azul 8 ou Azul 11 en tant que JDK pour l’ensemble de l’exécution Maven. Contrairement aux options de toolchains, un autre JDK sera utilisé pour tous les plug-ins, sauf si la configuration de toolchains est également définie, auquel cas la configuration de toolchains est toujours appliquée pour les plug-ins Maven compatibles avec les toolchains. Par conséquent, la vérification et l’application de la version Java à l’aide du [plug-in Apache Maven Enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/) fonctionneront.
 
-Pour ce faire, créez un fichier nommé `.cloudmanager/java-version` dans la branche de référentiel git utilisée par le pipeline. Ce fichier peut contenir « 11 » ou « 8 ». Toute autre valeur est ignorée. Si « 11 » est spécifié, Azul 11 est utilisé et la variable d’environnement JAVA_HOME est définie sur `/usr/lib/jvm/jdk-11.0.11`. Si « 8 » est spécifié, Azul 8 est utilisé et la variable d’environnement JAVA_HOME est définie sur `/usr/lib/jvm/jdk-8.0.292`.
+Pour ce faire, créez un fichier nommé `.cloudmanager/java-version` dans la branche de référentiel git utilisée par le pipeline. Ce fichier peut contenir « 11 » ou « 8 ». Toute autre valeur est ignorée. Si la version 11 est spécifiée, Azul 11 est utilisé et la variable d’environnement JAVA_HOME est définie sur `/usr/lib/jvm/jdk-11.0.11`. Si la version 8 est spécifiée, Azul 8 est utilisé et la variable d’environnement JAVA_HOME est définie sur `/usr/lib/jvm/jdk-8.0.292`.
 
 ## Variables d’environnement {#environment-variables}
 
