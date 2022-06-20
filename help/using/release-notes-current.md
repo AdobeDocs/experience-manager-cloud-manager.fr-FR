@@ -4,9 +4,9 @@ description: Voici les notes de mise à jour de la version 2022.6.0 de Cloud M
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: dab08a2499b521b7026ab2bd17b82cb241f26fb6
-workflow-type: ht
-source-wordcount: '183'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
