@@ -4,9 +4,9 @@ description: Voici les notes de mise à jour de la version 2022.6.0 de Cloud M
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: dab08a2499b521b7026ab2bd17b82cb241f26fb6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '183'
-ht-degree: 42%
+ht-degree: 100%
 
 ---
 
@@ -21,16 +21,16 @@ Cette page présente les notes de mise à jour de la version 2022.6.0 de [!UICO
 
 ## Date de publication {#release-date}
 
-La date de publication de [!UICONTROL Cloud Manager] la version 2022.6.0 est le 9 juin 2022. La prochaine version est prévue pour le 30 juin 2022.
+La date de publication de la version 2022.6.0 de [!UICONTROL Cloud Manager] est le 9 juin 2022. La prochaine version est prévue pour le 30 juin 2022.
 
 ## Nouveautés {#what-is-new}
 
-* Une nouvelle carte de bienvenue sur la page d’entrée de Cloud Manager permet aux utilisateurs d’accéder rapidement aux tutoriels d’intégration et aux mesures de progression liées au client.
-   * Cette fonctionnalité sera déployée par étapes au cours de la semaine qui suivra la version 2022.06.0.
-* [La création d’artefacts peut désormais être réutilisée.](/help/using/setting-up-project.md#build-artifact-reuse) lors de l’utilisation de la mise en miroir git.
+* Une nouvelle carte de bienvenue sur la page de destination de Cloud Manager permet aux utilisateurs d’accéder rapidement aux tutoriels d’intégration et aux mesures de progression liées au client.
+   * Cette fonctionnalité sera déployée progressivement au cours de la semaine suivant la publication de la version 2022.06.0.
+* [Les artefacts de build peuvent désormais être réutilisés](/help/using/setting-up-project.md#build-artifact-reuse) lors de l’utilisation de la mise en miroir git.
 
 ## Modifications d’API {#api-changes}
 
-* Le [`List Programs`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getPrograms) L’API a été abandonnée et [`List Programs for Tenant`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getProgramsForTenant) doit être utilisé à la place.
+* L’API [`List Programs`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getPrograms) a été abandonnée et [`List Programs for Tenant`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getProgramsForTenant) doit être utilisé à la place.
    * `List Programs` continue de fonctionner, mais son utilisation génère des messages d’avertissement dans les journaux.
    * Il ne sera plus pris en charge au bout de trois mois.
