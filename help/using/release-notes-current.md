@@ -1,19 +1,19 @@
 ---
-title: Notes de mise à jour de la version 2022.6.0
-description: Voici les notes de mise à jour de la version 2022.6.0 de Cloud Manager.
+title: Notes de mise à jour de la version 2022.7.0
+description: Voici les notes de mise à jour de la version 2022.7.0 de Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: dab08a2499b521b7026ab2bd17b82cb241f26fb6
+source-git-commit: 1b5510af0cdb0ccb3267723836910f6c5711122e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '144'
+ht-degree: 54%
 
 ---
 
 
-# Notes de mise à jour de la version 2022.6.0 de Cloud Manager {#release-notes}
+# Notes de mise à jour de la version 2022.7.0 de Cloud Manager {#release-notes}
 
-Cette page présente les notes de mise à jour de la version 2022.6.0 de [!UICONTROL Cloud Manager].
+Cette page présente les notes de mise à jour de la version 2022.7.0 de [!UICONTROL Cloud Manager].
 
 >[!NOTE]
 >
@@ -21,16 +21,13 @@ Cette page présente les notes de mise à jour de la version 2022.6.0 de [!UICO
 
 ## Date de publication {#release-date}
 
-La date de publication de la version 2022.6.0 de [!UICONTROL Cloud Manager] est le 9 juin 2022. La prochaine version est prévue pour le 30 juin 2022.
+La date de publication de la version 2022.7.0 de [!UICONTROL Cloud Manager] est le 30 juin 2022. La prochaine version est prévue pour le 11 août 2022.
 
 ## Nouveautés {#what-is-new}
 
-* Une nouvelle carte de bienvenue sur la page de destination de Cloud Manager permet aux utilisateurs d’accéder rapidement aux tutoriels d’intégration et aux mesures de progression liées au client.
-   * Cette fonctionnalité sera déployée progressivement au cours de la semaine suivant la publication de la version 2022.06.0.
-* [Les artefacts de build peuvent désormais être réutilisés](/help/using/setting-up-project.md#build-artifact-reuse) lors de l’utilisation de la mise en miroir git.
+* Les utilisateurs de Cloud Manager peuvent désormais accéder à des tutoriels vidéo utiles à partir de la page d’entrée. **Bienvenue** à tout moment.
+* Nombre maximum de pages à tester. [peut désormais être remplacé en définissant la variable d’environnement MAX_PAGES .](understand-your-test-results.md#crawler)
 
-## Modifications d’API {#api-changes}
+## Correctifs {#bug-fixes}
 
-* L’API [`List Programs`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getPrograms) a été abandonnée et [`List Programs for Tenant`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getProgramsForTenant) doit être utilisé à la place.
-   * `List Programs` continue de fonctionner, mais son utilisation génère des messages d’avertissement dans les journaux.
-   * Il ne sera plus pris en charge au bout de trois mois.
+* Correction d’un problème en raison duquel, après la validation d’un pipeline front-end, aucun appel n’était effectué pour exécuter l’étape de déploiement.

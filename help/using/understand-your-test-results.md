@@ -7,10 +7,10 @@ topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 feature: CI-CD Pipeline, Test Results
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: bfcb0fb5b9cf8317eb75e3b7b46455b14cd9d7b7
-workflow-type: ht
-source-wordcount: '2900'
-ht-degree: 100%
+source-git-commit: fefb267793e5e1dc6f604a753e89cce2bf2620dd
+workflow-type: tm+mt
+source-wordcount: '2921'
+ht-degree: 98%
 
 ---
 
@@ -129,8 +129,8 @@ Le tableau suivant répertorie les contrôles d’intégrité :
 | Nom | Implémentation du contrôle d’intégrité | Catégorie |
 |---|---|---|
 | La disponibilité de l’API d’ajout de pare-feu de désérialisation est dans un état acceptable. | [Disponibilité de l’API d’ajout de pare-feu de désérialisation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=fr#security) | Critique |
-| Le pare-feu de désérialisation est fonctionnel.. | [Pare-feu de désérialisation fonctionnel](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=fr#security) | Critique |
-| Le pare-feu de désérialisation est chargé.. | [Pare-feu de désérialisation chargé](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=fr#security) | Critique |
+| Le pare-feu de désérialisation est fonctionnel.. | [Pare-feu de désérialisation fonctionnel](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html#security) | Critique |
+| Le pare-feu de désérialisation est chargé.. | [Pare-feu de désérialisation chargé](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html#security) | Critique |
 | L’implémentation `AuthorizableNodeName` n’expose pas d’ID autorisable dans le nom/chemin du nœud. | [Génération de nom de nœud autorisé](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=fr#security) | Critique |
 | Les mots de passe par défaut ont été modifiés.. | [Comptes de connexion par défaut](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=fr#users-and-groups-in-aem) | Critique |
 | Le servlet GET par défaut Sling est protégé contre les attaques par DOS. | Servlet Sling Get | Critique |
@@ -138,7 +138,7 @@ Le tableau suivant répertorie les contrôles d’intégrité :
 | Le gestionnaire de script JSP Sling est correctement configuré. | Gestionnaire de script JSP Sling | Critique |
 | SSL est correctement configuré.. | Configuration SSL | Critique |
 | Aucune stratégie de profil utilisateur évidemment risquée n’a été trouvée. | Accès par défaut au profil utilisateur | Critique |
-| Le filtre référent Sling est configuré pour empêcher les attaques CSRF. | [Filtre référent Sling](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=fr#security) | Important |
+| Le filtre référent Sling est configuré pour empêcher les attaques CSRF. | [Filtre référent Sling](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html#security) | Important |
 | Le gestionnaire de bibliothèques HTML Adobe Granite est configuré correctement. | Configuration de gestionnaire de bibliothèque HTML CQ | Important |
 | Le lot Prise en charge CRXDE est désactivé.. | Prise en charge de CRXDE | Important |
 | Le lot DavEx Sling et le servlet sont désactivés.. | Contrôle d’intégrité DavEx | Important |
@@ -160,7 +160,12 @@ Le nombre d’utilisateurs ou de conteneurs virtuels qui sont émulés par Cloud
 
 #### Robot d’exploration {#crawler}
 
-Avant le début de la période de test de 30 minutes, Cloud Manager explore l’environnement d’évaluation à l’aide d’une ou de plusieurs URL d’amorçage configurées par l’ingénieur chargé du succès client. À partir de ces URL, le code HTML de chaque page est examiné et les liens sont parcourus en largeur d’abord. Ce processus d’exploration est limité à un maximum de 5 000 pages. Les requêtes du robot d’exploration ont un délai d’expiration fixe de 10 secondes.
+Avant le début de la période de test de 30 minutes, Cloud Manager explore l’environnement d’évaluation à l’aide d’une ou de plusieurs URL d’amorçage configurées par l’ingénieur chargé du succès client. À partir de ces URL, le code HTML de chaque page est examiné et les liens sont parcourus en largeur d’abord.
+
+* Ce processus d’analyse est par défaut limité à un maximum de 5 000 pages.
+* Le nombre maximal de pages à tester peut être remplacé en définissant la variable [variable d&#39;environnement](build-environment-details.md#environment-variables) `MAX_PAGES`.
+   * Les valeurs autorisées sont `2000` - `7000`.
+* Les requêtes du robot d’exploration ont un délai d’expiration fixe de 10 secondes.
 
 #### Ensembles de pages pour les tests {#page-sets}
 
