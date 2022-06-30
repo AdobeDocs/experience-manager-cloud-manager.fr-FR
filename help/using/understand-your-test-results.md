@@ -8,9 +8,9 @@ discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 feature: CI-CD Pipeline, Test Results
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 source-git-commit: bfcb0fb5b9cf8317eb75e3b7b46455b14cd9d7b7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2900'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ Il existe plus de 100 règles combinant des règles Java génériques et des r�
 >
 >Vous pouvez télécharger la liste complète des règles [via ce lien.](/help/using/assets/CodeQuality-rules-latest-AMS.xlsx)
 
-Les résultats des tests de qualité du code sont fournis en tant que **évaluations**. Le tableau ci-dessous résume les notes attribuées à divers critères de test :
+Les résultats des tests de qualité du code sont fournis sous forme de **notes**. Le tableau ci-dessous résume les notes attribuées à divers critères de test :
 
 | Nom | Définition | Catégorie | Seuil d’échec |
 |--- |--- |--- |--- |
@@ -129,8 +129,8 @@ Le tableau suivant répertorie les contrôles d’intégrité :
 | Nom | Implémentation du contrôle d’intégrité | Catégorie |
 |---|---|---|
 | La disponibilité de l’API d’ajout de pare-feu de désérialisation est dans un état acceptable. | [Disponibilité de l’API d’ajout de pare-feu de désérialisation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=fr#security) | Critique |
-| Le pare-feu de désérialisation est fonctionnel.. | [Pare-feu de désérialisation fonctionnel](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html#security) | Critique |
-| Le pare-feu de désérialisation est chargé.. | [Pare-feu de désérialisation chargé](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html#security) | Critique |
+| Le pare-feu de désérialisation est fonctionnel.. | [Pare-feu de désérialisation fonctionnel](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=fr#security) | Critique |
+| Le pare-feu de désérialisation est chargé.. | [Pare-feu de désérialisation chargé](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=fr#security) | Critique |
 | L’implémentation `AuthorizableNodeName` n’expose pas d’ID autorisable dans le nom/chemin du nœud. | [Génération de nom de nœud autorisé](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=fr#security) | Critique |
 | Les mots de passe par défaut ont été modifiés.. | [Comptes de connexion par défaut](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=fr#users-and-groups-in-aem) | Critique |
 | Le servlet GET par défaut Sling est protégé contre les attaques par DOS. | Servlet Sling Get | Critique |
@@ -138,7 +138,7 @@ Le tableau suivant répertorie les contrôles d’intégrité :
 | Le gestionnaire de script JSP Sling est correctement configuré. | Gestionnaire de script JSP Sling | Critique |
 | SSL est correctement configuré.. | Configuration SSL | Critique |
 | Aucune stratégie de profil utilisateur évidemment risquée n’a été trouvée. | Accès par défaut au profil utilisateur | Critique |
-| Le filtre référent Sling est configuré pour empêcher les attaques CSRF. | [Filtre référent Sling](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html#security) | Important |
+| Le filtre référent Sling est configuré pour empêcher les attaques CSRF. | [Filtre référent Sling](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=fr#security) | Important |
 | Le gestionnaire de bibliothèques HTML Adobe Granite est configuré correctement. | Configuration de gestionnaire de bibliothèque HTML CQ | Important |
 | Le lot Prise en charge CRXDE est désactivé.. | Prise en charge de CRXDE | Important |
 | Le lot DavEx Sling et le servlet sont désactivés.. | Contrôle d’intégrité DavEx | Important |
@@ -179,7 +179,7 @@ Vous pouvez choisir entre un et trois ensembles de pages dans l’onglet **Tests
 Prenons cet exemple.
 
 * Il y a une répartition 50/50 entre les ensembles de pages en direct populaires et de nouvelles pages.
-* Les autres pages actives ne sont pas utilisées.
+* Les autres pages en direct ne sont pas utilisées.
 * L’ensemble des nouvelles pages contient 3 000 pages.
 * L’ICP des pages vues par minute est fixé à 200.
 
