@@ -2,10 +2,10 @@
 title: Présentation de Cloud Manager pour AMS
 description: Commencez ici pour découvrir Cloud Manager pour Adobe Managed Services (AMS) et comment il permet aux entreprises de gérer elles-mêmes Adobe Experience Manager dans le cloud.
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: 22d40a1f07f56ee7a7dddb4897e4079f1e346674
+source-git-commit: 14e35882765783b234ca35da14257279af5130a0
 workflow-type: tm+mt
-source-wordcount: '1316'
-ht-degree: 15%
+source-wordcount: '1311'
+ht-degree: 16%
 
 ---
 
@@ -100,7 +100,7 @@ Le déploiement bleu/vert est une technique qui réduit les temps d’arrêt et 
 * Le déploiement bleu/vert est un module complémentaire des pipelines CI/CD de Cloud Manager dans lequel un deuxième ensemble d’instances de publication et de Dispatcher (vert) est créé et utilisé pour les déploiements. Les instances vertes sont ensuite associées à l’équilibreur de charge de production et les anciennes instances (bleues) sont supprimées et interrompues.
 * Cette implémentation de bleu/vert traite les instances comme transitoires et chaque itération d’un pipeline bleu/vert crée un nouvel ensemble de serveurs de publication et de Dispatcher.
 * Un équilibreur de charge vert sera créé dans le cadre de la configuration. Cet équilibreur de charge ne changera jamais et est ce vers quoi vous devez pointer votre URL verte ou &quot;test&quot;.
-* Lors d’un déploiement bleu/vert, une réplication exacte des niveaux de publication/Dispatcher existants sera créée (comme lue à partir du langage TDL).
+* Lors d’un déploiement bleu/vert, une réplication exacte des niveaux de publication/Dispatcher existants sera créée.
 
 #### Flux de déploiement bleu/vert {#flow}
 
@@ -111,7 +111,7 @@ Lorsque le déploiement bleu/vert est activé, le flux de déploiement diffère 
 | 1 | Déploiement vers l’auteur | Déploiement vers l’auteur |
 | 2 | Mettre en pause pour le test | - |
 | 3 | Une infrastructure verte est créée | - |
-| 4 | Déploiement sur les niveaux de publication/Dispatcher verts | Déploiement vers l’éditeur |
+| 4 | Déploiement sur les niveaux de publication/dispatcher verts | Déploiement vers l’éditeur |
 | 5 | Mettre en pause pour le test (jusqu’à 24 heures) | - |
 | 6 | Une infrastructure verte est ajoutée à l&#39;équilibreur de charge de production | - |
 | 7 | L’infrastructure bleue est supprimée de l’équilibreur de charge de production - |
