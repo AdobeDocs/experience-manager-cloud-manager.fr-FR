@@ -3,9 +3,9 @@ title: Gestion des pipelines
 description: Découvrez comment gérer vos pipelines existants, notamment en les modifiant, en les exécutant et en les supprimant.
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
 source-git-commit: 99325c28c379103db2ba4c19bb6d206849c6e126
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '517'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ En cliquant sur le bouton représentant des points de suspension à côté de ch
 Au bas de la liste des pipelines, vous disposez d’options générales.
 
 * **Ajouter** : permet d’[ajouter un nouveau pipeline de production](/help/using/production-pipelines.md) ou d’[ajouter un nouveau pipeline hors production](/help/using/non-production-pipelines.md).
-* **Tout afficher** : dirige l’utilisateur vers l’écran **Pipelines** pour afficher tous les pipelines dans un tableau plus détaillé
+* **Tout afficher** : dirige l’utilisateur vers l’écran **Pipelines** pour afficher tous les pipelines dans un tableau plus détaillé.
 * **Accéder aux informations sur le référentiel** : affiche les informations nécessaires pour accéder au référentiel Git de Cloud Manager.
 * **En savoir plus** : permet d’accéder aux ressources de documentation du pipeline CI/CD.
 
@@ -84,7 +84,7 @@ Selon le type de pipeline, vous pouvez être en mesure d’annuler l’exécutio
 
 ![Détails du pipeline](/help/assets/configure-pipelines/pipeline-running-details.png)
 
-Vous pouvez y voir le statut des différentes étapes du pipeline et récupérer les journaux de génération à des fins de diagnostic. Voir le document [Déploiement du code](/help/using/code-deployment.md) pour plus d’informations.
+Vous pouvez y voir le statut des différentes étapes du pipeline et récupérer les journaux de génération à des fins de diagnostic. Reportez-vous au document [Déploiement du code](/help/using/code-deployment.md) pour plus d’informations.
 
 >[!NOTE]
 >
