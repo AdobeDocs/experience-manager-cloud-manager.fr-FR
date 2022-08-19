@@ -1,26 +1,26 @@
 ---
 title: Configurer des pipelines hors production
-description: Découvrez comment utiliser Cloud Manager pour créer et configurer des pipelines hors production afin de déployer votre code.
+description: Découvrez comment utiliser Cloud Manager pour créer et configurer des pipelines hors production afin de déployer votre code.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
 source-git-commit: 567a16a032bf80451b5e8ba4e3d842cb617a615f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '600'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
-# Configuration de pipelines hors production {#configuring-non-production-pipelines}
+# Configurer des pipelines hors production {#configuring-non-production-pipelines}
 
-Découvrez comment utiliser Cloud Manager pour créer et configurer des pipelines hors production afin de déployer votre code. Si vous souhaitez d’abord une présentation plus conceptuelle du fonctionnement des pipelines dans Cloud Manager, consultez le document . [Pipelines CI/CD.](/help/overview/ci-cd-pipelines.md)
+Découvrez comment utiliser Cloud Manager pour créer et configurer des pipelines hors production afin de déployer votre code. Si vous souhaitez d’abord une présentation plus conceptuelle du fonctionnement des pipelines dans Cloud Manager, reportez-vous au document [Pipelines CI/CD.](/help/overview/ci-cd-pipelines.md)
 
 ## Présentation {#overview}
 
-En utilisant la variable **Pipelines** dans [!UICONTROL Cloud Manager], la variable **Responsable de déploiement** peut créer deux types de pipelines différents.
+En utilisant le volet **Pipelines** dans [!UICONTROL Cloud Manager], le **Responsable de déploiement** peut créer deux types de pipelines différents.
 
 * **Pipelines de production** - un pipeline de production est un pipeline spécialement conçu, composé d’une série d’étapes coordonnées permettant de mener le code source jusqu’à la production.
 * **Pipelines hors production** - un pipeline hors production sert principalement à exécuter des analyses de qualité du code ou à déployer le code source dans un environnement de développement.
 
-Ce document se concentre sur les pipelines hors production. Pour plus d’informations sur la configuration des pipelines de production, voir le document . [Configuration des pipelines de production.](/help/using/production-pipelines.md)
+Ce document se concentre sur les pipelines hors production. Pour plus de détails sur la configuration des pipelines de production, voir le document [Configurer des pipelines de production.](/help/using/production-pipelines.md)
 
 Il existe deux types de pipelines hors production :
 
@@ -29,7 +29,7 @@ Il existe deux types de pipelines hors production :
 
 >[!NOTE]
 >
->Un pipeline ne peut être configuré que si le référentiel Git associé dispose d’au moins une branche et que la [configuration du programme](/help/getting-started/program-setup.md) est terminée. Voir le document [Référentiels Cloud Manager](/help/managing-code/repositories.md) pour savoir comment ajouter et gérer des référentiels dans Cloud Manager.
+>Un pipeline ne peut être configuré que si le référentiel Git associé dispose d’au moins une branche et que la [configuration du programme](/help/getting-started/program-setup.md) est terminée. Consultez le document [Référentiels Cloud Manager](/help/managing-code/repositories.md) pour découvrir comment ajouter et gérer des référentiels dans Cloud Manager.
 
 ## Tutoriel vidéo {#video-tutorial}
 
@@ -69,7 +69,7 @@ Une fois que vous avez configuré votre programme et que vous disposez d’au mo
    1. Pour les pipelines de déploiement, sous **Comportement en cas d’échecs de mesures importants**, définissez le comportement du pipeline en cas d’échec important à l’un des points de contrôle qualité.
 
       * **Demander à chaque fois** - il s’agit du paramètre par défaut qui nécessite une intervention manuelle pour tout échec important.
-      * **Défaillance immédiate** : si cette option est sélectionnée, le pipeline sera interrompu chaque fois qu’une défaillance importante aura lieu. Il s’agit essentiellement d’imiter un utilisateur qui rejetterait manuellement chaque échec.
+      * **Défaillance immédiate** - si cette option est sélectionnée, le pipeline sera interrompu chaque fois qu’une défaillance importante aura lieu. Il s’agit essentiellement d’imiter un utilisateur qui rejetterait manuellement chaque échec.
       * **Continuer immédiatement** - si cette option est sélectionnée, le pipeline se poursuivra automatiquement chaque fois qu’une défaillance importante se produira. Il s’agit essentiellement d’émuler un utilisateur approuvant manuellement chaque échec.
 
 
@@ -77,4 +77,4 @@ Une fois que vous avez configuré votre programme et que vous disposez d’au mo
 
 ## Les étapes suivantes {#the-next-steps}
 
-Une fois que vous avez configuré le pipeline, vous devez déployer votre code. Consultez le document [Déploiement du code](/help/using/code-deployment.md) pour plus d’informations.
+Une fois que vous avez configuré le pipeline, vous devez déployer votre code. Consultez le document [Déploiement du code](/help/using/code-deployment.md) pour plus de détails.
