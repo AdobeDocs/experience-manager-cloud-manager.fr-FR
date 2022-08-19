@@ -3,20 +3,20 @@ product: Adobe Experience Manager
 sub-product: Cloud Manager
 user-guide-title: Documentation de Cloud Manager
 breadcrumb-title: Documentation de Cloud Manager pour AEM 6.x
-user-guide-description: Découvrez comment utiliser Cloud Manager pour gérer Adobe Experience Manager pour AMS en mode cloud de façon autonome.
+user-guide-description: Découvrez comment utiliser Cloud Manager pour auto-gérer Adobe Experience Manager pour AMS en mode cloud.
 feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Admin
 source-git-commit: 42f445465ff9dbfe773a0aee8bdc263f50376a4a
 workflow-type: tm+mt
 source-wordcount: '303'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 
 # Documentation de Cloud Manager {#content}
 
-+ [Cloud Manager pour AMS](introduction.md)
++ [Cloud Manager pour AMS](introduction.md)
 + Présentation {#overview}
    + [Concepts clés](overview/key-concepts.md)
    + [Parcours utilisateur](overview/user-journey.md)
@@ -29,15 +29,15 @@ ht-degree: 84%
    + [Référentiel de code source](requirements/source-code-repository.md)
    + [Autorisations basées sur les rôles](requirements/role-based-permissions.md)
    + [Configuration des utilisateurs et des rôles](requirements/users-and-roles.md)
-   + [Mise en service d’environnement](requirements/environment-provisioning.md)
+   + [Configuration d’environnement](requirements/environment-provisioning.md)
 + Prise en main {#getting-started}
    + [Première connexion](getting-started/first-time-login.md)
    + [Configuration du programme](getting-started/program-setup.md)
-   + Création AEM projet {#project-creation}
+   + Création de projet AEM {#project-creation}
       + [Utilisation de l’assistant](getting-started/using-the-wizard.md)
       + [Configuration du projet](getting-started/project-setup.md)
       + [Environnement de création](getting-started/build-environment.md)
-   + [Configuration des branches](getting-started/configuring-branches.md)
+   + [Configurer les branches](getting-started/configuring-branches.md)
    + [Configurations de Dispatcher](getting-started/dispatcher-configurations.md)
 + Utilisation de {#using}
    + Pipelines CI/CD {#pipelines}
@@ -47,7 +47,7 @@ ht-degree: 84%
    + [Déploiement du code](using/code-deployment.md)
    + [Test de qualité du code](using/code-quality-testing.md)
    + [Gestion des environnements](using/managing-environments.md)
-   + [Surveillance des environnements](using/monitoring-environments.md)
+   + [Surveiller les environnements](using/monitoring-environments.md)
    + [API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
    + [CLI Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
    + [Notifications](using/notifications.md)
@@ -55,8 +55,8 @@ ht-degree: 84%
 + Gestion du code {#managing-code}
    + [Gestion des versions du projet Maven](managing-code/maven-project-version.md)
    + [Référentiels](managing-code/repositories.md)
-   + [Intégration avec git](managing-code/git-integration.md)
-   + [Utilisation de plusieurs référentiels git](managing-code/multiple-git-repos.md)
+   + [Intégration à Git](managing-code/git-integration.md)
+   + [Utilisation de plusieurs référentiels Git](managing-code/multiple-git-repos.md)
 + Assistant de mise à jour du produit {#product-update-wizard}
    + [Présentation](product-update-wizard/overview.md)
    + [Évaluation](product-update-wizard/evaluation.md)
