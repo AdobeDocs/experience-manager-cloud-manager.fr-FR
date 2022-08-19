@@ -1,18 +1,18 @@
 ---
 title: Déploiement du code
-description: Découvrez comment déployer votre code et ce qui se passe dans Cloud Manager lorsque vous le faites.
+description: Découvrez comment déployer votre code et ce qui se passe dans Cloud Manager lors du déploiement.
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
 source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1609'
-ht-degree: 40%
+ht-degree: 100%
 
 ---
 
 
 # Déploiement du code {#code-deployment}
 
-Découvrez comment déployer votre code et ce qui se passe dans Cloud Manager lorsque vous le faites.
+Découvrez comment déployer votre code et ce qui se passe dans Cloud Manager lors du déploiement.
 
 ## Déploiement du code avec Cloud Manager {#deploying-code-with-cloud-manager}
 
@@ -22,53 +22,53 @@ Une fois que vous avez configuré votre pipeline de production, y compris le ré
 
    ![Bouton Déployer](/help/assets/Deploy1.png)
 
-1. L’écran **Exécution du pipeline** s’affiche. Cliquez sur **Compilation** pour lancer le processus.
+1. L’écran **Exécution du pipeline** s’affiche. Cliquez sur **Créer** pour lancer le processus.
 
    ![Bouton Créer](/help/assets/Deploy2.png)
 
-Le processus de création lance le processus de déploiement du code, notamment les étapes suivantes :
+Le processus de création lance le processus de déploiement du code, notamment les étapes suivantes :
 
-* Déploiement dans l’environnement intermédiaire
-* Test dans l’environnement intermédiaire
+* Déploiement dans l’environnement d’évaluation
+* Test dans l’environnement d’évaluation
 * Déploiement en production
 
-Vous pouvez passer en revue les étapes de différents processus de déploiement en affichant les journaux ou en examinant les résultats pour les critères de test.
+En outre, vous pouvez examiner les étapes de divers processus de déploiement en affichant les journaux, ou en examinant les résultats, pour les critères de test.
 
 ## Étapes de déploiement {#deployment-steps}
 
-Plusieurs actions se produisent au cours de chaque étape du déploiement, qui sont décrites dans cette section. Voir la section [Détails du processus de déploiement](#deployment-process) pour obtenir des détails techniques sur la manière dont le code lui-même est déployé en arrière-plan.
+Plusieurs actions se produisent au cours de chaque étape du déploiement, qui sont décrites dans cette section. Consultez la section [Détails du processus de déploiement](#deployment-process) pour obtenir des détails techniques sur la manière dont le code lui-même est déployé en arrière-plan.
 
-### Étape de déploiement dans l’environnement {#stage-deployment}
+### Étape de déploiement dans l’environnement d’évaluation {#stage-deployment}
 
-Le **Déploiement dans l’environnement** Cette étape comprend les actions suivantes :
+Le **déploiement dans l’environnement d’évaluation** comprend les actions suivantes :
 
-* **Validation**: Cette étape permet de s’assurer que le pipeline est configuré pour utiliser les ressources actuellement disponibles, par exemple que la branche configurée existe et que les environnements sont disponibles.
-* **Test de création et d’unité**: Cette étape exécute un processus de génération en conteneur. Voir le document [Environnement de création](/help/getting-started/build-environment.md) pour plus d’informations.
-* **Analyse du code**: Cette étape évalue la qualité du code de votre application. Voir le document [Présentation des résultats de test](/help/using/code-quality-testing.md) pour plus d’informations sur le processus de test.
-* **Déployer dans l’environnement intermédiaire**
+* **Validation** : cette étape garantit que le pipeline est configuré pour utiliser les ressources actuellement disponibles, par exemple l’existence de la branche configurée et la disponibilité des environnements.
+* **Test de création et d’unité** : cette étape exécute un processus de création en conteneur. Consultez le document [Environnement de création](/help/getting-started/build-environment.md) pour plus de détails.
+* **Analyse du code** : cette étape évalue la qualité du code de votre application. Consultez le document [Comprendre les résultats de test](/help/using/code-quality-testing.md) pour obtenir plus de détails sur le processus de test.
+* **Déployer dans l’environnement d’évaluation**
 
-![Déploiement dans l’environnement intermédiaire](/help/assets/Stage_Deployment1.png)
+![Déploiement dans l’environnement d’évaluation](/help/assets/Stage_Deployment1.png)
 
-### Étape du test d’évaluation {#stage-testing}
+### Étape du test dans l’environnement d’évaluation {#stage-testing}
 
-Le **Test d’évaluation** Cette étape comprend les actions suivantes :
+L’étape du **test dans l’environnement d’évaluation** comprend les actions suivantes :
 
-* **Test de sécurité**: Cette étape évalue l’impact de votre code sur la sécurité de l’environnement AEM. Voir le document [Présentation des résultats de test](/help/using/code-quality-testing.md) pour plus d’informations sur le processus de test.
-   * **Test de performance**: Cette étape évalue les performances de votre code. Voir [Présentation des résultats de test](/help/using/code-quality-testing.md) pour plus d’informations sur le processus de test.
+* **Tests de sécurité** : cette étape évalue l’impact de votre code sur la sécurité de l’environnement AEM. Consultez le document [Comprendre les résultats de test](/help/using/code-quality-testing.md) pour obtenir plus de détails sur le processus de test.
+   * **Tests de performance** : cette étape évalue les performances de votre code. Consultez le document [Comprendre les résultats de test](/help/using/code-quality-testing.md) pour obtenir plus de détails sur le processus de test.
 
-   ![Test dans l’environnement intermédiaire](/help/assets/Stage_Testing1.png)
+   ![Test dans l’environnement d’évaluation](/help/assets/Stage_Testing1.png)
 
 ### Étape de déploiement en production {#production-deployment}
 
-Le **Déploiement en production** inclut les actions suivantes :
+Le **déploiement en production** inclut les actions suivantes :
 
 * **Application à approuver**
    * Cette option est activée lors de la configuration du pipeline.
    * Grâce à cette option, vous pouvez planifier le déploiement en production ou cliquer sur **Maintenant** pour exécuter immédiatement le déploiement en production.
-* **Planning du déploiement en production**
+* **Planifier le déploiement en production**
    * Cette option est activée lors de la configuration du pipeline.
    * La date et l’heure planifiées sont indiquées dans le fuseau horaire de l’utilisateur.
-      ![Planification du déploiement](/help/assets/Production_Deployment1.png)
+      ![Planifier le déploiement](/help/assets/Production_Deployment1.png)
 * **Assistance de l’ingénieur du service client** (si activée).
 * **Déploiement en environnement de production**
 
@@ -98,11 +98,11 @@ Cloud Manager télécharge tous les fichiers target/*.zip générés par le pro
 Lorsque Cloud Manager se déploie sur des topologies autres que de production, l’objectif est de réaliser le déploiement aussi rapidement que possible ; les artefacts sont donc déployés simultanément sur tous les nœuds, comme suit :
 
 1. Cloud Manager détermine si chaque artefact est un package AEM ou dispatcher.
-1. Cloud Manager supprime tous les dispatchers de l’équilibreur de charge pour isoler l’environnement pendant le déploiement.
+1. Cloud Manager supprime tous les Dispatchers de la répartition de charge pour isoler l’environnement pendant le déploiement.
 
-   * Sauf configuration contraire, vous pouvez ignorer les modifications de l’équilibreur de charge dans les déploiements de développement et d’évaluation, c’est-à-dire pour l’environnement de développement, désolidariser et attacher des étapes dans les deux pipelines hors production, ainsi que pour l’environnement d’évaluation dans le pipeline de production.
+   * Sauf configuration contraire, vous pouvez ignorer les modifications de la répartition de charge dans les déploiements de développement et d’évaluation, c’est-à-dire pour l’environnement de développement, les étapes d’attachement et de détachement dans les deux pipelines hors production, ainsi que pour l’environnement d’évaluation dans le pipeline de production.
 
-   ![Ignorer l’équilibreur de charge](/help/assets/load_balancer.png)
+   ![Ignorer la répartition de charge](/help/assets/load_balancer.png)
 
    >[!NOTE]
    >
@@ -110,17 +110,17 @@ Lorsque Cloud Manager se déploie sur des topologies autres que de production, 
 
 1. Chaque artefact AEM est déployé sur chacune des instances AEM par le biais des API de Package Manager, avec des dépendances de packages qui déterminent l’ordre de déploiement.
 
-   * Pour en savoir plus sur l’utilisation des packages pour installer de nouvelles fonctionnalités, transférer du contenu entre les instances et sauvegarder le contenu du référentiel, reportez-vous au document . [Gestionnaire de modules.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html)
+   * Pour en savoir plus sur l’utilisation de packs pour installer de nouvelles fonctionnalités, transférer du contenu entre des instances et sauvegarder le contenu du référentiel, reportez-vous au document [Gestionnaire de modules.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=fr)
    >[!NOTE]
    >
-   >Tous les artefacts AEM sont déployés à la fois sur l’instance de création et les instances de publication. Les modes d’exécution doivent être utilisés lorsque des configurations spécifiques à un nœud sont requises. Pour en savoir plus sur la manière dont les modes d’exécution vous permettent d’ajuster votre instance AEM à des fins spécifiques, reportez-vous à la section [Section Modes d’exécution du document Déploiement sur AEM as a Cloud Service.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=fr#runmodes)
+   >Tous les artefacts AEM sont déployés à la fois sur l’instance de création et les instances de publication. Les modes d’exécution doivent être utilisés lorsque des configurations spécifiques à un nœud sont requises. Pour en savoir plus sur la manière dont les modes d’exécution vous permettent d’ajuster votre instance AEM à des fins spécifiques, reportez-vous à la section [Modes d’exécution du document Déploiement sur AEM as a Cloud Service.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=fr#runmodes)
 
 1. L’artefact dispatcher est déployé sur chaque dispatcher comme suit :
 
    1. Les configurations actuelles sont sauvegardées et copiées vers un emplacement temporaire.
-   1. Toutes les configurations sont supprimées à l’exception des fichiers non modifiables. Reportez-vous au document [Configurations du Dispatcher](/help/getting-started/dispatcher-configurations.md) pour plus d’informations. Cela permet de vider les répertoires pour qu’aucun fichier orphelin ne soit abandonné.
-   1. L’artefact est extrait dans le répertoire `httpd`.  Les fichiers non modifiables ne sont pas remplacés. Toute modification apportée aux fichiers non modifiables dans votre référentiel git sera ignorée au moment du déploiement. Ces fichiers sont essentiels à la structure du Dispatcher AMS et ne peuvent pas être modifiés.
-   1. Apache effectue un test de configuration. Si aucune erreur n’est trouvée, le service est rechargé. Si une erreur se produit, les configurations sont restaurées à partir de la sauvegarde, le service est rechargé et l’erreur est renvoyée à Cloud Manager.
+   1. Toutes les configurations sont supprimées, à l’exception des fichiers non-modifiables. Reportez-vous au document [Configurations du Dispatcher](/help/getting-started/dispatcher-configurations.md) pour plus de détails. Cela permet de vider les répertoires pour qu’aucun fichier orphelin ne soit abandonné.
+   1. L’artefact est extrait dans le répertoire `httpd`. Les fichiers non modifiables ne sont pas remplacés. Toute modification apportée aux fichiers non modifiables dans votre référentiel git sera ignorée au moment du déploiement. Ces fichiers sont essentiels au framework Dispatcher AMS et ne peuvent pas être modifiés.
+   1. Apache effectue un test de configuration. Si aucune erreur n’est trouvée, le service est rechargé. Si une erreur se produit, les configurations sont restaurées à partir de la sauvegarde, le service est rechargé et l’erreur est signalée à Cloud Manager.
    1. Chaque chemin spécifié dans la configuration de pipeline est invalidé ou purgé du cache du dispatcher.
 
    >[!NOTE]
@@ -131,11 +131,11 @@ Lorsque Cloud Manager se déploie sur des topologies autres que de production, 
 
    >[!NOTE]
    >
-   >vous pouvez ignorer les modifications de l’équilibreur de charge dans les déploiements de développement et d’évaluation, c’est-à-dire pour l’environnement de développement, détacher et attacher des étapes dans les deux pipelines hors production, et pour l’environnement d’évaluation, le pipeline de production.
+   >vous pouvez ignorer les modifications de la répartition de charge dans les déploiements de développement et d’évaluation, c’est-à-dire pour l’environnement de développement, les étapes d’attachement et de détachement dans les deux pipelines hors production, ainsi que pour l’environnement d’évaluation dans le pipeline de production.
 
 ### Phase de déploiement en production {#deployment-production-phase}
 
-Le processus de déploiement des topologies de production diffère légèrement afin de minimiser l’impact sur les visiteurs AEM site.
+Le processus de déploiement des topologies de production diffère légèrement afin de minimiser l’impact sur les visiteurs du site AEM.
 
 Les déploiements en production suivent généralement les mêmes étapes que ci-dessus, mais par roulements :
 
@@ -145,7 +145,7 @@ Les déploiements en production suivent généralement les mêmes étapes que ci
 1. Replacement du dispatcher1 dans l’équilibreur de charge.
 1. Lorsque dispatcher1 fonctionne à nouveau, détachement de dispatcher2 de l’équilibreur de charge.
 1. Déploiement en parallèle des packages AEM sur publish2 et du package dispatcher sur dispatcher2. Purge du cache du Dispatcher.
-1. Replacement du dispatcher2 dans l’équilibreur de charge.
+1. Replacement du dispatcher2 dans la répartition de charge.
 
 Ce processus se poursuit jusqu’à ce que le déploiement ait atteint toutes les instances de publication et tous les Dispatchers dans la topologie.
 
@@ -153,23 +153,23 @@ Ce processus se poursuit jusqu’à ce que le déploiement ait atteint toutes le
 
 Dans les situations critiques, les clients d’Adobe Managed Services peuvent devoir déployer les modifications de code dans leurs environnements intermédiaire et de production sans attendre l’exécution d’un cycle de test complet de Cloud Manager.
 
-Pour résoudre ces problèmes, le pipeline de production de Cloud Manager peut être exécuté en mode d’urgence. Lorsque ce mode est utilisé, les étapes de test de sécurité et de performance ne sont pas exécutées. Toutes les autres étapes, y compris toutes les étapes d’approbation configurées, sont exécutées comme dans le mode d’exécution normal du pipeline.
+Pour résoudre ces problèmes, le pipeline de production de Cloud Manager peut être exécuté en mode d’urgence. Lorsque ce mode est utilisé, les étapes de test de sécurité et de performance ne sont pas exécutées. Toutes les autres étapes, y compris les étapes de validation configurées, sont exécutées comme dans le mode normal d’exécution du pipeline.
 
 >[!NOTE]
 >
->La fonction Mode d’exécution du pipeline d’urgence est activée programme par programme par les ingénieurs du service client.
+>La fonctionnalité Mode d’exécution d’urgence du pipeline est activée programme par programme par les ingénieurs du succès client.
 
-### Utilisation du mode d’exécution d’urgence de pipeline {#using-emergency-pipeline}
+### Utiliser le mode d’exécution d’urgence de pipeline {#using-emergency-pipeline}
 
 Lors du démarrage de l’exécution d’un pipeline de production, si la fonction de mode d’exécution d’urgence du pipeline a été activée pour le programme, vous pouvez démarrer l’exécution en mode normal ou d’urgence à partir d’une boîte de dialogue.
 
-![Exécution des options de pipeline](/help/assets/execution-emergency1.png)
+![Exécuter les options de pipeline](/help/assets/execution-emergency1.png)
 
-Lors de l’affichage de la page des détails d’exécution du pipeline pour une exécution en mode d’urgence, le chemin de navigation en haut de l’écran affiche un indicateur indiquant que le pipeline s’exécute en mode d’urgence.
+Lors de l’affichage de la page des détails d’exécution du pipeline pour une exécution en mode d’urgence, le chemin de navigation en haut de l’écran affiche un indicateur signalant que le pipeline s’exécute en mode d’urgence.
 
 ![Chemins de navigation du mode d’urgence](/help/assets/execution-emergency2.png)
 
-L’exécution d’un pipeline en mode d’urgence peut également être effectuée via l’API Cloud Manager ou l’interface de ligne de commande. Pour démarrer une exécution en mode d&#39;urgence, soumettez un `PUT` requête au point d’entrée d’exécution du pipeline avec le paramètre de requête `?pipelineExecutionMode=EMERGENCY` ou, lors de l’utilisation de l’interface en ligne de commande :
+Vous pouvez également exécuter un pipeline en mode d’urgence à l’aide de l’API Cloud Manager ou de l’interface de ligne de commande. Pour démarrer une exécution en mode d’urgence, envoyez une requête `PUT` au point d’entrée d’exécution du pipeline avec le paramètre de requête `?pipelineExecutionMode=EMERGENCY` ou lors de l’utilisation de l’interface de ligne de commande :
 
 ```
 $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
@@ -177,29 +177,29 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 
 ## Réexécuter un déploiement en production {#re-execute-deployment}
 
-La réexécution de l’étape de déploiement en production est disponible pour les exécutions lorsque l’étape de déploiement en production est terminée. Le type d’achèvement n’est pas important. Le déploiement peut être réussi (uniquement pour les programmes AMS), annulé ou non réussi. Le cas d’utilisation Principal est celui où l’étape de déploiement en production a échoué pour des raisons transitoires. La réexécution crée une nouvelle exécution à l’aide du même pipeline. Cette nouvelle exécution se compose de trois étapes :
+La réexécution de l’étape de déploiement en production est prise en charge pour les exécutions où l’étape de déploiement en production est terminée. Le type d’achèvement n’est pas important. Le déploiement peut être réussi (uniquement pour les programmes AMS), annulé ou non réussi. Le cas d’utilisation principal est celui où l’étape de déploiement en production a échoué pour des raisons transitoires. La réexécution crée une nouvelle exécution à l’aide du même pipeline. Cette nouvelle exécution se compose de trois étapes :
 
-1. **L’étape de validation** - Il s’agit essentiellement de la même validation qui se produit lors d’une exécution normale du pipeline.
-1. **L’étape de création** - Dans le contexte d’une réexécution, l’étape de création copie les artefacts et n’exécute pas de nouveau processus de création.
-1. **L’étape de déploiement en production** - Cette opération utilise la même configuration et les mêmes options que l’étape de déploiement en production dans une exécution normale de pipeline.
+1. **L’étape de validation** : il s’agit essentiellement de la même validation qui se produit lors de l’exécution normale d’un pipeline.
+1. **L’étape de création** : dans le contexte d’une réexécution, l’étape de création consiste à copier des artefacts, sans réellement exécuter un nouveau processus de création.
+1. **L’étape de déploiement en production** : elle utilise la même configuration et les mêmes options que l’étape de déploiement en production dans une exécution normale de pipeline.
 
-L’étape de création peut être étiquetée différemment dans l’interface utilisateur afin de refléter le fait qu’elle copie des artefacts, et non la reconstruction.
+L’étape de création peut être intitulée différemment dans l’interface utilisateur afin de refléter le fait qu’elle copie des artefacts, au lieu de les recréer.
 
 ![Réexécution](/help/assets/Re-deploy.png)
 
 ### Limites {#limitations}
 
-* La réexécution de l’étape de déploiement en production n’est disponible que pour la dernière exécution.
-* La réexécution n’est pas disponible pour les exécutions de restauration ou les exécutions de mise à jour push.
+* La réexécution de l’étape de déploiement en production n’est disponible que lors de la dernière exécution.
+* La réexécution n’est pas disponible pour les exécutions de restauration ou les exécutions de mise à jour des notifications push.
 * Si la dernière exécution a échoué à un moment donné avant l’étape de déploiement en production, la réexécution n’est pas possible.
 
-### Identification d’une nouvelle exécution {#identifying}
+### Identifier une exécution de réexécution {#identifying}
 
-Pour déterminer si une exécution est une exécution de nouvelle exécution, la variable `trigger` peut être examiné. Sa valeur sera `RE_EXECUTE`.
+Pour déterminer si une exécution est une exécution de réexécution, le champ `trigger` peut être examiné. Sa valeur sera `RE_EXECUTE`.
 
-### Déclenchement d’une nouvelle exécution {#triggering}
+### Déclencher une réexécution {#triggering}
 
-Pour déclencher une réexécution, une `PUT` doit être effectuée sur le lien HAL. `http://ns.adobe.com/adobecloud/rel/pipeline/reExecute` sur l’état de l’étape de déploiement en production. Si ce lien est présent, l’exécution peut être redémarrée à partir de cette étape. En cas d’absence, l’exécution ne peut pas être redémarrée à partir de cette étape. Ce lien sera uniquement présent à l’étape de déploiement en production.
+Pour déclencher une réexécution, une requête `PUT` doit être envoyée au lien HAL `http://ns.adobe.com/adobecloud/rel/pipeline/reExecute` à l’état d’étape de déploiement en production. Si ce lien est présent, l’exécution peut être redémarrée à partir de cette étape. En cas d’absence, l’exécution ne peut pas être redémarrée à partir de cette étape. Ce lien sera uniquement présent à l’étape de déploiement en production.
 
 ```Javascript
  {
@@ -236,6 +236,6 @@ Pour déclencher une réexécution, une `PUT` doit être effectuée sur le lien 
   "status": "FINISHED"
 ```
 
-Syntaxe du lien HAL `href` n’est pas destinée à être utilisée comme point de référence. La valeur réelle doit toujours être lue à partir du lien HAL et non générée.
+La syntaxe de la valeur `href` du lien HAL n’est pas destinée à servir de point de référence. La valeur réelle doit toujours être lue à partir du lien HAL et non générée.
 
 L’envoi d’une requête `PUT` vers ce point d’entrée entraîne la génération d’une réponse `201` en cas de réussite, le corps de la réponse étant la représentation de la nouvelle exécution. Cela revient à lancer une exécution régulière via l’API.
