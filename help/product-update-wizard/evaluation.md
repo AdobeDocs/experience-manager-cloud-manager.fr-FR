@@ -1,43 +1,43 @@
 ---
 title: Phase d’évaluation
 seo-title: Evaluation Phase
-description: Découvrez comment la phase d’évaluation de l’assistant de mise à jour du produit évalue la complexité de la mise à niveau à l’aide du détecteur de motifs.
+description: Découvrez comment la phase d’évaluation de l’assistant de mise à jour du produit évalue la complexité de la mise à niveau à l’aide de la détection de motifs.
 exl-id: 1ffcbc21-dc36-435d-b83b-0209f81a15e7
 source-git-commit: ce2145da3b9e605e8a41bac28df520f14e255557
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '296'
-ht-degree: 28%
+ht-degree: 100%
 
 ---
 
 
 # Phase d’évaluation {#evaluation}
 
-La première phase de l’assistant de mise à jour du produit est la suivante : **[!UICONTROL Évaluation]** phase , qui évalue la complexité de la mise à niveau à l’aide du détecteur de motifs directement dans l’assistant. A la fin de cette étape, vous aurez accès à un rapport d&#39;évaluation.
+La première phase de l’assistant de mise à jour du produit est la phase d’**[!UICONTROL Évaluation]**, qui évalue la complexité de la mise à niveau à l’aide de la détection de motifs directement dans l’assistant. À la fin de cette étape, vous avez accès au rapport d’évaluation.
 
-Le rapport généré vous permet de vérifier l’éligibilité de l’instance d’auteur à la mise à niveau en détectant les motifs qui :
+Le rapport généré permet de vérifier l’éligibilité de l’instance d’auteur pour la mise à niveau en détectant les motifs qui :
 
-* enfreignent certaines règles concernant les zones qui seront affectées ou écrasées par la mise à niveau.
+* enfreignent certaines règles concernant les zones qui seront affectées ou remplacées par la mise à niveau.
 
-* Utilisez une fonctionnalité AEM 6.x ou une API qui n’est pas rétrocompatible avec la nouvelle version d’AEM et qui peut potentiellement échouer après la mise à niveau.
+* utilisent une fonctionnalité d’AEM 6.x ou une API non rétrocompatible avec la nouvelle version d’AEM et qui peut potentiellement échouer après la mise à niveau.
 
-Le rapport sert d’évaluation de l’effort de développement impliqué dans la mise à niveau vers Adobe Experience Manager (AEM) 6.5.
+Ce rapport sert à évaluer l’ampleur des tâches de développement nécessaires pour effectuer une mise à niveau vers Adobe Experience Manager (AEM) 6.5.
 
 >[!NOTE]
 >
->Pour en savoir plus sur le détecteur de motifs, consultez le document . [Évaluation de la complexité de la mise à niveau à l’aide du détecteur de motifs.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=en)
+>Pour en savoir plus sur la détection des motifs, consultez le document [Évaluation de la complexité de la mise à niveau à l’aide de la détection des motifs](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=fr).
 
 ## Exécution de l’évaluation {#running}
 
-Le détecteur de motifs peut s’exécuter dans n’importe quel environnement. Toutefois, afin d’augmenter le taux de détection et d’éviter tout ralentissement sur les instances critiques de l’entreprise, Cloud Manager l’exécute dans l’environnement d’évaluation de l’instance d’auteur.
+Le détecteur de motifs peut s’exécuter dans n’importe quel environnement. Toutefois, afin d’augmenter le taux de détection et d’éviter tout ralentissement des instances professionnelles essentielles, Cloud Manager l’exécutera dans l’environnement d’évaluation de l’instance d’auteur.
 
 Pour générer le rapport d’évaluation, procédez comme suit.
 
-1. Démarrez l’assistant comme décrit dans le document. [Assistant de mise à jour du produit.](/help/product-update-wizard/overview.md)
+1. Démarrez l’assistant tel que décrit dans le document [Assistant de mise à jour du produit](/help/product-update-wizard/overview.md).
 
 1. Cliquez sur **[!UICONTROL Exécuter une évaluation]**.
 
-   ![Exécution de l’évaluation](/help/assets/Run-Evaluation.png)
+   ![Exécuter une évaluation](/help/assets/Run-Evaluation.png)
 
 1. L’assistant vous informe de l’état de votre action. Vous remarquerez les états **en cours** ou **terminé** le cas échéant une fois le rapport d’évaluation généré.
 
