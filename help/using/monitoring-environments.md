@@ -1,52 +1,52 @@
 ---
-title: Surveillance des environnements
+title: Surveiller les environnements
 description: Découvrez comment surveiller vos environnements dans Cloud Manager.
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
 source-git-commit: 5907ca6337d33c26ff19a14bfeb358cd9f7b935d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '939'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
 
-# Surveillance des environnements {#monitoring-environments}
+# Surveiller les environnements {#monitoring-environments}
 
 Découvrez comment surveiller vos environnements dans Cloud Manager.
 
-## Seuils de mesure {#thresholds}
+## Seuils pour les mesures {#thresholds}
 
-La surveillance du système dans [!UICONTROL Cloud Manager] est réalisée en observant les instances dans un environnement et en suivant diverses mesures pour chaque instance. Chaque mesure comporte deux seuils définis : un seuil d&#39;avertissement et un seuil critique.
+La surveillance du système dans [!UICONTROL Cloud Manager] est réalisée en observant les instances dans un environnement et en suivant diverses mesures pour chaque instance. Chaque mesure possède deux seuils définis : un seuil d’avertissement et un seuil critique.
 
-Si une mesure dépasse son seuil critique, elle est considérée comme étant dans un état critique. Si une mesure est supérieure à son seuil d’avertissement (mais inférieure à son seuil critique), elle est considérée comme étant dans un état d’avertissement. Les seuils sont définis par Adobe Managed Services et peuvent être visualisés dans [!UICONTROL Cloud Manager]. Dans la plupart des cas, les seuils sont cohérents entre les clients. Mais dans certains cas, Adobe Managed Services modifie les seuils pour répondre aux besoins spécifiques des clients. Les questions relatives aux seuils doivent être adressées à l’ingénieur du service client.
+Si une mesure dépasse son seuil critique, elle est considérée comme étant dans un état critique ; si une mesure est supérieure à son seuil d’avertissement (mais sous son seuil critique), elle est considérée comme étant dans un état d’avertissement. Les seuils sont définis par Adobe Managed Services et peuvent être visualisés dans [!UICONTROL Cloud Manager]. Dans la plupart des cas, les seuils sont cohérents entre les clients. Mais dans certains cas, Adobe Managed Services modifie les seuils pour répondre aux besoins spécifiques des clients. Les questions relatives aux seuils doivent être adressées à l’ingénieur du service client.
 
-## Accès à la surveillance du système {#accessing-system-monitoring}
+## Accéder à la surveillance du système {#accessing-system-monitoring}
 
 Pour accéder à la surveillance du système, procédez comme suit.
 
-1. Connectez-vous à la page d’entrée **Managed Services - Programmes**.
+1. Connectez-vous à la page de destination **Managed Services - Programmes**.
 
-   ![Programmes de services gérés](/help/assets/ProgramLanding.png)
+   ![Programmes Managed Services](/help/assets/ProgramLanding.png)
 
-1. Cliquez sur la quatrième icône de la carte du programme.
+1. Cliquez sur la quatrième icône de la vignette du programme.
 
    ![Paramètres](/help/assets/first-timea1.png)
 
 
-Vous pouvez également accéder au **Surveillance du système** page d’entrée dans la **Rapports** élément de menu de navigation globale dans [!UICONTROL Cloud Manager].
+Vous pouvez également accéder à la page de destination **Surveillance du système** par le biais de l’élément de menu de navigation général **Rapports** dans [!UICONTROL Cloud Manager].
 
-## Présentation de la surveillance du système {#system-monitoring-overview}
+## Aperçu de la surveillance du système {#system-monitoring-overview}
 
-La page d’aperçu de la surveillance du système répertorie les environnements surveillés dans le programme et les rapports sur leur intégrité de haut niveau dans quatre catégories distinctes :
+La page d’aperçu de la surveillance du système répertorie les environnements surveillés dans le programme et les rapports sur leur intégrité globale dans quatre catégories distinctes :
 
 * Hôte
 * Stockage
 * Réseau
 * Application
 
-L’état de chaque catégorie est un résumé des mesures individuelles. Si une mesure d’une catégorie est dans un état critique, l’ensemble de la catégorie est dans un état critique aux fins de la page d’aperçu. La même synthèse peut être affichée au niveau d’un environnement et au niveau d’une instance.
+Le statut de chaque catégorie représente une synthèse des mesures individuelles. Si une mesure d’une catégorie est dans un état critique, la catégorie entière l’est également sur la page d’aperçu. La même synthèse peut être affichée au niveau d’un environnement et au niveau d’une instance.
 
-![Surveillance du système - Aperçu](/help/assets/System-Monitoring-Reports.png)
+![Présentation de la surveillance du système](/help/assets/System-Monitoring-Reports.png)
 
 >[!NOTE]
 >
@@ -60,7 +60,7 @@ Pour afficher les détails de mesures spécifiques, vous pouvez soit cliquer sur
 
 La navigation à gauche affiche les mesures disponibles dans la catégorie sélectionnée pour laquelle il existe des données pour l’environnement et les instances sélectionnés.
 
-![Mesures de surveillance](/help/assets/System_Monitoring2.png)
+![Surveiller les mesures](/help/assets/System_Monitoring2.png)
 
 Un graphique séparé indique l’état et les données dans le temps avec les seuils. Si plusieurs instances sont affichées, les données de chaque instance se trouvent sur une série distincte.
 
@@ -75,45 +75,45 @@ Par exemple, si vous cliquez sur la série de seuil d’avertissement, vous ne v
 
 #### Hôte {#host}
 
-* **Chargement par noyau**: Le nombre de processus en cours d’exécution par le processeur ou qui se trouvent dans un état d’attente calculé en moyenne sur une période d’une (charge1), cinq (charge5) et quinze (charge15) minutes.
-* **Nombre de processus**: Le nombre de processus actuellement ouverts
-* **Nombre d’utilisateurs**: Nombre d’utilisateurs disposant d’une principale session shell
-* **Utilisation de la mémoire**: Pourcentage de mémoire système actuellement allouée
-* **Mémoire JVM**: Taille (en mégaoctets) du segment de mémoire Java alloué
-* **Espace de la vieille génération**: Pourcentage de mémoire de l’ancienne génération de la JVM allouée
+* **Chargement par noyau** : nombre de processus exécutés par l’unité centrale ou dont la moyenne d’état en attente est supérieure à une moyenne d’une (chargement1), cinq (chargement5) et quinze (chargement15) minutes.
+* **Nombre de processus** : nombre de processus actuellement ouverts.
+* **Nombre d’utilisateurs** : nombre d’utilisateurs disposant d’une session shell active.
+* **Utilisation de la mémoire** : pourcentage de la mémoire système actuellement allouée.
+* **Mémoire JVM** : taille (en mégaoctets) du tas Java alloué.
+* **Espace d’ancienne génération** : pourcentage de la mémoire de la JVM d’ancienne génération actuellement allouée.
 
 #### Réseau {#network}
 
-* **Vérification du port CQ**: Temps de réponse en secondes pour accéder au port d’AEM ou de Dispatcher
+* **Vérification du port CQ** : délai de réponse en secondes pour accéder au port AEM ou Dispatcher.
    * Il existe différentes mesures pour la création, la publication et le dispatcher.
 
 #### Stockage {#storage}
 
-* **Espace disque**: Espace disque utilisé (en mégaoctets) pour chaque point de montage sur l’hôte
+* **Espace disque** : espace disque utilisé (en mégaoctets) pour chaque point de montage sur l’hôte.
    * Il existe différentes mesures pour chaque point de montage.
-   * Au minimum, il existe des mesures pour `/` et `/mnt`, mais d’autres mesures de point de montage peuvent être disponibles en fonction de la configuration d’instance spécifique.
+   * Au minimum, les mesures `/` et `/mnt` sont disponibles, mais des mesures de point de montage supplémentaires peuvent être disponibles selon la configuration d’instance spécifique.
 * **Taille du dossier**
-* **Boutique de segments AEM**: Espace disque utilisé (en gigaoctets) pour l’entrepôt de segments AEM
+* **Stockage de segments AEM** : espace disque utilisé (en gigaoctets) pour le stockage de segments AEM.
 
 #### Application {#application}
 
-* **Agent de réplication**: Durée (en secondes) d’un événement de réplication de test
+* **Agent de réplication** : durée, en secondes, d’un événement de réplication de test.
    * Il existe des mesures distinctes pour chaque agent de réplication.
-* **Purge du Dispatcher**: Le nombre d’éléments actuellement dans la file d’attente de vidage du dispatcher
+* **Purge du Dispatcher** : nombre d’éléments actuellement présents dans la file d’attente de purge du Dispatcher
 
 ## Création de rapports de contrat SLA {#sla-reporting}
 
-Les clients peuvent voir les performances de leur environnement d’AEM de production par rapport à leur contrat de niveau de service (SLA). Cette option est disponible dans un sous-menu de la **Rapports** écran.
+Les clients peuvent voir les performances de leur environnement AEM de production correspondant au contrat de niveau de service (SLA) auquel ils ont souscrit. Cette option est disponible dans un sous-menu de l’écran **Rapports**.
 
-Le graphique suivant montre les performances mensuelles du contrat SLA pour 2018.
+Le graphique suivant montre les performances mensuelles du contrat de niveau de service pour 2018.
 
-![Graphique SLA 2018](/help/assets/SLA-Reports-one.png)
+![Graphique SLA pour 2018](/help/assets/SLA-Reports-one.png)
 
 Comme pour les graphiques de surveillance du système, le fait de survoler un point de données affiche les valeurs correspondant à ce mois.
 
 ![Survol des points de données](/help/assets/SLA-Reports-two.png)
 
-Le **Analyse des événements** La section située sous ce graphique présente l’ensemble des incidents survenus pour le programme au cours de l’année sélectionnée. Chaque incident comporte une période, une cause et un ensemble de commentaires.
+La section **Analyse des événements**, située sous ce graphique, affiche l’ensemble des incidents survenus pour le programme au cours de l’année sélectionnée. Chaque incident comporte une période, une cause et un ensemble de commentaires.
 
 ![Analyse des événements](/help/assets/sla-reporting3.png)
 
@@ -128,6 +128,6 @@ Le **Analyse des événements** La section située sous ce graphique présente l
 
 ## Tutoriel vidéo {#video-tutorial}
 
-Cette vidéo fournit un aperçu de l’utilisation des graphiques générés par les rapports Cloud Manager pour une vue d’ensemble de vos environnements de programme.
+Cette vidéo présente l’utilisation des graphiques générés par les rapports Cloud Manager pour une vue d’ensemble de vos environnements de programme.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26315/)
