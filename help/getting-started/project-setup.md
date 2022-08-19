@@ -1,40 +1,40 @@
 ---
-title: Configuration du projet
-description: Découvrez comment configurer votre projet afin de pouvoir le gérer et le déployer avec Cloud Manager.
+title: Configurer le projet
+description: Découvrez comment configurer votre projet afin de pouvoir le gérer et le déployer avec Cloud Manager.
 exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
 source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1432'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
 
 # Configuration du projet {#setting-up-your-project}
 
-Découvrez comment configurer votre projet afin de pouvoir le gérer et le déployer avec Cloud Manager.
+Découvrez comment configurer votre projet afin de pouvoir le gérer et le déployer avec Cloud Manager.
 
-## Modification de projets existants {#modifying-project-setup-details}
+## Modifier des projets existants {#modifying-project-setup-details}
 
-Les projets AEM existants doivent respecter certaines règles de base pour être créés et déployés avec Cloud Manager.
+Les projets AEM existants doivent respecter certaines règles de base pour être créés et déployés avec Cloud Manager.
 
 * Les projets doivent être créés à l’aide d’Apache Maven.
-* Il doit y avoir une `pom.xml` dans la racine du référentiel git.
-   * Ceci `pom.xml` peut faire référence à autant de sous-modules (qui, à leur tour, peuvent comporter d’autres sous-modules) que nécessaire.
-   * Vous pouvez ajouter des références à d’autres référentiels d’artefact Maven dans vos fichiers `pom.xml`. 
+* Un fichier `pom.xml` doit se trouver à la racine du référentiel Git.
+   * Ce fichier `pom.xml` peut renvoyer à autant de sous-modules (qui à leur tour peuvent comporter d’autres sous-modules) que nécessaire.
+   * Vous pouvez ajouter des références à d’autres référentiels d’artefact Maven dans vos fichiers `pom.xml`.
    * L’accès aux [référentiels d’artefacts protégés par mot de passe](#password-protected-maven-repositories) est pris en charge s’il est configuré. Cependant, l’accès aux référentiels d’artefacts protégés par réseau n’est pas pris en charge.
-* Les packages de contenu déployables sont découverts en analysant les fichiers .zip de package de contenu contenus contenus dans un répertoire nommé `target`.
-   * Un nombre illimité de sous-modules peut produire des packages de contenu.
-* Les artefacts de Dispatcher déployables sont découverts en recherchant `zip` fichiers contenus dans des sous-répertoires de `target` named `conf` et `conf.d`.
-* S’il existe plusieurs packages de contenu, l’ordre des déploiements des packages n’est pas garanti.
-* Si un ordre spécifique est nécessaire, il est possible d’utiliser les dépendances de package pour le définir.
-* Les packages peuvent être [ignorés](#skipping-content-packages) du déploiement.
+* Les modules de contenu déployables sont découverts en analysant les fichiers ZIP de modules de contenu se trouvant dans un répertoire nommé `target`.
+   * Un nombre illimité de sous-modules peut produire des modules de contenu.
+* Les artefacts de Dispatcher déployables sont découverts en recherchant les fichiers `zip` contenus dans des sous-répertoires de `target` nommés `conf` et `conf.d`.
+* S’il existe plusieurs modules de contenu, l’ordre des déploiements des modules n’est pas garanti.
+* Si un ordre spécifique est nécessaire, il est possible d’utiliser les dépendances de modules pour le définir.
+* Les modules peuvent être [ignorés](#skipping-content-packages) du déploiement.
 
 ## Activation des profils Maven dans Cloud Manager {#activating-maven-profiles-in-cloud-manager}
 
 Dans certains cas, vous devrez peut-être légèrement modifier le processus de génération lors de l’exécution dans Cloud Manager, contrairement à celui qui s’exécute sur les postes de travail des développeurs. Dans ce cas, les [profils Maven](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) peuvent être utilisés pour définir la manière dont la génération doit être différente dans différents environnements, notamment Cloud Manager.
 
-L’activation d’un profil Maven dans l’environnement de génération Cloud Manager doit être effectuée en recherchant `CM_BUILD` [variable d&#39;environnement](/help/getting-started/build-environment.md#environment-variables) Variable d’environnement. Par contre, un profil destiné à être utilisé uniquement en dehors de l’environnement de création Cloud Manager doit être généré en vérifiant l’absence de cette variable.
+L’activation d’un profil Maven dans l’environnement de génération Cloud Manager doit s’effectuer en recherchant la variable d’environnement nommée [variable d’environnement](/help/getting-started/build-environment.md#environment-variables) `CM_BUILD`. Par contre, un profil destiné à être utilisé uniquement en dehors de l’environnement de création Cloud Manager doit être généré en vérifiant l’absence de cette variable.
 
 Par exemple, si vous souhaitez générer un message de sortie simple uniquement lorsque la génération est exécutée dans Cloud Manager, procédez comme suit :
 
@@ -110,19 +110,19 @@ Si vous souhaitez générer un message de sortie simple uniquement lorsque la g�
 
 ## Prise en charge d’un référentiel Maven protégé par mot de passe {#password-protected-maven-repositories}
 
-Les artefacts d’un référentiel Maven protégé par mot de passe ne doivent être utilisés que très prudemment, car le code déployé via ce mécanisme n’est pas exécuté par toutes les règles de qualité implémentées dans les points de contrôle qualité de Cloud Manager. Il est conseillé de déployer les sources Java ainsi que l’ensemble du code source du projet avec le binaire.
+Les artefacts d’un référentiel Maven protégé par mot de passe doivent être utilisés avec la plus grand prudence. Le code déployé par ce mécanisme n’est pas soumis à l’ensemble des règles de qualité implémentées dans les points de contrôle qualité de Cloud Manager. Il est conseillé de déployer les sources Java ainsi que l’ensemble du code source du projet avec le binaire.
 
 >[!TIP]
 >
->Les artefacts des référentiels Maven protégés par mot de passe ne doivent être utilisés que dans de rares cas et pour du code non lié à AEM.
+>Les artefacts des référentiels Maven protégés par mot de passe ne doivent être utilisés que dans de rares cas et pour les codes qui ne sont pas liés à AEM.
 
-Pour utiliser un référentiel Maven protégé par mot de passe dans Cloud Manager, spécifiez le mot de passe (et éventuellement le nom d’utilisateur) en tant que [Variable pipeline](/help/getting-started/build-environment.md#pipeline-variables) secrète, puis référencez ce secret dans un fichier nommé `.cloudmanager/maven/settings.xml` dans le référentiel git. Ce fichier suit le schéma de [fichier de paramètres Maven.](https://maven.apache.org/settings.html)
+Pour utiliser un référentiel Maven protégé par mot de passe dans Cloud Manager, spécifiez le mot de passe (et éventuellement le nom d’utilisateur) en tant que [Variable de pipeline](/help/getting-started/build-environment.md#pipeline-variables) secrète, puis référencez ce secret dans un fichier nommé `.cloudmanager/maven/settings.xml` dans le référentiel Git. Ce fichier suit le schéma du [fichier de paramètres Maven](https://maven.apache.org/settings.html).
 
 Au démarrage du processus de création de Cloud Manager, l’élément `<servers>` de ce fichier est fusionné dans le fichier `settings.xml` par défaut fourni par Cloud Manager. Les ID de serveur commençant par `adobe` et `cloud-manager` sont considérés comme réservés et ne doivent pas être utilisés par des serveurs personnalisés. Les ID de serveur ne correspondant pas à l’un de ces préfixes ou à l’ID par défaut `central` ne seront jamais mis en miroir par Cloud Manager.
 
-Une fois ce fichier en place, l’ID de serveur est référencé à l’intérieur d’une `<repository>` et/ou `<pluginRepository>` à l’intérieur de l’élément `pom.xml` fichier . En règle générale, ces éléments `<repository>` et/ou `<pluginRepository>` sont contenus dans un [profil spécifique à Cloud Manager](#activating-maven-profiles-in-cloud-manager), bien que cela ne soit pas strictement nécessaire.
+Une fois ce fichier en place, l’ID de serveur est référencé à l’intérieur d’un élément `<repository>` et/ou `<pluginRepository>` dans le fichier `pom.xml`. En règle générale, ces éléments `<repository>` et/ou `<pluginRepository>` sont contenus dans un [profil spécifique à Cloud Manager](#activating-maven-profiles-in-cloud-manager), bien que cela ne soit pas strictement nécessaire.
 
-Par exemple, supposons que le référentiel se trouve à l’adresse `https://repository.myco.com/maven2`, le nom d’utilisateur que Cloud Manager doit utiliser est `cloudmanager` et le mot de passe est `secretword`.
+Par exemple, supposons que le référentiel se trouve à l’adresse `https://repository.myco.com/maven2`, que le nom d’utilisateur que Cloud Manager doit utiliser soit `cloudmanager` et que le mot de passe soit `secretword`.
 
 Tout d’abord, définissez le mot de passe comme secret sur le pipeline :
 
@@ -193,7 +193,7 @@ Enfin référencez l’identifiant du serveur dans le fichier `pom.xml` :
 
 Il est recommandé de déployer les sources Java avec le binaire dans un référentiel Maven.
 
-Configurez la variable `maven-source-plugin` dans votre projet :
+Configurez le `maven-source-plugin` dans votre projet :
 
 ```xml
         <plugin>
@@ -210,11 +210,11 @@ Configurez la variable `maven-source-plugin` dans votre projet :
         </plugin>
 ```
 
-### Déploiement de sources de projet {#deploying-project-sources}
+### Déployer des sources de projet {#deploying-project-sources}
 
-Il est recommandé de déployer la source du projet dans son intégralité avec le binaire vers un référentiel Maven. Cela permet de reconstruire l’artefact exact.
+Il est recommandé de déployer l’ensemble des sources du projet ainsi que le binaire dans un référentiel Maven. Ce procédé permet de reconstruire l’artefact exact.
 
-Configurez la variable `maven-assembly-plugin` dans votre projet :
+Configurez le `maven-assembly-plugin` dans votre projet :
 
 ```xml
         <plugin>
@@ -237,11 +237,11 @@ Configurez la variable `maven-assembly-plugin` dans votre projet :
         </plugin>
 ```
 
-## Omission des modules de contenu {#skipping-content-packages}
+## Ignorer les modules de contenu {#skipping-content-packages}
 
 Dans Cloud Manager, chaque compilation peut produire un certain nombre de modules de contenu. Pour diverses raisons, il peut être préférable de produire un module de contenu, mais de ne pas le déployer. Cela peut s’avérer utile, par exemple, lors de la création de modules de contenu utilisés uniquement à des fins de test ou qui seront recompilés lors d’une autre étape du processus de compilation, c’est-à-dire sous la forme d’un sous-module d’un autre module.
 
-Pour tenir compte de ces scénarios, Cloud Manager recherche une propriété nommée `cloudManagerTarget` dans les propriétés des modules de contenu créés. Si cette propriété est définie sur `none`, le module est ignoré et n’est pas déployé. Le mécanisme permettant de définir cette propriété dépend de la manière dont la compilation produit le module de contenu. Par exemple, avec la fonction `filevault-maven-plugin` vous configurez le module comme suit :
+Pour tenir compte de ces scénarios, Cloud Manager recherche une propriété nommée `cloudManagerTarget` dans les propriétés des modules de contenu créés. Si cette propriété est définie sur `none`, le module est ignoré et n’est pas déployé. Le mécanisme permettant de définir cette propriété dépend de la manière dont la compilation produit le module de contenu. Par exemple, avec le `filevault-maven-plugin`, vous devez configurer le plug-in comme suit :
 
 ```xml
         <plugin>
@@ -257,7 +257,7 @@ Pour tenir compte de ces scénarios, Cloud Manager recherche une propriété no
         </plugin>
 ```
 
-Avec le `content-package-maven-plugin` il est similaire :
+La procédure est similaire avec le `content-package-maven-plugin` :
 
 ```xml
         <plugin>
@@ -304,8 +304,8 @@ Partez du principe que votre programme comporte deux pipelines de développement
 
 Les deux branches utilisent le même identifiant de validation.
 
-1. L’exécution du pipeline 1 commence par générer les modules normalement.
-1. Ensuite, l’exécution du pipeline 2 réutilisera les packages créés par le pipeline 1.
+1. L’exécution du pipeline 1 lance la construction normale des modules.
+1. L’exécution du pipeline 2 entraîne ensuite la réutilisation des modules créés par le pipeline 1.
 
 #### Exemple 2 {#example-2}
 
@@ -343,4 +343,4 @@ Si vous le souhaitez, le comportement de réutilisation peut être désactivé p
 
 ## Développement du code en fonction des bonnes pratiques {#develop-your-code-based-on-best-practices}
 
-Les équipes d’ingénierie et de conseil Adobe ont développé un [ensemble complet de bonnes pratiques pour les développeurs AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/best-practices.html).
+Les équipes d’ingénierie et de conseil Adobe ont développé un [ensemble complet de bonnes pratiques pour les développeurs AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/best-practices.html?lang=fr).
