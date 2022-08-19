@@ -3,9 +3,9 @@ title: Test de qualité du code
 description: Découvrez comment fonctionne le test de qualité du code des pipelines et comment il peut améliorer la qualité de vos déploiements.
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2867'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Découvrez comment fonctionne le test de qualité du code des pipelines et comme
 
 Pendant l’exécution du pipeline, un certain nombre de mesures sont saisies et comparées soit aux indicateurs clés de performance (ICP) définis par le propriétaire de l’entreprise, soit aux normes définies par Adobe Managed Services.
 
-Elles sont signalées à l’aide d’un système de notation à trois niveaux.
+Elles sont signalées grâce à un système d’évaluation à trois niveaux.
 
 ## Évaluation à trois niveaux {#three-tiered-ratings}
 
@@ -36,7 +36,7 @@ Pour chaque point de contrôle, il existe une structure à trois niveaux pour le
 
 >[!NOTE]
 >
->Dans un pipeline portant uniquement sur la qualité du code, les échecs importants du point de contrôle de qualité du code ne peuvent pas être remplacés, car l’étape de test de qualité du code est la dernière étape du pipeline.
+>Dans un pipeline uniquement axé sur la qualité du code, les échecs importants du point de contrôle Qualité du code ne peuvent pas être remplacés car l’étape de test de qualité du code est la dernière étape du pipeline.
 
 ## Test de qualité du code {#code-quality-testing-step}
 
@@ -103,11 +103,11 @@ La bonne solution consiste alors à supprimer le mot de passe codé en dur.
 
 >[!NOTE]
 >
->Bien qu’il soit recommandé d’effectuer l’opération `@SuppressWarnings` annotation aussi spécifique que possible (c’est-à-dire annoter uniquement l’instruction ou le bloc spécifique à l’origine du problème), il est possible d’annoter au niveau de la classe.
+>Bien qu’il soit préférable de rendre l’annotation `@SuppressWarnings` aussi précise que possible (c’est-à-dire d’annoter uniquement l’instruction ou le bloc à l’origine du problème), il est tout de même possible d’annoter au niveau de la classe.
 
 ## Test de sécurité {#security-testing}
 
-[!UICONTROL Cloud Manager] exécute les contrôles existants, Contrôles d’intégrité de sécurité AEM, sur l’environnement d’évaluation suite au déploiement et indique leur statut via l’interface utilisateur. Les résultats sont agrégés à partir de toutes les instances AEM de l’environnement.
+[!UICONTROL Cloud Manager] exécute les contrôles d’intégrité de sécurité AEM existants sur l’environnement d’évaluation suite au déploiement et indique leur statut via l’interface utilisateur. Les résultats sont agrégés à partir de toutes les instances AEM de l’environnement.
 
 Ces mêmes contrôles d’intégrité peuvent être exécutés à tout moment par l’intermédiaire de la console Web ou du tableau de bord d’opérations.
 
@@ -118,8 +118,8 @@ Le tableau suivant répertorie les contrôles d’intégrité :
 | Nom | Implémentation du contrôle d’intégrité | Catégorie |
 |---|---|---|
 | La disponibilité de l’API d’ajout de pare-feu de désérialisation est dans un état acceptable. | [Disponibilité de l’API d’ajout de pare-feu de désérialisation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=fr#security) | Critique |
-| Le pare-feu de désérialisation est fonctionnel.. | [Pare-feu de désérialisation fonctionnel](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html#security) | Critique |
-| Le pare-feu de désérialisation est chargé.. | [Pare-feu de désérialisation chargé](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html#security) | Critique |
+| Le pare-feu de désérialisation est fonctionnel.. | [Pare-feu de désérialisation fonctionnel](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=fr#security) | Critique |
+| Le pare-feu de désérialisation est chargé.. | [Pare-feu de désérialisation chargé](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=fr#security) | Critique |
 | L’implémentation `AuthorizableNodeName` n’expose pas d’ID autorisable dans le nom/chemin du nœud. | [Génération de nom de nœud autorisé](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=fr#security) | Critique |
 | Les mots de passe par défaut ont été modifiés.. | [Comptes de connexion par défaut](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=fr#users-and-groups-in-aem) | Critique |
 | Le servlet GET par défaut Sling est protégé contre les attaques par DOS. | Servlet Sling Get | Critique |
@@ -127,7 +127,7 @@ Le tableau suivant répertorie les contrôles d’intégrité :
 | Le gestionnaire de script JSP Sling est correctement configuré. | Gestionnaire de script JSP Sling | Critique |
 | SSL est correctement configuré.. | Configuration SSL | Critique |
 | Aucune stratégie de profil utilisateur évidemment risquée n’a été trouvée. | Accès par défaut au profil utilisateur | Critique |
-| Le filtre référent Sling est configuré pour empêcher les attaques CSRF. | [Filtre référent Sling](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html#security) | Important |
+| Le filtre référent Sling est configuré pour empêcher les attaques CSRF. | [Filtre référent Sling](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=fr#security) | Important |
 | Le gestionnaire de bibliothèques HTML Adobe Granite est configuré correctement. | Configuration de gestionnaire de bibliothèque HTML CQ | Important |
 | Le lot Prise en charge CRXDE est désactivé.. | Prise en charge de CRXDE | Important |
 | Le lot DavEx Sling et le servlet sont désactivés.. | Contrôle d’intégrité DavEx | Important |
@@ -151,8 +151,8 @@ Le nombre d’utilisateurs ou de conteneurs virtuels qui sont émulés par Cloud
 
 Avant le début de la période de test de 30 minutes, Cloud Manager explore l’environnement d’évaluation à l’aide d’une ou de plusieurs URL d’amorçage configurées par l’ingénieur chargé du succès client. À partir de ces URL, le code HTML de chaque page est examiné et les liens sont parcourus en largeur d’abord.
 
-* Ce processus d’analyse est par défaut limité à un maximum de 5 000 pages.
-* Le nombre maximal de pages à tester peut être remplacé en définissant la variable [variable d&#39;environnement](/help/getting-started/build-environment.md#environment-variables) `MAX_PAGES`.
+* Ce processus d’exploration est limité par défaut à un maximum de 5 000 pages.
+* Le nombre maximal de pages à tester peut être remplacé en définissant la [variable d’environnement](/help/getting-started/build-environment.md#environment-variables) `MAX_PAGES`.
    * Les valeurs autorisées sont `2000` - `7000`.
 * Les requêtes du robot d’exploration ont un délai d’expiration fixe de 10 secondes.
 
@@ -162,9 +162,9 @@ Les pages sont sélectionnées selon trois ensembles de pages. Cloud Manager ut
 
 * **Pages en direct populaires** : cette option est sélectionnée pour s’assurer que les pages les plus populaires consultées par les clients en direct sont testées. Cloud Manager lit le journal d’accès et détermine les 25 pages les plus consultées par les clients en direct afin de générer une liste des meilleures `Popular Live Pages`. L’intersection de celles-ci, également présentes dans l’environnement d’évaluation, est ensuite analysée dans l’environnement d’évaluation.
 
-* **Autres pages actives** - Cette option est sélectionnée pour s’assurer que les pages qui se trouvent en dehors des 25 premières pages actives populaires et qui peuvent ne pas être populaires, mais qui sont importantes à tester, sont testées. Comme pour les pages en direct populaires, elles sont extraites du journal d’accès et doivent également être présentes dans l’environnement d’évaluation.
+* **Autres pages en direct** : cette option permet de s’assurer que les pages qui ne font pas partie des 25 pages en direct les plus populaires, et qui ne sont peut-être pas populaires mais restent importantes à tester, sont soumises au test. Comme pour les pages en direct populaires, elles sont extraites du journal d’accès et doivent également être présentes dans l’environnement d’évaluation.
 
-* **Nouvelles pages** - Cette option est sélectionnée pour tester les nouvelles pages qui peuvent n’avoir été déployées que dans l’environnement d’évaluation et qui ne sont pas encore en production, mais qui doivent être testées.
+* **Nouvelles pages** : cette option permet de tester les nouvelles pages qui n’ont peut-être été déployées qu’en évaluation, et pas encore en production, mais qui doivent être testées.
 
 ##### Répartition du trafic entre les ensembles de pages sélectionnés {#distribution-of-traffic}
 
@@ -220,7 +220,7 @@ Pour définir ces variables à l’aide de l’interface de ligne de commande de
 $ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>
 ```
 
-Reportez-vous à la section [Correction des variables de pipeline de l’utilisateur](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchPipelineVariables) Documentation de l’API pour savoir comment utiliser l’API.
+Reportez-vous à la documentation de l’API [Correctif des variables de pipeline de l’utilisateur](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchPipelineVariables) pour apprendre à utiliser l’API.
 
 ### AEM Assets {#aem-assets}
 
@@ -244,11 +244,11 @@ Par exemple, si une répartition 70/30 est utilisée et que 10 ressources sont 
 
 #### Tests et compte rendu des performances {#testing-and-reporting}
 
-Cloud Manager crée un dossier sur l’instance d’auteur à l’aide du nom d’utilisateur et du mot de passe configurés par l’ingénieur du service client. Les ressources sont ensuite chargées dans le dossier à l’aide d’une bibliothèque open source. Les tests exécutés par l’étape de test des ressources sont écrits à l’aide de cette [bibliothèque open source.](https://github.com/adobe/toughday2) Le temps de traitement de chaque ressource et diverses mesures au niveau du système sont mesurés pendant les 30 minutes que dure le test. Cette fonctionnalité permet de charger des images et des documents PDF.
+Cloud Manager crée un dossier sur l’instance d’auteur à l’aide du nom d’utilisateur et du mot de passe configurés par le CSE. Les ressources sont ensuite chargées dans le dossier à l’aide d’une bibliothèque open source. Les tests exécutés par l’étape de test des ressources sont écrits à l’aide de cette [bibliothèque open source.](https://github.com/adobe/toughday2) Le temps de traitement de chaque ressource et diverses mesures au niveau du système sont mesurés pendant les 30 minutes que dure le test. Cette fonctionnalité permet de charger des images et des documents PDF.
 
 >[!TIP]
 >
->Reportez-vous au document [Configuration de pipelines de production](/help/using/production-pipelines.md) pour en savoir plus. Reportez-vous au document [Configuration du programme](/help/getting-started/program-setup.md) pour savoir comment configurer votre programme et définir vos indicateurs de performance clés.
+>Reportez-vous au document [Configuration de pipelines de production](/help/using/production-pipelines.md) pour en savoir plus. Reportez-vous au document [Configuration du programme](/help/getting-started/program-setup.md) pour savoir comment configurer votre programme et définir vos ICP.
 
 ### Graphiques des résultats des tests de performance {#performance-testing-results-graphs}
 
@@ -262,20 +262,20 @@ Les panneaux de mesures peuvent être développés pour afficher un graphique, f
 
 Cette fonctionnalité est disponible pour les mesures suivantes.
 
-* **Utilisation de l’UC** - Graphique de l’utilisation du processeur pendant la période de test
+* **Utilisation de l’UC** : graphique montrant l’utilisation de l’UC pendant la période de test.
 
-* **Délai d’attente d’E/S de disque** - Graphique du temps d’attente d’E/S du disque pendant la période de test
+* **Durée d’attente d’E/S du disque** : graphique du temps d’attente d’E/S du disque pendant la période de test.
 
-* **Taux d’erreur de page** - Graphique des erreurs de page par minute pendant la période de test
+* **Taux d’erreur de page** : graphique des erreurs de page par minute pendant la période de test.
    * Fichier CSV répertoriant les pages qui ont généré une erreur pendant le test.
 
-* **Utilisation de la bande passante du disque** - Graphique de l’utilisation de la bande passante du disque pendant la période de test
+* **Utilisation de la bande passante du disque** : graphique de l’utilisation de la bande passante du disque pendant la période de test.
 
-* **Utilisation de la bande passante réseau** - Graphique de l’utilisation de la bande passante du réseau pendant la période de test
+* **Utilisation de la bande passante du réseau** : graphique de l’utilisation de la bande passante du réseau pendant la période de test.
 
-* **Délai de réponse max.** : graphique du temps de réponse maximal par minute pendant la période de test.
+* **Temps de réponse maximal** : graphique du temps de réponse maximal par minute pendant la période de test.
 
-* **Délai de réponse du 95e percentile** - Graphique montrant le temps de réponse du 95e percentile par minute pendant la période de test
+* **Temps de réponse du 95e centile** : graphique montrant le temps de réponse du 95e centile par minute pendant la période de test.
    * Fichier CSV répertoriant les pages dont le 95e centile du temps de réponse a dépassé les ICP définis.
 
 ## Optimisation de l’analyse des packages de contenu {#content-package-scanning-optimization}
