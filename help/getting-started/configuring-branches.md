@@ -1,24 +1,24 @@
 ---
-title: Configuration des branches
-description: Découvrez comment configurer votre première branche dans Git et comment elle est utilisée par le pipeline CI/CD pour déployer le code de votre application.
+title: Configurer les branches
+description: Découvrez comment configurer votre première branche dans Git et son utilisation par le pipeline CI/CD pour déployer le code de votre application.
 exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
 source-git-commit: 4c051cd1696f8a00d0278131c9521ad4dcb956a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '329'
-ht-degree: 34%
+ht-degree: 100%
 
 ---
 
 
-# Configuration des branches {#configuring-branches}
+# Configurer les branches {#configuring-branches}
 
-Découvrez comment configurer votre première branche dans Git et comment elle est utilisée par le pipeline CI/CD pour déployer le code de votre application.
+Découvrez comment configurer votre première branche dans Git et son utilisation par le pipeline CI/CD pour déployer le code de votre application.
 
-## Configuration de votre première branche dans Git {#setting-up-your-first-branch-in-git}
+## Configurer votre première branche dans Git {#setting-up-your-first-branch-in-git}
 
-Référentiel Git unique, initialement vide [est mis en service](/help/requirements/environment-provisioning.md) pour chaque programme intégré à Cloud Manager. Ce référentiel peut contenir autant de branches que le nécessite votre processus de développement, mais il doit y avoir au moins une branche utilisée par le pipeline CI/CD pour déployer le code de l’application dans les environnements intermédiaire et de production. Il est conseillé d’utiliser le nom `main` pour cette branche. Pour des raisons pratiques, il s’agit du comportement par défaut des clients Git lors de la configuration de nouveaux projets.
+Un seul référentiel Git, initialement vide, [est fourni](/help/requirements/environment-provisioning.md) pour chaque programme intégré à Cloud Manager. Ce référentiel peut contenir autant de branches que nécessaire pour votre processus de développement. Toutefois, au moins une branche doit être utilisée par le pipeline CI/CD pour déployer le code de l’application dans les environnements d’évaluation et de production. Il est conseillé d’utiliser le nom `main` pour cette branche. Pour des raisons pratiques, ce comportement est défini par défaut pour les clients Git lors de la configuration de nouveaux projets.
 
-Par exemple, lors de la configuration d’un nouveau projet, vous exécuterez un ensemble de commandes semblables à celles-ci.
+Par exemple, lorsque vous configurez un nouveau projet, vous exécuterez un ensemble de commandes comme celui-ci :
 
 ```shell
 $ git init
@@ -50,11 +50,11 @@ $ git commit -m "initial commit"
 
 >[!NOTE]
 >
->Il n’est pas nécessaire d’utiliser le client de la ligne de commande. Il existe divers clients Git graphiques disponibles sous la forme d’applications autonomes ou dans le cadre d’un environnement de développement intégré (IDE), tel qu’Eclipse ou IntelliJ. Tant que l’application cliente prend en charge Git avec HTTPS, elle doit être compatible avec [!UICONTROL Cloud Manager].
+>Il n’est pas nécessaire d’utiliser le client de ligne de commande. Différents clients graphiques Git sont disponibles, soit en tant qu’applications autonomes, soit dans le cadre d’un environnement de développement intégré (IDE), tel qu’Eclipse ou IntelliJ. Tant que l’application cliente prend en charge Git avec HTTPS, elle doit être compatible avec [!UICONTROL Cloud Manager].
 
-## Création de la première branche {#pushing-your-first-branch}
+## Publier la première branche {#pushing-your-first-branch}
 
-Une fois que vous avez validé au moins une révision, vous pouvez ajouter la variable [!UICONTROL Cloud Manager] référentiel en tant que distant, puis placez-y vos validations.
+Une fois que vous avez validé au moins une révision, vous pouvez ajouter le référentiel [!UICONTROL Cloud Manager] en tant que dépôt distant, puis transférer vos validations vers ce dernier.
 
 ```shell
 $ git remote add adobe <url>
@@ -70,7 +70,7 @@ To <url>
 
 >[!NOTE]
 >
->L’URL spécifique, ainsi que vos informations d’identification, vous seront fournies par votre ingénieur du service client lors de l’intégration à [!UICONTROL Cloud Manager].
+>L’URL spécifique, ainsi que vos informations d’identification, vous seront fournies par votre ingénieur chargé du succès client lors de l’intégration à [!UICONTROL Cloud Manager].
 
 ## Branches supplémentaires {#additional-branches}
 
@@ -78,4 +78,4 @@ Une branche `main` unique peut suffire pour des projets très simples, mais dans
 
 >[!TIP]
 >
->Pour afficher les commandes git courantes, voir [Aide-mémoire Git](https://github.github.com/training-kit/downloads/github-git-cheat-sheet).
+>Pour afficher les commandes Git courantes, consultez l’[Aide-mémoire Git](https://github.github.com/training-kit/downloads/github-git-cheat-sheet).
