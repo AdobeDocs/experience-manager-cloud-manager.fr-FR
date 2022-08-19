@@ -1,32 +1,32 @@
 ---
-title: Gestion des versions du projet Maven
-description: Découvrez comment Maven gère le contrôle de version des projets dans Cloud Manager.
+title: Gestion des versions de projet par Maven
+description: Découvrez comment Maven gère le contrôle de version des projets dans Cloud Manager.
 exl-id: a1d676e0-27cc-4b0d-8799-527c0520946a
 source-git-commit: 9312999660b324f0f9d2b44dfbf49c4813a3a6e9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '260'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
 
-# Gestion des versions du projet Maven {#project-version}
+# Gestion des versions de projet par Maven {#project-version}
 
-Découvrez comment Maven gère le contrôle de version des projets dans Cloud Manager.
+Découvrez comment Maven gère le contrôle de version des projets dans Cloud Manager.
 
-## Gestion des versions du projet par Maven {#how-maven}
+## Gestion des versions des projets par Maven {#how-maven}
 
-Pour les déploiements d’évaluation et de production, Cloud Manager génère une version incrémentée unique.
+Pour les déploiements d’évaluation et de production, Cloud Manager génère une version d’incrémentation unique.
 
 Cette version est affichée sur la page des détails d’exécution du pipeline, ainsi que sur la page d’activité. Lorsqu’une génération est exécutée, le projet Maven est mis à jour pour utiliser cette version et une balise est créée dans le référentiel Git avec cette version comme nom.
 
-Si la version originale du projet répond à certains critères, la version mise à jour du projet Maven fusionne la version originale du projet et la version générée par Cloud Manager. Toutefois, la balise utilise toujours la version générée. Pour que cette fusion se produise, la version originale du projet doit être formée avec exactement trois segments de version, par exemple : `1.0.0` ou `1.2.3`, mais pas `1.0` ou `1`et la version d’origine ne doit pas se terminer par `-SNAPSHOT`.
+Si la version originale du projet répond à certains critères, la version mise à jour du projet Maven fusionne la version originale du projet et la version générée par Cloud Manager. Toutefois, la balise utilise toujours la version générée. Pour que cette fusion s’effectue, la version initiale du projet doit être formée avec exactement trois segments de version, comme `1.0.0` ou `1.2.3`, mais pas `1.0` ou `1`. Par ailleurs, la version initiale ne doit pas se terminer par `-SNAPSHOT`.
 
 >[!NOTE]
 >
 >Cette valeur de version de projet d’origine doit être définie de manière statique dans l’élément `<version>` du fichier `pom.xml` de niveau supérieur dans la branche du référentiel Git.
 
-Si la version d’origine répond à ces critères, la version générée est ajoutée à la version d’origine en tant que segment de nouvelle version. La version générée sera également légèrement modifiée pour inclure un tri et une gestion corrects des versions. Par exemple, en supposant une version générée de `2019.926.121356.0000020490`:
+Si la version initiale répond à ces critères, la version générée est ajoutée à la version initiale en tant que segment de nouvelle version. La version générée est également légèrement modifiée pour inclure un tri et une gestion corrects des versions. Par exemple, en supposant une version générée de `2019.926.121356.0000020490` :
 
 | Version | Version dans `pom.xml` | Commentaire |
 |---|---|---|
