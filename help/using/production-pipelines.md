@@ -1,24 +1,24 @@
 ---
 title: Configurer des pipelines de production
-description: Découvrez comment utiliser Cloud Manager pour créer et configurer des pipelines de production afin de déployer votre code.
+description: Découvrez comment créer et configurer des pipelines de production à l’aide de Cloud Manager afin de déployer votre code.
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 source-git-commit: 99325c28c379103db2ba4c19bb6d206849c6e126
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1302'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
 
 # Configuration des pipelines de production {#configuring-production-pipelines}
 
-Découvrez comment utiliser Cloud Manager pour créer et configurer des pipelines de production afin de déployer votre code. si vous souhaitez d’abord une présentation plus conceptuelle du fonctionnement des pipelines dans Cloud Manager, consultez le document . [Pipelines CI/CD.](/help/overview/ci-cd-pipelines.md)
+Découvrez comment créer et configurer des pipelines de production à l’aide de Cloud Manager afin de déployer votre code. si vous souhaitez d’abord une présentation plus conceptuelle du fonctionnement des pipelines dans Cloud Manager, consultez le document [Pipelines CI/CD.](/help/overview/ci-cd-pipelines.md)
 
 ## Présentation {#overview}
 
-En utilisant la variable **Paramètres du pipeline** dans [!UICONTROL Cloud Manager] vous pouvez créer deux types de pipelines différents.
+En utilisant le volet **Paramètres du pipeline** dans [!UICONTROL Cloud Manager], vous pouvez créer deux types de pipelines différents.
 
-* **Pipelines de production** - Un pipeline de production est un pipeline personnalisé constitué d’une série d’étapes orchestrées pour intégrer le code source de votre référentiel git jusqu’à la production.
+* **Pipelines de production** - un pipeline de production est un pipeline spécialement conçu, composé d’une série d’étapes coordonnées pour mener le référentiel Git jusqu’à la production.
 * **Pipelines hors production** - un pipeline hors production sert principalement à exécuter des analyses de qualité du code ou à déployer le code source dans un environnement de développement.
 
 Ce document se concentre sur les pipelines de production. Pour plus d’informations sur la configuration des pipelines hors production, voir le document [Configuration de pipelines hors production.](/help/using/non-production-pipelines.md)
@@ -58,7 +58,7 @@ Une fois que vous avez utilisé l’interface utilisateur [!UICONTROL Cloud Mana
       * **Référentiel** - cette option définit à partir de quel référentiel Git le pipeline doit récupérer le code.
       >[!TIP]
       >
-      >Voir le document [Configuration du programme](/help/getting-started/program-setup.md) pour savoir comment ajouter et gérer des référentiels dans Cloud Manager.
+      >Voir le document [Configuration du programme](/help/getting-started/program-setup.md) pour découvrir comment ajouter et gérer des référentiels dans Cloud Manager.
 
       * **Branche Git** - cette option définit à partir de quelle branche sélectionnée le pipeline doit récupérer le code.
       * **Emplacement du code** - cette option définit le chemin d’accès dans la branche du référentiel sélectionné à partir duquel le pipeline doit récupérer le code.
@@ -73,11 +73,11 @@ Une fois que vous avez utilisé l’interface utilisateur [!UICONTROL Cloud Mana
 
             * **Manuel** - utilisez cette option pour démarrer manuellement le pipeline à l’aide de l’interface utilisateur de Cloud Manager.
             * **Lors des modifications Git** - cette option démarre le pipeline CI/CD chaque fois que des validations sont ajoutées à la branche Git configurée. Avec cette option, vous pouvez toujours démarrer le pipeline manuellement, si nécessaire.
-         * **Comportement en cas d’échecs de mesure importants** - lors de la configuration ou de la modification du pipeline, le responsable de déploiement peut définir le comportement du pipeline lorsqu&#39;un échec important est rencontré à l’un des points de contrôle qualité. Les options disponibles sont les suivantes :
+         * **Comportement en cas d’échecs de mesure importants** - lors de la configuration ou de la modification du pipeline, le responsable de déploiement peut définir le comportement du pipeline lorsqu’un échec important est rencontré à l’un des points de contrôle qualité. Les options disponibles sont les suivantes :
 
             * **Demander à chaque fois** - il s’agit du paramètre par défaut qui nécessite une intervention manuelle pour tout échec important.
-            * **Défaillance immédiate** : si cette option est sélectionnée, le pipeline sera interrompu chaque fois qu’une défaillance importante aura lieu. Il s’agit essentiellement d’imiter un utilisateur qui rejetterait manuellement chaque échec.
-            * **Continuer immédiatement** - si cette option est sélectionnée, le pipeline se poursuivra automatiquement chaque fois qu’une défaillance importante se produira. Il s&#39;agit essentiellement d&#39;émuler un utilisateur approuvant manuellement chaque échec.
+            * **Défaillance immédiate** - si cette option est sélectionnée, le pipeline sera interrompu chaque fois qu’une défaillance importante aura lieu. Il s’agit essentiellement d’imiter un utilisateur qui rejetterait manuellement chaque échec.
+            * **Continuer immédiatement** - si cette option est sélectionnée, le pipeline se poursuivra automatiquement chaque fois qu’une défaillance importante se produira. Il s’agit essentiellement d’émuler un utilisateur approuvant manuellement chaque échec.
 
          ![Déclencheur de déploiement](/help/assets/configure-pipelines/add-prod3.png)
 
@@ -85,11 +85,11 @@ Une fois que vous avez utilisé l’interface utilisateur [!UICONTROL Cloud Mana
 
             * **Approbation après le déploiement d’évaluation** - cette approbation a lieu après le déploiement dans l’environnement d’évaluation avant que tout test ne soit effectué. Sinon, l’approbation se produit avant le déploiement en production, qui est effectué une fois tous les tests terminés.
 
-            * **Ignorer les modifications de la répartition de charge** - Les modifications de la répartition de charge ne sont pas effectuées.
+            * **Ignorer les modifications de la répartition de charge** - les modifications de la répartition de charge ne sont pas effectuées.
 
          ![Options de déploiement intermédiaire](/help/assets/configure-pipelines/add-prod4.png)
 
-         * **Configuration de Dispatcher** - Le rôle du **responsable de déploiement** consiste à configurer un ensemble de chemins de contenu qui seront soit invalidés soit vidés du cache d’AEM Dispatcher lorsqu’un pipeline est exécuté. Ces actions de cache sont exécutées dans le cadre de l’étape du pipeline de déploiement, juste après le déploiement des packages de contenu. Ces paramètres utilisent le comportement standard d’AEM Dispatcher. Pour configurer :
+         * **Configuration de Dispatcher** - le rôle du **responsable de déploiement** consiste à configurer un ensemble de chemins de contenu qui seront soit invalidés soit vidés du cache d’AEM Dispatcher lorsqu’un pipeline est exécuté. Ces actions de cache sont exécutées dans le cadre de l’étape du pipeline de déploiement, juste après le déploiement des packages de contenu. Ces paramètres utilisent le comportement standard d’AEM Dispatcher. Pour configurer :
 
             1. Sous **CHEMIN**, fournissez un chemin d’accès au contenu.
             1. Sous **TYPE**, sélectionnez l’action à effectuer sur ce chemin.
@@ -108,19 +108,19 @@ Une fois que vous avez utilisé l’interface utilisateur [!UICONTROL Cloud Mana
          * **Options de déploiement** - vous pouvez définir les paramètres contrôlant le déploiement en production.
 
             * **Utiliser l’approbation GoLive** - un déploiement doit être approuvé manuellement par un utilisateur ayant le rôle de **propriétaire d’entreprise**, **chef de projet** ou **responsable de déploiement** via l’interface utilisateur [!UICONTROL Cloud Manager].
-            * **Planifié** - Cette option interrompt le pipeline avant le déploiement en production pour permettre sa planification. Si cette option est sélectionnée, le pipeline s’arrêtera après le déploiement dans l’environnement d’évaluation et demandera à l’utilisateur l’action à entreprendre.
+            * **Planifié** - cette option interrompt le pipeline avant le déploiement en production pour permettre sa planification. Si cette option est sélectionnée, le pipeline s’arrêtera après le déploiement dans l’environnement d’évaluation et demandera à l’utilisateur l’action à entreprendre.
                * **Maintenant** - cette option permet de déployer immédiatement en production, terminant ainsi le pipeline.
                * **Date** - cette option permet à l’utilisateur de planifier une heure à laquelle le déploiement doit être terminé.
                * **Arrêter l’exécution** - cette option interrompt le déploiement en production.
 
             >[!TIP]
             >
-            >Reportez-vous au document [Déploiement du code,](/help/using/code-deployment.md) pour savoir comment définir la planification du déploiement ou exécuter immédiatement le pipeline.
+            >Consultez le document [Code de déploiement](/help/using/code-deployment.md) pour découvrir comment définir le planning de déploiement ou exécuter le pipeline immédiatement.
 
             * **Solliciter la supervision de l’ingénieur support client (CSE)** - si cette option est choisie, un CSE est engagé pour véritablement démarrer le déploiement. Lors de la création ou de la modification d’un pipeline lorsque cette option est activée, le rôle **Responsable de déploiement** dispose des options suivantes.
 
                * **N’importe quel CSE** - cette option permet à tout CSE disponible de démarrer le déploiement.
-               * **Mon CSE** - Cette option permet uniquement au CSE spécifique affecté au client de démarrer le déploiement. Cela s’applique également au remplaçant désigné du CSE si le CSE attribué est indisponible.
+               * **Mon CSE** - cette option permet uniquement au CSE spécifique affecté au client de démarrer le déploiement. Cela s’applique également au remplaçant désigné du CSE si le CSE attribué est indisponible.
 
             ![Options de déploiement en production](/help/assets/configure-pipelines/prod-deploymentoptions.png)
 
@@ -140,7 +140,7 @@ Une fois que vous avez utilisé l’interface utilisateur [!UICONTROL Cloud Mana
 
    >[!TIP]
    >
-   >Reportez-vous au document [Test de qualité du code](/help/using/code-quality-testing.md#performance-testing) pour plus d’informations sur les options disponibles dans la section **Test d’évaluation** .
+   >Consultez le document [Test de qualité du code](/help/using/code-quality-testing.md#performance-testing) pour plus de détails sur les options disponibles dans l’onglet **Test d’évaluation**.
 
    1. Sous la section **Diffusion du contenu des sites/Poids de charge distribué**, vous définissez comment le test de performance des sites est configuré en fonction de la pondération des requêtes de page entre les trois ensembles de pages, qui peuvent être activés ou désactivés.
 
@@ -169,4 +169,4 @@ Une fois que vous avez utilisé l’interface utilisateur [!UICONTROL Cloud Mana
 
 ## Les étapes suivantes {#the-next-steps}
 
-Une fois que vous avez configuré le pipeline, vous devez déployer votre code. Consultez le document [Déploiement du code](/help/using/code-deployment.md) pour plus d’informations.
+Une fois que vous avez configuré le pipeline, vous devez déployer votre code. Consultez le document [Déploiement du code](/help/using/code-deployment.md) pour plus de détails.
