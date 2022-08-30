@@ -4,9 +4,9 @@ description: Voici les notes de mise à jour de la version 2022.8.0 de Cloud M
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 1c4fe7407dc059773cfd0c1779a11c1ba1acad22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '154'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
@@ -21,12 +21,12 @@ Cette page présente les notes de mise à jour de la version 2022.8.0 de [!UICO
 
 ## Date de publication {#release-date}
 
-La date de publication de [!UICONTROL Cloud Manager] La version 2022.8.0 est le 11 août 2022. La prochaine version est prévue pour le 9 septembre 2022.
+La date de publication de la version 2022.8.0 de [!UICONTROL Cloud Manager] est le 11 août 2022. La prochaine version est prévue pour le 9 septembre 2022.
 
 ## Nouveautés {#what-is-new}
 
-* Dans certains scénarios, un mécanisme de reprise silencieuse permet de s’assurer que le pipeline de déploiement ne génère pas d’état d’erreur.
-* [Archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) inclus dans Cloud Manager a été mis à jour vers la version 37.
+* Dans certains scénarios, un mécanisme de nouvel essai silencieux permet de s’assurer que le pipeline de déploiement ne génère pas d’état d’erreur.
+* [L’archétype du projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) inclus dans Cloud Manager a été mis à jour vers la version 37.
 
 ## Correctifs {#bug-fixes}
 
