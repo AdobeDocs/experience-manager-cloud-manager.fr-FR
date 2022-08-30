@@ -3,9 +3,9 @@ title: Présentation de Cloud Manager pour AMS
 description: Commencez ici pour découvrir Cloud Manager pour Adobe Managed Services (AMS) et comment il permet aux entreprises d’auto-gérer Adobe Experience Manager en mode cloud.
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
 source-git-commit: 14e35882765783b234ca35da14257279af5130a0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1311'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Commencez ici pour découvrir Cloud Manager pour Adobe Managed Services (AMS)
 >
 >Cette documentation décrit spécifiquement les fonctionnalités et les caractéristiques de Cloud Manager pour Adobe Managed Services (AMS).
 >
->Retrouvez la documentation équivalente pour les clients AEM as a Cloud Service dans la [Documentation d’AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/home.html).
+>Retrouvez la documentation équivalente pour les clients AEM as a Cloud Service dans la [Documentation d’AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/home.html?lang=fr).
 
 Avec Cloud Manager, votre équipe de développement bénéficie des fonctionnalités suivantes :
 
@@ -39,7 +39,7 @@ Avec Cloud Manager, votre équipe de développement bénéficie des fonctionnal
 
 * Connectivité de l’API pour compléter les processus DevOps existants.
 
-* Mise à l’échelle automatique qui détecte intelligemment la nécessité d’une capacité accrue et apporte automatiquement des segments Dispatcher/publication en ligne supplémentaires
+* La mise à l’échelle automatique détecte intelligemment la nécessité d’une capacité accrue et met automatiquement en ligne un ou plusieurs segments supplémentaires Dispatcher/de publication.
 
 L’image suivante illustre le flux du processus CI/CD utilisé dans [!UICONTROL Cloud Manager] :
 
@@ -77,57 +77,57 @@ Pour en savoir plus sur le déploiement de code et les vérifications de qualit�
 
 ## Fonctionnalités facultatives de Cloud Manager {#optional-features-in-cloud-manager}
 
-Cloud Manager propose des fonctionnalités avancées supplémentaires qui peuvent être utiles à votre projet en fonction de la configuration et des besoins de votre environnement. Si ces fonctionnalités vous intéressent, contactez votre ingénieur du service client ou votre représentant d’Adobe pour en discuter plus.
+Cloud Manager propose des fonctionnalités avancées supplémentaires qui peuvent être utiles à votre projet en fonction de la configuration et des besoins de votre environnement. Si ces fonctionnalités vous intéressent, veuillez contacter votre ingénieur du succès client (CSE) ou votre représentant Adobe pour en discuter.
 
 ### Mise à l’échelle automatique {#autoscaling}
 
-Lorsque l&#39;environnement de production est soumis à une charge exceptionnellement élevée, [!UICONTROL Cloud Manager] détecte la nécessité d’une capacité supplémentaire et apporte automatiquement de la capacité supplémentaire en ligne à l’aide de sa fonction de mise à l’échelle automatique.
+Lorsque l’environnement de production est soumis à une charge exceptionnellement élevée, [!UICONTROL Cloud Manager] détecte la nécessité d’augmenter la capacité et met automatiquement en ligne de la capacité supplémentaire grâce à sa fonction de mise à l’échelle automatique.
 
-Dans un tel cas, [!UICONTROL Cloud Manager] déclenche automatiquement le processus d’approvisionnement de mise à l’échelle automatique, envoie une notification de l’événement de mise à l’échelle automatique et met en ligne la capacité supplémentaire en quelques minutes. La capacité supplémentaire est configurée dans l’environnement de production, dans les mêmes régions et conformément aux spécifications système des noeuds Dispatcher/Publishing en cours d’exécution.
+Dans un tel cas, [!UICONTROL Cloud Manager] déclenche automatiquement le processus d’approvisionnement de mise à l’échelle automatique, envoie une notification de l’événement de mise à l’échelle automatique et met en ligne la capacité supplémentaire en quelques minutes. La capacité supplémentaire est fournie dans l’environnement de production, dans la ou les mêmes régions et conformément aux spécifications système des nœuds Dispatcher/de publication exécutés.
 
-La fonction de mise à l’échelle automatique s’applique uniquement au niveau Dispatcher/publication et est exécutée à l’aide d’une méthode de mise à l’échelle horizontale, avec au moins un segment supplémentaire d’une paire Dispatcher/publication jusqu’à dix segments au maximum. Toute capacité supplémentaire configurée est mise à l’échelle manuellement dans un délai de dix jours ouvrés, selon les indications de l’ingénieur chargé du succès client (CSE).
+La mise à l’échelle automatique s’applique uniquement au niveau du Dispatcher/de publication et s’exécute à l’aide d’une méthode de mise à l’échelle horizontale, avec au minimum un segment supplémentaire d’une paire Dispatcher/de publication et jusqu’à dix segments maximum. Toute capacité supplémentaire configurée est mise à l’échelle manuellement dans un délai de dix jours ouvrés, selon les indications de l’ingénieur chargé du succès client (CSE).
 
 >[!NOTE]
 >
->Si vous souhaitez déterminer si la mise à l’échelle automatique est appropriée pour votre application, contactez votre ingénieur du service client ou votre représentant Adobe.
+>Si vous souhaitez déterminer si la mise à l’échelle automatique est appropriée pour votre application, veuillez contacter votre CSE ou votre représentant Adobe.
 
 ### Déploiements bleu/vert {#blue-green}
 
-Le déploiement bleu/vert est une technique qui réduit les temps d’arrêt et les risques en exécutant deux environnements de production identiques appelés bleu/vert.
+Le déploiement bleu/vert est une technique qui réduit les temps d’interruption et les risques en exécutant deux environnements de production identiques appelés bleu/vert.
 
-À tout moment, un seul des environnements est actif, l’environnement en ligne diffusant tout le trafic de production. En général, le bleu est l’environnement en ligne et le vert est inactif.
+À tout moment, seul un des environnements est actif, et cet environnement actif diffuse tout le trafic de production. En général, le bleu est l’environnement actif et le vert est inactif.
 
 * Le déploiement bleu/vert est un module complémentaire des pipelines CI/CD de Cloud Manager dans lequel un deuxième ensemble d’instances de publication et de Dispatcher (vert) est créé et utilisé pour les déploiements. Les instances vertes sont ensuite associées à l’équilibreur de charge de production et les anciennes instances (bleues) sont supprimées et interrompues.
 * Cette implémentation de bleu/vert traite les instances comme transitoires et chaque itération d’un pipeline bleu/vert crée un nouvel ensemble de serveurs de publication et de Dispatcher.
-* Un équilibreur de charge vert sera créé dans le cadre de la configuration. Cet équilibreur de charge ne changera jamais et est ce vers quoi vous devez pointer votre URL verte ou &quot;test&quot;.
-* Lors d’un déploiement bleu/vert, une réplication exacte des niveaux de publication/Dispatcher existants sera créée.
+* Un équilibreur de charge vert sera créé dans le cadre de la configuration. Cet équilibreur de charge ne changera jamais et est ce vers quoi vous devez pointer votre URL verte ou « test ».
+* Lors d’un déploiement bleu/vert, une réplication exacte des niveaux de publication/Dispatcher existants est créée.
 
 #### Flux de déploiement bleu/vert {#flow}
 
-Lorsque le déploiement bleu/vert est activé, le flux de déploiement diffère du flux de déploiement Cloud Service standard.
+Lorsque le déploiement bleu/vert est activé, le flux de déploiement diffère du flux de déploiement du service cloud standard.
 
-| Étape | Déploiement bleu/vert | Déploiement Standard |
+| Étape | Déploiement bleu/vert | Déploiement standard |
 |---|---|---|
 | 1 | Déploiement vers l’auteur | Déploiement vers l’auteur |
-| 2 | Mettre en pause pour le test | - |
+| 2 | Mise en pause pour le test | - |
 | 3 | Une infrastructure verte est créée | - |
-| 4 | Déploiement sur les niveaux de publication/dispatcher verts | Déploiement vers l’éditeur |
-| 5 | Mettre en pause pour le test (jusqu’à 24 heures) | - |
-| 6 | Une infrastructure verte est ajoutée à l&#39;équilibreur de charge de production | - |
-| 7 | L’infrastructure bleue est supprimée de l’équilibreur de charge de production - |
-| 8 | L’infrastructure bleue est arrêtée automatiquement | - |
+| 4 | Déploiement vers le niveau de publication/Dispatcher vert | Déploiement vers l’éditeur |
+| 5 | Mise en pause pour le test (jusqu’à 24 heures) | - |
+| 6 | Une infrastructure verte est ajoutée à l’équilibreur de charge de production | - |
+| 7 | L’infrastructure bleue est supprimée de l’équilibreur de charge de production |
+| 8 | L’infrastructure bleue est automatiquement arrêtée | - |
 
-#### Mise en oeuvre bleue/verte {#implementing}
+#### Implémentation bleue/verte {#implementing}
 
-Tous les utilisateurs d’AMS qui utilisent Cloud Manager pour les déploiements en production peuvent utiliser le déploiement bleu/vert. Toutefois, l’utilisation du déploiement bleu/vert nécessite une validation supplémentaire de vos environnements et une configuration par un ingénieur du service client Adobe.
+Tous les utilisateurs d’AMS qui utilisent Cloud Manager pour les déploiements en production peuvent utiliser le déploiement bleu/vert. Toutefois, l’utilisation du déploiement bleu/vert nécessite une validation supplémentaire de vos environnements et une configuration par un CSE Adobe.
 
-Si le déploiement bleu/vert vous intéresse, veuillez tenir compte des exigences et limites suivantes et contactez votre ingénieur du service client.
+Si le déploiement bleu/vert vous intéresse, veuillez tenir compte des exigences et limites suivantes et contacter votre CSE.
 
-#### Exigences et restrictions {#limitations}
+#### Exigences et limites {#limitations}
 
 * Le bleu/vert est uniquement disponible pour les paires publication/Dispatcher.
 * Les paires Aperçu de Dispatcher/publication ne font pas partie des déploiements bleu/vert.
 * Chaque paire Dispatcher/publication est identique à toutes les autres paires Dispatcher/publication.
 * Le bleu/vert n’est disponible que dans l’environnement de production.
 * Le bleu/vert est disponible dans AWS ainsi que dans Azure.
-* Le bleu/vert n’est pas disponible que pour les clients d’Assets.
+* Le bleu/vert n’est pas disponible pour les clients d’Assets uniquement.
