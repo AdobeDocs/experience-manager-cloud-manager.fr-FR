@@ -2,10 +2,10 @@
 title: Première connexion
 description: Consultez cette page si vous avez terminé les configurations générales et que vous êtes prêt à utiliser Cloud Manager pour la première fois.
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
-source-git-commit: d033b7cf53d4d9faf074f1dc09e2958eb91afe3b
-workflow-type: ht
-source-wordcount: '194'
-ht-degree: 100%
+source-git-commit: 43d05eed9c2e7c4cf6c3becdbc3e4522428722b7
+workflow-type: tm+mt
+source-wordcount: '187'
+ht-degree: 93%
 
 ---
 
@@ -20,7 +20,7 @@ Une fois que vous avez établi la configuration générale pour [!UICONTROL Clou
 
 ## Première connexion {#logging-in-for-the-first-time}
 
-1. Connectez-vous à Adobe [!UICONTROL Experience Cloud]. La liste des programmes s’affiche alors.
+1. Connexion à Adobe [!UICONTROL Experience Cloud] et vous voyez la liste des programmes.
 
 1. Sélectionnez le programme.
 
@@ -34,7 +34,7 @@ Une fois que vous avez établi la configuration générale pour [!UICONTROL Clou
 
 1. Cliquez sur **Configuration du programme** pour configurer la description de votre programme et définir les indicateurs de performances clés (ICP).
 
-Veuillez vous reporter au document [Configuration du programme](https://helpx.adobe.com/fr/experience-manager/cloud-manager/using/program-setup.html) pour connaître les étapes suivantes de la configuration de votre programme.
+Veuillez vous reporter au document [Configuration du programme](/help/getting-started/program-setup.md) pour connaître les étapes suivantes de la configuration de votre programme.
 
 ## Activité de Cloud Manager {#activity}
 
