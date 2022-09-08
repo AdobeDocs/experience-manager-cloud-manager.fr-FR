@@ -1,19 +1,19 @@
 ---
-title: Notes de mise à jour de la version 2022.8.0
-description: Voici les notes de mise à jour de la version 2022.8.0 de Cloud Manager.
+title: Notes de mise à jour de la version 2022.9.0
+description: Voici les notes de mise à jour de la version 2022.9.0 de Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 1c4fe7407dc059773cfd0c1779a11c1ba1acad22
-workflow-type: ht
-source-wordcount: '154'
-ht-degree: 100%
+source-git-commit: e74d386d0b2d50a7e276bb7ead7594ef448742ae
+workflow-type: tm+mt
+source-wordcount: '200'
+ht-degree: 35%
 
 ---
 
 
-# Notes de mise à jour de la version 2022.8.0 de Cloud Manager {#release-notes}
+# Notes de mise à jour de la version 2022.9.0 de Cloud Manager {#release-notes}
 
-Cette page présente les notes de mise à jour de la version 2022.8.0 de [!UICONTROL Cloud Manager].
+Cette page présente les notes de mise à jour de la version 2022.9.0 de [!UICONTROL Cloud Manager].
 
 >[!NOTE]
 >
@@ -21,14 +21,16 @@ Cette page présente les notes de mise à jour de la version 2022.8.0 de [!UICO
 
 ## Date de publication {#release-date}
 
-La date de publication de la version 2022.8.0 de [!UICONTROL Cloud Manager] est le 11 août 2022. La prochaine version est prévue pour le 9 septembre 2022.
+La date de publication de [!UICONTROL Cloud Manager] la version 2022.9.0 est le 8 septembre 2022. La prochaine version est prévue pour le 6 octobre 2022.
 
 ## Nouveautés {#what-is-new}
 
-* Dans certains scénarios, un mécanisme de nouvel essai silencieux permet de s’assurer que le pipeline de déploiement ne génère pas d’état d’erreur.
-* [L’archétype du projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) inclus dans Cloud Manager a été mis à jour vers la version 37.
+* Prise en charge de la mise à l’échelle automatique horizontale multi-région par Cloud Manager.
+* Nouvelle carte Page d’accueil personnalisée pour les utilisateurs disposant uniquement d’un rôle utilisateur Cloud Manager qui les guide sur la navigation vers les environnements AEM et l’accès restreint aux programmes.
+* Les clients ne disposant d’aucun rôle Cloud Manager ne pourront pas accéder aux détails du programme. Ils peuvent toutefois accéder aux points de fin de création à partir de la page d’entrée CM.
+* Éliminez les échecs de pipeline résultant d’échecs de reprise réalisés en renforçant la résilience.
 
 ## Correctifs {#bug-fixes}
 
-* Certains cas d’échecs de création de référentiel peu fréquents ont été rendus plus résilients.
-* Les occurrences rares des erreurs de configuration de l’organisation VSTS sont désormais réduites en raison de nouvelles tentatives introduites.
+* Amélioration des commentaires des clients concernant la création de l’application d’AEM client lorsque Maven est confronté à des problèmes de connectivité avec les référentiels privés.
+* Dans de rares cas, lorsque le système de contrôle de l’intégrité n’est pas en mesure de récupérer un score d’intégrité valide, un événement de mise à l’échelle automatique ne sera pas déclenché.
