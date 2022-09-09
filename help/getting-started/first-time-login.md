@@ -2,10 +2,10 @@
 title: Première connexion
 description: Consultez cette page si vous avez terminé les configurations générales et que vous êtes prêt à utiliser Cloud Manager pour la première fois.
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
-source-git-commit: 43d05eed9c2e7c4cf6c3becdbc3e4522428722b7
+source-git-commit: d8f16deacfe52c76ff6b0aee0344d50bfe2b9c74
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 93%
+source-wordcount: '261'
+ht-degree: 66%
 
 ---
 
@@ -39,3 +39,7 @@ Veuillez vous reporter au document [Configuration du programme](/help/getting-st
 ## Activité de Cloud Manager {#activity}
 
 Cloud Manager fournit une vue consolidée de l’activité d’un programme, répertoriant toutes les exécutions de pipeline CI/CD, tant en production qu’en hors production, offrant ainsi une transparence des activités passées et présentes.
+
+>[!NOTE]
+>
+>Par défaut, un utilisateur ayant accès à un environnement AEM dispose également du rôle Utilisateur Cloud Manager. Ce rôle en lui-même n’est pas suffisant pour donner à l’utilisateur l’accès à la vue des détails du programme. Un utilisateur disposant uniquement du rôle d’utilisateur Cloud Manager peut accéder, via les options de menu du programme, à l’URL de création de l’environnement AEM (s’il existe des environnements). Ces utilisateurs doivent contacter leur administrateur s’ils souhaitent obtenir un accès au niveau du programme.
