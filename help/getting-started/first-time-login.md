@@ -5,7 +5,7 @@ exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 source-git-commit: d8f16deacfe52c76ff6b0aee0344d50bfe2b9c74
 workflow-type: tm+mt
 source-wordcount: '261'
-ht-degree: 66%
+ht-degree: 71%
 
 ---
 
@@ -20,7 +20,7 @@ Une fois que vous avez établi la configuration générale pour [!UICONTROL Clou
 
 ## Première connexion {#logging-in-for-the-first-time}
 
-1. Connexion à Adobe [!UICONTROL Experience Cloud] et vous voyez la liste des programmes.
+1. Connectez-vous à Adobe [!UICONTROL Experience Cloud]. La liste des programmes s’affichera alors.
 
 1. Sélectionnez le programme.
 
