@@ -3,9 +3,9 @@ title: Première connexion
 description: Consultez cette page si vous avez terminé les configurations générales et que vous êtes prêt à utiliser Cloud Manager pour la première fois.
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 source-git-commit: d8f16deacfe52c76ff6b0aee0344d50bfe2b9c74
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '261'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -42,4 +42,4 @@ Cloud Manager fournit une vue consolidée de l’activité d’un programme, r�
 
 >[!NOTE]
 >
->Par défaut, un utilisateur ayant accès à un environnement AEM dispose également du rôle Utilisateur Cloud Manager. Ce rôle en lui-même n’est pas suffisant pour donner à l’utilisateur l’accès à la vue des détails du programme. Un utilisateur disposant uniquement du rôle d’utilisateur Cloud Manager peut accéder, via les options de menu du programme, à l’URL de création de l’environnement AEM (s’il existe des environnements). Ces utilisateurs doivent contacter leur administrateur s’ils souhaitent obtenir un accès au niveau du programme.
+>Par défaut, un utilisateur ayant accès à un environnement AEM dispose également du rôle d’utilisateur Cloud Manager. Ce rôle en lui-même n’est pas suffisant pour donner à l’utilisateur l’accès à la vue des détails du programme. Un utilisateur disposant uniquement du rôle d’utilisateur Cloud Manager peut accéder à l’URL de création de l’environnement AEM (s’il existe des environnements) à l’aide des options de menu du programme. Ces utilisateurs doivent contacter leur administrateur s’ils souhaitent obtenir l’accès au niveau du programme.
