@@ -2,10 +2,10 @@
 title: Notifications
 description: Découvrez comment Cloud Manager vous informe des événements importants.
 exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
-source-git-commit: 22efb00c7e3ffee8829073dbb498f05a9114807d
-workflow-type: ht
-source-wordcount: '261'
-ht-degree: 100%
+source-git-commit: 804b537bbd61105a92b42960d44ecedabfb13099
+workflow-type: tm+mt
+source-wordcount: '573'
+ht-degree: 24%
 
 ---
 
@@ -26,26 +26,72 @@ Les notifications s’affichent dans une barre latérale dans [!UICONTROL Cloud�
 
 Les nouvelles notifications sont signalées sur l’icone en forme de cloche dans l’en-tête.
 
-![Icône de notifications](/help/assets/image2018-7-12_11-52-40.png)
+![Icône de notifications](/help/assets/notifications-bell-badged.png)
 
-Cliquez sur l’icône en forme de cloche pour ouvrir la barre latérale et afficher les notifications. La barre latérale répertorie les notifications les plus récentes.
+Cliquez sur l’icône en forme de cloche pour ouvrir la barre latérale et afficher les notifications. Le **Notifications** dans la barre latérale répertorie les notifications les plus récentes, telles que les confirmations de déploiement. Les notifications concernent vos environnements.
 
-![Barre latérale de notifications](/help/assets/screen_shot_2018-07-20at91406pm.png)
+![Barre latérale de notifications](/help/assets/notifications-activities.png)
 
-Cliquez sur une notification, puis sur **Afficher les détails** pour accéder à la page des détails de l’exécution du pipeline.
+Le **Annonces** comprend les annonces de produits Adobes. Les annonces concernent le produit.
 
-![Afficher les détails](/help/assets/screen_shot_2018-08-14at43503pm.png)
+![Barre latérale de notifications](/help/assets/notificaitons-announcements.png)
 
-## Notifications par e-mail {#email-notifications}
+Cliquez sur une notification ou une annonce pour en afficher les détails. Les notifications liées à des activités telles que les déploiements de pipeline vous permettent d’accéder au détail de cette activité, comme la fenêtre d’exécution du pipeline.
 
-Par défaut, les notifications sont disponibles dans l’interface utilisateur web de toutes les solutions [!UICONTROL Experience Cloud] d’Adobe. Les utilisateurs individuels peuvent également opter pour l’envoi de ces notifications par e-mail.
+Cliquez sur le bouton **Afficher tout** au bas du panneau pour afficher toutes les annonces dans votre boîte de réception.
 
-Cliquez sur l’icône en forme d’engrenage en bas de la barre latérale de notifications.
+Cliquez sur le bouton **Tout marquer comme lu** au bas du panneau pour marquer toutes les notifications non lues comme lues et effacer le badge de l’icône représentant une cloche.
 
-![Icône Paramètres de notification](/help/assets/image2018-7-12_12-8-19.png)
+## Configuration des notifications {#configuration}
 
-L’utilisateur sera dirigé vers l’écran **Préférences de notifications** dans [!UICONTROL Experience Cloud] d’Adobe.
+Vous pouvez personnaliser le mode de réception des notifications et les notifications que vous recevez.
 
-Les utilisateurs peuvent activer les notifications par e-mail et (facultativement) sélectionner les types de notifications qu’ils souhaitent recevoir par e-mail. Vous pouvez également choisir de recevoir vos notifications sous la forme d’un résumé quotidien ou hebdomadaire d’[!UICONTROL Experience Cloud] d’Adobe, comme illustré ci-dessous :
+Cliquez sur l’icône d’engrenage en haut de la barre latérale des notifications.
 
-![Paramètres de notification](/help/assets/image2018-7-12_12-10-51.png)
+![Icône Paramètres de notification](/help/assets/notifications-configuration.png)
+
+Cela ouvre la fenêtre **Préférences Experience Cloud** où vous pouvez définir vos abonnements aux notifications et comment vous recevez les notifications.
+
+### Abonnements {#subscriptions}
+
+Les abonnements définissent les produits pour lesquels vous recevez des notifications et les notifications.
+
+![Abonnements aux notifications](/help/assets/notifications-subscriptions.png)
+
+Par défaut, vous recevrez toutes les notifications pour tous les produits. Cliquez sur **Personnaliser** en regard d’un produit pour définir les types de notifications que vous recevez pour ce produit.
+
+![Personnalisation de l’abonnement aux notifications](/help/assets/notifications-subscriptions-customize.png)
+
+### Priorité {#priority}
+
+Les alertes de priorité seront marquées d’une **HIGH** et peut être configuré pour être reçu exclusivement en tant qu’alertes. Dans le **Priorité** , vous pouvez définir les catégories qui remplissent les critères de notification de priorité.
+
+![Priorité des notifications](/help/assets/notifications-priority.png)
+
+Utilisez le menu déroulant pour ajouter à la liste des catégories qui remplissent les critères de priorité. Cliquez sur le X en regard des noms de catégorie pour les supprimer.
+
+### Alertes {#alerts}
+
+Les alertes s’affichent dans le coin supérieur droit de la fenêtre pendant quelques secondes. Utilisez la variable **Alertes** pour définir les notifications pour lesquelles vous recevez des alertes.
+
+![Alertes de notification](/help/assets/notifications-alerts.png)
+
+Vous pouvez définir le comportement des alertes.
+
+* **Afficher les alertes pour** - Définit les types de notifications qui déclenchent des alertes
+* **Les alertes doivent rester à l’écran jusqu’à ce que je les rejette.** : contrôle si les alertes doivent persister, sauf si vous les ignorez activement.
+* **Durée** - Définit la durée pendant laquelle l’alerte doit rester à l’écran si vous n’avez pas choisi de la conserver.
+
+## Courriels {#emails}
+
+Les notifications sont disponibles dans l’interface utilisateur web d’ dans tous les Adobes [!UICONTROL Experience Cloud] solutions. Vous pouvez également choisir d’envoyer ces notifications par courrier électronique dans la variable **Emails** .
+
+![Emails de notification](/help/assets/notifications-emails.png)
+
+Par défaut, aucun email n&#39;est envoyé. Vous pouvez choisir de recevoir des emails comme suit :
+
+* Instant
+* Quotidienne
+* Hebdomadaire
+
+When **Notifications instantanées** est choisie, les emails sont envoyés immédiatement pour chaque notification. Pour **Résumé quotidien** et **Résumé hebdomadaire** vous pouvez choisir le moment où votre résumé quotidien est envoyé, le jour et le moment où votre résumé hebdomadaire est envoyé.
