@@ -2,7 +2,7 @@
 title: Notifications
 description: Découvrez comment Cloud Manager vous informe des événements importants.
 exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
-source-git-commit: 804b537bbd61105a92b42960d44ecedabfb13099
+source-git-commit: e767d9ff5e3df0047d2cf47d7b0842854101a01a
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 24%
@@ -82,7 +82,7 @@ Vous pouvez définir le comportement des alertes.
 * **Les alertes doivent rester à l’écran jusqu’à ce que je les rejette.** : contrôle si les alertes doivent persister, sauf si vous les ignorez activement.
 * **Durée** - Définit la durée pendant laquelle l’alerte doit rester à l’écran si vous n’avez pas choisi de la conserver.
 
-## Courriels {#emails}
+### Courriels {#emails}
 
 Les notifications sont disponibles dans l’interface utilisateur web d’ dans tous les Adobes [!UICONTROL Experience Cloud] solutions. Vous pouvez également choisir d’envoyer ces notifications par courrier électronique dans la variable **Emails** .
 
