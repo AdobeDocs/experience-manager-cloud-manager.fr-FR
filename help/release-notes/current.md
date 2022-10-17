@@ -4,9 +4,9 @@ description: Voici les notes de mise à jour de la version 2022.10.0 de Cloud 
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 69c1c8a1136c037a5eea635a75f2d4d187f2ac4d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '124'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
@@ -21,12 +21,12 @@ Cette page présente les notes de mise à jour de la version 2022.10.0 de [!UIC
 
 ## Date de publication {#release-date}
 
-La date de publication de [!UICONTROL Cloud Manager] version 2022.10.0 du 6 octobre 2022. La prochaine version est prévue pour le 3 novembre 2022.
+La date de publication de la version 2022.10.0 de [!UICONTROL Cloud Manager] est le 6 octobre 2022. La prochaine version est prévue pour le 3 novembre 2022.
 
 ## Nouveautés {#what-is-new}
 
-* La version de la variable [AEM archétype de projet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) La version 39 de a été mise à jour pour utiliser Cloud Manager.
+* L’[archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) utilisé par Cloud Manager a été mis à jour à la version 39.
 
 ## Correctifs {#bug-fixes}
 
-* La fiabilité des tests de performances d’Assets a été améliorée en ajoutant des reprises dans certaines conditions.
+* La fiabilité des tests de performances d’Assets a été améliorée grâce à l’ajout de reprises dans certaines conditions.
