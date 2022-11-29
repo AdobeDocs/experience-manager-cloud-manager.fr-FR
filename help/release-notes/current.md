@@ -1,19 +1,19 @@
 ---
-title: Notes de mise à jour de la version 2022.11.0 d’
-description: Voici les notes de mise à jour de la version 2022.11.0 de Cloud Manager.
+title: Notes de mise à jour de la version 2022.12.0 d’
+description: Voici les notes de mise à jour de la version 2022.12.0 de Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 2defbdbee0221540f66f7d824ccf1bd33179c9d9
+source-git-commit: 83a404c1f54bc6a791a4c13a22b7a78f83755869
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 58%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# Notes de mise à jour de la version 2022.11.0 de Cloud Manager {#release-notes}
+# Notes de mise à jour de la version 2022.12.0 de Cloud Manager {#release-notes}
 
-Cette page présente les notes de mise à jour de la version 2022.11.0 de [!UICONTROL Cloud Manager].
+Cette page présente les notes de mise à jour de la version 2022.12.0 de [!UICONTROL Cloud Manager].
 
 >[!NOTE]
 >
@@ -21,12 +21,13 @@ Cette page présente les notes de mise à jour de la version 2022.11.0 de [!UIC
 
 ## Date de publication {#release-date}
 
-La date de publication de [!UICONTROL Cloud Manager] version 2022.11.0 du 3 novembre 2022. La prochaine version est prévue pour le 29 novembre 2022.
+La date de publication de [!UICONTROL Cloud Manager] version 2022.12.0 du 29 novembre 2022. La prochaine version est prévue pour le 19 janvier 2023.
 
 ## Nouveautés {#what-is-new}
 
-* Lorsqu’un environnement associé à un pipeline a un état qui ne permet pas l’exécution du pipeline, l’action d’exécution est désactivée avec une info-bulle d’explication.
+* La mise à l’échelle automatique multi-région est désormais disponible. Certaines restrictions peuvent s&#39;appliquer.
+* Amélioration de la disponibilité et de la fiabilité de [Pipelines Cloud Manager](/help/overview/ci-cd-pipelines.md) ont été faites.
 
 ## Correctifs {#bug-fixes}
 
-* Les commentaires pendant le pipeline de modification de production ont été améliorés pour capturer les occurrences peu fréquentes d’un ou de plusieurs environnements manquants.
+* Une modification a été apportée pour empêcher une `PATCH /program//environment//variables` requête pour les environnements avec la propriété `FAILED` statut.
