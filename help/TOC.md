@@ -63,7 +63,7 @@ ht-degree: 100%
 + Notes de mise à jour {#release-notes}
    + [Notes de mise à jour de la version actuelle](release-notes/current.md)
    + 2022 {#2022}
-      + [Notes de mise à jour de la version 2022.11.0 d’](release-notes/2022/2022-11-0.md)
+      + [Notes de mise à jour de la version 2022.11.0](release-notes/2022/2022-11-0.md)
       + [Notes de mise à jour de la version 2022.10.0](release-notes/2022/2022-10-0.md)
       + [Notes de mise à jour de la version 2022.9.0](release-notes/2022/2022-9-0.md)
       + [Notes de mise à jour de la version 2022.8.0](release-notes/2022/2022-8-0.md)
