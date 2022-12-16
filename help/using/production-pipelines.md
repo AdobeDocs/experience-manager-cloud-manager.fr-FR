@@ -3,9 +3,9 @@ title: Configurer des pipelines de production
 description: Découvrez comment créer et configurer des pipelines de production à l’aide de Cloud Manager afin de déployer votre code.
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 source-git-commit: 39b38da17ed1cadf4f2e9633a9e76b537325316f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1302'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -94,8 +94,8 @@ Une fois que vous avez utilisé l’interface utilisateur [!UICONTROL Cloud Mana
             1. Sous **CHEMIN**, fournissez un chemin d’accès au contenu.
             1. Sous **TYPE**, sélectionnez l’action à effectuer sur ce chemin.
 
-               * **Purge** - Effectuez une suppression du cache.
-               * **Invalider** - Effectuez une invalidation du cache, comme lorsque le contenu est activé d’une instance de création vers une instance de publication.
+               * **Purge** - videz le cache.
+               * **Invalider** - effectuez une invalidation du cache, comme lorsque le contenu est activé d’une instance de création vers une instance de publication.
             1. Cliquez sur **Ajouter un chemin** pour ajouter votre chemin spécifié. Vous pouvez ajouter jusqu’à 100 chemins par environnement.
 
          ![Configuration de Dispatcher](/help/assets/configure-pipelines/dispatcher-stage.png)
