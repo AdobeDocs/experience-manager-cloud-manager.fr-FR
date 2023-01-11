@@ -2,10 +2,10 @@
 title: Environnement de création
 description: Découvrez l’environnement de création spécialisé, dans lequel les utilisateurs Cloud Manager peuvent créer et tester votre code.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: 4c051cd1696f8a00d0278131c9521ad4dcb956a3
-workflow-type: ht
-source-wordcount: '1044'
-ht-degree: 100%
+source-git-commit: 60a6fd062a3878230dafdc34d9ce289ade361120
+workflow-type: tm+mt
+source-wordcount: '1139'
+ht-degree: 91%
 
 ---
 
@@ -127,6 +127,28 @@ Pour la prise en charge, Cloud Manager ajoute des variables d’environnement s
 | `CM_PROGRAM_ID` | Identifiant numérique de programme |
 | `CM_PROGRAM_NAME` | Nom du programme |
 | `ARTIFACTS_VERSION` | Pour un pipeline d’évaluation ou de production, la version synthétique générée par Cloud Manager |
+
+### Disponibilité des variables d’environnement standard {#availability}
+
+Les variables d’environnement standard peuvent être utilisées à plusieurs endroits.
+
+#### Création, aperçu et publication {#author-preview-publish}
+
+Les variables d’environnement standard et les secrets peuvent être utilisés dans les environnements de création, de prévisualisation et de publication.
+
+#### Dispatcher {#dispatcher}
+
+Seules les variables d’environnement régulières peuvent être utilisées sur le Dispatcher. Les secrets ne peuvent pas être utilisés.
+
+Toutefois, les variables d’environnement ne peuvent pas être utilisées dans `IfDefine` directives.
+
+>[!TIP]
+>
+>Vous devez valider l’utilisation des variables d’environnement avec la variable [dispatcher localement](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) avant le déploiement.
+
+#### Configurations OSGi {#osgi}
+
+Les variables d’environnement standard et les secrets peuvent être utilisés dans les configurations OSGi.
 
 ### Variables de pipeline {#pipeline-variables}
 
