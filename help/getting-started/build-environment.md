@@ -5,7 +5,7 @@ exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
 source-git-commit: 42cafc03a607ace183d58adbe1c397c1a6c5c22f
 workflow-type: tm+mt
 source-wordcount: '1152'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -132,7 +132,7 @@ Pour la prise en charge, Cloud Manager ajoute des variables d’environnement s
 
 Les variables d’environnement standard peuvent être utilisées à plusieurs endroits.
 
-#### Création, aperçu et publication {#author-preview-publish}
+#### Créer, prévisualiser et publier {#author-preview-publish}
 
 Les variables d’environnement standard et les secrets peuvent être utilisés dans les environnements de création, de prévisualisation et de publication.
 
@@ -140,11 +140,11 @@ Les variables d’environnement standard et les secrets peuvent être utilisés 
 
 Seules les variables d’environnement standard peuvent être utilisées avec [Dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) Les secrets ne peuvent pas être utilisés.
 
-Toutefois, les variables d’environnement ne peuvent pas être utilisées dans `IfDefine` directives.
+Toutefois, les variables d’environnement ne peuvent pas être utilisées dans les directives `IfDefine`.
 
 >[!TIP]
 >
->Vous devez valider l’utilisation des variables d’environnement avec la variable [dispatcher localement](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) avant le déploiement.
+>Vous devez valider l’utilisation des variables d’environnement avec le [dispatcher localement](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=fr) avant le déploiement.
 
 #### Configurations OSGi {#osgi}
 
