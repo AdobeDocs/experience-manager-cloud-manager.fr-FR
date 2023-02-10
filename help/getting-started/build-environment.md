@@ -3,9 +3,9 @@ title: Environnement de création
 description: Découvrez l’environnement de création spécialisé, dans lequel les utilisateurs Cloud Manager peuvent créer et tester votre code.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
 source-git-commit: 42cafc03a607ace183d58adbe1c397c1a6c5c22f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1152'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -138,7 +138,7 @@ Les variables d’environnement standard et les secrets peuvent être utilisés 
 
 #### Dispatcher {#dispatcher}
 
-Seules les variables d’environnement standard peuvent être utilisées avec [Dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) Les secrets ne peuvent pas être utilisés.
+Seules les variables d’environnement normales peuvent être utilisées avec [le Dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) Les secrets ne peuvent pas être utilisés.
 
 Toutefois, les variables d’environnement ne peuvent pas être utilisées dans les directives `IfDefine`.
 
@@ -148,7 +148,7 @@ Toutefois, les variables d’environnement ne peuvent pas être utilisées dans 
 
 #### Configurations OSGi {#osgi}
 
-Vous pouvez utiliser les variables et secrets d’environnement standard dans [Configurations OSGi.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html?lang=fr)
+Les variables d’environnement normales et les secrets peuvent être utilisés dans les [configurations OSGi.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html?lang=fr)
 
 ### Variables de pipeline {#pipeline-variables}
 
