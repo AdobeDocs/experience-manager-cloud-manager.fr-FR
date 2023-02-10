@@ -4,9 +4,9 @@ description: Voici les notes de mise à jour de la version 2023.1.0 de Cloud M
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: dc534e6339f910014a3edbd684f7b1535079f039
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '164'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
@@ -21,14 +21,14 @@ Cette page présente les notes de mise à jour de la version 2023.1.0 de [!UICO
 
 ## Date de publication {#release-date}
 
-La date de publication de la version 2023.1.0 de [!UICONTROL Cloud Manager] est le 19 janvier 2023. La prochaine version est prévue pour le 16 février 2023.
+La date de publication de la version 2023.1.0 de [!UICONTROL Cloud Manager] est le 19 janvier 2023. La prochaine version est prévue pour le 16 février 2023.
 
 ## Nouveautés {#what-is-new}
 
-* Prise en charge de [copie de contenu en libre-service](/help/using/content-copy.md) sera disponible par le biais d’un déploiement échelonné à la suite de cette version. Certaines restrictions peuvent s’appliquer.
+* La prise en charge de la [copie de contenu en libre-service](/help/using/content-copy.md) sera disponible par le biais d’un déploiement échelonné à la suite de cette version. Certaines restrictions peuvent s’appliquer.
 * Dans les listes d’environnements et d’exécutions de pipeline, vous pouvez désormais accéder aux détails en cliquant sur la ligne individuelle.
-* Des améliorations ont été apportées à la convivialité en mettant à jour les styles de curseur qui font la distinction entre l’action des utilisateurs et le pointeur par défaut.
+* L’utilisation a fait l’objet d’améliorations en mettant à jour les styles de curseurs, qui font la distinction entre l’action des utilisateurs et le pointeur par défaut.
 
 ## Correctifs {#bug-fixes}
 
-* Cloud Manager empêche deux exécutions de pipeline de commencer (ou presque) en même temps, évitant ainsi les échecs de pipeline.
+* Cloud Manager empêche deux exécutions de pipeline de commencer en même temps (ou presque), évitant ainsi les échecs de pipeline.
