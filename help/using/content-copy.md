@@ -1,10 +1,10 @@
 ---
 title: Outil de copie de contenu
 description: L’outil de copie de contenu de Cloud Manager permet aux utilisateurs de copier du contenu modifiable à la demande à partir de leurs environnements de production AEM vers des environnements inférieurs à des fins de test.
-source-git-commit: 360cbf7e3a21e530a4e43f13f6d414dae4afa104
-workflow-type: ht
-source-wordcount: '1017'
-ht-degree: 100%
+source-git-commit: 7ab5bdea2b388f3e9e199a6d32a1a80977eba35b
+workflow-type: tm+mt
+source-wordcount: '1074'
+ht-degree: 93%
 
 ---
 
@@ -81,6 +81,11 @@ Pour qu’un contenu puisse être copié, un jeu de contenu doit être défini. 
 
 Le jeu de contenu peut désormais être utilisé pour copier du contenu entre des environnements.
 
+>[!NOTE]
+>
+>Vous pouvez ajouter jusqu’à 50 chemins dans un jeu de contenu.
+>Il n’existe aucune limitation sur les chemins exclus.
+
 ## Modification d’un jeu de contenu {#edit-content-set}
 
 Procédez de la même façon que lors de la création d’une étape de contenu. Au lieu d’appuyer ou de cliquer sur **Ajouter un jeu de contenu**, sélectionnez un jeu existant dans la console, puis sélectionnez **Modifier** dans le menu représentant des points de suspension.
@@ -99,7 +104,7 @@ Une fois qu’un jeu de contenu a été créé, vous pouvez l’utiliser pour co
 
 1. Accédez à la page **Jeux de contenu** à partir de l’écran **Environnements**.
 
-1. Sélectionnez un jeu de contenu dans la console, puis sélectionnez **Copier le contenu** dans le menu représentant des points de suspension.
+1. Sélectionnez un jeu de contenu dans la console, puis sélectionnez **Copier le contenu** dans le menu points de suspension.
 
    ![Copier le contenu](/help/assets/copy-content.png)
 
@@ -112,6 +117,8 @@ Une fois qu’un jeu de contenu a été créé, vous pouvez l’utiliser pour co
 
 
 1. Dans la boîte de dialogue **Copier le contenu**, spécifiez la source et la destination de votre action de copie de contenu.
+
+1. Vous pouvez choisir de supprimer ou de conserver les chemins d’exclusion dans l’environnement cible. Case à cocher `Do not delete exclude paths from destination` si vous souhaitez conserver les chemins d’exclusion spécifiés dans le jeu de contenu. Si cette case n’est pas cochée, les chemins d’exclusion sont supprimés dans l’environnement cible.
 
    ![Copie de contenu](/help/assets/copying-content.png)
 
@@ -150,7 +157,7 @@ L’outil de copie de contenu présente les limites suivantes.
 * Une copie de contenu ne peut pas être effectuée sur plusieurs programmes.
 * L’exécution simultanée d’opérations de copie de contenu sur le même environnement n’est pas possible.
 * Une copie de contenu ne peut pas être effectuée si une opération principale est en cours d’exécution dans l’environnement de destination ou source, tel qu’un pipeline CI/CD.
-* Vous pouvez spécifier jusqu’à dix chemins d’accès par jeu de contenu. Il n’existe aucune limitation sur les chemins exclus.
+* Jusqu’à cinquante chemins peuvent être spécifiés par jeu de contenu. Il n’existe aucune limitation sur les chemins exclus.
 * L’outil de copie de contenu ne doit pas être utilisé comme outil de clonage ou de mise en miroir, car il ne peut pas effectuer le suivi du contenu déplacé ou supprimé sur la source.
 * L’outil de copie de contenu ne dispose d’aucune fonctionnalité de contrôle de version et ne peut pas détecter automatiquement le contenu modifié ou nouvellement créé dans l’environnement source dans un jeu de contenu depuis la dernière opération de copie de contenu.
    * Si vous souhaitez mettre à jour votre environnement de destination avec des modifications de contenu depuis la dernière opération de copie de contenu uniquement, vous devez créer un jeu de contenu. Dans ce jeu, spécifiez les chemins d’accès sur l’instance source où des modifications ont été apportées depuis la dernière opération de copie de contenu.
