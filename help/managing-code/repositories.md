@@ -3,9 +3,9 @@ title: Référentiels Cloud Manager
 description: Découvrez comment créer, modifier et accéder à des référentiels pour vos programmes Cloud Manager.
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
 source-git-commit: 63cbcf8724a840efa67b8fafc4c321e04a5d70d9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '796'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Pour accéder à votre référentiel, utilisez le bouton **Accéder aux informat
 1. Cliquez sur le bouton **Accéder aux informations sur le référentiel** pour ouvrir une boîte de dialogue qui affiche les éléments suivants :
 
    * URL vers le référentiel Git ;
-   * Nom d’utilisateur
+   * Nom d’utilisateur ou d’utilisatrice
    * mot de passe ;
    * commande Git à exécuter pour cloner le référentiel localement.
 
@@ -81,19 +81,19 @@ Pour modifier et afficher les référentiels dans Cloud Manager, procédez comm
 
 1. Sur la page **Présentation du programme**, cliquez sur l’onglet **Référentiels** et accédez à la page **Référentiels**. Ici, vous pouvez afficher les détails de vos référentiels existants.
 
-1. Sélectionnez le référentiel et cliquez sur le bouton représentant des points de suspension à l’extrémité droite du tableau pour **Copier l’URL du référentiel** ou **Afficher et mettre à jour** votre référentiel.
+1. Sélectionnez le référentiel et cliquez sur le bouton représentant des points de suspension à droite du tableau pour **copier l’URL du référentiel** ou **afficher et mettre à jour** votre référentiel.
 
 ![Modifier le référentiel](/help/assets/create-repo3.png)
 
-## Suppression de référentiels {#delete-repos}
+## Supprimer des référentiels {#delete-repos}
 
-Pour supprimer un référentiel, procédez comme suit : [pour afficher et modifier des référentiels](#edit-repos) mais sur le **Référentiels** page select **Supprimer** du bouton représentant des points de suspension du référentiel à supprimer.
+Pour supprimer un référentiel, suivez les mêmes étapes que [pour afficher et modifier des référentiels](#edit-repos), mais sur la page **Référentiels**, sélectionnez **Supprimer** à partir du bouton représentant des points de suspension du référentiel à supprimer.
 
-Notez que lorsqu’un référentiel est supprimé dans Cloud Manager, il est marqué comme supprimé et n’est plus accessible à l’utilisateur, mais il est conservé dans le système à des fins de récupération.
+Notez que lorsqu’un référentiel est supprimé dans Cloud Manager, il est marqué comme supprimé et n’est plus accessible à l’utilisateur ou à l’utilisatrice, mais il est conservé dans le système à des fins de récupération.
 
-Si vous essayez de créer un référentiel après avoir supprimé un référentiel portant le même nom, vous recevrez le message d’erreur &quot;Une erreur s’est produite lors de la tentative de création du référentiel. Veuillez contacter l’ingénieur du service client ou l’assistance Adobe.&quot;
+Si vous essayez de créer un référentiel après avoir supprimé un référentiel portant le même nom, vous recevrez le message d’erreur « Une erreur s’est produite lors de la tentative de création du référentiel. Contactez votre CSE ou l’assistance Adobe. »
 
-Si vous recevez ce message d’erreur, contactez le support Adobe afin qu’il vous aide à renommer le référentiel supprimé ou à choisir un autre nom pour votre nouveau référentiel.
+Si vous recevez ce message d’erreur, contactez l’assitance Adobe pour obtenir de l’aide afin de renommer le référentiel supprimé ou de choisir un autre nom pour votre nouveau référentiel.
 
 ## Prise en charge des sous-modules Git {#git-submodule-support}
 
