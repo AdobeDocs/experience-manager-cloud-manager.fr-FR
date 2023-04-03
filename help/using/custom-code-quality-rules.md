@@ -3,7 +3,7 @@ title: Règles de qualité du code personnalisé
 description: Découvrez en détail les règles de qualité du code personnalisé exécutées par Cloud Manager dans le cadre des tests de qualité de code, basées sur les bonnes pratiques en matière d’ingénierie AEM.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
 source-git-commit: ef87e13eb81faf5605cdd16c6fd46d5f7b3233a9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3531'
 ht-degree: 100%
 
@@ -627,7 +627,7 @@ Tout comme la règle [Les packages ne doivent pas contenir de configurations OSG
 * **Gravité** : mineure
 * **Depuis** : version 2020.5.0
 
-La configuration OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` définit le mode de création par défaut dans AEM. Comme l’interface utilisateur classique est abandonnée depuis AEM 6.4, un problème survient maintenant lorsque le mode de création par défaut est configuré sur l’interface utilisateur classique.
+La configuration OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` définit le mode de création par défaut dans AEM. Comme l’interface utilisateur classique a été abandonnée depuis AEM 6.4, un problème survient maintenant lorsque le mode de création par défaut est configuré sur l’interface utilisateur classique.
 
 ### Les boîtes de dialogue de composants doivent être de type interface utilisateur tactile {#oakpal-components-dialogs}
 
