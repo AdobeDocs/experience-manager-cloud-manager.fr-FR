@@ -1,10 +1,10 @@
 ---
 title: Outil de copie de contenu
 description: L’outil de copie de contenu de Cloud Manager permet aux utilisateurs de copier du contenu modifiable à la demande à partir de leurs environnements de production AEM vers des environnements inférieurs à des fins de test.
-source-git-commit: 7ab5bdea2b388f3e9e199a6d32a1a80977eba35b
-workflow-type: ht
-source-wordcount: '1074'
-ht-degree: 100%
+source-git-commit: 5b10ac5e47052cabd7478050651a4ca04287a8f0
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -30,6 +30,10 @@ Lors de la copie de contenu, l’environnement source est la source de vérité.
 
 * Si le contenu a été modifié dans l’environnement de destination, il sera remplacé par le contenu de la source si les chemins d’accès sont les mêmes.
 * Si les chemins d’accès sont différents, le contenu de la source sera fusionné avec le contenu de la destination.
+
+   >[!NOTE]
+   >
+   >Seules les topologies basées sur l’entrepôt de données basé sur les fichiers sont prises en charge.
 
 ## Autorisations {#permissions}
 
