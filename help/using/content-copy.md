@@ -5,7 +5,7 @@ exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 source-git-commit: 7ef29a244688de82537da0b879fbf397900427c0
 workflow-type: tm+mt
 source-wordcount: '1083'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -33,7 +33,7 @@ Lors de la copie de contenu, l’environnement source est la source de vérité.
 
    >[!NOTE]
    >
-   >Seules les topologies basées sur l’entrepôt de données basé sur les fichiers sont prises en charge.
+   >Seules les topologies basées sur les fichiers magasins de données sont prises en charge.
 
 ## Autorisations {#permissions}
 
