@@ -3,9 +3,9 @@ title: Première connexion
 description: Consultez cette page si vous avez terminé les configurations générales et que vous êtes prêt à utiliser Cloud Manager pour la première fois.
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 source-git-commit: 413edd167b5eda51c207113aaa00a92c808fb09f
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '261'
+ht-degree: 100%
 
 ---
 
@@ -20,11 +20,11 @@ Une fois que vous avez établi la configuration générale pour [!UICONTROL Clou
 
 ## Première connexion {#logging-in-for-the-first-time}
 
-1. Connectez-vous à Cloud Manager à l’adresse [`my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) et vous voyez votre liste de programmes.
+1. Connectez-vous à Cloud Manager à l’adresse [`my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) pour afficher vos programmes.
 
-   ![Console Cloud Manager](/help/assets/cloud-manager-console.png)
+   ![Console Cloud Manager](/help/assets/cloud-manager-console.png)
 
-1. Sur la carte de votre programme, sélectionnez le bouton représentant des points de suspension, puis **Aperçu du programme** pour accéder aux **Présentation** page.
+1. Sur la vignette de votre programme, sélectionnez le bouton représentant des points de suspension, puis cliquez sur **Présentation du programme** pour accéder à la page de **Présentation** de Cloud Manager.
 
    ![Option de Cloud Manager](/help/assets/program-overview-option.png)
 
