@@ -2,9 +2,9 @@
 title: Test de qualité du code
 description: Découvrez comment fonctionne le test de qualité du code des pipelines et comment il peut améliorer la qualité de vos déploiements.
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
+source-git-commit: 8c3b59ab9e00d6ee3b90b9255d025d9e19b3b89a
 workflow-type: ht
-source-wordcount: '2867'
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
@@ -152,7 +152,7 @@ Le nombre d’utilisateurs ou de conteneurs virtuels qui sont émulés par Cloud
 Avant le début de la période de test de 30 minutes, Cloud Manager explore l’environnement d’évaluation à l’aide d’une ou de plusieurs URL d’amorçage configurées par l’ingénieur chargé du succès client. À partir de ces URL, le code HTML de chaque page est examiné et les liens sont parcourus en largeur d’abord.
 
 * Ce processus d’exploration est limité par défaut à un maximum de 5 000 pages.
-* Le nombre maximal de pages à tester peut être remplacé en définissant la [variable d’environnement](/help/getting-started/build-environment.md#environment-variables) `MAX_PAGES`.
+* Le nombre maximal de pages à tester peut être remplacé en définissant la [variable d’environnement](/help/getting-started/build-environment.md#environment-variables) `CM_PERF_TEST_CRAWLER_MAX_PAGES`.
    * Les valeurs autorisées sont `2000` - `7000`.
 * Les requêtes du robot d’exploration ont un délai d’expiration fixe de 10 secondes.
 
@@ -282,15 +282,15 @@ Cette fonctionnalité est disponible pour les mesures suivantes.
 
 Dans le cadre du processus d’analyse de la qualité, Cloud Manager effectue une analyse des packages de contenu générés par la version Maven. Cloud Manager propose des optimisations pour accélérer ce processus, qui sont efficaces lorsque certaines contraintes de conditionnement sont observées. La plus importante est l’optimisation effectuée pour les projets qui génèrent un seul package de contenu, généralement appelé package « all », qui contient un certain nombre d’autres packages de contenu générés par la version, qui sont marqués comme étant ignorés. Lorsque Cloud Manager détecte ce scénario, plutôt que de décompresser le package « all », les packages de contenu individuels sont analysés directement et triés en fonction des dépendances. Par exemple, considérez la sortie de génération suivante.
 
-* `all/myco-all-1.0.0-SNAPSHOT.zip` (module de contenu)
-* `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (module de contenu ignoré)
-* `ui.content/myco-ui.content-1.0.0-SNAPSHOT.zip` (module de contenu ignoré)
+* `all/myco-all-1.0.0-SNAPSHOT.zip` (package de contenu)
+* `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (package de contenu ignoré)
+* `ui.content/myco-ui.content-1.0.0-SNAPSHOT.zip` (package de contenu ignoré)
 
-Si les seuls éléments contenus dans `myco-all-1.0.0-SNAPSHOT.zip` sont les deux modules de contenu ignorés, les deux modules intégrés seront analysés au lieu du module de contenu « all ».
+Si les seuls éléments contenus dans `myco-all-1.0.0-SNAPSHOT.zip` sont les deux packages de contenu ignorés, les deux packages intégrés seront analysés au lieu du package de contenu « all ».
 
 Pour les projets qui produisent des dizaines de packages incorporés, il a été démontré que cette optimisation permet de gagner jusqu’à 10 minutes par exécution de pipeline.
 
-Un cas particulier peut se produire lorsque le module de contenu « all » contient une combinaison de modules de contenu ignorés et de lots OSGi. Par exemple, si `myco-all-1.0.0-SNAPSHOT.zip` contient les deux packages incorporés mentionnés précédemment ainsi qu’un ou plusieurs lots OSGi, un nouveau package de contenu minimal est créé avec uniquement les lots OSGi. Ce module est toujours nommé `cloudmanager-synthetic-jar-package` et les lots contenus sont placés dans `/apps/cloudmanager-synthetic-installer/install`.
+Un cas particulier peut se produire lorsque le package de contenu « all » contient une combinaison de packages de contenu ignorés et de lots OSGi. Par exemple, si `myco-all-1.0.0-SNAPSHOT.zip` contient les deux packages incorporés mentionnés précédemment ainsi qu’un ou plusieurs lots OSGi, un nouveau package de contenu minimal est créé avec uniquement les lots OSGi. Ce package est toujours nommé `cloudmanager-synthetic-jar-package` et les lots contenus sont placés dans `/apps/cloudmanager-synthetic-installer/install`.
 
 >[!NOTE]
 >
