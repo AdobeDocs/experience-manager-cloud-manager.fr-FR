@@ -2,10 +2,10 @@
 title: Outil de copie de contenu
 description: L’outil de copie de contenu de Cloud Manager permet aux utilisateurs de copier du contenu modifiable à la demande à partir de leurs environnements de production AEM vers des environnements inférieurs à des fins de test.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 7ef29a244688de82537da0b879fbf397900427c0
-workflow-type: ht
-source-wordcount: '1083'
-ht-degree: 100%
+source-git-commit: 65cca64cb230686617af7f797fa86b754658e46d
+workflow-type: tm+mt
+source-wordcount: '1123'
+ht-degree: 95%
 
 ---
 
@@ -31,9 +31,9 @@ Lors de la copie de contenu, l’environnement source est la source de vérité.
 * Si le contenu a été modifié dans l’environnement de destination, il sera remplacé par le contenu de la source si les chemins d’accès sont les mêmes.
 * Si les chemins d’accès sont différents, le contenu de la source sera fusionné avec le contenu de la destination.
 
-   >[!NOTE]
-   >
-   >Seules les topologies basées sur les fichiers magasins de données sont prises en charge.
+>[!NOTE]
+>
+>Contactez votre ingénieur du service client pour activer cette fonctionnalité.
 
 ## Autorisations {#permissions}
 
@@ -158,7 +158,8 @@ L’outil de copie de contenu présente les limites suivantes.
 
 * Une copie de contenu ne peut pas être effectuée d’un environnement inférieur vers un environnement supérieur.
 * Une copie de contenu ne peut être effectuée que dans le même niveau (auteur-auteur ou publication-publication, par exemple).
-* Une copie de contenu ne peut pas être effectuée sur plusieurs programmes.
+* Il n’est pas possible de copier du contenu cross-programme et inter-région.
+* La copie de contenu pour la topologie basée sur l’entrepôt de données cloud ne peut être effectuée que lorsque l’environnement source et de destination se trouve sur le même fournisseur de cloud.
 * L’exécution simultanée d’opérations de copie de contenu sur le même environnement n’est pas possible.
 * Une copie de contenu ne peut pas être effectuée si une opération principale est en cours d’exécution dans l’environnement de destination ou source, tel qu’un pipeline CI/CD.
 * Vous pouvez spécifier jusqu’à cinquante chemins par jeu de contenu. Il n’existe aucune limitation sur les chemins exclus.
@@ -166,3 +167,4 @@ L’outil de copie de contenu présente les limites suivantes.
 * L’outil de copie de contenu ne dispose d’aucune fonctionnalité de contrôle de version et ne peut pas détecter automatiquement le contenu modifié ou nouvellement créé dans l’environnement source dans un jeu de contenu depuis la dernière opération de copie de contenu.
    * Si vous souhaitez mettre à jour votre environnement de destination avec des modifications de contenu depuis la dernière opération de copie de contenu uniquement, vous devez créer un jeu de contenu. Dans ce jeu, spécifiez les chemins d’accès sur l’instance source où des modifications ont été apportées depuis la dernière opération de copie de contenu.
 * Les informations de version ne sont pas incluses dans une copie de contenu.
+* Une copie de contenu ne peut pas être suspendue ou annulée une fois qu’elle est lancée.

@@ -1,19 +1,19 @@
 ---
-title: Notes de mise à jour de 2023.4.0
-description: Voici les notes de mise à jour de la version 2023.4.0 de Cloud Manager.
+title: Notes de mise à jour de la version 2023.5.0
+description: Voici les notes de mise à jour de la version 2023.5.0 de Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 0ea63c0c8a4fa216ac3d70db1fb12add7f036495
-workflow-type: ht
-source-wordcount: '118'
-ht-degree: 100%
+source-git-commit: 5a92ceb98de68025ca917c9b9cb358d54282b235
+workflow-type: tm+mt
+source-wordcount: '111'
+ht-degree: 75%
 
 ---
 
 
-# Notes de mise à jour de la version 2023.4.0 de Cloud Manager {#release-notes}
+# Notes de mise à jour de la version 2023.5.0 de Cloud Manager {#release-notes}
 
-Cette page présente les notes de mise à jour de la version 2023.4.0 de [!UICONTROL Cloud Manager].
+Cette page présente les notes de mise à jour de la version 2023.5.0 de [!UICONTROL Cloud Manager].
 
 >[!NOTE]
 >
@@ -21,12 +21,8 @@ Cette page présente les notes de mise à jour de la version 2023.4.0 de [!UICO
 
 ## Date de publication {#release-date}
 
-La date de publication de la version 2023.4.0 de [!UICONTROL Cloud Manager] est le 13 avril 2023. La prochaine version est prévue pour le 11 mai 2023.
+La date de publication de la version 2023.5.0 de [!UICONTROL Cloud Manager] est le 11 mai 2023. La prochaine version est prévue pour le 8 juin 2023.
 
 ## Nouveautés {#what-is-new}
 
-* L’[Archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) a été mis à jour vers la version 41.
-
-## Correctifs {#bug-fixes}
-
-* Les Dispatchers bleus ne sont plus attachés à l’ELB verte si le [déploiement bleu/vert](/help/introduction.md#blue-green) échoue.
+* [Copie de contenu en libre-service](/help/using/content-copy.md) est désormais disponible d’un environnement supérieur à un environnement inférieur via l’interface utilisateur de Cloud Manager. Pour plus d’informations, contactez votre ingénieur du service client.
