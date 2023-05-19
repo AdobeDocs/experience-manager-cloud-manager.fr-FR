@@ -3,9 +3,9 @@ title: Test de qualité du code
 description: Découvrez comment fonctionne le test de qualité du code des pipelines et comment il peut améliorer la qualité de vos déploiements.
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 source-git-commit: 38cf86a5effa201afdc8e00d8f33582fc06214d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2867'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -152,7 +152,7 @@ Le nombre d’utilisateurs ou de conteneurs virtuels qui sont émulés par Cloud
 Avant le début de la période de test de 30 minutes, Cloud Manager explore l’environnement d’évaluation à l’aide d’une ou de plusieurs URL d’amorçage configurées par l’ingénieur chargé du succès client. À partir de ces URL, le code HTML de chaque page est examiné et les liens sont parcourus en largeur d’abord.
 
 * Ce processus d’exploration est limité par défaut à un maximum de 5 000 pages.
-* Le nombre maximal de pages à tester peut être remplacé en définissant la variable [variable de pipeline](/help/getting-started/build-environment.md#pipeline-variables) `CM_PERF_TEST_CRAWLER_MAX_PAGES`.
+* Le nombre maximal de pages à tester peut être remplacé en définissant la [variable de pipeline](/help/getting-started/build-environment.md#pipeline-variables) `CM_PERF_TEST_CRAWLER_MAX_PAGES`.
    * Les valeurs autorisées sont `2000` - `7000`.
 * Les requêtes du robot d’exploration ont un délai d’expiration fixe de 10 secondes.
 
