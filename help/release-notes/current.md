@@ -4,9 +4,9 @@ description: Voici les notes de mise à jour de la version 2023.5.0 de Cloud M
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 5a92ceb98de68025ca917c9b9cb358d54282b235
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '111'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -25,4 +25,4 @@ La date de publication de la version 2023.5.0 de [!UICONTROL Cloud Manager] es
 
 ## Nouveautés {#what-is-new}
 
-* [Copie de contenu en libre-service](/help/using/content-copy.md) est désormais disponible d’un environnement supérieur à un environnement inférieur via l’interface utilisateur de Cloud Manager. Pour plus d’informations, contactez votre ingénieur du service client.
+* La [copie de contenu en libre-service](/help/using/content-copy.md) est désormais disponible d’un environnement supérieur à un environnement inférieur via l’interface utilisateur de Cloud Manager. Pour plus d’informations, contactez votre ingénieure ou ingénieur du succès client.
