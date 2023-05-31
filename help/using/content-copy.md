@@ -3,9 +3,9 @@ title: Outil de copie de contenu
 description: L’outil de copie de contenu de Cloud Manager permet aux utilisateurs de copier du contenu modifiable à la demande à partir de leurs environnements de production AEM vers des environnements inférieurs à des fins de test.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 source-git-commit: 65cca64cb230686617af7f797fa86b754658e46d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1123'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Lors de la copie de contenu, l’environnement source est la source de vérité.
 
 >[!NOTE]
 >
->Contactez votre ingénieur du service client pour activer cette fonctionnalité.
+>Contactez votre ingénieure ou ingénieur du succès client (CSE) pour activer cette fonctionnalité.
 
 ## Autorisations {#permissions}
 
@@ -158,8 +158,8 @@ L’outil de copie de contenu présente les limites suivantes.
 
 * Une copie de contenu ne peut pas être effectuée d’un environnement inférieur vers un environnement supérieur.
 * Une copie de contenu ne peut être effectuée que dans le même niveau (auteur-auteur ou publication-publication, par exemple).
-* Il n’est pas possible de copier du contenu cross-programme et inter-région.
-* La copie de contenu pour la topologie basée sur l’entrepôt de données cloud ne peut être effectuée que lorsque l’environnement source et de destination se trouve sur le même fournisseur de cloud.
+* Une copie de contenu ne peut pas être effectuée sur plusieurs programmes et plusieurs régions.
+* La copie de contenu pour la topologie basée sur le magasin de données cloud ne peut être effectuée que lorsque l’environnement source et de destination se trouve sur le même fournisseur de cloud.
 * L’exécution simultanée d’opérations de copie de contenu sur le même environnement n’est pas possible.
 * Une copie de contenu ne peut pas être effectuée si une opération principale est en cours d’exécution dans l’environnement de destination ou source, tel qu’un pipeline CI/CD.
 * Vous pouvez spécifier jusqu’à cinquante chemins par jeu de contenu. Il n’existe aucune limitation sur les chemins exclus.
