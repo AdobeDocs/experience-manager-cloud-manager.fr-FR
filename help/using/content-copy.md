@@ -2,10 +2,10 @@
 title: Outil de copie de contenu
 description: L’outil de copie de contenu de Cloud Manager permet aux utilisateurs de copier du contenu modifiable à la demande à partir de leurs environnements de production AEM vers des environnements inférieurs à des fins de test.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 65cca64cb230686617af7f797fa86b754658e46d
-workflow-type: ht
-source-wordcount: '1123'
-ht-degree: 100%
+source-git-commit: 435efe2e6cecae738a62869c55034113c09f70e7
+workflow-type: tm+mt
+source-wordcount: '1090'
+ht-degree: 95%
 
 ---
 
@@ -119,7 +119,6 @@ Une fois qu’un jeu de contenu a été créé, vous pouvez l’utiliser pour co
    >* L’utilisateur ne dispose pas des autorisations appropriées.
    >* Un pipeline en cours d’exécution ou une opération de copie de contenu est en cours dans l’environnement.
 
-
 1. Dans la boîte de dialogue **Copier le contenu**, spécifiez la source et la destination de votre action de copie de contenu.
 
 1. Vous pouvez choisir de supprimer ou de conserver les chemins d’exclusion dans l’environnement cible. Cochez la case `Do not delete exclude paths from destination` si vous souhaitez conserver les chemins d’exclusion spécifiés dans le jeu de contenu. Si cette case n’est pas cochée, les chemins d’exclusion sont supprimés dans l’environnement cible.
@@ -164,7 +163,6 @@ L’outil de copie de contenu présente les limites suivantes.
 * Une copie de contenu ne peut pas être effectuée si une opération principale est en cours d’exécution dans l’environnement de destination ou source, tel qu’un pipeline CI/CD.
 * Vous pouvez spécifier jusqu’à cinquante chemins par jeu de contenu. Il n’existe aucune limitation sur les chemins exclus.
 * L’outil de copie de contenu ne doit pas être utilisé comme outil de clonage ou de mise en miroir, car il ne peut pas effectuer le suivi du contenu déplacé ou supprimé sur la source.
-* L’outil de copie de contenu ne dispose d’aucune fonctionnalité de contrôle de version et ne peut pas détecter automatiquement le contenu modifié ou nouvellement créé dans l’environnement source dans un jeu de contenu depuis la dernière opération de copie de contenu.
-   * Si vous souhaitez mettre à jour votre environnement de destination avec des modifications de contenu depuis la dernière opération de copie de contenu uniquement, vous devez créer un jeu de contenu. Dans ce jeu, spécifiez les chemins d’accès sur l’instance source où des modifications ont été apportées depuis la dernière opération de copie de contenu.
-* Les informations de version ne sont pas incluses dans une copie de contenu.
 * Une copie de contenu ne peut pas être suspendue ou annulée une fois qu’elle est lancée.
+* L’outil de copie de contenu copie les ressources avec les métadonnées liées aux médias dynamiques de l’environnement supérieur vers l’environnement inférieur sélectionné.
+   * Les ressources copiées doivent ensuite être retraitées à l’aide de la variable [Workflow des ressources de processus DAM](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html?lang=fr) dans l’environnement inférieur afin d’utiliser la configuration dynamic media correspondante.
