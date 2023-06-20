@@ -4,9 +4,9 @@ description: Voici les notes de mise à jour de la version 2023.6.0 de Cloud M
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 1bbdc88a2c7a86e258d5fd56fab504aa7232e9fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '99'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -21,8 +21,8 @@ Cette page présente les notes de mise à jour de la version 2023.6.0 de [!UICO
 
 ## Date de publication {#release-date}
 
-La date de publication de la version 2023.6.0 de [!UICONTROL Cloud Manager] est le 8 juin 2023. La prochaine version est prévue pour le 6 juillet 2023.
+La date de publication de la version 2023.6.0 de [!UICONTROL Cloud Manager] est le 8 juin 2023. La prochaine version est prévue pour le 6 juillet 2023.
 
 ## Nouveautés {#what-is-new}
 
-* Lors de la reprise d’une [pipeline de production,](/help/using/production-pipelines.md) une boîte de dialogue de confirmation s’affiche maintenant à l’étape d’approbation.
+* Lors de la reprise d’un [pipeline de production](/help/using/production-pipelines.md), une boîte de dialogue de confirmation s’affiche désormais à l’étape d’approbation.
