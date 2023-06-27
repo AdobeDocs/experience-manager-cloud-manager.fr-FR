@@ -1,21 +1,22 @@
 ---
 title: Outil de copie de contenu
-description: L’outil de copie de contenu de Cloud Manager permet aux utilisateurs de copier du contenu modifiable à la demande à partir de leurs environnements de production AEM vers des environnements inférieurs à des fins de test.
+description: L’outil de copie de contenu de Cloud Manager permet aux utilisateurs de copier du contenu modifiable à la demande depuis leurs environnements de production AEM 6.x hébergés par AMS vers des environnements inférieurs à des fins de test.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 435efe2e6cecae738a62869c55034113c09f70e7
+source-git-commit: 223b547d6bc94137dfbb7d92862a508fa67799d2
 workflow-type: tm+mt
-source-wordcount: '1090'
-ht-degree: 95%
+source-wordcount: '1096'
+ht-degree: 88%
 
 ---
 
+
 # Outil de copie de contenu {#content-copy}
 
-L’outil de copie de contenu de Cloud Manager permet aux utilisateurs de copier du contenu modifiable à la demande à partir de leurs environnements de production AEM vers des environnements inférieurs à des fins de test.
+L’outil de copie de contenu de Cloud Manager permet aux utilisateurs de copier du contenu modifiable à la demande depuis leurs environnements de production AEM 6.x hébergés par AMS vers des environnements inférieurs à des fins de test.
 
 ## Présentation {#introduction}
 
-Les données actuelles et réelles sont utiles à des fins de test, de validation et d’acceptation par l’utilisateur. L’outil de copie de contenu vous permet de copier du contenu de votre environnement de production AEM vers un environnement d’évaluation ou de développement pour de tels tests.
+Les données actuelles et réelles sont utiles à des fins de test, de validation et d’acceptation par l’utilisateur. L’outil de copie de contenu vous permet de copier du contenu de votre environnement d’AEM hébergé en production AMS 6.x vers un environnement d’évaluation ou de développement pour de tels tests.
 
 Le contenu à copier est défini par un jeu de contenu. Un jeu de contenu est constitué d’une liste de chemins JCR qui contiennent le contenu modifiable à copier d’un environnement source vers un environnement cible dans le même programme Cloud Manager. Les chemins d’accès suivants sont autorisés dans un jeu de contenu.
 
