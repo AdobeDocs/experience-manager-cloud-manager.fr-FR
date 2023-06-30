@@ -5,7 +5,7 @@ exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 source-git-commit: 223b547d6bc94137dfbb7d92862a508fa67799d2
 workflow-type: tm+mt
 source-wordcount: '1096'
-ht-degree: 88%
+ht-degree: 92%
 
 ---
 
@@ -165,5 +165,5 @@ L’outil de copie de contenu présente les limites suivantes.
 * Vous pouvez spécifier jusqu’à cinquante chemins par jeu de contenu. Il n’existe aucune limitation sur les chemins exclus.
 * L’outil de copie de contenu ne doit pas être utilisé comme outil de clonage ou de mise en miroir, car il ne peut pas effectuer le suivi du contenu déplacé ou supprimé sur la source.
 * Une copie de contenu ne peut pas être suspendue ou annulée une fois qu’elle est lancée.
-* L’outil de copie de contenu copie les ressources avec les métadonnées liées aux médias dynamiques de l’environnement supérieur vers l’environnement inférieur sélectionné.
-   * Les ressources copiées doivent ensuite être retraitées à l’aide de la variable [Workflow des ressources de processus DAM](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html?lang=fr) dans l’environnement inférieur afin d’utiliser la configuration dynamic media correspondante.
+* L’outil de copie de contenu copie les ressources avec les métadonnées liées aux médias dynamiques depuis l’environnement supérieur vers l’environnement inférieur sélectionné.
+   * Les ressources copiées doivent ensuite être retraitées à l’aide du [workflow Ressource de traitement de la gestion des ressources numériques](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html?lang=fr) dans l’environnement inférieur, afin d’utiliser la configuration de médias dynamiques correspondante.
