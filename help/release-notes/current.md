@@ -1,19 +1,19 @@
 ---
-title: Notes de mise à jour de la version 2023.6.0
-description: Voici les notes de mise à jour de la version 2023.6.0 de Cloud Manager.
+title: Notes de mise à jour de la version 2023.7.0
+description: Voici les notes de mise à jour de la version 2023.7.0 de Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 1bbdc88a2c7a86e258d5fd56fab504aa7232e9fc
-workflow-type: ht
-source-wordcount: '99'
-ht-degree: 100%
+source-git-commit: 950fef5781c53f9bccf4c33c8b9d958edd5a0327
+workflow-type: tm+mt
+source-wordcount: '123'
+ht-degree: 68%
 
 ---
 
 
-# Notes de mise à jour de la version 2023.6.0 de Cloud Manager {#release-notes}
+# Notes de mise à jour de la version 2023.7.0 de Cloud Manager {#release-notes}
 
-Cette page présente les notes de mise à jour de la version 2023.6.0 de [!UICONTROL Cloud Manager].
+Cette page présente les notes de mise à jour de la version 2023.7.0 de [!UICONTROL Cloud Manager].
 
 >[!NOTE]
 >
@@ -21,8 +21,9 @@ Cette page présente les notes de mise à jour de la version 2023.6.0 de [!UICO
 
 ## Date de publication {#release-date}
 
-La date de publication de la version 2023.6.0 de [!UICONTROL Cloud Manager] est le 8 juin 2023. La prochaine version est prévue pour le 6 juillet 2023.
+La date de publication de la version 2023.7.0 de [!UICONTROL Cloud Manager] est le 29 juin 2023. La prochaine version est prévue pour le 10 août 2023.
 
-## Nouveautés {#what-is-new}
+## Correctifs {#bug-fixes}
 
-* Lors de la reprise d’un [pipeline de production](/help/using/production-pipelines.md), une boîte de dialogue de confirmation s’affiche désormais à l’étape d’approbation.
+* Les cartes de la page d’entrée de Cloud Manager indiquent désormais si [sécurité renforcée](/help/getting-started/program-setup.md) est activé pour leurs programmes.
+* When [la modification d’un pipeline de production,](/help/using/managing-pipelines.md#editing-pipelines) si l’utilisateur tente de supprimer une ressource de la propriété **Test d’évaluation** , une erreur s’affiche.
