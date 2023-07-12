@@ -6,7 +6,7 @@ exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 9ecefd72cb9701026798ba47a743d99375f657c1
 workflow-type: tm+mt
 source-wordcount: '106'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -25,4 +25,4 @@ La date de publication de la version 2023.7.0 de [!UICONTROL Cloud Manager] es
 
 ## Correctifs {#bug-fixes}
 
-* When [la modification d’un pipeline de production,](/help/using/managing-pipelines.md#editing-pipelines) si l’utilisateur tente de supprimer une ressource de la propriété **Test d’évaluation** , une erreur s’affiche.
+* Lors de [la modification d’un pipeline de production,](/help/using/managing-pipelines.md#editing-pipelines), si l’utilisateur ou l’utilisatrice tente de supprimer une ressource de l’onglet **Test dans l’environnement d’évaluation**, une erreur s’affiche.
