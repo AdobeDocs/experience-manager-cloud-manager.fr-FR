@@ -2,10 +2,10 @@
 title: Présentation de Cloud Manager pour AMS
 description: Commencez ici pour découvrir Cloud Manager pour Adobe Managed Services (AMS) et comment il permet aux entreprises d’auto-gérer Adobe Experience Manager en mode cloud.
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: 14e35882765783b234ca35da14257279af5130a0
+source-git-commit: a2cea28061304d109a3c9a48650d01255579443c
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 100%
+source-wordcount: '1322'
+ht-degree: 99%
 
 ---
 
@@ -115,7 +115,9 @@ Lorsque le déploiement bleu/vert est activé, le flux de déploiement diffère 
 | 5 | Mise en pause pour le test (jusqu’à 24 heures) | - |
 | 6 | Une infrastructure verte est ajoutée à l’équilibreur de charge de production | - |
 | 7 | L’infrastructure bleue est supprimée de l’équilibreur de charge de production |
-| 8 | L’infrastructure bleue est automatiquement arrêtée | - |
+| 8 | Suspendre la validation finale (jusqu’à 24 heures) | - |
+| 9 | L’infrastructure bleue est automatiquement arrêtée | - |
+| 10 | Fin du pipeline | - |
 
 #### Implémentation bleue/verte {#implementing}
 
