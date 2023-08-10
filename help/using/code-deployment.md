@@ -2,10 +2,10 @@
 title: Déploiement du code
 description: Découvrez comment déployer votre code et ce qui se passe dans Cloud Manager lors du déploiement.
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
-workflow-type: ht
-source-wordcount: '1609'
-ht-degree: 100%
+source-git-commit: b85bd1bdf38360885bf2777d75bf7aa97c6da7ee
+workflow-type: tm+mt
+source-wordcount: '1655'
+ht-degree: 84%
 
 ---
 
@@ -56,7 +56,7 @@ L’étape du **test dans l’environnement d’évaluation** comprend les actio
 * **Tests de sécurité** : cette étape évalue l’impact de votre code sur la sécurité de l’environnement AEM. Consultez le document [Comprendre les résultats de test](/help/using/code-quality-testing.md) pour obtenir plus de détails sur le processus de test.
    * **Tests de performance** : cette étape évalue les performances de votre code. Consultez le document [Comprendre les résultats de test](/help/using/code-quality-testing.md) pour obtenir plus de détails sur le processus de test.
 
-   ![Test dans l’environnement d’évaluation](/help/assets/Stage_Testing1.png)
+  ![Test dans l’environnement d’évaluation](/help/assets/Stage_Testing1.png)
 
 ### Étape de déploiement en production {#production-deployment}
 
@@ -68,7 +68,7 @@ Le **déploiement en production** inclut les actions suivantes :
 * **Planifier le déploiement en production**
    * Cette option est activée lors de la configuration du pipeline.
    * La date et l’heure planifiées sont indiquées dans le fuseau horaire de l’utilisateur.
-      ![Planifier le déploiement](/help/assets/Production_Deployment1.png)
+     ![Planifier le déploiement](/help/assets/Production_Deployment1.png)
 * **Assistance de l’ingénieur du service client** (si activée).
 * **Déploiement en environnement de production**
 
@@ -110,7 +110,8 @@ Lorsque Cloud Manager se déploie sur des topologies autres que de production, 
 
 1. Chaque artefact AEM est déployé sur chacune des instances AEM par le biais des API de Package Manager, avec des dépendances de packages qui déterminent l’ordre de déploiement.
 
-   * Pour en savoir plus sur l’utilisation de packs pour installer de nouvelles fonctionnalités, transférer du contenu entre des instances et sauvegarder le contenu du référentiel, reportez-vous au document [Gestionnaire de modules.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=fr)
+   * Pour en savoir plus sur l’utilisation de packages pour installer de nouvelles fonctionnalités, transférer du contenu entre des instances et sauvegarder le contenu du référentiel, reportez-vous au document [Gestionnaire de packages](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=fr).
+
    >[!NOTE]
    >
    >Tous les artefacts AEM sont déployés à la fois sur l’instance de création et les instances de publication. Les modes d’exécution doivent être utilisés lorsque des configurations spécifiques à un nœud sont requises. Pour en savoir plus sur la manière dont les modes d’exécution vous permettent d’ajuster votre instance AEM à des fins spécifiques, reportez-vous à la section [Modes d’exécution du document Déploiement sur AEM as a Cloud Service.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=fr#runmodes)
@@ -175,17 +176,21 @@ Vous pouvez également exécuter un pipeline en mode d’urgence à l’aide de 
 $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 ```
 
-## Réexécuter un déploiement en production {#re-execute-deployment}
+## Réexécution d’un déploiement en production {#reexecute-deployment}
 
-La réexécution de l’étape de déploiement en production est prise en charge pour les exécutions où l’étape de déploiement en production est terminée. Le type d’achèvement n’est pas important. Le déploiement peut être réussi (uniquement pour les programmes AMS), annulé ou non réussi. Le cas d’utilisation principal est celui où l’étape de déploiement en production a échoué pour des raisons transitoires. La réexécution crée une nouvelle exécution à l’aide du même pipeline. Cette nouvelle exécution se compose de trois étapes :
+Dans de rares cas, les étapes de déploiement en production peuvent échouer pour des raisons transitoires. Dans ce cas, la réexécution de l’étape de déploiement en production est prise en charge tant que l’étape de déploiement en production est terminée, quel que soit le type d’achèvement (par exemple, réussi, annulé ou non). La réexécution crée une nouvelle exécution à l’aide du même pipeline constitué de trois étapes.
 
-1. **L’étape de validation** : il s’agit essentiellement de la même validation qui se produit lors de l’exécution normale d’un pipeline.
-1. **L’étape de création** : dans le contexte d’une réexécution, l’étape de création consiste à copier des artefacts, sans réellement exécuter un nouveau processus de création.
-1. **L’étape de déploiement en production** : elle utilise la même configuration et les mêmes options que l’étape de déploiement en production dans une exécution normale de pipeline.
+1. **L’étape de validation** - Il s’agit essentiellement de la même validation qui se produit lors d’une exécution normale du pipeline.
+1. **L’étape de création** - Dans le contexte d’une réexécution, l’étape de création copie les artefacts et n’exécute pas de nouveau processus de création.
+1. **L’étape de déploiement en production** - Cette opération utilise la même configuration et les mêmes options que l’étape de déploiement en production dans une exécution normale de pipeline.
 
-L’étape de création peut être intitulée différemment dans l’interface utilisateur afin de refléter le fait qu’elle copie des artefacts, au lieu de les recréer.
+Dans ce cas, si une réexécution est possible, la page d’état du pipeline de production fournit la variable **Réexécuter** en regard de l’option habituelle **Journal de version de téléchargement** .
 
-![Réexécution](/help/assets/Re-deploy.png)
+![Option Réexécuter dans la fenêtre d’aperçu du pipeline](/help/assets/re-execute.png)
+
+>[!NOTE]
+>
+>Lors d’une nouvelle exécution, l’étape de création est étiquetée dans l’interface utilisateur afin de refléter qu’elle copie des artefacts, et non qu’elle recrée.
 
 ### Limites {#limitations}
 
@@ -193,15 +198,21 @@ L’étape de création peut être intitulée différemment dans l’interface u
 * La réexécution n’est pas disponible pour les exécutions de restauration ou les exécutions de mise à jour des notifications push.
 * Si la dernière exécution a échoué à un moment donné avant l’étape de déploiement en production, la réexécution n’est pas possible.
 
-### Identifier une exécution de réexécution {#identifying}
 
-Pour déterminer si une exécution est une exécution de réexécution, le champ `trigger` peut être examiné. Sa valeur sera `RE_EXECUTE`.
+### Réexécution de l’API {#reexecute-api}
 
-### Déclencher une réexécution {#triggering}
+En plus d’être disponible dans l’interface utilisateur, vous pouvez utiliser [API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) pour déclencher de nouvelles exécutions et identifier les exécutions déclenchées comme réexécutions.
 
-Pour déclencher une réexécution, une requête `PUT` doit être envoyée au lien HAL `http://ns.adobe.com/adobecloud/rel/pipeline/reExecute` à l’état d’étape de déploiement en production. Si ce lien est présent, l’exécution peut être redémarrée à partir de cette étape. En cas d’absence, l’exécution ne peut pas être redémarrée à partir de cette étape. Ce lien sera uniquement présent à l’étape de déploiement en production.
+#### Déclencher une réexécution {#triggering}
 
-```Javascript
+Pour déclencher une réexécution, une requête `PUT` doit être envoyée au lien HAL `http://ns.adobe.com/adobecloud/rel/pipeline/reExecute` à l’état d’étape de déploiement en production.
+
+* Si ce lien est présent, l’exécution peut être redémarrée à partir de cette étape.
+* En cas d’absence, l’exécution ne peut pas être redémarrée à partir de cette étape.
+
+Ce lien n’est disponible que pour l’étape de déploiement en production.
+
+```javascript
  {
   "_links": {
     "http://ns.adobe.com/adobecloud/rel/pipeline/logs": {
@@ -236,6 +247,10 @@ Pour déclencher une réexécution, une requête `PUT` doit être envoyée au li
   "status": "FINISHED"
 ```
 
-La syntaxe de la valeur `href` du lien HAL n’est pas destinée à servir de point de référence. La valeur réelle doit toujours être lue à partir du lien HAL et non générée.
+Syntaxe du lien HAL `href` n’est qu’un exemple et la valeur réelle doit toujours être lue à partir du lien HAL et non générée.
 
 L’envoi d’une requête `PUT` vers ce point d’entrée entraîne la génération d’une réponse `201` en cas de réussite, le corps de la réponse étant la représentation de la nouvelle exécution. Cela revient à lancer une exécution régulière via l’API.
+
+#### Identifier une exécution de réexécution {#identifying}
+
+Les exécutions réexécutées peuvent être identifiées par la valeur `RE_EXECUTE` dans le `trigger` champ .

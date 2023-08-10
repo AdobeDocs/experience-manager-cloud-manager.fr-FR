@@ -2,9 +2,9 @@
 title: Règles de qualité du code personnalisé
 description: Découvrez en détail les règles de qualité du code personnalisé exécutées par Cloud Manager dans le cadre des tests de qualité de code, basées sur les bonnes pratiques en matière d’ingénierie AEM.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 1ba4ed6c311eeaff9c71313d265531f427ef2736
-workflow-type: ht
-source-wordcount: '3566'
+source-git-commit: f930f12b5f50dd96a1677ff7a56cf0e92a400556
+workflow-type: tm+mt
+source-wordcount: '3377'
 ht-degree: 100%
 
 ---
@@ -648,21 +648,6 @@ Les composants AEM disposant d’une boîte de dialogue d’interface utilisateu
 
 La documentation des outils de modernisation d’AEM contient des informations et des outils pour convertir les composants de l’interface utilisateur classique en interface utilisateur tactile. Consultez la [documentation relative aux outils de modernisation d’AEM](https://opensource.adobe.com/aem-modernize-tools/) pour en savoir plus.
 
-### Les packages ne doivent pas combiner du contenu modifiable et non modifiable {#oakpal-packages-immutable}
-
-* **Clé** : ImmutableMutableMixedPackage
-* **Type** : code smell/comptabilité avec Cloud Service
-* **Gravité** : mineure
-* **Depuis** : version 2020.5.0
-
-Pour être compatible avec le modèle de déploiement Cloud Service, les packages de contenu individuels doivent contenir du contenu pour les zones non modifiables du référentiel (c’est-à-dire, `/apps` et `/libs`) ou la zone modifiable (c’est-à-dire, tout ce qui ne se trouve pas dans `/apps` ou `/libs`), mais pas les deux. Par exemple, un package contenant à la fois `/apps/myco/components/text and /etc/clientlibs/myco` est incompatible avec Cloud Service et provoque la notification d’un problème.
-
-Consultez la [documentation relative à la structure de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=fr) pour en savoir plus.
-
->[!NOTE]
->
->La règle [Les packages de clients ne doivent ni créer ni modifier de nœuds sous /libs](#oakpal-customer-package) s’applique toujours.
-
 ### Les agents de réplication inverse ne doivent pas être utilisés {#oakpal-reverse-replication}
 
 * **Clé** : ReverseReplication
@@ -737,15 +722,6 @@ La migration de modèles statiques vers des modèles modifiables peut être larg
 Les composants de base hérités (c’est-à-dire les composants situés dans `/libs/foundation`) ont été abandonnés pour plusieurs versions d’AEM au profit des [composants principaux.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) L’utilisation des composants de base hérités comme base pour les composants personnalisés, que ce soit par recouvrement ou par héritage, n’est pas encouragée et ces composants doivent être convertis en composants principaux correspondants.
 
 Cette conversion peut être facilitée par les [outils de modernisation d’AEM](https://opensource.adobe.com/aem-modernize-tools/).
-
-### Seuls les noms et les ordres de modes d’exécution pris en charge doivent être utilisés. {#oakpal-supported-runmodes}
-
-* **Clé** : SupportedRunmode
-* **Type** : code smell
-* **Gravité** : mineure
-* **Depuis** : version 2021.2.0
-
-AEM Cloud Service applique une politique d’attribution de noms stricte pour les noms des modes d’exécution et un ordre strict pour ces modes d’exécution. La liste des modes d’exécution pris en charge se trouve dans la [documentation relative au déploiement sur AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=fr#runmodes) et tout écart est identifié comme un problème.
 
 ### Les nœuds de définition d’index de recherche personnalisée doivent être des enfants directs de /oak:index {#oakpal-custom-search}
 
