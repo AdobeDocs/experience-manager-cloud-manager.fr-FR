@@ -3,9 +3,9 @@ title: Déploiement du code
 description: Découvrez comment déployer votre code et ce qui se passe dans Cloud Manager lors du déploiement.
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
 source-git-commit: b85bd1bdf38360885bf2777d75bf7aa97c6da7ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1655'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -178,19 +178,19 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 
 ## Réexécution d’un déploiement en production {#reexecute-deployment}
 
-Dans de rares cas, les étapes de déploiement en production peuvent échouer pour des raisons transitoires. Dans ce cas, la réexécution de l’étape de déploiement en production est prise en charge tant que l’étape de déploiement en production est terminée, quel que soit le type d’achèvement (par exemple, réussi, annulé ou non). La réexécution crée une nouvelle exécution à l’aide du même pipeline constitué de trois étapes.
+Dans de rares cas, les étapes de déploiement en production peuvent échouer pour des raisons transitoires. Dans la mesure où elle est terminée, l’étape de déploiement en production est réexécutée, quel que soit le résultat (réussite, annulation ou échec). La réexécution crée une nouvelle exécution à l’aide du même pipeline constitué de trois étapes.
 
-1. **L’étape de validation** - Il s’agit essentiellement de la même validation qui se produit lors d’une exécution normale du pipeline.
-1. **L’étape de création** - Dans le contexte d’une réexécution, l’étape de création copie les artefacts et n’exécute pas de nouveau processus de création.
-1. **L’étape de déploiement en production** - Cette opération utilise la même configuration et les mêmes options que l’étape de déploiement en production dans une exécution normale de pipeline.
+1. **L’étape de validation** : il s’agit essentiellement de la même validation qui se produit lors de l’exécution normale d’un pipeline.
+1. **L’étape de création** : dans le contexte d’une réexécution, l’étape de création consiste à copier des artefacts, sans réellement exécuter un nouveau processus de création.
+1. **L’étape de déploiement en production** : utilise la même configuration et les mêmes options que l’étape de déploiement en production dans une exécution normale de pipeline.
 
-Dans ce cas, si une réexécution est possible, la page d’état du pipeline de production fournit la variable **Réexécuter** en regard de l’option habituelle **Journal de version de téléchargement** .
+Dans de telles circonstances, si une réexécution est possible, la page de statut du pipeline de production fournit l’option **Réexécuter** en regard de l’option habituelle **Télécharger le journal de création**.
 
-![Option Réexécuter dans la fenêtre d’aperçu du pipeline](/help/assets/re-execute.png)
+![Option Réexécuter dans la fenêtre de la vue d’ensemble du pipeline](/help/assets/re-execute.png)
 
 >[!NOTE]
 >
->Lors d’une nouvelle exécution, l’étape de création est étiquetée dans l’interface utilisateur afin de refléter qu’elle copie des artefacts, et non qu’elle recrée.
+>Lors d’une nouvelle exécution, l’étape de création est étiquetée dans l’interface utilisateur afin d’indiquer qu’elle copie (et non qu’elle recrée) des artefacts.
 
 ### Limites {#limitations}
 
@@ -201,7 +201,7 @@ Dans ce cas, si une réexécution est possible, la page d’état du pipeline de
 
 ### Réexécution de l’API {#reexecute-api}
 
-En plus d’être disponible dans l’interface utilisateur, vous pouvez utiliser [API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) pour déclencher de nouvelles exécutions et identifier les exécutions déclenchées comme réexécutions.
+Outre l’interface utilisateur, vous pouvez utiliser l’[API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/?lang=fr#tag/Pipeline-Execution) pour déclencher de nouvelles exécutions et identifier les exécutions déclenchées comme réexécutions.
 
 #### Déclencher une réexécution {#triggering}
 
@@ -247,10 +247,10 @@ Ce lien n’est disponible que pour l’étape de déploiement en production.
   "status": "FINISHED"
 ```
 
-Syntaxe du lien HAL `href` n’est qu’un exemple et la valeur réelle doit toujours être lue à partir du lien HAL et non générée.
+La syntaxe de la valeur `href` du lien HAL est donnée à titre d’exemple. La valeur réelle doit toujours être lue à partir du lien HAL et non générée.
 
 L’envoi d’une requête `PUT` vers ce point d’entrée entraîne la génération d’une réponse `201` en cas de réussite, le corps de la réponse étant la représentation de la nouvelle exécution. Cela revient à lancer une exécution régulière via l’API.
 
 #### Identifier une exécution de réexécution {#identifying}
 
-Les exécutions réexécutées peuvent être identifiées par la valeur `RE_EXECUTE` dans le `trigger` champ .
+Les exécutions réexécutées peuvent être identifiées par la valeur `RE_EXECUTE` dans le champ `trigger`.
