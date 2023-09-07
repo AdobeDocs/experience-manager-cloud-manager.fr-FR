@@ -1,19 +1,18 @@
 ---
-title: Notes de mise à jour de la version 2023.9.0
-description: Voici les notes de mise à jour de la version 2023.9.0 de Cloud Manager.
+title: Notes de mise à jour de la version 2023.8.0
+description: Voici les notes de mise à jour de la version 2023.8.0 de Cloud Manager.
 feature: Release Information
-exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 74381d5d154f7c61135a990d2806fa9e39be7690
+source-git-commit: 26c4c945e18f21b812f65dbabc14a4e8ab9f6b43
 workflow-type: tm+mt
-source-wordcount: '159'
-ht-degree: 54%
+source-wordcount: '216'
+ht-degree: 100%
 
 ---
 
 
-# Notes de mise à jour de la version 2023.9.0 de Cloud Manager {#release-notes}
+# Notes de mise à jour de la version 2023.8.0 de Cloud Manager {#release-notes}
 
-Cette page présente les notes de mise à jour de la version 2023.9.0 de [!UICONTROL Cloud Manager].
+Cette page présente les notes de mise à jour de la version 2023.8.0 de [!UICONTROL Cloud Manager].
 
 >[!NOTE]
 >
@@ -21,14 +20,18 @@ Cette page présente les notes de mise à jour de la version 2023.9.0 de [!UICO
 
 ## Date de publication {#release-date}
 
-La date de publication de la version 2023.9.0 de [!UICONTROL Cloud Manager] est le 7 septembre 2023. La prochaine version est prévue pour le 5 octobre 2023.
+La date de publication de la version 2023.8.0 de [!UICONTROL Cloud Manager] est le 10 août 2023. La prochaine version est prévue pour le 14 septembre 2023.
 
 ## Nouveautés {#what-is-new}
 
-Cette version contient des correctifs.
+* Des améliorations ont été apportées à la lisibilité et à l’affichage des messages d’erreur dans l’interface utilisateur de Cloud Manager.
 
 ## Correctifs {#bug-fixes}
 
-* Lorsqu’un programme est supprimé, tout pipeline associé en cours d’exécution est également supprimé, en s’assurant que le pipeline n’est pas incorrectement désigné comme état d’échec.
-* Parfois, lorsque toutes les étapes d’exécution d’un pipeline sont &quot;terminées&quot;, l’état du pipeline est considéré comme &quot;en cours d’exécution&quot;, ce qui donne l’impression qu’il est en état de blocage. Il est maintenant considéré comme &quot;terminé&quot;.
-* Pour les branches de référentiel générées à l’aide de l’archétype du générateur de code, le pipeline CI/CD échoue.
+* Les cas peu fréquents de blocage du processus de [copie de contenu](/help/using/content-copy.md) ont été corrigés.
+* Un problème de test temporaire a été résolu pour les clients et clientes n’utilisant pas New Relic One.
+* Les [règles de qualité du code personnalisé](/help/using/custom-code-quality-rules.md) `SupportedRunmode` et `ImmutableMutableMixedPackage` ont été supprimées de SonarQube, car elles ne s’appliquent qu’à AEM as a Cloud Service.
+* Les utilisateurs et utilisatrices ne rencontreront plus de pipelines bloqués qui semblent être en état d’exécution.
+* Le menu **Environnements** se ferme maintenant après avoir ouvert la boîte de dialogue modale **[Copier le contenu](/help/using/content-copy.md)**.
+* La [réexécution d’un pipeline](/help/using/code-deployment.md#reexecute-deployment) n’est plus autorisée si l’exécution précédente n’a pas de `commitId` défini sur l’état de phase de création.
+* Un message plus compréhensible s’affiche désormais pour les erreurs rares lorsqu’un utilisateur ou une utilisatrice clique sur un pipeline dans les écrans **Activité** ou **Pipeline**.
