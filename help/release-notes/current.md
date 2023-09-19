@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2023.9.0
 description: Voici les notes de mise à jour de la version 2023.9.0 de Cloud Manager.
 feature: Release Information
-source-git-commit: a3e926fa13d54da1322f3a5219519fae07ddb273
+source-git-commit: f15a4b739150ee40b6dc48de0fbc20859093c79c
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 52%
+source-wordcount: '145'
+ht-degree: 57%
 
 ---
 
@@ -22,12 +22,8 @@ Cette page présente les notes de mise à jour de la version 2023.9.0 de [!UICO
 
 La date de publication de la version 2023.9.0 de [!UICONTROL Cloud Manager] est le 14 septembre 2023. La prochaine version est prévue pour le 5 octobre 2023.
 
-## Nouveautés {#what-is-new}
-
-* Cette version comprend des correctifs de bogues uniquement pour Cloud Manager.
-
 ## Correctifs {#bug-fixes}
 
-* Lorsqu’un programme est supprimé, tout pipeline associé en cours d’exécution est également supprimé, en s’assurant que le pipeline n’est pas incorrectement désigné comme état d’échec.
-* Parfois, lorsque toutes les étapes d’exécution d’un pipeline sont &quot;terminées&quot;, l’état du pipeline est considéré comme &quot;en cours d’exécution&quot;, ce qui donne l’impression qu’il est en état de blocage. Il est maintenant considéré comme &quot;terminé&quot;.
-* Pour les branches de référentiel générées à l’aide de l’archétype du générateur de code, le pipeline CI/CD échoue.
+* Lorsqu’un programme est supprimé, tout pipeline associé en cours d’exécution est désormais également supprimé.
+* Une erreur occasionnelle a été corrigée lorsque toutes les étapes d’une exécution de pipeline étaient marquées comme étant terminées, mais que l’état du pipeline était toujours en cours d’exécution, ce qui donnait l’apparence d’un état bloqué.
+* Une erreur a été corrigée lorsque les pipelines CI/CD échouaient pour les branches de référentiel qui généraient l’archétype.
