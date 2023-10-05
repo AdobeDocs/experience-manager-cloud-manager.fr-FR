@@ -2,8 +2,8 @@
 title: Configurer des pipelines de production
 description: Découvrez comment créer et configurer des pipelines de production à l’aide de Cloud Manager afin de déployer votre code.
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 39b38da17ed1cadf4f2e9633a9e76b537325316f
-workflow-type: ht
+source-git-commit: 33ccb0f2139162845cc1b72505b6a5bfc7cf43e7
+workflow-type: tm+mt
 source-wordcount: '1302'
 ht-degree: 100%
 
@@ -33,12 +33,6 @@ Le rôle du **responsable du déploiement** : il est chargé de la configuratio
 >
 >Un pipeline ne peut être configuré que si le référentiel Git qui lui est associé dispose d’au moins une branche et que la [configuration du programme](/help/getting-started/program-setup.md) est terminée.
 
-## Tutoriel vidéo {#video-tutorial-one}
-
-Cette vidéo présente un aperçu du processus de création de pipeline, détaillé dans ce document.
-
->[!VIDEO](https://video.tv.adobe.com/v/26314/)
-
 ## Ajouter un nouveau pipeline de production {#adding-production-pipeline}
 
 Une fois que vous avez utilisé l’interface utilisateur [!UICONTROL Cloud Manager] pour configurer votre programme et que vous disposez d’au moins un environnement, vous êtes prêt à ajouter un pipeline de production.
@@ -56,6 +50,7 @@ Une fois que vous avez utilisé l’interface utilisateur [!UICONTROL Cloud Mana
    1. Sous la section **Code source**, définissez où le pipeline récupère le code qu’il traitera.
 
       * **Référentiel** - cette option définit à partir de quel référentiel Git le pipeline doit récupérer le code.
+
       >[!TIP]
       >
       >Voir le document [Configuration du programme](/help/getting-started/program-setup.md) pour découvrir comment ajouter et gérer des référentiels dans Cloud Manager.
@@ -73,6 +68,7 @@ Une fois que vous avez utilisé l’interface utilisateur [!UICONTROL Cloud Mana
 
             * **Manuel** - utilisez cette option pour démarrer manuellement le pipeline à l’aide de l’interface utilisateur de Cloud Manager.
             * **Lors des modifications Git** - cette option démarre le pipeline CI/CD chaque fois que des validations sont ajoutées à la branche Git configurée. Avec cette option, vous pouvez toujours démarrer le pipeline manuellement, si nécessaire.
+
          * **Comportement en cas d’échecs de mesure importants** - lors de la configuration ou de la modification du pipeline, le responsable de déploiement peut définir le comportement du pipeline lorsqu’un échec important est rencontré à l’un des points de contrôle qualité. Les options disponibles sont les suivantes :
 
             * **Demander à chaque fois** - il s’agit du paramètre par défaut qui nécessite une intervention manuelle pour tout échec important.
@@ -96,6 +92,7 @@ Une fois que vous avez utilisé l’interface utilisateur [!UICONTROL Cloud Mana
 
                * **Purge** - videz le cache.
                * **Invalider** - effectuez une invalidation du cache, comme lorsque le contenu est activé d’une instance de création vers une instance de publication.
+
             1. Cliquez sur **Ajouter un chemin** pour ajouter votre chemin spécifié. Vous pouvez ajouter jusqu’à 100 chemins par environnement.
 
          ![Configuration de Dispatcher](/help/assets/configure-pipelines/dispatcher-stage.png)
@@ -114,27 +111,18 @@ Une fois que vous avez utilisé l’interface utilisateur [!UICONTROL Cloud Mana
                * **Date** - cette option permet à l’utilisateur de planifier une heure à laquelle le déploiement doit être terminé.
                * **Arrêter l’exécution** - cette option interrompt le déploiement en production.
 
-            >[!TIP]
-            >
-            >Consultez le document [Code de déploiement](/help/using/code-deployment.md) pour découvrir comment définir le planning de déploiement ou exécuter le pipeline immédiatement.
+           >[!TIP]
+           >
+           >Consultez le document [Code de déploiement](/help/using/code-deployment.md) pour découvrir comment définir le planning de déploiement ou exécuter le pipeline immédiatement.
 
             * **Solliciter la supervision de l’ingénieur support client (CSE)** - si cette option est choisie, un CSE est engagé pour véritablement démarrer le déploiement. Lors de la création ou de la modification d’un pipeline lorsque cette option est activée, le rôle **Responsable de déploiement** dispose des options suivantes.
 
                * **N’importe quel CSE** - cette option permet à tout CSE disponible de démarrer le déploiement.
                * **Mon CSE** - cette option permet uniquement au CSE spécifique affecté au client de démarrer le déploiement. Cela s’applique également au remplaçant désigné du CSE si le CSE attribué est indisponible.
 
-            ![Options de déploiement en production](/help/assets/configure-pipelines/prod-deploymentoptions.png)
+           ![Options de déploiement en production](/help/assets/configure-pipelines/prod-deploymentoptions.png)
 
          * **Configuration de Dispatcher** - définissez la configuration de Dispatcher pour votre environnement de production. Les options sont identiques à celles de l’environnement d’évaluation.
-
-
-
-
-
-
-
-
-
 
 1. Cliquez sur **Continuer** pour accéder à l’onglet **Tests d’évaluation** où vous pouvez configurer les tests de performance d’AEM Sites et d’AEM Assets, en fonction des produits sous licence que vous possédez.
 
@@ -163,10 +151,14 @@ Une fois que vous avez utilisé l’interface utilisateur [!UICONTROL Cloud Mana
 
       ![Distribution des tests des ressources](/help/assets/configure-pipelines/add-prod6.png)
 
-
-
 1. Cliquez sur **Enregistrer** pour terminer l’ajout de votre pipeline de production.
 
 ## Les étapes suivantes {#the-next-steps}
 
 Une fois que vous avez configuré le pipeline, vous devez déployer votre code. Consultez le document [Déploiement du code](/help/using/code-deployment.md) pour plus de détails.
+
+## Tutoriel vidéo {#video-tutorial-one}
+
+Cette vidéo présente un aperçu du processus de création de pipeline, détaillé dans ce document.
+
+>[!VIDEO](https://video.tv.adobe.com/v/26314/)

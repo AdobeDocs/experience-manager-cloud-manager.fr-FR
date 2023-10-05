@@ -1,18 +1,19 @@
 ---
-title: Notes de mise à jour de la version 2023.9.0
-description: Voici les notes de mise à jour de la version 2023.9.0 de Cloud Manager.
+title: Notes de mise à jour de la version 2023.10.0
+description: Voici les notes de mise à jour de la version 2023.10.0 de Cloud Manager.
 feature: Release Information
-source-git-commit: f15a4b739150ee40b6dc48de0fbc20859093c79c
+exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
+source-git-commit: a5a304541409bc1775090eef2a669e1e0bcf005e
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 57%
+source-wordcount: '189'
+ht-degree: 58%
 
 ---
 
 
-# Notes de mise à jour de la version 2023.9.0 de Cloud Manager {#release-notes}
+# Notes de mise à jour de la version 2023.10.0 de Cloud Manager {#release-notes}
 
-Cette page présente les notes de mise à jour de la version 2023.9.0 de [!UICONTROL Cloud Manager].
+Cette page présente les notes de mise à jour de la version 2023.10.0 de [!UICONTROL Cloud Manager].
 
 >[!NOTE]
 >
@@ -20,10 +21,13 @@ Cette page présente les notes de mise à jour de la version 2023.9.0 de [!UICO
 
 ## Date de publication {#release-date}
 
-La date de publication de la version 2023.9.0 de [!UICONTROL Cloud Manager] est le 14 septembre 2023. La prochaine version est prévue pour le 5 octobre 2023.
+La date de publication de la version 2023.10.0 de [!UICONTROL Cloud Manager] est le 5 octobre 2023. La prochaine version est prévue pour le 2 novembre 2023.
 
-## Correctifs {#bug-fixes}
+## Nouveautés {#what-is-new}
 
-* Lorsqu’un programme est supprimé, tout pipeline associé en cours d’exécution est désormais également supprimé.
-* Une erreur occasionnelle a été corrigée lorsque toutes les étapes d’une exécution de pipeline étaient marquées comme étant terminées, mais que l’état du pipeline était toujours en cours d’exécution, ce qui donnait l’apparence d’un état bloqué.
-* Une erreur a été corrigée lorsque les pipelines CI/CD échouaient pour les branches de référentiel qui généraient l’archétype.
+* La variable **Responsable de déploiement** rôle peut [configurez un ensemble de chemins de contenu qui seront invalidés ou purgés du cache de Dispatcher AEM lorsqu’un pipeline hors production est exécuté.](/help/using/non-production-pipelines.md)
+   * Ces actions de cache sont exécutées dans le cadre de l’étape du pipeline de déploiement, juste après le déploiement des packages de contenu.
+   * Ces paramètres utilisent le comportement standard d’AEM Dispatcher.
+* Avec la version d’octobre 2023 de Cloud Manager, les versions Java sont mises à jour par le biais d’un déploiement progressif.
+   * Les versions Java sont mises à jour pour Oracle JDK 8u371 et Oracle JDK 11.0.20.
+   * [Voir l’avis d’OpenJDK](https://openjdk.org/groups/vulnerability/advisories/) pour plus d’informations sur la sécurité et les correctifs de bogues dans ces mises à jour JDK.
