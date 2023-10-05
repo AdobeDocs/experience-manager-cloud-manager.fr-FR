@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 2023.10.0
 description: Voici les notes de mise à jour de la version 2023.10.0 de Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: a5a304541409bc1775090eef2a669e1e0bcf005e
+source-git-commit: 851364e74864c28b3bcd9285dfbe06ddb530eb10
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 58%
+source-wordcount: '226'
+ht-degree: 49%
 
 ---
 
@@ -29,5 +29,8 @@ La date de publication de la version 2023.10.0 de [!UICONTROL Cloud Manager] e
    * Ces actions de cache sont exécutées dans le cadre de l’étape du pipeline de déploiement, juste après le déploiement des packages de contenu.
    * Ces paramètres utilisent le comportement standard d’AEM Dispatcher.
 * Avec la version d’octobre 2023 de Cloud Manager, les versions Java sont mises à jour par le biais d’un déploiement progressif.
-   * Les versions Java sont mises à jour pour Oracle JDK 8u371 et Oracle JDK 11.0.20.
+   * Les versions mineures de Java 8, 11 et Maven ont été mises à jour et seront déployées par étapes au cours des deux prochains mois. La nouvelle version comporte plusieurs correctifs de sécurité et correctifs. Les nouvelles versions sont les suivantes :
+   * *Maven : 3.8.8*
+   * *Version Java 8 : /usr/lib/jvm/jdk1.8.0_371*
+   * *Version Java 11 : /usr/lib/jvm/jdk-11.0.20*
    * [Voir l’avis d’OpenJDK](https://openjdk.org/groups/vulnerability/advisories/) pour plus d’informations sur la sécurité et les correctifs de bogues dans ces mises à jour JDK.
