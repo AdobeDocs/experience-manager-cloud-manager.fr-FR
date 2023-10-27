@@ -8,7 +8,7 @@ feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
 source-git-commit: f1f1d53181362e4a92ad6918182107d710724496
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '348'
 ht-degree: 100%
 
@@ -66,7 +66,7 @@ ht-degree: 100%
    + [Notes de mise à jour de la version actuelle](/help/release-notes/current.md)
    + 2023 {#2023}
       + [Notes de mise à jour de la version 2023.9.0](/help/release-notes/2023/2023-9-0.md)
-      + [Notes de mise à jour de la version 2023.8.0](/help/release-notes/2023/2023-8-0.md)
+      + [Notes de mise à jour de la version 2023.8.0](/help/release-notes/2023/2023-8-0.md)
       + [Notes de mise à jour de la version 2023.7.0](/help/release-notes/2023/2023-7-0.md)
       + [Notes de mise à jour de la version 2023.6.0](/help/release-notes/2023/2023-6-0.md)
       + [Notes de mise à jour de la version 2023.5.0](/help/release-notes/2023/2023-5-0.md)
