@@ -3,9 +3,9 @@ title: Outil de copie de contenu
 description: L’outil de copie de contenu de Cloud Manager permet aux utilisateurs et utilisatrices de copier du contenu modifiable à la demande à partir de leurs environnements de production 6.x AEM hébergés par AMS vers des environnements inférieurs à des fins de test.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 source-git-commit: fe5de4e1ab5cd0d0e317cd399b8e44758a6312c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1139'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -124,7 +124,7 @@ Une fois qu’un jeu de contenu a été créé, vous pouvez l’utiliser pour co
 
 1. Vous pouvez choisir de supprimer ou de conserver les chemins d’exclusion dans l’environnement de destination. Cochez la case `Do not delete exclude paths from destination` si vous souhaitez conserver les chemins d’exclusion spécifiés dans le jeu de contenu. Si cette case n’est pas cochée, les chemins d’exclusion sont supprimés dans l’environnement cible.
 
-1. Vous pouvez choisir de copier l’historique des versions des chemins copiés de la source vers l’environnement de destination. Case à cocher `Copy Versions` si vous souhaitez copier tous les historiques de versions.
+1. Vous pouvez choisir de copier l’historique des versions des chemins copiés de l’environnement source vers l’environnement de destination. Cochez la case `Copy Versions` si vous souhaitez copier tous les historiques de versions.
 
    ![Copie de contenu](/help/assets/copying-content.png)
 
@@ -161,7 +161,7 @@ L’outil de copie de contenu présente les limites suivantes.
 * Une copie de contenu ne peut pas être effectuée d’un environnement inférieur vers un environnement supérieur.
 * Une copie de contenu ne peut être effectuée que dans le même niveau (auteur-auteur ou publication-publication, par exemple).
 * Une copie de contenu ne peut pas être effectuée sur plusieurs programmes et plusieurs régions.
-* La copie de contenu pour la topologie basée sur l’entrepôt de données cloud ne peut être effectuée que lorsque l’environnement source et de destination se trouve sur le même fournisseur de cloud et la même région.
+* La copie de contenu pour la topologie basée sur le magasin de données cloud ne peut être effectuée que lorsque les environnements source et de destination se trouvent sur le même fournisseur de cloud et dans la même région.
 * L’exécution simultanée d’opérations de copie de contenu sur le même environnement n’est pas possible.
 * Une copie de contenu ne peut pas être effectuée si une opération principale est en cours d’exécution dans l’environnement de destination ou source, tel qu’un pipeline CI/CD.
 * Vous pouvez spécifier jusqu’à cinquante chemins par jeu de contenu. Il n’existe aucune limitation sur les chemins exclus.
@@ -169,4 +169,4 @@ L’outil de copie de contenu présente les limites suivantes.
 * Une copie de contenu ne peut pas être suspendue ou annulée une fois qu’elle est lancée.
 * L’outil de copie de contenu copie les ressources avec les métadonnées liées aux médias dynamiques depuis l’environnement supérieur vers l’environnement inférieur sélectionné.
    * Les ressources copiées doivent ensuite être retraitées à l’aide du [workflow Ressource de traitement de la gestion des ressources numériques](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html?lang=fr) dans l’environnement inférieur, afin d’utiliser la configuration de médias dynamiques correspondante.
-* Le processus de copie de contenu sera beaucoup plus rapide lorsque l’historique des versions n’est pas copié.
+* Le processus de copie de contenu est beaucoup plus rapide lorsque l’historique des versions n’est pas copié.
