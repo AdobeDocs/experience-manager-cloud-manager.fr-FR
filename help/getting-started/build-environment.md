@@ -2,8 +2,8 @@
 title: Environnement de création
 description: Découvrez l’environnement de création spécialisé, dans lequel les utilisateurs Cloud Manager peuvent créer et tester votre code.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: 42cafc03a607ace183d58adbe1c397c1a6c5c22f
-workflow-type: ht
+source-git-commit: 7f9866976667b485124cef60453ec3908ba41ec8
+workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 100%
 
@@ -19,9 +19,11 @@ Découvrez l’environnement de création spécialisé, dans lequel les utilisat
 Les environnements de création de Cloud Manager possèdent les attributs suivants.
 
 * L’environnement de génération est basé sur Linux, dérivé de Ubuntu 18.04.
-* Apache Maven 3.6.0 est installé.
-* Les versions Java installées sont Oracle JDK 8u202 et Oracle JDK 11.0.2.
-* Par défaut, la variable d’environnement `JAVA_HOME` est définie sur `/usr/lib/jvm/jdk1.8.0_202` qui contient le JDK Oracle 8u202. Consultez la section [Autre version du JDK d’exécution de Maven](#alternate-maven) pour plus de détails.
+* Apache Maven 3.8.8 est installé.
+* Les versions Java installées sont Oracle JDK 8u371 et Oracle JDK 11.0.20.
+   * `/usr/lib/jvm/jdk1.8.0_371`
+   * `/usr/lib/jvm/jdk-11.0.20`
+* Par défaut, la variable d’environnement `JAVA_HOME` est définie sur `/usr/lib/jvm/jdk1.8.0_371` qui contient le JDK Oracle 8u371. Consultez la section [Autre version du JDK d’exécution de Maven](#alternate-maven) pour plus de détails.
 * D’autres packages système nécessaires sont installés.
    * `bzip2`
    * `unzip`
@@ -47,7 +49,6 @@ Les environnements de création de Cloud Manager possèdent les attributs suiva
 >* [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 >* [Création d’une intégration d’API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
 >* [Autorisations d’API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
-
 
 ## Utilisation d’une version de Java spécifique {#using-java-version}
 
@@ -138,7 +139,7 @@ Les variables d’environnement standard et les secrets peuvent être utilisés 
 
 #### Dispatcher {#dispatcher}
 
-Seules les variables d’environnement normales peuvent être utilisées avec [le Dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) Les secrets ne peuvent pas être utilisés.
+Seules les variables d’environnement normales peuvent être utilisées avec le [dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) Les secrets ne peuvent pas être utilisés.
 
 Toutefois, les variables d’environnement ne peuvent pas être utilisées dans les directives `IfDefine`.
 

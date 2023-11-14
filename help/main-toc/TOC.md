@@ -7,10 +7,10 @@ user-guide-description: Découvrez comment utiliser Cloud Manager pour auto-gé
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: f1f1d53181362e4a92ad6918182107d710724496
-workflow-type: ht
-source-wordcount: '348'
-ht-degree: 100%
+source-git-commit: 76a3dc6df41032488a3cfe11d0c72769562b96df
+workflow-type: tm+mt
+source-wordcount: '359'
+ht-degree: 97%
 
 ---
 
@@ -30,6 +30,7 @@ ht-degree: 100%
    + [Référentiel de code source](/help/requirements/source-code-repository.md)
    + [Autorisations basées sur les rôles](/help/requirements/role-based-permissions.md)
    + [Configuration des utilisateurs et des rôles](/help/requirements/users-and-roles.md)
+   + [Autorisations personnalisées](/help/using/custom-permissions.md)
    + [Configuration d’environnement](/help/requirements/environment-provisioning.md)
 + Prise en main {#getting-started}
    + [Première connexion](/help/getting-started/first-time-login.md)
@@ -59,12 +60,14 @@ ht-degree: 100%
    + [Référentiels](/help/managing-code/repositories.md)
    + [Intégration à Git](/help/managing-code/git-integration.md)
    + [Utilisation de plusieurs référentiels Git](/help/managing-code/multiple-git-repos.md)
+   + [Utilisation de vos propres référentiels GitHub](/help/managing-code/byo-github.md)
 + Assistant de mise à jour du produit {#product-update-wizard}
    + [Présentation](/help/product-update-wizard/overview.md)
    + [Évaluation](/help/product-update-wizard/evaluation.md)
 + Notes de mise à jour {#release-notes}
    + [Notes de mise à jour de la version actuelle](/help/release-notes/current.md)
    + 2023 {#2023}
+      + [Notes de mise à jour de la version 2023.10.0](/help/release-notes/2023/2023-10-0.md)
       + [Notes de mise à jour de la version 2023.9.0](/help/release-notes/2023/2023-9-0.md)
       + [Notes de mise à jour de la version 2023.8.0](/help/release-notes/2023/2023-8-0.md)
       + [Notes de mise à jour de la version 2023.7.0](/help/release-notes/2023/2023-7-0.md)
