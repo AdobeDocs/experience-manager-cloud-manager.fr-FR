@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 2023.11.0
 description: Voici les notes de mise à jour de la version 2023.11.0 de Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: c7803c75bcfcc967877808214704c5746015481d
+source-git-commit: 264c7ffcbc9e10903880a511a4ca605be666f7e8
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 23%
+source-wordcount: '386'
+ht-degree: 21%
 
 ---
 
@@ -28,8 +28,10 @@ La date de publication de la version 2023.11.0 de [!UICONTROL Cloud Manager] e
 * [Page des détails d’exécution du pipeline](/help/using/managing-pipelines.md#view-details) affiche désormais toutes les étapes d’une exécution de pipeline avec celles qui n’ont pas encore commencé en grisé.
 * Sur les deux **[Activité](/help/using/managing-pipelines.md#activity)** et **[Pipelines](/help/using/managing-pipelines.md#pipelines)** , un résumé de l’exécution du pipeline est désormais disponible lorsque vous cliquez sur un pipeline avec l’état en cours d’exécution.
 * Une nouvelle **Durée** a été ajoutée à la section [page des détails du pipeline](/help/using/managing-pipelines.md#view-details) qui inclut la durée moyenne de l’étape du pipeline en fonction de la tendance historique de ce programme.
-* Sur la page d’exécution du pipeline, les étapes terminées affichent désormais la durée.
+* Sur le [page d’exécution du pipeline,](/help/using/managing-pipelines.md#activity-window) les étapes terminées affichent maintenant la durée
 * Cloud Manager [outil de copie de contenu](/help/using/content-copy.md) permet aux utilisateurs de copier du contenu modifiable à la demande depuis leurs environnements de production hébergés par AMS AEM 6.x vers des environnements inférieurs à des fins de test.
+* Exécution de [réutilisation d’artefacts de build](/help/getting-started/project-setup.md#build-artifact-reuse) affiche désormais le lien vers l’exécution qui a initialement créé ces artefacts.
+* L’option à sélectionner **Échecs de mesures importants** peut maintenant être configuré pour [pipelines de qualité de code](/help/using/non-production-pipelines.md) ainsi que .
 
 ## Programme d&#39;adoption précoce {#early-adoption}
 
