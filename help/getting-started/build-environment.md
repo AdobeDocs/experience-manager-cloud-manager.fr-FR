@@ -3,7 +3,7 @@ title: Environnement de création
 description: Découvrez l’environnement de création spécialisé, dans lequel les utilisateurs Cloud Manager peuvent créer et tester votre code.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
 source-git-commit: 7f9866976667b485124cef60453ec3908ba41ec8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1152'
 ht-degree: 100%
 
@@ -20,10 +20,10 @@ Les environnements de création de Cloud Manager possèdent les attributs suiva
 
 * L’environnement de génération est basé sur Linux, dérivé de Ubuntu 18.04.
 * Apache Maven 3.8.8 est installé.
-* Les versions Java installées sont Oracle JDK 8u371 et Oracle JDK 11.0.20.
+* Les versions Java installées sont Oracle JDK 8u371 et Oracle JDK 11.0.20.
    * `/usr/lib/jvm/jdk1.8.0_371`
    * `/usr/lib/jvm/jdk-11.0.20`
-* Par défaut, la variable d’environnement `JAVA_HOME` est définie sur `/usr/lib/jvm/jdk1.8.0_371` qui contient le JDK Oracle 8u371. Consultez la section [Autre version du JDK d’exécution de Maven](#alternate-maven) pour plus de détails.
+* Par défaut, la variable d’environnement `JAVA_HOME` est définie sur `/usr/lib/jvm/jdk1.8.0_371` qui contient le Oracle JDK 8u371. Consultez la section [Autre version du JDK d’exécution de Maven](#alternate-maven) pour plus de détails.
 * D’autres packages système nécessaires sont installés.
    * `bzip2`
    * `unzip`
