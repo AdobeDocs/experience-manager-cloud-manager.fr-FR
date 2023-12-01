@@ -1,13 +1,13 @@
 ---
 title: Autorisations personnalisées
 description: Découvrez comment utiliser des autorisations personnalisées pour créer des profils d’autorisation personnalisés avec des autorisations configurables afin de restreindre l’accès aux programmes, aux pipelines et aux environnements pour les utilisateurs et utilisatrices de Cloud Manager.
-source-git-commit: 769538ec21b21e612619b0c96718f27982574f6c
-workflow-type: tm+mt
+exl-id: a81eda9f-aa89-40ea-8e4c-52367a0a6aba
+source-git-commit: 4ff8d66356b510600019daad78470ca5dd1c57d4
+workflow-type: ht
 source-wordcount: '1489'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
-
 
 # Autorisations personnalisées {#custom-permissions}
 
@@ -129,11 +129,11 @@ Les autorisations suivantes sont disponibles pour créer des profils personnalis
 | Remplacement et rejet d’échecs de mesures importantes | Autoriser les personnes à remplacer et à rejeter les échecs de mesures importantes |
 | Planification des déploiements en production | Autoriser des personnes à planifier une étape de déploiement en production |
 | Accès aux informations sur le référentiel | Autoriser les personnes à accéder aux informations du référentiel et à générer un mot de passe d’accès |
-| Repository Create | Autoriser les utilisateurs à créer de nouveaux référentiels Git |
-| Repository Delete | Autorisation de la suppression des référentiels Git par les utilisateurs |
-| Repository Edit | Autoriser les utilisateurs à modifier les référentiels Git |
-| Génération du code du référentiel | Autoriser les utilisateurs à générer un projet à partir de l’archétype |
-| Gestion de la copie de contenu | Autoriser les utilisateurs à gérer les opérations de copie de contenu |
+| Création de référentiel | Autoriser les personnes à créer de nouveaux référentiels Git |
+| Suppression de référentiel | Autoriser les personnes à supprimer des référentiels Git |
+| Modification de référentiel | Autoriser les personnes à modifier les référentiels Git |
+| Génération de code de référentiel | Autoriser les personnes à générer un projet à partir de l’archétype |
+| Gestion de la copie de contenu | Autoriser les personnes à gérer les opérations de copie de contenu |
 
 ### Autorisations au niveau de l’organisation {#organization-level}
 
