@@ -1,19 +1,19 @@
 ---
-title: Notes de mise à jour de la version 2023.11.0
-description: Voici les notes de mise à jour de la version 2023.11.0 de Cloud Manager.
+title: Notes de mise à jour de la version 2023.12.0
+description: Voici les notes de mise à jour de la version 2023.12.0 de Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 264c7ffcbc9e10903880a511a4ca605be666f7e8
-workflow-type: ht
-source-wordcount: '386'
-ht-degree: 100%
+source-git-commit: 16eef51d86647ae4f2515f3f3c4cb2d15e948854
+workflow-type: tm+mt
+source-wordcount: '216'
+ht-degree: 89%
 
 ---
 
 
-# Notes de mise à jour de la version 2023.11.0 de Cloud Manager {#release-notes}
+# Notes de mise à jour de la version 2023.12.0 de Cloud Manager {#release-notes}
 
-Cette page présente les notes de mise à jour de la version 2023.11.0 de [!UICONTROL Cloud Manager].
+Cette page présente les notes de mise à jour de la version 2023.12.0 de [!UICONTROL Cloud Manager].
 
 >[!NOTE]
 >
@@ -21,17 +21,11 @@ Cette page présente les notes de mise à jour de la version 2023.11.0 de [!UIC
 
 ## Date de publication {#release-date}
 
-La date de publication de la version 2023.11.0 de [!UICONTROL Cloud Manager] est le 14 novembre 2023. La prochaine version est prévue pour le 7 décembre 2023.
+La date de publication de [!UICONTROL Cloud Manager] version 2023.12.0 du 14 décembre 2023. La prochaine version est prévue pour le 18 janvier 2024.
 
 ## Nouveautés {#what-is-new}
 
-* La [page des détails d’exécution du pipeline](/help/using/managing-pipelines.md#view-details) affiche désormais toutes les étapes d’exécution d’un pipeline, celles n’ayant pas encore commencé étant grisées.
-* Un résumé de l’exécution du pipeline est désormais disponible sur les deux pages, **[Activité](/help/using/managing-pipelines.md#activity)** et **[Pipelines](/help/using/managing-pipelines.md#pipelines)**, lorsque vous cliquez sur un pipeline dont le statut est en cours d’exécution.
-* Une nouvelle section **Durée** a été ajoutée à la [page des détails du pipeline](/help/using/managing-pipelines.md#view-details) qui inclut la durée moyenne de l’étape du pipeline en fonction de la tendance historique de ce programme.
-* Sur la [page d’exécution du pipeline](/help/using/managing-pipelines.md#activity-window), les étapes terminées affichent désormais la durée.
-* L’[outil de copie de contenu](/help/using/content-copy.md) de Cloud Manager permet aux utilisateurs et utilisatrices de copier du contenu modifiable à la demande à partir de leurs environnements de production AEM 6.x hébergés par AMS vers des environnements inférieurs à des fins de test.
-* Les exécutions qui [réutilisent des artefacts de build](/help/getting-started/project-setup.md#build-artifact-reuse) affichent désormais le lien vers l’exécution qui a initialement créé ces artefacts.
-* L’option permettant de sélectionner les **Échecs de mesures importants** peut maintenant aussi être configurée pour des [pipelines de qualité de code](/help/using/non-production-pipelines.md).
+* Les [autorisations personnalisées de Cloud Manager](/help/using/custom-permissions.md) vous permettent de créer des profils d’autorisation personnalisés avec des autorisations configurables afin de restreindre l’accès aux programmes, aux pipelines et aux environnements pour les utilisateurs et utilisatrices de Cloud Manager.
 
 ## Programme d’adoption précoce {#early-adoption}
 
@@ -42,9 +36,3 @@ Prenez part à notre programme d’adoption précoce pour avoir la possibilité 
 Si vous utilisez GitHub pour gérer vos référentiels, [vous pouvez désormais valider le code directement dans vos référentiels GitHub via Cloud Manager.](/help/managing-code/byo-github.md) Cette intégration élimine la nécessité de synchroniser de manière cohérente le code avec le référentiel Adobe et vous permet de vérifier les demandes d’extraction avant de les fusionner dans les branches principales.
 
 Si vous souhaitez tester cette nouvelle fonctionnalité et faire part de vos commentaires, envoyez un e-mail à `Grp-CloudManager_BYOG@adobe.com` à partir de l’adresse e-mail associée à votre Adobe ID.
-
-### Autorisations personnalisées {#custom-permissions}
-
-Les [autorisations personnalisées de Cloud Manager](/help/using/custom-permissions.md) vous permettent de créer des profils d’autorisation personnalisés avec des autorisations configurables afin de restreindre l’accès aux programmes, aux pipelines et aux environnements pour les utilisateurs et utilisatrices de Cloud Manager.
-
-Si vous souhaitez tester cette nouvelle fonctionnalité et faire part de vos commentaires, envoyez un e-mail à `Grp-CloudManager_ams_custompermissions@adobe.com` à partir de l’adresse e-mail associée à votre Adobe ID.
