@@ -2,10 +2,10 @@
 title: Environnement de création
 description: Découvrez l’environnement de création spécialisé, dans lequel les utilisateurs Cloud Manager peuvent créer et tester votre code.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: 7f9866976667b485124cef60453ec3908ba41ec8
-workflow-type: ht
-source-wordcount: '1152'
-ht-degree: 100%
+source-git-commit: 2ac254508e4015fea21c4fcd087703ac5fbeeec6
+workflow-type: tm+mt
+source-wordcount: '1283'
+ht-degree: 86%
 
 ---
 
@@ -18,8 +18,9 @@ Découvrez l’environnement de création spécialisé, dans lequel les utilisat
 
 Les environnements de création de Cloud Manager possèdent les attributs suivants.
 
-* L’environnement de génération est basé sur Linux, dérivé de Ubuntu 18.04.
+* L’environnement de génération est basé sur Linux, dérivé d’Ubuntu 22.04.
 * Apache Maven 3.8.8 est installé.
+   * Adobe recommande aux utilisateurs [mettez à jour leurs référentiels Maven pour utiliser HTTPS au lieu de HTTP.](#https-maven)
 * Les versions Java installées sont Oracle JDK 8u371 et Oracle JDK 11.0.20.
    * `/usr/lib/jvm/jdk1.8.0_371`
    * `/usr/lib/jvm/jdk-11.0.20`
@@ -38,6 +39,7 @@ Les environnements de création de Cloud Manager possèdent les attributs suiva
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven est configuré au niveau du système avec un fichier `settings.xml` qui inclut automatiquement le référentiel public d’artefacts Adobe à l’aide d’un profil intitulé `adobe-public`.
    * Pour plus de détails, consultez le [référentiel Maven public d’Adobe](https://repo1.maven.org/).
+* Node.js 18 est disponible pour [pipelines front-end et pile complète.](/help/overview/ci-cd-pipelines.md)
 
 >[!NOTE]
 >
@@ -49,6 +51,14 @@ Les environnements de création de Cloud Manager possèdent les attributs suiva
 >* [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 >* [Création d’une intégration d’API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
 >* [Autorisations d’API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
+
+## Référentiels Maven HTTPS {#https-maven}
+
+Cloud Manager [version 2023.10.0](/help/release-notes/2023/2023-10-0.md) a commencé une mise à jour continue de l’environnement de génération (avec la version 2023.12.0), qui incluait une mise à jour de Maven 3.8.8. Un changement significatif introduit dans Maven 3.8.1 a été une amélioration de la sécurité visant à atténuer les vulnérabilités potentielles. Plus précisément, Maven désactive désormais toutes les variables non sécurisées. `http://*` les miroirs par défaut, comme indiqué dans la section [Notes de mise à jour de Maven.](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)
+
+Suite à cette amélioration de la sécurité, certains utilisateurs peuvent rencontrer des problèmes lors de l’étape de création, en particulier lors du téléchargement d’artefacts à partir de référentiels Maven qui utilisent des connexions HTTP non sécurisées.
+
+Pour garantir une expérience fluide avec la version mise à jour, Adobe recommande aux utilisateurs de mettre à jour leurs référentiels Maven pour utiliser HTTPS au lieu de HTTP. Cet ajustement s&#39;aligne sur la transition croissante du secteur vers des protocoles de communication sécurisés et contribue à maintenir un processus de construction sécurisé et fiable.
 
 ## Utilisation d’une version de Java spécifique {#using-java-version}
 
