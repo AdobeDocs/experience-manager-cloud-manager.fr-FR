@@ -6,7 +6,7 @@ exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: b235e398b42e9da3dd2efacdc0ef38b6803bd213
 workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Cette page présente les notes de mise à jour de la version 2024.1.0 de [!UICO
 
 ## Date de publication {#release-date}
 
-La date de publication de [!UICONTROL Cloud Manager] la version 2024.1.0 est le 17 janvier 2024. La prochaine version est prévue pour le 16 février 2024.
+La date de publication de la version 2024.1.0 de [!UICONTROL Cloud Manager] est le 17 janvier 2024. La prochaine version est prévue pour le 16 février 2024.
 
 ## Programme d’adoption précoce {#early-adoption}
 
@@ -35,5 +35,5 @@ Si vous souhaitez tester cette nouvelle fonctionnalité et faire part de vos com
 
 ## Correctifs {#bug-fixes}
 
-* Une erreur a été corrigée dans certains cas de coin où les téléchargements échouaient en raison de la manière dont l’application de test interprète les données, provoquant l’échec du test du pourcentage d’erreur total.
-* Lorsqu’une étape de création se termine par un état `FAILED` en raison d’un `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`, il est désormais correctement décrit comme une erreur en raison de conflits de fusion avec la branche de destination.
+* Une erreur a été corrigée dans certains cas particuliers où les téléchargements échouaient en raison de la manière dont l’application test interprète les données, provoquant l’échec du test pour le pourcentage d’erreur total.
+* Lorsqu’une étape de création se termine avec le statut `FAILED` en raison d’une `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`, elle est désormais décrite comme une erreur due à des conflits de fusion avec la branche de destination.
