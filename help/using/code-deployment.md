@@ -3,9 +3,9 @@ title: Déploiement du code
 description: Découvrez comment déployer votre code et ce qui se passe dans Cloud Manager lors du déploiement.
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
 source-git-commit: 70e68f8af17b0acf644176c2ed3afaf8fc219063
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1650'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -87,10 +87,10 @@ Les étapes suivantes expirent s’ils sont en attente de commentaires de l’ut
 | Test de qualité du code | 7 jours |
 | Test de sécurité | 7 jours |
 | Test de performance | 7 jours |
-| Demande d’approbation (étape) | 7 jours |
-| Demande d’approbation (production) | 14 jours |
+| Application à approuver (évaluation) | 7 jours |
+| Application à approuver (production) | 14 jours |
 | Planning du déploiement en production | 14 jours |
-| Déploiement en production géré | 14 jours |
+| Déploiement de production géré | 14 jours |
 
 ## Détails du processus de déploiement {#deployment-process}
 
