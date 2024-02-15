@@ -4,9 +4,9 @@ description: Découvrez comment configurer Cloud Manager pour qu’il fonctionn
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
 source-git-commit: b5907179d3de329e8b86546bb8aa99608a5b351a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '767'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ En configurant Cloud Manager pour qu’il fonctionne avec vos propres référen
 
 >[!NOTE]
 >
->Cette fonctionnalité est réservée au GitHub public. La prise en charge de GitHub auto-hébergé n’est pas disponible.
+>Cette fonctionnalité est réservée au GitHub public. La prise en charge du GitHub auto-hébergé n’est pas disponible.
 
 ## Configuration {#configuration}
 
