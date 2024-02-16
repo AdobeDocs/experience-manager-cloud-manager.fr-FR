@@ -1,19 +1,19 @@
 ---
-title: Notes de mise à jour de la version 2024.1.0
-description: Voici les notes de mise à jour de la version 2024.1.0 de Cloud Manager.
+title: Notes de mise à jour de la version 2024.2.0
+description: Voici les notes de mise à jour de la version 2024.2.0 de Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: b5907179d3de329e8b86546bb8aa99608a5b351a
-workflow-type: ht
-source-wordcount: '257'
-ht-degree: 100%
+source-git-commit: 524471a87217c15dae96c3e6aee57426b43dcccb
+workflow-type: tm+mt
+source-wordcount: '299'
+ht-degree: 61%
 
 ---
 
 
-# Notes de mise à jour de la version 2024.1.0 de Cloud Manager {#release-notes}
+# Notes de mise à jour de la version 2024.2.0 de Cloud Manager {#release-notes}
 
-Cette page présente les notes de mise à jour de la version 2024.1.0 de [!UICONTROL Cloud Manager].
+Cette page présente les notes de mise à jour de la version 2024.2.0 de [!UICONTROL Cloud Manager].
 
 >[!NOTE]
 >
@@ -21,7 +21,12 @@ Cette page présente les notes de mise à jour de la version 2024.1.0 de [!UICO
 
 ## Date de publication {#release-date}
 
-La date de publication de la version 2024.1.0 de [!UICONTROL Cloud Manager] est le 17 janvier 2024. La prochaine version est prévue pour le 16 février 2024.
+La date de publication de [!UICONTROL Cloud Manager] la version 2024.2.0 est le 16 février 2024. La prochaine version est prévue pour le 16 mars 2024.
+
+## Nouveautés {#what-is-new}
+
+* Comme faisant partie de [déploiement,](/help/using/code-deployment.md) le cache de Dispatcher a été vidé à l’emplacement **Joindre Dispatcher** étape . Afin de vous permettre de tester les modifications sur chaque noeud avant de l’associer à l’équilibreur de charge de l’application, après avoir déployé du code sur un éditeur particulier, vous pouvez désormais tester les modifications directement à partir du Dispatcher associé avant de joindre ce Dispatcher à l’équilibreur de charge.
+* [Environnement de création](/help/getting-started/build-environment.md) a été mis à jour vers les versions Maven 3.9.4 et JDK jdk-11.0.22 et jdk1.8.0_401.
 
 ## Programme d’adoption précoce {#early-adoption}
 
@@ -35,5 +40,4 @@ Si vous souhaitez tester cette nouvelle fonctionnalité et faire part de vos com
 
 ## Correctifs {#bug-fixes}
 
-* Une erreur a été corrigée dans certains cas particuliers où les téléchargements échouaient en raison de la manière dont l’application test interprète les données, provoquant l’échec du test pour le pourcentage d’erreur total.
-* Lorsqu’une étape de création se termine avec le statut `FAILED` en raison d’une `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`, elle est désormais décrite comme une erreur due à des conflits de fusion avec la branche de destination.
+* Le JDK des conteneurs de génération a été mis à jour vers une version qui résout [JDK-8313765.](https://bugs.openjdk.org/browse/JDK-8313765)
