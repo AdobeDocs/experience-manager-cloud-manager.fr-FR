@@ -3,9 +3,9 @@ title: Environnement de création
 description: Découvrez l’environnement de création spécialisé, dans lequel les utilisateurs Cloud Manager peuvent créer et tester votre code.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
 source-git-commit: dc0b83fa045208fcd333af10f90f9590c2aa96b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1280'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -21,10 +21,10 @@ Les environnements de création de Cloud Manager possèdent les attributs suiva
 * L’environnement de création est basé sur Linux, dérivé de Ubuntu 22.04.
 * Apache Maven 3.9.4 est installé.
    * Adobe recommande aux utilisateurs et utilisatrices de [mettre à jour leurs référentiels Maven de sorte à utiliser HTTPS au lieu de HTTP.](#https-maven)
-* Les versions Java installées sont Oracle JDK 8u401 et Oracle JDK 11.0.22.
+* Les versions Java installées sont Oracle JDK 8u401 et Oracle JDK 11.0.22.
    * `/usr/lib/jvm/jdk1.8.0_401`
    * `/usr/lib/jvm/jdk-11.0.22`
-* Par défaut, la variable `JAVA_HOME`  La variable d’environnement est définie sur `/usr/lib/jvm/jdk1.8.0_401` qui contient l’Oracle JDK 8u401. Consultez la section [Autre version du JDK d’exécution de Maven](#alternate-maven) pour plus de détails.
+* Par défaut, la variable d’environnement `JAVA_HOME` est définie sur `/usr/lib/jvm/jdk1.8.0_401` qui contient Oracle JDK 8u401. Consultez la section [Autre version du JDK d’exécution de Maven](#alternate-maven) pour plus de détails.
 * D’autres packages système nécessaires sont installés.
    * `bzip2`
    * `unzip`
@@ -39,7 +39,7 @@ Les environnements de création de Cloud Manager possèdent les attributs suiva
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven est configuré au niveau du système avec un fichier `settings.xml` qui inclut automatiquement le référentiel public d’artefacts Adobe à l’aide d’un profil intitulé `adobe-public`.
    * Pour plus de détails, consultez le [référentiel Maven public d’Adobe](https://repo1.maven.org/).
-* Node.js 18 est disponible pour [pipelines front-end.](/help/overview/ci-cd-pipelines.md)
+* Node.js 18 est disponible pour les [pipelines front-end.](/help/overview/ci-cd-pipelines.md)
 
 >[!NOTE]
 >
