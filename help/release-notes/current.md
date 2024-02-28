@@ -4,9 +4,9 @@ description: Voici les notes de mise à jour de la version 2024.2.0 de Cloud M
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: cc87246503ab63d6dd60c691f15fc4759fcf6939
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '299'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
@@ -21,12 +21,12 @@ Cette page présente les notes de mise à jour de la version 2024.2.0 de [!UICO
 
 ## Date de publication {#release-date}
 
-La date de publication de [!UICONTROL Cloud Manager] la version 2024.2.0 est le 15 février 2024. La prochaine version est prévue pour le 16 mars 2024.
+La date de publication de la version 2024.2.0 de [!UICONTROL Cloud Manager] est le 15 février 2024. La prochaine version est prévue pour le 16 mars 2024.
 
 ## Nouveautés {#what-is-new}
 
-* Comme faisant partie de [déploiement,](/help/using/code-deployment.md) le cache de Dispatcher a été vidé à l’emplacement **Joindre Dispatcher** étape . Afin de vous permettre de tester les modifications sur chaque noeud avant de l’associer à l’équilibreur de charge de l’application, après avoir déployé du code sur un éditeur particulier, vous pouvez désormais tester les modifications directement à partir du Dispatcher associé avant de joindre ce Dispatcher à l’équilibreur de charge.
-* [Environnement de création](/help/getting-started/build-environment.md) a été mis à jour vers les versions Maven 3.9.4 et JDK jdk-11.0.22 et jdk1.8.0_401.
+* Dans le cadre du [déploiement](/help/using/code-deployment.md), le cache de Dispatcher a été vidé à l’étape **Joindre Dispatcher**. Afin de vous permettre de tester les modifications sur chaque nœud avant de l’associer à la répartition de charge de l’application, après avoir déployé du code sur un éditeur particulier, vous pouvez désormais tester les modifications directement à partir du Dispatcher associé avant de joindre ce Dispatcher à la répartition de charge.
+* L’[environnement de version](/help/getting-started/build-environment.md) a été mis à jour vers les versions Maven 3.9.4, ainsi que jdk-11.0.22 et jdk1.8.0_401.
 
 ## Programme d’adoption précoce {#early-adoption}
 
@@ -40,5 +40,5 @@ Si vous souhaitez tester cette nouvelle fonctionnalité et faire part de vos com
 
 ## Correctifs {#bug-fixes}
 
-* Le JDK des conteneurs de génération a été mis à jour vers une version qui résout [JDK-8313765.](https://bugs.openjdk.org/browse/JDK-8313765)
+* Le JDK des conteneurs de version a été mis à jour vers une version qui résout [JDK-8313765.](https://bugs.openjdk.org/browse/JDK-8313765)
 §
