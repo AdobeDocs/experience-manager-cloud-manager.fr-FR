@@ -2,10 +2,10 @@
 title: Autorisations basées sur les rôles
 description: Découvrez les autorisations préconfigurées basées sur les rôles de Cloud Manager pour gérer l’accès à vos ressources cloud.
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: 522e5fbc650a8159602eb1aeaf42d64f4e23e8b4
-workflow-type: ht
-source-wordcount: '565'
-ht-degree: 100%
+source-git-commit: 10297789ac8f905f242ac52bdc6fc4812b989e8a
+workflow-type: tm+mt
+source-wordcount: '602'
+ht-degree: 93%
 
 ---
 
@@ -13,6 +13,12 @@ ht-degree: 100%
 # Autorisations basées sur les rôles {#role-based-permissions}
 
 [!UICONTROL Cloud Manager] dispose de rôles préconfigurés avec les autorisations appropriées. Par exemple, un développeur développe des codes et dispose de l’autorisation de placer le code dans le référentiel Git. Un propriétaire d’entreprise dispose de différents autorisations lui permettant de définir des indicateurs de performance clés (KPI) et d’approuver les déploiements.
+
+>[!NOTE]
+>
+>Cette documentation décrit les autorisations basées sur les rôles pour Cloud Manager pour Adobe Managed Services (AMS).
+>
+>La documentation équivalente pour AEM as a Cloud Service se trouve dans le document . [Présentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction.html#role-based-permissions) dans la documentation as a Cloud Service AEM.
 
 ## Rôles utilisateur {#user-roles}
 
