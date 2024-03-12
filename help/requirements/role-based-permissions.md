@@ -3,9 +3,9 @@ title: Autorisations basées sur les rôles
 description: Découvrez les autorisations préconfigurées basées sur les rôles de Cloud Manager pour gérer l’accès à vos ressources cloud.
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
 source-git-commit: 10297789ac8f905f242ac52bdc6fc4812b989e8a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '602'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 93%
 
 >[!NOTE]
 >
->Cette documentation décrit les autorisations basées sur les rôles pour Cloud Manager pour Adobe Managed Services (AMS).
+>Cette documentation décrit les autorisations basées sur les rôles de Cloud Manager pour Adobe Managed Services (AMS).
 >
->La documentation équivalente pour AEM as a Cloud Service se trouve dans le document . [Présentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction.html#role-based-permissions) dans la documentation as a Cloud Service AEM.
+>Retrouvez la documentation équivalente pour AEM as a Cloud Service dans la [Présentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction.html?lang=fr#role-based-permissions) de la documentation AEM as a Cloud Service.
 
 ## Rôles utilisateur {#user-roles}
 
