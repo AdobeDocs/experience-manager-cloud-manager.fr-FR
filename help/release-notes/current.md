@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 2024.3.0
 description: Voici les notes de mise à jour de la version 2024.3.0 de Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 95a7a7be3ba20e05311ff90b91bd0773f6e77a07
+source-git-commit: 22730ba281f7c1c4720158a3a813c56b815a0af1
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 63%
+source-wordcount: '268'
+ht-degree: 68%
 
 ---
 
@@ -25,8 +25,7 @@ La date de publication de [!UICONTROL Cloud Manager] la version 2024.3.0 est le 
 
 ## Nouveautés {#what-is-new}
 
-* Vous pouvez désormais valider l’intégrité des serveurs, des journaux de révision, etc., sur les instances créées lors des déploiements bleu/vert.
-   * Les détails, y compris les informations IP/DNS (FQDN) des serveurs verts, s’affichent désormais dans l’interface utilisateur de Cloud Manager.
+* Les détails, y compris les informations IP/DNS (FQDN) des serveurs verts, s’affichent désormais dans l’interface utilisateur de Cloud Manager.
 
 ## Programme d’adoption précoce {#early-adoption}
 
