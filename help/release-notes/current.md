@@ -6,7 +6,7 @@ exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 22730ba281f7c1c4720158a3a813c56b815a0af1
 workflow-type: tm+mt
 source-wordcount: '268'
-ht-degree: 68%
+ht-degree: 93%
 
 ---
 
@@ -21,7 +21,7 @@ Cette page présente les notes de mise à jour de la version 2024.3.0 de [!UICO
 
 ## Date de publication {#release-date}
 
-La date de publication de [!UICONTROL Cloud Manager] la version 2024.3.0 est le 14 mars 2024. La prochaine version est prévue pour le 11 avril 2024.
+La date de publication de la version 2024.3.0 de [!UICONTROL Cloud Manager] est le 14 mars 2024. La prochaine version est prévue pour le 11 avril 2024.
 
 ## Nouveautés {#what-is-new}
 
@@ -39,5 +39,5 @@ Si vous souhaitez tester cette nouvelle fonctionnalité et faire part de vos com
 
 ## Correctifs {#bug-fixes}
 
-* Un bogue a été corrigé lorsque les journaux appropriés n’ont pas été générés lors de l’étape de test de performance lorsque la mesure de taux d’erreur a échoué.
-* Une logique améliorée au sein du service de test de performances chargé de détecter l’absence d’une page sur le site (404) garantit désormais un déploiement plus fluide et ininterrompu.
+* Un bug a été corrigé qui faisait que les journaux appropriés n’étaient pas générés lors de l’étape de test des performances lorsque la mesure de taux d’erreur échouait.
+* Une logique améliorée au sein du service de test des performances chargé de détecter l’absence d’une page sur le site (404) garantit désormais un déploiement plus fluide et ininterrompu.
