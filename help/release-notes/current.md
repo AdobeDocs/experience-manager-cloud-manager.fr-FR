@@ -4,9 +4,9 @@ description: Voici les notes de mise à jour de la version 2024.4.0 de Cloud M
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 4a7c6fbc3fa936ff1470420966823f94fb3a4d7b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '258'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -21,12 +21,12 @@ Cette page présente les notes de mise à jour de la version 2024.4.0 de [!UICO
 
 ## Date de publication {#release-date}
 
-La date de publication de [!UICONTROL Cloud Manager] la version 2024.4.0 est le 10 avril 2024. La prochaine version est prévue pour le 9 mai 2024.
+La date de publication de la version 2024.4.0 de [!UICONTROL Cloud Manager] est le 10 avril 2024. La prochaine version est prévue pour le 9 mai 2024.
 
 ## Nouveautés {#what-is-new}
 
-* La prise en charge des pipelines d’évaluation uniquement et de production seule a été introduite, ce qui vous permet de diviser les pipelines de déploiement de production en pile complète en déploiements spécialisés plus petits.
-* Les messages d’erreur améliorés pour les problèmes de génération de code permettent d’identifier plus facilement les causes premières et les étapes suivantes exploitables.
+* La prise en charge des pipelines d’évaluation uniquement et de production uniquement a été introduite, ce qui vous permet de diviser les pipelines de déploiement de production en pile complète en déploiements spécialisés plus petits.
+* Les messages d’erreur améliorés pour les problèmes de génération de code permettent d’identifier plus facilement les causes premières et les étapes suivantes à entreprendre.
 
 ## Programme d’adoption précoce {#early-adoption}
 
@@ -40,4 +40,4 @@ Si vous souhaitez tester cette nouvelle fonctionnalité et faire part de vos com
 
 ## Correctifs {#bug-fixes}
 
-* Correction d’un bogue en raison duquel Cloud Manager réutilisait des artefacts avec un hachage de validation incorrect.
+* Correction d’un bug où Cloud Manager réutilisait des artefacts avec un hachage de validation incorrect.
