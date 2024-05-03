@@ -2,10 +2,10 @@
 title: Autorisations basées sur les rôles
 description: Découvrez les autorisations préconfigurées basées sur les rôles de Cloud Manager pour gérer l’accès à vos ressources cloud.
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: 10297789ac8f905f242ac52bdc6fc4812b989e8a
-workflow-type: ht
-source-wordcount: '602'
-ht-degree: 100%
+source-git-commit: 1c0c3a751ba2023fc2c2dd5d0d54f914373ad95b
+workflow-type: tm+mt
+source-wordcount: '620'
+ht-degree: 97%
 
 ---
 
@@ -66,3 +66,7 @@ Chacun des rôles est associé à des autorisations préconfigurées spécifique
 | Génération d’un jeton d’accès personnel | Accéder à Git |  | x |  | x |  |
 
 Pour en savoir plus sur la configuration de vos utilisateurs, voir le document [Configuration des utilisateurs et des rôles.](/help/requirements/users-and-roles.md)
+
+>[!TIP]
+>
+>Des profils d’autorisation personnalisés avec des autorisations configurables sont également disponibles. Consultez le document [Autorisations personnalisées](/help/using/custom-permissions.md) pour plus d’informations.
