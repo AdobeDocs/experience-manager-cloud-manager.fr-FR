@@ -2,9 +2,9 @@
 title: Déploiement du code
 description: Découvrez comment déployer votre code et ce qui se passe dans Cloud Manager lors du déploiement.
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: 70e68f8af17b0acf644176c2ed3afaf8fc219063
-workflow-type: ht
-source-wordcount: '1650'
+source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
+workflow-type: tm+mt
+source-wordcount: '1648'
 ht-degree: 100%
 
 ---
@@ -55,8 +55,6 @@ L’étape du **test dans l’environnement d’évaluation** comprend les actio
 
 * **Tests de sécurité** : cette étape évalue l’impact de votre code sur la sécurité de l’environnement AEM. Consultez le document [Comprendre les résultats de test](/help/using/code-quality-testing.md) pour obtenir plus de détails sur le processus de test.
    * **Tests de performance** : cette étape évalue les performances de votre code. Consultez le document [Comprendre les résultats de test](/help/using/code-quality-testing.md) pour obtenir plus de détails sur le processus de test.
-
-  ![Test dans l’environnement d’évaluation](/help/assets/Stage_Testing1.png)
 
 ### Étape de déploiement en production {#production-deployment}
 

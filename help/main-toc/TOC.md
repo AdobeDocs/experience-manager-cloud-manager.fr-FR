@@ -7,9 +7,9 @@ user-guide-description: Découvrez comment utiliser Cloud Manager pour auto-gé
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 664f43f8ec92da01af16721d9c847e0b03eb4e96
-workflow-type: ht
-source-wordcount: '498'
+source-git-commit: fbbc8b7aee04d1c153aeac87cc086883c0c6b980
+workflow-type: tm+mt
+source-wordcount: '499'
 ht-degree: 100%
 
 ---
@@ -34,6 +34,7 @@ ht-degree: 100%
    + [Configuration d’environnement](/help/requirements/environment-provisioning.md)
 + Prise en main {#getting-started}
    + [Première connexion](/help/getting-started/first-time-login.md)
+   + [Navigation](/help/getting-started/navigation.md)
    + [Configuration du programme](/help/getting-started/program-setup.md)
    + Création de projet AEM {#project-creation}
       + [Utilisation de l’assistant](/help/getting-started/using-the-wizard.md)

@@ -2,10 +2,10 @@
 title: Référentiels Cloud Manager
 description: Découvrez comment créer, modifier et accéder à des référentiels pour vos programmes Cloud Manager.
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
-source-git-commit: 63cbcf8724a840efa67b8fafc4c321e04a5d70d9
-workflow-type: ht
-source-wordcount: '796'
-ht-degree: 100%
+source-git-commit: 1d4ab9704fdb743b097e24be335fbf069d1e78bd
+workflow-type: tm+mt
+source-wordcount: '762'
+ht-degree: 98%
 
 ---
 
@@ -26,11 +26,7 @@ Pour accéder à votre référentiel, utilisez le bouton **Accéder aux informat
 
    ![Bouton Accéder aux informations sur le référentiel](/help/assets/access-repo1.png)
 
-1. Si vous passez à l’onglet du pipeline **Hors-production**, l’option **Accéder aux informations sur le référentiel** est également disponible, telle que [configurée pour le pipeline](/help/using/non-production-pipelines.md).
-
-   ![Pipelines hors production](/help/assets/access-repo-nonprod.png)
-
-1. Cliquez sur le bouton **Accéder aux informations sur le référentiel** pour ouvrir une boîte de dialogue qui affiche les éléments suivants :
+1. Appuyez ou cliquez sur le bouton **Accès aux informations sur le référentiel** pour ouvrir une boîte de dialogue qui affiche :
 
    * URL vers le référentiel Git ;
    * Nom d’utilisateur ou d’utilisatrice
@@ -68,8 +64,6 @@ Pour ajouter des référentiels dans Cloud Manager, procédez comme suit :
 1. Sélectionnez **Enregistrer**.
 
 Le référentiel que vous venez de créer s’affiche.
-
-![Référentiel nouvellement créé](/help/assets/create-repo3.png)
 
 Vous pouvez sélectionner les référentiels créés dans Cloud Manager lorsque vous [créez vos pipelines](/help/overview/ci-cd-pipelines.md).
 
