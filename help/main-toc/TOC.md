@@ -7,10 +7,10 @@ user-guide-description: Découvrez comment utiliser Cloud Manager pour auto-gé
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: fbbc8b7aee04d1c153aeac87cc086883c0c6b980
+source-git-commit: 9d0f4dd29e2d05ab3f6900ee23c536b91c849e65
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 100%
+source-wordcount: '509'
+ht-degree: 99%
 
 ---
 
@@ -46,6 +46,7 @@ ht-degree: 100%
    + Pipelines CI/CD {#pipelines}
       + [Configurer des pipelines de production](/help/using/production-pipelines.md)
       + [Configurer des pipelines hors production](/help/using/non-production-pipelines.md)
+      + [Pipelines d’évaluation et de production uniquement](/help/using/stage-prod-only.md)
       + [Gestion des pipelines](/help/using/managing-pipelines.md)
    + [Déploiement du code](/help/using/code-deployment.md)
    + [Test de qualité du code](/help/using/code-quality-testing.md)
@@ -68,6 +69,7 @@ ht-degree: 100%
 + Notes de mise à jour {#release-notes}
    + [Notes de mise à jour de la version actuelle](/help/release-notes/current.md)
    + 2024 {#2024}
+      + [Notes de mise à jour de la version 2024.4.0](/help/release-notes/2024/2024-4-0.md)
       + [Notes de mise à jour de la version 2024.3.0](/help/release-notes/2024/2024-3-0.md)
       + [Notes de mise à jour de la version 2024.2.0](/help/release-notes/2024/2024-2-0.md)
       + [Notes de mise à jour de la version 2024.1.0](/help/release-notes/2024/2024-1-0.md)
