@@ -3,9 +3,9 @@ title: Référentiels Cloud Manager
 description: Découvrez comment créer, modifier et accéder à des référentiels pour vos programmes Cloud Manager.
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
 source-git-commit: 1d4ab9704fdb743b097e24be335fbf069d1e78bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '762'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Pour accéder à votre référentiel, utilisez le bouton **Accéder aux informat
 
    ![Bouton Accéder aux informations sur le référentiel](/help/assets/access-repo1.png)
 
-1. Appuyez ou cliquez sur le bouton **Accès aux informations sur le référentiel** pour ouvrir une boîte de dialogue qui affiche :
+1. Appuyez ou cliquez sur le bouton **Accéder aux informations sur le référentiel** pour ouvrir une boîte de dialogue qui affiche les éléments suivants :
 
    * URL vers le référentiel Git ;
    * Nom d’utilisateur ou d’utilisatrice

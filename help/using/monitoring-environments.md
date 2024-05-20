@@ -3,9 +3,9 @@ title: Surveiller les environnements
 description: Découvrez comment surveiller vos environnements dans Cloud Manager.
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
 source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '928'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -26,15 +26,15 @@ Pour accéder à la surveillance du système, procédez comme suit.
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) et sélectionnez l’organisation et le programme appropriés.
 
-1. Appuyez ou cliquez sur le bouton représentant des points de suspension du programme que vous souhaitez surveiller et sélectionnez l’option **Afficher la surveillance** .
+1. Appuyez ou cliquez sur le bouton représentant des points de suspension pour le programme que vous souhaitez surveiller et sélectionnez l’option **Afficher la surveillance**.
 
    ![Paramètres](/help/assets/first-timea1.png)
 
-La variable **Rapports** s’ouvre pour afficher les informations de surveillance du système.
+La page **Rapports** s’ouvre et affiche les informations de surveillance du système.
 
-## Aperçu de la surveillance du système {#system-monitoring-overview}
+## Vue d’ensemble de la surveillance du système {#system-monitoring-overview}
 
-La variable **Surveillance du système** de la **Rapports** La page répertorie les environnements surveillés dans le programme et des rapports sur leur intégrité de haut niveau dans quatre catégories distinctes :
+La section **Surveillance du système** de la page **Rapports** répertorie les environnements surveillés dans le programme et indique leur niveau d’intégrité globale dans quatre catégories distinctes :
 
 * Hôte
 * Stockage
@@ -51,7 +51,7 @@ Le statut de chaque catégorie représente une synthèse des mesures individuell
 
 ## Détails de la surveillance du système {#system-monitoring-detail}
 
-Pour afficher les détails de mesures spécifiques, appuyez ou cliquez sur l’une des colonnes de catégories d’une instance spécifique ou sur le titre de la catégorie dans le volet de navigation de gauche. Chaque page de détail présente une série de graphiques pour les mesures de cette catégorie. Vous pouvez afficher les mesures de toutes les instances dans un environnement ou pour une instance spécifique. Vous pouvez basculer entre l’environnement et les instances à l’aide des listes déroulantes dans le coin supérieur droit.
+Pour consulter les détails de mesures spécifiques, appuyez ou cliquez sur l’une des colonnes de catégorie d’une instance spécifique ou sur le titre de la catégorie dans le volet de navigation de gauche. Chaque page de détail présente une série de graphiques pour les mesures de cette catégorie. Vous pouvez afficher les mesures de toutes les instances dans un environnement ou pour une instance spécifique. Vous pouvez basculer entre l’environnement et les instances à l’aide des listes déroulantes dans le coin supérieur droit.
 
 ![Sélectionner l’environnement](/help/assets/System_Monitoring1.png)
 
@@ -98,9 +98,9 @@ Par exemple, si vous cliquez sur la série de seuil d’avertissement, vous ne v
 
 ## Création de rapports de contrat SLA {#sla-reporting}
 
-Vous pouvez voir les performances de votre environnement d’AEM de production par rapport à votre contrat de niveau de service (SLA).
+Vous pouvez consulter les performances de votre environnement de production AEM correspondant au contrat de niveau de service (SLA) auquel vous avez souscrit.
 
-Le graphique suivant montre les performances mensuelles du contrat de niveau de service pour 2019.
+Le graphique suivant montre les performances mensuelles du contrat de niveau de service pour 2019.
 
 ![Graphique SLA pour 2018](/help/assets/SLA-Reports-one.png)
 
