@@ -8,9 +8,9 @@ feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
 source-git-commit: 9d0f4dd29e2d05ab3f6900ee23c536b91c849e65
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '509'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -46,8 +46,8 @@ ht-degree: 99%
    + Pipelines CI/CD {#pipelines}
       + [Configurer des pipelines de production](/help/using/production-pipelines.md)
       + [Configurer des pipelines hors production](/help/using/non-production-pipelines.md)
-      + [Pipelines d’évaluation et de production uniquement](/help/using/stage-prod-only.md)
-      + [Gestion des pipelines](/help/using/managing-pipelines.md)
+      + [Pipelines dédiés uniquement à l’évaluation ou à la production](/help/using/stage-prod-only.md)
+      + [Gérer les pipelines](/help/using/managing-pipelines.md)
    + [Déploiement du code](/help/using/code-deployment.md)
    + [Test de qualité du code](/help/using/code-quality-testing.md)
    + [Gestion des environnements](/help/using/managing-environments.md)
@@ -64,7 +64,7 @@ ht-degree: 99%
    + [Utilisation de plusieurs référentiels Git](/help/managing-code/multiple-git-repos.md)
    + [Utiliser vos propres référentiels GitHub](/help/managing-code/byo-github.md)
 + Assistant de mise à jour du produit {#product-update-wizard}
-   + [Présentation](/help/product-update-wizard/overview.md)
+   + [Vue d’ensemble](/help/product-update-wizard/overview.md)
    + [Évaluation](/help/product-update-wizard/evaluation.md)
 + Notes de mise à jour {#release-notes}
    + [Notes de mise à jour de la version actuelle](/help/release-notes/current.md)
