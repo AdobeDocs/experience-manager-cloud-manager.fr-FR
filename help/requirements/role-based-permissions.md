@@ -2,10 +2,10 @@
 title: Autorisations basées sur les rôles
 description: Découvrez les autorisations préconfigurées basées sur les rôles de Cloud Manager pour gérer l’accès à vos ressources cloud.
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: 1c0c3a751ba2023fc2c2dd5d0d54f914373ad95b
-workflow-type: ht
+source-git-commit: fc1bc626dc18d25ce8c5bbae71396b234b5676db
+workflow-type: tm+mt
 source-wordcount: '620'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -35,7 +35,7 @@ Ce tableau répertorie les rôles que vous pouvez affecter dans Admin Console.
 | Responsable de déploiement | Cet utilisateur gère les opérations de déploiement à l’aide de [!UICONTROL Cloud Manager] pour exécuter des déploiements d’évaluation et de production, peut approuver des échecs à 3 niveaux importants si nécessaire et a accès au référentiel git. |
 | Développeur | Cet utilisateur développe et teste des codes d’application personnalisés, utilise principalement [!UICONTROL Cloud Manager] pour afficher le statut du déploiement et dispose d’un accès en validation au référentiel Git. |
 | Ingénieur du succès client | Cet utilisateur prend généralement en charge le succès client pour les clients AMS et interagit avec [!UICONTROL Cloud Manager] dans le but d’exécuter des déploiements nécessitant la supervision de l’ingénieur du succès client (CSE). |
-| Créateur de contenu | Cet utilisateur n’interagit généralement pas avec [!UICONTROL Cloud Manager], mais peut utiliser le sélecteur de programme [!UICONTROL Cloud Manager] (ayant navigué depuis [!UICONTROL Experience Cloud]) pour accéder à Adobe Experience Manager (AEM). |
+| Créateur de contenu | Cet utilisateur n’interagit généralement pas avec Cloud Manager, mais il peut utiliser le sélecteur de programme Cloud Manager (depuis un Experience Cloud) pour accéder à Adobe Experience Manager (AEM). |
 
 ## Autorisations d’utilisateur {#user-permissions}
 
