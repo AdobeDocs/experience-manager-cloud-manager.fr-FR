@@ -3,10 +3,10 @@ title: Ajout de référentiels privés dans Cloud Manager
 description: Découvrez comment configurer Cloud Manager pour utiliser vos propres référentiels GitHub privés.
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
-source-git-commit: dcb48f6914ff48c6905da40609ca99fe529d9fe3
+source-git-commit: 84a6d8b7a44af124eb227999ad1cbd1fe14ab7ee
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 80%
+source-wordcount: '884'
+ht-degree: 68%
 
 ---
 
@@ -122,10 +122,12 @@ Les référentiels privés validés peuvent être associés à [pipelines full-s
 
 ## Limites {#limitations}
 
-Gardez à l’esprit les limites suivantes lorsque vous utilisez vos propres référentiels GitHub avec Cloud Manager.
+Certaines limites s’appliquent lors de l’utilisation de référentiels privés avec Cloud Manager.
 
-* Vous ne pouvez pas utiliser les référentiels GitHub comme source directe de référentiel pour les pipelines que vous gérez.
-   * Cette fonctionnalité est prévue.
-* Vous ne pouvez pas suspendre la validation de la demande d’extraction à l’aide de la vérification GitHub à partir de Cloud Manager.
-   * Si le référentiel GitHub est validé dans Cloud Manager, ce dernier tente toujours de valider les demandes d’extraction créées pour ce référentiel.
-Si l’application GitHub d’Adobe est supprimée de votre organisation GitHub, la fonctionnalité de validation des demandes d’extraction est supprimée pour tous les référentiels.
+* Vous ne pouvez pas utiliser de référentiels privés comme source directe de référentiel pour les pipelines que vous gérez.
+* Vous ne pouvez pas suspendre la validation de la requête de tirage à l’aide de la vérification GitHub de Cloud Manager.
+   * Si le référentiel GitHub est validé dans Cloud Manager, Cloud Manager tente toujours de valider les demandes d’extraction créées pour ce référentiel.
+* Si l’application GitHub d’Adobe est supprimée de votre organisation GitHub, la fonctionnalité de validation des demandes d’extraction est supprimée pour tous les référentiels.
+* Aucune balise git ne sera créée et transmise lors de l’utilisation de référentiels privés sur des pipelines de pile complète de production.
+* Les pipelines qui utilisent des référentiels privés et le déclencheur de version on-commit ne sont pas démarrés automatiquement lorsqu’une nouvelle validation est poussée dans la branche sélectionnée.
+* [Fonctionnalité de réutilisation des artefacts](/help/getting-started/project-setup.md#build-artifact-reuse) ne s’applique pas aux référentiels privés.
