@@ -2,8 +2,8 @@
 title: Configurer des pipelines hors production
 description: Découvrez comment utiliser Cloud Manager pour créer et configurer des pipelines hors production afin de déployer votre code.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: 33ccb0f2139162845cc1b72505b6a5bfc7cf43e7
-workflow-type: ht
+source-git-commit: 85c1e22609dc5646d3de0ccc71e9423d4243e13a
+workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ Il existe deux types de pipelines hors production :
 
 >[!NOTE]
 >
->Un pipeline ne peut être configuré que si le référentiel Git associé dispose d’au moins une branche et que la [configuration du programme](/help/getting-started/program-setup.md) est terminée. Consultez le document [Référentiels Cloud Manager](/help/managing-code/repositories.md) pour découvrir comment ajouter et gérer des référentiels dans Cloud Manager.
+>Un pipeline ne peut être configuré que si le référentiel Git associé dispose d’au moins une branche et que la [configuration du programme](/help/getting-started/program-setup.md) est terminée. Consultez le document [Référentiels Cloud Manager](/help/managing-code/managing-repositories.md) pour découvrir comment ajouter et gérer des référentiels dans Cloud Manager.
 
 ## Ajouter un pipeline hors production {#add-non-production-pipeline}
 

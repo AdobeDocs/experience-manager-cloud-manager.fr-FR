@@ -7,10 +7,10 @@ user-guide-description: Découvrez comment utiliser Cloud Manager pour auto-gé
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 9d0f4dd29e2d05ab3f6900ee23c536b91c849e65
-workflow-type: ht
-source-wordcount: '509'
-ht-degree: 100%
+source-git-commit: 3beee350dda077c16975ea628bd4c7b80d7d9160
+workflow-type: tm+mt
+source-wordcount: '530'
+ht-degree: 96%
 
 ---
 
@@ -58,17 +58,23 @@ ht-degree: 100%
    + [Règles de qualité du code personnalisé](/help/using/custom-code-quality-rules.md)
    + [Copie de contenu](/help/using/content-copy.md)
 + Gestion du code {#managing-code}
+   + [Gestion des référentiels dans Cloud Manager](/help/managing-code/managing-repositories.md)
+   + [Informations d’accès au référentiel](/help/managing-code/accessing-repositories.md)
+   + [Ajout de référentiels d’Adobe](/help/managing-code/adobe-repositories.md)
+   + [Ajout de référentiels privés](/help/managing-code/private-repositories.md)
+   + [Prise en charge des sous-modules Git](/help/managing-code/git-submodules.md)
+   + [Configuration de la vérification GitHub](/help/managing-code/github-check-config.md)
+   + [Annotations de vérification GitHub](/help/managing-code/github-annotations.md)
    + [Gestion des versions du projet Maven](/help/managing-code/maven-project-version.md)
-   + [Référentiels](/help/managing-code/repositories.md)
    + [Intégration à Git](/help/managing-code/git-integration.md)
    + [Utilisation de plusieurs référentiels Git](/help/managing-code/multiple-git-repos.md)
-   + [Utiliser vos propres référentiels GitHub](/help/managing-code/byo-github.md)
 + Assistant de mise à jour du produit {#product-update-wizard}
    + [Vue d’ensemble](/help/product-update-wizard/overview.md)
    + [Évaluation](/help/product-update-wizard/evaluation.md)
 + Notes de mise à jour {#release-notes}
    + [Notes de mise à jour de la version actuelle](/help/release-notes/current.md)
    + 2024 {#2024}
+      + [Notes de mise à jour de la version 2024.5.0](/help/release-notes/2024/2024-5-0.md)
       + [Notes de mise à jour de la version 2024.4.0](/help/release-notes/2024/2024-4-0.md)
       + [Notes de mise à jour de la version 2024.3.0](/help/release-notes/2024/2024-3-0.md)
       + [Notes de mise à jour de la version 2024.2.0](/help/release-notes/2024/2024-2-0.md)

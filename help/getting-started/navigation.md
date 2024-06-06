@@ -2,8 +2,8 @@
 title: Navigation dans l’interface d’utilisation de Cloud Manager
 description: Découvrez l’organisation de l’interface d’utilisation de Cloud Manager et comment gérer vos programmes et vos environnements.
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: 9d0f4dd29e2d05ab3f6900ee23c536b91c849e65
-workflow-type: ht
+source-git-commit: 85c1e22609dc5646d3de0ccc71e9423d4243e13a
+workflow-type: tm+mt
 source-wordcount: '1292'
 ht-degree: 100%
 
@@ -168,7 +168,7 @@ Chaque programme comporte de nombreuses options et données. Ces données sont r
 * Vue d’ensemble : vue d’ensemble du programme, telle que décrite dans le présent document.
 * [Activité](/help/using/managing-pipelines.md#activity) : historique des exécutions de pipeline du programme.
 * [Pipelines](/help/using/managing-pipelines.md#pipelines) : tous les pipelines configurés pour le programme.
-* [Référentiels](/help/managing-code/repositories.md) : tous les référentiels configurés pour le programme.
+* [Référentiels](/help/managing-code/managing-repositories.md) : tous les référentiels configurés pour le programme.
 * [Rapports](/help/using/monitoring-environments.md#system-monitoring-overview) : mesures, telles que les données SLA.
 * [Environnements](/help/using/managing-environments.md) : tous les environnements configurés pour le programme.
 * [Jeux de contenu](/help/using/content-copy.md) : jeux de contenu créé à des fins de copie.
