@@ -2,10 +2,10 @@
 title: Pipelines dédiés à l’évaluation uniquement et à la production uniquement
 description: Découvrez comment séparer les déploiements d’évaluation et de production à l’aide de pipelines dédiés.
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: 54da5fd599eced473141ae67242841a8dd833f36
-workflow-type: ht
-source-wordcount: '842'
-ht-degree: 100%
+source-git-commit: c238caa22fdd71ae6aefd098331b626b9b951a0f
+workflow-type: tm+mt
+source-wordcount: '891'
+ht-degree: 92%
 
 ---
 
@@ -32,7 +32,7 @@ Les pipelines dédiés à l’évaluation uniquement et à la production uniquem
 * Les **pipelines de déploiement en production uniquement** déploient uniquement vers un environnement de production avec la possibilité de sélectionner une exécution terminée et validée avec succès pour l’évaluation et de déployer les artefacts de celle-ci en production.
    * Les pipelines dédiés à la production uniquement réutilisent les artefacts des déploiements en évaluation, ignorant ainsi la phase de création.
 
-Ni les pipelines dédiés à l’évaluation uniquement, ni les pipelines dédiés à la production uniquement ne sont exécutés pendant l’exécution d’un pipeline de pile complète de production, et vice versa.
+Ni les pipelines d’évaluation seule, ni les pipelines prod seule ne seront exécutés pendant l’exécution d’un pipeline de production pleine pile, et vice versa. Si le pipeline de production intermédiaire uniquement et de pile complète dispose de la variable **Lors des modifications Git** se déclenchent configuré et pointent vers la même branche et le même référentiel. seul le pipeline intermédiaire uniquement est démarré automatiquement. Les pipelines de production seule ne sont pas démarrés **Lors des modifications Git** car ils ne sont pas directement liés à un référentiel.
 
 Ces pipelines dédiés offrent plus de flexibilité, mais tenez compte des informations ci-après concernant leur fonctionnement et les recommandations associées.
 
