@@ -8,9 +8,9 @@ feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
 source-git-commit: 3beee350dda077c16975ea628bd4c7b80d7d9160
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '530'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -60,11 +60,11 @@ ht-degree: 96%
 + Gestion du code {#managing-code}
    + [Gestion des référentiels dans Cloud Manager](/help/managing-code/managing-repositories.md)
    + [Informations d’accès au référentiel](/help/managing-code/accessing-repositories.md)
-   + [Ajout de référentiels d’Adobe](/help/managing-code/adobe-repositories.md)
+   + [Ajout de référentiels Adobe](/help/managing-code/adobe-repositories.md)
    + [Ajout de référentiels privés](/help/managing-code/private-repositories.md)
    + [Prise en charge des sous-modules Git](/help/managing-code/git-submodules.md)
    + [Configuration de la vérification GitHub](/help/managing-code/github-check-config.md)
-   + [Annotations de vérification GitHub](/help/managing-code/github-annotations.md)
+   + [Annotations de la vérification GitHub](/help/managing-code/github-annotations.md)
    + [Gestion des versions du projet Maven](/help/managing-code/maven-project-version.md)
    + [Intégration à Git](/help/managing-code/git-integration.md)
    + [Utilisation de plusieurs référentiels Git](/help/managing-code/multiple-git-repos.md)

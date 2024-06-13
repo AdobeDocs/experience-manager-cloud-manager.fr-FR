@@ -4,9 +4,9 @@ description: Voici les notes de mise à jour de la version 2024.6.0 de Cloud M
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: a41ea35cb685d4e88e016bc887eb2465963747e1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '291'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
@@ -21,16 +21,16 @@ Cette page présente les notes de mise à jour de la version 2024.6.0 de [!UICO
 
 ## Date de publication {#release-date}
 
-La date de publication de [!UICONTROL Cloud Manager] la version 2024.6.0 est le 6 juin 2024. La prochaine version est prévue pour le 11 juillet 2024.
+La date de publication de la version 2024.6.0 de [!UICONTROL Cloud Manager] est le 6 juin 2024. La prochaine version est prévue pour le 11 juillet 2024.
 
 ## Nouveautés {#what-is-new}
 
-* Vous pouvez désormais [utiliser vos propres référentiels GitHub ;](/help/managing-code/private-repositories.md) comme sources pour les pipelines de pile complète et frontend.
-   * De plus, vous pouvez tirer parti des référentiels GitHub avec [sous-modules git,](/help/managing-code/git-submodules.md) vous procurant un meilleur contrôle sur les pipelines générés automatiquement utilisés pour la validation des demandes d’extraction et vous permettant de définir des comportements pour les mesures essentielles pendant la phase d’analyse du code.
-   * [Vous avez également le choix](/help/managing-code/github-check-config.md) pour conserver l’historique des rapports sur GitHub, nommez le pipeline et définissez les variables de pipeline en fonction de vos besoins.
-* De nouvelles règles OakPal ont été ajoutées au [Analyse de la qualité du code de Cloud Manager.](/help/using/custom-code-quality-rules.md#oakpal-ui-content-package)
-   * Chaque nouvelle règle ajoutée en juin 2024 est un changement sans fin.
-   * Vous êtes invité à y répondre dès que possible, car ces nouvelles règles entraîneront l’échec des pipelines à compter de la version d’août 2024 de Cloud Manager.
+* Vous pouvez désormais [utiliser vos propres référentiels GitHub](/help/managing-code/private-repositories.md) comme sources pour les pipelines full-stack et front-end.
+   * De plus, vous pouvez tirer parti des référentiels GitHub avec les [sous-modules git](/help/managing-code/git-submodules.md), qui vous procurent un meilleur contrôle sur les pipelines générés automatiquement et utilisés pour la validation des demandes d’extraction. Vous pouvez également définir des comportements pour les mesures essentielles pendant la phase d’analyse du code.
+   * [Vous avez également le choix](/help/managing-code/github-check-config.md) de conserver l’historique des rapports sur GitHub, de nommer le pipeline et de définir les variables de pipeline en fonction de vos besoins.
+* De nouvelles règles OakPal ont été ajoutées à l’[Analyse de la qualité du code de Cloud Manager.](/help/using/custom-code-quality-rules.md#oakpal-ui-content-package)
+   * Chaque nouvelle règle ajoutée à partir de juin 2024 est irréversible.
+   * Nous vous conseillons vivement de prendre en compte ces nouvelles règles dès que possible, car elles entraîneront l’échec des pipelines à compter de la version d’août 2024 de Cloud Manager.
 
 ## Programme d’adoption précoce {#early-adoption}
 

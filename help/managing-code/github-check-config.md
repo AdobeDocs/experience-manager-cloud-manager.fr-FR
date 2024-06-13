@@ -1,23 +1,23 @@
 ---
 title: Configuration de la vérification GitHub pour les référentiels privés
-description: Découvrez comment contrôler les pipelines créés automatiquement pour valider chaque demande d’extraction dans un référentiel privé.
+description: Découvrez comment contrôler les pipelines créés automatiquement afin de valider chaque demande d’extraction dans un référentiel privé.
 source-git-commit: 85c1e22609dc5646d3de0ccc71e9423d4243e13a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '255'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
 
 # Configuration de la vérification GitHub pour les référentiels privés {#github-check-config}
 
-Découvrez comment contrôler les pipelines créés automatiquement pour valider chaque demande d’extraction dans un référentiel privé.
+Découvrez comment contrôler les pipelines créés automatiquement afin de valider chaque demande d’extraction dans un référentiel privé.
 
-## Configuration des contrôles GitHub {#configuration}
+## Configuration des vérifications GitHub {#configuration}
 
-Lorsque vous utilisez [référentiels privés,](private-repositories.md#using) a [pipeline de qualité de code de pile complet](/help/overview/ci-cd-pipelines.md) sera créé automatiquement. Ce pipeline démarre à chaque mise à jour de demande d’extraction.
+Lors de l’utilisation de [référentiels privés](private-repositories.md#using), un [pipeline de qualité de code full stack](/help/overview/ci-cd-pipelines.md) est créé automatiquement. Ce pipeline démarre à chaque mise à jour de demande d’extraction.
 
-Vous pouvez contrôler ces contrôles en créant un `.cloudmanager/pr_pipelines.yml` dans la branche par défaut du référentiel privé.
+Vous pouvez contrôler ces vérifications en créant un fichier `.cloudmanager/pr_pipelines.yml` dans la branche par défaut du référentiel privé.
 
 ```yaml
 github:
@@ -33,9 +33,9 @@ pipelines:
 
 | Paramètre | Valeurs possibles | Valeur par défaut | Description |
 |---|---|---|---|
-| `shouldDeletePreviousComment` | `true` ou `false` | `false` | Si vous souhaitez conserver uniquement le dernier commentaire avec les résultats de l’analyse du code sur cette requête d’extraction GitHub ou conserver tous les |
+| `shouldDeletePreviousComment` | `true` ou `false` | `false` | Conserver uniquement le dernier commentaire avec les résultats de l’analyse du code pour cette requête d’extraction GitHub, ou tout conserver. |
 | `type` | `CI_CD` | n/a | Définit le comportement d’un pipeline CI/CD |
-| `template.programID` | Entier | Aucune variable de pipeline n’est réutilisée | Peut être utilisé pour réutiliser la variable [variables de pipeline](/help/getting-started/build-environment.md#pipeline-variables) qui sont définis sur l’un des pipelines existants qui sont créés automatiquement par chaque requête de tirage. |
-| `template.pipelineID` | Entier | Aucune variable de pipeline n’est réutilisée | Peut être utilisé pour réutiliser la variable [variables de pipeline](/help/getting-started/build-environment.md#pipeline-variables) qui sont définis sur l’un des pipelines existants qui sont créés automatiquement par chaque requête de tirage. |
-| `namePrefix` | Chaîne | `Full Stack Code Quality Pipeline for PR` | Utilisé pour définir le nom du pipeline créé automatiquement |
-| `importantMetricsFailureBehavior` | `CONTINUE` ou `FAIL` ou `PAUSE` | `CONTINUE` | Définition du comportement de mesure important du pipeline<br>`CONTINUE` = Si une mesure importante échoue, le pipeline avancera automatiquement<br>`FAIL` = Le pipeline se termine avec un état ÉCHEC si une mesure importante échoue<br>`PAUSE` = L’étape d’analyse du code recevra un état D’ATTENTE lorsqu’une mesure importante échoue et doit être reprise manuellement. |
+| `template.programID` | Entier | Aucune variable de pipeline n’est réutilisée. | Peut être utilisé pour réutiliser les [variables de pipeline](/help/getting-started/build-environment.md#pipeline-variables) qui sont définies sur l’un des pipelines existants créés automatiquement par chaque requête d’extraction. |
+| `template.pipelineID` | Entier | Aucune variable de pipeline n’est réutilisée. | Peut être utilisé pour réutiliser les [variables de pipeline](/help/getting-started/build-environment.md#pipeline-variables) qui sont définies sur l’un des pipelines existants créés automatiquement par chaque requête d’extraction. |
+| `namePrefix` | Chaîne | `Full Stack Code Quality Pipeline for PR` | Utilisé pour définir le nom du pipeline créé automatiquement. |
+| `importantMetricsFailureBehavior` | `CONTINUE` ou `FAIL` ou `PAUSE` | `CONTINUE` | Définit le comportement de mesure important du pipeline.<br>`CONTINUE` = Si une mesure importante échoue, le pipeline se poursuit automatiquement.<br>`FAIL` = Le pipeline se termine avec le statut ÉCHEC si une mesure importante échoue.<br>`PAUSE` = L’étape d’analyse du code reçoit un statut EN ATTENTE lorsqu’une mesure importante échoue et doit être reprise manuellement. |

@@ -3,9 +3,9 @@ title: Gestion des pipelines
 description: Découvrez comment gérer vos pipelines existants, notamment en les modifiant, en les exécutant et en les supprimant.
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
 source-git-commit: 4ab4bd416658c55d72228b701c57a1845d2d0f41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '901'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -98,7 +98,7 @@ Selon le type de pipeline, vous pouvez être en mesure d’annuler l’exécutio
 
 >[!NOTE]
 >
->Les pipelines de niveau web et de configuration ne sont pas pris en charge par les référentiels privés. Consultez le document [Ajout de référentiels privés dans Cloud Manager](/help/managing-code/private-repositories.md) pour plus de détails et la liste complète des limites.
+>Les pipelines de niveau web et de configuration ne sont pas pris en charge pour les référentiels privés. Consultez le document [Ajouter des référentiels privés dans Cloud Manager](/help/managing-code/private-repositories.md) pour plus de détails et pour la liste complète des restrictions.
 
 ## Suppression de pipelines {#deleting-pipelines}
 
@@ -132,13 +132,13 @@ Appuyez ou cliquez sur le lien **Afficher les détails** pour afficher la sectio
 
 ![Durée.](/help/assets/configure-pipelines/duration.png)
 
-Si votre pipeline contenait **Analyse du code** , ce qui a soulevé des problèmes, vous pouvez appuyer ou cliquer sur l’icône **Détails du téléchargement** pour afficher une liste de [tests de qualité du code](/help/using/code-quality-testing.md) cela n&#39;a pas été le cas.
+Si votre pipeline contient une étape **Analyse du code** qui a entraîné des problèmes, vous pouvez appuyer ou cliquer sur le bouton **Détails du téléchargement** pour afficher la liste des [tests de qualité du code](/help/using/code-quality-testing.md) qui ont échoué.
 
 ![Problèmes de qualité du code](assets/managing-pipelines-code-quality-issues.png)
 
-A **Emplacement du fichier de projet** est disponible dans le fichier CSV pour indiquer l’emplacement du code incriminé. Cette colonne correspond au chemin d’accès relatif au projet, tandis que la variable **Emplacement du fichier** est générée par Maven.
+Une colonne **Emplacement du fichier de projet** est présente dans le fichier CSV pour indiquer l’emplacement du code problématique. Cette colonne correspond au chemin d’accès relatif du projet, tandis que la colonne **Emplacement du fichier** est générée par Maven.
 
-![Détails du problème d’analyse du code du projet](assets/managing-pipelines-code-quality-details.png)
+![Détails des problèmes de l’analyse du code du projet](assets/managing-pipelines-code-quality-details.png)
 
 
 >[!NOTE]
