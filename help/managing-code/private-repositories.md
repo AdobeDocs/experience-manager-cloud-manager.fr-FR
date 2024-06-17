@@ -4,9 +4,9 @@ description: Découvrez comment configurer Cloud Manager pour utiliser vos prop
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
 source-git-commit: 6f14a8e9ff8e56f9f7b84799733e26b4c0ff8dcb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '868'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -122,11 +122,11 @@ Les référentiels privés validés peuvent être associés à des [pipelines fu
 
 ## Limites {#limitations}
 
-Certaines limites s’appliquent lors de l’utilisation de référentiels privés avec Cloud Manager.
+Certaines limites s’appliquent lors de l’utilisation de référentiels privés avec Cloud Manager.
 
-* Vous ne pouvez pas suspendre la validation de la requête de tirage à l’aide de la vérification GitHub de Cloud Manager.
-   * Si le référentiel GitHub est validé dans Cloud Manager, Cloud Manager tente toujours de valider les demandes d’extraction créées pour ce référentiel.
+* Vous ne pouvez pas suspendre la validation de la demande d’extraction à l’aide de la vérification GitHub à partir de Cloud Manager.
+   * Si le référentiel GitHub est validé dans Cloud Manager, ce dernier tente toujours de valider les demandes d’extraction créées pour ce référentiel.
 * Si l’application GitHub d’Adobe est supprimée de votre organisation GitHub, la fonctionnalité de validation des demandes d’extraction est supprimée pour tous les référentiels.
 * Aucune balise git ne sera créée et transmise lors de l’utilisation de référentiels privés sur des pipelines de pile complète de production.
-* Les pipelines qui utilisent des référentiels privés et le déclencheur de version on-commit ne sont pas démarrés automatiquement lorsqu’une nouvelle validation est poussée dans la branche sélectionnée.
-* [Fonctionnalité de réutilisation des artefacts](/help/getting-started/project-setup.md#build-artifact-reuse) ne s’applique pas aux référentiels privés.
+* Les pipelines qui utilisent des référentiels privés et le déclencheur de version sur validation ne sont pas lancés automatiquement lorsqu’une nouvelle validation est transmise dans la branche sélectionnée.
+* La [fonctionnalité de réutilisation des artefacts](/help/getting-started/project-setup.md#build-artifact-reuse) ne s’applique pas aux référentiels privés.

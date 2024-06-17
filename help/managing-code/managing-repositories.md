@@ -3,9 +3,9 @@ title: Gestion des référentiels dans Cloud Manager
 description: Découvrez comment créer, afficher et modifier vos référentiels Git dans Cloud Manager.
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
 source-git-commit: 73add7bee892769d1b3864e3238aff26bf96162d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '660'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ La fenêtre **Référentiels** fournit des détails sur les référentiels :
 
 * Le type de référentiel
    * **Adobe** indique les référentiels gérés par Adobe.
-   * **GitHub** indique les référentiels GitHub privés que vous gérez ;
+   * **GitHub** indique les référentiels GitHub privés que vous gérez.
 * La date de création
 * Les pipelines associés au référentiel
 
@@ -77,10 +77,10 @@ La fenêtre **Informations sur le référentiel** s’ouvre et affiche les déta
 
 ## Vérifier les branches {#check-branches}
 
-La variable **Vérifier les branches / Créer un projet** L’action exécute deux fonctions en fonction de l’état du référentiel.
+L’action **Vérifier les branches / Créer un projet** exécute deux fonctions selon l’état du référentiel.
 
-* Si le référentiel est nouvellement créé, l’action crée un exemple de projet basé sur [l’archétype de projet AEM.](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/overview)
-* Si le référentiel a déjà créé l’exemple de projet, il vérifie l’état du référentiel et de ses branches et renvoie les rapports si l’exemple de projet existe déjà.
+* Si le référentiel est nouvellement créé, l’action crée un exemple de projet basé sur [l’archétype de projet AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/overview).
+* Si le référentiel a déjà créé l’exemple de projet, il vérifie l’état du référentiel et de ses branches et signale si l’exemple de projet existe déjà.
 
 ![Action Vérifier les branches](assets/check-branches.png)
 

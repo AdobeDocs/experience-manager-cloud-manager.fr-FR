@@ -3,9 +3,9 @@ title: Pipelines dédiés à l’évaluation uniquement et à la production uniq
 description: Découvrez comment séparer les déploiements d’évaluation et de production à l’aide de pipelines dédiés.
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
 source-git-commit: c238caa22fdd71ae6aefd098331b626b9b951a0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '891'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Les pipelines dédiés à l’évaluation uniquement et à la production uniquem
 * Les **pipelines de déploiement en production uniquement** déploient uniquement vers un environnement de production avec la possibilité de sélectionner une exécution terminée et validée avec succès pour l’évaluation et de déployer les artefacts de celle-ci en production.
    * Les pipelines dédiés à la production uniquement réutilisent les artefacts des déploiements en évaluation, ignorant ainsi la phase de création.
 
-Ni les pipelines d’évaluation seule, ni les pipelines prod seule ne seront exécutés pendant l’exécution d’un pipeline de production pleine pile, et vice versa. Si le pipeline de production intermédiaire uniquement et de pile complète dispose de la variable **Lors des modifications Git** se déclenchent configuré et pointent vers la même branche et le même référentiel. seul le pipeline intermédiaire uniquement est démarré automatiquement. Les pipelines de production seule ne sont pas démarrés **Lors des modifications Git** car ils ne sont pas directement liés à un référentiel.
+Ni les pipelines dédiés uniquement à l’évaluation, ni ceux dédiés uniquement à la production ne sont exécutés pendant l’exécution d’un pipeline de production de pile complète, et vice versa. Si le pipeline dédié uniquement à l’évaluation et à la production de pile complète dispose du déclencheur **Lors des modifications Git** configuré et pointent vers la même branche et le même référentiel, seul le pipeline dédié uniquement à l’évaluation est lancé automatiquement. Les pipelines dédiés uniquement à la production ne sont pas lancé **Lors des modifications Git**, car ils ne sont pas directement liés à un référentiel.
 
 Ces pipelines dédiés offrent plus de flexibilité, mais tenez compte des informations ci-après concernant leur fonctionnement et les recommandations associées.
 
