@@ -3,10 +3,10 @@ title: Ajout de référentiels privés dans Cloud Manager
 description: Découvrez comment configurer Cloud Manager pour utiliser vos propres référentiels GitHub privés.
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
-source-git-commit: 6f14a8e9ff8e56f9f7b84799733e26b4c0ff8dcb
-workflow-type: ht
-source-wordcount: '868'
-ht-degree: 100%
+source-git-commit: 15e733117b4458cc53dec309dad5bde8cb17029f
+workflow-type: tm+mt
+source-wordcount: '855'
+ht-degree: 98%
 
 ---
 
@@ -114,11 +114,7 @@ Lorsque la demande d’extraction est fermée ou fusionnée, le pipeline de qual
 
 ## Associer des référentiels privés à des pipelines {#pipelines}
 
-Les référentiels privés validés peuvent être associés à des [pipelines full-stack et front-end.](/help/overview/ci-cd-pipelines.md)
-
->[!NOTE]
->
->Les pipelines de niveau web et de configuration ne sont pas pris en charge pour les référentiels privés.
+Les référentiels privés validés peuvent être associés à [pipelines à pile complète.](/help/overview/ci-cd-pipelines.md)
 
 ## Limites {#limitations}
 
