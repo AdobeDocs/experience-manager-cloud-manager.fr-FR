@@ -4,9 +4,9 @@ description: Voici les notes de mise à jour de la version 2024.6.0 de Cloud M
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 15e733117b4458cc53dec309dad5bde8cb17029f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '288'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ La date de publication de la version 2024.6.0 de [!UICONTROL Cloud Manager] es
 
 ## Nouveautés {#what-is-new}
 
-* Vous pouvez désormais [utiliser vos propres référentiels GitHub ;](/help/managing-code/private-repositories.md) comme sources pour les pipelines à pile complète.
+* Vous pouvez désormais [utiliser vos propres référentiels GitHub](/help/managing-code/private-repositories.md) comme sources pour les pipelines full-stack.
    * De plus, vous pouvez tirer parti des référentiels GitHub avec les [sous-modules git](/help/managing-code/git-submodules.md), qui vous procurent un meilleur contrôle sur les pipelines générés automatiquement et utilisés pour la validation des demandes d’extraction. Vous pouvez également définir des comportements pour les mesures essentielles pendant la phase d’analyse du code.
    * [Vous avez également le choix](/help/managing-code/github-check-config.md) de conserver l’historique des rapports sur GitHub, de nommer le pipeline et de définir les variables de pipeline en fonction de vos besoins.
 * De nouvelles règles OakPal ont été ajoutées à l’[Analyse de la qualité du code de Cloud Manager.](/help/using/custom-code-quality-rules.md#oakpal-ui-content-package)

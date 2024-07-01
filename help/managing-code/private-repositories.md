@@ -4,9 +4,9 @@ description: Découvrez comment configurer Cloud Manager pour utiliser vos prop
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
 source-git-commit: 15e733117b4458cc53dec309dad5bde8cb17029f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '855'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -114,7 +114,7 @@ Lorsque la demande d’extraction est fermée ou fusionnée, le pipeline de qual
 
 ## Associer des référentiels privés à des pipelines {#pipelines}
 
-Les référentiels privés validés peuvent être associés à [pipelines à pile complète.](/help/overview/ci-cd-pipelines.md)
+Les référentiels privés validés peuvent être associés à des [pipelines full-stack.](/help/overview/ci-cd-pipelines.md)
 
 ## Limites {#limitations}
 
