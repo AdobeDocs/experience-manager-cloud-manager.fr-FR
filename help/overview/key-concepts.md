@@ -3,7 +3,7 @@ title: Concepts clés
 description: Comme tous les outils puissants, Cloud Manager englobe plusieurs concepts et termes. Ce document résume les éléments les plus importants à connaître lorsque vous commencez à utiliser Cloud Manager.
 exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
 source-git-commit: 67621fb2dbb0c32371b2ffc16ec45f47daf04e05
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 100%
 

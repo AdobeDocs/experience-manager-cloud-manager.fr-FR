@@ -3,7 +3,7 @@ title: Outil de copie de contenu
 description: L’outil de copie de contenu de Cloud Manager permet aux utilisateurs et utilisatrices de copier du contenu modifiable à la demande à partir de leurs environnements de production 6.x AEM hébergés par AMS vers des environnements inférieurs à des fins de test.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 source-git-commit: 655111cdf7327e92e03ac7eedd9eedd87cd4b2f1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1120'
 ht-degree: 100%
 

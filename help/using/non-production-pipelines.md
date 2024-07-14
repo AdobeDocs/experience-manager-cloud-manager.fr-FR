@@ -3,7 +3,7 @@ title: Configurer des pipelines hors production
 description: Découvrez comment utiliser Cloud Manager pour créer et configurer des pipelines hors production afin de déployer votre code.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
 source-git-commit: 85c1e22609dc5646d3de0ccc71e9423d4243e13a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 100%
 

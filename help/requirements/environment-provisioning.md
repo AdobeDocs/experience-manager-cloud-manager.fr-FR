@@ -3,7 +3,7 @@ title: Configuration d’environnement
 description: Découvrez comment vos environnements sont configurés dans le cadre du processus d’intégration de Cloud Manager.
 exl-id: eade4255-89b5-4c65-a498-1c6d4e8c73ff
 source-git-commit: d033b7cf53d4d9faf074f1dc09e2958eb91afe3b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 100%
 
@@ -26,4 +26,4 @@ Une fois le processus de configuration de l’environnement terminé, l’admini
 
 Après avoir reçu l’e-mail de bienvenue, vous pouvez vous connecter à [!UICONTROL Cloud Manager] en tant qu’administrateur système à l’aide de vos informations d’identification Adobe IMS. Une fois la connexion effectuée, vous pouvez vérifier que vos environnements de production et hors production cloud AEM sont disponibles et s’exécutent correctement.
 
-Ces environnements cloud AEM seront utilisés par [!UICONTROL Cloud Manager] pour exécuter le pipeline CI/CD lors du déploiement de votre code, à partir du référentiel Git de [!UICONTROL Cloud Manager], via l’environnement d’évaluation et jusqu’à votre environnement de production AEM. Une fois prêt à créer des expériences numériques pour vos propriétés web, vous aurez également accès à vos environnements cloud AEM directement depuis [!UICONTROL Cloud Manager].
+Ces environnements cloud AEM seront utilisés par [!UICONTROL Cloud Manager] pour exécuter le pipeline CI/CD lors du déploiement de votre code, à partir du référentiel Git de [!UICONTROL Cloud Manager], via l’environnement d’évaluation et jusqu’à votre environnement de production AEM. Une fois prêt à créer des expériences digitales pour vos propriétés web, vous aurez également accès à vos environnements cloud AEM directement depuis [!UICONTROL Cloud Manager].

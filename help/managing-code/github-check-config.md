@@ -1,13 +1,13 @@
 ---
 title: Configuration de la vérification GitHub pour les référentiels privés
 description: Découvrez comment contrôler les pipelines créés automatiquement afin de valider chaque demande d’extraction dans un référentiel privé.
-source-git-commit: 85c1e22609dc5646d3de0ccc71e9423d4243e13a
-workflow-type: ht
+exl-id: 29c9e487-e196-411a-8cda-6751b0a56066
+source-git-commit: e93285f7c7495ec9d2f11d289adaf6aaba7e58ea
+workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 100%
 
 ---
-
 
 # Configuration de la vérification GitHub pour les référentiels privés {#github-check-config}
 

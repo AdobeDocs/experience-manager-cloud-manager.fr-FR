@@ -3,9 +3,9 @@ title: Test de qualité du code
 description: Découvrez comment fonctionne le test de qualité du code des pipelines et comment il peut améliorer la qualité de vos déploiements.
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 source-git-commit: 38cf86a5effa201afdc8e00d8f33582fc06214d7
-workflow-type: ht
-source-wordcount: '2867'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '2848'
+ht-degree: 96%
 
 ---
 
@@ -118,23 +118,23 @@ Le tableau suivant répertorie les contrôles d’intégrité :
 | Nom | Implémentation du contrôle d’intégrité | Catégorie |
 |---|---|---|
 | La disponibilité de l’API d’ajout de pare-feu de désérialisation est dans un état acceptable. | [Disponibilité de l’API d’ajout de pare-feu de désérialisation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=fr#security) | Critique |
-| Le pare-feu de désérialisation est fonctionnel.. | [Pare-feu de désérialisation fonctionnel](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=fr#security) | Critique |
-| Le pare-feu de désérialisation est chargé.. | [Pare-feu de désérialisation chargé](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=fr#security) | Critique |
+| Le pare-feu de désérialisation est fonctionnel. | [Pare-feu de désérialisation fonctionnel](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=fr#security) | Critique |
+| Le pare-feu de désérialisation est chargé. | [Pare-feu de désérialisation chargé](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=fr#security) | Critique |
 | L’implémentation `AuthorizableNodeName` n’expose pas d’ID autorisable dans le nom/chemin du nœud. | [Génération de nom de nœud autorisé](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=fr#security) | Critique |
-| Les mots de passe par défaut ont été modifiés.. | [Comptes de connexion par défaut](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=fr#users-and-groups-in-aem) | Critique |
+| Les mots de passe par défaut ont été modifiés. | [Comptes de connexion par défaut](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=fr#users-and-groups-in-aem) | Critique |
 | Le servlet GET par défaut Sling est protégé contre les attaques par DOS. | Servlet Sling Get | Critique |
 | Le gestionnaire de scripts Sling Java est configuré correctement. | Gestionnaire de script Java Sling | Critique |
 | Le gestionnaire de script JSP Sling est correctement configuré. | Gestionnaire de script JSP Sling | Critique |
-| SSL est correctement configuré.. | Configuration SSL | Critique |
-| Aucune stratégie de profil utilisateur évidemment risquée n’a été trouvée. | Accès par défaut au profil utilisateur | Critique |
+| SSL est configuré correctement. | Configuration SSL | Critique |
+| Aucune politique de profil utilisateur évidemment risquée n’a été trouvée. | Accès par défaut au profil utilisateur | Critique |
 | Le filtre référent Sling est configuré pour empêcher les attaques CSRF. | [Filtre référent Sling](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=fr#security) | Important |
 | Le gestionnaire de bibliothèques HTML Adobe Granite est configuré correctement. | Configuration de gestionnaire de bibliothèque HTML CQ | Important |
-| Le lot Prise en charge CRXDE est désactivé.. | Prise en charge de CRXDE | Important |
-| Le lot DavEx Sling et le servlet sont désactivés.. | Contrôle d’intégrité DavEx | Important |
-| L’exemple de contenu n’est pas installé.. | Packages d’exemple de contenu | Important |
-| Le filtre de requête WCM et le filtre de débogage WCM sont désactivés.. | [Configuration des filtres WCM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html?lang=fr#configuring) | Important |
-| Le lot WebDAV Sling et le servlet sont correctement configurés.. | Contrôle d’intégrité WebDAV | Important |
-| Le serveur web est configuré pour empêcher les clics publicitaires.. | Configuration du serveur web | Important |
+| Le lot de prise en charge CRXDE est désactivé. | Prise en charge de CRXDE | Important |
+| Le lot et le servlet Sling DavEx sont désactivés. | Contrôle d’intégrité DavEx | Important |
+| L’exemple de contenu n’est pas installé. | Packages d’exemple de contenu | Important |
+| Le filtre de requêtes WCM et le filtre de débogage WCM sont désactivés. | [Configuration des filtres WCM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html?lang=fr#configuring) | Important |
+| Le lot WebDAV Sling et le servlet sont correctement configurés. | Contrôle d’intégrité WebDAV | Important |
+| Le serveur web est configuré pour empêcher le détournement de clics. | Configuration du serveur web | Important |
 | La réplication n’utilise pas l’utilisateur `admin`. | Utilisateurs de réplication et de transport | Infos |
 
 ## Test de performance {#performance-testing}
@@ -262,14 +262,14 @@ Les panneaux de mesures peuvent être développés pour afficher un graphique, f
 
 Cette fonctionnalité est disponible pour les mesures suivantes.
 
-* **Utilisation de l’UC** : graphique montrant l’utilisation de l’UC pendant la période de test.
+* **Utilisation de l’UC** - Graphique de l’utilisation de l’UC pendant la période de test
 
 * **Durée d’attente d’E/S du disque** : graphique du temps d’attente d’E/S du disque pendant la période de test.
 
 * **Taux d’erreur de page** : graphique des erreurs de page par minute pendant la période de test.
    * Fichier CSV répertoriant les pages qui ont généré une erreur pendant le test.
 
-* **Utilisation de la bande passante du disque** : graphique de l’utilisation de la bande passante du disque pendant la période de test.
+* **Utilisation de la bande passante de disque** - Graphique de l’utilisation de la bande passante du disque pendant la période de test
 
 * **Utilisation de la bande passante du réseau** : graphique de l’utilisation de la bande passante du réseau pendant la période de test.
 
@@ -296,4 +296,3 @@ Un cas particulier peut se produire lorsque le package de contenu « all » co
 >
 >* Cette optimisation n’a aucune incidence sur les packages déployés dans AEM.
 >* Étant donné que la correspondance entre les packages de contenu incorporés et les packages de contenu ignorés est basée sur les noms de fichier, cette optimisation ne peut pas être effectuée si plusieurs packages de contenu ignorés portent exactement le même nom de fichier ou si le nom du fichier est modifié lors de l’incorporation.
-

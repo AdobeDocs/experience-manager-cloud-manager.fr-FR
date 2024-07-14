@@ -3,7 +3,7 @@ title: Utiliser plusieurs référentiels Git
 description: Au lieu de travailler directement avec le référentiel Git de Cloud Manager, les clients peuvent apprendre à utiliser leurs propres référentiels Git ou plusieurs autres.
 exl-id: 53bf78bb-489a-4a83-8459-c361f532d54a
 source-git-commit: da9dff997a277c207e2c48207217cb30325f3c0d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 100%
 
@@ -48,7 +48,7 @@ Une action GitHub peut, par exemple, être déclenchée par un transfert vers un
 
 À titre d’exemple, une modification apportée à la branche `main` du projet A est automatiquement transférée vers la branche `main` du référentiel Git de Cloud Manager. Bien entendu, il pourrait exister un mappage entre les branches, par exemple une transmission vers une branche nommée `dev` dans le projet A qui est transférée dans une branche nommée `development` dans le référentiel Git de Cloud Manager. Des étapes similaires sont nécessaires pour le projet B.
 
-Selon la stratégie et les workflows d’embranchement, il est possible de configurer la synchronisation pour différentes branches. Si le référentiel Git utilisé ne propose pas un concept similaire aux actions GitHub, une intégration via Jenkins (ou un outil similaire) est également possible. Dans ce cas, un webhook déclenche un traitement Jenkins chargé d’effectuer le travail.
+Selon les workflows et la stratégie d’embranchement, il est possible de configurer la synchronisation pour différentes branches. Si le référentiel Git utilisé ne propose pas un concept similaire aux actions GitHub, une intégration via Jenkins (ou un outil similaire) est également possible. Dans ce cas, un webhook déclenche un traitement Jenkins chargé d’effectuer le travail.
 
 Suivez les étapes ci-dessous pour ajouter une source ou un référentiel nouveaux (la ou le troisième) :
 

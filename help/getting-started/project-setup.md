@@ -3,8 +3,8 @@ title: Configurer le projet
 description: Découvrez comment configurer votre projet afin de pouvoir le gérer et le déployer avec Cloud Manager.
 exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
 source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
-workflow-type: ht
-source-wordcount: '1432'
+workflow-type: tm+mt
+source-wordcount: '1428'
 ht-degree: 100%
 
 ---
@@ -23,12 +23,12 @@ Les projets AEM existants doivent respecter certaines règles de base pour être
    * Ce fichier `pom.xml` peut renvoyer à autant de sous-modules (qui à leur tour peuvent comporter d’autres sous-modules) que nécessaire.
    * Vous pouvez ajouter des références à d’autres référentiels d’artefact Maven dans vos fichiers `pom.xml`.
    * L’accès aux [référentiels d’artefacts protégés par mot de passe](#password-protected-maven-repositories) est pris en charge s’il est configuré. Cependant, l’accès aux référentiels d’artefacts protégés par réseau n’est pas pris en charge.
-* Les modules de contenu déployables sont découverts en analysant les fichiers ZIP de modules de contenu se trouvant dans un répertoire nommé `target`.
-   * Un nombre illimité de sous-modules peut produire des modules de contenu.
+* Les packages de contenu déployables sont découverts en analysant les fichiers ZIP de packages de contenu se trouvant dans un répertoire nommé `target`.
+   * Un nombre illimité de sous-modules peut produire des packages de contenu.
 * Les artefacts de Dispatcher déployables sont découverts en recherchant les fichiers `zip` contenus dans des sous-répertoires de `target` nommés `conf` et `conf.d`.
-* S’il existe plusieurs modules de contenu, l’ordre des déploiements des modules n’est pas garanti.
-* Si un ordre spécifique est nécessaire, il est possible d’utiliser les dépendances de modules pour le définir.
-* Les modules peuvent être [ignorés](#skipping-content-packages) du déploiement.
+* S’il existe plusieurs packages de contenu, l’ordre des déploiements des packages n’est pas garanti.
+* Si un ordre spécifique est nécessaire, il est possible d’utiliser les dépendances de packages pour le définir.
+* Les packages peuvent être [ignorés](#skipping-content-packages) du déploiement.
 
 ## Activation des profils Maven dans Cloud Manager {#activating-maven-profiles-in-cloud-manager}
 
@@ -237,11 +237,11 @@ Configurez le `maven-assembly-plugin` dans votre projet :
         </plugin>
 ```
 
-## Ignorer les modules de contenu {#skipping-content-packages}
+## Ignorer les packages de contenu {#skipping-content-packages}
 
-Dans Cloud Manager, chaque compilation peut produire un certain nombre de modules de contenu. Pour diverses raisons, il peut être préférable de produire un module de contenu, mais de ne pas le déployer. Cela peut s’avérer utile, par exemple, lors de la création de modules de contenu utilisés uniquement à des fins de test ou qui seront recompilés lors d’une autre étape du processus de compilation, c’est-à-dire sous la forme d’un sous-module d’un autre module.
+Dans Cloud Manager, chaque compilation peut produire un certain nombre de packages de contenu. Pour diverses raisons, il peut être préférable de produire un package de contenu, mais de ne pas le déployer. Cela peut s’avérer utile, par exemple, lors de la création de packages de contenu utilisés uniquement à des fins de test ou qui seront recompilés lors d’une autre étape du processus de compilation, c’est-à-dire sous la forme d’un sous-package d’un autre package.
 
-Pour tenir compte de ces scénarios, Cloud Manager recherche une propriété nommée `cloudManagerTarget` dans les propriétés des modules de contenu créés. Si cette propriété est définie sur `none`, le module est ignoré et n’est pas déployé. Le mécanisme permettant de définir cette propriété dépend de la manière dont la compilation produit le module de contenu. Par exemple, avec le `filevault-maven-plugin`, vous devez configurer le plug-in comme suit :
+Pour tenir compte de ces scénarios, Cloud Manager recherche une propriété nommée `cloudManagerTarget` dans les propriétés des packages de contenu créés. Si cette propriété est définie sur `none`, le package est ignoré et n’est pas déployé. Le mécanisme permettant de définir cette propriété dépend de la manière dont la compilation produit le package de contenu. Par exemple, avec le `filevault-maven-plugin`, vous devez configurer le plug-in comme suit :
 
 ```xml
         <plugin>
@@ -279,7 +279,7 @@ Dans de nombreux cas, le même code est déployé dans plusieurs environnements 
 
 Lorsqu’une exécution est lancée, la validation HEAD en cours pour le pipeline de branche est extraite. Le hachage de validation est visible dans l’interface utilisateur et via l’API. Une fois l’étape de build terminée, les artefacts obtenus sont stockés en fonction de ce hachage de validation et peuvent être réutilisés dans les exécutions ultérieures du pipeline.
 
-Les packages sont réutilisés sur plusieurs pipelines s’ils se trouvent dans le même programme. Lorsque vous recherchez des modules qui peuvent être réutilisés, AEM ignore les branches et réutilise les artefacts entre les branches.
+Les packages sont réutilisés sur plusieurs pipelines s’ils se trouvent dans le même programme. Lorsque vous recherchez des packages qui peuvent être réutilisés, AEM ignore les branches et réutilise les artefacts entre les branches.
 
 En cas de réutilisation, les étapes de build et de qualité du code sont effectivement remplacées par les résultats de l’exécution initiale. Le fichier journal de l’étape de build répertorie les artefacts et les informations d’exécution qui ont été utilisés pour les créer à lʼorigine.
 
@@ -304,8 +304,8 @@ Partez du principe que votre programme comporte deux pipelines de développement
 
 Les deux branches utilisent le même identifiant de validation.
 
-1. L’exécution du pipeline 1 lance la construction normale des modules.
-1. L’exécution du pipeline 2 entraîne ensuite la réutilisation des modules créés par le pipeline 1.
+1. L’exécution du pipeline 1 lance la construction normale des packages.
+1. L’exécution du pipeline 2 entraîne ensuite la réutilisation des packages créés par le pipeline 1.
 
 #### Exemple 2 {#example-2}
 

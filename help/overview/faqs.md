@@ -3,8 +3,8 @@ title: FAQ relatives à Cloud Manager
 description: Ce document répond aux questions les plus fréquemment posées par rapport à Cloud Manager pour les clients AMS.
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
 source-git-commit: 6be659e02df0657ec7d3dbce8c18c44a327a36f4
-workflow-type: ht
-source-wordcount: '776'
+workflow-type: tm+mt
+source-wordcount: '749'
 ht-degree: 100%
 
 ---
@@ -23,7 +23,7 @@ Oui. Vous devez ajouter la variable `maven-toolchains-plugin` avec les paramètr
 
 ## Ma version échoue et affiche une erreur concernant maven-scr-plugin, après le passage de Java 8 à Java 11. Que puis-je faire ? {#maven-src-plugin}
 
-Votre version de Cloud Manager AEM peut échouer lorsque vous tentez de passer de Java 8 à 11. Si vous rencontrez l’erreur ci-dessous, vous devez supprimer `maven-scr-plugin` et convertir toutes les annotations OSGi en annotations OSGi R6.
+Votre build AEM Cloud Manager échoue en cas de tentative de basculement de Java 8 à Java 11. Si vous rencontrez l’erreur ci-dessous, vous devez supprimer `maven-scr-plugin` et convertir toutes les annotations OSGi en annotations OSGi R6.
 
 ```text
 [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]
@@ -66,9 +66,9 @@ Consultez le document [Comprendre vos résultats de test](/help/using/code-quali
 
 Oui. Pour les déploiements de développeurs, les fichiers `pom.xml` de la branche Git doivent contenir `-SNAPSHOT` à la fin de la valeur `<version>`.
 
-Cela permet de conserver les déploiements ultérieurs alors que la version n’a pas été modifiée. Pour les déploiements de développeurs, aucune version automatique n’est ajoutée ou générée pour la build maven.
+Cela permet de continuer à installer le déploiement suivant lorsque la version n’a pas été modifiée. Pour les déploiements de développeurs, aucune version automatique n’est ajoutée ou générée pour la build maven.
 
-Vous pouvez également définir la version sur `-SNAPSHOT` pour les builds ou déploiements d’évaluation et de production. Cloud Manager définit automatiquement un numéro de version approprié et crée une balise pour vous dans Git. Cette balise peut être référencée ultérieurement, si nécessaire.
+Vous pouvez également définir la version sur `-SNAPSHOT` pour les builds ou déploiements d’évaluation et de production. Cloud Manager définit automatiquement un numéro de version approprié et crée pour vous une balise dans git. Cette balise peut être référencée ultérieurement, si nécessaire.
 
 De plus amples détails sur la gestion des versions sont [documentés ici.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling.html?lang=fr)
 
@@ -78,7 +78,7 @@ Dans les déploiements d’évaluation et de production, une version automatique
 
 Pour le contrôle de version personnalisé dans les déploiements d’évaluation et de production, définissez une version Maven appropriée en trois parties, comme `1.0.0`. Passez à la version supérieure à chaque déploiement en production.
 
-Cloud Manager ajoute automatiquement sa version aux versions d’évaluation et de production et crée une branche Git. Aucune configuration spécifique n’est nécessaire. Si vous ne définissez pas de version Maven comme décrit précédemment, le déploiement s’effectuera quand même et une version sera automatiquement définie.
+Cloud Manager ajoute automatiquement sa version aux builds d’évaluation et de production et crée même une branche Git. Aucune configuration spécifique n’est nécessaire. Si vous ne définissez pas de version Maven comme décrit précédemment, le déploiement s’effectuera quand même et une version sera automatiquement définie.
 
 ## Ma build Maven échoue lors des déploiements de Cloud Manager, mais elle est pourtant créée localement sans la moindre erreur. Quel est le problème ? {#maven-build-fail}
 

@@ -3,8 +3,8 @@ title: Configurer les branches
 description: Découvrez comment configurer votre première branche dans Git et son utilisation par le pipeline CI/CD pour déployer le code de votre application.
 exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
 source-git-commit: 4c051cd1696f8a00d0278131c9521ad4dcb956a3
-workflow-type: ht
-source-wordcount: '329'
+workflow-type: tm+mt
+source-wordcount: '325'
 ht-degree: 100%
 
 ---

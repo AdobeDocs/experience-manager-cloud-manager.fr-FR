@@ -3,7 +3,7 @@ title: Gestion des versions de projet par Maven
 description: Découvrez comment Maven gère le contrôle de version des projets dans Cloud Manager.
 exl-id: a1d676e0-27cc-4b0d-8799-527c0520946a
 source-git-commit: 9312999660b324f0f9d2b44dfbf49c4813a3a6e9
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 100%
 

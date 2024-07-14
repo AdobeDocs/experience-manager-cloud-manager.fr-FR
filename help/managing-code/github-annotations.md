@@ -3,7 +3,7 @@ title: Annotations de la vérification GitHub
 description: Découvrez comment les vérifications GitHub annotent les requêtes d’extraction de vos référentiels privés afin de vous fournir des commentaires utiles.
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
 source-git-commit: 210d40a5e12b40fd84efc461c6a1c48559120837
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 100%
 

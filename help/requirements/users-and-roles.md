@@ -3,9 +3,9 @@ title: Ajouter des utilisateurs et des rôles
 description: Découvrez comment utiliser Admin Console pour ajouter des utilisateurs et des rôles ainsi que créer des profils.
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
 source-git-commit: dd96d773ea3e6b9c45886fe41b28d3dd70cb8a61
-workflow-type: ht
-source-wordcount: '780'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '774'
+ht-degree: 96%
 
 ---
 
@@ -73,7 +73,7 @@ Vous pouvez créer ou ajouter des utilisateurs/groupes à ces profils de produit
 
 1. Fournissez les informations requises afin de configurer un nouveau rôle pour [!UICONTROL Cloud Manager].
 
-   * **Nom du profil** - Vous pouvez entrer le **nom de profil** que vous souhaitez. Toutefois, afin d’éviter toute confusion, il est recommandé d’utiliser les valeurs de la colonne **Nom de profil recommandé.**.
+   * **Nom du profil** - Le **Nom du profil** peut être de n’importe quel type, mais pour éviter toute confusion, il est recommandé d’utiliser les valeurs de la colonne **Nom de profil recommandé**.
    * **Nom d’affichage** - Le **nom d’affichage** doit correspondre à la valeur technique définie par [!UICONTROL Cloud Manager] (voir le tableau ci-dessous).
    * **Groupe d’autorisations** - Vous pouvez choisir un groupe d’autorisations pour le profil (pas toujours disponible).
 

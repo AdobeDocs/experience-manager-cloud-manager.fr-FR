@@ -3,8 +3,8 @@ title: Configurations de Dispatcher
 description: Découvrez comment déployer les fichiers de configuration du Dispatcher à l’aide de Cloud Manager.
 exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
 source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
-workflow-type: ht
-source-wordcount: '582'
+workflow-type: tm+mt
+source-wordcount: '586'
 ht-degree: 100%
 
 ---
@@ -16,7 +16,7 @@ Découvrez comment déployer les fichiers de configuration du Dispatcher à l’
 
 ## Déployer les configurations de Dispatcher avec Cloud Manager {#deploying-dispatcher-configurations}
 
-Cloud Manager peut déployer les fichiers de configuration du serveur web et du Dispatcher en supposant qu’ils soient stockés dans le référentiel Git, avec des modules de contenu AEM normaux.
+Cloud Manager peut déployer les fichiers de configuration du serveur web et du Dispatcher en supposant qu’ils soient stockés dans le référentiel Git, avec des packages de contenu AEM normaux.
 
 Pour tirer parti de cette fonctionnalité, la version Maven doit produire un fichier ZIP contenant au moins deux répertoires : `conf` et `conf.d`. Ce fichier ZIP peut être créé à l’aide du `maven-assembly-plugin`.
 
