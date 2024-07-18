@@ -1,19 +1,19 @@
 ---
-title: Notes de mise à jour de la version 2024.6.0
-description: Voici les notes de mise à jour de la version 2024.6.0 de Cloud Manager.
+title: Notes de mise à jour de la version 2024.7.0
+description: Voici les notes de mise à jour de la version 2024.7.0 de Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 851b556c0917d9f6d97d958a0c8e8aeff4141079
+source-git-commit: d536cd96d135e48039f94fd01142a63305b6eeae
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 100%
+source-wordcount: '226'
+ht-degree: 61%
 
 ---
 
 
-# Notes de mise à jour de la version 2024.6.0 de Cloud Manager {#release-notes}
+# Notes de mise à jour de la version 2024.7.0 de Cloud Manager {#release-notes}
 
-Cette page présente les notes de mise à jour de la version 2024.6.0 de [!UICONTROL Cloud Manager].
+Cette page présente les notes de mise à jour de la version 2024.7.0 de [!UICONTROL Cloud Manager].
 
 >[!NOTE]
 >
@@ -21,16 +21,13 @@ Cette page présente les notes de mise à jour de la version 2024.6.0 de [!UICO
 
 ## Date de publication {#release-date}
 
-La date de publication de la version 2024.6.0 de [!UICONTROL Cloud Manager] est le 6 juin 2024. La prochaine version est prévue pour le 18 juillet 2024.
+La date de publication de la version 2024.7.0 de [!UICONTROL Cloud Manager] est le 18 juillet 2024. La prochaine version est prévue pour le 8 août 2024.
 
 ## Nouveautés {#what-is-new}
 
-* Vous pouvez désormais [utiliser vos propres référentiels GitHub](/help/managing-code/private-repositories.md) comme sources pour les pipelines full-stack.
-   * De plus, vous pouvez tirer parti des référentiels GitHub avec les [sous-modules git](/help/managing-code/git-submodules.md), qui vous procurent un meilleur contrôle sur les pipelines générés automatiquement et utilisés pour la validation des demandes d’extraction. Vous pouvez également définir des comportements pour les mesures essentielles pendant la phase d’analyse du code.
-   * [Vous avez également le choix](/help/managing-code/github-check-config.md) de conserver l’historique des rapports sur GitHub, de nommer le pipeline et de définir les variables de pipeline en fonction de vos besoins.
-* De nouvelles règles OakPal ont été ajoutées à l’[Analyse de la qualité du code de Cloud Manager.](/help/using/custom-code-quality-rules.md#oakpal-ui-content-package)
-   * Chaque nouvelle règle ajoutée à partir de juin 2024 est irréversible.
-   * Nous vous conseillons vivement de prendre en compte ces nouvelles règles dès que possible, car elles entraîneront l’échec des pipelines à compter de la version d’août 2024 de Cloud Manager.
+* Le [pipeline de production](/help/using/production-pipelines.md#adding-production-pipeline) et le [pipeline hors production](/help/using/non-production-pipelines.md#adding-non-production-pipeline) déclenchent **Lors des modifications Git** pour démarrer le pipeline sur une validation est désormais disponible pour les [référentiels privés.](/help/managing-code/private-repositories.md)
+* Un pipeline de pré-production ne peut être déclenché que manuellement et ne peut pas être configuré comme **lors des modifications Git**.
+* Pour les pipelines de production seule, la liste des exécutions promouvables inclut celles dont la version d’artefact est supérieure à la version d’artefact déployée sur l’environnement de production.
 
 ## Programme d’adoption précoce {#early-adoption}
 
