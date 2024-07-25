@@ -2,12 +2,13 @@
 title: Navigation dans l’interface d’utilisation de Cloud Manager
 description: Découvrez l’organisation de l’interface d’utilisation de Cloud Manager et comment gérer vos programmes et vos environnements.
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: 85c1e22609dc5646d3de0ccc71e9423d4243e13a
+source-git-commit: d4d9a9f38c5a969f276140dca98731c670547a3d
 workflow-type: tm+mt
-source-wordcount: '1292'
-ht-degree: 100%
+source-wordcount: '1439'
+ht-degree: 80%
 
 ---
+
 
 # Navigation dans l’interface d’utilisation de Cloud Manager {#navigation}
 
@@ -15,10 +16,10 @@ Découvrez l’organisation de l’interface d’utilisation de Cloud Manager e
 
 L’interface d’utilisation de Cloud Manager est composée principalement de deux interfaces graphiques :
 
-* [La console Mes programmes](#my-programs) où vous pouvez afficher et gérer tous vos programmes.
+* [La console Mes programmes](#my-programs-console) où vous pouvez afficher et gérer tous vos programmes.
 * [La fenêtre Vue d’ensemble du programme](#program-overview) où vous pouvez consulter les détails d’un programme individuel et le gérer.
 
-## Console Mes programmes {#my-programs}
+## Console Mes programmes {#my-programs-console}
 
 Lorsque vous vous connectez à Cloud Manager sur la page [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et que vous sélectionnez l’organisation appropriée, vous accédez à la console **Mes programmes**.
 
@@ -27,8 +28,13 @@ Lorsque vous vous connectez à Cloud Manager sur la page [my.cloudmanager.adobe
 La console Mes programmes fournit une vue d’ensemble de tous les programmes auxquels vous avez accès dans l’organisation sélectionnée. Elle est constituée de plusieurs éléments.
 
 1. Des [Barres d’outils](#toolbars-my-programs-toolbars) pour la sélection de l’organisation, les alertes et les paramètres de compte.
-1. Des [Statistiques et un appel à l’action](#statistics) pour une vue d’ensemble de votre activité récente.
-1. Les [Programmes et licences](#programs-license) pour savoir quel est le statut de votre licence actuelle et gérer vos programmes.
+1. Onglets qui permettent de basculer l’affichage actuel de vos programmes.
+   * Vue **Accueil** (par défaut) qui sélectionne la vue **Mes programmes** avec un aperçu de tous les programmes
+   * **Licence** qui accède au tableau de bord de la licence. Le tableau de bord des licences s’applique uniquement aux programmes AEM as a Cloud Service, et non aux programmes AMS.
+      * Pour déterminer le type de service de votre programme (AMS ou AEMaaCS), consultez la [section Program Cards](#program-cards) de ce document.
+   * Notez que les onglets sont par défaut fermés et peuvent être affichés à l’aide du menu hamburger dans l’en-tête [Cloud Manager.](#cloud-manager-header)
+1. [Appel à actions et statistiques](#cta-statistics) pour un aperçu de votre activité récente
+1. [**Section Mes programmes**](#my-programs-section) avec un aperçu de tous vos programmes
 1. Des [Liens rapides](#quick-links) pour accéder facilement aux ressources connexes.
 
 >[!TIP]
@@ -45,6 +51,9 @@ La première est l’en-tête de Cloud Manager, qui est présent en permanence 
 
 ![En-tête Experience Cloud](assets/experience-cloud-header.png)
 
+1. Le menu hamburger donne accès à des onglets qui peuvent vous emmener dans des parties spécifiques d’un programme individuel ou basculer entre le tableau de bord de la licence et la console **[Mes programmes](#my-programs-console)** en fonction du contexte.
+   * Le tableau de bord des licences s’applique uniquement aux programmes AEM as a Cloud Service, et non aux programmes AMS.
+   * Pour déterminer le type de service de votre programme (AMS ou AEMaaCS), consultez la [section Program Cards](#program-cards) de ce document.
 1. Le bouton Cloud Manager vous ramène à la console Mes programmes de Cloud Manager, où que vous soyez dans Cloud Manager.
 1. Appuyez ou cliquez sur le bouton Commentaires pour envoyer des commentaires à Adobe concernant Cloud Manager.
 1. Le sélecteur d’organisation affiche l’organisation que vous utilisez actuellement pour vous connecter (dans cet exemple, Fonudation Internal). Appuyez ou cliquez pour passer à une autre organisation si votre Adobe ID est associé à plusieurs d’entre elles.
@@ -64,9 +73,9 @@ La barre d’outils des programmes fournit des liens pour basculer entre les pro
    * Notez que le parcours d’intégration est conçu pour AEM as a Cloud Service et non pour Cloud Service pour AMS, mais de nombreux concepts sont identiques.
 1. Le bouton d’action propose des actions contextuelles, telles que la création d’un programme.
 
-### Statistiques {#statistics}
+### Appels à l’action et statistiques {#cta-statistics}
 
-La section statistiques fournit des données agrégées pour votre organisation. Par exemple, si vous avez terminé de configurer vos programmes, les statistiques de vos activités des 90 derniers jours peuvent s’afficher, incluant ce qui suit :
+La section Appel à l’action et statistiques fournit des données agrégées pour votre organisation. Par exemple, si vous avez configuré vos programmes avec succès, les statistiques de vos activités au cours des 90 derniers jours peuvent s’afficher, notamment :
 
 * Le nombre de [déploiements](/help/using/code-deployment.md)
 * Le nombre de [problèmes relatifs à la qualité du code](/help/using/code-quality-testing.md) identifiés
@@ -74,13 +83,13 @@ La section statistiques fournit des données agrégées pour votre organisation.
 
 Si vous êtes au commencement de la configuration de votre organisation, vous pouvez obtenir des conseils sur les étapes suivantes ou des ressources de documentation.
 
-### Programmes et licence {#programs-license}
+### Ma section Programmes {#my-programs-section}
 
-Le contenu principal de la console Mes programmes est la liste des programmes et le statut de votre licence.
+Le contenu principal de la console Mes programmes est la section **Mes programmes** qui répertorie vos programmes sous la forme de cartes individuelles. Appuyez ou cliquez sur une vignette pour accéder à la page **Vue d’ensemble du programme** du programme pour obtenir plus d’informations sur le programme.
 
-#### Onglet Programmes {#programs}
-
-L’onglet **Programmes** liste les vignettes qui représentent chaque programme auquel vous avez accès. Appuyez ou cliquez sur une vignette pour accéder à la page **Vue d’ensemble du programme** du programme pour obtenir plus d’informations sur le programme.
+>[!NOTE]
+>
+>Selon vos privilèges, il se peut que vous ne puissiez pas sélectionner certains programmes.
 
 Utilisez les options de tri pour trouver plus rapidement le programme dont vous avez besoin.
 
@@ -94,13 +103,17 @@ Utilisez les options de tri pour trouver plus rapidement le programme dont vous 
 * Vue Grille (par défaut)
 * Vue Liste
 
+#### Cartes de programme {#program-cards}
+
 Chaque programme est représenté par une vignette (ou une ligne dans un tableau), qui donne une vue d’ensemble du programme et des liens rapides pour effectuer des actions.
 
 ![Vignette du programme](assets/program-card.png)
 
 * Image du programme (si configurée)
 * Nom du programme
-* Type de service : **Experience Manager Cloud** pour les programmes [AEM as a Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/home) ou **Experience Manager** pour les programmes AMS.
+* Type de service :
+   * **Experience Manager** pour les programmes AMS
+   * **Cloud Experience Manager** pour [ programmes AEM as a Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/home)
 * Statut
 * Solutions configurées
 * Date de création
@@ -118,17 +131,13 @@ L’icône représentant des points de suspension vous permet d’accéder à de
 * [Modifier le programme](/help/getting-started/program-setup.md)
 * Afficher la surveillance
 
-#### Onglet Licence {#license-tab}
-
-L’onglet **Licence** vous fournit un accès rapide au tableau de bord des licences.
-
 ### Liens rapides {#quick-links}
 
 La section Liens rapides vous donne accès aux ressources connexes couramment utilisées.
 
 ## Fenêtre Vue d’ensemble du programme {#program-overview}
 
-Lorsque que vous sélectionnez un programme dans la console Mes programmes, vous accédez à la Vue d’ensemble du programme.
+Une fois que vous avez sélectionné un programme dans la console [**Mes programmes**,](#my-programs-console), vous accédez à l’ Aperçu du programme.
 
 ![Vue d’ensemble du programme](assets/program-overview.png)
 
