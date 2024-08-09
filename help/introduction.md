@@ -2,10 +2,10 @@
 title: Présentation de Cloud Manager pour AMS
 description: Commencez ici pour découvrir Cloud Manager pour Adobe Managed Services (AMS) et comment il permet aux entreprises d’auto-gérer Adobe Experience Manager en mode cloud.
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: a2cea28061304d109a3c9a48650d01255579443c
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '1300'
-ht-degree: 100%
+source-wordcount: '1295'
+ht-degree: 89%
 
 ---
 
@@ -29,7 +29,7 @@ Commencez ici pour découvrir Cloud Manager pour Adobe Managed Services (AMS)
 >
 >Cette documentation décrit spécifiquement les fonctionnalités et les caractéristiques de Cloud Manager pour Adobe Managed Services (AMS).
 >
->Retrouvez la documentation équivalente pour les clients AEM as a Cloud Service dans la [Documentation d’AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/home.html?lang=fr).
+>La documentation équivalente pour AEM as a Cloud Service se trouve dans la [documentation AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/home.html?lang=fr).
 
 Avec Cloud Manager, votre équipe de développement bénéficie des fonctionnalités suivantes :
 
@@ -55,7 +55,7 @@ L’interface utilisateur de [!UICONTROL Cloud Manager] permet aux clients et d
 
 Les clients définissent des indicateurs de performances clés (ICP) spécifiques à l’application, tels que le nombre de pages maximum vues par minute et le temps de réponse attendu pour le chargement d’une page, qui constituent la base de la mesure d’un déploiement réussi. Les rôles et autorisations des différents membres de l’équipe peuvent être facilement définis. Bien que la nouvelle interface en libre-service soit sous votre contrôle, elle propose également des liens vers des ressources de bonnes pratiques. Elle vous permet aussi d’accéder aux experts d’Adobe, qui peuvent vous fournir les conseils nécessaires en cas de besoin.
 
-Pour découvrir et commencer à utiliser l’interface utilisateur de [!UICONTROL Cloud Manager], consultez le document [Première connexion](/help/getting-started/first-time-login.md).
+Pour découvrir et commencer à utiliser l’interface utilisateur de [!UICONTROL Cloud Manager], consultez le document [Première connexion](/help/getting-started/first-time-login.md).
 
 ### Pipeline CI/CD {#ci-cd-pipeline}
 
@@ -63,7 +63,7 @@ Pour découvrir et commencer à utiliser l’interface utilisateur de [!UICONTRO
 
 Grâce à l’interface utilisateur de [!UICONTROL Cloud Manager], les clients peuvent configurer et déclencher leur pipeline CI/CD. Durant ce pipeline, une analyse approfondie du code est exécutée pour garantir que seules des applications de haute qualité transitent par l’environnement de production.
 
-Pour en savoir plus sur la configuration du pipeline depuis l’interface utilisateur de [!UICONTROL Cloud Manager], consultez les documents [Configuration de pipelines de production](/help/using/production-pipelines.md) et [Configuration de pipelines hors production](/help/using/non-production-pipelines.md).
+Pour en savoir plus sur la configuration du pipeline à partir de l’interface utilisateur de [!UICONTROL Cloud Manager], consultez les documents [Configuration des pipelines de production](/help/using/production-pipelines.md) et [Configuration des pipelines hors production](/help/using/non-production-pipelines.md).
 
 ### Modes de déploiement flexibles {#flexible-deployment-modes}
 
@@ -73,11 +73,11 @@ Grâce à un mode de déclenchement automatique, le code est automatiquement dé
 
 Indépendamment du déclencheur de déploiement, les vérifications de qualité sont toujours effectuées dans le cadre de l’exécution du pipeline CI/CD, et ce, chaque fois qu’un déploiement est déclenché. Les vérifications de qualité incluent, entre autres, l’inspection de code, les tests de sécurité et les tests de performance, et ne requièrent littéralement aucun effort de la part des clients ou de leurs partenaires.
 
-Pour en savoir plus sur le déploiement de code et les vérifications de qualité, consultez le document [Déploiement du code](/help/using/code-deployment.md).
+Pour en savoir plus sur le déploiement des contrôles de code et de qualité, consultez le document [Déploiement du code](/help/using/code-deployment.md).
 
 ## Fonctionnalités facultatives de Cloud Manager {#optional-features-in-cloud-manager}
 
-Cloud Manager propose des fonctionnalités avancées supplémentaires qui peuvent être utiles à votre projet en fonction de la configuration et des besoins de votre environnement. Si ces fonctionnalités vous intéressent, veuillez contacter votre ingénieur du succès client (CSE) ou votre représentant Adobe pour en discuter.
+Cloud Manager propose des fonctionnalités avancées supplémentaires qui peuvent être utiles à votre projet en fonction de la configuration et des besoins de votre environnement. Si ces fonctionnalités vous intéressent, contactez votre ingénieur du service client ou votre représentant d’Adobe pour en discuter plus.
 
 ### Mise à l’échelle automatique {#autoscaling}
 
@@ -89,7 +89,7 @@ La mise à l’échelle automatique s’applique uniquement au niveau du Dispatc
 
 >[!NOTE]
 >
->Si vous souhaitez déterminer si la mise à l’échelle automatique est appropriée pour votre application, veuillez contacter votre CSE ou votre représentant Adobe.
+>Si vous souhaitez déterminer si la mise à l’échelle automatique est appropriée pour votre application, contactez l’ingénieur du service client ou votre représentant Adobe.
 
 ### Déploiements bleu/vert {#blue-green}
 
@@ -123,7 +123,7 @@ Lorsque le déploiement bleu/vert est activé, le flux de déploiement diffère 
 
 Tous les utilisateurs d’AMS qui utilisent Cloud Manager pour les déploiements en production peuvent utiliser le déploiement bleu/vert. Toutefois, l’utilisation du déploiement bleu/vert nécessite une validation supplémentaire de vos environnements et une configuration par un CSE Adobe.
 
-Si le déploiement bleu/vert vous intéresse, veuillez tenir compte des exigences et limites suivantes et contacter votre CSE.
+Si le déploiement bleu/vert vous intéresse, tenez compte des exigences et limites suivantes et contactez votre ingénieur du service client.
 
 #### Exigences et limites {#limitations}
 
@@ -131,5 +131,5 @@ Si le déploiement bleu/vert vous intéresse, veuillez tenir compte des exigence
 * Les paires Aperçu de Dispatcher/publication ne font pas partie des déploiements bleu/vert.
 * Chaque paire Dispatcher/publication est identique à toutes les autres paires Dispatcher/publication.
 * Le bleu/vert n’est disponible que dans l’environnement de production.
-* Le bleu/vert est disponible dans AWS ainsi que dans Azure.
+* Le bleu/vert est disponible dans AWS et Azure.
 * Le bleu/vert n’est pas disponible pour les clients d’Assets uniquement.

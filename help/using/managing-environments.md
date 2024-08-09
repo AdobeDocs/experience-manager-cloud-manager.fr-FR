@@ -2,10 +2,10 @@
 title: Gérer les environnements
 description: Découvrez comment utiliser Cloud Manager pour gérer vos environnements.
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
-source-git-commit: 116a930eea08b2bb9d288ec153519699754e0374
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 100%
+source-wordcount: '275'
+ht-degree: 94%
 
 ---
 
@@ -37,7 +37,7 @@ Le statut est l’état d’alimentation cumulée sur les nœuds de l’environn
 
 ## Gérer les environnements {#managing-environments-with-cloud-manager}
 
-Dans le volet **Environnements**, appuyez ou cliquez sur la ligne d’un environnement pour afficher l’écran **Environnements**.
+Sur la mosaïque **Environnements**, cliquez sur la ligne de n’importe quel environnement pour afficher l’écran **Environnements** .
 
 L’écran **Environnements** affiche chaque environnement d’évaluation et de production dans votre programme. Le nom de l’environnement est visible au-dessus de chaque carte. La carte comprend un tableau des nœuds de l’environnement, ainsi que la taille du processeur, du stockage, de la région et de l’état.
 

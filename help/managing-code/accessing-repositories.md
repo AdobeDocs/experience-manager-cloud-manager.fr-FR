@@ -2,10 +2,10 @@
 title: Informations d’accès au référentiel
 description: Découvrez comment accéder à votre référentiel Git géré par Adobe et comment le gérer à l’aide de la gestion de compte Git en libre-service, à partir de Cloud Manager.
 exl-id: 1cc88c82-67c7-4553-a1b8-d2ab22be466c
-source-git-commit: e93285f7c7495ec9d2f11d289adaf6aaba7e58ea
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 100%
+source-wordcount: '394'
+ht-degree: 82%
 
 ---
 
@@ -23,7 +23,7 @@ Cloud Manager facilite la récupération des informations de votre référentie
 
    ![Bouton Accéder aux informations sur le référentiel de la carte Environnements](assets/pipelines-card.png)
 
-1. Appuyez ou cliquez sur le bouton **Accéder aux informations sur le référentiel** pour ouvrir la boîte de dialogue **Informations sur le référentiel** et afficher :
+1. Cliquez sur le bouton **Accéder à Repo Info** pour ouvrir la boîte de dialogue **Repository Info** et afficher :
 
    * Le nom d’utilisateur Git.
    * Le mot de passe Git.
@@ -32,9 +32,9 @@ Cloud Manager facilite la récupération des informations de votre référentie
 
    ![Fenêtre Informations sur le référentiel](assets/access-repo-info.png)
 
-1. Pour accéder au mot de passe, un nouveau mot de passe doit être généré. Pour ce faire, appuyez ou cliquez sur le bouton **Générer un mot de passe**.
+1. Pour accéder au mot de passe, un nouveau mot de passe doit être généré. Pour ce faire, cliquez sur le bouton **Générer le mot de passe** .
 
-1. Confirmez la génération du mot de passe dans la boîte de dialogue **Voulez-vous confirmer...** en appuyant ou en cliquant sur **Générer un mot de passe**.
+1. Confirmez la génération du mot de passe dans la boîte de dialogue **Êtes-vous sûr...** en cliquant sur **Générer le mot de passe**.
 
    ![Confirmer la génération du mot de passe](assets/confirm-password-generation.png)
 
@@ -55,10 +55,10 @@ Cloud Manager facilite la récupération des informations de votre référentie
 
 ## Accès aux informations sur le référentiel à partir de la fenêtre Référentiels {#repositories-window}
 
-Un bouton **Accéder aux informations sur le référentiel** est également présent dans la barre d’outils de la fenêtre [**Référentiels**.](managing-repositories.md) il affiche les mêmes informations sur l’accès aux référentiels gérés par Adobe.
+Un bouton **Accéder à Repo Info** est également disponible dans la barre d’outils de la fenêtre [**Référentiels**](managing-repositories.md). Il affiche les mêmes informations sur l’accès aux référentiels gérés par Adobe.
 
 ## Révocation d’un mot de passe d’accès {#revoke-password}
 
-Vous pouvez révoquer un mot de passe d’accès à tout moment. Pour ce faire, [créez un ticket d’assistance pour cette demande.](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support)
+Vous pouvez révoquer un mot de passe d’accès à tout moment. Pour ce faire, [créez un ticket d’assistance pour cette requête](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support).
 
 Le ticket est traité en priorité et la révocation devrait être effectuée dans la journée.

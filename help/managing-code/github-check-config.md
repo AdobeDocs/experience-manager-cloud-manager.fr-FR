@@ -2,10 +2,10 @@
 title: Configuration de la vérification GitHub pour les référentiels privés
 description: Découvrez comment contrôler les pipelines créés automatiquement afin de valider chaque demande d’extraction dans un référentiel privé.
 exl-id: 29c9e487-e196-411a-8cda-6751b0a56066
-source-git-commit: e93285f7c7495ec9d2f11d289adaf6aaba7e58ea
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
 source-wordcount: '255'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -15,7 +15,7 @@ Découvrez comment contrôler les pipelines créés automatiquement afin de vali
 
 ## Configuration des vérifications GitHub {#configuration}
 
-Lors de l’utilisation de [référentiels privés](private-repositories.md#using), un [pipeline de qualité de code full stack](/help/overview/ci-cd-pipelines.md) est créé automatiquement. Ce pipeline démarre à chaque mise à jour de demande d’extraction.
+Lors de l’utilisation de [référentiels privés](private-repositories.md#using), un [pipeline de qualité de code de pile complet](/help/overview/ci-cd-pipelines.md) sera créé automatiquement. Ce pipeline démarre à chaque mise à jour de demande d’extraction.
 
 Vous pouvez contrôler ces vérifications en créant un fichier `.cloudmanager/pr_pipelines.yml` dans la branche par défaut du référentiel privé.
 

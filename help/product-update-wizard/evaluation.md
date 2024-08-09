@@ -3,10 +3,10 @@ title: Phase d’évaluation
 seo-title: Evaluation Phase
 description: Découvrez comment la phase d’évaluation de l’assistant de mise à jour du produit évalue la complexité de la mise à niveau à l’aide de la détection de motifs.
 exl-id: 1ffcbc21-dc36-435d-b83b-0209f81a15e7
-source-git-commit: ce2145da3b9e605e8a41bac28df520f14e255557
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 100%
+source-wordcount: '285'
+ht-degree: 85%
 
 ---
 
@@ -25,7 +25,7 @@ Ce rapport sert à évaluer l’ampleur des tâches de développement nécessair
 
 >[!NOTE]
 >
->Pour en savoir plus sur la détection des motifs, consultez le document [Évaluation de la complexité de la mise à niveau à l’aide de la détection des motifs](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=fr).
+>Pour en savoir plus sur le détecteur de motifs, voir [Évaluation de la complexité de la mise à niveau à l’aide du détecteur de motifs](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=fr).
 
 ## Exécution de l’évaluation {#running}
 
@@ -33,7 +33,7 @@ Le détecteur de motifs peut s’exécuter dans n’importe quel environnement. 
 
 Pour générer le rapport d’évaluation, procédez comme suit.
 
-1. Démarrez l’assistant tel que décrit dans le document [Assistant de mise à jour du produit](/help/product-update-wizard/overview.md).
+1. Démarrez l’assistant comme décrit dans le document [Assistant de mise à jour du produit](/help/product-update-wizard/overview.md).
 
 1. Cliquez sur **[!UICONTROL Exécuter une évaluation]**.
 

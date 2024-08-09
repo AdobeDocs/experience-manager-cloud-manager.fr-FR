@@ -2,10 +2,10 @@
 title: Environnement de création
 description: Découvrez l’environnement de création spécialisé, dans lequel les utilisateurs Cloud Manager peuvent créer et tester votre code.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: dc0b83fa045208fcd333af10f90f9590c2aa96b8
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '1280'
-ht-degree: 100%
+source-wordcount: '1275'
+ht-degree: 89%
 
 ---
 
@@ -20,7 +20,7 @@ Les environnements de création de Cloud Manager possèdent les attributs suiva
 
 * L’environnement de création est basé sur Linux, dérivé de Ubuntu 22.04.
 * Apache Maven 3.9.4 est installé.
-   * Adobe recommande aux utilisateurs et utilisatrices de [mettre à jour leurs référentiels Maven de sorte à utiliser HTTPS au lieu de HTTP.](#https-maven)
+   * Adobe recommande aux utilisateurs [de mettre à jour leurs référentiels Maven pour utiliser HTTPS au lieu de HTTP](#https-maven).
 * Les versions Java installées sont Oracle JDK 8u401 et Oracle JDK 11.0.22.
    * `/usr/lib/jvm/jdk1.8.0_401`
    * `/usr/lib/jvm/jdk-11.0.22`
@@ -31,15 +31,15 @@ Les environnements de création de Cloud Manager possèdent les attributs suiva
    * `libpng`
    * `imagemagick`
    * `graphicsmagick`
-* D’autres packages peuvent être installés au moment de la génération, comme décrit dans la section [Installation de packages système supplémentaires.](#installing-additional-system-packages)
+* D’autres packages peuvent être installés au moment de la création, comme décrit dans la section [Installation de packages système supplémentaires](#installing-additional-system-packages).
 * Chaque génération a lieu dans un environnement vide. Le conteneur de création ne conserve aucun état entre les exécutions.
 * Maven est toujours exécuté avec les trois commandes suivantes :
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven est configuré au niveau du système avec un fichier `settings.xml` qui inclut automatiquement le référentiel public d’artefacts Adobe à l’aide d’un profil intitulé `adobe-public`.
-   * Pour plus de détails, consultez le [référentiel Maven public d’Adobe](https://repo1.maven.org/).
-* Node.js 18 est disponible pour les [pipelines front-end.](/help/overview/ci-cd-pipelines.md)
+   * Pour plus d’informations, voir le [référentiel Maven public Adobe](https://repo1.maven.org/) .
+* Node.js 18 est disponible pour les [pipelines front-end](/help/overview/ci-cd-pipelines.md).
 
 >[!NOTE]
 >
@@ -47,14 +47,15 @@ Les environnements de création de Cloud Manager possèdent les attributs suiva
 
 >[!TIP]
 >
->Consultez les ressources supplémentaires suivantes pour savoir comment utiliser les API de Cloud Manager :
+>Consultez les ressources supplémentaires suivantes pour savoir comment utiliser les API Cloud Manager :
+>
 >* [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 >* [Création d’une intégration d’API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
 >* [Autorisations d’API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
 
 ## Référentiels Maven HTTPS {#https-maven}
 
-Cloud Manager [version 2023.10.0](/help/release-notes/2023/2023-10-0.md) a commencé une mise à jour continue de l’environnement de création (achevée avec la version 2023.12.0), qui incluait une mise à jour de Maven 3.8.8. L’amélioration de la sécurité visant à atténuer les vulnérabilités potentielles a constitué un changement significatif introduit dans Maven 3.8.1. Plus précisément, Maven désactive désormais tous les miroirs `http://*` non sécurisés par défaut, comme indiqué dans la section [Notes de mise à jour de Maven.](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)
+Cloud Manager [2023.10.0](/help/release-notes/2023/2023-10-0.md) a commencé une mise à jour continue de l’environnement de création (avec la version 2023.12.0), qui incluait une mise à jour de Maven 3.8.8. Un changement significatif introduit dans Maven 3.8.1 a été une amélioration de la sécurité visant à atténuer les vulnérabilités potentielles. Plus précisément, Maven désactive désormais par défaut tous les miroirs `http://*` non sécurisés, comme indiqué dans les [ notes de mise à jour de Maven](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291).
 
 Suite à cette amélioration de la sécurité, certaines personnes peuvent rencontrer des problèmes lors de l’étape de création, en particulier lors du téléchargement d’artefacts à partir de référentiels Maven qui utilisent des connexions HTTP non sécurisées.
 
@@ -111,7 +112,7 @@ Les combinaisons fournisseur/version actuellement disponibles sont les suivantes
 
 >[!NOTE]
 >
->Depuis avril 2022, le JDK Oracle est le JDK par défaut pour le développement et le fonctionnement des applications AEM. Le processus de génération de Cloud Manager passe automatiquement à l’utilisation du JDK Oracle, même si une autre option est explicitement sélectionnée dans la chaîne d’outils Maven. Pour plus de détails, reportez-vous aux [notes de mise à jour d’avril](/help/release-notes/2022/2022-4-0.md).
+>Depuis avril 2022, le JDK Oracle est le JDK par défaut pour le développement et le fonctionnement des applications AEM. Le processus de génération de Cloud Manager passe automatiquement à l’utilisation du JDK Oracle, même si une autre option est explicitement sélectionnée dans le toolchain Maven. Pour plus d’informations, voir les [notes de mise à jour d’avril](/help/release-notes/2022/2022-4-0.md) .
 
 ### Autre version du JDK d’exécution de Maven {#alternate-maven}
 
@@ -149,7 +150,7 @@ Les variables d’environnement standard et les secrets peuvent être utilisés 
 
 #### Dispatcher {#dispatcher}
 
-Seules les variables d’environnement normales peuvent être utilisées avec le [dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) Les secrets ne peuvent pas être utilisés.
+Seules les variables d&#39;environnement standard peuvent être utilisées avec [le dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr). Les secrets ne peuvent pas être utilisés.
 
 Toutefois, les variables d’environnement ne peuvent pas être utilisées dans les directives `IfDefine`.
 
@@ -159,7 +160,7 @@ Toutefois, les variables d’environnement ne peuvent pas être utilisées dans 
 
 #### Configurations OSGi {#osgi}
 
-Les variables d’environnement normales et les secrets peuvent être utilisés dans les [configurations OSGi.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html?lang=fr)
+Les variables d’environnement normales et les secrets peuvent être utilisés dans les [configurations OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html?lang=fr).
 
 ### Variables de pipeline {#pipeline-variables}
 

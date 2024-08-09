@@ -2,16 +2,16 @@
 title: Configurer des pipelines hors production
 description: Découvrez comment utiliser Cloud Manager pour créer et configurer des pipelines hors production afin de déployer votre code.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: 85c1e22609dc5646d3de0ccc71e9423d4243e13a
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 100%
+source-wordcount: '710'
+ht-degree: 94%
 
 ---
 
 # Configurer des pipelines hors production {#configuring-non-production-pipelines}
 
-Découvrez comment utiliser Cloud Manager pour créer et configurer des pipelines hors production afin de déployer votre code. Si vous souhaitez d’abord une présentation plus conceptuelle du fonctionnement des pipelines dans Cloud Manager, reportez-vous au document [Pipelines CI/CD.](/help/overview/ci-cd-pipelines.md)
+Découvrez comment utiliser Cloud Manager pour créer et configurer des pipelines hors production afin de déployer votre code. Si vous souhaitez d’abord une présentation plus conceptuelle du fonctionnement des pipelines dans Cloud Manager, reportez-vous à la section [Pipelines CI/CD](/help/overview/ci-cd-pipelines.md).
 
 ## Présentation {#overview}
 
@@ -20,7 +20,7 @@ En utilisant le volet **Pipelines** dans [!UICONTROL Cloud Manager], le **Respo
 * **Pipelines de production** - un pipeline de production est un pipeline spécialement conçu, composé d’une série d’étapes coordonnées permettant de mener le code source jusqu’à la production.
 * **Pipelines hors production** - un pipeline hors production sert principalement à exécuter des analyses de qualité du code ou à déployer le code source dans un environnement de développement.
 
-Ce document se concentre sur les pipelines hors production. Pour plus de détails sur la configuration des pipelines de production, voir le document [Configurer des pipelines de production.](/help/using/production-pipelines.md)
+Ce document se concentre sur les pipelines hors production. Pour plus d’informations sur la configuration des pipelines de production, voir le document [Configuration des pipelines de production](/help/using/production-pipelines.md).
 
 Il existe deux types de pipelines hors production :
 
@@ -80,7 +80,7 @@ Une fois que vous avez configuré votre programme et que vous disposez d’au mo
 
 ## Les étapes suivantes {#the-next-steps}
 
-Une fois que vous avez configuré le pipeline, vous devez déployer votre code. Consultez le document [Déploiement du code](/help/using/code-deployment.md) pour plus de détails.
+Une fois que vous avez configuré le pipeline, vous devez déployer votre code. Pour plus d’informations, voir [Déploiement du code](/help/using/code-deployment.md) .
 
 ## Tutoriel vidéo {#video-tutorial}
 

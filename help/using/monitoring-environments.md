@@ -2,10 +2,10 @@
 title: Surveiller les environnements
 description: Découvrez comment surveiller vos environnements dans Cloud Manager.
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 100%
+source-wordcount: '922'
+ht-degree: 93%
 
 ---
 
@@ -26,7 +26,7 @@ Pour accéder à la surveillance du système, procédez comme suit.
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) et sélectionnez l’organisation et le programme appropriés.
 
-1. Appuyez ou cliquez sur le bouton représentant des points de suspension pour le programme que vous souhaitez surveiller et sélectionnez l’option **Afficher la surveillance**.
+1. Cliquez sur le bouton représentant des points de suspension du programme que vous souhaitez surveiller et sélectionnez l’option **Afficher la surveillance** .
 
    ![Paramètres](/help/assets/first-timea1.png)
 
@@ -51,7 +51,7 @@ Le statut de chaque catégorie représente une synthèse des mesures individuell
 
 ## Détails de la surveillance du système {#system-monitoring-detail}
 
-Pour consulter les détails de mesures spécifiques, appuyez ou cliquez sur l’une des colonnes de catégorie d’une instance spécifique ou sur le titre de la catégorie dans le volet de navigation de gauche. Chaque page de détail présente une série de graphiques pour les mesures de cette catégorie. Vous pouvez afficher les mesures de toutes les instances dans un environnement ou pour une instance spécifique. Vous pouvez basculer entre l’environnement et les instances à l’aide des listes déroulantes dans le coin supérieur droit.
+Pour afficher les détails de mesures spécifiques, cliquez sur l’une des colonnes de catégories d’une instance spécifique ou sur le titre de la catégorie dans le volet de navigation de gauche. Chaque page de détail présente une série de graphiques pour les mesures de cette catégorie. Vous pouvez afficher les mesures de toutes les instances dans un environnement ou pour une instance spécifique. Vous pouvez basculer entre l’environnement et les instances à l’aide des listes déroulantes dans le coin supérieur droit.
 
 ![Sélectionner l’environnement](/help/assets/System_Monitoring1.png)
 

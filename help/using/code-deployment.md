@@ -2,10 +2,10 @@
 title: Déploiement du code
 description: Découvrez comment déployer votre code et ce qui se passe dans Cloud Manager lors du déploiement.
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '1648'
-ht-degree: 100%
+source-wordcount: '1637'
+ht-degree: 94%
 
 ---
 
@@ -109,16 +109,16 @@ Lorsque Cloud Manager se déploie sur des topologies autres que de production, 
 
 1. Chaque artefact AEM est déployé sur chacune des instances AEM par le biais des API de Package Manager, avec des dépendances de packages qui déterminent l’ordre de déploiement.
 
-   * Pour en savoir plus sur l’utilisation de packages pour installer de nouvelles fonctionnalités, transférer du contenu entre des instances et sauvegarder le contenu du référentiel, reportez-vous au document [Gestionnaire de packages](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=fr).
+   * Pour en savoir plus sur l’utilisation des packages pour installer de nouvelles fonctionnalités, transférer du contenu entre les instances et sauvegarder le contenu du référentiel, voir [Gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=fr).
 
    >[!NOTE]
    >
-   >Tous les artefacts AEM sont déployés à la fois sur l’instance de création et les instances de publication. Les modes d’exécution doivent être utilisés lorsque des configurations spécifiques à un nœud sont requises. Pour en savoir plus sur la manière dont les modes d’exécution vous permettent d’ajuster votre instance AEM à des fins spécifiques, reportez-vous à la section [Modes d’exécution du document Déploiement sur AEM as a Cloud Service.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=fr#runmodes)
+   >Tous les artefacts AEM sont déployés à la fois sur l’instance de création et les instances de publication. Les modes d’exécution doivent être utilisés lorsque des configurations spécifiques à un nœud sont requises. Pour en savoir plus sur la façon dont les modes d’exécution vous permettent d’ajuster votre instance AEM à des fins spécifiques, consultez la section [Modes d’exécution du document Déploiement sur AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=fr#runmodes).
 
 1. L’artefact dispatcher est déployé sur chaque dispatcher comme suit :
 
    1. Les configurations actuelles sont sauvegardées et copiées vers un emplacement temporaire.
-   1. Toutes les configurations sont supprimées, à l’exception des fichiers non-modifiables. Reportez-vous au document [Configurations du Dispatcher](/help/getting-started/dispatcher-configurations.md) pour plus de détails. Cela permet de vider les répertoires pour qu’aucun fichier orphelin ne soit abandonné.
+   1. Toutes les configurations sont supprimées, à l’exception des fichiers non-modifiables. Pour plus d’informations, voir [Configurations Dispatcher](/help/getting-started/dispatcher-configurations.md) . Cela permet de vider les répertoires pour qu’aucun fichier orphelin ne soit abandonné.
    1. L’artefact est extrait dans le répertoire `httpd`. Les fichiers non modifiables ne sont pas remplacés. Toute modification apportée aux fichiers non modifiables dans votre référentiel git sera ignorée au moment du déploiement. Ces fichiers sont essentiels au framework Dispatcher AMS et ne peuvent pas être modifiés.
    1. Apache effectue un test de configuration. Si aucune erreur n’est trouvée, le service est rechargé. Si une erreur se produit, les configurations sont restaurées à partir de la sauvegarde, le service est rechargé et l’erreur est signalée à Cloud Manager.
    1. Chaque chemin spécifié dans la configuration de pipeline est invalidé ou purgé du cache du dispatcher.
@@ -200,7 +200,7 @@ Dans de telles circonstances, si une réexécution est possible, la page de stat
 
 ### Réexécution de l’API {#reexecute-api}
 
-Outre l’interface utilisateur, vous pouvez utiliser l’[API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/?lang=fr#tag/Pipeline-Execution) pour déclencher de nouvelles exécutions et identifier les exécutions déclenchées comme réexécutions.
+En plus d’être disponible dans l’interface utilisateur, vous pouvez utiliser [l’API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/?lang=fr#tag/Pipeline-Execution) pour déclencher de nouvelles exécutions et identifier les exécutions déclenchées comme réexécutions.
 
 #### Déclencher une réexécution {#triggering}
 

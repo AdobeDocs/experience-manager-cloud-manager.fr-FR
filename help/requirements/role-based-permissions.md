@@ -2,10 +2,10 @@
 title: Autorisations basées sur les rôles
 description: Découvrez les autorisations préconfigurées basées sur les rôles de Cloud Manager pour gérer l’accès à vos ressources cloud.
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: fc1bc626dc18d25ce8c5bbae71396b234b5676db
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 100%
+source-wordcount: '617'
+ht-degree: 88%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 100%
 
 ## Rôles utilisateur {#user-roles}
 
-La gestion des rôles pour [!UICONTROL Cloud Manager] s’effectue dans [Admin Console.](https://helpx.adobe.com/fr/enterprise/using/admin-console.html) Tout utilisateur de [!UICONTROL Cloud Manager] doit être membre de l’organisation IMS du client et avoir le contexte du produit Adobe Managed Services. Des rôles spécifiques sont fournis en ajoutant un utilisateur à un profil de produit [!UICONTROL Cloud Manager] dans Admin Console.
+La gestion des rôles pour [!UICONTROL Cloud Manager] est effectuée à l’aide de [Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html). Tout utilisateur de [!UICONTROL Cloud Manager] doit être membre de l’organisation IMS du client et avoir le contexte du produit Managed Services Adobe. Des rôles spécifiques sont fournis en ajoutant un utilisateur à un profil de produit [!UICONTROL Cloud Manager] dans Admin Console.
 
-Pour plus d’informations sur la configuration de vos rôles, consultez le document [Configuration des utilisateurs et des rôles.](/help/requirements/users-and-roles.md)
+Pour en savoir plus sur la configuration de vos rôles, consultez le document [Configuration des utilisateurs et des rôles](/help/requirements/users-and-roles.md).
 
 Ce tableau répertorie les rôles que vous pouvez affecter dans Admin Console.
 
@@ -65,8 +65,8 @@ Chacun des rôles est associé à des autorisations préconfigurées spécifique
 | Lecture de l’étape | Voir les résultats des mesures de qualité de l’étape | x | x | x | x | x |
 | Génération d’un jeton d’accès personnel | Accéder à Git |  | x |  | x |  |
 
-Pour en savoir plus sur la configuration de vos utilisateurs, voir le document [Configuration des utilisateurs et des rôles.](/help/requirements/users-and-roles.md)
+Pour en savoir plus sur la configuration de vos utilisateurs, consultez le document [Configuration des utilisateurs et des rôles](/help/requirements/users-and-roles.md).
 
 >[!TIP]
 >
->Des profils d’autorisation personnalisés avec des autorisations configurables sont également disponibles. Consultez le document [Autorisations personnalisées](/help/using/custom-permissions.md) pour plus de détails.
+>Des profils d’autorisation personnalisés avec des autorisations configurables sont également disponibles. Pour plus d’informations, voir [Autorisations personnalisées](/help/using/custom-permissions.md) .

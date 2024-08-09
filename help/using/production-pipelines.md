@@ -2,17 +2,17 @@
 title: Configurer des pipelines de production
 description: Découvrez comment créer et configurer des pipelines de production à l’aide de Cloud Manager afin de déployer votre code.
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 33ccb0f2139162845cc1b72505b6a5bfc7cf43e7
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '1302'
-ht-degree: 100%
+source-wordcount: '1286'
+ht-degree: 91%
 
 ---
 
 
 # Configuration des pipelines de production {#configuring-production-pipelines}
 
-Découvrez comment créer et configurer des pipelines de production à l’aide de Cloud Manager afin de déployer votre code. si vous souhaitez d’abord une présentation plus conceptuelle du fonctionnement des pipelines dans Cloud Manager, consultez le document [Pipelines CI/CD.](/help/overview/ci-cd-pipelines.md)
+Découvrez comment créer et configurer des pipelines de production à l’aide de Cloud Manager afin de déployer votre code. si vous souhaitez d’abord une présentation plus conceptuelle du fonctionnement des pipelines dans Cloud Manager, reportez-vous à la section [Pipelines CI/CD](/help/overview/ci-cd-pipelines.md).
 
 ## Présentation {#overview}
 
@@ -21,7 +21,7 @@ En utilisant le volet **Paramètres du pipeline** dans [!UICONTROL Cloud Manage
 * **Pipelines de production** - un pipeline de production est un pipeline spécialement conçu, composé d’une série d’étapes coordonnées pour mener le référentiel Git jusqu’à la production.
 * **Pipelines hors production** - un pipeline hors production sert principalement à exécuter des analyses de qualité du code ou à déployer le code source dans un environnement de développement.
 
-Ce document se concentre sur les pipelines de production. Pour plus d’informations sur la configuration des pipelines hors production, voir le document [Configuration de pipelines hors production.](/help/using/non-production-pipelines.md)
+Ce document se concentre sur les pipelines de production. Pour plus d’informations sur la configuration des pipelines hors production, voir le document [Configuration des pipelines hors production](/help/using/non-production-pipelines.md).
 
 Le rôle du **responsable du déploiement** : il est chargé de la configuration du pipeline. La configuration du pipeline comprend :
 
@@ -39,7 +39,7 @@ Une fois que vous avez utilisé l’interface utilisateur [!UICONTROL Cloud Mana
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
-1. Accédez à la vignette **Pipelines** de la page **Aperçu du programme**, cliquez sur **+Ajouter** et sélectionnez **Ajout d’un pipeline de production**.
+1. Accédez à la carte **Pipelines** à partir de la page **Aperçu du programme**, puis cliquez sur **+Ajouter** et sélectionnez **Ajouter un pipeline de production**.
 
    ![Ajout d’un pipeline de production](/help/assets/configure-pipelines/add-prod1.png)
 
@@ -113,7 +113,7 @@ Une fois que vous avez utilisé l’interface utilisateur [!UICONTROL Cloud Mana
 
            >[!TIP]
            >
-           >Consultez le document [Code de déploiement](/help/using/code-deployment.md) pour découvrir comment définir le planning de déploiement ou exécuter le pipeline immédiatement.
+           >Voir [Déploiement du code](/help/using/code-deployment.md) pour savoir comment définir la planification du déploiement ou exécuter immédiatement le pipeline.
 
             * **Solliciter la supervision de l’ingénieur support client (CSE)** - si cette option est choisie, un CSE est engagé pour véritablement démarrer le déploiement. Lors de la création ou de la modification d’un pipeline lorsque cette option est activée, le rôle **Responsable de déploiement** dispose des options suivantes.
 
@@ -128,7 +128,7 @@ Une fois que vous avez utilisé l’interface utilisateur [!UICONTROL Cloud Mana
 
    >[!TIP]
    >
-   >Consultez le document [Test de qualité du code](/help/using/code-quality-testing.md#performance-testing) pour plus de détails sur les options disponibles dans l’onglet **Test d’évaluation**.
+   >Voir [Test de qualité du code](/help/using/code-quality-testing.md#performance-testing) pour plus d’informations sur les options disponibles dans l’onglet **Test d’évaluation**.
 
    1. Sous la section **Diffusion du contenu des sites/Poids de charge distribué**, vous définissez comment le test de performance des sites est configuré en fonction de la pondération des requêtes de page entre les trois ensembles de pages, qui peuvent être activés ou désactivés.
 
@@ -138,7 +138,7 @@ Une fois que vous avez utilisé l’interface utilisateur [!UICONTROL Cloud Mana
 
       ![Poids de charge des sites](/help/assets/configure-pipelines/add-prod5.png)
 
-   1. Sous la section **Distribution des tests de performance des ressources**, vous définissez la distribution de test des images et des PDF ainsi que la définition de vos propres ressources de test.
+   1. Dans la section **Distribution des tests de performance Assets**, vous définissez la distribution des tests des images et des PDF et définissez vos propres ressources de test.
 
       * **Images** - réglez le curseur pour ajuster la répartition du test entre les images et les PDF.
       * **PDF** - réglez le curseur pour ajuster la répartition du test entre les images et les PDF.
@@ -155,7 +155,7 @@ Une fois que vous avez utilisé l’interface utilisateur [!UICONTROL Cloud Mana
 
 ## Les étapes suivantes {#the-next-steps}
 
-Une fois que vous avez configuré le pipeline, vous devez déployer votre code. Consultez le document [Déploiement du code](/help/using/code-deployment.md) pour plus de détails.
+Une fois que vous avez configuré le pipeline, vous devez déployer votre code. Pour plus d’informations, voir [Déploiement du code](/help/using/code-deployment.md) .
 
 ## Tutoriel vidéo {#video-tutorial-one}
 

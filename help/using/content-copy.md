@@ -2,10 +2,10 @@
 title: Outil de copie de contenu
 description: L’outil de copie de contenu de Cloud Manager permet aux utilisateurs et utilisatrices de copier du contenu modifiable à la demande à partir de leurs environnements de production 6.x AEM hébergés par AMS vers des environnements inférieurs à des fins de test.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 655111cdf7327e92e03ac7eedd9eedd87cd4b2f1
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '1120'
-ht-degree: 100%
+source-wordcount: '1096'
+ht-degree: 87%
 
 ---
 
@@ -47,39 +47,39 @@ Pour qu’un contenu puisse être copié, un jeu de contenu doit être défini. 
 
 1. Accédez à la page **Jeux de contenu** à partir de l’écran **Environnements**.
 
-1. Appuyez ou cliquez sur le bouton **Ajouter un jeu de contenu** en haut à droite de l’écran.
+1. Cliquez sur le bouton **Ajouter un jeu de contenu** en haut à droite de l’écran.
 
    ![Jeux de contenu](/help/assets/content-sets.png)
 
-1. Dans l’onglet **Détails** de l’assistant, indiquez le nom et la description du jeu de contenu, puis appuyez ou cliquez sur **Continuer**.
+1. Dans l’onglet **Détails** de l’assistant, indiquez un nom et une description pour le jeu de contenu, puis cliquez sur **Continuer**.
 
    ![Détails du jeu de contenu](/help/assets/add-content-set-details.png)
 
 1. Dans l’onglet **Chemins d’accès au contenu** de l’assistant, indiquez les chemins d’accès au contenu modifiable à inclure dans le jeu de contenu.
 
    1. Entrez le chemin dans le champ **Ajouter un chemin d’accès à inclure**.
-   1. Appuyez ou cliquez sur le bouton **Ajouter un chemin** pour ajouter le chemin d’accès au jeu de contenu.
-   1. Appuyez ou cliquez encore sur le bouton **Ajouter un chemin** si nécessaire.
+   1. Cliquez sur le bouton **Ajouter chemin** pour ajouter le chemin d’accès au jeu de contenu.
+   1. Cliquez de nouveau sur le bouton **Ajouter chemin** si nécessaire.
 
    ![Ajouter des chemins à un jeu de contenu](/help/assets/add-content-set-paths.png)
 
 1. Si vous devez affiner ou limiter votre jeu de contenu, les sous-chemins peuvent être exclus.
 
-   1. Dans la liste des chemins d’accès inclus, appuyez ou cliquez sur l’icône **Ajouter des sous-chemins à exclure** à côté du chemin que vous devez limiter.
+   1. Dans la liste des chemins inclus, cliquez sur l’icône **Ajouter des sous-chemins d’exclusion** en regard du chemin que vous devez restreindre.
    1. Saisissez le sous-chemin d’accès à exclure sous le chemin d’accès sélectionné.
-   1. Appuyez ou cliquez sur **Exclure le chemin**.
-   1. Appuyez ou cliquez encore sur **Ajouter des sous-chemins à exclure** pour ajouter d’autres chemins à exclure si nécessaire.
+   1. Cliquez sur **Exclure le chemin**.
+   1. Cliquez de nouveau sur **Ajouter des sous-chemins d’exclusion** pour ajouter des chemins d’accès supplémentaires à exclure, si nécessaire.
 
    ![Exclusion de chemins](/help/assets/add-content-set-paths-excluded.png)
 
 1. Vous pouvez modifier les chemins spécifiés si nécessaire.
 
-   1. Appuyez ou cliquez sur le X à côté des sous-chemins exclus pour les supprimer.
-   1. Appuyez ou cliquez sur le bouton représentant des points de suspension pour avoir accès aux options **Modifier** et **Supprimer**.
+   1. Cliquez sur le X en regard des sous-chemins exclus pour les supprimer.
+   1. Cliquez sur le bouton représentant des points de suspension en regard des chemins pour afficher les options **Modifier** et **Supprimer** .
 
    ![Modification de la liste de chemins](/help/assets/add-content-set-excluded-paths.png)
 
-1. Appuyez ou cliquez sur **Créer** pour créer le jeu de contenu.
+1. Cliquez sur **Créer** pour créer le jeu de contenu.
 
 Le jeu de contenu peut désormais être utilisé pour copier du contenu entre des environnements.
 
@@ -90,7 +90,7 @@ Le jeu de contenu peut désormais être utilisé pour copier du contenu entre de
 
 ## Modification d’un jeu de contenu {#edit-content-set}
 
-Procédez de la même façon que lors de la création d’une étape de contenu. Au lieu d’appuyer ou de cliquer sur **Ajouter un jeu de contenu**, sélectionnez un jeu existant dans la console, puis sélectionnez **Modifier** dans le menu représentant des points de suspension.
+Procédez de la même façon que lors de la création d’une étape de contenu. Au lieu de cliquer sur **Ajouter un jeu de contenu**, sélectionnez un jeu existant dans la console et sélectionnez **Modifier** dans le menu de points de suspension.
 
 ![Modifier le jeu de contenu](/help/assets/edit-content-set.png)
 
@@ -125,7 +125,7 @@ Une fois qu’un jeu de contenu a été créé, vous pouvez l’utiliser pour co
 
    ![Copie de contenu](/help/assets/copying-content.png)
 
-1. Appuyez ou cliquez sur **Copier**.
+1. Cliquez sur **Copier**.
 
 Le processus de copie démarre. Le statut du processus de copie est répercuté dans la console pour le jeu de contenu sélectionné.
 

@@ -2,10 +2,10 @@
 title: Annotations de la vérification GitHub
 description: Découvrez comment les vérifications GitHub annotent les requêtes d’extraction de vos référentiels privés afin de vous fournir des commentaires utiles.
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
-source-git-commit: 210d40a5e12b40fd84efc461c6a1c48559120837
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '252'
-ht-degree: 100%
+source-wordcount: '251'
+ht-degree: 86%
 
 ---
 
@@ -24,7 +24,7 @@ Des problèmes de [qualité du code](/help/using/code-quality-testing.md) détec
 
 ![Exemple d’annotation de problème de code](assets/github-check-annotations-example.png)
 
-La ligne de code exacte avec le problème est fournie et vous pouvez cliquer dessus pour afficher le code concerné. Ces annotations sont fournies pour tous les problèmes de code, pas seulement ceux qui ont été modifiés dans la requête d’extraction.
+La ligne de code exacte avec le problème est fournie et vous pouvez cliquer dessus pour afficher le code approprié. Ces annotations sont fournies pour tous les problèmes de code, pas seulement ceux qui ont été modifiés dans la requête d’extraction.
 
 ![Exemple d’annotation de problème de code](assets/github-check-annotations-example-code.png)
 
@@ -40,4 +40,4 @@ Les résultats concernant la [qualité du code](/help/using/code-quality-testing
 
 ![Exemple d’annotations](assets/github-check-annotations-code-quality-2.png)
 
-Vous pouvez également visualiser les problèmes sous la forme d’un fichier CSV. Celui-ci peut être récupéré en [affichant les détails de l’exécution du pipeline dans Cloud Manager.](/help/using/managing-pipelines.md)
+Vous pouvez également visualiser les problèmes sous la forme d’un fichier CSV. Vous pouvez le récupérer en [affichant les détails de l’exécution du pipeline dans Cloud Manager](/help/using/managing-pipelines.md).

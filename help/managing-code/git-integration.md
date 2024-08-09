@@ -2,10 +2,10 @@
 title: Intégration Git à Adobe Cloud Manager
 description: Cette série de vidéos explique la configuration et l’intégration d’un référentiel Git géré par le client (On-Premise) avec Adobe Cloud Manager.
 exl-id: e517f8a4-23f0-4486-8278-91396dba76ec
-source-git-commit: 91e909273bf2b21d7f6413731923011915079e45
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 100%
+source-wordcount: '337'
+ht-degree: 91%
 
 ---
 
@@ -30,7 +30,7 @@ Cette série de vidéos part du principe que les spectateurs possèdent des conn
 
 Les étapes et les conventions d’attribution de noms décrites dans cette série vidéo représentent quelques bonnes pratiques pour travailler avec un référentiel Git géré par le client et Cloud Manager. On s’attend à ce que les conventions et les workflows décrits soient adaptés aux équipes de développement individuelles.
 
-Pour une présentation complète de Cloud Manager, consultez le document [Présentation de Cloud Manager](/help/introduction.md).
+Pour une présentation complète de Cloud Manager, voir [Introduction à Cloud Manager](/help/introduction.md).
 
 ## Synchronisation initiale {#initial-sync}
 
@@ -40,7 +40,7 @@ Premières étapes de la synchronisation d’un référentiel Git géré par le 
 
 ## Stratégie d’embranchement de base {#branching-strategy}
 
-Configurez une stratégie d’embranchement de base afin de tirer parti des [pipelines de production](/help/using/production-pipelines.md) et [hors production](/help/using/non-production-pipelines.md) de Cloud Manager.
+Configurez une stratégie d’embranchement de base afin de tirer parti des [pipelines de production](/help/using/production-pipelines.md) et [des pipelines hors production](/help/using/non-production-pipelines.md) de Cloud Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12)
 

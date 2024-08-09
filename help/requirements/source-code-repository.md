@@ -2,10 +2,10 @@
 title: Référentiel de code source
 description: Découvrez les informations sur le référentiel Git qui est fourni pour chaque programme que vous avez dans Cloud Manager.
 exl-id: af551e33-3623-4fcd-8d25-4362d8871411
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 100%
+source-wordcount: '261'
+ht-degree: 83%
 
 ---
 
@@ -20,9 +20,9 @@ Votre abonnement à [!UICONTROL AEM Managed Services] comprend un référentie
 
 Il est considéré comme une bonne pratique de toujours utiliser le référentiel Git de Cloud Manager, qui est fourni vide, sans branche configurée ni exemple de projet. Un jeton d’accès privé vous sera fourni pour vous permettre d’utiliser le référentiel Git de Cloud Manager. Il vous permettra d’utiliser n’importe quel client Git pour créer des branches, stocker et récupérer votre code, répertorier l’historique des validations, etc.
 
-Pour plus d’informations sur la configuration de branches dans Git, consultez [Configurer des branches de versions](/help/getting-started/configuring-branches.md).
+Pour plus d’informations sur la configuration des branches dans Git, voir [Configuration des branches de versions](/help/getting-started/configuring-branches.md).
 
-Pour plus d’informations sur l’utilisation du Référentiel Git de Cloud Manager avec le pipeline CI/CD, reportez-vous aux documents [Configurer des pipelines de production](/help/using/production-pipelines.md) et [Configurer des pipelines hors production](/help/using/non-production-pipelines.md).
+Pour plus d’informations sur l’utilisation du référentiel git Cloud Manager avec le pipeline CI/CD, voir [ Configuration des pipelines de production ](/help/using/production-pipelines.md) et [Configuration des pipelines hors production](/help/using/non-production-pipelines.md) pour en savoir plus.
 
 ## Référentiel On-Premise {#on-premise-repository}
 

@@ -2,10 +2,10 @@
 title: Ajout de référentiels Adobe dans Cloud Manager
 description: Découvrez comment créer des référentiels gérés par Adobe dans Cloud Manager.
 exl-id: 24c6ca97-ea70-41b8-b4c7-b8b0f406a57d
-source-git-commit: e93285f7c7495ec9d2f11d289adaf6aaba7e58ea
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
 source-wordcount: '145'
-ht-degree: 100%
+ht-degree: 79%
 
 ---
 
@@ -29,8 +29,8 @@ La fenêtre **Référentiels** facilite l’ajout de référentiels gérés par 
 
    ![Boîte de dialogue Ajouter un référentiel](assets/add-repository-wizard.png)
 
-Lorsque l’assistant se ferme, votre nouveau référentiel s’affiche dans le tableau dans la fenêtre **Référentiels**. Vous pouvez désormais associer un [Pipeline CI/CD](/help/overview/ci-cd-pipelines.md) à celui-ci, ou le gérer dans la fenêtre [**Référentiels**.](managing-repositories.md)
+Lorsque l’assistant se ferme, votre nouveau référentiel s’affiche dans le tableau dans la fenêtre **Référentiels**. Vous pouvez désormais associer un [pipeline CI/CD](/help/overview/ci-cd-pipelines.md) ou le gérer dans la fenêtre [**Référentiels**](managing-repositories.md).
 
 >[!TIP]
 >
->Vous pouvez également ajouter des référentiels GitHub que vous gérez vous-même, en tant que [référentiels privés.](private-repositories.md)
+>Vous pouvez également ajouter des référentiels GitHub que vous gérez vous-même en tant que [référentiels privés](private-repositories.md).

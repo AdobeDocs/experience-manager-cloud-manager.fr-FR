@@ -2,10 +2,10 @@
 title: Test de qualité du code
 description: Découvrez comment fonctionne le test de qualité du code des pipelines et comment il peut améliorer la qualité de vos déploiements.
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: fadcf560f08bf16d0d18172c620a450d0cb06225
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '2778'
-ht-degree: 57%
+source-wordcount: '2763'
+ht-degree: 54%
 
 ---
 
@@ -46,11 +46,11 @@ Le test de qualité du code analyse le code source pour s’assurer qu’il rép
 
 Le logiciel le met en oeuvre à l’aide d’une combinaison d’analyse SonarQube, d’examen au niveau du module de contenu avec OakPAL et de validation Dispatcher avec l’outil d’optimisation de Dispatcher.
 
-Il existe plus de 100 règles combinant des règles Java génériques et des règles spécifiques à AEM. Certaines des règles spécifiques à AEM sont créées en fonction des bonnes pratiques de l’équipe d’ingénierie AEM et sont appelées [Règles de qualité du code personnalisé.](/help/using/custom-code-quality-rules.md)
+Il existe plus de 100 règles combinant des règles Java génériques et des règles spécifiques à AEM. Certaines des règles spécifiques à AEM sont créées en fonction des bonnes pratiques de l’équipe d’ingénierie AEM et sont appelées [Règles de qualité du code personnalisées](/help/using/custom-code-quality-rules.md).
 
 >[!TIP]
 >
->Vous pouvez télécharger la liste complète des règles [via ce lien.](/help/assets/CodeQuality-rules-latest-AMS.xlsx)
+>Vous pouvez télécharger la liste complète des règles [à l&#39;aide de ce lien](/help/assets/CodeQuality-rules-latest-AMS.xlsx).
 
 Les résultats des tests de qualité du code sont fournis sous forme d’évaluation, comme résumé dans ce tableau.
 
@@ -71,7 +71,7 @@ Les résultats des tests de qualité du code sont fournis sous forme d’évalua
 
 >[!NOTE]
 >
->Pour en savoir plus sur les règles de qualité du code personnalisé exécutées par [!UICONTROL Cloud Manager], reportez-vous au document [Règles de qualité du code personnalisé.](custom-code-quality-rules.md)
+>Pour en savoir plus sur les règles de qualité du code personnalisé exécutées par [!UICONTROL Cloud Manager], voir [Règles de qualité du code personnalisé](custom-code-quality-rules.md).
 
 ### Traitement des faux positifs {#dealing-with-false-positives}
 
@@ -172,7 +172,7 @@ Trois jeux de pages sélectionnent les pages. Cloud Manager utilise les journau
 
 ##### Répartition du trafic entre les ensembles de pages sélectionnés {#distribution-of-traffic}
 
-Vous pouvez choisir entre un et trois ensembles de pages dans l’onglet **Tests** de votre [configuration de pipeline.](/help/using/production-pipelines.md) La distribution du trafic est basée sur le nombre d’ensembles sélectionnés. En d’autres termes, si les trois éléments sont sélectionnés, 33 % du total des pages vues sont placées dans chaque jeu. Si deux sont sélectionnés, 50 % est affecté à chaque jeu. Si l’une d’elles est sélectionnée, 100 % du trafic est affecté à cet ensemble.
+Vous pouvez choisir entre un jeu et les trois jeux dans l’onglet **Testing** de votre [configuration de pipeline](/help/using/production-pipelines.md). La répartition du trafic est basée sur le nombre d’ensembles sélectionnés. En d’autres termes, si les trois éléments sont sélectionnés, 33 % du total des pages vues sont placées dans chaque jeu. Si deux sont sélectionnés, 50 % est affecté à chaque jeu. Si l’une d’elles est sélectionnée, 100 % du trafic est affecté à cet ensemble.
 
 Prenons cet exemple.
 
@@ -188,7 +188,7 @@ Pendant la période de test de 30 minutes :
 
 #### Tests et compte rendu des performances {#testing-reporting}
 
-Cloud Manager exécute des tests de performance pour les programmes AEM Sites en demandant des pages en tant qu’utilisateur non authentifié par défaut sur le serveur de publication d’évaluation pendant une période de test de 30 minutes. Il mesure les mesures virtuelles générées par l’utilisateur (temps de réponse, taux d’erreur, vues par minute, etc.) pour chaque page, ainsi que diverses mesures au niveau du système (unité centrale, mémoire, données réseau) pour toutes les instances.
+Cloud Manager exécute des tests de performance pour les programmes AEM Sites en demandant des pages en tant qu’utilisateur non authentifié par défaut sur le serveur de publication d’évaluation pendant une période de test de 30 minutes. Il mesure les mesures virtuelles générées par l’utilisateur (temps de réponse, taux d’erreur, vues par minute, etc.) pour chaque page et diverses mesures au niveau du système (unité centrale, mémoire, données réseau) pour toutes les instances.
 
 Le tableau suivant résume la matrice de test de performance à l’aide du système de point de contrôle à trois niveaux :
 
@@ -204,7 +204,7 @@ Le tableau suivant résume la matrice de test de performance à l’aide du syst
 | Utilisation de la bande passante réseau | Important | >= 90 % |
 | Demandes par minute | Infos | >= 6 000 |
 
-Pour plus d’informations sur l’utilisation de l’authentification de base pour les tests de performance de Sites et Assets, consultez la section [Tests de performances authentifiés](#authenticated-performance-testing).
+Pour plus d’informations sur l’utilisation de l’authentification de base pour les tests de performances de Sites et Assets, voir [Test de performance authentifié](#authenticated-performance-testing) .
 
 >[!NOTE]
 >
@@ -250,7 +250,7 @@ Par exemple, si une répartition 70/30 est utilisée et que 10 ressources sont t
 
 #### Tests et compte rendu des performances {#testing-and-reporting}
 
-Cloud Manager crée un dossier sur l’instance d’auteur à l’aide du nom d’utilisateur et du mot de passe configurés par l’ingénieur du service client. Les ressources sont ensuite chargées dans le dossier à l’aide d’une bibliothèque open source. Les tests exécutés par l’étape de test des ressources sont écrits à l’aide de cette [bibliothèque open source.](https://github.com/adobe/toughday2) Le temps de traitement de chaque ressource et diverses mesures au niveau du système sont mesurés pendant les 30 minutes que dure le test. Cette fonctionnalité permet de charger des images et des documents PDF.
+Cloud Manager crée un dossier sur l’instance d’auteur à l’aide du nom d’utilisateur et du mot de passe configurés par l’ingénieur du service client. Les ressources sont ensuite chargées dans le dossier à l’aide d’une bibliothèque open source. Les tests exécutés par l’étape de test Assets sont écrits à l’aide d’une [bibliothèque open source](https://github.com/adobe/toughday2). Le temps de traitement de chaque ressource et de diverses mesures au niveau du système sont mesurés sur la durée des tests de 30 minutes. Cette fonctionnalité permet de charger des images et des documents PDF.
 
 >[!TIP]
 >

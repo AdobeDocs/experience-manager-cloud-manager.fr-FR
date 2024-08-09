@@ -2,10 +2,10 @@
 title: Configuration du programme
 description: Après l’intégration, le propriétaire de l’entreprise devra effectuer une configuration initiale du programme.
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 100%
+source-wordcount: '584'
+ht-degree: 92%
 
 ---
 
@@ -70,7 +70,7 @@ Vous pouvez modifier les programmes une fois qu’ils ont été configurés. Pou
 
 Notez que les modifications sont enregistrées immédiatement dans Cloud Manager, mais ne seront pas répercutées dans vos environnements avant la prochaine exécution du pipeline.
 
-Si vous n’avez pas encore créé de pipeline, consultez les documents [Configuration des pipelines de production](/help/using/production-pipelines.md) et [Configuration des pipelines hors production.](/help/using/non-production-pipelines.md)
+Si vous n’avez pas encore créé de pipeline, reportez-vous aux documents [Configuration des pipelines de production](/help/using/production-pipelines.md) et [Configuration des pipelines hors production](/help/using/non-production-pipelines.md).
 
 ## Basculer entre les programmes {#swithing-programs}
 
@@ -86,7 +86,7 @@ Les KPI des sites sont mesurés sur les tests exécutés dans l’environnement 
 
 Par exemple, un utilisateur qui attend une moyenne de 1 000 pages vues par minute dans son environnement de production et qui dispose de quatre Dispatchers/serveurs de publication en production doit réduire cette valeur à 250 pages vues par minute. Cela suppose que son environnement d’évaluation se compose d’une seule paire Dispatcher/serveur de publication.
 
-Les tests de performance des ressources sont effectués en chargeant plusieurs ressources à plusieurs reprises pendant une période de test de 30 minutes et en mesurant le temps de traitement de chaque ressource ainsi que diverses mesures au niveau du système.
+Les tests de performances d’Assets sont effectués en chargeant des ressources à plusieurs reprises au cours d’une période de test de 30 minutes et en mesurant le temps de traitement de chaque ressource et de diverses mesures au niveau du système.
 
 De plus, de nombreux utilisateurs disposeront d’un réseau de diffusion de contenu (CDN), tel qu’Akamai ou CloudFront devant leur environnement de production. Étant donné que [!UICONTROL Cloud Manager] effectue directement des tests par rapport à l’environnement d’évaluation, l’ICP doit refléter uniquement le trafic prévu pour transiter via le CDN, c’est-à-dire les défauts de cache. En règle générale, il s’agira d’un sous-ensemble relativement petit du trafic de production total.
 

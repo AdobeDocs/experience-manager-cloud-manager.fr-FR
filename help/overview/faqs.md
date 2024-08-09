@@ -2,10 +2,10 @@
 title: FAQ relatives à Cloud Manager
 description: Ce document répond aux questions les plus fréquemment posées par rapport à Cloud Manager pour les clients AMS.
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
-source-git-commit: 6be659e02df0657ec7d3dbce8c18c44a327a36f4
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 100%
+source-wordcount: '746'
+ht-degree: 93%
 
 ---
 
@@ -18,8 +18,8 @@ Ce document répond aux questions les plus fréquemment posées par rapport à C
 
 Oui. Vous devez ajouter la variable `maven-toolchains-plugin` avec les paramètres appropriés pour Java 11.
 
-* Ce processus est documenté [ici.](/help/getting-started/using-the-wizard.md)
-* Par exemple, reportez-vous à l’[exemple de code de projet WKND.](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)
+* Ce processus est documenté [ici](/help/getting-started/using-the-wizard.md).
+* Pour obtenir un exemple, reportez-vous à l’ [exemple de code de projet wknd](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
 ## Ma version échoue et affiche une erreur concernant maven-scr-plugin, après le passage de Java 8 à Java 11. Que puis-je faire ? {#maven-src-plugin}
 
@@ -29,9 +29,9 @@ Votre build AEM Cloud Manager échoue en cas de tentative de basculement de Jav
 [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]
 ```
 
-Pour découvrir les instructions sur la suppression de ce plug-in, [voir ici.](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/)
+Pour obtenir des instructions sur la façon de supprimer ce module externe, [voir ici](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/).
 
-## Ma version échoue et affiche une erreur concernant RequireJavaVersion, après le passage de Java 8 à Java 11. Que puis-je faire ? {#requirejavaversion}
+## Mon build échoue avec une erreur mentionnant RequireJavaVersion après la bascule de Java 8 à Java 11. Que puis-je faire ? {#requirejavaversion}
 
 Pour les versions de Cloud Manager, la variable `maven-enforcer-plugin` peut échouer à cause de cette erreur.
 
@@ -60,7 +60,7 @@ Il n’y a pas de réponse unique à cette question. Voici quelques points impor
    * Les chargements de page qui dépassent `20` secondes sont marqués comme des erreurs `504`.
 * Si votre site nécessite l’authentification d’utilisateur, consultez le document [Comprendre vos résultats de test](/help/using/code-quality-testing.md#authenticated-performance-testing) pour configurer le test et l’authentifier sur votre site.
 
-Consultez le document [Comprendre vos résultats de test](/help/using/code-quality-testing.md) pour plus d’informations sur les vérifications de qualité.
+Pour plus d’informations sur les contrôles de qualité, voir [Compréhension des résultats du test](/help/using/code-quality-testing.md) .
 
 ## Puis-je utiliser SNAPSHOT pour la version du projet Maven ? {#snapshot}
 
@@ -70,13 +70,13 @@ Cela permet de continuer à installer le déploiement suivant lorsque la version
 
 Vous pouvez également définir la version sur `-SNAPSHOT` pour les builds ou déploiements d’évaluation et de production. Cloud Manager définit automatiquement un numéro de version approprié et crée pour vous une balise dans git. Cette balise peut être référencée ultérieurement, si nécessaire.
 
-De plus amples détails sur la gestion des versions sont [documentés ici.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling.html?lang=fr)
+De plus amples détails sur la gestion des versions sont [documentés ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling.html?lang=fr).
 
 ## Comment le contrôle de version des packages et des offres groupées fonctionne-t-il pour les déploiements d’évaluation et de production ? {#staging-production}
 
-Dans les déploiements d’évaluation et de production, une version automatique est générée [comme documenté ici.](/help/managing-code/maven-project-version.md)
+Dans les déploiements d’évaluation et de production, une version automatique est générée [comme documenté ici](/help/managing-code/maven-project-version.md).
 
-Pour le contrôle de version personnalisé dans les déploiements d’évaluation et de production, définissez une version Maven appropriée en trois parties, comme `1.0.0`. Passez à la version supérieure à chaque déploiement en production.
+Pour le contrôle de version personnalisé dans les déploiements d’évaluation et de production, définissez une version maven en trois parties, telle que `1.0.0`. Passez à la version supérieure à chaque déploiement en production.
 
 Cloud Manager ajoute automatiquement sa version aux builds d’évaluation et de production et crée même une branche Git. Aucune configuration spécifique n’est nécessaire. Si vous ne définissez pas de version Maven comme décrit précédemment, le déploiement s’effectuera quand même et une version sera automatiquement définie.
 

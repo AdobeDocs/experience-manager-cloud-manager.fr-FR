@@ -2,10 +2,10 @@
 title: Notifications
 description: Découvrez comment Cloud Manager vous informe des événements importants.
 exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
-source-git-commit: e767d9ff5e3df0047d2cf47d7b0842854101a01a
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 100%
+source-wordcount: '571'
+ht-degree: 94%
 
 ---
 
@@ -16,7 +16,7 @@ Découvrez comment Cloud Manager vous informe des événements importants.
 
 ## Notifications dans Cloud Manager {#cloud-manager-notifications}
 
-[!UICONTROL Cloud Manager] envoie aux utilisateurs des notifications lorsqu’un pipeline de production démarre et se termine (avec succès ou non), au début d’un déploiement de production, ainsi que lorsque les étapes **Approbation de mise en production** et **Planifié** sont atteintes. Ces notifications sont envoyées via le système de notification [!UICONTROL Experience Cloud].
+[!UICONTROL Cloud Manager] envoie des notifications lorsqu’un pipeline de production démarre et se termine (avec succès ou non), au début d’un déploiement de production et lorsque les étapes **Approbation d’activation** et **Planifié** sont atteintes. Ces notifications sont envoyées via le système de notification [!UICONTROL Experience Cloud].
 
 >[!NOTE]
 >

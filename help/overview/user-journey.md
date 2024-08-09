@@ -2,10 +2,10 @@
 title: Parcours utilisateur
 description: Ce document présente les différents scénarios d’intégration et explique comment démarrer votre parcours avec Cloud Manager.
 exl-id: deb3429c-dfcf-4e52-9aba-d9368aa240e6
-source-git-commit: b0dbb602253939464ff034941ffbad84b7df77df
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
 source-wordcount: '539'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -46,7 +46,7 @@ Lors de la mise à niveau, le système vous intégrera à Cloud Manager et four
 
 Votre projet AEM existant devra également se conformer aux bonnes pratiques recommandées, car vous commencerez à utiliser [!UICONTROL Cloud Manager] pour déployer de nouveaux changements de code dans vos environnements AEM.
 
-Pour des informations complémentaires sur les avantages de la mise à niveau vers AEM 6.5, consultez le document [Mettre à niveau vers AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html?lang=fr).
+Pour obtenir des informations supplémentaires sur les avantages de la mise à niveau vers AEM 6.5, consultez le document [Mise à niveau vers AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html?lang=fr).
 
 ## Accéder à [!UICONTROL Cloud Manager] {#accessing-cloud-manager}
 
@@ -56,7 +56,7 @@ Après la première connexion à [!UICONTROL Cloud Manager], vous avez accès à
 
 Pour commencer à utiliser [!UICONTROL Cloud Manager], consultez le document [Première connexion](/help/getting-started/first-time-login.md).
 
-Pour des informations complémentaires sur AEM, consultez le document [Déploiement et maintenance](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=fr).
+Pour plus d’informations sur AEM, voir le document [Déploiement et maintenance](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=fr).
 
 ## Prise en main de [!UICONTROL Cloud Manager] {#getting-started-with-cloud-manager}
 

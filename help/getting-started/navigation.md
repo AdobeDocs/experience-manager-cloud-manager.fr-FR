@@ -2,10 +2,10 @@
 title: Navigation dans l’interface d’utilisation de Cloud Manager
 description: Découvrez l’organisation de l’interface d’utilisation de Cloud Manager et comment gérer vos programmes et vos environnements.
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: d4d9a9f38c5a969f276140dca98731c670547a3d
-workflow-type: ht
-source-wordcount: '1439'
-ht-degree: 100%
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+workflow-type: tm+mt
+source-wordcount: '1410'
+ht-degree: 80%
 
 ---
 
@@ -31,15 +31,15 @@ La console Mes programmes fournit une vue d’ensemble de tous les programmes au
 1. Des onglets qui permettent de changer l’affichage actuel de vos programmes.
    * Vue **Accueil** (par défaut) qui sélectionne la vue **Mes programmes** avec une vue d’ensemble de tous les programmes.
    * **Licence** qui accède au tableau de bord des licences. Le tableau de bord des licences s’applique uniquement aux programmes AEM as a Cloud Service, et non aux programmes AMS.
-      * Pour déterminer le type de service de votre programme (AMS ou AEMaaCS), consultez la [section Cartes de programme](#program-cards) de ce document.
-   * Notez que les onglets sont par défaut fermés et peuvent être affichés à l’aide du menu Hamburger dans l’[en-tête Cloud Manager](#cloud-manager-header).
+      * Pour déterminer le type de service de votre programme (AMS ou AEMaaCS), reportez-vous à la [section Program Cards](#program-cards) de ce document.
+   * Notez que les onglets sont fermés par défaut et peuvent être affichés à l’aide du menu hamburger dans l’[en-tête Cloud Manager](#cloud-manager-header).
 1. Des [Statistiques et des appels à l’action](#cta-statistics) pour une vue d’ensemble de votre activité récente.
 1. [**Section Mes programmes**](#my-programs-section) avec une vue d’ensemble de tous vos programmes.
 1. Des [Liens rapides](#quick-links) pour accéder facilement aux ressources connexes.
 
 >[!TIP]
 >
->Consultez le document [Programmes et types de programmes](/help/getting-started/program-setup.md) pour plus d’informations sur les programmes.
+>Pour plus d’informations sur les programmes, voir [Programmes et types de programme](/help/getting-started/program-setup.md) .
 
 ### Barres d’outils {#my-programs-toolbars}
 
@@ -53,13 +53,13 @@ La première est l’en-tête de Cloud Manager, qui est présent en permanence 
 
 1. Le menu Hamburger donne accès à des onglets qui peuvent vous diriger vers des parties spécifiques d’un programme individuel ou basculer entre le tableau de bord des licences et la console **[Mes programmes](#my-programs-console)** en fonction du contexte.
    * Le tableau de bord des licences s’applique uniquement aux programmes AEM as a Cloud Service, et non aux programmes AMS.
-   * Pour déterminer le type de service de votre programme (AMS ou AEMaaCS), consultez la [section Cartes de programme](#program-cards) de ce document.
+   * Pour déterminer le type de service de votre programme (AMS ou AEMaaCS), reportez-vous à la [section Program Cards](#program-cards) de ce document.
 1. Le bouton Cloud Manager vous ramène à la console Mes programmes de Cloud Manager, où que vous soyez dans Cloud Manager.
-1. Appuyez ou cliquez sur le bouton Commentaires pour envoyer des commentaires à Adobe concernant Cloud Manager.
-1. Le sélecteur d’organisation affiche l’organisation que vous utilisez actuellement pour vous connecter (dans cet exemple, Fonudation Internal). Appuyez ou cliquez pour passer à une autre organisation si votre Adobe ID est associé à plusieurs d’entre elles.
-1. Appuyez ou cliquez sur le sélecteur de solutions pour accéder rapidement à d’autres solutions Experience Cloud.
+1. Cliquez sur le bouton Commentaires pour fournir des commentaires à Adobe sur Cloud Manager.
+1. Le sélecteur d’organisation affiche l’organisation que vous utilisez actuellement pour vous connecter (dans cet exemple, Fonudation Internal). Cliquez sur pour passer à une autre organisation si votre Adobe ID est associé à plusieurs.
+1. Cliquez sur le sélecteur de solutions pour accéder rapidement à d’autres solutions Experience Cloud.
 1. L’icône d’aide permet d’accéder rapidement aux ressources d’apprentissage et d’assistance.
-1. L’icône de notification comprend un badge qui indique le nombre de [notifications](/help/using/notifications.md) incomplètes actuellement affectées.
+1. L’icône de notification comporte un badge indiquant le nombre de [notifications](/help/using/notifications.md) incomplètes actuellement attribuées.
 1. Appuyez ou cliquez sur l’icône qui représente votre utilisateur ou votre utilisatrice pour accéder à vos paramètres d’utilisateur ou d’utilisatrice. Si vous n’avez configuré aucune image d’utilisateur ou d’utilisatrice, une icône est attribuée de manière aléatoire.
 
 #### Barre d’outils des programmes {#program-toolbar}
@@ -85,7 +85,7 @@ Si vous êtes au commencement de la configuration de votre organisation, vous po
 
 ### Section Mes programmes {#my-programs-section}
 
-Le contenu principal de la console Mes programmes est la section **Mes programmes** qui répertorie vos programmes sous la forme de cartes individuelles. Appuyez ou cliquez sur une carte pour accéder à la page **Vue d’ensemble du programme** du programme pour obtenir plus d’informations sur le programme.
+Le contenu principal de la console Mes programmes est la section **Mes programmes** qui répertorie vos programmes sous la forme de cartes individuelles. Cliquez sur une carte pour accéder à la page **Aperçu du programme** pour plus d’informations sur le programme.
 
 >[!NOTE]
 >
@@ -137,13 +137,13 @@ La section Liens rapides vous donne accès aux ressources connexes couramment ut
 
 ## Fenêtre Vue d’ensemble du programme {#program-overview}
 
-Lorsque que vous sélectionnez un programme dans la console [**Mes programmes**](#my-programs-console), vous accédez à la vue d’ensemble du programme.
+Une fois que vous avez sélectionné un programme dans la [**console Mes programmes**](#my-programs-console), vous accédez à l’ Aperçu du programme.
 
 ![Vue d’ensemble du programme](assets/program-overview.png)
 
 La vue d’ensemble du programme vous donne accès à toutes les informations d’un programme Cloud Manager. Comme la console Mes programmes, elle est composée de plusieurs éléments.
 
-1. Des [barres d’outils](#program-overview-toolbar) pour revenir rapidement à la console Mes programmes et naviguer dans le programme.
+1. [Barres d’outils](#program-overview-toolbar) pour revenir rapidement à la console Mes programmes et parcourir le programme
 1. Des [onglets](#program-tabs) pour basculer entre les différents éléments du programme.
 1. Un [appel à l’action](#cta) basé sur les dernières actions du programme.
 1. Une [vue d’ensemble des environnements](#environments) du programme.
@@ -152,7 +152,7 @@ La vue d’ensemble du programme vous donne accès à toutes les informations d�
 
 ### Barres d’outils {#program-overview-toolbar}
 
-Les barres d’outils de la vue d’ensemble du programme sont très similaires à celles de la [console Mes programmes.](#my-programs-toolbars) Seules les différences sont indiquées ici.
+Les barres d’outils pour la présentation du programme sont très similaires à celles de la [console Mes programmes](#my-programs-toolbars). Seules les différences sont illustrées ici.
 
 #### En-tête de Cloud Manager {#cloud-manager-header-2}
 
@@ -160,7 +160,7 @@ L’en-tête de Cloud Manager comporte un menu Hamburger qui s’ouvre automati
 
 ![Menu Hamburger de Cloud Manager](assets/cloud-manager-hamburger.png)
 
-Appuyez ou cliquez sur l’icône de menu Hamburger pour masquer les onglets.
+Cliquez sur l’icône du menu hamburger pour masquer les onglets.
 
 #### Barre d’outils des programmes {#program-toolbar-2}
 
@@ -190,7 +190,7 @@ Utilisez le menu Hamburger dans l’[en-tête de Cloud Manager](#cloud-manager-
 
 ### Appel à l’action {#cta}
 
-La section Appel à l’action vous fournit des informations utiles en fonction du statut de votre programme. Pour un nouveau programme, vous pouvez le cas échéant voir les prochaines étapes proposées ainsi qu’un rappel de la date de mise en service, [définie lors de la création du programme.](/help/getting-started/program-setup.md)
+La section Appel à l’action vous fournit des informations utiles en fonction du statut de votre programme. Pour un nouveau programme, vous pouvez voir les prochaines étapes proposées et un rappel d’une date de mise en service, [définie lors de la création du programme](/help/getting-started/program-setup.md).
 
 Pour un programme actif, vous pouvez voir le statut de votre dernier déploiement accompagné de liens pour obtenir plus de détails pour démarrer un nouveau déploiement.
 
@@ -198,19 +198,19 @@ Pour un programme actif, vous pouvez voir le statut de votre dernier déploiemen
 
 ### Vignette Environnements {#environments}
 
-La vignette **Environnements** vous fournit une vue d’ensemble de vos environnements ainsi que des liens vers les actions rapides.
+La carte **Environnements** vous donne un aperçu de vos environnements et liens pour les actions rapides.
 
 La carte **Environnements** répertorie seulement trois environnements. Cliquez sur **Tout afficher** pour voir tous les environnements du programme.
 
-Consultez le document [Gestion des environnements](/help/using/managing-environments.md) pour plus d’informations sur la gestion de vos environnements.
+Voir [Gestion des environnements](/help/using/managing-environments.md) pour plus d’informations sur la gestion de vos environnements.
 
 ### Vignette Pipelines {#pipelines}
 
-La vignette **Pipelines** vous fournit une vue d’ensemble de vos pipelines ainsi que des liens vers les actions rapides.
+La carte **Pipelines** donne un aperçu de vos pipelines et des liens pour les actions rapides.
 
 La vignette **Pipelines** répertorie seulement trois pipelines. Cliquez sur **Tout afficher** pour voir tous les pipelines du programme.
 
-Consultez le document [Gestion des pipelines](/help/using/managing-pipelines.md) pour plus d’informations sur la gestion des pipelines.
+Voir [Gestion des pipelines](/help/using/managing-pipelines.md) pour plus d’informations sur la gestion des pipelines.
 
 ### Ressources utiles {#useful-resources}
 

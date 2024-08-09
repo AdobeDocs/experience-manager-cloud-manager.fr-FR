@@ -2,10 +2,10 @@
 title: Gestion des versions de projet par Maven
 description: Découvrez comment Maven gère le contrôle de version des projets dans Cloud Manager.
 exl-id: a1d676e0-27cc-4b0d-8799-527c0520946a
-source-git-commit: 9312999660b324f0f9d2b44dfbf49c4813a3a6e9
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 100%
+source-wordcount: '258'
+ht-degree: 94%
 
 ---
 
@@ -18,7 +18,7 @@ Découvrez comment Maven gère le contrôle de version des projets dans Cloud M
 
 Pour les déploiements d’évaluation et de production, Cloud Manager génère une version d’incrémentation unique.
 
-Cette version est affichée sur la page des détails d’exécution du pipeline, ainsi que sur la page d’activité. Lorsqu’une génération est exécutée, le projet Maven est mis à jour pour utiliser cette version et une balise est créée dans le référentiel Git avec cette version comme nom.
+Cette version s’affiche sur la page des détails d’exécution du pipeline et sur la page de l’activité. Lorsqu’une génération est exécutée, le projet Maven est mis à jour pour utiliser cette version et une balise est créée dans le référentiel Git avec cette version comme nom.
 
 Si la version originale du projet répond à certains critères, la version mise à jour du projet Maven fusionne la version originale du projet et la version générée par Cloud Manager. Toutefois, la balise utilise toujours la version générée. Pour que cette fusion s’effectue, la version initiale du projet doit être formée avec exactement trois segments de version, comme `1.0.0` ou `1.2.3`, mais pas `1.0` ou `1`. Par ailleurs, la version initiale ne doit pas se terminer par `-SNAPSHOT`.
 

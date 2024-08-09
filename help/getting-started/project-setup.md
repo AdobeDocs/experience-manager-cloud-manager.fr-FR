@@ -2,9 +2,9 @@
 title: Configurer le projet
 description: Découvrez comment configurer votre projet afin de pouvoir le gérer et le déployer avec Cloud Manager.
 exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1426'
 ht-degree: 100%
 
 ---
@@ -110,7 +110,7 @@ Si vous souhaitez générer un message de sortie simple uniquement lorsque la g�
 
 ## Prise en charge d’un référentiel Maven protégé par mot de passe {#password-protected-maven-repositories}
 
-Les artefacts d’un référentiel Maven protégé par mot de passe doivent être utilisés avec la plus grand prudence. Le code déployé par ce mécanisme n’est pas soumis à l’ensemble des règles de qualité implémentées dans les points de contrôle qualité de Cloud Manager. Il est conseillé de déployer les sources Java ainsi que l’ensemble du code source du projet avec le binaire.
+Les artefacts d’un référentiel Maven protégé par mot de passe doivent être utilisés avec la plus grand prudence. Le code déployé par ce mécanisme n’est pas soumis à l’ensemble des règles de qualité implémentées dans les points de contrôle qualité de Cloud Manager. Il est conseillé de déployer les sources Java et l’ensemble du code source du projet avec le binaire.
 
 >[!TIP]
 >
@@ -343,4 +343,4 @@ Si vous le souhaitez, le comportement de réutilisation peut être désactivé p
 
 ## Développement du code en fonction des bonnes pratiques {#develop-your-code-based-on-best-practices}
 
-Les équipes d’ingénierie et de conseil Adobe ont développé un [ensemble complet de bonnes pratiques pour les développeurs AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/best-practices.html?lang=fr).
+Les équipes d’ingénierie et de conseil Adobe ont développé [un ensemble complet de bonnes pratiques pour les développeurs AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/best-practices.html?lang=fr).

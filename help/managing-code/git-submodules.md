@@ -2,10 +2,10 @@
 title: Prise en charge des sous-modules Git
 description: Découvrez comment vous pouvez utiliser des sous-modules Git pour fusionner le contenu de plusieurs branches dans des référentiels Git lors de la création.
 exl-id: f946d7e7-114a-4e33-bb82-2625d37bba2f
-source-git-commit: e93285f7c7495ec9d2f11d289adaf6aaba7e58ea
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 100%
+source-wordcount: '419'
+ht-degree: 97%
 
 ---
 
@@ -66,7 +66,7 @@ Vous trouverez plus d’informations sur les sous-modules Git dans le [Manuel de
 
 ## Limites {#limitations}
 
-Lors de l’utilisation de sous-modules Git, veuillez tenir compte des points suivants :
+Lors de l’utilisation de sous-modules git, tenez compte des points suivants :
 
 * L’URL Git doit se trouver exactement dans la syntaxe décrite ci-dessus.
 * Pour des raisons de sécurité, n’incorporez pas les informations d’identification dans ces URL.
