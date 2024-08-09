@@ -1,13 +1,13 @@
 ---
 source-git-commit: 2a25b0482800d4c5428a5595c9699dceed327043
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '74'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
-# Documentation d’Adobe Experience Manager Cloud Manager
+# Documentation de Cloud Manager pour Adobe Experience Manager
 
-Ce référentiel est destiné à la documentation de Adobe Experience Manager Cloud Manager.
+Il s’agit du référentiel relatif à la documentation de Cloud Manager pour Adobe Experience Manager.
 
 Vos contributions à la documentation sont les bienvenues. Veuillez consulter les ressources suivantes :
 
