@@ -2,10 +2,10 @@
 title: Pipelines dédiés à l’évaluation uniquement et à la production uniquement
 description: Découvrez comment séparer les déploiements d’évaluation et de production à l’aide de pipelines dédiés.
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: 77eb1c824ba766e43dfd8e2b0f6f6edc71f043e5
+source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 31%
+source-wordcount: '932'
+ht-degree: 27%
 
 ---
 
@@ -65,32 +65,36 @@ Les pipelines de production seule et de production seule sont créés de la mêm
 
 ### Pipelines d’évaluation uniquement {#stage-only}
 
-1. Une fois que vous avez sélectionné l’option **Ajouter un pipeline hors production**, la boîte de dialogue **Ajouter un pipeline hors production** s’ouvre.
-1. Pour créer un pipeline dédié uniquement à l’évaluation, sélectionnez l’environnement d’évaluation dans le champ **Environnements de déploiement éligibles** pour votre pipeline. Renseignez les champs restants et cliquez sur **Continuer**.
+1. Après avoir sélectionné l’option **Ajouter un pipeline hors production**, la boîte de dialogue **Ajouter un pipeline hors production** s’ouvre.
+1. Pour créer un pipeline intermédiaire uniquement, sélectionnez l’environnement intermédiaire dans le champ **Environnements de déploiement éligible** pour votre pipeline.
+1. Renseignez les champs restants.
+1. Cliquez sur **Continuer**.
 
    ![Création d’un pipeline dédié uniquement à l’évaluation](/help/assets/configure-pipelines/stage-only.png)
 
-1. Dans l’onglet **Test dans l’environnement intermédiaire**, vous pouvez ensuite définir les tests qui doivent être effectués dans l’environnement d’évaluation. Cliquez sur **Enregistrer** pour enregistrer votre nouveau pipeline.
+1. Dans l’onglet **Test dans l’environnement intermédiaire**, définissez les tests à effectuer dans l’environnement d’évaluation.
+1. Cliquez sur **Enregistrer**.
 
    ![Paramètres de test d’un pipeline dédié uniquement à l’évaluation](/help/assets/configure-pipelines/stage-only-test.png)
 
 ### Pipelines de production uniquement {#prod-only}
 
-1. Une fois que vous avez sélectionné l’option **Ajouter un pipeline de production uniquement**, la boîte de dialogue **Ajouter un pipeline de production uniquement** s’ouvre.
-1. Saisissez un **Nom de pipeline**. Les options et fonctionnalités restantes de la boîte de dialogue fonctionnent de la même manière que celles de la boîte de dialogue de création de pipeline couplé standard. Cliquez sur **Enregistrer** pour enregistrer le pipeline.
+1. Après avoir sélectionné l’option **Ajouter un pipeline de production uniquement**, la boîte de dialogue **Ajouter un pipeline de production uniquement** s’ouvre.
+1. Dans le champ **Nom du pipeline**, saisissez le nom de votre choix. Les options et fonctionnalités restantes de la boîte de dialogue fonctionnent de la même manière que celles de la boîte de dialogue de création de pipeline couplé standard.
+1. Dans le coin inférieur droit de la boîte de dialogue, cliquez sur **Enregistrer**.
 
    ![Création d’un pipeline dédié uniquement à la production](/help/assets/configure-pipelines/prod-only-pipeline.png)
 
 ## Exécution de pipelines en production seule et en production seule {#running}
 
-Les pipelines de production seule et de production seule sont exécutés de la même manière que [ tous les autres pipelines.](/help/using/managing-pipelines.md#running-pipelines) Consultez cette documentation pour plus de détails. Toutefois, ces pipelines offrent deux nouvelles fonctionnalités.
+Les pipelines de production seule et de production seule sont exécutés de la même manière que [tous les autres pipelines sont exécutés](/help/using/managing-pipelines.md#running-pipelines). Consultez cette documentation pour plus de détails. Toutefois, il existe deux nouvelles fonctionnalités de ces pipelines.
 
-* Les pipelines d’état uniquement et prod uniquement offrent un nouveau [mode d’urgence](#emergency-mode) pour permettre les tests de saut.
-* L’exécution du pipeline Prod uniquement peut être déclenchée directement à partir des détails d’exécution d’un pipeline [intermédiaire uniquement.](#stage-only-run)
+* Les pipelines d’état unique et de production seule offrent un nouveau [mode d’urgence](#emergency-mode) pour ignorer les tests.
+* L’exécution du pipeline Prod uniquement peut être déclenchée directement à partir des détails d’exécution d’un [pipeline intermédiaire uniquement](#stage-only-run).
 
 ### Mode d’urgence {#emergency-mode}
 
-Chaque fois que vous démarrez des pipelines en production seule et en ligne intermédiaire, vous êtes invité à confirmer le démarrage ainsi que la manière dont il démarrera.
+Lorsque vous démarrez des pipelines en production seule et en ligne intermédiaire, vous êtes invité à confirmer le démarrage et la manière dont il démarre.
 
 * **Mode normal** est une exécution standard qui comprend des étapes de test d’étape.
 * **Le mode d’urgence** ignore les étapes de test d’étape.
@@ -103,12 +107,12 @@ Un pipeline dédié uniquement à l’évaluation s’exécute presque de la mê
 
 ![Exécution d’un pipeline dédié uniquement à l’évaluation](/help/assets/configure-pipelines/stage-only-pipeline-run.png)
 
-Cliquez sur **Convertir le build** pour confirmer l&#39;exécution du pipeline intermédiaire uniquement associé, normalement ou en [mode d&#39;urgence.](#emergency-mode)
+Cliquer sur **Convertir le build** vous invite à confirmer l’exécution du pipeline d’étape uniquement associé, normalement ou en [mode d’urgence](#emergency-mode).
 
-Si aucun pipeline prod-only n’existe, vous serez invité à en créer un.
+Si aucun pipeline prod-only n’existe, vous êtes invité à en créer un.
 
 ### Pipelines de production uniquement {#prod-only-run}
 
-Pour les pipelines prod uniquement, il est important d’identifier les artefacts source à déployer en production. Ces informations se trouvent dans l’étape **Préparation des artefacts**. Vous pouvez accéder à ces exécutions pour plus de détails et pour accéder aux journaux.
+Pour les pipelines prod uniquement, veillez à identifier les artefacts source que vous souhaitez déployer en production. Ces détails sont disponibles à l’étape **Préparation de l’artefact** . Vous pouvez accéder à ces exécutions pour plus de détails et de journaux.
 
 ![Détails d’un artefact](/help/assets/configure-pipelines/prod-only-pipeline-run.png)

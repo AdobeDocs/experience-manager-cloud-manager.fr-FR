@@ -2,10 +2,10 @@
 title: Outil de copie de contenu
 description: L’outil de copie de contenu Cloud Manager permet aux utilisateurs de copier du contenu modifiable à la demande à partir des environnements de production hébergés par AMS AEM 6.x dans des environnements inférieurs pour les tests.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 2563c58431e58d2fc5917a2ad88835bbdd4224f2
+source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
 workflow-type: tm+mt
-source-wordcount: '1150'
-ht-degree: 45%
+source-wordcount: '1144'
+ht-degree: 39%
 
 ---
 
@@ -167,8 +167,7 @@ L’outil de copie de contenu présente les limites suivantes.
 * Vous pouvez spécifier jusqu’à cinquante chemins par jeu de contenu. Il n’existe aucune limitation sur les chemins exclus.
 * L’outil de copie de contenu ne doit pas être utilisé comme outil de clonage ou de mise en miroir, car il ne peut pas effectuer le suivi du contenu déplacé ou supprimé sur la source.
 * Une copie de contenu ne peut pas être suspendue ou annulée une fois qu’elle est lancée.
-* L’outil de copie de contenu copie les ressources avec les métadonnées liées aux médias dynamiques depuis l’environnement supérieur vers l’environnement inférieur sélectionné.
-   * Les ressources copiées doivent ensuite être retraitées à l’aide du [workflow Ressource de traitement de la gestion des ressources numériques](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html?lang=fr) dans l’environnement inférieur, afin d’utiliser la configuration de médias dynamiques correspondante.
+* L’outil de copie de contenu copie les ressources et les métadonnées Dynamic Media de l’environnement supérieur vers l’environnement inférieur sélectionné. Les ressources copiées doivent ensuite être retraitées à l’aide du [workflow Ressources de processus de gestion des actifs numériques](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/assets/using/assets-workflow) sur l’environnement inférieur pour utiliser la configuration Dynamic Media correspondante.
 * Le processus de copie de contenu est beaucoup plus rapide lorsque l’historique des versions n’est pas copié.
 * [Les configurations Dynamic Media avec des ressources dont la taille est supérieure à 2 Go activées](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb) ne sont pas prises en charge.
 * Lorsque l’historique de version n’est pas copié, le processus de copie de contenu est sensiblement plus rapide.
