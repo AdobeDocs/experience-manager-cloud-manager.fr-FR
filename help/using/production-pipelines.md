@@ -1,11 +1,11 @@
 ---
-title: Configurer des pipelines de production
+title: Configuration des pipelines de production
 description: Découvrez comment créer et configurer des pipelines de production à l’aide de Cloud Manager afin de déployer votre code.
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 91%
+source-wordcount: '1285'
+ht-degree: 87%
 
 ---
 
@@ -33,7 +33,7 @@ Le rôle du **responsable du déploiement** : il est chargé de la configuratio
 >
 >Un pipeline ne peut être configuré que si le référentiel Git qui lui est associé dispose d’au moins une branche et que la [configuration du programme](/help/getting-started/program-setup.md) est terminée.
 
-## Ajouter un nouveau pipeline de production {#adding-production-pipeline}
+## Ajout d’un nouveau pipeline de production {#adding-production-pipeline}
 
 Une fois que vous avez utilisé l’interface utilisateur [!UICONTROL Cloud Manager] pour configurer votre programme et que vous disposez d’au moins un environnement, vous êtes prêt à ajouter un pipeline de production.
 
@@ -124,7 +124,7 @@ Une fois que vous avez utilisé l’interface utilisateur [!UICONTROL Cloud Mana
 
          * **Configuration de Dispatcher** - définissez la configuration de Dispatcher pour votre environnement de production. Les options sont identiques à celles de l’environnement d’évaluation.
 
-1. Cliquez sur **Continuer** pour accéder à l’onglet **Tests d’évaluation** où vous pouvez configurer les tests de performance d’AEM Sites et d’AEM Assets, en fonction des produits sous licence que vous possédez.
+1. Cliquez sur **Continuer** pour passer à l’onglet **Test d’évaluation** où vous pouvez configurer les tests de performance AEM Sites et AEM Assets, en fonction des produits sous licence que vous possédez.
 
    >[!TIP]
    >
@@ -153,7 +153,7 @@ Une fois que vous avez utilisé l’interface utilisateur [!UICONTROL Cloud Mana
 
 1. Cliquez sur **Enregistrer** pour terminer l’ajout de votre pipeline de production.
 
-## Les étapes suivantes {#the-next-steps}
+## Étapes suivantes {#the-next-steps}
 
 Une fois que vous avez configuré le pipeline, vous devez déployer votre code. Pour plus d’informations, voir [Déploiement du code](/help/using/code-deployment.md) .
 

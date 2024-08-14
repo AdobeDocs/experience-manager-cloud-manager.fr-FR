@@ -2,10 +2,10 @@
 title: Configuration du programme
 description: Après l’intégration, le propriétaire de l’entreprise devra effectuer une configuration initiale du programme.
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 92%
+source-wordcount: '582'
+ht-degree: 86%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 92%
 
 Après l’intégration, le propriétaire de l’entreprise termine la configuration initiale du programme, y compris la définition de la description du programme et des indicateurs de performance clés (KPI), qui sont utilisés pour les tests de performance.
 
-## Configuration du programme avec [!UICONTROL Cloud Manager] {#program-setup-cloud-manager}
+## Configuration du programme avec [!UICONTROL Cloud Manager] {#program-setup-cloud-manager}
 
 Pour configurer le programme et définir les KPI, procédez comme suit :
 
@@ -58,7 +58,7 @@ Vous pouvez modifier les programmes une fois qu’ils ont été configurés. Pou
 
 1. Accédez au programme sur l’écran d’accueil de Cloud Manager.
 
-1. Cliquez sur **Modifier le programme** pour mettre à jour ou modifier votre programme à partir de la page **Présentation**.
+1. Cliquez sur **Modifier le programme** pour mettre à jour ou modifier votre programme dans la page **Aperçu**.
 
    ![Option Modifier le programme](/help/assets/set-up-program/edit-program1.png)
 

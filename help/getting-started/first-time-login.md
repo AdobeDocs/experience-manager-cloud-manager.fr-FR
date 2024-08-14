@@ -2,10 +2,10 @@
 title: Première connexion
 description: Consultez cette page si vous avez terminé les configurations générales et que vous êtes prêt à utiliser Cloud Manager pour la première fois.
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 75%
+ht-degree: 66%
 
 ---
 
@@ -34,7 +34,7 @@ Une fois que vous avez établi la configuration générale pour [!UICONTROL Clou
 
 Vous pouvez continuer à consulter le document [Configuration du programme](/help/getting-started/program-setup.md) pour connaître les étapes suivantes de la configuration de votre programme.
 
-## Activité de Cloud Manager {#activity}
+## Activité Cloud Manager {#activity}
 
 Cloud Manager fournit une vue consolidée de l’activité d’un programme, répertoriant toutes les exécutions de pipeline CI/CD, tant en production qu’en hors production, offrant ainsi une transparence des activités passées et présentes.
 
@@ -44,4 +44,4 @@ Cloud Manager fournit une vue consolidée de l’activité d’un programme, r�
 
 >[!NOTE]
 >
->Par défaut, un utilisateur ayant accès à un environnement AEM dispose également du rôle d’utilisateur Cloud Manager. Ce rôle en lui-même n’est pas suffisant pour donner à l’utilisateur l’accès à la vue des détails du programme. Un utilisateur disposant uniquement du rôle d’utilisateur Cloud Manager peut accéder à l’URL de création de l’environnement AEM (s’il existe des environnements) à l’aide des options de menu du programme. Ces utilisateurs doivent contacter leur administrateur s’ils souhaitent obtenir l’accès au niveau du programme.
+>Par défaut, un utilisateur ayant accès à un environnement AEM dispose également du rôle d’utilisateur Cloud Manager. Ce rôle en lui-même n’est pas suffisant pour donner à l’utilisateur l’accès à la vue des détails du programme. Un utilisateur disposant uniquement du rôle d’utilisateur Cloud Manager peut accéder à l’URL de création de l’environnement AEM (s’il existe des environnements) à l’aide des options de menu du programme. Ces utilisateurs doivent contacter leur administrateur s’ils souhaitent obtenir un accès au niveau du programme.

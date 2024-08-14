@@ -2,15 +2,15 @@
 title: Ajouter des utilisateurs et des rôles
 description: Découvrez comment utiliser Admin Console pour ajouter des utilisateurs et des rôles ainsi que créer des profils.
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 80%
+source-wordcount: '768'
+ht-degree: 78%
 
 ---
 
 
-# Ajouter des utilisateurs et des rôles {#add-users-and-roles}
+# Ajout d’utilisateurs et de rôles {#add-users-and-roles}
 
 De nombreuses fonctionnalités de [!UICONTROL Cloud Manager] nécessitent des autorisations spécifiques. Par exemple, seuls certains utilisateurs sont autorisés à définir les indicateurs de performance clés (ICP) d’un programme. Ces autorisations sont regroupées de manière logique en rôles.
 
@@ -25,7 +25,7 @@ De nombreuses fonctionnalités de [!UICONTROL Cloud Manager] nécessitent des au
 >
 >Pour utiliser [!UICONTROL Cloud Manager], vous devez disposer d’un Adobe ID et du contexte du produit Adobe Managed Services.
 
-## Définitions des rôles {#role-definitions}
+## Définitions de rôle {#role-definitions}
 
 Ce tableau résume les rôles.
 
@@ -42,7 +42,7 @@ Ce tableau résume les rôles.
 >
 >Dans Admin Console, la personne désignée comme développeur n’a aucun rapport avec le rôle de développeur dans [!UICONTROL Cloud Manager].
 
-## Utiliser Admin Console pour créer un profil {#using-admin-console-to-create-a-profile}
+## Utilisation d’Admin Console pour créer un profil {#using-admin-console-to-create-a-profile}
 
 Les rôles de [!UICONTROL Cloud Manager] sont gérés depuis Admin Console. Des rôles spécifiques sont attribués en ajoutant un utilisateur à un profil de produit [!UICONTROL Cloud Manager].
 
@@ -89,7 +89,7 @@ Vous pouvez créer ou ajouter des utilisateurs/groupes à ces profils de produit
 
 1. Cliquez sur **Terminé** pour enregistrer le nouveau profil.
 
-## Affecter de profils à des utilisateurs ou à des groupes d’utilisateurs {#assign-profiles}
+## Affectation de profils à des utilisateurs ou à des groupes d’utilisateurs {#assign-profiles}
 
 Une fois que vous avez créé des profils de produit, vous pouvez leur affecter des utilisateurs ou des groupes d’utilisateurs.
 

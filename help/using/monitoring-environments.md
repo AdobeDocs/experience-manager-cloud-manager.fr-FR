@@ -1,11 +1,11 @@
 ---
-title: Surveiller les environnements
+title: Surveillance des environnements
 description: Découvrez comment surveiller vos environnements dans Cloud Manager.
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 93%
+source-wordcount: '903'
+ht-degree: 79%
 
 ---
 
@@ -14,15 +14,13 @@ ht-degree: 93%
 
 Découvrez comment surveiller vos environnements dans Cloud Manager.
 
-## Seuils pour les mesures {#thresholds}
+## Seuils de mesure {#thresholds}
 
 La surveillance du système dans [!UICONTROL Cloud Manager] est réalisée en observant les instances dans un environnement et en suivant diverses mesures pour chaque instance. Chaque mesure possède deux seuils définis : un seuil d’avertissement et un seuil critique.
 
 Si une mesure dépasse son seuil critique, elle est considérée comme étant dans un état critique ; si une mesure est supérieure à son seuil d’avertissement (mais sous son seuil critique), elle est considérée comme étant dans un état d’avertissement. Les seuils sont définis par Adobe Managed Services et peuvent être visualisés dans [!UICONTROL Cloud Manager]. Dans la plupart des cas, les seuils sont cohérents entre les clients. Mais dans certains cas, Adobe Managed Services modifie les seuils pour répondre aux besoins spécifiques des clients. Les questions relatives aux seuils doivent être adressées à l’ingénieur du service client.
 
-## Accéder à la surveillance du système {#accessing-system-monitoring}
-
-Pour accéder à la surveillance du système, procédez comme suit.
+## Surveillance du système d’accès {#accessing-system-monitoring}
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) et sélectionnez l’organisation et le programme appropriés.
 
@@ -32,7 +30,7 @@ Pour accéder à la surveillance du système, procédez comme suit.
 
 La page **Rapports** s’ouvre et affiche les informations de surveillance du système.
 
-## Vue d’ensemble de la surveillance du système {#system-monitoring-overview}
+## Présentation de la surveillance du système {#system-monitoring-overview}
 
 La section **Surveillance du système** de la page **Rapports** répertorie les environnements surveillés dans le programme et indique leur niveau d’intégrité globale dans quatre catégories distinctes :
 
@@ -96,7 +94,7 @@ Par exemple, si vous cliquez sur la série de seuil d’avertissement, vous ne v
    * Il existe des mesures distinctes pour chaque agent de réplication.
 * **Purge du Dispatcher** : nombre d’éléments actuellement présents dans la file d’attente de purge du Dispatcher
 
-## Création de rapports de contrat SLA {#sla-reporting}
+## Rapports SLA {#sla-reporting}
 
 Vous pouvez consulter les performances de votre environnement de production AEM correspondant au contrat de niveau de service (SLA) auquel vous avez souscrit.
 
@@ -114,12 +112,12 @@ La section **Analyse des événements**, située sous ce graphique, affiche l’
 
 ## Mesures SLA {#sla-metrics}
 
-* **Contrat d’auteur** : il s’agit du contrat SLA défini dans le cadre de votre contrat avec Adobe Managed Services pour le niveau auteur.
-* **Contrat SLA d’auteur AMS** : il s’agit de la période de disponibilité mesurée du niveau auteur de production comptabilisant les incidents causés par Adobe ou par nos fournisseurs.
-* **Contrat SLA d’auteur** : il s’agit de la période de disponibilité mesurée du niveau auteur ignorant le temps d’arrêt planifié, tel que les fenêtres de maintenance.
-* **Contrat utilisateur final** : il s’agit du contrat SLA défini dans votre contrat avec Adobe Managed Services pour le niveau publication.
-* **Contrat SLA utilisateur final AMS** : il s’agit de la période de disponibilité mesurée du niveau publication de production comptabilisant les incidents causés par Adobe ou par nos fournisseurs.
-* **Contrat SLA utilisateur final** : il s’agit de la période de disponibilité mesurée du niveau publication ignorant le temps d’arrêt planifié, tel que les fenêtres de maintenance.
+* **Contrat d’auteur** : SLA défini dans votre contrat avec Adobe Managed Services pour le niveau auteur.
+* **SLA d’auteur AMS** : temps de disponibilité mesuré du niveau auteur de production prenant en compte les incidents causés par l’Adobe ou par nos fournisseurs.
+* **Author SLA** : temps de disponibilité mesuré du niveau auteur ignorant le temps d’arrêt planifié tel que les fenêtres de maintenance.
+* **Contrat utilisateur final** : SLA défini dans votre contrat avec Adobe Managed Services pour le niveau publication.
+* **SLA utilisateur final AMS** : temps de disponibilité mesuré du niveau publication de production comptabilisant les incidents causés par Adobe ou par nos fournisseurs.
+* **SLA de l’utilisateur final** : temps de disponibilité mesuré du niveau publication ignorant le temps d’arrêt planifié tel que les fenêtres de maintenance.
 
 ## Tutoriel vidéo {#video-tutorial}
 

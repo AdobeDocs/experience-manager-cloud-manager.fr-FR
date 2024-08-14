@@ -1,15 +1,15 @@
 ---
-title: Configurer des pipelines hors production
+title: Configuration de pipelines hors production
 description: Découvrez comment utiliser Cloud Manager pour créer et configurer des pipelines hors production afin de déployer votre code.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 94%
+source-wordcount: '709'
+ht-degree: 91%
 
 ---
 
-# Configurer des pipelines hors production {#configuring-non-production-pipelines}
+# Configuration de pipelines hors production {#configuring-non-production-pipelines}
 
 Découvrez comment utiliser Cloud Manager pour créer et configurer des pipelines hors production afin de déployer votre code. Si vous souhaitez d’abord une présentation plus conceptuelle du fonctionnement des pipelines dans Cloud Manager, reportez-vous à la section [Pipelines CI/CD](/help/overview/ci-cd-pipelines.md).
 
@@ -31,13 +31,13 @@ Il existe deux types de pipelines hors production :
 >
 >Un pipeline ne peut être configuré que si le référentiel Git associé dispose d’au moins une branche et que la [configuration du programme](/help/getting-started/program-setup.md) est terminée. Consultez le document [Référentiels Cloud Manager](/help/managing-code/managing-repositories.md) pour découvrir comment ajouter et gérer des référentiels dans Cloud Manager.
 
-## Ajouter un pipeline hors production {#add-non-production-pipeline}
+## Ajout d’un pipeline hors production {#add-non-production-pipeline}
 
 Une fois que vous avez configuré votre programme et que vous disposez d’au moins un environnement utilisant l’interface utilisateur de Cloud Manager, vous êtes prêt à ajouter un pipeline hors production en suivant ces étapes.
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) et sélectionnez l’organisation et le programme appropriés.
 
-1. Accédez à la vignette Pipelines à partir de l’écran d’accueil de Cloud Manager. Cliquez sur **Ajouter** et sélectionnez **Ajouter un pipeline hors production**.
+1. Accédez à la vignette Pipelines à partir de l’écran d’accueil de Cloud Manager. Cliquez sur **Ajouter**, puis sélectionnez **Ajouter un pipeline hors production**.
 
    ![Ajouter un pipeline hors production](/help/assets/configure-pipelines/nonprod-pipeline-add1.png)
 
@@ -78,7 +78,7 @@ Une fois que vous avez configuré votre programme et que vous disposez d’au mo
 
 1. Cliquez sur **Enregistrer** pour enregistrer votre pipeline.
 
-## Les étapes suivantes {#the-next-steps}
+## Étapes suivantes {#the-next-steps}
 
 Une fois que vous avez configuré le pipeline, vous devez déployer votre code. Pour plus d’informations, voir [Déploiement du code](/help/using/code-deployment.md) .
 

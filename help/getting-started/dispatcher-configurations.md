@@ -2,19 +2,19 @@
 title: Configurations de Dispatcher
 description: Découvrez comment déployer les fichiers de configuration du Dispatcher à l’aide de Cloud Manager.
 exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
 source-wordcount: '586'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
 
-# Configurations de Dispatcher {#manage-your-dispatcher-configurations}
+# Configurations Dispatcher {#manage-your-dispatcher-configurations}
 
 Découvrez comment déployer les fichiers de configuration du Dispatcher à l’aide de Cloud Manager.
 
-## Déployer les configurations de Dispatcher avec Cloud Manager {#deploying-dispatcher-configurations}
+## Déploiement de configurations Dispatcher avec Cloud Manager {#deploying-dispatcher-configurations}
 
 Cloud Manager peut déployer les fichiers de configuration du serveur web et du Dispatcher en supposant qu’ils soient stockés dans le référentiel Git, avec des packages de contenu AEM normaux.
 
@@ -24,7 +24,7 @@ Les projets générés par Cloud Manager à l’aide de l’[assistant de créa
 
 Lors du déploiement vers une instance de Dispatcher, le contenu de ces répertoires sur l’instance de Dispatcher est remplacé par ceux de votre référentiel Git. Comme les fichiers de configuration du serveur web et du Dispatcher requièrent souvent des informations spécifiques à l’environnement, vous devez d’abord collaborer avec les ingénieurs du succès client (CSE) pour définir ces variables d’environnement dans `/etc/sysconfig/httpd`.
 
-## Configuration de Dispatcher pour les clients Managed Services existants {#steps-for-configuring-dispatcher}
+## Configuration Dispatcher pour les clients de services gérés existants {#steps-for-configuring-dispatcher}
 
 Suivez les étapes ci-dessous pour terminer la configuration initiale de Dispatcher.
 
@@ -48,7 +48,7 @@ Le fichier et la structure des répertoires spécifiques peuvent varier en fonct
 
    Vous pouvez lui attribuer le nom de votre choix, mais le nom du répertoire créé au cours de cette étape doit être identique à celui utilisé à l’étape 6.
 
-1. Ce sous-répertoire contient un module Maven qui crée le fichier ZIP de Dispatcher à l’aide du plug-in Maven Assembly. Pour commencer, dans le répertoire `dispatcher`, créez un fichier `pom.xml` avec ce contenu, tout en modifiant la référence `parent`, `artifactId` et `name`, si nécessaire.
+1. Ce sous-répertoire contient un module Maven qui crée le fichier Dispatcher .zip à l’aide du plug-in Assembly Maven. Pour commencer, dans le répertoire `dispatcher`, créez un fichier `pom.xml` avec ce contenu, tout en modifiant la référence `parent`, `artifactId` et `name`, si nécessaire.
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -90,7 +90,7 @@ Le fichier et la structure des répertoires spécifiques peuvent varier en fonct
 
    * Comme à l’étape 1, l’artifactId et le nom peuvent avoir d’autres valeurs si vous le souhaitez. `dispatcher` est utilisé ici à titre d’exemple.
 
-1. Le plug-in Maven Assembly requiert un `descriptor` pour définir la façon dont le fichier ZIP est créé. Pour créer ce descripteur, créez un fichier dans le sous-répertoire `dispatcher` nommé `assembly.xml` avec ce contenu. Ce fichier est référencé à la ligne 26 du fichier `pom.xml` ci-dessus.
+1. Le module externe d’assemblage Maven requiert un `descriptor` pour définir la manière dont le fichier .zip est créé. Pour créer ce descripteur, créez un fichier dans le sous-répertoire `dispatcher` nommé `assembly.xml` avec ce contenu. Ce fichier est référencé à la ligne 26 du fichier `pom.xml` ci-dessus.
 
    ```xml
    <assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0"

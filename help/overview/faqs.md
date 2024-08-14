@@ -2,7 +2,7 @@
 title: FAQ relatives à Cloud Manager
 description: Ce document répond aux questions les plus fréquemment posées par rapport à Cloud Manager pour les clients AMS.
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 93%

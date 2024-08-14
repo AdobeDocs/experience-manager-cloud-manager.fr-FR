@@ -2,10 +2,10 @@
 title: Notifications
 description: Découvrez comment Cloud Manager vous informe des événements importants.
 exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 94%
+source-wordcount: '564'
+ht-degree: 79%
 
 ---
 
@@ -38,15 +38,15 @@ L’onglet **Annonces** comprend les annonces de produits Adobe. Les annonces co
 
 Cliquez sur une notification ou une annonce pour en afficher les détails. Les notifications liées à des activités telles que les déploiements de pipeline vous permettent d’accéder aux informations de cette activité, telles que la fenêtre d’exécution du pipeline.
 
-Cliquez sur le bouton **Tout afficher** au bas du panneau pour afficher toutes les annonces dans votre boîte de réception.
+Cliquez sur l’option **Afficher tout** au bas du panneau pour afficher toutes les annonces dans votre boîte de réception.
 
-Cliquez sur le bouton **Tout marquer comme lu** au bas du panneau pour marquer toutes les notifications non lues comme lues et effacer le badge de l’icône en forme de cloche.
+Cliquez sur l’option **Tout marquer comme lu** au bas du panneau pour marquer toutes les notifications non lues comme lues et effacer le badge de l’icône représentant une cloche.
 
 ## Configuration des notifications {#configuration}
 
 Vous pouvez personnaliser le mode de réception des notifications et les notifications que vous recevez.
 
-Cliquez sur l’icône en forme d’engrenage en bas de la barre latérale de notifications.
+Cliquez sur l’icône d’engrenage en haut de la barre latérale des notifications.
 
 ![Icône Paramètres de notification](/help/assets/notifications-configuration.png)
 
@@ -58,7 +58,7 @@ Les abonnements définissent les produits pour lesquels vous recevez des notific
 
 ![Abonnements aux notifications](/help/assets/notifications-subscriptions.png)
 
-Par défaut, vous recevrez toutes les notifications pour tous les produits. Cliquez sur **Personnaliser** à côté d’un produit pour définir les types de notifications que vous recevez pour ce produit.
+Par défaut, vous recevrez toutes les notifications pour tous les produits. Cliquez sur **Personnaliser** en regard d’un produit pour définir les types de notifications que vous recevez pour ce produit.
 
 ![Personnalisation de l’abonnement aux notifications](/help/assets/notifications-subscriptions-customize.png)
 

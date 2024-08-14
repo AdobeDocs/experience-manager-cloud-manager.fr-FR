@@ -1,24 +1,26 @@
 ---
 title: Outil de copie de contenu
-description: L’outil de copie de contenu de Cloud Manager permet aux utilisateurs et utilisatrices de copier du contenu modifiable à la demande à partir de leurs environnements de production 6.x AEM hébergés par AMS vers des environnements inférieurs à des fins de test.
+description: L’outil de copie de contenu Cloud Manager permet aux utilisateurs de copier du contenu modifiable à la demande à partir des environnements de production hébergés par AMS AEM 6.x dans des environnements inférieurs pour les tests.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 87%
+source-wordcount: '1076'
+ht-degree: 41%
 
 ---
 
 
-# Outil de copie de contenu {#content-copy}
+# L’outil de copie de contenu {#content-copy}
 
-L’outil de copie de contenu de Cloud Manager permet aux utilisateurs et utilisatrices de copier du contenu modifiable à la demande à partir de leurs environnements de production 6.x AEM hébergés par AMS vers des environnements inférieurs à des fins de test.
+L’outil de copie de contenu Cloud Manager permet aux utilisateurs de copier du contenu modifiable à la demande à partir des environnements de production hébergés par AMS AEM 6.x dans des environnements inférieurs pour les tests.
 
 ## Présentation {#introduction}
 
-Les données actuelles et réelles sont utiles à des fins de test, de validation et d’acceptation par l’utilisateur. L’outil de copie de contenu vous permet de copier du contenu de votre environnement de production AEM 6.x hébergé par AMS vers un environnement d’évaluation ou de développement pour de tels tests.
+Les données actuelles et réelles sont utiles à des fins de test, de validation et d’acceptation par l’utilisateur. L’outil de copie de contenu vous permet de copier du contenu de votre environnement d’AEM hébergé en production AMS 6.x vers des environnements d’évaluation ou de développement. Ce workflow prend en charge divers scénarios de test.
 
-Le contenu à copier est défini par un jeu de contenu. Un jeu de contenu est constitué d’une liste de chemins JCR qui contiennent le contenu modifiable à copier d’un environnement source vers un environnement cible dans le même programme Cloud Manager. Les chemins d’accès suivants sont autorisés dans un jeu de contenu.
+Un jeu de contenu définit le contenu à copier. Un jeu de contenu comprend une liste de chemins JCR avec le contenu modifiable à copier. Le contenu passe d’un environnement source à un environnement cible. Tout cela dans le même programme Cloud Manager.
+
+Les chemins d’accès suivants sont autorisés dans un jeu de contenu :
 
 ```text
 /content/**
@@ -30,24 +32,24 @@ Le contenu à copier est défini par un jeu de contenu. Un jeu de contenu est co
 
 Lors de la copie de contenu, l’environnement source est la source de vérité.
 
-* Si le contenu a été modifié dans l’environnement de destination, il sera remplacé par le contenu de la source si les chemins d’accès sont les mêmes.
-* Si les chemins d’accès sont différents, le contenu de la source sera fusionné avec le contenu de la destination.
+* Si vous modifiez du contenu dans l’environnement de destination, le contenu source le remplace si les chemins correspondent.
+* Si les chemins d’accès sont différents, le contenu de la source est fusionné avec le contenu de la destination.
 
 ## Autorisations {#permissions}
 
-Pour utiliser l’outil de copie de contenu, le rôle **Responsable de déploiement** doit être affecté à l’utilisateur ou à l’utilisatrice dans les environnements source et cible.
+Pour utiliser l’outil de copie de contenu, l’utilisateur doit se voir attribuer le rôle **Deployment Manager** dans les environnements source et cible.
 
-## Créer un jeu de contenu {#create-content-set}
+## Création d’un jeu de contenu {#create-content-set}
 
 Pour qu’un contenu puisse être copié, un jeu de contenu doit être défini. Une fois définis, les jeux de contenu peuvent être réutilisés pour copier du contenu. Pour créer un jeu de contenu, suivez la procédure décrite ci-après.
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
-1. Accédez à l’écran **Environnements** à partir de la page **Vue d’ensemble**.
+1. Sur la page **Overview** , accédez à l’écran **Environments** (Environnements).
 
-1. Accédez à la page **Jeux de contenu** à partir de l’écran **Environnements**.
+1. Dans l’écran **Environments** (Environnements), accédez à la page **Content Sets** (Visionneuses de contenu).
 
-1. Cliquez sur le bouton **Ajouter un jeu de contenu** en haut à droite de l’écran.
+1. Près du coin supérieur droit de l’écran, cliquez sur **Ajouter un jeu de contenu**.
 
    ![Jeux de contenu](/help/assets/content-sets.png)
 
@@ -58,15 +60,15 @@ Pour qu’un contenu puisse être copié, un jeu de contenu doit être défini. 
 1. Dans l’onglet **Chemins d’accès au contenu** de l’assistant, indiquez les chemins d’accès au contenu modifiable à inclure dans le jeu de contenu.
 
    1. Entrez le chemin dans le champ **Ajouter un chemin d’accès à inclure**.
-   1. Cliquez sur le bouton **Ajouter chemin** pour ajouter le chemin d’accès au jeu de contenu.
-   1. Cliquez de nouveau sur le bouton **Ajouter chemin** si nécessaire.
+   1. Cliquez sur **Ajouter un chemin** pour ajouter le chemin d’accès au jeu de contenu.
+   1. Le cas échéant, cliquez de nouveau sur **Ajouter un chemin**.
 
    ![Ajouter des chemins à un jeu de contenu](/help/assets/add-content-set-paths.png)
 
 1. Si vous devez affiner ou limiter votre jeu de contenu, les sous-chemins peuvent être exclus.
 
    1. Dans la liste des chemins inclus, cliquez sur l’icône **Ajouter des sous-chemins d’exclusion** en regard du chemin que vous devez restreindre.
-   1. Saisissez le sous-chemin d’accès à exclure sous le chemin d’accès sélectionné.
+   1. Saisissez le sous-chemin à exclure du chemin sélectionné.
    1. Cliquez sur **Exclure le chemin**.
    1. Cliquez de nouveau sur **Ajouter des sous-chemins d’exclusion** pour ajouter des chemins d’accès supplémentaires à exclure, si nécessaire.
 
@@ -74,8 +76,8 @@ Pour qu’un contenu puisse être copié, un jeu de contenu doit être défini. 
 
 1. Vous pouvez modifier les chemins spécifiés si nécessaire.
 
-   1. Cliquez sur le X en regard des sous-chemins exclus pour les supprimer.
-   1. Cliquez sur le bouton représentant des points de suspension en regard des chemins pour afficher les options **Modifier** et **Supprimer** .
+   1. Cliquez sur le `X` en regard des sous-chemins exclus pour les supprimer.
+   1. Cliquez sur le bouton représentant des points de suspension en regard des chemins pour afficher les options **Edit** et **Delete** .
 
    ![Modification de la liste de chemins](/help/assets/add-content-set-excluded-paths.png)
 
@@ -88,7 +90,7 @@ Le jeu de contenu peut désormais être utilisé pour copier du contenu entre de
 >Vous pouvez ajouter jusqu’à 50 chemins dans un jeu de contenu.
 >Il n’existe aucune limitation sur les chemins exclus.
 
-## Modification d’un jeu de contenu {#edit-content-set}
+## Editer un jeu de contenu {#edit-content-set}
 
 Procédez de la même façon que lors de la création d’une étape de contenu. Au lieu de cliquer sur **Ajouter un jeu de contenu**, sélectionnez un jeu existant dans la console et sélectionnez **Modifier** dans le menu de points de suspension.
 
@@ -102,9 +104,9 @@ Une fois qu’un jeu de contenu a été créé, vous pouvez l’utiliser pour co
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
-1. Accédez à l’écran **Environnements** à partir de la page **Vue d’ensemble**.
+1. Sur la page **Overview** , accédez à l’écran **Environments** (Environnements).
 
-1. Accédez à la page **Jeux de contenu** à partir de l’écran **Environnements**.
+1. Dans l’écran **Environments** (Environnements), accédez à la page **Content Sets** (Visionneuses de contenu).
 
 1. Sélectionnez un jeu de contenu dans la console, puis **Copier le contenu** dans le menu représentant des points de suspension.
 
@@ -119,9 +121,9 @@ Une fois qu’un jeu de contenu a été créé, vous pouvez l’utiliser pour co
 
 1. Dans la boîte de dialogue **Copier le contenu**, spécifiez la source et la destination de votre action de copie de contenu.
 
-1. Vous pouvez choisir de supprimer ou de conserver les chemins d’exclusion dans l’environnement de destination. Cochez la case `Do not delete exclude paths from destination` si vous souhaitez conserver les chemins d’exclusion spécifiés dans le jeu de contenu. Si cette case n’est pas cochée, les chemins d’exclusion sont supprimés dans l’environnement cible.
+1. Vous pouvez choisir de supprimer ou de conserver les chemins d’exclusion dans l’environnement de destination. Cochez la case `Do not delete exclude paths from destination` pour conserver les `exclude paths` spécifiés dans le jeu de contenu. Si la case est décochée, les chemins d’exclusion sont supprimés dans l’environnement cible.
 
-1. Vous pouvez choisir de copier l’historique des versions des chemins copiés de l’environnement source vers l’environnement de destination. Cochez la case `Copy Versions` si vous souhaitez copier tous les historiques de versions.
+1. Vous pouvez choisir de copier l’historique des versions des chemins copiés de la source vers l’environnement de destination. Cochez la case `Copy Versions` si vous souhaitez copier tous les historiques de versions.
 
    ![Copie de contenu](/help/assets/copying-content.png)
 
@@ -129,15 +131,15 @@ Une fois qu’un jeu de contenu a été créé, vous pouvez l’utiliser pour co
 
 Le processus de copie démarre. Le statut du processus de copie est répercuté dans la console pour le jeu de contenu sélectionné.
 
-## Activité de copie de contenu {#copy-activity}
+## Activité Copie de contenu {#copy-activity}
 
 Vous pouvez surveiller le statut de vos processus de copie à la page **Activité de copie de contenu**.
 
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), puis sélectionnez l’organisation et le programme appropriés.
 
-1. Accédez à l’écran **Environnements** à partir de la page **Aperçu**.
+1. Sur la page **Overview** , accédez à l’écran **Environments** (Environnements).
 
-1. Accédez à la page **Activité de copie de contenu** à partir de l’écran **Environnements**.
+1. Dans l’écran **Environments** (Environnements), accédez à la page **Copier l’activité de contenu**.
 
 ![Activité de copie de contenu](/help/assets/copy-content-activity.png)
 
@@ -156,14 +158,14 @@ Une fois que vous avez commencé à copier du contenu, le processus peut avoir l
 L’outil de copie de contenu présente les limites suivantes.
 
 * Une copie de contenu ne peut pas être effectuée d’un environnement inférieur vers un environnement supérieur.
-* Une copie de contenu ne peut être effectuée que dans le même niveau (auteur-auteur ou publication-publication, par exemple).
+* La copie de contenu ne peut être effectuée que dans le même niveau. En d’autres termes, auteur-auteur ou publication-publication.
 * Une copie de contenu ne peut pas être effectuée sur plusieurs programmes et plusieurs régions.
-* La copie de contenu pour la topologie basée sur le magasin de données cloud ne peut être effectuée que lorsque les environnements source et de destination se trouvent sur le même fournisseur de cloud et dans la même région.
-* L’exécution simultanée d’opérations de copie de contenu sur le même environnement n’est pas possible.
-* Une copie de contenu ne peut pas être effectuée si une opération principale est en cours d’exécution dans l’environnement de destination ou source, tel qu’un pipeline CI/CD.
+* La copie de contenu pour la topologie basée sur l’entrepôt de données cloud ne peut être effectuée que lorsque l’environnement source et de destination se trouve sur le même fournisseur cloud et dans la même région.
+* L’exécution simultanée d’opérations de copie de contenu dans le même environnement n’est pas possible.
+* La copie de contenu ne peut pas être effectuée si une opération active est en cours d’exécution dans l’environnement de destination ou source, tel qu’un pipeline CI/CD.
 * Vous pouvez spécifier jusqu’à cinquante chemins par jeu de contenu. Il n’existe aucune limitation sur les chemins exclus.
 * L’outil de copie de contenu ne doit pas être utilisé comme outil de clonage ou de mise en miroir, car il ne peut pas effectuer le suivi du contenu déplacé ou supprimé sur la source.
-* Une copie de contenu ne peut pas être suspendue ou annulée une fois qu’elle est lancée.
-* L’outil de copie de contenu copie les ressources avec les métadonnées liées aux médias dynamiques depuis l’environnement supérieur vers l’environnement inférieur sélectionné.
-   * Les ressources copiées doivent ensuite être retraitées à l’aide du [workflow Ressource de traitement de la gestion des ressources numériques](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html?lang=fr) dans l’environnement inférieur, afin d’utiliser la configuration de médias dynamiques correspondante.
-* Le processus de copie de contenu est beaucoup plus rapide lorsque l’historique des versions n’est pas copié.
+* Une fois lancée, vous ne pouvez pas suspendre ni annuler une copie de contenu.
+* L’outil de copie de contenu transfère les ressources et les métadonnées Dynamic Media de l’environnement supérieur vers l’environnement inférieur sélectionné. Les ressources copiées doivent ensuite être retraitées à l’aide du [workflow Ressources de processus de gestion des actifs numériques](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/assets/using/assets-workflow) sur l’environnement inférieur pour utiliser la configuration Dynamic Media correspondante.
+
+* Lorsque l’historique de version n’est pas copié, le processus de copie de contenu est sensiblement plus rapide.
