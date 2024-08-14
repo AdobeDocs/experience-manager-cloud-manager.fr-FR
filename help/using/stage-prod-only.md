@@ -2,10 +2,10 @@
 title: Pipelines dédiés à l’évaluation uniquement et à la production uniquement
 description: Découvrez comment séparer les déploiements d’évaluation et de production à l’aide de pipelines dédiés.
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: 70b7994435f7f0f587c134fab1fb66c6576386d9
+source-git-commit: 77eb1c824ba766e43dfd8e2b0f6f6edc71f043e5
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 37%
+source-wordcount: '943'
+ht-degree: 31%
 
 ---
 
@@ -83,9 +83,19 @@ Les pipelines de production seule et de production seule sont créés de la mêm
 
 ## Exécution de pipelines en production seule et en production seule {#running}
 
-Les pipelines de production seule et de production seule sont exécutés de la même manière que [ tous les autres pipelines sont exécutés](/help/using/managing-pipelines.md#running-pipelines). Consultez cette documentation pour plus de détails.
+Les pipelines de production seule et de production seule sont exécutés de la même manière que [ tous les autres pipelines.](/help/using/managing-pipelines.md#running-pipelines) Consultez cette documentation pour plus de détails. Toutefois, ces pipelines offrent deux nouvelles fonctionnalités.
 
-En outre, une exécution de pipeline dédié uniquement à la production peut être déclenchée directement à partir des détails d’exécution d’un pipeline dédié uniquement à l’évaluation.
+* Les pipelines d’état uniquement et prod uniquement offrent un nouveau [mode d’urgence](#emergency-mode) pour permettre les tests de saut.
+* L’exécution du pipeline Prod uniquement peut être déclenchée directement à partir des détails d’exécution d’un pipeline [intermédiaire uniquement.](#stage-only-run)
+
+### Mode d’urgence {#emergency-mode}
+
+Chaque fois que vous démarrez des pipelines en production seule et en ligne intermédiaire, vous êtes invité à confirmer le démarrage ainsi que la manière dont il démarrera.
+
+* **Mode normal** est une exécution standard qui comprend des étapes de test d’étape.
+* **Le mode d’urgence** ignore les étapes de test d’étape.
+
+![Mode d’urgence](/help/assets/configure-pipelines/emergency-mode.png)
 
 ### Pipelines d’évaluation uniquement {#stage-only-run}
 
@@ -93,7 +103,9 @@ Un pipeline dédié uniquement à l’évaluation s’exécute presque de la mê
 
 ![Exécution d’un pipeline dédié uniquement à l’évaluation](/help/assets/configure-pipelines/stage-only-pipeline-run.png)
 
-Le bouton **Promouvoir la version** n’apparaît que si vous vous trouvez dans la dernière exécution réussie d’un pipeline dédié uniquement à l’évaluation. Une fois que vous avez cliqué, il vous demande de confirmer l’exécution du pipeline prod uniquement ou de créer un pipeline prod uniquement s’il n’existe pas déjà.
+Cliquez sur **Convertir le build** pour confirmer l&#39;exécution du pipeline intermédiaire uniquement associé, normalement ou en [mode d&#39;urgence.](#emergency-mode)
+
+Si aucun pipeline prod-only n’existe, vous serez invité à en créer un.
 
 ### Pipelines de production uniquement {#prod-only-run}
 
