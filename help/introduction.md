@@ -2,10 +2,10 @@
 title: Présentation de Cloud Manager pour AMS
 description: Commencez ici pour découvrir Cloud Manager pour Adobe Managed Services (AMS) et comment il permet aux entreprises d’auto-gérer Adobe Experience Manager en mode cloud.
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
+source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
 workflow-type: tm+mt
-source-wordcount: '1259'
-ht-degree: 57%
+source-wordcount: '1256'
+ht-degree: 49%
 
 ---
 
@@ -33,17 +33,15 @@ Commencez ici pour découvrir Cloud Manager pour AMS (Adobe Managed Services) et
 
 Avec Cloud Manager, votre équipe de développement bénéficie des fonctionnalités suivantes :
 
-* Intégration continue/diffusion continue (CI/CD) du code pour réduire le délai de mise sur le marché de plusieurs mois/semaines à quelques jours/heures.
+* Intégration continue/diffusion continue (CI/CD) du code afin de réduire le délai de mise sur le marché de plusieurs mois/semaines à plusieurs jours/heures.
 
-* Inspection du code, test de performance et validation de la sécurité basés sur les bonnes pratiques avant de passer à la production, afin de minimiser les interruptions de production.
+* Inspection du code, tests de performance et validation de la sécurité basés sur les bonnes pratiques avant de passer en production afin de minimiser les interruptions de production.
 
 * Connectivité de l’API pour compléter les processus DevOps existants.
 
-* La mise à l’échelle automatique détecte intelligemment la nécessité d’une capacité accrue et met automatiquement en ligne un ou plusieurs segments supplémentaires Dispatcher/de publication.
+* Mise à l’échelle automatique qui détecte intelligemment la nécessité d’une capacité accrue et apporte automatiquement des segments Dispatcher/publication supplémentaires en ligne.
 
-L’image suivante illustre le flux du processus CI/CD utilisé dans [!UICONTROL Cloud Manager] :
-
-![Flux CI/CD](/help/assets/screen_shot_2018-05-12at73843pm.png)
+![Flux CI/CD](/help/assets/screen_shot_2018-05-12at73843pm.png)Flux de processus CI/CD utilisé dans [!UICONTROL Cloud Manager].
 
 ## Fonctionnalités clés de [!UICONTROL Cloud Manager] {#key-features-in-cloud-manager}
 
@@ -125,7 +123,7 @@ Tous les utilisateurs AMS qui utilisent Cloud Manager pour les déploiements en 
 
 Si le déploiement bleu/vert vous intéresse, tenez compte des exigences et limites suivantes et contactez votre ingénieur du service client.
 
-#### Exigences et restrictions {#limitations}
+#### Conditions requises et restrictions {#limitations}
 
 * Le bleu/vert est uniquement disponible pour les paires Dispatcher/éditeur.
 * Les paires Aperçu de Dispatcher/publication ne font pas partie des déploiements bleu/vert.
