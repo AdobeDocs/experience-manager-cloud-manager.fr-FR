@@ -2,10 +2,10 @@
 title: Configuration de pipelines hors production
 description: Découvrez comment utiliser Cloud Manager pour créer et configurer des pipelines hors production afin de déployer votre code.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: ba08da1b25a1f9ba8bc954b2fbd27b60d4ddf1a0
 workflow-type: tm+mt
-source-wordcount: '709'
-ht-degree: 91%
+source-wordcount: '685'
+ht-degree: 55%
 
 ---
 
@@ -24,12 +24,12 @@ Ce document se concentre sur les pipelines hors production. Pour plus d’inform
 
 Il existe deux types de pipelines hors production :
 
-* **Pipelines de qualité du code** - ceux-ci exécutent des analyses de qualité du code sur le code dans une branche Git et exécutent les étapes de création et de qualité du code.
-* **Pipelines de déploiement** - outre l’exécution des étapes de création et de qualité du code, telles que les pipelines de qualité du code, ces pipelines déploient le code dans un environnement hors production.
+* **Pipelines de qualité du code** : ces pipelines exécutent des analyses de qualité du code sur le code d’une branche Git et exécutent les étapes de génération et de qualité du code.
+* **Pipelines de déploiement** - En plus d’exécuter les étapes de génération et de qualité de code comme les pipelines de qualité de code, ces pipelines déploient également le code vers un environnement hors production.
 
 >[!NOTE]
 >
->Un pipeline ne peut être configuré que si le référentiel Git associé dispose d’au moins une branche et que la [configuration du programme](/help/getting-started/program-setup.md) est terminée. Consultez le document [Référentiels Cloud Manager](/help/managing-code/managing-repositories.md) pour découvrir comment ajouter et gérer des référentiels dans Cloud Manager.
+>Un pipeline ne peut pas être configuré tant que son référentiel git associé ne comporte pas au moins une branche et que la [configuration du programme](/help/getting-started/program-setup.md) n’est pas terminée. Voir [Référentiels Cloud Manager](/help/managing-code/managing-repositories.md) pour savoir comment ajouter et gérer des référentiels dans Cloud Manager.
 
 ## Ajout d’un pipeline hors production {#add-non-production-pipeline}
 
@@ -51,36 +51,37 @@ Une fois que vous avez configuré votre programme et que vous disposez d’au mo
 
 1. Indiquez le référentiel dans lequel le pipeline doit récupérer le code.
 
-   * **Référentiel** - cette option définit à partir de quel référentiel Git le pipeline doit récupérer le code.
-   * **Branche Git** - cette option définit à partir de quelle branche sélectionnée le pipeline doit récupérer le code.
+   * **Repository** - Définit à partir de quel référentiel git le pipeline doit récupérer le code.
+   * **Branche Git** - Définit à partir de quelle branche dans Git le pipeline sélectionné doit récupérer le code.
 
 1. Définissez vos options de déploiement.
 
    1. Sous **Déclencheur de déploiement**, définissez l’événement qui active le pipeline.
 
-      * **Manuel** - utilisez cette option pour démarrer manuellement le pipeline.
-      * **Lors des modifications Git** - cette option démarre le pipeline chaque fois que des validations sont ajoutées à la branche Git configurée. Avec cette option, vous pouvez toujours démarrer le pipeline manuellement, si nécessaire.
+      * **Manuel** - Permet de démarrer manuellement le pipeline.
+      * **Lors des modifications Git** - Démarre le pipeline lorsque des validations sont ajoutées à la branche Git configurée. Avec cette option, vous pouvez toujours démarrer le pipeline manuellement, selon les besoins.
 
    1. Pour les pipelines de déploiement, sous **Comportement en cas d’échecs de mesures importants**, définissez le comportement du pipeline en cas d’échec important à l’un des points de contrôle qualité.
 
-      * **Demander à chaque fois** - il s’agit du paramètre par défaut qui nécessite une intervention manuelle pour tout échec important.
-      * **Défaillance immédiate** - si cette option est sélectionnée, le pipeline sera interrompu chaque fois qu’une défaillance importante aura lieu. Il s’agit essentiellement d’imiter un utilisateur qui rejetterait manuellement chaque échec.
-      * **Continuer immédiatement** - si cette option est sélectionnée, le pipeline se poursuivra automatiquement chaque fois qu’une défaillance importante se produira. Il s’agit essentiellement d’émuler un utilisateur approuvant manuellement chaque échec.
+      * **Demander à chaque fois** - Le paramètre par défaut et nécessite une intervention manuelle en cas d’échec important.
+      * **Fail Immédiatement** - Le pipeline est annulé chaque fois qu’un échec important se produit. Il s’agit essentiellement de l’émulation d’un utilisateur ou d’une utilisatrice qui rejette manuellement chaque échec.
+      * **Continuer immédiatement** - Le pipeline se poursuit automatiquement chaque fois qu’un échec important se produit. Il s’agit essentiellement de l’émulation d’un utilisateur ou d’une utilisatrice qui approuve manuellement chaque échec.
 
-   1. **Configuration de Dispatcher** - le rôle du **responsable de déploiement** consiste à configurer un ensemble de chemins de contenu qui seront soit invalidés soit vidés du cache d’AEM Dispatcher lorsqu’un pipeline est exécuté. Ces actions de cache sont exécutées dans le cadre de l’étape du pipeline de déploiement, juste après le déploiement des packages de contenu. Ces paramètres utilisent le comportement standard d’AEM Dispatcher. Pour configurer :
+   1. **Configuration Dispatcher** - Le rôle **Gestionnaire de déploiement** peut configurer un ensemble de chemins de contenu qui sont invalidés ou purgés du cache Dispatcher d’AEM lorsqu’un pipeline est exécuté. Ces actions de cache sont effectuées dans le cadre de l’étape du pipeline de déploiement, juste après le déploiement des packages de contenu. Ces paramètres utilisent le comportement standard d’AEM Dispatcher. Pour configurer :
 
       1. Sous **CHEMIN**, fournissez un chemin d’accès au contenu.
       1. Sous **TYPE**, sélectionnez l’action à effectuer sur ce chemin.
 
          * **Purge** - videz le cache.
          * **Invalider** - effectuez une invalidation du cache, comme lorsque le contenu est activé d’une instance de création vers une instance de publication.
+
       1. Cliquez sur **Ajouter un chemin** pour ajouter votre chemin spécifié. Vous pouvez ajouter jusqu’à 100 chemins par environnement.
 
-1. Cliquez sur **Enregistrer** pour enregistrer votre pipeline.
+1. Cliquez sur **Enregistrer**.
 
 ## Étapes suivantes {#the-next-steps}
 
-Une fois que vous avez configuré le pipeline, vous devez déployer votre code. Pour plus d’informations, voir [Déploiement du code](/help/using/code-deployment.md) .
+Après avoir configuré le pipeline, vous pouvez déployer votre code. Pour plus d’informations, voir [Déploiement du code](/help/using/code-deployment.md) .
 
 ## Tutoriel vidéo {#video-tutorial}
 

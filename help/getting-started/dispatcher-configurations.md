@@ -1,28 +1,28 @@
 ---
 title: Configurations de Dispatcher
-description: Découvrez comment déployer les fichiers de configuration du Dispatcher à l’aide de Cloud Manager.
+description: Découvrez comment déployer des fichiers de configuration Dispatcher à l’aide de Cloud Manager.
 exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: ba08da1b25a1f9ba8bc954b2fbd27b60d4ddf1a0
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 91%
+source-wordcount: '575'
+ht-degree: 48%
 
 ---
 
 
 # Configurations Dispatcher {#manage-your-dispatcher-configurations}
 
-Découvrez comment déployer les fichiers de configuration du Dispatcher à l’aide de Cloud Manager.
+Découvrez comment déployer des fichiers de configuration Dispatcher à l’aide de Cloud Manager
 
 ## Déploiement de configurations Dispatcher avec Cloud Manager {#deploying-dispatcher-configurations}
 
-Cloud Manager peut déployer les fichiers de configuration du serveur web et du Dispatcher en supposant qu’ils soient stockés dans le référentiel Git, avec des packages de contenu AEM normaux.
+Cloud Manager peut déployer les fichiers de configuration du serveur web et de Dispatcher en supposant qu’ils soient stockés dans le référentiel Git avec les packages de contenu d’AEM standard.
 
-Pour tirer parti de cette fonctionnalité, la version Maven doit produire un fichier ZIP contenant au moins deux répertoires : `conf` et `conf.d`. Ce fichier ZIP peut être créé à l’aide du `maven-assembly-plugin`.
+Pour tirer parti de cette fonctionnalité, la version Maven doit produire un fichier .zip, qui contient au moins deux répertoires : `conf` et `conf.d`. Ce fichier ZIP peut être créé à l’aide du `maven-assembly-plugin`.
 
-Les projets générés par Cloud Manager à l’aide de l’[assistant de création de projet](/help/getting-started/using-the-wizard.md) intégré créent automatiquement la structure de projet Maven appropriée. Il s’agit du chemin recommandé si vous découvrez Adobe Managed Services (AMS).
+Les projets générés par Cloud Manager à l’aide de l’[assistant de création de projet](/help/getting-started/using-the-wizard.md) intégré créent automatiquement la structure de projet Maven appropriée. Ce chemin est recommandé si vous découvrez Adobe Managed Services (AMS).
 
-Lors du déploiement vers une instance de Dispatcher, le contenu de ces répertoires sur l’instance de Dispatcher est remplacé par ceux de votre référentiel Git. Comme les fichiers de configuration du serveur web et du Dispatcher requièrent souvent des informations spécifiques à l’environnement, vous devez d’abord collaborer avec les ingénieurs du succès client (CSE) pour définir ces variables d’environnement dans `/etc/sysconfig/httpd`.
+Lorsque vous effectuez un déploiement sur une instance Dispatcher, les répertoires de l’instance sont remplacés par ceux du référentiel Git. Comme les fichiers de configuration du serveur web et Dispatcher requièrent souvent des détails spécifiques à l’environnement, vous devez collaborer avec les ingénieurs du service client pour définir les variables d’environnement appropriées dans `/etc/sysconfig/httpd` avant d’utiliser cette fonctionnalité correctement.
 
 ## Configuration Dispatcher pour les clients de services gérés existants {#steps-for-configuring-dispatcher}
 
@@ -38,7 +38,7 @@ Suivez les étapes ci-dessous pour terminer la configuration initiale de Dispatc
 
 >[!NOTE]
 >
->La migration des configurations du Dispatcher et du serveur web vers votre référentiel Git peut être effectuée lors de l’intégration de Cloud Manager, mais peut également être réalisée ultérieurement.
+>Il est possible de migrer les configurations de Dispatcher et de serveur web vers votre référentiel Git lors de l’intégration à Cloud Manager, mais aussi ultérieurement.
 
 ### Exemple {#example}
 
@@ -48,7 +48,7 @@ Le fichier et la structure des répertoires spécifiques peuvent varier en fonct
 
    Vous pouvez lui attribuer le nom de votre choix, mais le nom du répertoire créé au cours de cette étape doit être identique à celui utilisé à l’étape 6.
 
-1. Ce sous-répertoire contient un module Maven qui crée le fichier Dispatcher .zip à l’aide du plug-in Assembly Maven. Pour commencer, dans le répertoire `dispatcher`, créez un fichier `pom.xml` avec ce contenu, tout en modifiant la référence `parent`, `artifactId` et `name`, si nécessaire.
+1. Ce sous-répertoire contient un module Maven qui crée le fichier Dispatcher .zip à l’aide du plug-in Assembly Maven. Dans le répertoire `dispatcher`, créez un fichier `pom.xml` avec ce contenu, en modifiant la référence `parent`, `artifactId` et `name` si nécessaire.
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -113,7 +113,7 @@ Le fichier et la structure des répertoires spécifiques peuvent varier en fonct
    </assembly>
    ```
 
-1. Créez ensuite un sous-répertoire nommé `src` (comme référencé dans le descripteur d’assemblage susmentionné à la ligne 11) dans le sous-répertoire de Dispatcher pour stocker les configurations Apache et de Dispatcher actuelles. Dans ce répertoire `src`, créez des répertoires appelés `conf`, `conf.d`, `conf.dispatcher.d` et `conf.modules.d`.
+1. Créez un sous-répertoire nommé `src` (comme référencé dans le descripteur d’assemblage ci-dessus à la ligne 11) dans le sous-répertoire Dispatcher pour stocker les configurations Apache et Dispatcher actuelles. Dans ce répertoire `src`, créez des répertoires appelés `conf`, `conf.d`, `conf.dispatcher.d` et `conf.modules.d`.
 
 1. Placez vos fichiers de configuration dans les répertoires `conf`, `conf.d`, `conf.dispatcher.d` et `conf.modules.d`. Par exemple, la configuration par défaut comprend ces fichiers et liens symboliques.
 
@@ -190,9 +190,9 @@ Le fichier et la structure des répertoires spécifiques peuvent varier en fonct
            └── 02-dispatcher.conf
    ```
 
-1. Enfin, dans le fichier `pom.xml` à la racine de votre projet, ajoutez un élément `<module>` pour inclure le module de Dispatcher.
+1. Enfin, dans le fichier `pom.xml` situé à la racine de votre projet, ajoutez un élément `<module>` pour inclure le module Dispatcher.
 
-   Par exemple, si votre liste de modules existante est
+   Par exemple, si votre liste de modules existante est la suivante :
 
    ```xml
        <modules>
@@ -202,7 +202,7 @@ Le fichier et la structure des répertoires spécifiques peuvent varier en fonct
        </modules>
    ```
 
-   vous devriez la remplacer par
+   Remplacez-le par ce qui suit :
 
    ```xml
        <modules>
