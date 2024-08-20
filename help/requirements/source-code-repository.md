@@ -2,30 +2,30 @@
 title: Référentiel de code source
 description: Découvrez les informations sur le référentiel Git qui est fourni pour chaque programme que vous avez dans Cloud Manager.
 exl-id: af551e33-3623-4fcd-8d25-4362d8871411
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: 4c977cdfbef438fdabd90ee104d98887f2467b49
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 83%
+source-wordcount: '245'
+ht-degree: 20%
 
 ---
 
 
-# Référentiel de code source {#source-code-repository}
+# Référentiel de code Source {#source-code-repository}
 
 Découvrez les informations sur le référentiel Git qui est fourni pour chaque programme que vous avez dans Cloud Manager.
 
-## Référentiel de Cloud Manager {#cloud-manager-repository}
+## Référentiel Cloud Manager {#cloud-manager-repository}
 
-Votre abonnement à [!UICONTROL AEM Managed Services] comprend un référentiel de code source configuré et géré par Adobe. Chaque programme se voit attribuer un référentiel Git unique, où le code associé sera stocké et sécurisé.
+Votre abonnement à [!UICONTROL AEM Managed Services] comprend un référentiel de code source configuré et géré par Adobe. Chaque programme se voit attribuer un référentiel Git unique, où votre code associé est stocké et sécurisé.
 
-Il est considéré comme une bonne pratique de toujours utiliser le référentiel Git de Cloud Manager, qui est fourni vide, sans branche configurée ni exemple de projet. Un jeton d’accès privé vous sera fourni pour vous permettre d’utiliser le référentiel Git de Cloud Manager. Il vous permettra d’utiliser n’importe quel client Git pour créer des branches, stocker et récupérer votre code, répertorier l’historique des validations, etc.
+En règle générale, vous devez toujours utiliser le référentiel Git de Cloud Manager qui est vide sans aucune branche configurée ni exemple de projet. Cloud Manager fournit un jeton d’accès privé pour son référentiel Git, ce qui vous permet d’utiliser n’importe quel client Git pour créer des branches, gérer le code, récupérer l’historique de validation, etc.
 
 Pour plus d’informations sur la configuration des branches dans Git, voir [Configuration des branches de versions](/help/getting-started/configuring-branches.md).
 
 Pour plus d’informations sur l’utilisation du référentiel git Cloud Manager avec le pipeline CI/CD, voir [ Configuration des pipelines de production ](/help/using/production-pipelines.md) et [Configuration des pipelines hors production](/help/using/non-production-pipelines.md) pour en savoir plus.
 
-## Référentiel On-Premise {#on-premise-repository}
+## Référentiel On-premise {#on-premise-repository}
 
-Il se peut que vous possédiez un référentiel Git existant et que vous souhaitiez le conserver, auquel cas vous pouvez utiliser la fonctionnalité de Git pour plusieurs référentiels distants. Le développement quotidien continuerait alors dans votre référentiel Git. Lorsqu’une branche de version est prête pour un déploiement en production, vous pouvez placer votre dernier code dans le référentiel Git de Cloud Manager et déclencher le pipeline CI/CD de Cloud Manager.
+Vous pouvez disposer d’un référentiel Git existant et souhaitez continuer à l’utiliser, auquel cas vous pouvez utiliser la fonctionnalité Git pour plusieurs référentiels distants. Le développement quotidien continue dans votre référentiel Git. Lorsqu’une branche de version est prête pour le déploiement en production, vous pouvez envoyer votre dernier code vers le référentiel Git de Cloud Manager et déclencher le pipeline CI/CD de Cloud Manager.
 
-Pour afficher les commandes Git courantes, reportez-vous à l’[Aide-mémoire Git](https://education.github.com/git-cheat-sheet-education.pdf) sur le site web GitHub.
+Pour afficher les commandes Git courantes, consultez l’ [Aide-mémoire Git](https://education.github.com/git-cheat-sheet-education.pdf).
