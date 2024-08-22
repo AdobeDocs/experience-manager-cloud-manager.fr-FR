@@ -1,18 +1,18 @@
 ---
 title: Référentiel de code source
-description: Découvrez les informations sur le référentiel Git qui est fourni pour chaque programme que vous avez dans Cloud Manager.
+description: Découvrez le référentiel Git fourni pour chaque programme de Cloud Manager.
 exl-id: af551e33-3623-4fcd-8d25-4362d8871411
-source-git-commit: 4c977cdfbef438fdabd90ee104d98887f2467b49
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '245'
-ht-degree: 20%
+ht-degree: 7%
 
 ---
 
 
 # Référentiel de code Source {#source-code-repository}
 
-Découvrez les informations sur le référentiel Git qui est fourni pour chaque programme que vous avez dans Cloud Manager.
+Découvrez le référentiel Git fourni pour chaque programme de Cloud Manager.
 
 ## Référentiel Cloud Manager {#cloud-manager-repository}
 
@@ -22,7 +22,7 @@ En règle générale, vous devez toujours utiliser le référentiel Git de Cloud
 
 Pour plus d’informations sur la configuration des branches dans Git, voir [Configuration des branches de versions](/help/getting-started/configuring-branches.md).
 
-Pour plus d’informations sur l’utilisation du référentiel git Cloud Manager avec le pipeline CI/CD, voir [ Configuration des pipelines de production ](/help/using/production-pipelines.md) et [Configuration des pipelines hors production](/help/using/non-production-pipelines.md) pour en savoir plus.
+Pour plus d’informations sur l’utilisation du référentiel Git Cloud Manager avec le pipeline CI/CD, voir [ Configuration des pipelines de production ](/help/using/production-pipelines.md) et [Configuration des pipelines hors production](/help/using/non-production-pipelines.md) pour en savoir plus.
 
 ## Référentiel On-premise {#on-premise-repository}
 

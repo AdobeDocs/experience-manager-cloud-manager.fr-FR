@@ -2,7 +2,7 @@
 title: Environnement de création
 description: Découvrez l’environnement de création spécialisé, dans lequel les utilisateurs Cloud Manager peuvent créer et tester votre code.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '1263'
 ht-degree: 53%
@@ -117,7 +117,7 @@ Les combinaisons fournisseur/version actuellement disponibles sont les suivantes
 
 Il est également possible de sélectionner Oracle 8 ou Oracle 11 en tant que JDK pour l’ensemble de l’exécution de Maven. Contrairement aux options des chaînes d’outils, cela modifie le JDK utilisé pour tous les modules externes, sauf si la configuration des chaînes d’outils est également définie, auquel cas la configuration des chaînes d’outils est toujours appliquée aux modules externes Maven prenant en charge les chaînes d’outils. Par conséquent, la vérification et l’application de la version Java à l’aide du [module externe Apache Maven Enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/) fonctionnent.
 
-Pour ce faire, créez un fichier nommé `.cloudmanager/java-version` dans la branche de référentiel git utilisée par le pipeline. Ce fichier peut avoir le contenu `11` ou `8`. Toute autre valeur est ignorée. Si `11` est spécifié, Oracle 11 est utilisé et la variable d’environnement `JAVA_HOME` est définie sur `/usr/lib/jvm/jdk-11.0.22`. Si `8` est spécifié, Oracle 8 est utilisé et la variable d’environnement `JAVA_HOME` est définie sur `/usr/lib/jvm/jdk1.8.0_401`.
+Pour ce faire, créez un fichier nommé `.cloudmanager/java-version` dans la branche de référentiel Git utilisée par le pipeline. Ce fichier peut avoir le contenu `11` ou `8`. Toute autre valeur est ignorée. Si `11` est spécifié, Oracle 11 est utilisé et la variable d’environnement `JAVA_HOME` est définie sur `/usr/lib/jvm/jdk-11.0.22`. Si `8` est spécifié, Oracle 8 est utilisé et la variable d’environnement `JAVA_HOME` est définie sur `/usr/lib/jvm/jdk1.8.0_401`.
 
 ## Variables d’environnement {#environment-variables}
 

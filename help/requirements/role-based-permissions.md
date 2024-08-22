@@ -2,7 +2,7 @@
 title: Autorisations basées sur les rôles
 description: Découvrez les autorisations préconfigurées basées sur les rôles de Cloud Manager pour gérer l’accès à vos ressources cloud.
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 54%

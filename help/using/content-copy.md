@@ -2,7 +2,7 @@
 title: Outil de copie de contenu
 description: L’outil de copie de contenu Cloud Manager permet aux utilisateurs de copier du contenu modifiable à la demande à partir des environnements de production hébergés par AMS AEM 6.x dans des environnements inférieurs pour les tests.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '1144'
 ht-degree: 39%
@@ -98,7 +98,7 @@ Procédez de la même façon que lors de la création d’une étape de contenu.
 
 Lors de la modification de votre jeu de contenu, vous devrez peut-être développer les chemins configurés pour que s’affichent les sous-chemins exclus.
 
-## Copie de contenu {#copy-content}
+## Copier le contenu {#copy-content}
 
 Une fois qu’un jeu de contenu a été créé, vous pouvez l’utiliser pour copier du contenu. Pour copier du contenu, procédez comme suit.
 

@@ -2,17 +2,17 @@
 title: Utilisation de l’assistant Nouveau projet
 description: Suivez cette page pour savoir comment utiliser l’assistant afin de créer un projet d’application AEM
 exl-id: 9d7c6f4c-9379-471c-8dad-772a7099da54
-source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '321'
-ht-degree: 33%
+ht-degree: 28%
 
 ---
 
 
 # Utilisation de l’assistant Nouveau projet {#using-the-wizard}
 
-Lorsque vous étiez intégré à Cloud Manager en tant que nouveau client, un référentiel git vide vous était fourni. Pour vous aider à commencer, Cloud Manager propose un assistant qui vous aide à créer un projet AEM minimal basé sur [l’archétype de projet AEM](https://github.com/adobe/aem-project-archetype) comme point de départ.
+Lorsque vous étiez intégré à Cloud Manager en tant que nouveau client, un référentiel Git vide vous était fourni. Pour vous aider à commencer, Cloud Manager propose un assistant qui vous aide à créer un projet AEM minimal basé sur [l’archétype de projet AEM](https://github.com/adobe/aem-project-archetype) comme point de départ.
 
 Pour créer un projet AEM à l’aide de l’assistant, suivez les étapes suivantes.
 
@@ -33,7 +33,7 @@ Pour créer un projet AEM à l’aide de l’assistant, suivez les étapes suiva
 
    ![Paramètres détaillés de l’archétype](/help/assets/screen_shot_2018-10-08at60032am.png)
 
-1. Cliquez sur **Créer** pour créer le projet de démarrage à l’aide de l’archétype et en validant la branche Git nommée.
+1. Cliquez sur **Créer** pour créer le projet de démarrage à l’aide de l’archétype et validez sur la branche Git nommée.
 
 Vous disposez maintenant d’un projet de base. Il est temps de configurer vos pipelines.
 

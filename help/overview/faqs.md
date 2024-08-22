@@ -2,15 +2,15 @@
 title: FAQ relatives à Cloud Manager
 description: Découvrez les réponses aux questions les plus fréquemment posées sur Cloud Manager pour les clients AMS.
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
-source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '748'
-ht-degree: 57%
+ht-degree: 52%
 
 ---
 
 
-# Questions fréquentes sur Cloud Manager {#cloud-manager-faqs}
+# FAQ relatives à Cloud Manager {#cloud-manager-faqs}
 
 Ce document fournit des réponses aux questions les plus fréquemment posées sur Cloud Manager pour les clients AMS.
 
@@ -62,11 +62,11 @@ Pour plus d’informations sur les contrôles de qualité, voir [Présentation d
 
 ## Puis-je utiliser SNAPSHOT pour la version du projet Maven ? {#snapshot}
 
-Oui. Pour les déploiements de développeurs, les fichiers `pom.xml` de la branche Git doivent contenir `-SNAPSHOT` à la fin de la valeur `<version>`.
+Oui. Pour les déploiements de développeurs, les fichiers de la branche Git `pom.xml` doivent contenir `-SNAPSHOT` à la fin de la valeur `<version>`.
 
 Cela permet aux déploiements ultérieurs d’être toujours installés lorsque la version n’a pas changé. Pour les déploiements de développeurs, aucune version automatique n’est ajoutée ou générée pour la build maven.
 
-Vous pouvez également définir la version sur `-SNAPSHOT` pour les builds ou déploiements d’évaluation et de production. Cloud Manager définit automatiquement un numéro de version approprié et crée pour vous une balise dans git. Cette balise peut être référencée ultérieurement, si nécessaire.
+Vous pouvez également définir la version sur `-SNAPSHOT` pour les builds ou déploiements d’évaluation et de production. Cloud Manager définit automatiquement un numéro de version approprié et crée pour vous une balise dans Git. Cette balise peut être référencée ultérieurement, si nécessaire.
 
 De plus amples détails sur la gestion des versions sont [documentés ici](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling).
 
@@ -76,11 +76,11 @@ Dans les déploiements d’évaluation et de production, une version automatique
 
 Pour le contrôle de version personnalisé dans les déploiements d’évaluation et de production, définissez une version maven en trois parties, telle que `1.0.0`. Passez à la version supérieure à chaque déploiement en production.
 
-Cloud Manager ajoute automatiquement sa version aux builds d’évaluation et de production et crée même une branche Git. Aucune configuration spécifique n’est nécessaire. Si vous ne définissez pas de version Maven comme décrit précédemment, le déploiement s’effectue quand même et une version est automatiquement définie.
+Cloud Manager ajoute automatiquement sa version aux versions d’évaluation et de production et crée une branche Git. Aucune configuration spécifique n’est nécessaire. Si vous ne définissez pas de version Maven comme décrit précédemment, le déploiement s’effectue quand même et une version est automatiquement définie.
 
 ## Ma build Maven échoue lors des déploiements de Cloud Manager, mais elle est pourtant créée localement sans la moindre erreur. Quel est le problème ? {#maven-build-fail}
 
-Consultez [Ressource Git](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md) pour plus de détails.
+Pour plus d’informations, voir cette [ressource Git](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md) .
 
 ## Je ne parviens pas à définir une variable à l’aide d’une commande AIO. Que puis-je faire ? {#set-variable}
 

@@ -1,11 +1,11 @@
 ---
 title: Ajouter des utilisateurs et des rôles
-description: Découvrez comment utiliser Admin Console pour ajouter des utilisateurs et des rôles ainsi que créer des profils.
+description: Découvrez comment utiliser l’Admin Console pour ajouter des utilisateurs et des rôles, et créer des profils.
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 78%
+source-wordcount: '758'
+ht-degree: 47%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 78%
 
 De nombreuses fonctionnalités de [!UICONTROL Cloud Manager] nécessitent des autorisations spécifiques. Par exemple, seuls certains utilisateurs sont autorisés à définir les indicateurs de performance clés (ICP) d’un programme. Ces autorisations sont regroupées de manière logique en rôles.
 
-[!UICONTROL Cloud Manager] définit actuellement quatre rôles pour les utilisateurs qui régissent la disponibilité de fonctionnalités spécifiques :
+[!UICONTROL Cloud Manager] définit actuellement quatre rôles pour les utilisateurs, qui régissent la disponibilité de fonctionnalités spécifiques :
 
 * Propriétaire de l’entreprise
 * Responsable de programme
@@ -27,39 +27,39 @@ De nombreuses fonctionnalités de [!UICONTROL Cloud Manager] nécessitent des au
 
 ## Définitions de rôle {#role-definitions}
 
-Ce tableau résume les rôles.
+Le tableau suivant résume les rôles dans Cloud Manager.
 
-| Rôle dans [!UICONTROL Cloud Manager] | Description |
-|--- |--- |
-| Propriétaire de l’entreprise | Cet utilisateur est chargé de définir les indicateurs de performance clés, d’approuver les déploiements en production et de remplacer les échecs importants à 3 niveaux si nécessaire. |
-| Responsable de programme | Cet utilisateur utilise [!UICONTROL Cloud Manager] pour effectuer la configuration de l’équipe, réviser l’état, afficher les ICP et approuver les échecs importants à 3 niveaux si nécessaire. |
-| Responsable de déploiement | Cet utilisateur gère les opérations de déploiement et utilise [!UICONTROL Cloud Manager] pour exécuter des déploiements d’évaluation/de production, modifier les pipelines CI/CD ou approuver des échecs importants à 3 niveaux si nécessaire. Il peut également accéder au référentiel Git. |
-| Développeur | Cet utilisateur développe et teste des codes d’application personnalisés et utilise principalement [!UICONTROL Cloud Manager] pour afficher l’état du déploiement. Il peut accéder au référentiel Git pour les validations de code. |
-| Ingénieur du succès client | Cet utilisateur prend généralement en charge le succès client pour les clients AMS et interagit avec [!UICONTROL Cloud Manager] dans le but d’exécuter des déploiements nécessitant la supervision du CSE. |
-| Auteur de contenu | Cet utilisateur n’interagit généralement pas avec [!UICONTROL Cloud Manager] mais peut utiliser le sélecteur de programmes de [!UICONTROL Cloud Manager] pour accéder à AEM. |
+| Rôle [!UICONTROL Cloud Manager] | Description |
+| --- | --- |
+| Propriétaire de l’entreprise | Responsable de la définition des indicateurs de performance clés, de l’approbation des déploiements en production et de la surévaluation des échecs de trois niveaux importants lorsque cela est nécessaire. |
+| Responsable de programme | Ils utilisent [!UICONTROL Cloud Manager] pour configurer l’équipe, passer en revue l’état, afficher les indicateurs de performance clés et approuver des échecs de trois niveaux importants si nécessaire. |
+| Responsable de déploiement | Gère les opérations de déploiement et utilise [!UICONTROL Cloud Manager] pour exécuter les déploiements d’évaluation et de production, modifier les pipelines CI/CD et approuver les échecs à trois niveaux critiques si nécessaire. Ils ont également accès au référentiel Git. |
+| Développeur ou développeuse | Développe et teste du code d’application personnalisé. Il utilise principalement [!UICONTROL Cloud Manager] pour afficher l’état du déploiement et peut accéder au référentiel Git pour les validations de code. |
+| Ingénieur du succès client | L’ingénieur du service client prend généralement en charge le succès client pour les clients AMS. Ils interagissent avec [!UICONTROL Cloud Manager] dans le but d’exécuter des déploiements nécessitant la supervision de l’ingénieur du service client. |
+| Auteur ou autrice de contenu | Ils n’interagissent généralement pas avec [!UICONTROL Cloud Manager], mais peuvent utiliser le sélecteur de programme [!UICONTROL Cloud Manager] pour accéder à AEM. |
 
 >[!NOTE]
 >
 >Dans Admin Console, la personne désignée comme développeur n’a aucun rapport avec le rôle de développeur dans [!UICONTROL Cloud Manager].
 
-## Utilisation d’Admin Console pour créer un profil {#using-admin-console-to-create-a-profile}
+## Créer un profil à l’aide de l’Admin Console {#using-admin-console-to-create-a-profile}
 
 Les rôles de [!UICONTROL Cloud Manager] sont gérés depuis Admin Console. Des rôles spécifiques sont attribués en ajoutant un utilisateur à un profil de produit [!UICONTROL Cloud Manager].
 
-Admin Console fournit un emplacement centralisé pour gérer les droits Adobe dans l’ensemble de votre organisation. Pour en savoir plus sur Adobe Admin Console, consultez la documentation d’[Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html).
+Admin Console fournit un emplacement centralisé pour gérer les droits Adobe dans l’ensemble de votre organisation. Pour en savoir plus sur Adobe Admin Console, voir [Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html).
 
-Afin d’accorder les autorisations appropriées basées sur les rôles aux utilisateurs de [!UICONTROL Cloud Manager], un administrateur de l’organisation du client doit créer des profils de produit sous le contexte du produit [!UICONTROL AEM Managed Services], chacun correspondant à l’un des quatre rôles de [!UICONTROL Cloud Manager] :
+Un administrateur doit créer de nouveaux profils de produit sous le contexte du produit [!UICONTROL Managed Services] pour attribuer des autorisations basées sur les rôles aux utilisateurs de [!UICONTROL Cloud Manager], correspondant à chacun des quatre rôles [!UICONTROL Cloud Manager].
 
 * Propriétaire de l’entreprise
 * Responsable de déploiement
 * Développeur
 * Responsable de programme
 
-Vous pouvez créer ou ajouter des utilisateurs/groupes à ces profils de produit avec Admin Console.
+Vous pouvez créer ou ajouter des utilisateurs ou des groupes à ces profils de produit avec l’Admin Console.
 
 1. Connectez-vous à l’Admin Console à l’adresse [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
-1. Cliquez sur l’onglet **Overview** , puis sur le produit que vous souhaitez modifier sur la carte **Products and services** . S’il n’y est pas répertorié, cherchez le produit dans l’onglet **Produits** et cliquez dessus.
+1. Cliquez sur l’onglet **Overview** , puis sur le produit à modifier sur la carte **Products and Services** . S’il n’y est pas répertorié, cherchez le produit dans l’onglet **Produits** et cliquez dessus.
 
    ![Onglet de présentation d’Admin Console](/help/assets/admin-console-overview.png)
 

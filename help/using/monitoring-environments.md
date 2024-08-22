@@ -2,10 +2,10 @@
 title: Surveillance des environnements
 description: Découvrez comment surveiller vos environnements dans Cloud Manager.
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 33%
+source-wordcount: '910'
+ht-degree: 31%
 
 ---
 
@@ -60,7 +60,7 @@ Pour afficher les détails de mesures spécifiques, cliquez sur l’une des colo
 
 La navigation à gauche affiche les mesures disponibles dans la catégorie actuellement sélectionnée pour laquelle il existe des données pour l’environnement et les instances sélectionnés.
 
-Un graphique séparé indique l’état et les données dans le temps avec les seuils. Si plusieurs instances sont affichées, les données de chaque instance se trouvent dans une série distincte.
+Un graphique individuel affiche l’état et un graphique des données au fil du temps, ainsi que les seuils. Si plusieurs instances sont affichées, les données de chaque instance se trouvent dans une série distincte.
 
 ![Graphique de mesures](/help/assets/Monitoring_Graphs1.png)
 

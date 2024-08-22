@@ -2,10 +2,10 @@
 title: Configuration du programme
 description: Après l’intégration, le propriétaire de l’entreprise doit effectuer une configuration initiale du programme.
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 53%
+source-wordcount: '564'
+ht-degree: 49%
 
 ---
 
@@ -68,7 +68,7 @@ Vous pouvez modifier les programmes une fois qu’ils ont été configurés. Pou
 
 1. Cliquez sur **Mettre à jour** pour enregistrer vos modifications.
 
-Notez que les modifications sont enregistrées immédiatement dans Cloud Manager, mais ne seront pas répercutées dans vos environnements avant la prochaine exécution du pipeline.
+Les modifications sont immédiatement enregistrées dans Cloud Manager, mais ne sont pas répercutées dans vos environnements avant la prochaine exécution du pipeline.
 
 Si vous n’avez pas encore créé de pipeline, voir [Configuration des pipelines de production](/help/using/production-pipelines.md) et [Configuration des pipelines hors production](/help/using/non-production-pipelines.md).
 

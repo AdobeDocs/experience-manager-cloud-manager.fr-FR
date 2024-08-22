@@ -2,7 +2,7 @@
 title: Configurations de Dispatcher
 description: Découvrez comment déployer des fichiers de configuration Dispatcher à l’aide de Cloud Manager.
 exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
-source-git-commit: ba08da1b25a1f9ba8bc954b2fbd27b60d4ddf1a0
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 48%
@@ -14,7 +14,7 @@ ht-degree: 48%
 
 Découvrez comment déployer des fichiers de configuration Dispatcher à l’aide de Cloud Manager
 
-## Déploiement de configurations Dispatcher avec Cloud Manager {#deploying-dispatcher-configurations}
+## Déploiement des configurations Dispatcher avec Cloud Manager {#deploying-dispatcher-configurations}
 
 Cloud Manager peut déployer les fichiers de configuration du serveur web et de Dispatcher en supposant qu’ils soient stockés dans le référentiel Git avec les packages de contenu d’AEM standard.
 

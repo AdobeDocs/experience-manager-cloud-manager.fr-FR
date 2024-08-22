@@ -2,10 +2,10 @@
 title: Configurer les branches
 description: Découvrez comment configurer votre première branche dans Git et comment elle est utilisée par le pipeline CI/CD pour déployer le code de votre application.
 exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
-source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '324'
-ht-degree: 14%
+ht-degree: 4%
 
 ---
 
@@ -16,7 +16,7 @@ Découvrez comment configurer votre première branche dans Git et comment elle e
 
 ## Configuration de votre première branche dans Git {#setting-up-your-first-branch-in-git}
 
-Un seul référentiel Git, initialement vide, [est fourni](/help/requirements/environment-provisioning.md) pour chaque programme intégré à Cloud Manager. Ce référentiel peut contenir autant de branches que le nécessite votre processus de développement, mais il doit y avoir au moins une branche utilisée par le pipeline CI/CD pour déployer le code de l’application dans les environnements intermédiaire et de production. Il est conseillé d’utiliser le nom `main` pour cette branche. Cette approche est, à dessein, le comportement par défaut des clients Git lors de la configuration de nouveaux projets.
+Un seul référentiel Git, initialement vide, [ est configuré ](/help/requirements/environment-provisioning.md) pour chaque programme intégré à Cloud Manager. Ce référentiel peut contenir autant de branches que le nécessite votre processus de développement, mais il doit y avoir au moins une branche utilisée par le pipeline CI/CD pour déployer le code de l’application dans les environnements intermédiaire et de production. Il est conseillé d’utiliser le nom `main` pour cette branche. Cette approche est, à dessein, le comportement par défaut des clients Git lors de la configuration de nouveaux projets.
 
 Par exemple, lors de la configuration d’un nouveau projet, vous exécutez un ensemble de commandes similaires à ce qui suit.
 
@@ -50,7 +50,7 @@ $ git commit -m "initial commit"
 
 >[!NOTE]
 >
->Il n’est pas nécessaire d’utiliser le client de ligne de commande. Divers clients graphiques Git sont disponibles sous la forme d’applications autonomes ou dans le cadre d’un environnement de développement intégré (IDE), tel qu’Eclipse ou IntelliJ. Tant que l’application cliente prend en charge Git avec HTTPS, elle doit être compatible avec [!UICONTROL Cloud Manager].
+>Il n’est pas nécessaire d’utiliser le client de ligne de commande. Divers clients graphiques Git sont disponibles sous la forme d’applications autonomes ou dans le cadre d’un environnement de développement intégré (IDE), tel qu’Eclipse ou IntelliJ. Tant que l’application cliente prend en charge Git avec HTTPS, elle doit être compatible avec [!UICONTROL Cloud Manager].
 
 ## Push your first branch {#pushing-your-first-branch}
 

@@ -2,7 +2,7 @@
 title: Pipelines dédiés à l’évaluation uniquement et à la production uniquement
 description: Découvrez comment séparer les déploiements d’évaluation et de production à l’aide de pipelines dédiés.
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 27%
@@ -28,7 +28,7 @@ Les environnements d’évaluation et de production sont étroitement liés. Par
 Les pipelines dédiés à l’évaluation uniquement et à la production uniquement offrent des solutions à ces cas d’utilisation en fournissant des options de déploiement dédiées.
 
 * **Pipelines de déploiement en environnement intermédiaire uniquement :** déploie uniquement vers un environnement d’évaluation dont l’exécution se termine une fois le déploiement et les tests terminés. Un pipeline dédié à l’évaluation uniquement se comporte de la même manière que le pipeline de pile complète de production couplé standard, mais sans les étapes de déploiement de production (approbation, planification, déploiement).
-* **Pipelines de déploiement prod uniquement :** déploie uniquement vers la production en sélectionnant une exécution intermédiaire réussie. Déploiement ensuite de ses artefacts en production. Les pipelines de production seule réutilisent les artefacts de déploiement d’étape, en contournant la phase de création.
+* **Pipelines de déploiement en production uniquement :** déploie uniquement vers la production en sélectionnant une exécution en environnement intermédiaire qui a réussi. Déploiement ensuite de ses artefacts en production. Les pipelines de production seule réutilisent les artefacts de déploiement d’étape, en contournant la phase de création.
 
 Les pipelines d’évaluation seule et de production seule ne sont pas exécutés lorsqu’un pipeline de production de pile complète est en cours, et vice versa. Si le pipeline dédié uniquement à l’évaluation et à la production de pile complète dispose du déclencheur **Lors des modifications Git** configuré et pointent vers la même branche et le même référentiel, seul le pipeline dédié uniquement à l’évaluation est lancé automatiquement. Les pipelines de production seule ne démarrent pas **`On Git Changes`**, car ils ne sont pas directement liés à un référentiel.
 

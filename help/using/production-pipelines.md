@@ -2,10 +2,10 @@
 title: Configuration des pipelines de production
 description: Découvrez comment créer et configurer des pipelines de production à l’aide de Cloud Manager afin de déployer votre code.
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
-source-wordcount: '1248'
-ht-degree: 49%
+source-wordcount: '1247'
+ht-degree: 47%
 
 ---
 
@@ -108,7 +108,7 @@ Après avoir utilisé l’interface utilisateur [!UICONTROL Cloud Manager] pour 
          * **Options de déploiement** - vous pouvez définir les paramètres contrôlant le déploiement en production.
 
             * **Utiliser l’approbation Go Live** - Un utilisateur disposant du rôle **Propriétaire de l’entreprise**, **Gestionnaire de projets** ou **Responsable de déploiement** par le biais de l’interface utilisateur [!UICONTROL Cloud Manager] doit approuver manuellement un déploiement.
-            * **Planifié** - Arrête le pipeline avant le déploiement en production pour lui permettre d’être planifié. Si cette option est sélectionnée, le pipeline s’arrêtera après le déploiement dans l’environnement d’évaluation et demandera à l’utilisateur l’action à entreprendre.
+            * **Planifié** - Arrête le pipeline avant le déploiement en production pour lui permettre d’être planifié. Si cette option est sélectionnée, le pipeline s’arrête après le déploiement dans l’environnement d’évaluation et invite l’utilisateur à effectuer l’action.
                * **`Now`** - Déploie immédiatement en production, achevant ainsi le pipeline.
                * **Date** - Permet à l’utilisateur de planifier une heure à laquelle le déploiement doit être terminé.
                * **Arrêter l’exécution** - Interrompt le déploiement en production.

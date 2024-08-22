@@ -2,7 +2,7 @@
 title: Configuration de pipelines hors production
 description: Découvrez comment utiliser Cloud Manager pour créer et configurer des pipelines hors production afin de déployer votre code.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: ba08da1b25a1f9ba8bc954b2fbd27b60d4ddf1a0
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 55%
@@ -29,7 +29,7 @@ Il existe deux types de pipelines hors production :
 
 >[!NOTE]
 >
->Un pipeline ne peut pas être configuré tant que son référentiel git associé ne comporte pas au moins une branche et que la [configuration du programme](/help/getting-started/program-setup.md) n’est pas terminée. Voir [Référentiels Cloud Manager](/help/managing-code/managing-repositories.md) pour savoir comment ajouter et gérer des référentiels dans Cloud Manager.
+>Un pipeline ne peut pas être configuré tant que son référentiel Git associé ne comporte pas au moins une branche et que la [configuration du programme](/help/getting-started/program-setup.md) n’est pas terminée. Voir [Référentiels Cloud Manager](/help/managing-code/managing-repositories.md) pour savoir comment ajouter et gérer des référentiels dans Cloud Manager.
 
 ## Ajout d’un pipeline hors production {#add-non-production-pipeline}
 
@@ -51,7 +51,7 @@ Une fois que vous avez configuré votre programme et que vous disposez d’au mo
 
 1. Indiquez le référentiel dans lequel le pipeline doit récupérer le code.
 
-   * **Repository** - Définit à partir de quel référentiel git le pipeline doit récupérer le code.
+   * **Repository** - Définit à partir de quel référentiel Git le pipeline doit récupérer le code.
    * **Branche Git** - Définit à partir de quelle branche dans Git le pipeline sélectionné doit récupérer le code.
 
 1. Définissez vos options de déploiement.

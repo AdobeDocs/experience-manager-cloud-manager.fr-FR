@@ -2,10 +2,10 @@
 title: Configuration du projet
 description: Découvrez comment configurer votre projet afin de pouvoir le gérer et le déployer avec Cloud Manager.
 exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '1395'
-ht-degree: 55%
+ht-degree: 54%
 
 ---
 
@@ -116,7 +116,7 @@ Les artefacts d’un référentiel Maven protégé par mot de passe doivent êtr
 >
 >Les artefacts des référentiels Maven protégés par mot de passe ne doivent être utilisés que dans de rares cas et pour les codes qui ne sont pas liés à AEM.
 
-Pour utiliser un référentiel Maven protégé par mot de passe dans Cloud Manager, spécifiez le mot de passe (et éventuellement le nom d’utilisateur) en tant que [Variable de pipeline](/help/getting-started/build-environment.md#pipeline-variables) secrète, puis référencez ce secret dans un fichier nommé `.cloudmanager/maven/settings.xml` dans le référentiel git. Ce fichier suit le schéma du [fichier de paramètres Maven](https://maven.apache.org/settings.html).
+Pour utiliser un référentiel Maven protégé par mot de passe dans Cloud Manager, spécifiez le mot de passe (et éventuellement le nom d’utilisateur) en tant que [Variable de pipeline](/help/getting-started/build-environment.md#pipeline-variables) secrète, puis référencez ce secret dans un fichier nommé `.cloudmanager/maven/settings.xml` dans le référentiel Git. Ce fichier suit le schéma du [fichier de paramètres Maven](https://maven.apache.org/settings.html).
 
 Lorsque le processus de création Cloud Manager démarre, l’élément `<servers>` de ce fichier est fusionné dans le fichier `settings.xml` par défaut fourni par Cloud Manager. Les serveurs personnalisés ne doivent pas utiliser d’ID de serveur commençant par `adobe` et `cloud-manager`. Ces identifiants sont considérés comme réservés. Cloud Manager ne reflète que les ID de serveur correspondant à l’un des préfixes spécifiés ou à l’ID par défaut `central`.
 

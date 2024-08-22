@@ -1,16 +1,16 @@
 ---
-title: Gérer les environnements
+title: Gestion des environnements
 description: Découvrez comment utiliser Cloud Manager pour gérer vos environnements.
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 94%
+source-wordcount: '281'
+ht-degree: 78%
 
 ---
 
 
-# Gérer les environnements {#managing-environments}
+# Gestion des environnements {#managing-environments}
 
 Découvrez comment utiliser Cloud Manager pour gérer vos environnements.
 
@@ -22,7 +22,7 @@ Chacun des environnements répertoriés affiche l’état associé.
 
 ![Page Aperçu](/help/assets/Manage-Environ-Overview.png)
 
-## Volet Environnements {#environments-tile}
+## Mosaïque Environnements {#environments-tile}
 
 Le volet **Environnements** affiche les environnements d’évaluation et de production configurés dans votre programme ainsi que le statut.
 
@@ -35,7 +35,7 @@ Le statut est l’état d’alimentation cumulée sur les nœuds de l’environn
 
 ![Volet Environnements](/help/assets/Environments-card-new.png)
 
-## Gérer les environnements {#managing-environments-with-cloud-manager}
+## Gestion des environnements {#managing-environments-with-cloud-manager}
 
 Sur la mosaïque **Environnements**, cliquez sur la ligne de n’importe quel environnement pour afficher l’écran **Environnements** .
 
@@ -54,14 +54,14 @@ L’écran **Environnements** affiche chaque environnement d’évaluation et de
 
 >[!NOTE]
 >
->Les détails d’environnement tels que le nom ne peuvent pas être modifiés une fois qu’ils ont été configurés.
+>Les détails d’environnement tels qu’un nom ne peuvent pas être modifiés une fois qu’ils ont été configurés.
 
 >[!NOTE]
 >
->Si vous avez besoin de vos journaux d’environnement, ils peuvent être demandés par l’intermédiaire de votre ingénieur du succès client.
+>Si vous avez besoin de vos journaux d’environnement, ils peuvent être demandés par l’intermédiaire de votre ingénieur du service client.
 
 ## Tutoriel vidéo {#video-tutorial}
 
 La vidéo suivante présente un aperçu des environnements Cloud Manager composés d’instances AEM Author, AEM Publish et Dispatcher.
 
->[!VIDEO](https://video.tv.adobe.com/v/26318/)
+>[!VIDEO](https://video.tv.adobe.com/v/26318/) (3 minutes, 1 seconde)

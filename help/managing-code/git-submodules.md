@@ -2,10 +2,10 @@
 title: Prise en charge des sous-modules Git
 description: Découvrez comment utiliser les sous-modules Git pour fusionner le contenu de plusieurs branches dans des référentiels Git au moment de la création.
 exl-id: f946d7e7-114a-4e33-bb82-2625d37bba2f
-source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '412'
-ht-degree: 28%
+ht-degree: 20%
 
 ---
 
@@ -66,7 +66,7 @@ Pour plus d’informations sur les sous-modules Git, consultez le [manuel de ré
 
 ## Limites {#limitations}
 
-Lors de l’utilisation de sous-modules git, tenez compte des points suivants :
+Lors de l’utilisation de sous-modules Git, tenez compte des points suivants :
 
 * L’URL Git doit se trouver exactement dans la syntaxe décrite ci-dessus.
 * Pour des raisons de sécurité, n’incorporez pas les informations d’identification dans ces URL.
@@ -87,8 +87,8 @@ Cependant, après avoir configuré votre fichier `pom.xml` et exécuté les comm
 
 ### Limites et recommandations {#limitations-recommendations-private-repos}
 
-Lors de l’utilisation de sous-modules Git avec des référentiels privés, tenez compte des restrictions suivantes.
+Lors de l’utilisation de sous-modules Git avec des référentiels privés, tenez compte des limites suivantes.
 
-* Les URL git des sous-modules peuvent être au format HTTPS ou SSH, mais elles doivent être liées à un référentiel Github.com . L’ajout d’un sous-module de référentiel d’Adobe à un référentiel d’agrégateur GitHub ou vice versa ne fonctionne pas.
+* Les URL Git des sous-modules peuvent être au format HTTPS ou SSH, mais elles doivent être liées à un référentiel Github.com . L’ajout d’un sous-module de référentiel d’Adobe à un référentiel d’agrégateur GitHub ou vice versa ne fonctionne pas.
 * Les sous-modules GitHub doivent être accessibles pour l’application GitHub Adobe.
-* [Les limites d’utilisation des sous-modules Git avec des référentiels gérés par Adobe](#limitations-recommendations) s’appliquent également.
+* [Les limites de l’utilisation des sous-modules Git avec des référentiels gérés par Adobe ](#limitations-recommendations) s’appliquent également.
