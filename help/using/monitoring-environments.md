@@ -1,11 +1,11 @@
 ---
-title: Surveillance des environnements
+title: Surveiller les environnements
 description: Découvrez comment surveiller vos environnements dans Cloud Manager.
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '910'
-ht-degree: 31%
+ht-degree: 44%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 31%
 
 Découvrez comment surveiller vos environnements dans Cloud Manager.
 
-## Seuils de mesure {#thresholds}
+## Seuils pour les mesures {#thresholds}
 
 La surveillance du système dans [!UICONTROL Cloud Manager] est réalisée en observant les instances dans un environnement et en suivant diverses mesures pour chaque instance. Chaque mesure a deux seuils définis : un seuil de *avertissement* et un seuil *critique*.
 
@@ -24,7 +24,7 @@ Si une mesure dépasse son seuil critique, elle est considérée comme étant da
 
 Adobe Managed Services définit les seuils, que vous pouvez afficher dans [!UICONTROL Cloud Manager]. Dans la plupart des cas, les seuils sont cohérents entre les clients, mais dans certains cas, Adobe Managed Services modifie les seuils pour répondre aux besoins spécifiques des clients. Posez toutes les questions que vous avez concernant les seuils à votre ingénieur du service client.
 
-## Surveillance du système d’accès {#accessing-system-monitoring}
+## Accéder à la surveillance du système {#accessing-system-monitoring}
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) et sélectionnez l’organisation et le programme appropriés.
 
@@ -35,7 +35,7 @@ Adobe Managed Services définit les seuils, que vous pouvez afficher dans [!UICO
 
 .
 
-## Présentation de la surveillance du système {#system-monitoring-overview}
+## Vue d’ensemble de la surveillance du système {#system-monitoring-overview}
 
 La section **Surveillance du système** de la page **Rapports** répertorie les environnements surveillés dans le programme. Il fait état de leur état de santé général dans les quatre catégories distinctes suivantes :
 
@@ -54,7 +54,7 @@ L’état de chaque catégorie est un résumé des mesures individuelles. Si une
 
 ## Détails de la surveillance du système {#system-monitoring-detail}
 
-Pour afficher les détails de mesures spécifiques, cliquez sur l’une des colonnes de catégories d’une instance spécifique ou sur le titre de la catégorie dans le volet de navigation de gauche. Chaque page de détail présente une série de graphiques pour les mesures de cette catégorie. Vous pouvez afficher les mesures de toutes les instances dans un environnement ou pour une instance spécifique. Vous pouvez basculer entre l’environnement et les instances à l’aide des listes déroulantes dans le coin supérieur droit.
+Pour consulter les détails de mesures spécifiques, cliquez sur l’une des colonnes de catégorie d’une instance spécifique ou sur le titre de la catégorie dans le volet de navigation de gauche. Chaque page de détail présente une série de graphiques pour les mesures de cette catégorie. Vous pouvez afficher les mesures de toutes les instances dans un environnement ou pour une instance spécifique. Vous pouvez basculer entre l’environnement et les instances à l’aide des listes déroulantes dans le coin supérieur droit.
 
 ![Sélectionner l’environnement](/help/assets/System_Monitoring1.png)
 
@@ -67,7 +67,7 @@ Un graphique individuel affiche l’état et un graphique des données au fil du
 Une série peut être masquée dans un graphique en cliquant dessus dans la légende.
 Par exemple, si vous cliquez sur la série de seuil d’avertissement, seul le seuil critique s’affiche.
 
-![Modifier le graphique](/help/assets/Monitoring_Graphs2.png)
+![Modification de graphique](/help/assets/Monitoring_Graphs2.png)
 
 ### Définitions des mesures {#metric-definitions}
 
@@ -96,7 +96,7 @@ Par exemple, si vous cliquez sur la série de seuil d’avertissement, seul le s
    * Il existe des mesures distinctes pour chaque agent de réplication.
 * **Dispatcher Flush** : nombre d’éléments actuellement dans la file d’attente de purge de Dispatcher
 
-## Rapports SLA {#sla-reporting}
+## Création de rapports SLA {#sla-reporting}
 
 Vous pouvez consulter les performances de votre environnement de production AEM correspondant au contrat de niveau de service (SLA) auquel vous avez souscrit.
 
@@ -112,17 +112,17 @@ La section **Analyse des événements** sous ce graphique affiche l’ensemble d
 
 ![Analyse des événements](/help/assets/sla-reporting3.png)
 
-## Mesures SLA {#sla-metrics}
+## Mesures SLA {#sla-metrics}
 
-* **Contrat d’auteur** : SLA défini dans votre contrat avec Adobe Managed Services pour le niveau auteur.
+* **Contrat de création** : il s’agit de l’accord SLA défini dans le cadre de votre contrat avec Adobe Managed Services pour le niveau création.
 * **SLA d’auteur AMS** : temps de disponibilité mesuré du niveau de création de production, tenant compte des incidents causés par les fournisseurs ou par Adobe.
-* **Author SLA** : temps de disponibilité mesuré du niveau auteur ignorant le temps d’arrêt planifié tel que les fenêtres de maintenance.
-* **Contrat utilisateur final** : SLA défini dans votre contrat avec Adobe Managed Services pour le niveau publication.
+* **SLA de création** : il s’agit de la période de disponibilité mesurée du niveau création ignorant le temps d’arrêt planifié, tel que les fenêtres de maintenance.
+* **Contrat d’utilisation finale** : il s’agit de l’accord SLA défini dans votre contrat avec Adobe Managed Services pour le niveau de publication.
 * **SLA utilisateur final AMS** : temps de disponibilité mesuré du niveau de publication de production, tenant compte des incidents causés par les fournisseurs ou par Adobe.
-* **SLA de l’utilisateur final** : temps de disponibilité mesuré du niveau publication ignorant le temps d’arrêt planifié tel que les fenêtres de maintenance.
+* **SLA d’utilisation finale** : il s’agit de la période de disponibilité mesurée du niveau de publication ignorant le temps d’arrêt planifié, tel que les fenêtres de maintenance.
 
 ## Tutoriel vidéo {#video-tutorial}
 
-Cette vidéo présente l’utilisation des graphiques générés par les rapports Cloud Manager pour une vue d’ensemble de vos environnements de programme.
+Cette vidéo présente une vue d’ensemble de l’utilisation des graphiques générés par les rapports Cloud Manager pour une vue d’ensemble de vos environnements de programme.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26315/)

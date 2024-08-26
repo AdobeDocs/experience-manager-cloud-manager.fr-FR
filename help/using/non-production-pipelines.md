@@ -1,17 +1,17 @@
 ---
-title: Configuration de pipelines hors production
+title: Configurer les pipelines hors production
 description: Découvrez comment utiliser Cloud Manager pour créer et configurer des pipelines hors production afin de déployer votre code.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '685'
-ht-degree: 55%
+ht-degree: 64%
 
 ---
 
-# Configuration de pipelines hors production {#configuring-non-production-pipelines}
+# Configurer les pipelines hors production {#configuring-non-production-pipelines}
 
-Découvrez comment utiliser Cloud Manager pour créer et configurer des pipelines hors production afin de déployer votre code. Si vous souhaitez d’abord une présentation plus conceptuelle du fonctionnement des pipelines dans Cloud Manager, reportez-vous à la section [Pipelines CI/CD](/help/overview/ci-cd-pipelines.md).
+Découvrez comment utiliser Cloud Manager pour créer et configurer des pipelines hors production afin de déployer votre code. Si vous souhaitez d’abord obtenir une vue d’ensemble plus conceptuelle du fonctionnement des pipelines dans Cloud Manager, reportez-vous au document [Pipelines CI/CD](/help/overview/ci-cd-pipelines.md).
 
 ## Présentation {#overview}
 
@@ -20,7 +20,7 @@ En utilisant le volet **Pipelines** dans [!UICONTROL Cloud Manager], le **Respo
 * **Pipelines de production** - un pipeline de production est un pipeline spécialement conçu, composé d’une série d’étapes coordonnées permettant de mener le code source jusqu’à la production.
 * **Pipelines hors production** - un pipeline hors production sert principalement à exécuter des analyses de qualité du code ou à déployer le code source dans un environnement de développement.
 
-Ce document se concentre sur les pipelines hors production. Pour plus d’informations sur la configuration des pipelines de production, voir le document [Configuration des pipelines de production](/help/using/production-pipelines.md).
+Ce document se concentre sur les pipelines hors production. Pour plus de détails sur la configuration des pipelines de production, voir le document [Configurer des pipelines de production](/help/using/production-pipelines.md).
 
 Il existe deux types de pipelines hors production :
 
@@ -31,13 +31,13 @@ Il existe deux types de pipelines hors production :
 >
 >Un pipeline ne peut pas être configuré tant que son référentiel Git associé ne comporte pas au moins une branche et que la [configuration du programme](/help/getting-started/program-setup.md) n’est pas terminée. Voir [Référentiels Cloud Manager](/help/managing-code/managing-repositories.md) pour savoir comment ajouter et gérer des référentiels dans Cloud Manager.
 
-## Ajout d’un pipeline hors production {#add-non-production-pipeline}
+## Ajouter un pipeline hors production {#add-non-production-pipeline}
 
 Une fois que vous avez configuré votre programme et que vous disposez d’au moins un environnement utilisant l’interface utilisateur de Cloud Manager, vous êtes prêt à ajouter un pipeline hors production en suivant ces étapes.
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) et sélectionnez l’organisation et le programme appropriés.
 
-1. Accédez à la vignette Pipelines à partir de l’écran d’accueil de Cloud Manager. Cliquez sur **Ajouter**, puis sélectionnez **Ajouter un pipeline hors production**.
+1. Accédez à la vignette Pipelines à partir de l’écran d’accueil de Cloud Manager. Cliquez sur **Ajouter** et sélectionnez **Ajouter un pipeline hors production**.
 
    ![Ajouter un pipeline hors production](/help/assets/configure-pipelines/nonprod-pipeline-add1.png)
 
@@ -81,10 +81,10 @@ Une fois que vous avez configuré votre programme et que vous disposez d’au mo
 
 ## Étapes suivantes {#the-next-steps}
 
-Après avoir configuré le pipeline, vous pouvez déployer votre code. Pour plus d’informations, voir [Déploiement du code](/help/using/code-deployment.md) .
+Après avoir configuré le pipeline, vous pouvez déployer votre code. Voir la section [Déploiement du code](/help/using/code-deployment.md) pour plus d’informations.
 
 ## Tutoriel vidéo {#video-tutorial}
 
-Cette vidéo présente un aperçu du processus de création de pipeline, détaillé dans ce document.
+Cette vidéo présente une vue d’ensemble du processus de création de pipeline, détaillé dans ce document.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26316/)

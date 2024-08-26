@@ -5,12 +5,12 @@ exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '758'
-ht-degree: 47%
+ht-degree: 65%
 
 ---
 
 
-# Ajout d’utilisateurs et de rôles {#add-users-and-roles}
+# Ajouter des utilisateurs et utilisatrices et des rôles {#add-users-and-roles}
 
 De nombreuses fonctionnalités de [!UICONTROL Cloud Manager] nécessitent des autorisations spécifiques. Par exemple, seuls certains utilisateurs sont autorisés à définir les indicateurs de performance clés (ICP) d’un programme. Ces autorisations sont regroupées de manière logique en rôles.
 
@@ -57,7 +57,7 @@ Un administrateur doit créer de nouveaux profils de produit sous le contexte du
 
 Vous pouvez créer ou ajouter des utilisateurs ou des groupes à ces profils de produit avec l’Admin Console.
 
-1. Connectez-vous à l’Admin Console à l’adresse [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
+1. Connectez-vous à Admin Console à l’adresse [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
 1. Cliquez sur l’onglet **Overview** , puis sur le produit à modifier sur la carte **Products and Services** . S’il n’y est pas répertorié, cherchez le produit dans l’onglet **Produits** et cliquez dessus.
 
@@ -73,7 +73,7 @@ Vous pouvez créer ou ajouter des utilisateurs ou des groupes à ces profils de 
 
 1. Fournissez les informations requises afin de configurer un nouveau rôle pour [!UICONTROL Cloud Manager].
 
-   * **Nom du profil** - Le **Nom du profil** peut être de n’importe quel type, mais pour éviter toute confusion, il est recommandé d’utiliser les valeurs de la colonne **Nom de profil recommandé**.
+   * **Nom de profil** : vous pouvez saisir le **nom de profil** que vous souhaitez. Toutefois, afin d’éviter toute confusion, il est recommandé d’utiliser les valeurs de la colonne **Nom de profil recommandé**.
    * **Nom d’affichage** - Le **nom d’affichage** doit correspondre à la valeur technique définie par [!UICONTROL Cloud Manager] (voir le tableau ci-dessous).
    * **Groupe d’autorisations** - Vous pouvez choisir un groupe d’autorisations pour le profil (pas toujours disponible).
 
@@ -89,30 +89,30 @@ Vous pouvez créer ou ajouter des utilisateurs ou des groupes à ces profils de 
 
 1. Cliquez sur **Terminé** pour enregistrer le nouveau profil.
 
-## Affectation de profils à des utilisateurs ou à des groupes d’utilisateurs {#assign-profiles}
+## Affecter des profils à des utilisateurs et utilisatrices ou à des groupes d’utilisateurs et utilisatrices {#assign-profiles}
 
-Une fois que vous avez créé des profils de produit, vous pouvez leur affecter des utilisateurs ou des groupes d’utilisateurs.
+Une fois que vous avez créé des profils de produit, vous pouvez leur affecter des utilisateurs et utilisatrices ou des groupes d’utilisateurs et utilisatrices.
 
-1. Connectez-vous à l’Admin Console à l’adresse [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
+1. Connectez-vous à Admin Console à l’adresse [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
 1. Dans Admin Console, choisissez l’onglet **Utilisateurs**.
 
    ![Onglet Utilisateurs](/help/assets/admin-console-users.png)
 
-1. Cliquez sur **Users** dans le panneau de navigation de gauche, puis cliquez sur un utilisateur pour le modifier.
+1. Cliquez sur **Utilisateurs et utilisatrices** dans le panneau de navigation de gauche, puis cliquez sur le nom d’une personne pour effectuer des modifications.
 
-1. Cliquez sur le bouton représentant des points de suspension dans la section **Products** et sélectionnez **Edit**.
+1. Cliquez sur le bouton représentant des points de suspension dans la section **Produits** et sélectionnez **Modifier**.
 
-   ![Modifier l’utilisateur](/help/assets/admin-console-edit-user.png)
+   ![Modification de l’utilisateur ou de l’utilisatrice](/help/assets/admin-console-edit-user.png)
 
-1. Dans la boîte de dialogue **Modifier les produits et groupes d’utilisateurs**, cliquez sur le bouton plus et sélectionnez les profils à affecter à l’utilisateur.
+1. Dans la boîte de dialogue **Modifier des produits et des groupes d’utilisateurs et utilisatrices**, cliquez sur le bouton représentant le signe plus et sélectionnez les profils à affecter à la personne.
 
-   * Si l’utilisateur est déjà affecté aux rôles, le bouton plus est un bouton de modification (un crayon), mais fonctionne de la même manière.
+   * Si la personne est déjà affectée aux rôles, le bouton représentant le signe plus sera un bouton de modification (un crayon), mais fonctionnera de la même manière.
 
    ![Modifier des produits et des groupes d’utilisateurs](/help/assets/admin-console-edit-products-and-user-groups.png)
 
 1. Cliquez sur **Enregistrer** pour enregistrer les profils de l’utilisateur.
 
-Répétez les mêmes étapes pour affecter des profils à des groupes d’utilisateurs, mais sélectionnez **Groupes d’utilisateurs** dans le panneau de navigation de gauche dans l’onglet **Utilisateurs**. Cliquez sur un groupe d’utilisateurs, sélectionnez l’onglet **Profils de produit attribués** et cliquez sur **Attribuer un profil de produit** pour affecter des profils.
+Répétez les mêmes étapes pour affecter des profils à des groupes d’utilisateurs, mais sélectionnez **Groupes d’utilisateurs** dans le panneau de navigation de gauche dans l’onglet **Utilisateurs**. Cliquez sur un groupe d’utilisateurs et utilisatrices et sélectionnez l’onglet **Profils de produit affectés**, puis cliquez sur **Affecter un profil de produit** pour affecter des profils.
 
-![Affecter des profils à un groupe](/help/assets/admin-console-edit-user-groups.png)
+![Affectation de profils à un groupe](/help/assets/admin-console-edit-user-groups.png)

@@ -5,7 +5,7 @@ exl-id: e517f8a4-23f0-4486-8278-91396dba76ec
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 18%
+ht-degree: 21%
 
 ---
 
@@ -30,7 +30,7 @@ Cette série vidéo suppose une connaissance de base de la gestion Git et du con
 
 Les étapes et les conventions de dénomination décrites dans cette série vidéo représentent quelques bonnes pratiques pour travailler avec un référentiel Git géré par le client et Cloud Manager. On s’attend à ce que les conventions et les workflows décrits soient adaptés aux équipes de développement individuelles.
 
-Pour une présentation complète de Cloud Manager, voir [Introduction à Cloud Manager](/help/introduction.md).
+Pour une vue d’ensemble complète de Cloud Manager, voir la section [Présentation de Cloud Manager](/help/introduction.md).
 
 ## Synchronisation initiale {#initial-sync}
 

@@ -5,14 +5,14 @@ exl-id: 8134e956-bfcf-41b8-a408-fa4375058c6a
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '208'
-ht-degree: 38%
+ht-degree: 49%
 
 ---
 
 
 # Assistant de mise à jour du produit {#product-update-wizard}
 
-L’assistant de mise à jour du produit est une expérience de mise à niveau guidée et détaillée vers la dernière version d’Adobe Experience Manager 6.5 à l’aide de Cloud Manager. Il simplifie le processus de bout en bout et garantit le respect des bonnes pratiques d’AEM à l’aide de la structure CI/CD de Cloud Manager et des tests automatisés intégrés.
+L’assistant de mise à jour du produit est une expérience de mise à niveau guidée et détaillée vers la dernière version d’Adobe Experience Manager 6.5 à l’aide de Cloud Manager. Il simplifie le processus de bout en bout et assure le respect des bonnes pratiques AEM à l’aide du framework CI/CD de Cloud Manager et des tests automatisés intégrés.
 
 L’assistant comprend cinq phases qui vous guident lors d’une mise à jour AEM produit :
 

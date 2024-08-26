@@ -5,7 +5,7 @@ exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
 source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
 workflow-type: tm+mt
 source-wordcount: '1256'
-ht-degree: 49%
+ht-degree: 56%
 
 ---
 
@@ -29,7 +29,7 @@ Commencez ici pour découvrir Cloud Manager pour AMS (Adobe Managed Services) et
 >
 >Cette documentation décrit spécifiquement les fonctionnalités et les caractéristiques de Cloud Manager pour Adobe Managed Services (AMS).
 >
->La documentation équivalente pour AEM as a Cloud Service se trouve dans la [documentation AEM as a Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/home).
+>Retrouvez la documentation équivalente pour les clientes et clients AEM as a Cloud Service dans la [Documentation d’AEM as a Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/home).
 
 Avec Cloud Manager, votre équipe de développement bénéficie des fonctionnalités suivantes :
 
@@ -75,7 +75,7 @@ Pour en savoir plus sur le déploiement des contrôles de code et de qualité, v
 
 ## Fonctionnalités facultatives de Cloud Manager {#optional-features-in-cloud-manager}
 
-Cloud Manager propose des fonctionnalités avancées supplémentaires, qui peuvent être utiles à votre projet en fonction de la configuration et des besoins de votre environnement. Si ces fonctionnalités vous intéressent, contactez votre ingénieur du service client ou votre représentant d’Adobe pour en discuter plus.
+Cloud Manager propose des fonctionnalités avancées supplémentaires, qui peuvent être utiles à votre projet en fonction de la configuration et des besoins de votre environnement. Si ces fonctionnalités vous intéressent, contactez votre équipe d’ingénierie du succès client (CSE) ou votre représentant ou représentante Adobe pour en discuter.
 
 ### Mise à l’échelle automatique {#autoscaling}
 
@@ -87,7 +87,7 @@ La fonction de mise à l’échelle automatique s’applique au niveau Dispatche
 
 >[!NOTE]
 >
->Si vous souhaitez déterminer si la mise à l’échelle automatique est appropriée pour votre application, contactez l’ingénieur du service client ou votre représentant Adobe.
+>Si vous souhaitez déterminer si la mise à l’échelle automatique convient à votre application, contactez votre CSE ou votre représentant ou représentante Adobe.
 
 ### Déploiements bleu/vert {#blue-green}
 
@@ -121,7 +121,7 @@ Lorsque le déploiement bleu/vert est activé, le flux de déploiement diffère 
 
 Tous les utilisateurs AMS qui utilisent Cloud Manager pour les déploiements en production peuvent utiliser le déploiement bleu/vert. Cependant, l’utilisation du déploiement bleu/vert nécessite une validation supplémentaire de vos environnements et une configuration par un ingénieur du service client Adobe.
 
-Si le déploiement bleu/vert vous intéresse, tenez compte des exigences et limites suivantes et contactez votre ingénieur du service client.
+Si le déploiement bleu/vert vous intéresse, tenez compte des exigences et limites suivantes et contactez votre CSE.
 
 #### Conditions requises et restrictions {#limitations}
 
@@ -129,5 +129,5 @@ Si le déploiement bleu/vert vous intéresse, tenez compte des exigences et limi
 * Les paires Aperçu de Dispatcher/publication ne font pas partie des déploiements bleu/vert.
 * Chaque paire Dispatcher/publication est identique à toutes les autres paires Dispatcher/éditeur.
 * Le bleu/vert n’est disponible que dans l’environnement de production.
-* Le bleu/vert est disponible dans AWS et Azure.
+* Le déploiement bleu/vert est disponible dans AWS, ainsi que dans Azure.
 * Le bleu/vert n’est pas disponible pour les clients Assets uniquement.

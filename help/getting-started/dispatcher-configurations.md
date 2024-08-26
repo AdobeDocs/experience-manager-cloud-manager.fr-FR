@@ -5,12 +5,12 @@ exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '575'
-ht-degree: 48%
+ht-degree: 52%
 
 ---
 
 
-# Configurations Dispatcher {#manage-your-dispatcher-configurations}
+# Configurations de Dispatcher {#manage-your-dispatcher-configurations}
 
 Découvrez comment déployer des fichiers de configuration Dispatcher à l’aide de Cloud Manager
 
@@ -24,7 +24,7 @@ Les projets générés par Cloud Manager à l’aide de l’[assistant de créa
 
 Lorsque vous effectuez un déploiement sur une instance Dispatcher, les répertoires de l’instance sont remplacés par ceux du référentiel Git. Comme les fichiers de configuration du serveur web et Dispatcher requièrent souvent des détails spécifiques à l’environnement, vous devez collaborer avec les ingénieurs du service client pour définir les variables d’environnement appropriées dans `/etc/sysconfig/httpd` avant d’utiliser cette fonctionnalité correctement.
 
-## Configuration Dispatcher pour les clients de services gérés existants {#steps-for-configuring-dispatcher}
+## Configuration de Dispatcher pour les clientes et clients Managed Services existants {#steps-for-configuring-dispatcher}
 
 Suivez les étapes ci-dessous pour terminer la configuration initiale de Dispatcher.
 
@@ -90,7 +90,7 @@ Le fichier et la structure des répertoires spécifiques peuvent varier en fonct
 
    * Comme à l’étape 1, l’artifactId et le nom peuvent avoir d’autres valeurs si vous le souhaitez. `dispatcher` est utilisé ici à titre d’exemple.
 
-1. Le module externe d’assemblage Maven requiert un `descriptor` pour définir la manière dont le fichier .zip est créé. Pour créer ce descripteur, créez un fichier dans le sous-répertoire `dispatcher` nommé `assembly.xml` avec ce contenu. Ce fichier est référencé à la ligne 26 du fichier `pom.xml` ci-dessus.
+1. Le plug-in Maven Assembly requiert un `descriptor` pour définir la façon dont le fichier ZIP est créé. Pour créer ce descripteur, créez un fichier dans le sous-répertoire `dispatcher` nommé `assembly.xml` avec ce contenu. Ce fichier est référencé à la ligne 26 du fichier `pom.xml` ci-dessus.
 
    ```xml
    <assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0"

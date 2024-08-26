@@ -5,14 +5,14 @@ exl-id: 7d118225-5826-434e-8869-01ee186e0754
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '3482'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
 # Règles de qualité du code personnalisé {#custom-code-quality-rules}
 
-Découvrez les détails des règles de qualité du code personnalisé exécutées par Cloud Manager dans le cadre du [test de qualité du code](/help/using/code-quality-testing.md), en fonction des bonnes pratiques de l’ingénierie AEM.
+Découvrez en détail les règles de qualité du code personnalisé exécutées par Cloud Manager dans le cadre des [tests de qualité de code](/help/using/code-quality-testing.md), basées sur les bonnes pratiques en matière d’ingénierie AEM.
 
 >[!NOTE]
 >
@@ -500,7 +500,7 @@ public void doThis(Resource resource) {
 
 N’utilisez pas le planificateur Sling pour les tâches qui nécessitent une exécution garantie. Les tâches planifiées Sling garantissent l’exécution et conviennent mieux aux environnements organisés avec ou sans grappes.
 
-Pour en savoir plus sur la gestion des tâches Sling dans les environnements organisés en grappes, consultez la [documentation sur le traitement et la gestion des tâches Apache Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) .
+Voir la [documentation sur la gestion des traitements et des événements Apache Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) pour en savoir plus sur la façon dont les traitements Sling sont gérés dans des environnements en cluster.
 
 ### Les API AEM obsolètes ne doivent pas être utilisées. {#sonarqube-aem-deprecated}
 
@@ -655,7 +655,7 @@ La documentation des outils de modernisation d’AEM contient des informations e
 * **Gravité** : mineure
 * **Depuis** : version 2020.5.0
 
-La prise en charge de la réplication inverse n’est pas disponible dans les déploiements de Cloud Service, comme décrit dans [Notes de mise à jour : suppression des agents de réplication](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes#replication-agents).
+La prise en charge de la réplication inverse n’est pas disponible dans les déploiements Cloud Service, comme décrit dans la section [Notes de mise à jour : suppression des agents de réplication](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes#replication-agents).
 
 Les client(e)s qui utilisent la réplication inverse doivent contacter Adobe pour obtenir d’autres solutions.
 
@@ -666,7 +666,7 @@ Les client(e)s qui utilisent la réplication inverse doivent contacter Adobe pou
 * **Gravité** : mineure
 * **Depuis** : version 2021.2.0
 
-Les bibliothèques clientes AEM peuvent contenir des ressources statiques telles que des images et des polices. Comme décrit dans la [documentation sur l’utilisation des bibliothèques côté client](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/developing/introduction/clientlibs#using-preprocessors), lorsque vous utilisez des bibliothèques client proxy, ces ressources statiques doivent être contenues dans un dossier enfant nommé `resources` pour être référencées efficacement sur les instances de publication.
+Les bibliothèques clientes AEM peuvent contenir des ressources statiques telles que des images et des polices. Comme décrit dans la [documentation relative à l’utilisation des bibliothèques côté client](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/developing/introduction/clientlibs#using-preprocessors), lorsque vous utilisez des bibliothèques clientes par proxy, ces ressources statiques doivent être contenues dans un dossier enfant nommé `resources` afin d’être référencées efficacement sur les instances de publication.
 
 #### Code non conforme {#non-compliant-proxy-enabled}
 
@@ -708,7 +708,7 @@ L’outil de migration dans le [référentiel GitHub d’AEM Assets as a Cloud 
 * **Gravité** : mineure
 * **Depuis** : version 2021.2.0
 
-Bien que l’utilisation des modèles statiques ait été courante dans les projets AEM, les modèles modifiables sont vivement recommandés, car ils offrent la plus grande flexibilité et prennent en charge des fonctionnalités supplémentaires qui ne sont pas présentes dans les modèles statiques. Vous trouverez plus d’informations à ce sujet dans la [documentation sur les modèles de page - modifiable](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/developing/platform/templates/page-templates-editable).
+Bien que l’utilisation des modèles statiques ait été courante dans les projets AEM, les modèles modifiables sont vivement recommandés, car ils offrent la plus grande flexibilité et prennent en charge des fonctionnalités supplémentaires qui ne sont pas présentes dans les modèles statiques. Vous trouverez plus d’informations à ce sujet dans la [documentation relative aux modèles de page modifiables](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/developing/platform/templates/page-templates-editable).
 
 La migration de modèles statiques vers des modèles modifiables peut être largement automatisée à l’aide des [outils de modernisation d’AEM](https://opensource.adobe.com/aem-modernize-tools/).
 
@@ -719,7 +719,7 @@ La migration de modèles statiques vers des modèles modifiables peut être larg
 * **Gravité** : mineure
 * **Depuis** : version 2021.2.0
 
-Les composants Foundation hérités (c’est-à-dire les composants situés sous `/libs/foundation`) ont été abandonnés pour plusieurs versions AEM au profit des [composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/introduction). L’utilisation des composants de base hérités comme base des composants personnalisés, qu’ils soient par recouvrement ou par héritage, est déconseillée et doit être convertie dans le composant principal correspondant.
+Les composants de base hérités (c’est-à-dire les composants situés dans `/libs/foundation`) ont été abandonnés depuis plusieurs versions d’AEM au profit des [composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/introduction). L’utilisation des composants de base hérités comme fondations pour les composants personnalisés, que ce soit par recouvrement ou par héritage, est déconseillée et ces composants doivent être convertis en composants principaux correspondants.
 
 Les [Outils de modernisation d’AEM](https://opensource.adobe.com/aem-modernize-tools/) peuvent faciliter la conversion.
 
@@ -730,7 +730,7 @@ Les [Outils de modernisation d’AEM](https://opensource.adobe.com/aem-modernize
 * **Gravité** : mineure
 * **Depuis** : version 2021.2.0
 
-AEM Cloud Service exige que les définitions d’index de recherche personnalisée (c’est-à-dire les nœuds de type `oak:QueryIndexDefinition`) soient des nœuds enfants directs de `/oak:index`. Les index qui se trouvent à des emplacements différents doivent être déplacés pour être compatibles avec AEM Cloud Service. Vous trouverez plus d’informations sur les index de recherche dans la [documentation sur la recherche et l’indexation de contenu](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/indexing).
+AEM Cloud Service exige que les définitions d’index de recherche personnalisée (c’est-à-dire les nœuds de type `oak:QueryIndexDefinition`) soient des nœuds enfants directs de `/oak:index`. Les index qui se trouvent à des emplacements différents doivent être déplacés pour être compatibles avec AEM Cloud Service. Vous trouverez plus d’informations sur les index de recherche dans la [documentation relative à la recherche et à l’indexation de contenu](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/indexing).
 
 ### Les nœuds de définition d’index de recherche personnalisée doivent avoir une compatVersion de 2. {#oakpal-custom-search-compatVersion}
 
@@ -739,7 +739,7 @@ AEM Cloud Service exige que les définitions d’index de recherche personnalis�
 * **Gravité** : mineure
 * **Depuis** : version 2021.2.0
 
-AEM Cloud Service exige que la propriété `compatVersion` soit définie sur `2` pour les définitions d’index de recherche personnalisée (c’est-à-dire pour les nœuds de type `oak:QueryIndexDefinition`). AEM Cloud Service ne prend en charge aucune autre valeur. Vous trouverez plus d’informations sur les index de recherche dans la [documentation sur la recherche et l’indexation de contenu](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/indexing).
+AEM Cloud Service exige que la propriété `compatVersion` soit définie sur `2` pour les définitions d’index de recherche personnalisée (c’est-à-dire pour les nœuds de type `oak:QueryIndexDefinition`). AEM Cloud Service ne prend en charge aucune autre valeur. Vous trouverez plus d’informations sur les index de recherche dans la [documentation relative à la recherche et à l’indexation de contenu](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/indexing).
 
 ### Les nœuds descendants des nœuds de définition d’index de recherche personnalisée doivent être de type `nt:unstructured`. {#oakpal-descendent-nodes}
 
@@ -757,7 +757,7 @@ Des problèmes difficiles à résoudre peuvent survenir lorsqu’un nœud de dé
 * **Gravité** : mineure
 * **Depuis** : version 2021.2.0
 
-Un nœud de définition d’index de recherche personnalisée correctement défini doit contenir un nœud enfant appelé `indexRules`, qui doit avoir au moins un enfant. Vous trouverez plus d’informations dans la [documentation Oak](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+Un nœud de définition d’index de recherche personnalisée correctement défini doit contenir un nœud enfant appelé `indexRules`, qui doit avoir au moins un enfant. Vous trouverez plus d’informations à ce sujet dans la [documentation d’Oak](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
 ### Les nœuds de définition d’index de recherche personnalisée doivent respecter les conventions de nommage. {#oakpal-custom-search-definitions}
 

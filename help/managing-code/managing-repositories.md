@@ -5,7 +5,7 @@ exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '641'
-ht-degree: 50%
+ht-degree: 68%
 
 ---
 
@@ -57,7 +57,7 @@ Cliquez sur le bouton **Ajouter un référentiel** dans la fenêtre **Référent
 
 ![Assistant Ajouter un référentiel](assets/add-repository-wizard.png)
 
-Cloud Manager prend en charge à la fois les référentiels gérés par Adobe (**Adobe Repository**) et vos propres référentiels auto-gérés (**Private Repository**). Les champs requis varient en fonction du type de référentiel que vous choisissez d’ajouter.
+Cloud Manager prend en charge les référentiels gérés par Adobe (**Référentiel Adobe**) ainsi que vos propres référentiels auto-gérés (**Référentiel privé**). Les champs requis varient en fonction du type de référentiel que vous choisissez d’ajouter.
 
 Voir [Ajout de référentiels d’Adobe dans Cloud Manager](adobe-repositories.md).
 Voir [Ajout de référentiels privés dans Cloud Manager](private-repositories.md).
@@ -70,11 +70,11 @@ Voir [Ajout de référentiels privés dans Cloud Manager](private-repositories.m
 
 ## Accès aux informations du référentiel {#repo-info}
 
-Lors de l’affichage de vos référentiels dans la fenêtre **Référentiels**, vous pouvez afficher les détails sur l’accès par programmation aux référentiels gérés par Adobe en cliquant sur le bouton **Accéder aux informations sur les référents** de la barre d’outils.
+Lorsque vous consultez vos référentiels dans la fenêtre **Référentiels**, vous pouvez consulter des informations sur la façon d’accéder aux référentiels gérés par Adobe par programmation, en cliquant sur le bouton **Accéder aux informations sur le référentiel** dans la barre d’outils.
 
 ![Informations sur le référentiel](assets/access-repo-info.png)
 
-La fenêtre **Informations sur le référentiel** s’ouvre et affiche les détails. Pour plus d’informations sur l’accès aux informations du référentiel, voir [Accès aux informations du référentiel](accessing-repositories.md).
+La fenêtre **Informations sur le référentiel** s’ouvre et affiche les détails. Pour plus d’informations sur l’accès aux informations du référentiel, voir la section [Accéder aux informations du référentiel](accessing-repositories.md).
 
 ## Vérifier les branches {#check-branches}
 
@@ -92,7 +92,7 @@ L’action **Copier l’URL du référentiel** copie l’URL du référentiel s�
 
 ## Affichage et mise à jour {#view-update}
 
-L’action **Afficher et mettre à jour** ouvre la boîte de dialogue **Mettre à jour le référentiel**. Grâce à elle, vous pouvez afficher les **Nom** et **Aperçu de l’URL du référentiel** et mettre à jour la **Description** du référentiel.
+L’action **Afficher et mettre à jour** ouvre la boîte de dialogue **Mettre à jour le référentiel**. À l’aide de celle-ci, vous pouvez afficher le **Nom** et l’**Aperçu de l’URL du référentiel** et mettre à jour la **Description** du référentiel.
 
 ![Afficher et mettre à jour les informations du référentiel](assets/update-repository.png)
 
@@ -106,4 +106,4 @@ Lorsqu’un référentiel est supprimé dans Cloud Manager, il est marqué comme
 
 Si vous essayez de créer un référentiel après avoir supprimé un référentiel portant le même nom, vous recevez le message d’erreur `An error has occurred while trying to create repository. Contact your CSE or Adobe Support.`
 
-Si vous recevez ce message d’erreur, contactez le support Adobe afin qu’il vous aide à renommer le référentiel supprimé ou à choisir un autre nom pour votre nouveau référentiel.
+Si vous recevez ce message d’erreur, contactez l’assistance Adobe pour obtenir de l’aide afin de renommer le référentiel supprimé ou de choisir un autre nom pour votre nouveau référentiel.

@@ -5,7 +5,7 @@ exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '281'
-ht-degree: 78%
+ht-degree: 84%
 
 ---
 
@@ -37,7 +37,7 @@ Le statut est l’état d’alimentation cumulée sur les nœuds de l’environn
 
 ## Gestion des environnements {#managing-environments-with-cloud-manager}
 
-Sur la mosaïque **Environnements**, cliquez sur la ligne de n’importe quel environnement pour afficher l’écran **Environnements** .
+Dans le volet **Environnements**, cliquez sur la ligne d’un environnement pour afficher l’écran **Environnements**.
 
 L’écran **Environnements** affiche chaque environnement d’évaluation et de production dans votre programme. Le nom de l’environnement est visible au-dessus de chaque carte. La carte comprend un tableau des nœuds de l’environnement, ainsi que la taille du processeur, du stockage, de la région et de l’état.
 

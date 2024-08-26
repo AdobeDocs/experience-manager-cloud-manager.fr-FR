@@ -5,7 +5,7 @@ exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '561'
-ht-degree: 67%
+ht-degree: 81%
 
 ---
 
@@ -38,15 +38,15 @@ L’onglet **Annonces** comprend les annonces de produits Adobe. Les annonces co
 
 Cliquez sur une notification ou une annonce pour en afficher les détails. Les notifications liées à des activités telles que les déploiements de pipeline vous permettent d’accéder aux informations de cette activité, telles que la fenêtre d’exécution du pipeline.
 
-Cliquez sur l’option **Afficher tout** au bas du panneau pour afficher toutes les annonces dans votre boîte de réception.
+Cliquez sur l’option **Tout afficher** au bas du panneau pour afficher toutes les annonces dans votre boîte de réception.
 
-Cliquez sur l’option **Tout marquer comme lu** au bas du panneau pour marquer toutes les notifications non lues comme lues et effacer le badge de l’icône représentant une cloche.
+Cliquez sur l’option **Tout marquer comme lu** au bas du panneau pour marquer toutes les notifications non lues comme lues et effacer le badge de l’icône en forme de cloche.
 
 ## Configuration des notifications {#configuration}
 
 Vous pouvez personnaliser le mode de réception des notifications et les notifications que vous recevez.
 
-Cliquez sur l’icône d’engrenage en haut de la barre latérale des notifications.
+Cliquez sur l’icône en forme d’engrenage en bas de la barre latérale de notifications.
 
 ![Icône Paramètres de notification](/help/assets/notifications-configuration.png)
 
@@ -58,7 +58,7 @@ Les abonnements définissent les produits pour lesquels vous recevez des notific
 
 ![Abonnements aux notifications](/help/assets/notifications-subscriptions.png)
 
-Par défaut, vous recevez toutes les notifications pour tous les produits. Cliquez sur **Personnaliser** en regard d’un produit pour définir les types de notifications que vous recevez pour ce produit.
+Par défaut, vous recevez toutes les notifications pour tous les produits. Cliquez sur **Personnaliser** à côté d’un produit pour définir les types de notifications que vous recevez pour ce produit.
 
 ![Personnalisation de l’abonnement aux notifications](/help/assets/notifications-subscriptions-customize.png)
 

@@ -5,7 +5,7 @@ exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '564'
-ht-degree: 49%
+ht-degree: 55%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 49%
 
 Après l’intégration, le propriétaire de l’entreprise configure le programme en ajoutant une description et en définissant des indicateurs de performances clés (IPC). Ces indicateurs de performance clés sont ensuite utilisés pour les tests de performance.
 
-## Configuration du programme avec [!UICONTROL Cloud Manager] {#program-setup-cloud-manager}
+## Configuration du programme avec [!UICONTROL Cloud Manager] {#program-setup-cloud-manager}
 
 Pour configurer le programme et définir les KPI, procédez comme suit :
 
@@ -58,7 +58,7 @@ Vous pouvez modifier les programmes une fois qu’ils ont été configurés. Pou
 
 1. Accédez au programme sur l’écran d’accueil de Cloud Manager.
 
-1. Cliquez sur **Modifier le programme** pour mettre à jour ou modifier votre programme dans la page **Aperçu**.
+1. Cliquez sur **Modifier le programme** pour mettre à jour ou modifier votre programme à partir de la page **Vue d’ensemble**.
 
    ![Option Modifier le programme](/help/assets/set-up-program/edit-program1.png)
 
@@ -90,6 +90,6 @@ Les tests de performances d’Assets impliquent le chargement répété de resso
 
 De plus, de nombreux utilisateurs disposeront d’un réseau de diffusion de contenu (CDN), tel qu’Akamai ou CloudFront devant leur environnement de production. Étant donné que [!UICONTROL Cloud Manager] effectue directement des tests par rapport à l’environnement d’évaluation, l’indicateur de performance clé doit refléter uniquement le trafic prévu pour transiter par le réseau de diffusion de contenu. C&#39;est-à-dire que le cache manque. En règle générale, cette expérience est un sous-ensemble relativement petit du trafic de production total.
 
-## Présentation vidéo {#video}
+## Vue d’ensemble vidéo {#video}
 
 >[!VIDEO](https://video.tv.adobe.com/v/26313/)

@@ -5,7 +5,7 @@ exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '748'
-ht-degree: 52%
+ht-degree: 56%
 
 ---
 
@@ -29,7 +29,7 @@ Votre build AEM Cloud Manager échoue en cas de tentative de basculement de Jav
 [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]
 ```
 
-Pour obtenir des instructions sur la façon de supprimer ce module externe, [voir ici](https://cqdump.joerghoh.de/2019/01/03/from-scr-annotations-to-osgi-annotations/).
+Pour obtenir des informations sur la suppression de ce plug-in, [rendez-vous ici](https://cqdump.joerghoh.de/2019/01/03/from-scr-annotations-to-osgi-annotations/).
 
 ## Mon build échoue avec une erreur mentionnant RequireJavaVersion après la bascule de Java 8 à Java 11. Que puis-je faire ? {#requirejavaversion}
 
@@ -70,7 +70,7 @@ Vous pouvez également définir la version sur `-SNAPSHOT` pour les builds ou d�
 
 De plus amples détails sur la gestion des versions sont [documentés ici](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling).
 
-## Comment le contrôle de version des packages et des offres groupées fonctionne-t-il pour les déploiements d’évaluation et de production ? {#staging-production}
+## Comment le contrôle de version des packages et des lots fonctionne-t-il pour les déploiements d’évaluation et de production ? {#staging-production}
 
 Dans les déploiements d’évaluation et de production, une version automatique est générée [comme documenté ici](/help/managing-code/maven-project-version.md).
 

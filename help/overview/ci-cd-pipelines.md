@@ -5,7 +5,7 @@ exl-id: 7130e5b7-6986-48c8-900c-90f3e4187f91
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '562'
-ht-degree: 56%
+ht-degree: 59%
 
 ---
 
@@ -41,7 +41,7 @@ Le diagramme suivant illustre ce qui se produit lorsqu’une version est déclen
 
 ### Configuration d’un pipeline CI/CD {#how-to-setup-a-ci-cd-pipeline}
 
-Pour en savoir plus sur la configuration du pipeline, consultez les documents [Configuration des pipelines de production](/help/using/production-pipelines.md) et [Configuration des pipelines hors production](/help/using/non-production-pipelines.md).
+Pour en savoir plus sur la configuration du pipeline, voir les documents [Configurer des pipelines de production](/help/using/production-pipelines.md) et [Configurer des pipelines hors production](/help/using/non-production-pipelines.md).
 
 ## Points de contrôle de qualité {#quality-gates}
 

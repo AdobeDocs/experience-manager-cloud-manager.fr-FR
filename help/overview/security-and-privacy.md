@@ -5,7 +5,7 @@ exl-id: 67df1987-8db7-40bd-9717-1bf194e957f7
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '202'
-ht-degree: 60%
+ht-degree: 70%
 
 ---
 
@@ -18,7 +18,7 @@ Découvrez la sécurité et la confidentialité de vos ressources de code et d�
 
 [!UICONTROL Cloud Manager] dispose de rôles préconfigurés avec les autorisations appropriées.
 
-Pour en savoir plus sur les rôles que vous pouvez affecter dans les autorisations de rôle d’Admin Console et d’utilisateur, voir [Autorisations basées sur les rôles](/help/requirements/role-based-permissions.md).
+Pour en savoir plus sur les rôles que vous pouvez affecter dans Admin Console et sur les autorisations des rôles d’utilisation, voir la section [Autorisations basées sur les rôles](/help/requirements/role-based-permissions.md).
 
 ## isolation des ressources {#resource-isolation}
 

@@ -5,7 +5,7 @@ exl-id: 9d7c6f4c-9379-471c-8dad-772a7099da54
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '321'
-ht-degree: 28%
+ht-degree: 30%
 
 ---
 
@@ -18,7 +18,7 @@ Pour créer un projet AEM à l’aide de l’assistant, suivez les étapes suiva
 
 1. Connectez-vous à Cloud Manager à l’adresse [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com) et sélectionnez l’organisation appropriée.
 
-1. Si ce n&#39;est déjà fait, [créez votre programme](program-setup.md). Lors de la création du programme, Cloud Manager détecte que les référentiels ne sont pas encore configurés. Une carte d’appel à l’action spéciale s’affiche alors sur l’écran **Overview**.
+1. Si cela n’est pas encore fait, [créez votre programme](program-setup.md). Lors de la création du programme, Cloud Manager détecte que les référentiels ne sont pas encore configurés. Une carte d’appel à l’action spéciale s’affiche alors sur l’écran **Overview**.
 
    ![Appel à l’action de création de projet](/help/assets/image2018-10-3_14-29-44.png)
 

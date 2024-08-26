@@ -5,7 +5,7 @@ exl-id: b66533fb-db93-40e8-919d-581261fdbf24
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '616'
-ht-degree: 54%
+ht-degree: 60%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 54%
 
 ## Rôles utilisateur {#user-roles}
 
-La gestion des rôles pour [!UICONTROL Cloud Manager] est effectuée à l’aide de [Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html). Tout utilisateur de [!UICONTROL Cloud Manager] doit être membre de l’organisation IMS du client et avoir le contexte du produit Managed Services Adobe. Des rôles spécifiques sont fournis en ajoutant un utilisateur à un profil de produit [!UICONTROL Cloud Manager] dans Admin Console.
+La gestion des rôles pour [!UICONTROL Cloud Manager] s’effectue dans [Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html). Toute personne utilisant [!UICONTROL Cloud Manager] doit être membre de l’organisation IMS du client ou de la cliente et avoir le contexte du produit Adobe Managed Services. Des rôles spécifiques sont fournis en ajoutant un utilisateur ou une utilisatrice à un profil de produit [!UICONTROL Cloud Manager] dans Admin Console.
 
 Pour en savoir plus sur la configuration de vos rôles, voir [Configuration des utilisateurs et des rôles](/help/requirements/users-and-roles.md).
 
@@ -68,4 +68,4 @@ Pour en savoir plus sur la configuration de vos utilisateurs, voir [Configuratio
 
 >[!TIP]
 >
->Des profils d’autorisation personnalisés avec des autorisations configurables sont également disponibles. Pour plus d’informations, voir [Autorisations personnalisées](/help/using/custom-permissions.md) .
+>Des profils d’autorisation personnalisés avec des autorisations configurables sont également disponibles. Pour plus d’informations, voir la section [Autorisations personnalisées](/help/using/custom-permissions.md).
