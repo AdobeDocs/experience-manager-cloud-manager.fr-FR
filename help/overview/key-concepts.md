@@ -3,26 +3,26 @@ title: Concepts clés
 description: Comme tous les outils puissants, Cloud Manager englobe plusieurs concepts et termes. Ce document résume les éléments les plus importants à connaître lorsque vous commencez à utiliser Cloud Manager.
 exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
 source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '414'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
 
-# Principaux concepts {#key-concepts}
+# Concepts clés {#key-concepts}
 
 Comme tous les outils puissants, Cloud Manager englobe plusieurs concepts et termes. Ce document résume les éléments les plus importants à connaître lorsque vous commencez à utiliser Cloud Manager.
 
 ## Application {#application}
 
-Une application est l’ensemble de personnalisations et de configurations créées par un client pour adapter la [solution](#solution) sous-jacente (telle qu’AEM Sites ou AEM Assets) à ses cas d’utilisation et besoins spécifiques. Une application est une unité logique qui peut être composée de plusieurs [artefacts](#artifact).
+Une application est l’ensemble des personnalisations et des configurations créées par un client ou une cliente dans le but d’adapter la [solution](#solution) sous-jacente (par exemple, AEM Sites ou AEM Assets) à ses cas d’utilisation et ses besoins spécifiques. Une application est une unité logique pouvant être composée de plusieurs [artefacts](#artifact).
 
-Un exemple d&#39;application est l&#39; [application de style de vie WKND](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview) fictive.
+Exemple d’application : [WKND, une application fictive dédiée aux loisirs](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview).
 
 ## Artefact {#artifact}
 
-Un artefact est une unité déployable qui résulte d’un processus de génération qui transforme le code source en une seule unité. Par exemple, un fichier .zip contenant le code source.
+Un artefact est une unité déployable et résulte d’un processus de création qui transforme le code source en une seule unité. Par exemple, un fichier Zip contenant le code source.
 
 ## Référentiel d’artefacts {#artifact-repository}
 
@@ -30,15 +30,15 @@ Un référentiel d’artefacts est un emplacement de stockage où sont enregistr
 
 ## Environnement {#environment}
 
-Un environnement est un cluster unique de machines virtuelles au sein d&#39;un [programme](#program). Pour AEM, cet environnement est composé d’une instance de création (éventuellement avec une instance de création Cold Standby supplémentaire), de zéro ou plusieurs instances de publication, d’une ou de plusieurs instances Dispatcher et d’un équilibreur de charge.
+Un environnement est un cluster unique de machines virtuelles au sein d’un [programme](#program). Pour AEM, cela comporte une instance de création (éventuellement avec une instance de création Cold Standby supplémentaire), zéro, une ou plusieurs instances de publication, une ou plusieurs instances du Dispatcher et un équilibreur de charge.
 
 ## Référentiel Git {#git-repository}
 
-Un référentiel Git est un emplacement où le code source spécifique au client est stocké et est accessible [à l’aide de Git](https://git-scm.com).
+Un référentiel Git est un emplacement de stockage du code source spécifique au client ou à la cliente. Il est accessible [à l’aide de Git](https://git-scm.com).
 
 ## Instance {#instance}
 
-Une instance est un serveur virtuel spécifique qui exécute la AEM [solution](#solution). Les instances représentent une seule unité logique du point de vue du déploiement.
+Une instance est un serveur virtuel spécifique qui exécute la [solution](#solution) AEM. Les instances représentent une seule unité logique du point de vue du déploiement.
 
 ## Organisation {#organization}
 
@@ -46,7 +46,7 @@ Une organisation est un concept d’Adobe représentant un client d’entreprise
 
 ## Pipeline {#pipeline}
 
-Un pipeline est un ensemble d’étapes de déploiement exécutées ou &quot;exécutées&quot; en séquence.
+Un pipeline est un ensemble d’étapes de déploiement « exécutées » en séquence.
 
 ## Produit {#product}
 
@@ -62,4 +62,4 @@ Une solution désigne l’une des solutions [!UICONTROL Experience Cloud] d’Ad
 
 ## Étape {#step}
 
-Une étape est un ensemble d’instructions configuré qui exécute une unité de travail en tant que bloc de création d’un [pipeline](#pipeline).
+Une étape est un ensemble d’instructions définies qui exécute une unité de travail à la manière d’un bloc de création d’un [pipeline](#pipeline).
