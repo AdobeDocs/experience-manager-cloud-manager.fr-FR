@@ -2,7 +2,7 @@
 title: Annotations de la vérification GitHub
 description: Découvrez comment GitHub vérifie l’annotation des relations publiques pour vos référentiels privés afin de vous fournir des commentaires utiles.
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
+source-git-commit: 6f5d51ef59aef831574bd55cee6b12a29e3d70d2
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 47%

@@ -2,10 +2,10 @@
 title: Gestion des environnements
 description: Découvrez comment utiliser Cloud Manager pour gérer vos environnements.
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
+source-git-commit: 6f5d51ef59aef831574bd55cee6b12a29e3d70d2
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 84%
+source-wordcount: '273'
+ht-degree: 86%
 
 ---
 
@@ -58,7 +58,7 @@ L’écran **Environnements** affiche chaque environnement d’évaluation et de
 
 >[!NOTE]
 >
->Si vous avez besoin de vos journaux d’environnement, ils peuvent être demandés par l’intermédiaire de votre ingénieur du service client.
+>Demandez les journaux de votre environnement à l’ingénieur du service client.
 
 ## Tutoriel vidéo {#video-tutorial}
 
