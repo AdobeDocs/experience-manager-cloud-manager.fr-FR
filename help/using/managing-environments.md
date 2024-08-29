@@ -2,7 +2,7 @@
 title: Gestion des environnements
 description: Découvrez comment utiliser Cloud Manager pour gérer vos environnements.
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
-source-git-commit: 6f5d51ef59aef831574bd55cee6b12a29e3d70d2
+source-git-commit: 0b7c926120798e2fdb635752192f4ab2e12c1e24
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 86%
@@ -64,4 +64,6 @@ L’écran **Environnements** affiche chaque environnement d’évaluation et de
 
 La vidéo suivante présente un aperçu des environnements Cloud Manager composés d’instances AEM Author, AEM Publish et Dispatcher.
 
->[!VIDEO](https://video.tv.adobe.com/v/26318/) (3 minutes, 1 seconde)
+>[!VIDEO](https://video.tv.adobe.com/v/26318/)
+
+*(3 minutes, 1 seconde)*
