@@ -2,10 +2,10 @@
 title: Intégration Git à Adobe Cloud Manager
 description: Cette série de vidéos décrit la configuration et l’intégration d’un référentiel Git géré par le client (on-premise) avec Adobe Cloud Manager.
 exl-id: e517f8a4-23f0-4486-8278-91396dba76ec
-source-git-commit: 3671772a1369273d89fde101ba084a6e2f8ce8dc
+source-git-commit: 51bd685a17eb9d68b1ec8245e6167cab02101fc1
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 21%
+source-wordcount: '331'
+ht-degree: 23%
 
 ---
 
@@ -16,7 +16,7 @@ Adobe Cloud Manager est fourni avec un seul référentiel Git utilisé pour dép
 
 ## Présentation de l’intégration Git
 
->[!VIDEO](https://video.tv.adobe.com/v/28710/) (3 minutes, 11 secondes)
+>[!VIDEO](https://video.tv.adobe.com/v/28710/)
 
 Cette série de vidéos explore plusieurs cas d’utilisation concernant l’intégration d’un référentiel Git géré par le client à Cloud Manager.
 
@@ -36,31 +36,31 @@ Pour une vue d’ensemble complète de Cloud Manager, voir la section [Présent
 
 Premières étapes de la synchronisation d’un référentiel Git géré par le client avec le référentiel Git de Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/28711/?quality=12) (8 minutes)
+>[!VIDEO](https://video.tv.adobe.com/v/28711/?quality=12)
 
 ## Stratégie d’embranchement de base {#branching-strategy}
 
 Configurez une stratégie d’embranchement de base pour tirer parti des [pipelines de production](/help/using/production-pipelines.md) et [des pipelines hors production](/help/using/non-production-pipelines.md) de Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12) (3 minutes, 48 secondes)
+>[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12)
 
 ## Développement des branches de fonctionnalités {#feature-development}
 
 Utilisez une branche de fonctionnalités pour isoler les modifications de code dans un référentiel Git géré par le client et synchroniser avec le référentiel Git de Cloud Manager pour utiliser un pipeline hors production pour les tests de qualité et de validation du code.
 
->[!VIDEO](https://video.tv.adobe.com/v/28723/?quality=12) (9 minutes)
+>[!VIDEO](https://video.tv.adobe.com/v/28723/?quality=12)
 
 ## Déploiement en production {#production-deployment}
 
 Préparez le code d’une version de production dans un référentiel Git géré par le client et synchronisez-le avec le référentiel Git Cloud Manager pour le déploiement dans les environnements d’évaluation et de production.
 
->[!VIDEO](https://video.tv.adobe.com/v/28724/?quality=12) (6 minutes, 6 secondes)
+>[!VIDEO](https://video.tv.adobe.com/v/28724/?quality=12)
 
 ## Synchronisation des balises de publication {#sync-tags}
 
 Vous pouvez synchroniser les balises de version d’un référentiel Git Cloud Manager dans un référentiel Git géré par le client. Cette fonctionnalité offre une visibilité sur le code qui a été déployé dans les environnements d’évaluation et de production.
 
->[!VIDEO](https://video.tv.adobe.com/v/28725/?quality=12) (2 minutes, 57 secondes)
+>[!VIDEO](https://video.tv.adobe.com/v/28725/?quality=12)
 
 ## Ressources supplémentaires {#additional-resources}
 
