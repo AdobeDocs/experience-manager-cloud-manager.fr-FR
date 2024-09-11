@@ -5,7 +5,7 @@ exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
 source-git-commit: 03f7429fd2c4a6dd4c8ae3228eff9c8cdab1ded8
 workflow-type: tm+mt
 source-wordcount: '932'
-ht-degree: 42%
+ht-degree: 98%
 
 ---
 
@@ -19,26 +19,26 @@ Découvrez comment séparer les déploiements d’évaluation et de production �
 
 ## Vue d’ensemble {#overview}
 
-Les environnements d’évaluation et de production sont étroitement liés. Par défaut, les déploiements qui leur sont associés sont liés à un pipeline unique. En d’autres termes, un pipeline de déploiement est déployé dans les environnements d’évaluation et de production de ce programme. Bien que cette liaison soit habituellement adaptée, certains cas pratiques présentent des inconvénients :
+Les environnements d’évaluation et de production sont étroitement liés. Par défaut, les déploiements qui leur sont associés sont liés à un pipeline unique. Il s’agit d’un pipeline de déploiement qui effectue le déploiement pour les environnements d’évaluation et de production de ce programme. Bien que cette liaison soit habituellement adaptée, certains cas d’utilisation présentent des inconvénients :
 
-* Si vous souhaitez effectuer un déploiement dans une version intermédiaire uniquement, vous rejetez l’étape **Convertir en production** du pipeline. Toutefois, l’exécution est marquée comme annulée.
+* Si vous souhaitez effectuer un déploiement vers l’environnement d’évaluation uniquement, vous rejetez l’étape **Promouvoir en production** dans le pipeline. Cependant, l’exécution est marquée comme annulée.
 * Si vous souhaitez déployer le code le plus récent d’un environnement d’évaluation vers la production, vous devez redéployer l’ensemble du pipeline, y compris le déploiement de l’évaluation, même s’il n’y a eu aucune modification du code dans ce dernier.
-* Les environnements ne peuvent pas être mis à jour pendant les déploiements. Si vous effectuez un test dans l’environnement d’évaluation pendant plusieurs jours avant de procéder à la promotion vers la production, l’environnement de production reste verrouillé et ne peut pas être mis à jour. Ce scénario rend impossible toute tâche non dépendante telle que la mise à jour des [variables d&#39;environnement](/help/getting-started/build-environment.md#environment-variables).
+* Les environnements ne peuvent pas être mis à jour pendant les déploiements. Si vous souhaitez mettre en pause pour effectuer des tests sur plusieurs jours dans l’environnement d’évaluation avant de procéder à la promotion en production, l’environnement de production reste bloqué et ne peut pas être mis à jour. Ce scénario rend les tâches non dépendantes, telles que la mise à jour des [variables d’environnement](/help/getting-started/build-environment.md#environment-variables), impossibles à effectuer.
 
 Les pipelines dédiés à l’évaluation uniquement et à la production uniquement offrent des solutions à ces cas d’utilisation en fournissant des options de déploiement dédiées.
 
-* **Pipelines de déploiement en environnement intermédiaire uniquement :** déploie uniquement vers un environnement d’évaluation dont l’exécution se termine une fois le déploiement et les tests terminés. Un pipeline dédié à l’évaluation uniquement se comporte de la même manière que le pipeline de pile complète de production couplé standard, mais sans les étapes de déploiement de production (approbation, planification, déploiement).
-* **Pipelines de déploiement en production uniquement :** déploie uniquement vers la production en sélectionnant la dernière exécution d’étape réussie. Déploiement ensuite de ses artefacts en production. Les pipelines de production seule réutilisent les artefacts de déploiement d’étape, en contournant la phase de création.
+* Les **pipelines de déploiement en environnement d’évaluation uniquement** déploient uniquement vers un environnement d’évaluation, l’exécution se terminant une fois le déploiement et les tests terminés. Un pipeline dédié à l’évaluation uniquement se comporte de la même manière que le pipeline de pile pleine de production couplé standard, mais sans les étapes de déploiement de production (approbation, planification, déploiement).
+* **Pipelines de déploiement en production uniquement :** déploie uniquement vers la production en sélectionnant la dernière exécution d’étape réussie. Ils déploient ensuite ses artefacts en production. Les pipelines dédiés à la production uniquement réutilisent les artefacts de déploiement en évaluation, en contournant la phase de création.
 
-Les pipelines d’évaluation seule et de production seule ne sont pas exécutés lorsqu’un pipeline de production de pile complète est en cours, et vice versa. Si le pipeline dédié uniquement à l’évaluation et à la production de pile complète dispose du déclencheur **Lors des modifications Git** configuré et pointent vers la même branche et le même référentiel, seul le pipeline dédié uniquement à l’évaluation est lancé automatiquement. Les pipelines de production seule ne démarrent pas **`On Git Changes`**, car ils ne sont pas directement liés à un référentiel.
+Les pipelines dédiés uniquement à l’évaluation et à la production ne sont pas exécutés lorsqu’un pipeline de production de pile pleine est en cours, et vice versa. Si le pipeline dédié uniquement à l’évaluation et à la production de pile complète dispose du déclencheur **Lors des modifications Git** configuré et pointent vers la même branche et le même référentiel, seul le pipeline dédié uniquement à l’évaluation est lancé automatiquement. Les pipelines dédiés à la production uniquement ne démarrent pas **`On Git Changes`**, car ils ne sont pas directement liés à un référentiel.
 
-Les pipelines de production seule sont déclenchés manuellement, car ils ne sont pas directement liés à un référentiel pour **Lors des modifications Git**.
+Les pipelines dédiés à la production uniquement sont déclenchés manuellement, car ils ne sont pas directement liés à un référentiel pour **Lors des modifications Git**.
 
 Ces pipelines dédiés offrent plus de flexibilité, mais tenez compte des informations ci-après concernant leur fonctionnement et les recommandations associées.
 
 >[!NOTE]
 >
->Les pipelines de production uniquement utilisent toujours des artefacts du pipeline d’évaluation uniquement. Ce processus reste vrai même si le pipeline de production couplé standard a déployé quelque chose d’autre à mettre en scène entre-temps.
+>Les pipelines dédiés à la production uniquement utilisent toujours des artefacts du pipeline d’évaluation uniquement. Ce processus reste vrai même si le pipeline dédié à la production couplé standard a déployé quelque chose d’autre sur l’environnement d’évaluation entre-temps.
 >
 >* Un tel scénario peut entraîner des restaurations de code indésirables.
 >* Adobe vous recommande d’arrêter d’utiliser le pipeline de production couplé standard une fois que vous commencez à utiliser les pipelines dédiés à la production uniquement et à l’évaluation uniquement.
@@ -65,54 +65,54 @@ Les pipelines dédiés à la production uniquement et à l’évaluation uniquem
 
 ### Pipelines dédiés uniquement à l’évaluation {#stage-only}
 
-1. Après avoir sélectionné l’option **Ajouter un pipeline hors production**, la boîte de dialogue **Ajouter un pipeline hors production** s’ouvre.
-1. Pour créer un pipeline intermédiaire uniquement, sélectionnez l’environnement intermédiaire dans le champ **Environnements de déploiement éligible** pour votre pipeline.
+1. Une fois que vous avez sélectionné l’option **Ajouter un pipeline hors production**, la boîte de dialogue **Ajouter un pipeline hors production** s’ouvre.
+1. Pour créer un pipeline dédié uniquement à l’évaluation, sélectionnez l’environnement d’évaluation dans le champ **Environnements de déploiement éligibles** pour votre pipeline.
 1. Renseignez les champs restants.
 1. Cliquez sur **Continuer**.
 
    ![Création d’un pipeline dédié uniquement à l’évaluation](/help/assets/configure-pipelines/stage-only.png)
 
-1. Dans l’onglet **Test dans l’environnement intermédiaire**, définissez les tests à effectuer dans l’environnement d’évaluation.
+1. Dans l’onglet **Tests de l’environnement d’évaluation**, définissez les tests à effectuer dans l’environnement d’évaluation.
 1. Cliquez sur **Enregistrer**.
 
    ![Paramètres de test d’un pipeline dédié uniquement à l’évaluation](/help/assets/configure-pipelines/stage-only-test.png)
 
 ### Pipelines dédiés uniquement à la production {#prod-only}
 
-1. Après avoir sélectionné l’option **Ajouter un pipeline de production uniquement**, la boîte de dialogue **Ajouter un pipeline de production uniquement** s’ouvre.
-1. Dans le champ **Nom du pipeline**, saisissez le nom de votre choix. Les options et fonctionnalités restantes de la boîte de dialogue fonctionnent de la même manière que celles de la boîte de dialogue de création de pipeline couplé standard.
-1. Dans le coin inférieur droit de la boîte de dialogue, cliquez sur **Enregistrer**.
+1. Une fois que vous avez sélectionné l’option **Ajouter un pipeline de production uniquement**, la boîte de dialogue **Ajouter un pipeline de production uniquement** s’ouvre.
+1. Dans le champ **Nom du pipeline**, saisissez le nom de votre choix. Les options et les fonctionnalités restantes de la boîte de dialogue fonctionnent de la même manière que celles de la boîte de dialogue de création d’un pipeline couplé standard.
+1. Dans l’angle inférieur droit de la boîte de dialogue, cliquez sur **Enregistrer**.
 
    ![Création d’un pipeline dédié uniquement à la production](/help/assets/configure-pipelines/prod-only-pipeline.png)
 
 ## Exécuter des pipelines dédiés à la production uniquement et à l’évaluation uniquement {#running}
 
-Les pipelines de production seule et de production seule sont exécutés de la même manière que [tous les autres pipelines sont exécutés](/help/using/managing-pipelines.md#running-pipelines). Consultez cette documentation pour plus de détails. Toutefois, il existe deux nouvelles fonctionnalités de ces pipelines.
+Les pipelines dédiés à la production uniquement et à l’évaluation uniquement sont exécutés en grande partie de la même manière que [tous les autres pipelines](/help/using/managing-pipelines.md#running-pipelines). Consultez cette documentation pour plus de détails. Toutefois, il existe deux nouvelles fonctionnalités pour ces pipelines.
 
-* Les pipelines d’état unique et de production seule offrent un nouveau [mode d’urgence](#emergency-mode) pour ignorer les tests.
-* L’exécution du pipeline Prod uniquement peut être déclenchée directement à partir des détails d’exécution d’un [pipeline intermédiaire uniquement](#stage-only-run).
+* Les pipelines dédiés à l’évaluation uniquement et à la production uniquement offrent un nouveau [mode d’urgence](#emergency-mode) pour ignorer les tests.
+* Une exécution de pipeline dédié uniquement à la production peut être déclenchée directement à partir des détails d’exécution d’un [pipeline dédié uniquement à l’évaluation](#stage-only-run).
 
 ### Mode d’urgence {#emergency-mode}
 
-Lorsque vous démarrez des pipelines en production seule et en ligne intermédiaire, vous êtes invité à confirmer le démarrage et la manière dont il démarre.
+Lorsque vous démarrez des pipelines dédiés à la production uniquement et à l’évaluation uniquement, vous devez confirmer le démarrage et le mode de démarrage.
 
-* **Mode normal** est une exécution standard qui comprend des étapes de test d’étape.
-* **Le mode d’urgence** ignore les étapes de test d’étape.
+* Le **Mode normal** est une exécution standard qui comprend des étapes de test dans l’environnement d’évaluation.
+* Le **Mode d’urgence** ignore les étapes de test dans l’environnement d’évaluation.
 
 ![Mode d’urgence](/help/assets/configure-pipelines/emergency-mode.png)
 
 ### Pipelines dédiés uniquement à l’évaluation {#stage-only-run}
 
-Un pipeline dédié uniquement à l’évaluation s’exécute presque de la même manière que les pipelines couplés standard. Cependant, à la fin de l’exécution, après les étapes de test, un bouton **Convertir le build** s’affiche. Ce bouton permet de lancer une exécution de pipeline en production uniquement à l’aide des artefacts qui ont été déployés sur l’étape de l’exécution et de les déployer en production.
+Un pipeline dédié uniquement à l’évaluation s’exécute presque de la même manière que les pipelines couplés standard. Cependant, à la fin de l’exécution, après les étapes de test, un bouton **Promouvoir la version** s’affiche. Ce bouton permet de lancer une exécution de pipeline dédié à la production uniquement à l’aide des artefacts qui ont été déployés dans l’environnement d’évaluation lors de l’exécution et de les déployer en production.
 
 ![Exécution d’un pipeline dédié uniquement à l’évaluation](/help/assets/configure-pipelines/stage-only-pipeline-run.png)
 
-Cliquer sur **Convertir le build** vous invite à confirmer l’exécution du pipeline d’étape uniquement associé, normalement ou en [mode d’urgence](#emergency-mode).
+Cliquer sur **Promouvoir la version** vous invite à confirmer l’exécution du pipeline associé dédié uniquement à l’évaluation, normalement ou en [mode d’urgence](#emergency-mode).
 
-Si aucun pipeline prod-only n’existe, vous êtes invité à en créer un.
+Si aucun pipeline dédié à la production uniquement n’existe, vous devez en créer un.
 
 ### Pipelines dédiés uniquement à la production {#prod-only-run}
 
-Pour les pipelines prod uniquement, veillez à identifier les artefacts source que vous souhaitez déployer en production. Ces détails sont disponibles à l’étape **Préparation de l’artefact** . Vous pouvez accéder à ces exécutions pour plus de détails et de journaux.
+Pour les pipelines dédiés uniquement à la production, veillez à identifier les artefacts source que vous souhaitez déployer en production. Ces informations se trouvent dans l’étape **Préparation des artefacts**. Vous pouvez accéder à ces exécutions pour plus de détails et pour accéder aux journaux.
 
 ![Détails d’un artefact](/help/assets/configure-pipelines/prod-only-pipeline-run.png)

@@ -20,11 +20,11 @@ ht-degree: 100%
 + [Cloud Manager pour AMS](/help/introduction.md)
 + Présentation {#overview}
    + [Concepts clés](/help/overview/key-concepts.md)
-   + [Parcours utilisateur](/help/overview/user-journey.md)
+   + [Parcours d’utilisateur ou d’utilisatrice](/help/overview/user-journey.md)
    + [Pipelines CI/CD](/help/overview/ci-cd-pipelines.md)
    + [Sécurité et confidentialité](/help/overview/security-and-privacy.md)
    + [Ressources d’aide](/help/overview/help-resources.md)
-   + [FAQ sur Cloud Manager](/help/overview/faqs.md)
+   + [Questions fréquentes relatives à Cloud Manager](/help/overview/faqs.md)
 + Éléments requis {#requirements}
    + [Droits d’accès](/help/requirements/access-rights.md)
    + [Référentiel de code source](/help/requirements/source-code-repository.md)
@@ -41,7 +41,7 @@ ht-degree: 100%
       + [Configuration du projet](/help/getting-started/project-setup.md)
       + [Environnement de création](/help/getting-started/build-environment.md)
    + [Configurer les branches](/help/getting-started/configuring-branches.md)
-   + [Configurations de Dispatcher](/help/getting-started/dispatcher-configurations.md)
+   + [Configurations du Dispatcher](/help/getting-started/dispatcher-configurations.md)
 + Utilisation de {#using}
    + Pipelines CI/CD {#pipelines}
       + [Configurer des pipelines de production](/help/using/production-pipelines.md)
@@ -58,7 +58,7 @@ ht-degree: 100%
    + [Règles de qualité du code personnalisé](/help/using/custom-code-quality-rules.md)
    + [Copie de contenu](/help/using/content-copy.md)
 + Gestion du code {#managing-code}
-   + [Gestion des référentiels dans Cloud Manager](/help/managing-code/managing-repositories.md)
+   + [Gérer les référentiels dans Cloud Manager](/help/managing-code/managing-repositories.md)
    + [Informations d’accès au référentiel](/help/managing-code/accessing-repositories.md)
    + [Ajout de référentiels Adobe](/help/managing-code/adobe-repositories.md)
    + [Ajout de référentiels privés](/help/managing-code/private-repositories.md)
@@ -66,7 +66,7 @@ ht-degree: 100%
    + [Configuration de la vérification GitHub](/help/managing-code/github-check-config.md)
    + [Annotations de la vérification GitHub](/help/managing-code/github-annotations.md)
    + [Gestion des versions du projet Maven](/help/managing-code/maven-project-version.md)
-   + [Intégration de Git](/help/managing-code/git-integration.md)
+   + [Intégrer à Git](/help/managing-code/git-integration.md)
    + [Utiliser plusieurs référentiels Git](/help/managing-code/multiple-git-repos.md)
 + Assistant de mise à jour du produit {#product-update-wizard}
    + [Vue d’ensemble](/help/product-update-wizard/overview.md)
@@ -91,7 +91,7 @@ ht-degree: 100%
       + [Notes de mise à jour de la version 2023.7.0](/help/release-notes/2023/2023-7-0.md)
       + [Notes de mise à jour de la version 2023.6.0](/help/release-notes/2023/2023-6-0.md)
       + [Notes de mise à jour de la version 2023.5.0](/help/release-notes/2023/2023-5-0.md)
-      + [Notes de mise à jour de la version 2023.4.0](/help/release-notes/2023/2023-4-0.md)
+      + [Notes de mise à jour de 2023.4.0](/help/release-notes/2023/2023-4-0.md)
       + [Notes de mise à jour de la version 2023.3.0](/help/release-notes/2023/2023-3-0.md)
       + [Notes de mise à jour de la version 2023.2.0](/help/release-notes/2023/2023-2-0.md)
       + [Notes de mise à jour de la version 2023.1.0](/help/release-notes/2023/2023-1-0.md)

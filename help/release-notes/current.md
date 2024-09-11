@@ -5,11 +5,11 @@ feature: Release Information
 source-git-commit: 3671772a1369273d89fde101ba084a6e2f8ce8dc
 workflow-type: tm+mt
 source-wordcount: '184'
-ht-degree: 37%
+ht-degree: 80%
 
 ---
 
-# Notes de mise à jour de Cloud Manager 2024.9.0 {#release-notes}
+# Notes de mise à jour de la version 2024.9.0 de Cloud Manager {#release-notes}
 
 Cette page présente les notes de mise à jour de la version 2024.9.0 de [!UICONTROL Cloud Manager].
 
@@ -30,14 +30,14 @@ La prochaine version est prévue pour le vendredi 3 octobre 2024.
 
 ## Programme d’adoption précoce {#early-adoption}
 
-Faites partie du programme Cloud Manager d’adoption anticipée et avez la possibilité de tester certaines fonctionnalités à venir.
+Prenez part au programme d’adoption précoce de Cloud Manager afin de pouvoir tester certaines fonctionnalités à venir.
 
 
-### Pipelines d’évaluation et de production uniquement {#staging-production-only-pipelines}
+### Pipelines dédiés uniquement à l’évaluation ou à la production {#staging-production-only-pipelines}
 
-Adobe est heureux d’annoncer l’introduction de la prise en charge des [pipelines d’évaluation uniquement et de production seule](/help/using/stage-prod-only.md). Cette nouvelle fonctionnalité vous permet de diviser les pipelines de déploiement de production en pile complète en déploiements plus petits et plus spécialisés.
+Adobe se réjouit d’annoncer l’introduction de la prise en charge des [pipelines dédiés à l’évaluation uniquement et à la production uniquement](/help/using/stage-prod-only.md). Cette nouvelle fonctionnalité vous permet de diviser les pipelines de déploiement de production en pile pleine en déploiements plus petits et plus spécialisés.
 
-Si vous souhaitez tester cette fonctionnalité et fournir des commentaires, envoyez un email `Grp-cloudmanager_splitpipelines@adobe.com` à l’aide de l’adresse électronique associée à votre Adobe ID.
+Si vous souhaitez tester cette nouvelle fonctionnalité et faire part de vos commentaires, envoyez un e-mail à `Grp-cloudmanager_splitpipelines@adobe.com` à partir de l’adresse e-mail associée à votre Adobe ID.
 
 <!-- ## Bug fixes
 
