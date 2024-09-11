@@ -3,47 +3,47 @@ title: Autorisations basées sur les rôles
 description: Découvrez les autorisations préconfigurées basées sur les rôles de Cloud Manager pour gérer l’accès à vos ressources cloud.
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '616'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
 
 # Autorisations basées sur les rôles {#role-based-permissions}
 
-[!UICONTROL Cloud Manager] dispose de rôles préconfigurés avec les autorisations appropriées. Par exemple, un développeur développe du code et a l’autorisation de placer le code dans le référentiel Git. Un propriétaire d’entreprise dispose de différents autorisations lui permettant de définir des indicateurs de performance clés (KPI) et d’approuver les déploiements.
+[!UICONTROL Cloud Manager] dispose de rôles préconfigurés avec les autorisations appropriées. Par exemple, un développeur développe du code et a l’autorisation de placer le code dans le référentiel Git. Une personne propriétaire d’entreprise dispose de différents autorisations lui permettant de définir des indicateurs de performance clés (KPI) et d’approuver les déploiements.
 
 >[!NOTE]
 >
 >Cette documentation décrit les autorisations basées sur les rôles de Cloud Manager pour Adobe Managed Services (AMS).
 >
->Retrouvez la documentation équivalente pour AEM as a Cloud Service dans la [Présentation de Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction#role-based-permissions) de la documentation AEM as a Cloud Service.
+>Retrouvez la documentation équivalente pour AEM as a Cloud Service dans la [Présentation de Cloud Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction#role-based-permissions) de la documentation AEM as a Cloud Service.
 
-## Rôles utilisateur {#user-roles}
+## Rôles d’utilisateur ou d’utilisatrice {#user-roles}
 
 La gestion des rôles pour [!UICONTROL Cloud Manager] s’effectue dans [Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html). Toute personne utilisant [!UICONTROL Cloud Manager] doit être membre de l’organisation IMS du client ou de la cliente et avoir le contexte du produit Adobe Managed Services. Des rôles spécifiques sont fournis en ajoutant un utilisateur ou une utilisatrice à un profil de produit [!UICONTROL Cloud Manager] dans Admin Console.
 
-Pour en savoir plus sur la configuration de vos rôles, voir [Configuration des utilisateurs et des rôles](/help/requirements/users-and-roles.md).
+Pour plus d’informations sur la configuration de vos rôles, consultez la rubrique [Configuration des utilisateurs et utilisatrices et des rôles](/help/requirements/users-and-roles.md).
 
-Le tableau suivant répertorie les rôles que vous pouvez affecter dans l’Admin Console.
+Ce tableau répertorie les rôles que vous pouvez affecter dans Admin Console.
 
-| Rôle [!UICONTROL Cloud Manager] | Description |
+| Rôle dans [!UICONTROL Cloud Manager] | Description |
 |---|---|
-| Propriétaire de l’entreprise | L’utilisateur principal qui effectue la configuration initiale de [!UICONTROL Cloud Manager] et est chargé de définir les indicateurs de performance clés, d’approuver les déploiements de production et de remplacer les échecs à trois niveaux importants si nécessaire. |
-| Auteur ou autrice de contenu | L’utilisateur n’interagit généralement pas avec Cloud Manager, mais il peut utiliser le sélecteur de programme Cloud Manager (depuis Experience Cloud) pour accéder à Adobe Experience Manager (AEM). |
-| Ingénieur du succès client | L’utilisateur prend principalement en charge le succès client AMS et engage [!UICONTROL Cloud Manager] pour exécuter les déploiements. Ces déploiements nécessitent la supervision d’un ingénieur du service client Adobe. |
-| Responsable de déploiement | L’utilisateur gère les opérations de déploiement à l’aide de [!UICONTROL Cloud Manager] pour exécuter les déploiements dans les environnements intermédiaires et de production, peut approuver des échecs importants à trois niveaux si nécessaire et a accès au référentiel Git. |
-| Développeur ou développeuse | L’utilisateur développe et teste du code d’application personnalisé, utilise principalement [!UICONTROL Cloud Manager] pour afficher l’état de déploiement et dispose d’un accès en validation au référentiel Git. |
-| Responsable de programme | L’utilisateur utilise [!UICONTROL Cloud Manager] pour effectuer la configuration de l’équipe, passer en revue l’état, afficher les indicateurs de performance clés et peut approuver des échecs de trois niveaux importants si nécessaire. |
+| Propriétaire de l’entreprise | La personne principale effectue la configuration de [!UICONTROL Cloud Manager] initiale et est chargée de définir les KPI, d’approuver les déploiements en production et de remplacer les échecs à 3 niveaux importants si nécessaire. |
+| Créateur ou créatrice de contenu | Cette personne n’interagit généralement pas avec Cloud Manager, mais peut utiliser le sélecteur de programme Cloud Manager (à partir d’Experience Cloud) pour accéder à Adobe Experience Manager (AEM). |
+| Équipe d’ingénierie du service client | La personne prend principalement en charge le service client AMS et engage avec [!UICONTROL Cloud Manager] pour exécuter les déploiements. Ces déploiements nécessitent la supervision de l’équipe d’ingénierie du service client (CSE) Adobe. |
+| Responsable de déploiement | Cette personne gère les opérations de déploiement à l’aide de [!UICONTROL Cloud Manager] pour exécuter des déploiements d’évaluation et de production, peut approuver des échecs à 3 niveaux importants si nécessaire, et a accès au référentiel Git. |
+| Développeur ou développeuse | Cette personne développe et teste des codes d’application personnalisés, utilise principalement [!UICONTROL Cloud Manager] pour afficher le statut du déploiement et dispose d’un accès en validation au référentiel Git. |
+| Responsable de programme | Cette personne utilise [!UICONTROL Cloud Manager] pour effectuer la configuration de l’équipe, réviser le statut, afficher les KPI et approuver les échecs à 3 niveaux importants si nécessaire. |
 
-## Autorisations d’utilisateur {#user-permissions}
+## Autorisations d’utilisateur ou d’utilisatrice {#user-permissions}
 
-Chacun des rôles possède des autorisations préconfigurées spécifiques. Le tableau suivant répertorie les autorisations disponibles et les rôles pouvant les exécuter.
+Chacun des rôles est associé à des autorisations préconfigurées spécifiques. Ce tableau récapitule les autorisations disponibles et les rôles qui peuvent les exécuter.
 
-| Autorisation | Description | Propriétaire de l’entreprise | Responsable de déploiement | Responsable de programme | Développeur | Ingénieur du service client |
+| Autorisation | Description | Propriétaire de l’entreprise | Responsable de déploiement | Responsable de programme | Développeur ou développeuse | Ingénieur du service client |
 | --- | --- | --- | --- | --- | --- | --- |
-| Lecture de l’application | Lire les KPI du programme | x | x | x | x | x |
+| Lire l’application | Lire les KPI du programme | x | x | x | x | x |
 | Écriture de l’application | Configuration ou modification du programme | x | | | | |
 | Ajout d’un programme | Ajouter un nouveau programme | x | | | | |
 | Lecture de l’environnement | Voir les détails de l’environnement | x | x | x | x | x |
@@ -64,7 +64,7 @@ Chacun des rôles possède des autorisations préconfigurées spécifiques. Le t
 | Lecture de l’étape | Voir les résultats des mesures de qualité de l’étape | x | x | x | x | x |
 | Génération d’un jeton d’accès personnel | Accéder à Git | | x | | x | |
 
-Pour en savoir plus sur la configuration de vos utilisateurs, voir [Configuration des utilisateurs et des rôles](/help/requirements/users-and-roles.md).
+Pour en savoir plus sur la configuration de vos utilisateurs et utilisatrices, voir [Configuration des rôles et des utilisateurs et utilisatrices](/help/requirements/users-and-roles.md).
 
 >[!TIP]
 >

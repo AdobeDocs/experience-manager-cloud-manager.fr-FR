@@ -1,19 +1,19 @@
 ---
 title: Ajout de référentiels Adobe dans Cloud Manager
-description: Découvrez comment créer des référentiels gérés par Adobe dans Cloud Manager.
+description: Découvrez comment créer des référentiels gérés par Adobe dans Cloud Manager.
 exl-id: 24c6ca97-ea70-41b8-b4c7-b8b0f406a57d
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '145'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-# Ajout de référentiels Adobe dans Cloud Manager {#adobe-repositories}
+# Ajouter des référentiels Adobe dans Cloud Manager {#adobe-repositories}
 
-Découvrez comment créer des référentiels gérés par Adobe dans Cloud Manager.
+Découvrez comment créer des référentiels gérés par Adobe dans Cloud Manager.
 
-## Ajout d’un référentiel géré par Adobe {#add-adobe-repository}
+## Ajouter un référentiel géré par Adobe {#add-adobe-repository}
 
 La fenêtre **Référentiels** facilite l’ajout de référentiels gérés par Adobe supplémentaires pour votre programme.
 

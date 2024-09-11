@@ -3,9 +3,9 @@ title: Outil de copie de contenu
 description: L’outil de copie de contenu de Cloud Manager permet aux utilisateurs et utilisatrices de copier du contenu modifiable à la demande à partir de leurs environnements de production AEM 6.x hébergés par AMS vers des environnements inférieurs à des fins de test.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1144'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -119,8 +119,8 @@ Une fois qu’un jeu de contenu a été créé, vous pouvez l’utiliser pour co
    >* L’utilisateur ne dispose pas des autorisations appropriées.
    >* Un pipeline en cours d’exécution ou une opération de copie de contenu est en cours dans l’environnement.
 
-1. Dans la boîte de dialogue **Copier le contenu**, spécifiez les environnements source et de destination pour votre action de copie de contenu.
-   * Les régions de l&#39;environnement-cible doivent être identiques ou un sous-ensemble des régions de l&#39;environnement-source.
+1. Dans la boîte de dialogue **Copier le contenu**, spécifiez la source et les environnements de destination de votre action de copie de contenu.
+   * Les régions de l’environnement cible doivent être identiques aux régions de l’environnement source ou en être un sous-ensemble.
 
 1. Vous pouvez choisir de supprimer ou de conserver les chemins à exclure dans l’environnement de destination. Cochez la case `Do not delete exclude paths from destination` pour conserver les `exclude paths` spécifiés dans l’ensemble de contenu. Si cette case n’est pas cochée, les chemins d’exclusion sont supprimés dans l’environnement cible.
 
@@ -167,11 +167,11 @@ L’outil de copie de contenu présente les limites suivantes.
 * Vous pouvez spécifier jusqu’à cinquante chemins par jeu de contenu. Il n’existe aucune limitation sur les chemins exclus.
 * L’outil de copie de contenu ne doit pas être utilisé comme outil de clonage ou de mise en miroir, car il ne peut pas effectuer le suivi du contenu déplacé ou supprimé sur la source.
 * Une copie de contenu ne peut pas être suspendue ou annulée une fois qu’elle est lancée.
-* L’outil de copie de contenu copie les ressources et les métadonnées Dynamic Media de l’environnement supérieur vers l’environnement inférieur sélectionné. Les ressources copiées doivent ensuite être retraitées à l’aide du [workflow Ressources de traitement de la gestion des ressources numériques](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/assets/using/assets-workflow) dans l’environnement inférieur, afin d’utiliser la configuration de médias dynamiques correspondante.
+* L’outil de copie de contenu copie les ressources avec les métadonnées liées à Dynamic Media, de l’environnement supérieur vers l’environnement inférieur sélectionné. Les ressources copiées doivent ensuite être retraitées à l’aide du [workflow Ressources de traitement de la gestion des ressources numériques](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/assets/using/assets-workflow) dans l’environnement inférieur, afin d’utiliser la configuration de Dynamic Media correspondante.
 * Le processus de copie de contenu est beaucoup plus rapide lorsque l’historique des versions n’est pas copié.
-* [Les configurations Dynamic Media avec des ressources dont la taille est supérieure à 2 Go activées](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb) ne sont pas prises en charge.
+* [Les configurations Dynamic Media avec des ressources dont la taille est supérieure à 2 Go activées](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb) ne sont pas prises en charge.
 * Lorsque l’historique des versions n’est pas copié, le processus de copie de contenu est sensiblement plus rapide.
-* Les régions de l&#39;environnement-cible doivent être identiques ou un sous-ensemble des régions de l&#39;environnement-source.
+* Les régions de l’environnement cible doivent être identiques aux régions de l’environnement source ou en être un sous-ensemble.
 
 ## Problèmes connus {#known-issues}
 

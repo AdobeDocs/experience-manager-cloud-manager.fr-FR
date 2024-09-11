@@ -3,9 +3,9 @@ title: Déploiement du code
 description: Découvrez comment déployer votre code et ce qui se passe dans Cloud Manager lors du déploiement.
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1637'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 97%
 
 Découvrez comment déployer votre code et ce qui se passe dans Cloud Manager lors du déploiement.
 
-## Déploiement du code avec Cloud Manager {#deploying-code-with-cloud-manager}
+## Déployer du code avec Cloud Manager {#deploying-code-with-cloud-manager}
 
 Une fois que vous avez configuré votre pipeline de production, y compris le référentiel et les environnements nécessaires, vous pouvez déployer votre code.
 
@@ -34,11 +34,11 @@ Le processus de création lance le processus de déploiement du code, notamment 
 
 En outre, vous pouvez examiner les étapes de divers processus de déploiement en affichant les journaux, ou en examinant les résultats, pour les critères de test.
 
-## Etapes de déploiement {#deployment-steps}
+## Étapes de déploiement {#deployment-steps}
 
 Plusieurs actions se produisent au cours de chaque étape du déploiement, lesquelles sont décrites dans cette section. Voir la section [Détails du processus de déploiement](#deployment-process) pour obtenir des détails techniques sur la manière dont le code lui-même est déployé en arrière-plan.
 
-### Étape de déploiement dans l’environnement {#stage-deployment}
+### Étape de déploiement dans l’environnement d’évaluation {#stage-deployment}
 
 Le **déploiement dans l’environnement d’évaluation** comprend les actions suivantes :
 
@@ -49,14 +49,14 @@ Le **déploiement dans l’environnement d’évaluation** comprend les actions 
 
 ![Déploiement dans l’environnement d’évaluation](/help/assets/Stage_Deployment1.png)
 
-### Étape du test d’évaluation {#stage-testing}
+### Étape du test dans l’environnement d’évaluation {#stage-testing}
 
 L’étape du **test dans l’environnement d’évaluation** comprend les actions suivantes :
 
 * **Tests de sécurité** : cette étape évalue l’impact de votre code sur la sécurité de l’environnement AEM. Consultez le document [Comprendre les résultats de test](/help/using/code-quality-testing.md) pour obtenir plus de détails sur le processus de test.
    * **Tests de performance** : cette étape évalue les performances de votre code. Voir la section [Comprendre les résultats de test](/help/using/code-quality-testing.md) pour obtenir plus de détails sur le processus de test.
 
-### Étape de déploiement de production {#production-deployment}
+### Étape de déploiement en production {#production-deployment}
 
 L’étape de **déploiement en production** inclut les actions suivantes :
 
@@ -149,7 +149,7 @@ Les déploiements en production suivent généralement les mêmes étapes que ci
 
 Ce processus se poursuit jusqu’à ce que le déploiement ait atteint toutes les instances de publication et tous les Dispatchers dans la topologie.
 
-## Mode d’exécution du pipeline d’urgence {#emergency-pipeline}
+## Mode d’exécution d’urgence du pipeline {#emergency-pipeline}
 
 Dans des situations critiques, il se peut que les clientes et clients Adobe Managed Services doivent déployer immédiatement les modifications de code dans leurs environnements d’évaluation et de production. Cette fonctionnalité leur permet de contourner le cycle de test Cloud Manager complet.
 
@@ -159,7 +159,7 @@ Pour résoudre ces problèmes, le pipeline de production de Cloud Manager peut �
 >
 >La fonction du mode d’exécution du pipeline d’urgence est activée programme par programme. L’activation est effectuée par l’équipe d’ingénierie du succès client.
 
-### Utiliser le mode d’exécution d’un pipeline d’urgence {#using-emergency-pipeline}
+### Utiliser le mode d’exécution d’urgence de pipeline {#using-emergency-pipeline}
 
 Lorsque vous démarrez l’exécution d’un pipeline de production, vous pouvez choisir entre le mode normal et le mode d’urgence dans une boîte de dialogue. Cette option est disponible si la fonction du mode d’exécution du pipeline d’urgence est activée pour le programme. Ce choix est disponible une fois la fonction activée.
 
@@ -175,7 +175,7 @@ Vous pouvez également exécuter un pipeline en mode d’urgence à l’aide de 
 $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 ```
 
-## Réexécution d’un déploiement en production {#reexecute-deployment}
+## Exécuter à nouveau un déploiement en production {#reexecute-deployment}
 
 Dans de rares cas, les étapes de déploiement en production peuvent échouer pour des raisons transitoires. Dans ce cas, vous pouvez exécuter à nouveau l’étape de déploiement en production à condition qu’elle soit terminée, qu’elle ait été réussie, annulée ou ratée. La réexécution est prise en charge par l’utilisation du même pipeline qui comprend les trois étapes suivantes :
 
@@ -195,14 +195,14 @@ Dans de telles circonstances, si une réexécution est possible, la page de stat
 
 * La réexécution de l’étape de déploiement en production n’est disponible que lors de la dernière exécution.
 * La réexécution n’est pas disponible pour les exécutions de restauration ou les exécutions de mise à jour des notifications push.
-* Si la dernière exécution a échoué à un moment donné avant l’étape de déploiement en production, la réexécution n’est pas possible.
+* Si la dernière exécution a échoué à un moment donné avant l’étape de déploiement en production, une nouvelle exécution n’est pas possible.
 
 
-### Réexécuter l’API {#reexecute-api}
+### Exécuter à nouveau l’API {#reexecute-api}
 
-En plus d’être disponible dans l’IU, l’[API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/?lang=fr#tag/Pipeline-Execution) peut servir à déclencher de nouvelles exécutions et à identifier les exécutions déclenchées comme réexécutions.
+En plus d’être disponible dans l’IU, l’[API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/?lang=fr#tag/Pipeline-Execution) peut servir à déclencher de nouvelles exécutions et à identifier les exécutions déclenchées comme nouvelles exécutions.
 
-#### Déclencher une réexécution {#triggering}
+#### Déclencher une nouvelle exécution {#triggering}
 
 Pour déclencher une réexécution, une requête `PUT` doit être envoyée au lien HAL `http://ns.adobe.com/adobecloud/rel/pipeline/reExecute` à l’état d’étape de déploiement en production.
 
@@ -250,6 +250,6 @@ La syntaxe de la valeur `href` du lien HAL est donnée à titre d’exemple. La 
 
 L’envoi d’une requête `PUT` à ce point d’entrée entraîne une réponse `201` en cas de réussite. Le corps de la réponse est la représentation de la nouvelle exécution. Cela revient à lancer une exécution ordinaire via l’API.
 
-#### Identifier une exécution réexécutée {#identifying}
+#### Identifier une exécution exécutée à nouveau {#identifying}
 
-Le système identifie les exécutions réexécutées par la valeur `RE_EXECUTE` dans le champ de déclenchement.
+Le système identifie les exécutions exécutées à nouveau par la valeur `RE_EXECUTE` dans le champ de déclenchement.

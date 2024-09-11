@@ -3,9 +3,9 @@ title: Configurer les pipelines hors production
 description: Découvrez comment utiliser Cloud Manager pour créer et configurer des pipelines hors production afin de déployer votre code.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '685'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 64%
 
 Découvrez comment utiliser Cloud Manager pour créer et configurer des pipelines hors production afin de déployer votre code. Si vous souhaitez d’abord obtenir une vue d’ensemble plus conceptuelle du fonctionnement des pipelines dans Cloud Manager, reportez-vous au document [Pipelines CI/CD](/help/overview/ci-cd-pipelines.md).
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 En utilisant le volet **Pipelines** dans [!UICONTROL Cloud Manager], le **Responsable de déploiement** peut créer deux types de pipelines différents.
 
@@ -24,12 +24,12 @@ Ce document se concentre sur les pipelines hors production. Pour plus de détail
 
 Il existe deux types de pipelines hors production :
 
-* **Pipelines de qualité du code** : ces pipelines exécutent des analyses de qualité du code sur le code d’une branche Git et exécutent les étapes de génération et de qualité du code.
-* **Pipelines de déploiement** - En plus d’exécuter les étapes de génération et de qualité de code comme les pipelines de qualité de code, ces pipelines déploient également le code vers un environnement hors production.
+* **Pipelines de qualité du code** : ceux-ci exécutent des analyses de qualité du code sur le code dans une branche Git et exécutent les étapes de création et de qualité du code.
+* **Pipelines de déploiement** : outre l’exécution des étapes de création et de qualité du code, identiques à celles des pipelines de qualité du code, ces pipelines déploient le code dans un environnement hors production.
 
 >[!NOTE]
 >
->Un pipeline ne peut pas être configuré tant que son référentiel Git associé ne comporte pas au moins une branche et que la [configuration du programme](/help/getting-started/program-setup.md) n’est pas terminée. Voir [Référentiels Cloud Manager](/help/managing-code/managing-repositories.md) pour savoir comment ajouter et gérer des référentiels dans Cloud Manager.
+>Un pipeline ne peut être configuré que si le référentiel Git qui lui est associé dispose d’au moins une branche et que la [configuration du programme](/help/getting-started/program-setup.md) est terminée. Consultez le document [Référentiels Cloud Manager](/help/managing-code/managing-repositories.md) pour découvrir comment ajouter et gérer des référentiels dans Cloud Manager.
 
 ## Ajouter un pipeline hors production {#add-non-production-pipeline}
 
@@ -51,23 +51,23 @@ Une fois que vous avez configuré votre programme et que vous disposez d’au mo
 
 1. Indiquez le référentiel dans lequel le pipeline doit récupérer le code.
 
-   * **Repository** - Définit à partir de quel référentiel Git le pipeline doit récupérer le code.
-   * **Branche Git** - Définit à partir de quelle branche dans Git le pipeline sélectionné doit récupérer le code.
+   * **Référentiel** : définit à partir de quel référentiel Git le pipeline doit récupérer le code.
+   * **Branche Git** : définit à partir de quelle branche le pipeline sélectionné doit récupérer le code.
 
 1. Définissez vos options de déploiement.
 
    1. Sous **Déclencheur de déploiement**, définissez l’événement qui active le pipeline.
 
-      * **Manuel** - Permet de démarrer manuellement le pipeline.
-      * **Lors des modifications Git** - Démarre le pipeline lorsque des validations sont ajoutées à la branche Git configurée. Avec cette option, vous pouvez toujours démarrer le pipeline manuellement, selon les besoins.
+      * **Manuel** : vous permet de lancer le pipeline manuellement.
+      * **Lors des modifications Git** : démarre le pipeline lorsque des validations sont ajoutées à la branche Git configurée. Avec cette option, vous pouvez toujours démarrer le pipeline manuellement, si nécessaire.
 
-   1. Pour les pipelines de déploiement, sous **Comportement en cas d’échecs de mesures importants**, définissez le comportement du pipeline en cas d’échec important à l’un des points de contrôle qualité.
+   1. Pour les pipelines de déploiement, sous **Comportement en cas d’échec de mesure grave**, définissez le comportement du pipeline en cas d’échec important à l’un des points de contrôle qualité.
 
-      * **Demander à chaque fois** - Le paramètre par défaut et nécessite une intervention manuelle en cas d’échec important.
-      * **Fail Immédiatement** - Le pipeline est annulé chaque fois qu’un échec important se produit. Il s’agit essentiellement de l’émulation d’un utilisateur ou d’une utilisatrice qui rejette manuellement chaque échec.
-      * **Continuer immédiatement** - Le pipeline se poursuit automatiquement chaque fois qu’un échec important se produit. Il s’agit essentiellement de l’émulation d’un utilisateur ou d’une utilisatrice qui approuve manuellement chaque échec.
+      * **Demander à chaque fois** : paramètre par défaut, qui nécessite une intervention manuelle lors de n’importe quel échec important.
+      * **Échouer immédiatement** : le pipeline sera interrompu dès qu’un échec important aura lieu. Il s’agit essentiellement de l’émulation d’un utilisateur ou d’une utilisatrice qui rejette manuellement chaque échec.
+      * **Continuer immédiatement** : le pipeline se poursuivra automatiquement chaque fois qu’un échec important se produira. Il s’agit essentiellement de l’émulation d’un utilisateur ou d’une utilisatrice qui approuve manuellement chaque échec.
 
-   1. **Configuration Dispatcher** - Le rôle **Gestionnaire de déploiement** peut configurer un ensemble de chemins de contenu qui sont invalidés ou purgés du cache Dispatcher d’AEM lorsqu’un pipeline est exécuté. Ces actions de cache sont effectuées dans le cadre de l’étape du pipeline de déploiement, juste après le déploiement des packages de contenu. Ces paramètres utilisent le comportement standard d’AEM Dispatcher. Pour configurer :
+   1. **Configuration du Dispatcher** : le rôle de la personne **Responsable de déploiement** consiste à configurer un ensemble de chemins de contenu qui sont soit invalidés soit vidés du cache d’AEM Dispatcher lorsqu’un pipeline est exécuté. Ces actions de cache sont exécutées dans le cadre de l’étape du pipeline de déploiement, juste après le déploiement des modules de contenu. Ces paramètres utilisent le comportement standard d’AEM Dispatcher. Pour configurer :
 
       1. Sous **CHEMIN**, fournissez un chemin d’accès au contenu.
       1. Sous **TYPE**, sélectionnez l’action à effectuer sur ce chemin.

@@ -3,18 +3,18 @@ title: Navigation dans l’interface d’utilisation de Cloud Manager
 description: Découvrez l’organisation de l’interface d’utilisation de Cloud Manager et comment gérer vos programmes et vos environnements.
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1435'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# Navigation dans l’interface utilisateur de Cloud Manager {#navigation}
+# Naviguer dans l’interface d’utilisation de Cloud Manager {#navigation}
 
 Découvrez l’organisation de l’interface d’utilisation de Cloud Manager et comment gérer vos programmes et vos environnements.
 
-L’interface utilisateur de Cloud Manager se compose principalement de deux interfaces graphiques :
+L’interface d’utilisation de Cloud Manager est composée principalement de deux interfaces graphiques :
 
 * [La console Mes programmes](#my-programs-console) permet d’afficher et de gérer tous vos programmes.
 * [La fenêtre Vue d’ensemble du programme](#program-overview) permet de consulter les détails d’un programme individuel et de le gérer.

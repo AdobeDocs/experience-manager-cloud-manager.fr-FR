@@ -3,9 +3,9 @@ title: Autorisations personnalisées
 description: Découvrez comment utiliser des autorisations personnalisées pour créer des profils d’autorisation personnalisés avec des autorisations configurables afin de restreindre l’accès aux programmes, aux pipelines et aux environnements pour les utilisateurs et utilisatrices de Cloud Manager.
 exl-id: a81eda9f-aa89-40ea-8e4c-52367a0a6aba
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1416'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Cloud Manager dispose d’un ensemble de rôles prédéfinis qui régissent l�
 * Propriétaire de l’entreprise
 * Responsable de programme
 * Responsable de déploiement
-* Développeur
+* Développeur ou développeuse
 
 Les autorisations personnalisées permettent aux utilisateurs et utilisatrices de créer des profils d’autorisation personnalisés avec des autorisations configurables, afin de restreindre l’accès des utilisateurs et utilisatrices de Cloud Manger aux programmes, aux pipelines et aux environnements.
 
@@ -123,8 +123,8 @@ Les autorisations suivantes sont disponibles pour créer des profils personnalis
 | Remplacement et rejet d’échecs de mesures importantes | Autoriser les personnes à remplacer et à rejeter les échecs de mesures importantes |
 | Planification des déploiements en production | Autoriser des personnes à planifier une étape de déploiement en production |
 | Accès aux informations sur le référentiel | Autoriser les personnes à accéder aux informations du référentiel et à générer un mot de passe d’accès |
-| Création de référentiel | Autoriser les utilisateurs à créer des référentiels Git |
-| Suppression de référentiel | Autorisation de la suppression des référentiels Git par les utilisateurs |
+| Création de référentiel | Autoriser les personnes à créer des référentiels Git |
+| Suppression de référentiel | Autoriser les personnes à supprimer des référentiels Git |
 | Modification de référentiel | Autoriser les personnes à modifier les référentiels Git |
 | Génération de code de référentiel | Autoriser les personnes à générer des projets à partir de l’archétype |
 | Gestion de la copie de contenu | Autoriser les personnes à gérer les opérations de copie de contenu |
@@ -173,7 +173,7 @@ Gardez à l’esprit les limites suivantes lorsque vous utilisez des autorisatio
 * Propriétaire de l’entreprise
 * Responsable de programme
 * Responsable de déploiement
-* Développeur
+* Développeur ou développeuse
 
 Pour plus d’informations sur les rôles prédéfinis, voir la section [Autorisations basées sur les rôles](/help/requirements/role-based-permissions.md).
 

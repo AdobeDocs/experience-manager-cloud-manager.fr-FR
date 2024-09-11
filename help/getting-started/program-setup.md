@@ -1,18 +1,18 @@
 ---
 title: Configuration du programme
-description: Après l’intégration, le propriétaire de l’entreprise doit effectuer une configuration initiale du programme.
+description: Après l’intégration, la personne propriétaire de l’entreprise doit effectuer une configuration initiale du programme.
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '564'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
 
 # Configuration du programme {#program-setup}
 
-Après l’intégration, le propriétaire de l’entreprise configure le programme en ajoutant une description et en définissant des indicateurs de performances clés (IPC). Ces indicateurs de performance clés sont ensuite utilisés pour les tests de performance.
+Après l’intégration, la personne propriétaire de l’entreprise configure le programme en ajoutant une description et en définissant des indicateurs clés de performance (KPI). Ces KPI sont ensuite utilisés pour les tests de performance.
 
 ## Configuration du programme avec [!UICONTROL Cloud Manager] {#program-setup-cloud-manager}
 
@@ -24,7 +24,7 @@ Pour configurer le programme et définir les KPI, procédez comme suit :
 
    ![Configurer le programme](/help/assets/set-up-program/setup1.png)
 
-1. Dans la boîte de dialogue **Configurer le programme**, vous pouvez saisir les informations du programme sur trois onglets :
+1. Dans la boîte de dialogue **Configurer le programme**, vous pouvez saisir les informations du programme dans trois onglets :
 
    * **Général**
    * **KPI**
@@ -34,7 +34,7 @@ Pour configurer le programme et définir les KPI, procédez comme suit :
 
    ![Onglet Général](/help/assets/Setup_Program-General.png)
 
-1. Dans l’onglet **KPI**, définissez vos KPI. Des KPI distincts sont définis pour **AEM Sites** et **AEM Assets**. Spécifiez les indicateurs de performance clés pour les produits sous licence que vous possédez.
+1. Dans l’onglet **KPI**, définissez vos KPI. Des KPI distincts sont définis pour **AEM Sites** et **AEM Assets**. Spécifiez les KPI pour les produits sous licence que vous possédez.
 
    Voir la section [KPI](#kpis) pour plus de détails sur la façon dont les KPI sont mesurés dans Cloud Manager.
 
@@ -42,7 +42,7 @@ Pour configurer le programme et définir les KPI, procédez comme suit :
 
 1. Dans l’onglet **Approvisionnement**, vous pouvez définir les options de mise à l’échelle à la demande de vos environnements si la mise à l’échelle automatique est activée pour votre programme.
 
-   La mise à l’échelle automatique s’applique uniquement à l’environnement de production et peut ne pas être disponible pour tous les programmes clients.
+   La fonction de mise à l’échelle automatique s’applique uniquement à l’environnement de production et peut ne pas être disponible pour tous les programmes clients.
 
    ![Options d’approvisionnement](/help/assets/Setup_Program-Provisioning.png)
 
@@ -68,9 +68,9 @@ Vous pouvez modifier les programmes une fois qu’ils ont été configurés. Pou
 
 1. Cliquez sur **Mettre à jour** pour enregistrer vos modifications.
 
-Les modifications sont immédiatement enregistrées dans Cloud Manager, mais ne sont pas répercutées dans vos environnements avant la prochaine exécution du pipeline.
+Les modifications sont enregistrées immédiatement dans Cloud Manager, mais ne seront pas répercutées dans vos environnements avant la prochaine exécution du pipeline.
 
-Si vous n’avez pas encore créé de pipeline, voir [Configuration des pipelines de production](/help/using/production-pipelines.md) et [Configuration des pipelines hors production](/help/using/non-production-pipelines.md).
+Si vous n’avez pas encore créé de pipeline, consultez les documents [Configurer des pipelines de production](/help/using/production-pipelines.md) et [Configurer des pipelines hors production](/help/using/non-production-pipelines.md).
 
 ## Basculer entre les programmes {#swithing-programs}
 
@@ -82,13 +82,13 @@ Utilisez la barre d’actions pour passer à un autre programme, modifier le pro
 
 ## KPI {#kpis}
 
-Les indicateurs de performance clés des sites sont mesurés sur les tests exécutés dans l’environnement intermédiaire. En règle générale, les KPI sont adaptés aux capacités de l’environnement d’évaluation.
+Les KPI des sites sont mesurés sur les tests exécutés dans l’environnement d’évaluation. En règle générale, les KPI sont adaptés aux capacités de l’environnement d’évaluation.
 
-Par exemple, un utilisateur qui attend une moyenne de 1 000 pages vues par minute dans son environnement de production et qui dispose de quatre serveurs Dispatcher/publication en production doit mettre ce scénario à l’échelle de 250 pages vues par minute. Ce scénario suppose que leur environnement d’évaluation se compose d’une seule paire de serveurs de publication/dispatcher.
+Par exemple, une personne qui attend une moyenne de 1 000 pages vues par minute dans son environnement de production et qui dispose de quatre serveurs Dispatcher/de publication en production doit réduire cette valeur à 250 pages vues par minute. Ce scénario suppose que son environnement d’évaluation se compose d’une seule paire de serveurs Dispatcher/de publication.
 
-Les tests de performances d’Assets impliquent le chargement répété de ressources sur une période de 30 minutes. Le temps de traitement de chaque ressource et de diverses mesures au niveau du système sont mesurés tout au long du test.
+Les tests de performances d’Assets impliquent le chargement répété de ressources sur une période de 30 minutes. Le temps de traitement de chaque ressource et diverses mesures au niveau du système sont mesurés tout au long du test.
 
-De plus, de nombreux utilisateurs disposeront d’un réseau de diffusion de contenu (CDN), tel qu’Akamai ou CloudFront devant leur environnement de production. Étant donné que [!UICONTROL Cloud Manager] effectue directement des tests par rapport à l’environnement d’évaluation, l’indicateur de performance clé doit refléter uniquement le trafic prévu pour transiter par le réseau de diffusion de contenu. C&#39;est-à-dire que le cache manque. En règle générale, cette expérience est un sous-ensemble relativement petit du trafic de production total.
+De plus, de nombreux utilisateurs et utilisatrices disposeront d’un réseau de diffusion de contenu (CDN), tel qu’Akamai ou CloudFront, devant leur environnement de production. Étant donné que [!UICONTROL Cloud Manager] effectue directement des tests par rapport à l’environnement d’évaluation, le KPI doit refléter uniquement le trafic prévu pour transiter via le réseau CDN. C’est-à-dire les défaut du cache. En règle générale, cette expérience est un sous-ensemble relativement petit du trafic de production total.
 
 ## Vue d’ensemble vidéo {#video}
 
