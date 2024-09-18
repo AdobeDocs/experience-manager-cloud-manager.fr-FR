@@ -3,9 +3,9 @@ title: Gérer les environnements
 description: Découvrez comment utiliser Cloud Manager pour gérer vos environnements.
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
 source-git-commit: 0b7c926120798e2fdb635752192f4ab2e12c1e24
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '273'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ L’écran **Environnements** affiche chaque environnement d’évaluation et de
 
 >[!NOTE]
 >
->Demandez les journaux de votre environnement à l’ingénieur du service client.
+>Demandez vos journaux d’environnement à l’équipe d’ingénierie du succès clientèle.
 
 ## Tutoriel vidéo {#video-tutorial}
 
@@ -66,4 +66,4 @@ La vidéo suivante présente un aperçu des environnements Cloud Manager compos
 
 >[!VIDEO](https://video.tv.adobe.com/v/26318/)
 
-*(3 minutes, 1 seconde)*
+*(3 minutes, 1 seconde)*

@@ -3,9 +3,9 @@ title: Intégration Git à Adobe Cloud Manager
 description: Cette série de vidéos explique la configuration et l’intégration d’un référentiel Git géré par le client ou la cliente (On-Premise) avec Adobe Cloud Manager.
 exl-id: e517f8a4-23f0-4486-8278-91396dba76ec
 source-git-commit: 51bd685a17eb9d68b1ec8245e6167cab02101fc1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '331'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Préparez le code d’une mise à jour de production dans un référentiel Git g
 
 >[!VIDEO](https://video.tv.adobe.com/v/28724/?quality=12)
 
-## Synchronisation des balises de publication {#sync-tags}
+## Synchroniser les balises de version {#sync-tags}
 
 Vous pouvez synchroniser les balises de version d’un référentiel Git Cloud Manager dans un référentiel Git géré par le client ou la cliente. Cette fonctionnalité offre une visibilité sur le code qui a été déployé dans les environnements d’évaluation et de production.
 

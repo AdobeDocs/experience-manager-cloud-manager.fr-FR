@@ -3,9 +3,9 @@ title: Notes de mise à jour de la version 2024.9.0 de Cloud Manager
 description: Voici les notes de mise à jour de la version 2024.9.0 de Cloud Manager.
 feature: Release Information
 source-git-commit: 3671772a1369273d89fde101ba084a6e2f8ce8dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '184'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -19,14 +19,14 @@ Cette page présente les notes de mise à jour de la version 2024.9.0 de [!UICO
 
 ## Date de publication {#release-date}
 
-Aucun bogue ou fonctionnalité notable n’a été relevé dans la version de Cloud Manager de septembre.
+Aucun bug ni aucune fonctionnalité notable pour la version de Cloud Manager de septembre.
 
-La prochaine version est prévue pour le vendredi 3 octobre 2024.
+La prochaine version est prévue pour le 3 octobre 2024.
 
 
 ## Nouveautés {#what-is-new}
 
-* Pour les pipelines d’évaluation seule et de production seule (disponibles dans le cadre du [programme d’adoption précoce](#staging-production-only-pipelines)), vous pouvez désormais les exécuter en [mode d’urgence](/help/using/stage-prod-only.md#emergency-mode), en ignorant les tests d’étape.
+* Pour les pipelines dédiés à l’évaluation uniquement et à la production uniquement (disponibles dans le cadre du [programme d’adoption précoce](#staging-production-only-pipelines)), vous pouvez désormais les exécuter en [mode d’urgence](/help/using/stage-prod-only.md#emergency-mode), en ignorant les tests dans l’environnement d’évaluation.
 
 ## Programme d’adoption précoce {#early-adoption}
 
