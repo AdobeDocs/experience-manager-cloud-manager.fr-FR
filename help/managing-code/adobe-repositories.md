@@ -1,36 +1,45 @@
 ---
-title: Ajout de référentiels Adobe dans Cloud Manager
-description: Découvrez comment créer des référentiels gérés par Adobe dans Cloud Manager.
+title: Ajout d’un référentiel d’Adobe dans Cloud Manager
+description: Découvrez comment ajouter des référentiels gérés par Adobe dans Cloud Manager.
 exl-id: 24c6ca97-ea70-41b8-b4c7-b8b0f406a57d
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '145'
-ht-degree: 100%
+source-git-commit: 675568426df0df5890dd8c72bfb53c24a4c5d666
+workflow-type: tm+mt
+source-wordcount: '230'
+ht-degree: 7%
 
 ---
 
-# Ajouter des référentiels Adobe dans Cloud Manager {#adobe-repositories}
+# Ajout d’un référentiel d’Adobe dans Cloud Manager {#adobe-repositories}
 
-Découvrez comment créer des référentiels gérés par Adobe dans Cloud Manager.
+Découvrez comment ajouter un référentiel géré par Adobe dans Cloud Manager.
 
-## Ajouter un référentiel géré par Adobe {#add-adobe-repository}
+La page **Référentiels** permet d’ajouter facilement des référentiels gérés par Adobe à un programme sélectionné.
 
-La fenêtre **Référentiels** facilite l’ajout de référentiels gérés par Adobe supplémentaires pour votre programme.
+**Pour ajouter un référentiel d’Adobe dans Cloud Manager :**
 
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée et le programme auquel vous souhaitez ajouter un référentiel géré par Adobe.
 
-1. Sur la page **Vue d’ensemble du programme**, cliquez sur l’onglet **Référentiels** pour accéder à la page **Référentiels**.
+1. Sur la page **Aperçu du programme**, dans le menu latéral, cliquez sur l’onglet ![Icône Dossier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **Référentiels** .
 
-1. Cliquez sur **Ajouter un référentiel** dans la barre d’outils.
+1. Sur la page **Référentiels**, près du coin supérieur droit, cliquez sur **Ajouter un référentiel**.
 
-   ![Bouton Ajouter un référentiel](assets/repositories.png)
+   ![Bouton Ajouter un référentiel](/help/managing-code/assets/repositories-tab.png)
 
-1. Saisissez le nom et la description demandés, puis cliquez sur **Enregistrer**.
+1. Dans la boîte de dialogue **Ajouter un référentiel**, assurez-vous que **Adobe Repository** est sélectionné comme type de référentiel.
 
-   ![Boîte de dialogue Ajouter un référentiel](assets/add-repository-wizard.png)
+1. Dans les champs de texte respectifs, saisissez ce qui suit :
 
-Lorsque l’assistant se ferme, votre nouveau référentiel s’affiche dans le tableau dans la fenêtre **Référentiels**. Vous pouvez désormais associer un [Pipeline CI/CD](/help/overview/ci-cd-pipelines.md) à celui-ci, ou le gérer dans la fenêtre [**Référentiels**](managing-repositories.md).
+   * **Nom du référentiel** : nom expressif de votre nouveau référentiel.
+   * **Aperçu de l’URL du référentiel** - Vous n’avez pas besoin de saisir un chemin d’URL ni de modifier le chemin existant, car l’infrastructure du référentiel est déjà en place et entièrement intégrée et gérée par Adobe.
+   * **Description (facultatif)** - Description détaillée du référentiel.
+
+   ![Boîte de dialogue Ajouter un référentiel](/help/managing-code/assets/repository-add-adobe.png)
+
+1. Cliquez sur **Enregistrer**.
+Votre nouveau référentiel est affiché dans le tableau de la page **Référentiels**.
+
+Vous pouvez désormais associer un [pipeline CI/CD](/help/overview/ci-cd-pipelines.md) ou le gérer dans la page [**Référentiels**](/help/managing-code/managing-repositories.md).
 
 >[!TIP]
 >
->Vous pouvez également ajouter des référentiels GitHub que vous gérez vous-même, en tant que [référentiels privés](private-repositories.md).
+>Vous pouvez également ajouter des référentiels GitHub que vous gérez vous-même, en tant que [référentiels privés](/help/managing-code/private-repositories.md).
