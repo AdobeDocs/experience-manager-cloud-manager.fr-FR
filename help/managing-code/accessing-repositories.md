@@ -2,7 +2,7 @@
 title: Informations d’accès au référentiel
 description: Découvrez comment accéder à votre référentiel Git géré par Adobe et comment le gérer à l’aide de la gestion de compte Git en libre-service, à partir de Cloud Manager.
 exl-id: 1cc88c82-67c7-4553-a1b8-d2ab22be466c
-source-git-commit: b66eb29ab86b2a6acf3a1d92c217154d07b9cc1e
+source-git-commit: 04fbc4a3fdba8b108055d66a4fdb1a31994cb18e
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 47%
@@ -24,7 +24,7 @@ La boîte de dialogue **Repository Info** vous permet d’afficher les informati
 * L’URL vers le référentiel Git de Cloud Manager.
 * Des commandes Git préconfigurées pour ajouter rapidement un référentiel distant à votre référentiel Git et pour transférer du code.
 
-![Fenêtre Informations sur le référentiel](assets/repository-info.png)
+  ![Fenêtre Informations sur le référentiel](assets/repository-info.png)
 
 Les informations d’accès relatives aux [référentiels privés](/help/managing-code/private-repositories.md) ne sont pas disponibles dans Cloud Manager.
 

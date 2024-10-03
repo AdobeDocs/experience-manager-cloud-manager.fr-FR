@@ -3,10 +3,10 @@ title: Ajouter des référentiels privés dans Cloud Manager
 description: Découvrez comment configurer Cloud Manager pour utiliser vos propres référentiels GitHub privés.
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
-workflow-type: ht
-source-wordcount: '795'
-ht-degree: 100%
+source-git-commit: 5090d7ee9a6742d71122acda9901d074bc254305
+workflow-type: tm+mt
+source-wordcount: '818'
+ht-degree: 96%
 
 ---
 
@@ -30,7 +30,9 @@ La configuration se compose de deux étapes principales :
 1. [Ajouter un référentiel](#add-repo)
 1. [Validation de la propriété du référentiel privé](#validate-ownership)
 
-### Ajouter un référentiel {#add-repo}
+
+
+### Ajout d’un référentiel {#add-repo}
 
 1. Dans Cloud Manager, dans la page **Vue d’ensemble du programme**, cliquez sur l’onglet **Référentiels** pour basculer vers la page **Référentiels** et cliquez sur **Ajouter un référentiel**.
 
@@ -50,7 +52,9 @@ La configuration se compose de deux étapes principales :
 >
 >Pour plus d’informations sur la gestion des référentiels dans Cloud Manager, consultez le document [Référentiels Cloud Manager](/help/managing-code/managing-repositories.md).
 
-### Validation de la propriété du référentiel privé {#validate-ownership}
+
+
+### Validation de la propriété d’un référentiel privé {#validate-ownership}
 
 Cloud Manager connaît désormais votre référentiel GitHub, mais il doit toujours y accéder. Pour accorder l’accès, vous devez installer l’application GitHub d’Adobe et vérifier que vous êtes propriétaire du référentiel spécifié.
 
@@ -88,9 +92,13 @@ Notez que la colonne **Type** permet d’identifier facilement les référentiel
 
 Pour revenir au référentiel ultérieurement et terminer la validation, accédez à la page **Référentiels**. Cliquez sur le bouton représentant des points de suspension en regard du référentiel GitHub que vous avez ajouté, puis sélectionnez **Validation de la propriété** dans le menu déroulant.
 
+
+
 ## Utiliser des référentiels privés avec Cloud Manager {#using}
 
 Une fois le référentiel GitHub validé dans Cloud Manager, l’intégration est terminée et vous pouvez utiliser le référentiel avec Cloud Manager.
+
+**Pour utiliser des référentiels privés avec Cloud Manager :**
 
 1. Lorsque vous créez une demande d’extraction, une vérification GitHub démarre automatiquement.
 
@@ -112,16 +120,21 @@ Lorsque la demande d’extraction est fermée ou fusionnée, le pipeline de qual
 >
 >Vous pouvez contrôler les pipelines créés automatiquement pour valider chaque requête d’extraction dans un référentiel privé. Consultez le document [Configuration de la vérification GitHub pour les référentiels privés](github-check-config.md) pour plus d’informations.
 
+
+
 ## Associer des référentiels privés à des pipelines {#pipelines}
 
-Les référentiels privés validés peuvent être associés à des [pipelines de pile pleine](/help/overview/ci-cd-pipelines.md).
+Les référentiels privés validés peuvent être associés aux [pipelines full-stack et front-end](/help/overview/ci-cd-pipelines.md).
+
+
 
 ## Limites {#limitations}
 
 Certaines limites s’appliquent lors de l’utilisation de référentiels privés avec Cloud Manager.
 
-* Vous ne pouvez pas suspendre la validation de la demande d’extraction à l’aide de la vérification GitHub à partir de Cloud Manager. Si le référentiel GitHub est validé dans Cloud Manager, ce dernier tente toujours de valider les demandes d’extraction créées pour ce référentiel.
-* Si l’application GitHub d’Adobe est supprimée de votre organisation GitHub, la fonctionnalité de validation des demandes d’extraction est supprimée pour tous les référentiels.
+* Les pipelines de niveau web et de configuration ne sont pas pris en charge pour les référentiels privés.
 * Aucune balise Git ne sera créée et transmise lors de l’utilisation de référentiels privés sur des pipelines de pile pleine de production.
+* Si l’application GitHub d’Adobe est supprimée de votre organisation GitHub, la fonctionnalité de validation des demandes d’extraction est supprimée pour tous les référentiels.
 * Les pipelines qui utilisent des référentiels privés et le déclencheur de version sur validation ne sont pas lancés automatiquement lorsqu’une nouvelle validation est transmise dans la branche sélectionnée.
 * La [fonctionnalité de réutilisation des artefacts](/help/getting-started/project-setup.md#build-artifact-reuse) ne s’applique pas aux référentiels privés.
+* Vous ne pouvez pas suspendre la validation de la demande d’extraction à l’aide de la vérification GitHub à partir de Cloud Manager. Si le référentiel GitHub est validé dans Cloud Manager, ce dernier tente toujours de valider les demandes d’extraction créées pour ce référentiel.
