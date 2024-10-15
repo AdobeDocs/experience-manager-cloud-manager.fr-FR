@@ -3,9 +3,9 @@ title: Notes de mise à jour de la version 2024.10.0 de Cloud Manager
 description: Voici les notes de mise à jour de la version 2024.10.0 de Cloud Manager.
 feature: Release Information
 source-git-commit: 74e8f7c0f3896e0e33a02b62c003db322c0d50d8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '369'
-ht-degree: 27%
+ht-degree: 100%
 
 ---
 
@@ -23,44 +23,44 @@ Cette page présente les notes de mise à jour de la version 2024.10.0 de [!UIC
 
 <!-- SAVE FOR FUTURE POSSIBLE USE No notable bugs or features for the September release of Cloud Manager. -->
 
-La date de publication de [!UICONTROL Cloud Manager] 2024.10.0 est le 3 octobre 2024.
+La date de publication de la mise à jour 2024.10.0 de [!UICONTROL Cloud Manager] est le 3 octobre 2024.
 
-La prochaine version est prévue pour le vendredi 14 novembre 2024.
+La prochaine version est prévue pour le 14 novembre 2024.
 
 
 
 ## Nouveautés {#what-is-new}
 
-* <!-- BOTH CS & AMS --> La version AEM Archetype utilisée dans Cloud Manager est désormais mise à jour vers la version 26. Voir [https://github.com/adobe/aem-project-archetype/releases](https://github.com/adobe/aem-project-archetype/releases)
+* <!-- BOTH CS & AMS --> La version d’archétype AEM utilisée dans Cloud Manager est désormais mise à jour vers la version 26. Voir [https://github.com/adobe/aem-project-archetype/releases](https://github.com/adobe/aem-project-archetype/releases)
 <!-- (CMGR-59817) -->
 
 
 
 ## Programme d’adoption précoce {#early-adoption}
 
-Faites partie du programme Cloud Manager d’adoption anticipée et avez la possibilité de tester les fonctionnalités à venir.
+Prenez part à notre programme d’adoption précoce de Cloud Manager afin de pouvoir tester certaines fonctionnalités à venir.
 
 ### Apportez votre propre Git - avec prise en charge de GitLab et Bitbucket {#gitlab-bitbucket}
 
 <!-- BOTH CS & AMS -->
 
-La fonctionnalité **Bring Your Own Git** a été étendue pour inclure la prise en charge de référentiels externes tels que GitLab et Bitbucket. Cette nouvelle prise en charge s’ajoute à la prise en charge déjà existante des référentiels GitHub privés et d’entreprise. Lorsque vous ajoutez ces nouveaux repos, vous pouvez également les lier directement à vos pipelines. Vous pouvez héberger ces référentiels sur des plateformes cloud publiques ou dans votre cloud ou infrastructure privée. Cette intégration élimine également la nécessité d’une synchronisation constante du code avec le référentiel d’Adobe et permet de valider les requêtes d’extraction avant de les fusionner dans une branche principale.
+La fonctionnalité **Apportez votre propre Git** a été étendue pour inclure la prise en charge de référentiels externes tels que GitLab et Bitbucket. Cette nouvelle prise en charge s’ajoute à la prise en charge existante des référentiels GitHub privés et d’entreprise. Lorsque vous ajoutez ces nouveaux référentiels, vous pouvez également les lier directement à vos pipelines. Vous pouvez héberger ces référentiels sur des plateformes cloud publiques ou dans votre infrastructure ou cloud privés. Cette intégration élimine également la nécessité d’une synchronisation constante du code avec le référentiel d’Adobe et permet de valider les requêtes d’extraction avant de les fusionner dans une branche principale.
 
-Voir [Ajout de référentiels externes dans Cloud Manager](/help/managing-code/external-repositories.md).
+Voir [Ajouter des référentiels externes dans Cloud Manager](/help/managing-code/external-repositories.md).
 
 ![Boîte de dialogue Ajouter un référentiel](/help/release-notes/assets/repositories-add-release-notes.png)
 
 >[!NOTE]
 >
->Actuellement, les contrôles de qualité du code de demande d’extraction prêts à l’emploi sont exclusifs aux référentiels hébergés par GitHub, mais une mise à jour pour étendre cette fonctionnalité à d’autres fournisseurs Git est en cours d’élaboration.
+>Actuellement, les contrôles de qualité du code des requêtes d’extraction prêts à l’emploi sont exclusifs aux référentiels hébergés par GitHub, mais une mise à jour permettant d’étendre cette fonctionnalité à d’autres fournisseurs Git est en cours.
 
-Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commentaires, envoyez un email à [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) à partir de votre adresse électronique associée à votre Adobe ID. Veillez à inclure la plateforme Git à utiliser et si vous utilisez une structure de référentiel privée/publique ou d’entreprise.
+Si vous souhaitez tester cette nouvelle fonctionnalité et faire part de vos commentaires, envoyez un e-mail à [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) à partir de l’adresse e-mail associée à votre Adobe ID. Veillez à inclure la plateforme Git à utiliser et indiquez si vous utilisez une structure de référentiel privée/publique ou d’entreprise.
 
 ### Pipelines dédiés uniquement à l’évaluation ou à la production {#staging-production-only-pipelines}
 
-Adobe annonce l’introduction de la prise en charge des [pipelines d’évaluation seule et de production seule](/help/using/stage-prod-only.md). Cette nouvelle fonctionnalité vous permet de diviser les pipelines de déploiement de production en pile pleine en déploiements plus petits et plus spécialisés.
+Adobe se réjouit d’annoncer l’introduction de la prise en charge des [pipelines dédiés uniquement à l’évaluation ou à la production](/help/using/stage-prod-only.md). Cette nouvelle fonctionnalité vous permet de diviser les pipelines de déploiement de production en pile pleine en déploiements plus petits et plus spécialisés.
 
-Si vous souhaitez tester cette fonctionnalité et fournir des commentaires, envoyez un e-mail [Grp-cloudmanager_splitpipelines@adobe.com](mailto:Grp-cloudmanager_splitpipelines@adobe.com) à partir de votre adresse électronique associée à votre Adobe ID.
+Si vous souhaitez tester cette nouvelle fonctionnalité et faire part de vos commentaires, envoyez un e-mail à [Grp-cloudmanager_splitpipelines@adobe.com](mailto:Grp-cloudmanager_splitpipelines@adobe.com) à partir de l’adresse e-mail associée à votre Adobe ID.
 
 <!-- ## Bug fixes
 

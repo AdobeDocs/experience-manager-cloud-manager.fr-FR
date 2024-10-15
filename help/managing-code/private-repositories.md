@@ -4,9 +4,9 @@ description: Découvrez comment configurer Cloud Manager pour utiliser vos prop
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
 source-git-commit: 5090d7ee9a6742d71122acda9901d074bc254305
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '818'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ La configuration se compose de deux étapes principales :
 
 
 
-### Ajout d’un référentiel {#add-repo}
+### Ajouter un référentiel {#add-repo}
 
 1. Dans Cloud Manager, dans la page **Vue d’ensemble du programme**, cliquez sur l’onglet **Référentiels** pour basculer vers la page **Référentiels** et cliquez sur **Ajouter un référentiel**.
 
@@ -98,7 +98,7 @@ Pour revenir au référentiel ultérieurement et terminer la validation, accéde
 
 Une fois le référentiel GitHub validé dans Cloud Manager, l’intégration est terminée et vous pouvez utiliser le référentiel avec Cloud Manager.
 
-**Pour utiliser des référentiels privés avec Cloud Manager :**
+**Pour utiliser des référentiels privés avec Cloud Manager :**
 
 1. Lorsque vous créez une demande d’extraction, une vérification GitHub démarre automatiquement.
 
@@ -124,7 +124,7 @@ Lorsque la demande d’extraction est fermée ou fusionnée, le pipeline de qual
 
 ## Associer des référentiels privés à des pipelines {#pipelines}
 
-Les référentiels privés validés peuvent être associés aux [pipelines full-stack et front-end](/help/overview/ci-cd-pipelines.md).
+Les référentiels privés validés peuvent être associés à des [pipelines full-stack et front-end.](/help/overview/ci-cd-pipelines.md).
 
 
 

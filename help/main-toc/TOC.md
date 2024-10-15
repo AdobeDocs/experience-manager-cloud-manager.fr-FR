@@ -8,9 +8,9 @@ feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
 source-git-commit: 1209faf71edbd74cd87acfe24ec438b98ddd4a3a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '342'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -29,10 +29,10 @@ ht-degree: 73%
    + [Droits d’accès](/help/requirements/access-rights.md)
    + [Référentiel de code source](/help/requirements/source-code-repository.md)
    + [Autorisations basées sur les rôles](/help/requirements/role-based-permissions.md)
-   + [Configuration des utilisateurs et des rôles](/help/requirements/users-and-roles.md)
+   + [Configuration des utilisateurs et utilisatrices et des rôles](/help/requirements/users-and-roles.md)
    + [Autorisations personnalisées](/help/using/custom-permissions.md)
-   + [Configuration d’environnement](/help/requirements/environment-provisioning.md)
-+ Prise en main {#getting-started}
+   + [Approvisionnement d’environnement](/help/requirements/environment-provisioning.md)
++ Commencer {#getting-started}
    + [Première connexion](/help/getting-started/first-time-login.md)
    + [Navigation](/help/getting-started/navigation.md)
    + [Configuration du programme](/help/getting-started/program-setup.md)
@@ -46,29 +46,29 @@ ht-degree: 73%
    + Pipelines CI/CD {#pipelines}
       + [Configurer un pipeline de production](/help/using/production-pipelines.md)
       + [Configurer un pipeline hors production](/help/using/non-production-pipelines.md)
-      + [Pipelines d’évaluation et de production uniquement (Adopteur anticipé)](/help/using/stage-prod-only.md)
-      + [Gérer les pipelines](/help/using/managing-pipelines.md)
+      + [Pipelines dédiés à l’étape de division et de production uniquement (adoption précoce)](/help/using/stage-prod-only.md)
+      + [Gestion des pipelines](/help/using/managing-pipelines.md)
    + [Déploiement du code](/help/using/code-deployment.md)
    + [Test de qualité du code](/help/using/code-quality-testing.md)
-   + [Gérer les environnements](/help/using/managing-environments.md)
-   + [Surveiller les environnements](/help/using/monitoring-environments.md)
+   + [Gestion des environnements](/help/using/managing-environments.md)
+   + [Surveillance des environnements](/help/using/monitoring-environments.md)
    + [API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
    + [CLI Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
    + [Notifications](/help/using/notifications.md)
    + [Règles de qualité du code personnalisé](/help/using/custom-code-quality-rules.md)
    + [Copie de contenu](/help/using/content-copy.md)
 + Gestion du code {#managing-code}
-   + [Gérer les référentiels dans Cloud Manager](/help/managing-code/managing-repositories.md)
+   + [Gestion des référentiels dans Cloud Manager](/help/managing-code/managing-repositories.md)
    + [Informations d’accès au référentiel](/help/managing-code/accessing-repositories.md)
-   + [Ajout d’un référentiel d’Adobe](/help/managing-code/adobe-repositories.md)
+   + [Ajout d’un référentiel Adobe](/help/managing-code/adobe-repositories.md)
    + [Ajout d’un référentiel privé](/help/managing-code/private-repositories.md)
-   + [Ajouter un référentiel externe (Adopteur anticipé)](/help/managing-code/external-repositories.md)
+   + [Ajout d’un référentiel externe (adoption précoce)](/help/managing-code/external-repositories.md)
    + [Prise en charge des sous-modules Git](/help/managing-code/git-submodules.md)
    + [Configuration de la vérification GitHub](/help/managing-code/github-check-config.md)
    + [Annotations de la vérification GitHub](/help/managing-code/github-annotations.md)
    + [Gestion des versions du projet Maven](/help/managing-code/maven-project-version.md)
-   + [Intégrer à Git](/help/managing-code/git-integration.md)
-   + [Utiliser plusieurs référentiels Git](/help/managing-code/multiple-git-repos.md)
+   + [Intégration à Git](/help/managing-code/git-integration.md)
+   + [Utilisation de plusieurs référentiels Git](/help/managing-code/multiple-git-repos.md)
 + Assistant de mise à jour du produit {#product-update-wizard}
    + [Vue d’ensemble](/help/product-update-wizard/overview.md)
    + [Évaluation](/help/product-update-wizard/evaluation.md)
