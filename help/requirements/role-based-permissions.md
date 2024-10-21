@@ -2,8 +2,8 @@
 title: Autorisations basées sur les rôles
 description: Découvrez les autorisations préconfigurées basées sur les rôles de Cloud Manager pour gérer l’accès à vos ressources cloud.
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
+source-git-commit: 682b142f35bc233bad82b0ddfa69bc0f2d5b5fdb
+workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 100%
 
@@ -45,24 +45,26 @@ Chacun des rôles est associé à des autorisations préconfigurées spécifique
 | --- | --- | --- | --- | --- | --- | --- |
 | Lire l’application | Lire les KPI du programme | x | x | x | x | x |
 | Écriture de l’application | Configuration ou modification du programme | x | | | | |
-| Ajout d’un programme | Ajouter un nouveau programme | x | | | | |
+| Ajout d’un programme | Ajouter un nouveau programme | x |  |  |  |  |
 | Lecture de l’environnement | Voir les détails de l’environnement | x | x | x | x | x |
 | Création de l’exécution | Démarrer le pipeline | x | x | x | | |
 | Lecture de l’exécution | Voir le statut de l’exécution | x | x | x | x | x |
 | Relancer l’exécution | Possibilité de reprendre l’exécution en pause | x | x | x | | x |
 | Approbation de l’exécution du déploiement en production | Fournir une approbation de mise en production | x | x | x | | |
 | Planning d’exécution du déploiement en production | Planifier le déploiement en production | x | x | x | | x |
-| Exécution du déploiement en production | Déployer l’application en production lorsqu’elle est mise en pause dans le cadre de la supervision de l’ingénieur du succès client (CSE). | | | | | x |
-| Annuler l’exécution | Annuler l’exécution actuelle | | | x | | |
-| Contourner les échecs du point de contrôle de qualité | Approuver des échecs importants du point de contrôle Qualité | x | x | x | | |
-| Création d’un pipeline | Configurer/modifier un pipeline | | x | | | |
+| Exécution du déploiement en production | Déployer l’application en production lorsqu’elle est mise en pause dans le cadre de la supervision de l’ingénieur du succès client (CSE). |  |  |  |  | x |
+| Annuler l’exécution | Annuler l’exécution actuelle |  |  | x |  |  |
+| Contourner les échecs du point de contrôle de qualité | Approuver des échecs importants du point de contrôle Qualité | x | x | x |  |  |
+| Création d’un pipeline | Configurer/modifier un pipeline |  | x |  |  |  |
 | Lecture d’un pipeline | Voir les détails du pipeline | x | x | x | x | x |
-| Écriture d’un pipeline | Configurer/modifier un pipeline | | x | | | |
-| Approbation de la modification d’un pipeline | Permet de modifier l’option Propriétaire de l’entreprise | | x | | | |
-| Déploiement géré par la modification du pipeline | Permet de modifier l’option Supervision de l’ingénieur du succès client (CSE) | | x | | | |
-| Suppression de pipeline | Autorise la suppression du pipeline | | x | | | |
+| Écriture d’un pipeline | Configurer/modifier un pipeline |  | x |  |  |  |
+| Approbation de la modification d’un pipeline | Permet de modifier l’option Propriétaire de l’entreprise |  | x |  |  |  |
+| Déploiement géré par la modification du pipeline | Permet de modifier l’option Supervision de l’ingénieur du succès client (CSE) |  | x |  |  |  |
+| Suppression de pipeline | Autorise la suppression du pipeline |  | x |  |  |  |
 | Lecture de l’étape | Voir les résultats des mesures de qualité de l’étape | x | x | x | x | x |
-| Génération d’un jeton d’accès personnel | Accéder à Git | | x | | x | |
+| Génération d’un jeton d’accès personnel | Accéder à Git |  | x |  | x |  |
+
+<!-- CQDOC-22080 | Download log files  |  |  | x |  | x |  | -->
 
 Pour en savoir plus sur la configuration de vos utilisateurs et utilisatrices, voir [Configuration des rôles et des utilisateurs et utilisatrices](/help/requirements/users-and-roles.md).
 
