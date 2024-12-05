@@ -1,13 +1,13 @@
 ---
 title: Ajout de référentiels externes dans Cloud Manager (adoption précoce)
 description: Découvrez comment ajouter un référentiel externe dans Cloud Manager. Cloud Manager prend en charge l’intégration avec les référentiels GitHub, GitLab et Bitbucket.
-source-git-commit: 054c214be3c8c6e8a8bd4691b70ae2098263ef5b
-workflow-type: ht
-source-wordcount: '740'
-ht-degree: 100%
+exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
+source-git-commit: e7e2268f866105970e02d4bc54c46613749e5ac0
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-
 
 # Ajout de référentiels externes dans Cloud Manager {#external-repositories}
 
@@ -98,5 +98,9 @@ Après validation, le référentiel externe est prêt à l’emploi et peut êtr
 
 ## Limites
 
-* Les référentiels externes ne peuvent pas être liés aux pipelines de configuration.
-* Lorsque des pipelines utilisent des référentiels externes (hors GitHub) et que l’option **Déclencheur de déploiement** est activée avec [!UICONTROL **Lors des modifications Git**], les déclencheurs ne s’exécutent pas automatiquement. Ils doivent être démarrés manuellement.
+Les référentiels externes ne peuvent pas être liés aux pipelines de configuration.
+
+<!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY
+
+* Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
+
