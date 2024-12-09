@@ -1,20 +1,20 @@
 ---
-title: Outil de copie de contenu
+title: Copie de contenu pour la cohérence de l’environnement
 description: L’outil de copie de contenu Cloud Manager permet aux utilisateurs de copier du contenu modifiable à la demande à partir des environnements de production Adobe Experience Manager 6.x hébergés par Adobe Managed Services dans des environnements inférieurs pour les tests.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: de9cfaa07dc9ff4a6d1cb200d14c5e776d27767d
+source-git-commit: 2c96feb62a4db2424430c9c410563a7f61320fd2
 workflow-type: tm+mt
-source-wordcount: '1363'
-ht-degree: 43%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# Outil de copie de contenu {#content-copy}
+# Copie de contenu pour assurer la cohérence de l’environnement {#content-copy}
 
 L’outil de copie de contenu Cloud Manager permet aux utilisateurs de copier du contenu modifiable à la demande à partir des environnements de production Adobe Experience Manager 6.x hébergés par Adobe Managed Services dans des environnements inférieurs pour les tests.
 
-## À propos de l’outil Copie de contenu{#introduction}
+## À propos de la copie de contenu {#introduction}
 
 Les données actuelles et réelles sont utiles à des fins de test, de validation et d’acceptation par l’utilisateur. L’outil de copie de contenu permet de copier du contenu de votre environnement de production AEM 6.x hébergé par AMS vers un environnement d’évaluation ou de développement. Ce workflow prend en charge divers scénarios de test.
 
