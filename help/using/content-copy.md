@@ -2,10 +2,10 @@
 title: Copie de contenu pour la cohérence de l’environnement
 description: La copie de contenu dans Cloud Manager permet aux utilisateurs de copier du contenu modifiable à la demande à partir des environnements de production Adobe Experience Manager 6.x hébergés par Adobe Managed Services dans des environnements inférieurs pour les tests.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: e47047c85f9d428e268d147b2e24354026dda0f8
+source-git-commit: 228006b424504306e916014bbe8543dc41ba43b5
 workflow-type: tm+mt
-source-wordcount: '1351'
-ht-degree: 36%
+source-wordcount: '1312'
+ht-degree: 34%
 
 ---
 
@@ -85,9 +85,7 @@ Pour qu’un contenu puisse être copié, un jeu de contenu doit être défini. 
 
    ![Modifier la liste de chemins](/help/assets/add-content-set-excluded-paths.png)
 
-1. Cliquez sur **Créer**.
-
-Vous pouvez désormais utiliser le jeu de contenu pour copier du contenu entre les environnements.
+1. Cliquez sur **Créer**. Vous pouvez désormais utiliser le jeu de contenu pour copier du contenu entre les environnements.
 
 ## Modification ou suppression d’un jeu de contenu {#edit-content-set}
 
@@ -132,21 +130,23 @@ Un environnement peut ne pas être sélectionné si l’une des conditions suiva
    * Les régions d’un environnement de destination doivent être un sous-ensemble de régions d’un environnement source.
    * Les problèmes de compatibilité sont vérifiés avant d’exécuter une action de copie de contenu. Lorsque vous sélectionnez l’environnement **Destination**, le système valide automatiquement les environnements source et de destination. Si la validation échoue, le processus s’arrête et un message d’erreur s’affiche dans la boîte de dialogue pour expliquer la raison de l’échec.
 
+     ![Copier du contenu](/help/assets/copying-content.png)
+
 1. (Facultatif) Effectuez l’une des opérations suivantes :
 
    1. Pour *conserver* les chemins exclus dans l’environnement de destination, cochez la case **`Do not delete exclude paths from destination`**. Ce paramètre préserve les chemins d’accès exclus spécifiés dans le jeu de contenu.
    1. Pour *supprimer* les chemins exclus dans l’environnement de destination, désélectionnez **`Do not delete exclude paths from destination`**. Ce paramètre supprime les chemins exclus spécifiés dans le jeu de contenu.
-   1. Pour copier l’historique des versions des chemins de l’environnement source vers l’environnement de destination, cochez la case **Copier les versions**.
+   1. Pour copier l’historique des versions des chemins de l’environnement source vers l’environnement de destination, cochez la case **Copier les versions**. Le processus de copie de contenu est beaucoup plus rapide lorsque l’historique de version est *et non* copié.
 
-      ![Copier du contenu](/help/assets/copying-content.png)
+
 
 1. Cliquez sur **Copier**. Le statut du processus de copie est répercuté dans la console pour le jeu de contenu sélectionné.
 
-## Surveillance de l’état de l’activité de copie de contenu {#copy-activity}
+## Surveiller l’état de la copie de contenu {#copy-activity}
 
 Vous pouvez surveiller le statut de vos processus de copie à la page **Activité de copie de contenu**.
 
-**Pour surveiller l’état de l’activité de copie de contenu :**
+**Pour surveiller l’état de la copie de contenu :**
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
@@ -165,9 +165,7 @@ Vous pouvez surveiller le statut de vos processus de copie à la page **Activit�
    | Échec | L’opération de copie de contenu a échoué. |
 
 
-## Limites {#limitations}
-
-La copie de contenu présente les limites suivantes :
+## Limites de la copie de contenu {#limitations}
 
 * Une copie de contenu ne peut pas être effectuée d’un environnement inférieur vers un environnement supérieur.
 * Une copie de contenu ne peut être effectuée que dans le même niveau. En d’autres termes, création-création ou publication-publication.
@@ -175,13 +173,10 @@ La copie de contenu présente les limites suivantes :
 * La copie de contenu pour la topologie basée sur le magasin de données cloud ne peut être effectuée que lorsque les environnements source et de destination se trouvent sur le même fournisseur de services cloud et dans la même région.
 * L’exécution simultanée d’opérations de copie de contenu sur le même environnement n’est pas possible.
 * Une copie de contenu ne peut pas être effectuée si une opération active est en cours d’exécution dans l’environnement de destination ou l’environnement source, tel qu’un pipeline CI/CD.
-* Vous pouvez spécifier jusqu’à cinquante chemins par jeu de contenu. Il n’existe aucune limitation sur les chemins exclus.
-* La copie de contenu ne doit pas être utilisée comme outil de clonage ou de mise en miroir, car elle ne peut pas effectuer le suivi du contenu déplacé ou supprimé sur la source.
+* La copie de contenu ne doit pas être utilisée comme outil de clonage ou de mise en miroir, car elle ne peut pas suivre le contenu déplacé ou supprimé de la source.
 * Une copie de contenu ne peut pas être suspendue ou annulée une fois qu’elle est lancée.
-* Copie de contenu copie les ressources et les métadonnées Dynamic Media de l’environnement supérieur vers l’environnement inférieur sélectionné. Les ressources copiées doivent ensuite être retraitées à l’aide du [workflow Ressources de traitement de la gestion des ressources numériques](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/assets/using/assets-workflow) dans l’environnement inférieur, afin d’utiliser la configuration de Dynamic Media correspondante.
-* Le processus de copie de contenu est beaucoup plus rapide lorsque l’historique des versions n’est pas copié.
+* La copie de contenu duplique les ressources et les métadonnées Dynamic Media de l’environnement supérieur vers l’environnement inférieur sélectionné. Les ressources copiées doivent ensuite être retraitées à l’aide du [workflow Ressources de traitement de la gestion des ressources numériques](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/assets/using/assets-workflow) dans l’environnement inférieur, afin d’utiliser la configuration de Dynamic Media correspondante.
 * [Les configurations Dynamic Media avec des ressources dont la taille est supérieure à 2 Go activées](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb) ne sont pas prises en charge.
-* Lorsque l’historique des versions n’est pas copié, le processus de copie de contenu est sensiblement plus rapide.
 * Les régions de l’environnement cible doivent être identiques aux régions de l’environnement source ou en être un sous-ensemble.
 
 ## Problèmes connus {#known-issues}
