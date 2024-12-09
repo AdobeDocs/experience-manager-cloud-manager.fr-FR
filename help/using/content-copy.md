@@ -1,22 +1,22 @@
 ---
 title: Copie de contenu pour la cohérence de l’environnement
-description: L’outil de copie de contenu Cloud Manager permet aux utilisateurs de copier du contenu modifiable à la demande à partir des environnements de production Adobe Experience Manager 6.x hébergés par Adobe Managed Services dans des environnements inférieurs pour les tests.
+description: La copie de contenu dans Cloud Manager permet aux utilisateurs de copier du contenu modifiable à la demande à partir des environnements de production Adobe Experience Manager 6.x hébergés par Adobe Managed Services dans des environnements inférieurs pour les tests.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 2c96feb62a4db2424430c9c410563a7f61320fd2
+source-git-commit: e47047c85f9d428e268d147b2e24354026dda0f8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1351'
+ht-degree: 36%
 
 ---
 
 
 # Copie de contenu pour assurer la cohérence de l’environnement {#content-copy}
 
-L’outil de copie de contenu Cloud Manager permet aux utilisateurs de copier du contenu modifiable à la demande à partir des environnements de production Adobe Experience Manager 6.x hébergés par Adobe Managed Services dans des environnements inférieurs pour les tests.
+La copie de contenu dans Cloud Manager permet aux utilisateurs de copier du contenu modifiable à la demande à partir des environnements de production Adobe Experience Manager 6.x hébergés par Adobe Managed Services dans des environnements inférieurs pour les tests.
 
 ## À propos de la copie de contenu {#introduction}
 
-Les données actuelles et réelles sont utiles à des fins de test, de validation et d’acceptation par l’utilisateur. L’outil de copie de contenu permet de copier du contenu de votre environnement de production AEM 6.x hébergé par AMS vers un environnement d’évaluation ou de développement. Ce workflow prend en charge divers scénarios de test.
+Les données actuelles et réelles sont utiles à des fins de test, de validation et d’acceptation par l’utilisateur. La copie de contenu vous permet de copier du contenu de votre environnement d’AEM hébergé en production AMS 6.x vers des environnements d’évaluation ou de développement. Ce workflow prend en charge divers scénarios de test.
 
 Un ensemble de contenu définit le contenu à copier. Un ensemble de contenu comprend une liste de chemins JCR avec le contenu modifiable à copier. Le contenu passe d’un environnement source à un environnement cible. Tout cela a lieu dans le même programme Cloud Manager.
 
@@ -37,7 +37,7 @@ Lors de la copie de contenu, l’environnement source est la source de vérité.
 
 ## Autorisations {#permissions}
 
-Pour utiliser l’outil de copie de contenu, le rôle **Responsable de déploiement** doit être affecté à l’utilisateur ou à l’utilisatrice dans les environnements source et cible.
+Pour utiliser la fonction Copie de contenu, l’utilisateur doit être affecté au rôle **Gestionnaire de déploiement** dans les environnements source et cible.
 
 ## Création d’un jeu de contenu {#create-content-set}
 
@@ -55,7 +55,7 @@ Pour qu’un contenu puisse être copié, un jeu de contenu doit être défini. 
 
    ![Jeux de contenu](/help/assets/content-sets.png)
 
-1. Dans la boîte de dialogue **Ajouter un jeu de contenu**, dans l’onglet **Détails**, dans les champs **Nom** et **Description**, saisissez un nom et une description facultative du jeu de contenu, puis cliquez sur **Continuer**.
+1. Dans la boîte de dialogue **`Add Content Set`**, dans l’onglet **Détails**, dans les champs **Nom** et **Description**, saisissez un nom et une description facultative du jeu de contenu, puis cliquez sur **Continuer**.
 
    ![Détails du jeu de contenu](/help/assets/add-content-set-details.png)
 
@@ -167,7 +167,7 @@ Vous pouvez surveiller le statut de vos processus de copie à la page **Activit�
 
 ## Limites {#limitations}
 
-L’outil de copie de contenu présente les limites suivantes :
+La copie de contenu présente les limites suivantes :
 
 * Une copie de contenu ne peut pas être effectuée d’un environnement inférieur vers un environnement supérieur.
 * Une copie de contenu ne peut être effectuée que dans le même niveau. En d’autres termes, création-création ou publication-publication.
@@ -176,9 +176,9 @@ L’outil de copie de contenu présente les limites suivantes :
 * L’exécution simultanée d’opérations de copie de contenu sur le même environnement n’est pas possible.
 * Une copie de contenu ne peut pas être effectuée si une opération active est en cours d’exécution dans l’environnement de destination ou l’environnement source, tel qu’un pipeline CI/CD.
 * Vous pouvez spécifier jusqu’à cinquante chemins par jeu de contenu. Il n’existe aucune limitation sur les chemins exclus.
-* L’outil de copie de contenu ne doit pas être utilisé comme outil de clonage ou de mise en miroir, car il ne peut pas effectuer le suivi du contenu déplacé ou supprimé sur la source.
+* La copie de contenu ne doit pas être utilisée comme outil de clonage ou de mise en miroir, car elle ne peut pas effectuer le suivi du contenu déplacé ou supprimé sur la source.
 * Une copie de contenu ne peut pas être suspendue ou annulée une fois qu’elle est lancée.
-* L’outil de copie de contenu copie les ressources avec les métadonnées liées à Dynamic Media, de l’environnement supérieur vers l’environnement inférieur sélectionné. Les ressources copiées doivent ensuite être retraitées à l’aide du [workflow Ressources de traitement de la gestion des ressources numériques](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/assets/using/assets-workflow) dans l’environnement inférieur, afin d’utiliser la configuration de Dynamic Media correspondante.
+* Copie de contenu copie les ressources et les métadonnées Dynamic Media de l’environnement supérieur vers l’environnement inférieur sélectionné. Les ressources copiées doivent ensuite être retraitées à l’aide du [workflow Ressources de traitement de la gestion des ressources numériques](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/assets/using/assets-workflow) dans l’environnement inférieur, afin d’utiliser la configuration de Dynamic Media correspondante.
 * Le processus de copie de contenu est beaucoup plus rapide lorsque l’historique des versions n’est pas copié.
 * [Les configurations Dynamic Media avec des ressources dont la taille est supérieure à 2 Go activées](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb) ne sont pas prises en charge.
 * Lorsque l’historique des versions n’est pas copié, le processus de copie de contenu est sensiblement plus rapide.
