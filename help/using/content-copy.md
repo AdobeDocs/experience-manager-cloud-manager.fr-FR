@@ -1,20 +1,20 @@
 ---
 title: Outil de copie de contenu
-description: L’outil de copie de contenu de Cloud Manager permet aux utilisateurs et utilisatrices de copier du contenu modifiable à la demande à partir de leurs environnements de production AEM 6.x hébergés par AMS vers des environnements inférieurs à des fins de test.
+description: L’outil de copie de contenu Cloud Manager permet aux utilisateurs de copier du contenu modifiable à la demande à partir des environnements de production Adobe Experience Manager 6.x hébergés par Adobe Managed Services dans des environnements inférieurs pour les tests.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '1144'
-ht-degree: 100%
+source-git-commit: de9cfaa07dc9ff4a6d1cb200d14c5e776d27767d
+workflow-type: tm+mt
+source-wordcount: '1363'
+ht-degree: 43%
 
 ---
 
 
 # Outil de copie de contenu {#content-copy}
 
-L’outil de copie de contenu de Cloud Manager permet aux utilisateurs et utilisatrices de copier du contenu modifiable à la demande à partir de leurs environnements de production AEM 6.x hébergés par AMS vers des environnements inférieurs à des fins de test.
+L’outil de copie de contenu Cloud Manager permet aux utilisateurs de copier du contenu modifiable à la demande à partir des environnements de production Adobe Experience Manager 6.x hébergés par Adobe Managed Services dans des environnements inférieurs pour les tests.
 
-## Présentation {#introduction}
+## À propos de l’outil Copie de contenu{#introduction}
 
 Les données actuelles et réelles sont utiles à des fins de test, de validation et d’acceptation par l’utilisateur. L’outil de copie de contenu permet de copier du contenu de votre environnement de production AEM 6.x hébergé par AMS vers un environnement d’évaluation ou de développement. Ce workflow prend en charge divers scénarios de test.
 
@@ -39,124 +39,135 @@ Lors de la copie de contenu, l’environnement source est la source de vérité.
 
 Pour utiliser l’outil de copie de contenu, le rôle **Responsable de déploiement** doit être affecté à l’utilisateur ou à l’utilisatrice dans les environnements source et cible.
 
-## Créer un ensemble de contenu {#create-content-set}
+## Création d’un jeu de contenu {#create-content-set}
 
 Pour qu’un contenu puisse être copié, un jeu de contenu doit être défini. Une fois définis, les jeux de contenu peuvent être réutilisés pour copier du contenu. Pour créer un jeu de contenu, suivez la procédure décrite ci-après.
 
+**Pour créer un jeu de contenu :**
+
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
-1. Dans la page **Vue d’ensemble**, accédez à l’écran **Environnements**.
+1. Dans le coin supérieur gauche de la page, cliquez sur ![Icône Afficher le menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) pour ouvrir le menu de gauche.
 
-1. Dans l’écran **Environnements**, accédez à la page **Ensembles de contenu**.
+1. Dans le menu de gauche, sous la page **Services**, cliquez sur l’icône ![ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) **Visionneuses de contenu**.
 
-1. Dans le coin supérieur droit de l’écran, cliquez sur **Ajouter un ensemble de contenu**.
+1. Près du coin supérieur droit de la page, cliquez sur **Ajouter un jeu de contenu**.
 
    ![Jeux de contenu](/help/assets/content-sets.png)
 
-1. Dans l’onglet **Détails** de l’assistant, indiquez le nom et la description de l’ensemble de contenu, puis cliquez sur **Continuer**.
+1. Dans la boîte de dialogue **Ajouter un jeu de contenu**, dans l’onglet **Détails**, dans les champs **Nom** et **Description**, saisissez un nom et une description facultative du jeu de contenu, puis cliquez sur **Continuer**.
 
    ![Détails du jeu de contenu](/help/assets/add-content-set-details.png)
 
-1. Dans l’onglet **Chemins d’accès au contenu** de l’assistant, indiquez les chemins d’accès au contenu modifiable à inclure dans le jeu de contenu.
+1. Sur l’onglet **Chemins d’accès au contenu**, dans le champ de texte **Chemin**, spécifiez un chemin d’accès au contenu qui peut être modifié et qui doit être inclus dans le jeu de contenu.
 
-   1. Entrez le chemin dans le champ **Ajouter un chemin d’accès à inclure**.
-   1. Cliquez sur **Ajouter un chemin** pour ajouter le chemin d’accès au jeu de contenu.
-   1. Le cas échéant, cliquez de nouveau sur **Ajouter un chemin**.
+   Seuls les chemins commençant par `/content`, `/conf`, `/etc`, `/var/workflow/models` ou `/var/commerce` peuvent être inclus.
+
+1. Cliquez sur **![Icône d’ajout de dossier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderAdd_18_N.svg) Ajouter chemin** pour ajouter (ou inclure) le chemin d’accès au jeu de contenu.
+
+1. (Facultatif) Si nécessaire, ajoutez des chemins d’accès supplémentaires (jusqu’à 50) si nécessaire en répétant les deux étapes précédentes. Sinon, passez à l’étape suivante.
 
    ![Ajouter des chemins à un jeu de contenu](/help/assets/add-content-set-paths.png)
 
-1. Si vous devez affiner ou limiter votre jeu de contenu, les sous-chemins peuvent être exclus.
+1. (Facultatif) Pour réduire votre jeu de contenu, vous pouvez éventuellement spécifier des sous-chemins dans un chemin de contenu inclus qui doit être exclu.
 
-   1. Dans la liste des chemins d’accès inclus, cliquez sur l’icône **Ajouter des sous-chemins d’exclusion** à côté du chemin que vous devez limiter.
-   1. Saisissez le sous-chemin d’exclusion du chemin d’accès sélectionné.
-   1. Cliquez sur **Exclure le chemin**.
-   1. Cliquez de nouveau sur **Ajouter des sous-chemins d’exclusion** pour ajouter d’autres chemins à exclure, si nécessaire.
+   1. À droite d’un chemin de contenu inclus que vous souhaitez restreindre, cliquez sur ![Icône de suppression de dossier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderDelete_18_N.svg).
+   1. Dans le champ de texte, saisissez un chemin relatif au chemin racine affiché dans la boîte de dialogue.
+   1. Cliquez sur ![Icône de suppression de dossier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderDelete_18_N.svg) **Exclure le chemin**.
+   1. Si nécessaire, répétez les étapes i à iii. ci-dessus pour ajouter d’autres chemins d’exclusion ; il n’y a aucune limitation. Sinon, passez à l’étape suivante.
 
    ![Exclusion de chemins](/help/assets/add-content-set-paths-excluded.png)
 
-1. Vous pouvez modifier les chemins spécifiés si nécessaire.
+1. (En option) Effectuez l’une des actions suivantes :
 
-   1. Cliquez sur le `X` en regard des sous-chemins exclus pour les supprimer.
-   1. Cliquez sur le bouton représentant des points de suspension en regard des chemins pour afficher les options **Modifier** et **Supprimer**.
+   1. Cliquez sur ![Icône Cross size 500](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg) à droite d’un sous-chemin exclu pour le supprimer.
+   1. Cliquez sur ![Icône More](https://spectrum.adobe.com/static/icons/ui_18/More.svg) à droite d’un chemin de contenu inclus, puis cliquez sur **Edit** ou **Delete**.
 
    ![Modifier la liste de chemins](/help/assets/add-content-set-excluded-paths.png)
 
-1. Cliquez sur **Créer** pour créer l’ensemble de contenu.
+1. Cliquez sur **Créer**.
 
-L’ensemble de contenu peut désormais être utilisé pour copier du contenu entre des environnements.
+Vous pouvez désormais utiliser le jeu de contenu pour copier du contenu entre les environnements.
 
->[!NOTE]
->
->Vous pouvez ajouter jusqu’à 50 chemins dans un jeu de contenu.
->Il n’existe aucune limitation sur les chemins exclus.
+## Modification ou suppression d’un jeu de contenu {#edit-content-set}
 
-## Modifier un ensemble de contenu {#edit-content-set}
+Lorsque vous modifiez un jeu de contenu, vous devrez peut-être développer les chemins configurés pour afficher les sous-chemins exclus.
 
-Procédez de la même façon que lors de la création d’une étape de contenu. Au lieu de cliquer sur **Ajouter un ensemble de contenu**, sélectionnez un ensemble existant dans la console, puis sélectionnez **Modifier** dans le menu représentant des points de suspension.
+**Pour modifier ou supprimer un jeu de contenu :**
+
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
+
+1. Dans le coin supérieur gauche de la page, cliquez sur ![Icône Afficher le menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) pour ouvrir le menu de gauche.
+
+1. Dans le menu de gauche, sous **Services**, cliquez sur ![Icône de boîte ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) **Visionneuses de contenu**.
+
+1. Dans le tableau de la page **Visionneuses de contenu**, cliquez sur ![Icône More](https://spectrum.adobe.com/static/icons/ui_18/More.svg) à droite d’un chemin de contenu inclus, puis cliquez sur **Modifier** ou **Supprimer**.
 
 ![Modifier le jeu de contenu](/help/assets/edit-content-set.png)
 
-Lors de la modification de votre jeu de contenu, vous devrez peut-être développer les chemins configurés pour que s’affichent les sous-chemins exclus.
 
 ## Copier le contenu {#copy-content}
 
-Une fois qu’un jeu de contenu a été créé, vous pouvez l’utiliser pour copier du contenu. Pour copier du contenu, procédez comme suit.
+Une fois un jeu de contenu créé, vous pouvez l’utiliser pour copier du contenu.
+
+Un environnement peut ne pas être sélectionné si l’une des conditions suivantes s’applique :
+
+* L’utilisateur ne dispose pas des autorisations requises.
+* Une opération de pipeline ou de copie de contenu est en cours d’exécution dans l’environnement.
+
+**Pour copier du contenu :**
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
-1. Dans la page **Vue d’ensemble**, accédez à l’écran **Environnements**.
+1. Dans le coin supérieur gauche de la page, cliquez sur ![Icône Afficher le menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) pour ouvrir le menu de gauche.
 
-1. Dans l’écran **Environnements**, accédez à la page **Ensembles de contenu**.
+1. Dans le menu de gauche, sous **Services**, cliquez sur ![Icône de boîte ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) **Visionneuses de contenu**.
 
-1. Sélectionnez un jeu de contenu dans la console, puis **Copier le contenu** dans le menu représentant des points de suspension.
+1. Dans le tableau de la page **Visionneuses de contenu**, à droite d’un chemin de contenu inclus que vous souhaitez copier, cliquez sur ![Icône Plus](https://spectrum.adobe.com/static/icons/ui_18/More.svg), puis sur **Copier le contenu**.
 
    ![Copier le contenu](/help/assets/copy-content.png)
 
-   >[!NOTE]
-   >
-   >Un environnement ne peut pas être sélectionné si :
-   >
-   >* L’utilisateur ne dispose pas des autorisations appropriées.
-   >* Un pipeline en cours d’exécution ou une opération de copie de contenu est en cours dans l’environnement.
+1. Dans la boîte de dialogue **Copier le contenu**, sélectionnez l’environnement **Source** et l’environnement **Destination** pour votre action de copie de contenu.
 
-1. Dans la boîte de dialogue **Copier le contenu**, spécifiez la source et les environnements de destination de votre action de copie de contenu.
-   * Les régions de l’environnement cible doivent être identiques aux régions de l’environnement source ou en être un sous-ensemble.
+   * Les régions d’un environnement de destination doivent être un sous-ensemble de régions d’un environnement source.
+   * Les problèmes de compatibilité sont vérifiés avant d’exécuter une action de copie de contenu. Lorsque vous sélectionnez l’environnement **Destination**, le système valide automatiquement les environnements source et de destination. Si la validation échoue, le processus s’arrête et un message d’erreur s’affiche dans la boîte de dialogue pour expliquer la raison de l’échec.
 
-1. Vous pouvez choisir de supprimer ou de conserver les chemins à exclure dans l’environnement de destination. Cochez la case `Do not delete exclude paths from destination` pour conserver les `exclude paths` spécifiés dans l’ensemble de contenu. Si cette case n’est pas cochée, les chemins d’exclusion sont supprimés dans l’environnement cible.
+1. (Facultatif) Effectuez l’une des opérations suivantes :
 
-1. Vous pouvez choisir de copier l’historique des versions des chemins copiés de l’environnement source vers l’environnement de destination. Cochez la case `Copy Versions` si vous souhaitez copier tous les historiques de versions.
+   1. Pour *conserver* les chemins exclus dans l’environnement de destination, cochez la case **`Do not delete exclude paths from destination`**. Ce paramètre préserve les chemins d’accès exclus spécifiés dans le jeu de contenu.
+   1. Pour *supprimer* les chemins exclus dans l’environnement de destination, désélectionnez **`Do not delete exclude paths from destination`**. Ce paramètre supprime les chemins exclus spécifiés dans le jeu de contenu.
+   1. Pour copier l’historique des versions des chemins de l’environnement source vers l’environnement de destination, cochez la case **Copier les versions**.
 
-   ![Copier du contenu](/help/assets/copying-content.png)
+      ![Copier du contenu](/help/assets/copying-content.png)
 
-1. Cliquez sur **Copier**.
+1. Cliquez sur **Copier**. Le statut du processus de copie est répercuté dans la console pour le jeu de contenu sélectionné.
 
-Le processus de copie démarre. Le statut du processus de copie est répercuté dans la console pour le jeu de contenu sélectionné.
-
-## Activité de copie de contenu {#copy-activity}
+## Surveillance de l’état de l’activité de copie de contenu {#copy-activity}
 
 Vous pouvez surveiller le statut de vos processus de copie à la page **Activité de copie de contenu**.
 
+**Pour surveiller l’état de l’activité de copie de contenu :**
+
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
-1. Dans la page **Vue d’ensemble**, accédez à l’écran **Environnements**.
+1. Dans le coin supérieur gauche de la page, cliquez sur ![Icône Afficher le menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) pour ouvrir le menu de gauche.
 
-1. Dans l’écran **Environnement**, accédez à la page **Activité de copie de contenu**.
+1. Dans le menu de gauche, sous **Services**, cliquez sur ![Icône Historique ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) **Copier l’activité de contenu**.
 
-![Activité de copie de contenu](/help/assets/copy-content-activity.png)
+   ![Activité de copie de contenu](/help/assets/copy-content-activity.png)
 
-### Statuts de la copie de contenu {#statuses}
+   Un processus de copie de contenu peut avoir l’un des états suivants :
 
-Une fois que vous avez commencé à copier du contenu, le processus peut avoir l’un des statuts suivants.
+   | État | Description |
+   | --- | --- |
+   | En cours | L’opération de copie de contenu est en cours. |
+   | Terminé | L’opération de copie de contenu s’est terminée avec succès. |
+   | Échec | L’opération de copie de contenu a échoué. |
 
-| État | Description |
-|---|---|
-| En cours | L’opération de copie de contenu est en cours. |
-| Échec | L’opération de copie de contenu a échoué. |
-| Terminé | L’opération de copie de contenu est terminée avec succès. |
 
 ## Limites {#limitations}
 
-L’outil de copie de contenu présente les limites suivantes.
+L’outil de copie de contenu présente les limites suivantes :
 
 * Une copie de contenu ne peut pas être effectuée d’un environnement inférieur vers un environnement supérieur.
 * Une copie de contenu ne peut être effectuée que dans le même niveau. En d’autres termes, création-création ou publication-publication.
