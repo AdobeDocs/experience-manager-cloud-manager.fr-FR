@@ -2,9 +2,9 @@
 title: Copie de contenu pour la cohérence de l’environnement
 description: La copie de contenu dans Cloud Manager permet aux utilisateurs de copier du contenu modifiable à la demande à partir des environnements de production Adobe Experience Manager 6.x hébergés par Adobe Managed Services dans des environnements inférieurs pour les tests.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 228006b424504306e916014bbe8543dc41ba43b5
+source-git-commit: 16cc1aa0ff45126df9100f337b6259a3f248038f
 workflow-type: tm+mt
-source-wordcount: '1312'
+source-wordcount: '1321'
 ht-degree: 34%
 
 ---
@@ -35,7 +35,7 @@ Lors de la copie de contenu, l’environnement source est la source de vérité.
 * Si vous modifiez du contenu dans l’environnement de destination, le contenu source le remplace si les chemins correspondent.
 * Si les chemins d’accès sont différents, le contenu de la source est fusionné avec le contenu de la destination.
 
-## Autorisations {#permissions}
+### Autorisations {#permissions}
 
 Pour utiliser la fonction Copie de contenu, l’utilisateur doit être affecté au rôle **Gestionnaire de déploiement** dans les environnements source et cible.
 
@@ -142,11 +142,11 @@ Un environnement peut ne pas être sélectionné si l’une des conditions suiva
 
 1. Cliquez sur **Copier**. Le statut du processus de copie est répercuté dans la console pour le jeu de contenu sélectionné.
 
-## Surveiller l’état de la copie de contenu {#copy-activity}
+## Vérification de l’état d’une copie de contenu {#copy-activity}
 
 Vous pouvez surveiller le statut de vos processus de copie à la page **Activité de copie de contenu**.
 
-**Pour surveiller l’état de la copie de contenu :**
+**Pour vérifier l’état d’une copie de contenu :**
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
@@ -179,6 +179,6 @@ Vous pouvez surveiller le statut de vos processus de copie à la page **Activit�
 * [Les configurations Dynamic Media avec des ressources dont la taille est supérieure à 2 Go activées](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb) ne sont pas prises en charge.
 * Les régions de l’environnement cible doivent être identiques aux régions de l’environnement source ou en être un sous-ensemble.
 
-## Problèmes connus {#known-issues}
+## Problèmes connus de la copie de contenu {#known-issues}
 
 {{content-copy-known-issues}}
