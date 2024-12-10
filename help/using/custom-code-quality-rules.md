@@ -2,10 +2,10 @@
 title: Règles de qualité du code personnalisé
 description: Découvrez les détails des règles de qualité du code personnalisé exécutées par Cloud Manager lors du test de qualité du code. Ces règles sont basées sur les bonnes pratiques de l’ingénierie AEM.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '3482'
-ht-degree: 100%
+source-git-commit: 8811ed130b2c7a37a0c811c308b57acf0872e9c8
+workflow-type: tm+mt
+source-wordcount: '3514'
+ht-degree: 99%
 
 ---
 
@@ -871,6 +871,15 @@ AEM Cloud Service interdit la création de générateurs de jetons dont les noms
 * **Depuis** : version 2024.7.0
 
 AEM Cloud Service interdit la création de définitions d’indexation qui contiennent des propriétés avec des espaces.
+
+### La configuration des définitions d’indexation ne doit pas contenir la propriété haystack0. {#oakpal-indexing-haystack0-property}
+
+* **Clé** : HayStackPropertyCheck
+* **Type** : amélioration
+* **Gravité** : mineure
+* **Depuis** : version 2024.12.0
+
+AEM Cloud Service interdit la création de définitions d’indexation qui contiennent des propriétés haystack.
 
 ## Outil d’optimisation du Dispatcher {#dispatcher-optimization-tool-rules}
 
