@@ -1,20 +1,20 @@
 ---
 title: Notes de mise à jour de la version 2024.12.0 de Cloud Manager
-description: Découvrez la version de Cloud Manager 2024.12.0 sur Adobe Managed Services.
+description: En savoir plus sur la version 2024.12.0 de Cloud Manager dans Adobe Managed Services.
 feature: Release Information
 exl-id: 811567af-66c9-4c1f-ae9e-60603b70ef80
 source-git-commit: e266a4192e2a897f142a6c83ae5766483946320d
 workflow-type: tm+mt
 source-wordcount: '312'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
-# Notes de mise à jour de Cloud Manager 2024.12.0 sur Adobe Managed Services {#release-notes}
+# Notes de mise à jour de Cloud Manager 2024.12.0 dans Adobe Managed Services {#release-notes}
 
 <!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release -->
 
-Découvrez la version de [!UICONTROL Cloud Manager] 2024.12.0 sur Adobe Managed Services.
+Découvrez la version de [!UICONTROL Cloud Manager] 2024.12.0 dans Adobe Managed Services.
 
 >[!NOTE]
 >
@@ -24,7 +24,7 @@ Découvrez la version de [!UICONTROL Cloud Manager] 2024.12.0 sur Adobe Managed 
 
 <!-- SAVE FOR FUTURE POSSIBLE USE No notable bugs or features for the September release of Cloud Manager. -->
 
-La date de publication de [!UICONTROL Cloud Manager] 2024.12.0 est le 5 décembre 2024.
+La date de publication de la version 2024.12.0 de [!UICONTROL Cloud Manager] est le 5 décembre 2024.
 
 La prochaine version est prévue le vendredi 23 janvier 2025.
 
@@ -40,7 +40,7 @@ Prenez part à notre programme d’adoption précoce de Cloud Manager afin de p
 
 <!-- BOTH CS & AMS -->
 
-La fonctionnalité **Bring Your Own Git** a été étendue pour inclure la prise en charge de référentiels externes, tels que GitLab et Bitbucket. Cette nouvelle prise en charge s’ajoute à la prise en charge existante des référentiels GitHub privés et d’entreprise. Lorsque vous ajoutez ces nouveaux référentiels, vous pouvez également les lier directement à vos pipelines. Vous pouvez héberger ces référentiels sur des plateformes cloud publiques ou dans votre infrastructure ou cloud privés. Cette intégration élimine également la nécessité d’une synchronisation constante du code avec le référentiel d’Adobe et permet de valider les requêtes d’extraction avant de les fusionner dans une branche principale.
+La fonctionnalité **Apportez votre propre Git** a été étendue pour inclure la prise en charge de référentiels externes tels que GitLab et Bitbucket. Cette nouvelle prise en charge s’ajoute à la prise en charge existante des référentiels GitHub privés et d’entreprise. Lorsque vous ajoutez ces nouveaux référentiels, vous pouvez également les lier directement à vos pipelines. Vous pouvez héberger ces référentiels sur des plateformes cloud publiques ou dans votre infrastructure ou cloud privés. Cette intégration élimine également la nécessité d’une synchronisation constante du code avec le référentiel d’Adobe et permet de valider les requêtes d’extraction avant de les fusionner dans une branche principale.
 
 Les pipelines qui utilisent des référentiels externes (à l’exclusion de ceux hébergés par GitHub) et le **Déclencheur de déploiement** défini sur **Lors des modifications Git** démarrent désormais automatiquement.
 
