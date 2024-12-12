@@ -2,7 +2,7 @@
 title: Copie de contenu pour la cohérence de l’environnement
 description: La copie de contenu dans Cloud Manager permet aux utilisateurs de copier du contenu modifiable à la demande à partir des environnements de production Adobe Experience Manager 6.x hébergés par Adobe Managed Services dans des environnements inférieurs pour les tests.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 16cc1aa0ff45126df9100f337b6259a3f248038f
+source-git-commit: e3a656605ac59ca1f95985426932fddf2b53b7c9
 workflow-type: tm+mt
 source-wordcount: '1321'
 ht-degree: 34%
@@ -32,8 +32,9 @@ Les chemins d’accès suivants sont autorisés dans un ensemble de contenu :
 
 Lors de la copie de contenu, l’environnement source est la source de vérité.
 
-* Si vous modifiez du contenu dans l’environnement de destination, le contenu source le remplace si les chemins correspondent.
-* Si les chemins d’accès sont différents, le contenu de la source est fusionné avec le contenu de la destination.
+Si vous modifiez du contenu dans l’environnement de destination, le contenu source le remplace si les chemins correspondent.
+
+Si les chemins d’accès sont différents, le contenu de la source est fusionné avec le contenu de la destination.
 
 ### Autorisations {#permissions}
 
@@ -103,7 +104,6 @@ Lorsque vous modifiez un jeu de contenu, vous devrez peut-être développer les 
 
 ![Modifier le jeu de contenu](/help/assets/edit-content-set.png)
 
-
 ## Copier le contenu {#copy-content}
 
 Une fois un jeu de contenu créé, vous pouvez l’utiliser pour copier du contenu.
@@ -138,8 +138,6 @@ Un environnement peut ne pas être sélectionné si l’une des conditions suiva
    1. Pour *supprimer* les chemins exclus dans l’environnement de destination, désélectionnez **`Do not delete exclude paths from destination`**. Ce paramètre supprime les chemins exclus spécifiés dans le jeu de contenu.
    1. Pour copier l’historique des versions des chemins de l’environnement source vers l’environnement de destination, cochez la case **Copier les versions**. Le processus de copie de contenu est beaucoup plus rapide lorsque l’historique de version est *et non* copié.
 
-
-
 1. Cliquez sur **Copier**. Le statut du processus de copie est répercuté dans la console pour le jeu de contenu sélectionné.
 
 ## Vérification de l’état d’une copie de contenu {#copy-activity}
@@ -160,10 +158,9 @@ Vous pouvez surveiller le statut de vos processus de copie à la page **Activit�
 
    | État | Description |
    | --- | --- |
-   | En cours | L’opération de copie de contenu est en cours. |
-   | Terminé | L’opération de copie de contenu s’est terminée avec succès. |
-   | Échec | L’opération de copie de contenu a échoué. |
-
+   | En cours | Le processus de copie de contenu est en cours. |
+   | Terminé | Le processus de copie de contenu a réussi. |
+   | Échec | Échec du processus de copie de contenu. |
 
 ## Limites de la copie de contenu {#limitations}
 
