@@ -4,7 +4,7 @@ description: En savoir plus sur la version 2024.12.0 de Cloud Manager dans Ado
 feature: Release Information
 exl-id: 811567af-66c9-4c1f-ae9e-60603b70ef80
 source-git-commit: e266a4192e2a897f142a6c83ae5766483946320d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '312'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ Découvrez la version de [!UICONTROL Cloud Manager] 2024.12.0 dans Adobe Mana
 
 La date de publication de la version 2024.12.0 de [!UICONTROL Cloud Manager] est le 5 décembre 2024.
 
-La prochaine version est prévue le vendredi 23 janvier 2025.
+La prochaine version est prévue le 23 janvier 2025.
 
 <!-- ## What's new {#what-is-new} -->
 
