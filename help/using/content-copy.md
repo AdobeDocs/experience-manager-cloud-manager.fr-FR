@@ -3,9 +3,9 @@ title: Copie de contenu pour la cohérence de l’environnement
 description: La copie de contenu dans Cloud Manager permet de copier du contenu modifiable à la demande à partir des environnements de production Adobe Experience Manager 6.x hébergés par Adobe Managed Services dans des environnements inférieurs pour les tests.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 source-git-commit: e3a656605ac59ca1f95985426932fddf2b53b7c9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1321'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -154,13 +154,13 @@ Vous pouvez surveiller le statut de vos processus de copie à la page **Activit�
 
    ![Activité de copie de contenu](/help/assets/copy-content-activity.png)
 
-   Un processus de copie de contenu peut avoir l’un des statuts suivants :
+   Un processus de copie de contenu peut présenter l’un des statuts suivants :
 
    | État | Description |
    | --- | --- |
-   | En cours | Le processus de copie de contenu est en cours. |
-   | Terminé | Le processus de copie de contenu est terminé. |
-   | Échec | Échec du processus de copie de contenu. |
+   | En cours | L’opération de copie de contenu est en cours. |
+   | Terminé | L’opération de copie de contenu est terminée. |
+   | Échec | L’opération de copie de contenu a échoué. |
 
 ## Limites de la copie de contenu {#limitations}
 
