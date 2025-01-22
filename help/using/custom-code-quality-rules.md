@@ -2,10 +2,10 @@
 title: Règles de qualité du code personnalisé
 description: Découvrez les détails des règles de qualité du code personnalisé exécutées par Cloud Manager lors du test de qualité du code. Ces règles sont basées sur les bonnes pratiques de l’ingénierie AEM.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 8811ed130b2c7a37a0c811c308b57acf0872e9c8
-workflow-type: ht
-source-wordcount: '3514'
-ht-degree: 100%
+source-git-commit: 1b7b703f7cba69878bd98aa971844741ebea7dba
+workflow-type: tm+mt
+source-wordcount: '3490'
+ht-degree: 99%
 
 ---
 
@@ -16,11 +16,13 @@ Découvrez en détail les règles de qualité du code personnalisé exécutées 
 
 >[!NOTE]
 >
->Les exemples de code utilisés ici ne sont fournis qu’à titre indicatif. Reportez-vous à la [documentation relative aux concepts de SonarQube](https://docs.sonarsource.com/sonarqube/latest/) pour en savoir plus sur ses concepts et ses règles de qualité.
+>Les exemples de code utilisés ici ne sont fournis qu’à titre indicatif. Reportez-vous à la [documentation relative aux concepts de SonarQube](https://docs.sonarsource.com/sonarqube-server/latest/) pour en savoir plus sur ses concepts et ses règles de qualité.
 
->[!NOTE]
+Les règles SonarQube complètes ne peuvent pas être téléchargées en raison d’informations exclusives d’Adobe. Vous pouvez télécharger la liste complète des règles [via ce lien](/help/assets/CodeQuality-rules-latest-AMS.xlsx). Poursuivez la lecture de ce document pour obtenir des descriptions et des exemples de règles.
+
+>[!IMPORTANT]
 >
->Les règles SonarQube complètes ne peuvent pas être téléchargées en raison d’informations exclusives d’Adobe. Vous pouvez télécharger la liste complète des règles [via ce lien](/help/assets/CodeQuality-rules-latest-AMS.xlsx). Poursuivez la lecture de ce document pour obtenir des descriptions et des exemples de règles.
+>À compter du jeudi 13 février 2025 (Cloud Manager 2025.2.0), la qualité du code Cloud Manager utilisera une version 9.9 de SonarQube mise à jour et une liste mise à jour des règles que vous pouvez [télécharger ici](/help/assets/CodeQuality-rules-latest-AMS-2024-12-0.xlsx).
 
 ## Règles SonarQube {#sonarqube-rules}
 
@@ -179,7 +181,7 @@ public void orDoThis() {
 ### Les objets `ResourceResolver` doivent toujours être fermés. {#resourceresolver-objects-should-always-be-closed}
 
 * **Clé** : CQRules:CQBP-72
-* **Type** : code smell
+* **Type** : `Code Smell`
 * **Gravité** : majeure
 * **Depuis** : version 2018.4.0
 
@@ -221,7 +223,7 @@ public void orDoThis(Session session) throws Exception {
 ### N’utilisez pas les chemins de servlet Sling pour enregistrer les servlets. {#do-not-use-sling-servlet-paths-to-register-servlets}
 
 * **Clé** : CQRules:CQBP-75
-* **Type** : code smell
+* **Type** : `Code Smell`
 * **Gravité** : majeure
 * **Depuis** : version 2018.4.0
 
@@ -241,7 +243,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 ### Les exceptions capturées doivent être consignées ou renvoyées, mais pas les deux. {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
 
 * **Clé** : CQRules:CQBP-44---CatchAndEitherLogOrThrow
-* **Type** : code smell
+* **Type** : `Code Smell`
 * **Gravité** : mineure
 * **Depuis** : version 2018.4.0
 
@@ -283,7 +285,7 @@ public void orDoThis() throws MyCustomException {
 ### Éviter les instructions de journal immédiatement suivies d’instructions de renvoi {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
 
 * **Clé** : CQRules:CQBP-44---ConsecutivelyLogAndThrow
-* **Type** : code smell
+* **Type** : `Code Smell`
 * **Gravité** : mineure
 * **Depuis** : version 2018.4.0
 
@@ -309,7 +311,7 @@ public void doThis() throws Exception {
 ### Évitez de journaliser les informations lors de la gestion des requêtes GET ou HEAD {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
 * **Clé** : CQRules:CQBP-44---LogInfoInGetOrHeadRequests
-* **Type** : code smell
+* **Type** : `Code Smell`
 * **Gravité** : mineure
 
 En règle générale, le niveau de journal Informations doit être utilisé pour délimiter les actions importantes et, par défaut, AEM est configuré pour le journal au niveau Information ou au-dessus. Les méthodes GET et HEAD ne doivent jamais être en lecture seule et ne constituent donc pas des actions importantes. La journalisation au niveau INFO en réponse aux demandes GET ou HEAD est susceptible de créer un bruit journal significatif, rendant ainsi plus difficile l’identification des informations utiles dans les fichiers journaux. Lors de la gestion des requêtes GET ou HEAD, la journalisation doit se trouver aux niveaux WARN ou ERROR si quelque chose est erroné. Pour des informations de résolution des problèmes plus détaillées, la journalisation doit se trouver aux niveaux DEBUG ou TRACE.
@@ -337,7 +339,7 @@ public void doGet() throws Exception {
 ### N’utilisez pas `Exception.getMessage()` comme premier paramètre d’une instruction de journalisation. {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
 
 * **Clé** : CQRules:CQBP-44---ExceptionGetMessageIsFirstLogParam
-* **Type** : code smell
+* **Type** : `Code Smell`
 * **Gravité** : mineure
 * **Depuis** : version 2018.4.0
 
@@ -370,7 +372,7 @@ public void doThis() {
 ### La journalisation des blocs catch doit se trouver au niveau d’avertissement ou d’erreur {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
 
 * **Clé** : CQRules:CQBP-44---WrongLogLevelInCatchBlock
-* **Type** : code smell
+* **Type** : `Code Smell`
 * **Gravité** : mineure
 * **Depuis** : version 2018.4.0
 
@@ -403,7 +405,7 @@ public void doThis() {
 ### Ne pas imprimer les arborescences des appels de procédure sur la console {#do-not-print-stack-traces-to-the-console}
 
 * **Clé** : CQRules:CQBP-44---ExceptionPrintStackTrace
-* **Type** : code smell
+* **Type** : `Code Smell`
 * **Gravité** : mineure
 * **Depuis** : version 2018.4.0
 
@@ -436,7 +438,7 @@ public void doThis() {
 ### Ne générez pas de sortie standard ou d’erreur standard. {#do-not-output-to-standard-output-or-standard-error}
 
 * **Clé** : CQRules:CQBP-44—LogLevelConsolePrinters
-* **Type** : code smell
+* **Type** : `Code Smell`
 * **Gravité** : mineure
 * **Depuis** : version 2018.4.0
 
@@ -469,7 +471,7 @@ public void doThis() {
 ### Évitez les chemins `/apps` et `/libs` codés en dur. {#avoid-hardcoded-apps-and-libs-paths}
 
 * **Clé** : CQRules:CQBP-71
-* **Type** : code smell
+* **Type** : `Code Smell`
 * **Gravité** : mineure
 * **Depuis** : version 2018.4.0
 
@@ -494,7 +496,7 @@ public void doThis(Resource resource) {
 ### Le planificateur Sling ne doit pas être utilisé. {#sonarqube-sling-scheduler}
 
 * **Clé** : CQRules:AMSCORE-554
-* **Type** : compatibilité code smell/Cloud Service
+* **Type** : Compatibilité `Code Smell`/Cloud Service
 * **Gravité** : mineure
 * **Depuis** : version 2020.5.0
 
@@ -505,7 +507,7 @@ Voir la [documentation sur la gestion des traitements et des événements Apache
 ### Les API AEM obsolètes ne doivent pas être utilisées. {#sonarqube-aem-deprecated}
 
 * **Clé** : AMSCORE-553
-* **Type** : compatibilité code smell/Cloud Service
+* **Type** : Compatibilité `Code Smell`/Cloud Service
 * **Gravité** : mineure
 * **Depuis** : version 2020.5.0
 
@@ -627,7 +629,7 @@ Tout comme la règle [Les packages ne doivent pas contenir de configurations OSG
 ### Le mode de création par défaut ne doit pas être défini sur l’interface d’utilisation classique. {#oakpal-default-authoring}
 
 * **Clé** : ClassicUIAuthoringMode
-* **Type** : compatibilité code smell/Cloud Service
+* **Type** : Compatibilité `Code Smell`/Cloud Service
 * **Gravité** : mineure
 * **Depuis** : version 2020.5.0
 
@@ -636,7 +638,7 @@ La configuration OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` déf
 ### Les boîtes de dialogue de composants doivent être de type interface d’utilisation tactile. {#oakpal-components-dialogs}
 
 * **Clé** : ComponentWithOnlyClassicUIDialog
-* **Type** : compatibilité code smell/Cloud Service
+* **Type** : Compatibilité `Code Smell`/Cloud Service
 * **Gravité** : mineure
 * **Depuis** : version 2020.5.0
 
@@ -651,7 +653,7 @@ La documentation des outils de modernisation d’AEM contient des informations e
 ### Les agents de réplication inverse ne doivent pas être utilisés. {#oakpal-reverse-replication}
 
 * **Clé** : ReverseReplication
-* **Type** : compatibilité code smell/Cloud Service
+* **Type** : Compatibilité `Code Smell`/Cloud Service
 * **Gravité** : mineure
 * **Depuis** : version 2020.5.0
 
@@ -693,7 +695,7 @@ Les bibliothèques clientes AEM peuvent contenir des ressources statiques telles
 ### Utilisation de Cloud Service incompatible avec les processus de workflow {#oakpal-usage-cloud-service}
 
 * **Clé** : CloudServiceIncompatibleWorkflowProcess
-* **Type** : code smell
+* **Type** : `Code Smell`
 * **Gravité** : bloqueur
 * **Depuis** : version 2021.2.0
 
@@ -704,7 +706,7 @@ L’outil de migration dans le [référentiel GitHub d’AEM Assets as a Cloud 
 ### L’utilisation de modèles statiques est découragée en faveur de modèles modifiables. {#oakpal-static-template}
 
 * **Clé** : StaticTemplateUsage
-* **Type** : code smell
+* **Type** : `Code Smell`
 * **Gravité** : mineure
 * **Depuis** : version 2021.2.0
 
@@ -715,7 +717,7 @@ La migration de modèles statiques vers des modèles modifiables peut être larg
 ### L’utilisation des composants de base hérités n’est pas encouragée. {#oakpal-usage-legacy}
 
 * **Clé** : LegacyFoundationComponentUsage
-* **Type** : code smell
+* **Type** : `Code Smell`
 * **Gravité** : mineure
 * **Depuis** : version 2021.2.0
 
@@ -726,7 +728,7 @@ Les [Outils de modernisation d’AEM](https://opensource.adobe.com/aem-modernize
 ### Les nœuds de définition d’index de recherche personnalisée doivent être des enfants directs de `/oak:index`. {#oakpal-custom-search}
 
 * **Clé** : OakIndexLocation
-* **Type** : code smell
+* **Type** : `Code Smell`
 * **Gravité** : mineure
 * **Depuis** : version 2021.2.0
 
@@ -735,7 +737,7 @@ AEM Cloud Service exige que les définitions d’index de recherche personnalis�
 ### Les nœuds de définition d’index de recherche personnalisée doivent avoir une compatVersion de 2. {#oakpal-custom-search-compatVersion}
 
 * **Clé** : IndexCompatVersion
-* **Type** : code smell
+* **Type** : `Code Smell`
 * **Gravité** : mineure
 * **Depuis** : version 2021.2.0
 
@@ -744,7 +746,7 @@ AEM Cloud Service exige que la propriété `compatVersion` soit définie sur `2`
 ### Les nœuds descendants des nœuds de définition d’index de recherche personnalisée doivent être de type `nt:unstructured`. {#oakpal-descendent-nodes}
 
 * **Clé** : IndexDescendantNodeType
-* **Type** : code smell
+* **Type** : `Code Smell`
 * **Gravité** : mineure
 * **Depuis** : version 2021.2.0
 
@@ -753,7 +755,7 @@ Des problèmes difficiles à résoudre peuvent survenir lorsqu’un nœud de dé
 ### Les nœuds de définition d’index de recherche personnalisée doivent contenir un nœud enfant nommé `indexRules` qui a des enfants. {#oakpal-custom-search-index}
 
 * **Clé** : IndexRulesNode
-* **Type** : code smell
+* **Type** : `Code Smell`
 * **Gravité** : mineure
 * **Depuis** : version 2021.2.0
 
@@ -762,7 +764,7 @@ Un nœud de définition d’index de recherche personnalisée correctement défi
 ### Les nœuds de définition d’index de recherche personnalisée doivent respecter les conventions de nommage. {#oakpal-custom-search-definitions}
 
 * **Clé** : IndexName
-* **Type** : code smell
+* **Type** : `Code Smell`
 * **Gravité** : mineure
 * **Depuis** : version 2021.2.0
 
@@ -771,7 +773,7 @@ Le Cloud Service AEM exige que les définitions d’index de recherche personna
 ### Les nœuds de définition d’index de recherche personnalisée doivent utiliser le type d’index Lucene. {#oakpal-index-type-lucene}
 
 * **Clé** : IndexType
-* **Type** : code smell
+* **Type** : `Code Smell`
 * **Gravité** : mineure
 * **Depuis** : version 2021.2.0
 
@@ -780,7 +782,7 @@ AEM Cloud Service exige que les définitions d’index de recherche personnalis�
 ### Les nœuds de définition d’index de recherche personnalisée ne doivent pas contenir de propriété nommée `seed`. {#oakpal-property-name-seed}
 
 * **Clé** : IndexSeedProperty
-* **Type** : code smell
+* **Type** : `Code Smell`
 * **Gravité** : mineure
 * **Depuis** : version 2021.2.0
 
@@ -789,7 +791,7 @@ AEM Cloud Service interdit aux définitions d’index de recherche personnalisé
 ### Les nœuds de définition d’index de recherche personnalisée ne doivent pas contenir de propriété nommée `reindex`. {#oakpal-reindex-property}
 
 * **Clé** : IndexReindexProperty
-* **Type** : code smell
+* **Type** : `Code Smell`
 * **Gravité** : mineure
 * **Depuis** : version 2021.2.0
 

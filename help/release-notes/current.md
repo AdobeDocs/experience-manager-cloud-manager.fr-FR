@@ -1,20 +1,19 @@
 ---
-title: Notes de mise à jour de la version 2024.12.0 de Cloud Manager
-description: En savoir plus sur la version 2024.12.0 de Cloud Manager dans Adobe Managed Services.
+title: Notes de mise à jour de la version 2025.1.0 de Cloud Manager
+description: En savoir plus sur la version 2025.1.0 de Cloud Manager dans Adobe Managed Services.
 feature: Release Information
-exl-id: 811567af-66c9-4c1f-ae9e-60603b70ef80
-source-git-commit: 60db60be95318ebf6f2af91a94a9475604a15003
-workflow-type: ht
-source-wordcount: '359'
-ht-degree: 100%
+source-git-commit: c25508b24f00b8f8cfa7bae3cc4b0d6ecf684db3
+workflow-type: tm+mt
+source-wordcount: '193'
+ht-degree: 40%
 
 ---
 
-# Notes de mise à jour de Cloud Manager 2024.12.0 dans Adobe Managed Services {#release-notes}
+# Notes de mise à jour de Cloud Manager 2025.1.0 dans Adobe Managed Services {#release-notes}
 
 <!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release -->
 
-Découvrez la version de [!UICONTROL Cloud Manager] 2024.12.0 dans Adobe Managed Services.
+Découvrez la version de [!UICONTROL Cloud Manager] 2025.1.0 dans Adobe Managed Services.
 
 >[!NOTE]
 >
@@ -24,39 +23,33 @@ Découvrez la version de [!UICONTROL Cloud Manager] 2024.12.0 dans Adobe Mana
 
 <!-- SAVE FOR FUTURE POSSIBLE USE No notable bugs or features for the September release of Cloud Manager. -->
 
-La date de publication de la version 2024.12.0 de [!UICONTROL Cloud Manager] est le 5 décembre 2024.
+La date de publication de la version 2025.1.0 de [!UICONTROL Cloud Manager] est le mardi 22 janvier 2024.
 
-La prochaine version est prévue le 23 janvier 2025.
+La prochaine version est prévue le vendredi 13 février 2025.
 
 ## Nouveautés {#what-is-new}
 
-<!-- * The AEM Code Quality step now uses SonarQube 9.9 Server, replacing the older 7.4 version. This upgrade brings additional security, performance, and code quality checks, offering more comprehensive analysis and coverage for your projects. --> <!-- CMGR-45683 -->
+**Règles de qualité du code :** l’étape de qualité du code Cloud Manager commencera à utiliser SonarQube Server 9.9 avec la version Cloud Manager 2025.2.0, prévue pour le jeudi 13 février 2025.
 
-* À compter du jeudi 13 février 2025, l’étape de qualité du code Cloud Manager utilisera une version mise à niveau de SonarQube 9.9.5.90363.
+Pour vous préparer, les règles SonarQube mises à jour sont désormais disponibles à l’adresse [Règles de qualité du code](/help/using/code-quality-testing.md#code-quality-testing-step).
 
-  Les règles mises à jour, disponibles pour AMS via [ce lien](/help/using/code-quality-testing.md#code-quality-testing-step), déterminent les scores de sécurité et la qualité du code pour les pipelines Cloud Manager. Cette mise à jour peut avoir un impact sur vos points de contrôle qualité et bloquer potentiellement les déploiements.
+Vous pouvez « vérifier rapidement » les nouvelles règles en définissant la variable de texte de pipeline suivante (voir la capture d’écran ci-dessous) :
 
-## Programme d’adoption précoce {#early-adoption}
+`CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
 
-Prenez part à notre programme d’adoption précoce de Cloud Manager afin de pouvoir tester certaines fonctionnalités à venir.
+En outre, définissez la variable suivante pour vous assurer que l’étape de qualité du code s’exécute pour la même validation (normalement ignorée pour la même `commitId`) :
 
-### Apportez votre propre Git - avec prise en charge de GitLab et Bitbucket {#gitlab-bitbucket}
+`CM_DISABLE_BUILD_REUSE` = `true`
 
-<!-- BOTH CS & AMS -->
-
-La fonctionnalité **Apportez votre propre Git** a été étendue pour inclure la prise en charge de référentiels externes tels que GitLab et Bitbucket. Cette nouvelle prise en charge s’ajoute à la prise en charge existante des référentiels GitHub privés et d’entreprise. Lorsque vous ajoutez ces nouveaux référentiels, vous pouvez également les lier directement à vos pipelines. Vous pouvez héberger ces référentiels sur des plateformes cloud publiques ou dans votre infrastructure ou cloud privés. Cette intégration élimine également la nécessité d’une synchronisation constante du code avec le référentiel d’Adobe et permet de valider les requêtes d’extraction avant de les fusionner dans une branche principale.
-
-Les pipelines qui utilisent des référentiels externes (à l’exclusion de ceux hébergés par GitHub) et le **Déclencheur de déploiement** défini sur **Lors des modifications Git** démarrent désormais automatiquement.
-
-Voir [Ajouter des référentiels externes dans Cloud Manager](/help/managing-code/external-repositories.md).
-
-![Boîte de dialogue Ajouter un référentiel](/help/release-notes/assets/repositories-add-release-notes.png)
+![Page de configuration des variables](/help/release-notes/assets/variables-config.png)
 
 >[!NOTE]
 >
->Actuellement, les contrôles de qualité du code des requêtes d’extraction prêts à l’emploi sont exclusifs aux référentiels hébergés par GitHub, mais une mise à jour permettant d’étendre cette fonctionnalité à d’autres fournisseurs Git est en cours.
+>Adobe recommande de créer un pipeline de qualité du code CI/CD, configuré sur la même branche que votre pipeline de production principal. Définissez les variables appropriées *avant* dans la version du 13 février 2025 pour vérifier que les nouvelles règles appliquées n’introduisent pas de bloqueurs.
 
-Si vous souhaitez tester cette nouvelle fonctionnalité et faire part de vos commentaires, envoyez un e-mail à [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) à partir de l’adresse e-mail associée à votre Adobe ID. Veillez à inclure la plateforme Git à utiliser et indiquez si vous utilisez une structure de référentiel privée/publique ou d’entreprise.
+<!-- ## Early adoption program {#early-adoption}
+
+Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features. -->
 
 
 <!-- ## Bug fixes {#bug-fixes}
