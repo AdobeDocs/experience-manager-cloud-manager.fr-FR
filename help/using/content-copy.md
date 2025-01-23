@@ -3,9 +3,9 @@ title: Copie de contenu pour la cohérence de l’environnement
 description: La copie de contenu dans Cloud Manager permet de copier du contenu modifiable à la demande à partir des environnements de production Adobe Experience Manager 6.x hébergés par Adobe Managed Services dans des environnements inférieurs pour les tests.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 source-git-commit: 84b3366481c2efd497583627eac67046452f6c38
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1321'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ Pour qu’un contenu puisse être copié, un jeu de contenu doit être défini. 
 
    Seuls les chemins commençant par `/content`, `/conf`, `/etc`, `/var/workflow/models` ou `/var/commerce` peuvent être inclus.
 
-1. Cliquez sur ![Icône d’ajout de dossier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderAdd_18_N.svg) **Ajouter un chemin** pour ajouter (ou inclure) le chemin d’accès au jeu de contenu.
+1. Cliquez sur ![Icône d’ajout de dossier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderAdd_18_N.svg) **Ajouter un chemin** pour ajouter (ou inclure) le chemin d’accès à l’ensemble de contenu.
 
 1. (Facultatif) Si nécessaire, ajoutez des chemins d’accès supplémentaires (jusqu’à 50) en répétant les deux étapes précédentes. Autrement, passez à l’étape suivante.
 
