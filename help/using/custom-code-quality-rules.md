@@ -3,9 +3,9 @@ title: Règles de qualité du code personnalisé
 description: Découvrez les détails des règles de qualité du code personnalisé exécutées par Cloud Manager lors du test de qualité du code. Ces règles sont basées sur les bonnes pratiques de l’ingénierie AEM.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
 source-git-commit: 1b7b703f7cba69878bd98aa971844741ebea7dba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3490'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -496,7 +496,7 @@ public void doThis(Resource resource) {
 ### Le planificateur Sling ne doit pas être utilisé. {#sonarqube-sling-scheduler}
 
 * **Clé** : CQRules:AMSCORE-554
-* **Type** : Compatibilité `Code Smell`/Cloud Service
+* **Type** : compatibilité `Code Smell`/Cloud Service
 * **Gravité** : mineure
 * **Depuis** : version 2020.5.0
 
@@ -507,7 +507,7 @@ Voir la [documentation sur la gestion des traitements et des événements Apache
 ### Les API AEM obsolètes ne doivent pas être utilisées. {#sonarqube-aem-deprecated}
 
 * **Clé** : AMSCORE-553
-* **Type** : Compatibilité `Code Smell`/Cloud Service
+* **Type** : compatibilité `Code Smell`/Cloud Service
 * **Gravité** : mineure
 * **Depuis** : version 2020.5.0
 
@@ -629,7 +629,7 @@ Tout comme la règle [Les packages ne doivent pas contenir de configurations OSG
 ### Le mode de création par défaut ne doit pas être défini sur l’interface d’utilisation classique. {#oakpal-default-authoring}
 
 * **Clé** : ClassicUIAuthoringMode
-* **Type** : Compatibilité `Code Smell`/Cloud Service
+* **Type** : compatibilité `Code Smell`/Cloud Service
 * **Gravité** : mineure
 * **Depuis** : version 2020.5.0
 
@@ -638,7 +638,7 @@ La configuration OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` déf
 ### Les boîtes de dialogue de composants doivent être de type interface d’utilisation tactile. {#oakpal-components-dialogs}
 
 * **Clé** : ComponentWithOnlyClassicUIDialog
-* **Type** : Compatibilité `Code Smell`/Cloud Service
+* **Type** : compatibilité `Code Smell`/Cloud Service
 * **Gravité** : mineure
 * **Depuis** : version 2020.5.0
 
@@ -653,7 +653,7 @@ La documentation des outils de modernisation d’AEM contient des informations e
 ### Les agents de réplication inverse ne doivent pas être utilisés. {#oakpal-reverse-replication}
 
 * **Clé** : ReverseReplication
-* **Type** : Compatibilité `Code Smell`/Cloud Service
+* **Type** : compatibilité `Code Smell`/Cloud Service
 * **Gravité** : mineure
 * **Depuis** : version 2020.5.0
 
