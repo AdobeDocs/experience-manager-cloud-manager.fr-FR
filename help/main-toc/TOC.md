@@ -7,9 +7,9 @@ user-guide-description: Découvrez comment utiliser Cloud Manager pour auto-gé
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 27cd3bbcaa41600167e4d692bd94834c28b0826b
-workflow-type: ht
-source-wordcount: '351'
+source-git-commit: 9d9bf7d689c0ace41bce3f31febe8ba78636c01f
+workflow-type: tm+mt
+source-wordcount: '354'
 ht-degree: 100%
 
 ---
@@ -74,7 +74,9 @@ ht-degree: 100%
    + [Évaluation](/help/product-update-wizard/evaluation.md)
 + Notes de mise à jour {#release-notes}
    + [En cours](/help/release-notes/current.md)
-   + 2024 {#rn-2024}
+   + {#rn-2025} 2025
+      + [2025.1.0](/help/release-notes/2025/2025-1-0.md)
+   + {#rn-2024} 2024
       + [2024.12.0](/help/release-notes/2024/2024-12-0.md)
       + [2024.11.0](/help/release-notes/2024/2024-11-0.md)
       + [2024.10.0](/help/release-notes/2024/2024-10-0.md)
