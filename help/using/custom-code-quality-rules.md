@@ -3,9 +3,9 @@ title: Règles de qualité du code personnalisé
 description: Découvrez les détails des règles de qualité du code personnalisé exécutées par Cloud Manager lors du test de qualité du code. Ces règles sont basées sur les bonnes pratiques de l’ingénierie AEM.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
 source-git-commit: c50eb54b5603b4370f2d7907a2194477dcc3ba21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3523'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -883,14 +883,14 @@ AEM Cloud Service interdit la création de définitions d’indexation qui con
 
 AEM Cloud Service interdit la création de définitions d’indexation qui contiennent des propriétés haystack.
 
-### La configuration des définitions d’indexation ne doit pas contenir la propriété : async-previous {#oakpal-indexing-async-previous-property}
+### La configuration des définitions d’indexation ne doit pas contenir de propriété async-previous. {#oakpal-indexing-async-previous-property}
 
-* **Key** : IndexAsyncPreviousCheck
+* **Clé** : IndexAsyncPreviousCheck
 * **Type** : amélioration
 * **Gravité** : mineure
 * **Depuis** : version 2025.2.0
 
-Le Cloud Service AEM interdit la création de définitions d’indexation contenant une propriété async-previous .
+AEM Cloud Service interdit la création de définitions d’indexation qui contiennent la propriété async-previous.
 
 ## Outil d’optimisation du Dispatcher {#dispatcher-optimization-tool-rules}
 
