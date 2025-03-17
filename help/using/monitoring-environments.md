@@ -2,10 +2,10 @@
 title: Surveiller les environnements
 description: Découvrez comment surveiller vos environnements dans Cloud Manager.
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '910'
-ht-degree: 100%
+source-git-commit: 53fb666ab6caff7a697d7f1942ce25f2bf27a2ce
+workflow-type: tm+mt
+source-wordcount: '911'
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ Adobe Managed Services définit les seuils, que vous pouvez afficher dans [!UI
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) et sélectionnez l’organisation et le programme appropriés.
 
-1. Cliquez sur le bouton représentant des points de suspension du programme que vous souhaitez surveiller.
+1. Cliquez sur ![icône Plus, points de suspension](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) du programme que vous souhaitez surveiller.
 1. Dans le menu, sous l’en-tête **Gérer**, cliquez sur **Afficher la surveillance** pour ouvrir la page **Rapports** qui affiche les informations de surveillance du système.
 
    ![Paramètres](/help/assets/first-timea1.png)

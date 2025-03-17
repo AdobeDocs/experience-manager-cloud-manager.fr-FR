@@ -7,10 +7,10 @@ user-guide-description: Découvrez comment utiliser Cloud Manager pour auto-gé
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 31ae069c9e121963b4609af3f10ac08ab5539fb8
+source-git-commit: 58cdebf819f2737be5d8e129ff5b9783888f3c21
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 99%
+source-wordcount: '364'
+ht-degree: 97%
 
 ---
 
@@ -52,6 +52,7 @@ ht-degree: 99%
    + [Test de qualité du code](/help/using/code-quality-testing.md)
    + [Gestion des environnements](/help/using/managing-environments.md)
    + [Surveillance des environnements](/help/using/monitoring-environments.md)
+   + [Mises à jour du pack de services pour les environnements de développement (utilisateurs précoces)](/help/using/service-packs-environments.md)
    + [API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
    + [CLI Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
    + [Notifications](/help/using/notifications.md)

@@ -1,11 +1,11 @@
 ---
-title: Ajout de référentiels externes dans Cloud Manager (adoption précoce)
+title: Ajouter des référentiels externes dans Cloud Manager - Utilisateurs et utilisatrices précoces
 description: Découvrez comment ajouter un référentiel externe dans Cloud Manager. Cloud Manager prend en charge l’intégration avec les référentiels GitHub, GitLab et Bitbucket.
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: e7e2268f866105970e02d4bc54c46613749e5ac0
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 58cdebf819f2737be5d8e129ff5b9783888f3c21
+workflow-type: tm+mt
+source-wordcount: '715'
+ht-degree: 98%
 
 ---
 
@@ -63,7 +63,7 @@ La configuration d’un référentiel externe dans Cloud Manager se compose de 
    | --- | --- |
    | **Utilisation d’un jeton d’accès existant** | Si vous avez déjà fourni un jeton d’accès au référentiel pour votre organisation et que vous avez accès à plusieurs référentiels, vous pouvez sélectionner un jeton existant. Utilisez la liste déroulante **Nom du jeton** pour choisir le jeton que vous souhaitez appliquer au référentiel. Sinon, ajoutez un nouveau jeton d’accès. |
    | **Ajout d’un nouveau jeton d’accès** | **Type de référentiel : GitHub**<br>• Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous créez.<br>• Créez un jeton d’accès personnel en suivant les instructions de la [documentation GitHub](https://docs.github.com/fr/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).<br>• Autorisations requises : <br> • `Read access to metadata`.<br> • `Read and write access to code and pull requests`.<br>• Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
-   |  | **Type de référentiel : GitLab**<br>• Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous créez.<br>• Créez un jeton d’accès personnel en suivant les instructions de la [documentation GitLab](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html).<br>• Autorisations requises :<br> • `api`<br> • `read_api`<br> • `read_repository`<br> • `write_repository`<br>• Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
+   |  | **Type de référentiel : GitLab**<br>• Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous créez.<br>• Créez un jeton d’accès personnel en suivant les instructions de la [documentation GitLab](https://docs.gitlab.com/user/profile/personal_access_tokens/).<br>• Autorisations requises :<br> • `api`<br> • `read_api`<br> • `read_repository`<br> • `write_repository`<br>• Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
    |  | **Type de référentiel : Bitbucket**<br>• Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous créez.<br>• Créez un jeton d’accès au référentiel à l’aide de la [documentation Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<br>• Autorisations requises :<br> • `Read and write access to code and pull requests`. |
 
    >[!NOTE]

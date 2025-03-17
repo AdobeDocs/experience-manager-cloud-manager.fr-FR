@@ -3,10 +3,10 @@ title: Ajouter des référentiels privés dans Cloud Manager
 description: Découvrez comment configurer Cloud Manager pour utiliser vos propres référentiels GitHub privés.
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
-source-git-commit: 5090d7ee9a6742d71122acda9901d074bc254305
-workflow-type: ht
-source-wordcount: '818'
-ht-degree: 100%
+source-git-commit: 58cdebf819f2737be5d8e129ff5b9783888f3c21
+workflow-type: tm+mt
+source-wordcount: '815'
+ht-degree: 96%
 
 ---
 
@@ -90,8 +90,7 @@ Jusqu’à la validation, le référentiel est répertorié avec une icône roug
 
 Notez que la colonne **Type** permet d’identifier facilement les référentiels fournis par Adobe (**Adobe**) et vos propres référentiels GitHub (**GitHub**).
 
-Pour revenir au référentiel ultérieurement et terminer la validation, accédez à la page **Référentiels**. Cliquez sur le bouton représentant des points de suspension en regard du référentiel GitHub que vous avez ajouté, puis sélectionnez **Validation de la propriété** dans le menu déroulant.
-
+Pour revenir au référentiel ultérieurement et terminer la validation, accédez à la page **Référentiels**. Cliquez sur ![Icône Plus, points de suspension](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en regard du référentiel GitHub que vous avez ajouté, puis cliquez sur **Validation de la propriété**.
 
 
 ## Utiliser des référentiels privés avec Cloud Manager {#using}
@@ -106,7 +105,7 @@ Une fois le référentiel GitHub validé dans Cloud Manager, l’intégration e
 
 1. Un [pipeline de qualité de code de pile pleine](/help/using/managing-pipelines.md) est créé automatiquement pour chaque demande d’extraction. Ce pipeline démarre à chaque mise à jour de demande d’extraction.
 
-1. La vérification GitHub reste à l’état d’exécution jusqu’à ce que les vérifications de la qualité du code soient terminées. Les résultats de la qualité du code sont ensuite propagés à la vérification GitHub.
+1. La vérification GitHub reste en cours d’exécution jusqu’à ce que les vérifications de qualité du code soient terminées. Les résultats de la qualité du code sont ensuite propagés à la vérification GitHub.
 
    ![Vérifications de la qualité du code GitHub.](/help/assets/repositories/github-code-quality.png)
 

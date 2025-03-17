@@ -2,10 +2,10 @@
 title: Ajouter des utilisateurs et des rôles
 description: Découvrez comment utiliser Admin Console pour ajouter des utilisateurs et utilisatrices et des rôles ainsi que créer des profils.
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '758'
-ht-degree: 100%
+source-git-commit: 53fb666ab6caff7a697d7f1942ce25f2bf27a2ce
+workflow-type: tm+mt
+source-wordcount: '762'
+ht-degree: 89%
 
 ---
 
@@ -101,18 +101,18 @@ Une fois que vous avez créé des profils de produit, vous pouvez leur affecter 
 
 1. Cliquez sur **Utilisateurs et utilisatrices** dans le panneau de navigation de gauche, puis cliquez sur le nom d’une personne pour effectuer des modifications.
 
-1. Cliquez sur le bouton représentant des points de suspension dans la section **Produits** et sélectionnez **Modifier**.
+1. Cliquez sur ![icône Plus, points de suspension](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) dans la section **Produits** et cliquez sur **Modifier**.
 
    ![Modification de l’utilisateur ou de l’utilisatrice](/help/assets/admin-console-edit-user.png)
 
-1. Dans la boîte de dialogue **Modifier des produits et des groupes d’utilisateurs et utilisatrices**, cliquez sur le bouton représentant le signe plus et sélectionnez les profils à affecter à la personne.
+1. Dans la boîte de dialogue **Modifier des produits et des groupes d’utilisateurs**, cliquez sur ![Ajouter une icône, puis sur un signe plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) et sélectionnez les profils à affecter à l’utilisateur.
 
-   * Si la personne est déjà affectée aux rôles, le bouton représentant le signe plus sera un bouton de modification (un crayon), mais fonctionnera de la même manière.
+   * Si l’utilisateur est déjà affecté aux rôles, le bouton ![Ajouter, plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) est un bouton de modification (un crayon), mais fonctionne de la même manière.
 
    ![Modifier des produits et des groupes d’utilisateurs](/help/assets/admin-console-edit-products-and-user-groups.png)
 
 1. Cliquez sur **Enregistrer** pour enregistrer les profils de l’utilisateur.
 
-Répétez les mêmes étapes pour affecter des profils à des groupes d’utilisateurs, mais sélectionnez **Groupes d’utilisateurs** dans le panneau de navigation de gauche dans l’onglet **Utilisateurs**. Cliquez sur un groupe d’utilisateurs et utilisatrices et sélectionnez l’onglet **Profils de produit affectés**, puis cliquez sur **Affecter un profil de produit** pour affecter des profils.
+Répétez les mêmes étapes pour affecter des profils à des groupes d’utilisateurs, mais sélectionnez **Groupes d’utilisateurs** dans le panneau de navigation de gauche dans l’onglet **Utilisateurs**. Cliquez sur un groupe d’utilisateurs et sélectionnez le **Profils de produit attribués** puis cliquez sur **Attribuer un profil de produit** pour affecter des profils.
 
 ![Affectation de profils à un groupe](/help/assets/admin-console-edit-user-groups.png)
