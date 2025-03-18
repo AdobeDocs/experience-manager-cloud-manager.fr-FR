@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 2025.3.0 de Cloud Manager
 description: En savoir plus sur la version 2025.3.0 de Cloud Manager dans Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: bb57be6d2cbab8ff47b368bab59cb3072f78b235
+source-git-commit: 55b33db1bf80f066b1a66bc87c0abeefa4771871
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 32%
+source-wordcount: '150'
+ht-degree: 52%
 
 ---
 
@@ -32,31 +32,34 @@ La prochaine version est prévue le vendredi 10 avril 2025.
 
   ![Boîte de dialogue Exécuter les pipelines sélectionnés](/help/release-notes/assets/run-selected-pipelines.png)
 
+  Voir aussi [Exécution de plusieurs pipelines](/help/using/managing-pipelines.md#run-multiple-pipelines)
 
 
-## Programme d’adoption précoce {#early-adoption}
+<!--
+## Early adoption program {#early-adoption}
 
-Prenez part à notre programme d’adoption précoce de Cloud Manager afin de pouvoir tester certaines fonctionnalités à venir.
+Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features.
 
-### Mises à jour du pack de services en libre-service pour les clients AMS Cloud Manager
+### Self-service Service Pack updates for AMS Cloud Manager customers 
 
-Dans le cadre du programme des utilisateurs précoces, les clients Adobe Managed Services Cloud Manager peuvent désormais effectuer des mises à jour du pack de services en libre-service via l’interface utilisateur **Cloud Manager**. Cette fonctionnalité est actuellement disponible *uniquement pour les environnements de développement* et inclut des rapports d’erreur limités pour les échecs.
+As part of the early adopters program, Adobe Managed Services Cloud Manager customers can now perform self-service service pack updates through the **Cloud Manager** user interface. This feature is currently available *only for development environments* and includes limited error reporting for failures.  
 
-Les clients peuvent rechercher les mises à jour du pack de services sur la page **Présentation du programme** sous la section **Environnements** (**menu à trois points**).
+Customers can check for service pack updates on the **Program Overview** page under the **Environments** section (**three-dot menu**).
 
-![Option du menu Vérifier les mises à jour ](/help/release-notes/assets/check-for-updates-1.png)
+![Check for updates menu option](/help/release-notes/assets/check-for-updates-1.png)
 
-![ Boîte de dialogue Mettre à jour le pack de services ](/help/release-notes/assets/check-for-updates-2.png)
+![Update Service Pack dialog box](/help/release-notes/assets/check-for-updates-2.png)
 
-Le processus d’installation et de mise à niveau peut être suivi sur la page **Activité**.
+The installation and upgrade process can be tracked on the **Activity** page. 
 
-Une fois le processus terminé, les clients doivent **approuver l’exécution** pour que la mise à niveau du pack de services se termine correctement.
+Once the process is complete, customers must **approve the execution** for the service pack upgrade to finalize successfully.
 
-![Approuver la mise à jour de la page de service](/help/release-notes/assets/check-for-updates-3.png)
+![Approve service page update](/help/release-notes/assets/check-for-updates-3.png)
 
-Si vous souhaitez tester cette nouvelle fonctionnalité et partager vos commentaires, contactez votre ingénieur du succès client Adobe.
+If you are interested in testing this new feature and sharing your feedback, contact your Adobe Customer Success Engineer.
 
-Consultez également la section [ Mises à jour du pack de services pour les environnements de développement - Utilisateurs précoces](/help/using/service-packs-environments.md).
+See also [Service Pack Updates for Development Environments - Early Adopter](/help/using/service-packs-environments.md).
+-->
 
 
 
