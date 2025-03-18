@@ -1,7 +1,8 @@
 ---
 title: Mises à jour du pack de services pour les environnements de développement - Utilisateurs et utilisatrices précoces
 description: Découvrez comment vous pouvez désormais lancer des mises à jour du pack de services pour les environnements de développement via l’interface utilisateur de Cloud Manager.
-source-git-commit: 8da0e6cb4587bc7dfc79bec415ff3aeef2d12e3e
+exl-id: 996a8eee-843f-45a6-8f7a-31ea405c2b32
+source-git-commit: 91691878a2c135cc9fe123c06afcf775a962a2e0
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 3%
@@ -14,7 +15,7 @@ Découvrez comment lancer des mises à jour du pack de services pour les environ
 
 >[!NOTE]
 >
->Cette fonctionnalité n’est disponible que pour le [programme d’adoption précoce](/help/release-notes/current.md).
+>Cette fonctionnalité n’est disponible que pour le [programme d’adoption précoce](/help/release-notes/current.md#early-adoption).
 
 ## Vue d’ensemble {#service-pack-updates-overview}
 
@@ -91,5 +92,3 @@ Une fois l’installation terminée, votre approbation (ou votre rejet) est néc
 L’installation du pack de services est annulée et aucune modification n’est appliquée.
 
    ![ Rejet du pack de services ](/help/using/assets/service-pack-reject.png)
-
-
