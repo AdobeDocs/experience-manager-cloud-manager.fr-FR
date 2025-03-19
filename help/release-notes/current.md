@@ -3,7 +3,7 @@ title: Notes de mise à jour de la version 2025.3.0 de Cloud Manager
 description: En savoir plus sur la version 2025.3.0 de Cloud Manager dans Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 55b33db1bf80f066b1a66bc87c0abeefa4771871
+source-git-commit: 36e5e666417508f24a7c142e96bace48abbcb735
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 52%
@@ -33,6 +33,7 @@ La prochaine version est prévue le vendredi 10 avril 2025.
   ![Boîte de dialogue Exécuter les pipelines sélectionnés](/help/release-notes/assets/run-selected-pipelines.png)
 
   Voir aussi [Exécution de plusieurs pipelines](/help/using/managing-pipelines.md#run-multiple-pipelines)
+
 
 
 <!--
