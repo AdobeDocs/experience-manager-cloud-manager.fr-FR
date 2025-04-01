@@ -6,7 +6,7 @@ exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
 source-git-commit: 81894345cd4e0921f3734f6e09a82c192d20f9dd
 workflow-type: tm+mt
 source-wordcount: '150'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
@@ -20,19 +20,19 @@ Consultez également les [notes de mise à jour actuelles d’Adobe Experience�
 
 ## Dates de publication {#release-date}
 
-La date de publication de la version 2025.3.0 de [!UICONTROL Cloud Manager] est le vendredi 13 mars 2025.
+La date de publication de la version 2025.3.0 de [!UICONTROL Cloud Manager] est le jeudi 13 mars 2025.
 
-La prochaine version est prévue le vendredi 10 avril 2025.
+La prochaine version est prévue le jeudi 10 avril 2025.
 
 ## Nouveautés {#what-is-new}
 
-* **Exécution de plusieurs pipelines**
+* **Exécuter plusieurs pipelines**
 
-  La possibilité d’exécuter plusieurs pipelines simultanément a été introduite dans la page Pipelines . Les utilisateurs doivent sélectionner au moins un pipeline, mais pas plus de dix. Dans le coin supérieur droit de la page Pipelines, cliquez sur **Exécuter la sélection (x)**. Une boîte de dialogue modale s’affiche, répertoriant les pipelines qui ne peuvent pas être démarrés. Cliquez sur **Exécuter** pour lancer tous les pipelines valides.
+  La possibilité d’exécuter plusieurs pipelines simultanément a été introduite dans la page Pipelines. Les utilisateurs et utilisatrices doivent sélectionner au moins un pipeline, mais pas plus de dix. Dans le coin supérieur droit de la page Pipelines, cliquez sur **Exécuter la sélection (x)**. Une boîte de dialogue modale s’affiche, répertoriant les pipelines qui ne peuvent pas être démarrés. Cliquez sur **Exécuter** pour lancer tous les pipelines valides.
 
   ![Boîte de dialogue Exécuter les pipelines sélectionnés](/help/release-notes/assets/run-selected-pipelines.png)
 
-  Voir aussi [Exécution de plusieurs pipelines](/help/using/managing-pipelines.md#run-multiple-pipelines)
+  Voir aussi [Exécuter plusieurs pipelines](/help/using/managing-pipelines.md#run-multiple-pipelines)
 
 
 
