@@ -2,7 +2,7 @@
 title: Ajouter des référentiels externes dans Cloud Manager - Utilisateurs et utilisatrices précoces
 description: Découvrez comment ajouter un référentiel externe dans Cloud Manager. Cloud Manager prend en charge l’intégration aux référentiels GitHub Enterprise, GitLab et Bitbucket.
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: a63d996b283396efa139bf567c40a51e6f46d9bc
+source-git-commit: 5ba12cdfa4a0d790561fd2f3da738bf697133bee
 workflow-type: tm+mt
 source-wordcount: '1866'
 ht-degree: 27%
@@ -39,7 +39,7 @@ La configuration d’un référentiel externe dans Cloud Manager se compose de 
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Sur la console **Mes programmes**, sélectionnez le programme auquel vous souhaitez lier un référentiel externe.
+1. Sur la console **[Mes programmes](/help/getting-started/navigation.md#my-programs-console)**, sélectionnez le programme auquel vous souhaitez lier un référentiel externe.
 
 1. Dans le menu latéral, sous **Programme**, cliquez sur ![Icône Composition du dossier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **Référentiels**.
 
@@ -121,7 +121,7 @@ Pour tous les autres référentiels externes intégrés avec un jeton d’accès
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Dans la console **Mes programmes**, sélectionnez le programme pour lequel vous souhaitez configurer un webhook pour un référentiel Git externe.
+1. Dans la console **[Mes programmes](/help/getting-started/navigation.md#my-programs-console)**, sélectionnez le programme pour lequel vous souhaitez configurer un webhook pour un référentiel Git externe.
 
 1. Dans le coin supérieur gauche de la page, cliquez sur ![Icône Afficher le menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) pour afficher le menu de gauche.
 
