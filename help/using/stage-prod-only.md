@@ -1,21 +1,22 @@
 ---
-title: Pipelines d’évaluation uniquement et de production uniquement - Utilisateurs précoces
+title: Pipelines dédiés à l’évaluation uniquement et à la production uniquement
 description: Découvrez comment séparer les déploiements d’évaluation et de production à l’aide de pipelines dédiés.
+badge: label="Utilisateur(Utilisatrice) Précoce" type="Positive" url="/help/release-notes/current.md#staging-production-only-pipelines"
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: 2c6f5692ffa31e02d7338e68063d0c1c03a0c73b
+source-git-commit: b830c30bb6b2b99ef442577325a30de6b9953ec8
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 98%
+source-wordcount: '937'
+ht-degree: 99%
 
 ---
 
-# Pipelines d’évaluation uniquement et de production uniquement (utilisateurs précoces) {#stage-prod-only}
+# Pipelines dédiés à l’évaluation uniquement et à la production uniquement {#stage-prod-only}
 
 Découvrez comment séparer les déploiements d’évaluation et de production à l’aide de pipelines dédiés.
 
 >[!NOTE]
 >
->Cette fonctionnalité n’est disponible que pour le [programme d’adoption précoce](/help/release-notes/2024/2024-8-0.md).
+>Cette fonctionnalité n’est disponible que pour le [programme d’adoption précoce](/help/release-notes/current.md#staging-production-only-pipelines).
 
 ## Vue d’ensemble {#overview}
 
