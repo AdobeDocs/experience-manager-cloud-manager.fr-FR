@@ -163,4 +163,4 @@ Une fois que vous avez configuré le pipeline, vous devez déployer votre code. 
 
 Cette vidéo présente une vue d’ensemble du processus de création de pipeline, détaillé dans ce document.
 
->[!VIDEO](https://video.tv.adobe.com/v/26314/)
+>[!VIDEO](https://video.tv.adobe.com/v/327601?captions=fre_fr)

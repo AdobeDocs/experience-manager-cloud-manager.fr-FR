@@ -92,4 +92,4 @@ De plus, de nombreux utilisateurs et utilisatrices disposeront d’un réseau de
 
 ## Vue d’ensemble vidéo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/26313/)
+>[!VIDEO](https://video.tv.adobe.com/v/34714?captions=fre_fr)

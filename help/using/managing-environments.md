@@ -64,6 +64,6 @@ L’écran **Environnements** affiche chaque environnement d’évaluation et de
 
 La vidéo suivante présente un aperçu des environnements Cloud Manager composés d’instances de création, de publication et de Dispatcher AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/26318/)
+>[!VIDEO](https://video.tv.adobe.com/v/34716?captions=fre_fr)
 
 *(3 minutes, 1 seconde)*
