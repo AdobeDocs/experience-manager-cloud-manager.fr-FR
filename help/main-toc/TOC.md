@@ -75,11 +75,11 @@ ht-degree: 97%
    + [Évaluation](/help/product-update-wizard/evaluation.md)
 + Notes de mise à jour {#release-notes}
    + [En cours](/help/release-notes/current.md)
-   + {#rn-2025} 2025
+   +  2025{#rn-2025}
       + [2025.3.0](/help/release-notes/2025/2025-3-0.md)
       + [2025.2.0](/help/release-notes/2025/2025-2-0.md)
       + [2025.1.0](/help/release-notes/2025/2025-1-0.md)
-   + {#rn-2024} 2024
+   +  2024{#rn-2024}
       + [2024.12.0](/help/release-notes/2024/2024-12-0.md)
       + [2024.11.0](/help/release-notes/2024/2024-11-0.md)
       + [2024.10.0](/help/release-notes/2024/2024-10-0.md)
