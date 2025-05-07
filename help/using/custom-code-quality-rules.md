@@ -2,7 +2,7 @@
 title: Règles de qualité du code personnalisé
 description: Découvrez les détails des règles de qualité du code personnalisé exécutées par Cloud Manager lors du test de qualité du code. Ces règles sont basées sur les bonnes pratiques de l’ingénierie AEM.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 8388edb5510ed4583a7bc703f3781af03d976948
+source-git-commit: 54987d6ccd8c31dab677d90b40466c458743f936
 workflow-type: tm+mt
 source-wordcount: '3644'
 ht-degree: 96%
@@ -801,7 +801,7 @@ AEM Cloud Service interdit aux définitions d’index de recherche personnalisé
 
 * **Clé** : IndexNotUnderUIContent
 * **Type** : amélioration
-* **Gravité** : mineure
+* **Gravité** : majeure
 * **Depuis** : version 2024.6.0
 
 AEM Cloud Service interdit le déploiement de définitions d’index de recherche personnalisées (nœuds de type `oak:QueryIndexDefinition`) dans le package de contenu de l’interface d’utilisation.
@@ -814,7 +814,7 @@ AEM Cloud Service interdit le déploiement de définitions d’index de recherch
 
 * **Clé** : CustomFulltextIndexesOfTheDamAssetCheck
 * **Type** : amélioration
-* **Gravité** : mineure
+* **Gravité** : majeure
 * **Depuis** : version 2024.6.0
 
 AEM Cloud Service interdit que les définitions d’index en texte intégral personnalisées de type `damAssetLucene` comprennent un préfixe autre que `damAssetLucene`.
@@ -827,7 +827,7 @@ AEM Cloud Service interdit que les définitions d’index en texte intégral per
 
 * **Clé** : DuplicateNameProperty
 * **Type** : amélioration
-* **Gravité** : mineure
+* **Gravité** : majeure
 * **Depuis** : version 2024.6.0
 
 AEM Cloud Service interdit que les définitions d’index de recherche personnalisées (c’est-à-dire les nœuds de type `oak:QueryIndexDefinition`) contiennent des propriétés portant le même nom.
@@ -840,7 +840,7 @@ AEM Cloud Service interdit que les définitions d’index de recherche personnal
 
 * **Clé** : RestrictIndexCustomization
 * **Type** : amélioration
-* **Gravité** : mineure
+* **Gravité** : majeure
 * **Depuis** : version 2024.6.0
 
 AEM Cloud Service interdit toute modification non autorisée des index intégrés suivants :
