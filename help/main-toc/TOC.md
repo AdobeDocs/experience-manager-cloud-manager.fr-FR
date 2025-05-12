@@ -7,10 +7,10 @@ user-guide-description: Découvrez comment utiliser Cloud Manager pour auto-gé
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 4c4ffeb689117620bd810f35d277f5ab20bda8d3
+source-git-commit: ecee095cfdf929e38823ace77f184db3108cab92
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 97%
 # Documentation de Cloud Manager {#content}
 
 + [Cloud Manager pour AMS](/help/introduction.md)
-+ Présentation {#overview}
++ Vue d’ensemble {#overview}
    + [Concepts clés](/help/overview/key-concepts.md)
    + [Parcours d’utilisateur ou d’utilisatrice](/help/overview/user-journey.md)
    + [Pipelines CI/CD](/help/overview/ci-cd-pipelines.md)
@@ -42,7 +42,7 @@ ht-degree: 97%
       + [Environnement de création](/help/getting-started/build-environment.md)
    + [Configuration des branches](/help/getting-started/configuring-branches.md)
    + [Configurations du Dispatcher](/help/getting-started/dispatcher-configurations.md)
-+ Utilisation {#using}
++ Utiliser {#using}
    + Pipelines CI/CD {#pipelines}
       + [Configurer un pipeline de production](/help/using/production-pipelines.md)
       + [Configurer un pipeline hors production](/help/using/non-production-pipelines.md)
@@ -58,7 +58,7 @@ ht-degree: 97%
    + [Notifications](/help/using/notifications.md)
    + [Règles de qualité du code personnalisé](/help/using/custom-code-quality-rules.md)
    + [Copie de contenu pour la cohérence de l’environnement](/help/using/content-copy.md)
-+ Gestion du code {#managing-code}
++ Gérer le code {#managing-code}
    + [Gestion des référentiels dans Cloud Manager](/help/managing-code/managing-repositories.md)
    + [Informations d’accès au référentiel](/help/managing-code/accessing-repositories.md)
    + [Ajout d’un référentiel Adobe](/help/managing-code/adobe-repositories.md)
@@ -75,11 +75,12 @@ ht-degree: 97%
    + [Évaluation](/help/product-update-wizard/evaluation.md)
 + Notes de mise à jour {#release-notes}
    + [En cours](/help/release-notes/current.md)
-   +  2025{#rn-2025}
+   + 2025 {#rn-2025}
+      + [2025.4.0](/help/release-notes/2025/2025-4-0.md)
       + [2025.3.0](/help/release-notes/2025/2025-3-0.md)
       + [2025.2.0](/help/release-notes/2025/2025-2-0.md)
       + [2025.1.0](/help/release-notes/2025/2025-1-0.md)
-   +  2024{#rn-2024}
+   + 2024 {#rn-2024}
       + [2024.12.0](/help/release-notes/2024/2024-12-0.md)
       + [2024.11.0](/help/release-notes/2024/2024-11-0.md)
       + [2024.10.0](/help/release-notes/2024/2024-10-0.md)
