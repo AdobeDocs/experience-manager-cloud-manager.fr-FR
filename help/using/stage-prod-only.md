@@ -1,22 +1,17 @@
 ---
-title: Pipelines dédiés à l’évaluation uniquement et à la production uniquement
+title: Partager des pipelines d’évaluation uniquement et de production uniquement
 description: Découvrez comment séparer les déploiements d’évaluation et de production à l’aide de pipelines dédiés.
-badge: label="Utilisateur(Utilisatrice) Précoce" type="Positive" url="/help/release-notes/current.md#staging-production-only-pipelines"
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: b830c30bb6b2b99ef442577325a30de6b9953ec8
+source-git-commit: 35845e827b0a3fadfe2a55a2171b5e02100cf3eb
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 99%
+source-wordcount: '924'
+ht-degree: 98%
 
 ---
 
-# Pipelines dédiés à l’évaluation uniquement et à la production uniquement {#stage-prod-only}
+# Fractionner les pipelines d’évaluation uniquement et de production uniquement {#stage-prod-only}
 
 Découvrez comment séparer les déploiements d’évaluation et de production à l’aide de pipelines dédiés.
-
->[!NOTE]
->
->Cette fonctionnalité n’est disponible que pour le [programme d’adoption précoce](/help/release-notes/current.md#staging-production-only-pipelines).
 
 ## Vue d’ensemble {#overview}
 

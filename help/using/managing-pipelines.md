@@ -2,10 +2,10 @@
 title: Gestion des pipelines
 description: Découvrez comment gérer vos pipelines existants, notamment en les exécutant, en les modifiant et en les supprimant.
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: d4a7d9ab72947b97b0dabb2f822ef268e4972685
+source-git-commit: 91eda02d55134fba167f30830a142a80717e9083
 workflow-type: tm+mt
-source-wordcount: '1060'
-ht-degree: 60%
+source-wordcount: '1170'
+ht-degree: 56%
 
 ---
 
@@ -49,6 +49,18 @@ Le fait de cliquer sur l’icône `i` affiche des détails sur la dernière exé
 ![Détails de l’exécution du pipeline](/help/assets/configure-pipelines/pipeline-status.png)
 
 Cliquez sur **Afficher les détails** pour accéder aux [détails de l’exécution du pipeline](#view-details).
+
+### Marquer les favoris du pipeline{#pipeline-favorites}
+
+Vous pouvez marquer des pipelines spécifiques comme favoris afin qu’ils apparaissent en haut de la liste sur la page **Pipelines**. Cette fonctionnalité facilite la recherche et l’exécution des pipelines fréquemment consultés.
+
+**Pour marquer les favoris de pipeline :**
+
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
+1. Sur la page **Aperçu du programme**, cliquez sur ![Onglet Pipeline - Icône de workflow](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Onglet Pipelines**.
+1. Sur la page **Pipelines**, à gauche du nom et du type d’un pipeline, cliquez sur ![Icône de contour en étoile pour le pipeline non mis en favoris](https://spectrum.adobe.com/static/icons/workflow_18/Smock_StarOutline_18_N.svg) pour l’ajouter à votre liste de favoris.
+Vous pouvez également cliquer sur ![icône Étoile d’un pipeline favori](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg) pour supprimer le pipeline de votre liste de favoris.
+
 
 ## Page Activité {#activity}
 

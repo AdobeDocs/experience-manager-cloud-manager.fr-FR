@@ -3,9 +3,9 @@ title: Ajouter des référentiels externes dans Cloud Manager
 description: Découvrez comment ajouter un référentiel externe dans Cloud Manager. Cloud Manager prend en charge l’intégration aux référentiels GitHub Enterprise, GitLab et Bitbucket.
 badge: label="Utilisateur(Utilisatrice) Précoce" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: b830c30bb6b2b99ef442577325a30de6b9953ec8
+source-git-commit: 83ba61364d5a492bd7236d7fcaeabf8cf904627a
 workflow-type: tm+mt
-source-wordcount: '1867'
+source-wordcount: '1871'
 ht-degree: 28%
 
 ---
@@ -74,6 +74,8 @@ La configuration d’un référentiel externe dans Cloud Manager se compose de 
    | **Ajout d’un nouveau jeton d’accès** | **Type de référentiel : GitHub Enterprise**<br><ul><li> Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous êtes en train de créer.<li>Créez un jeton d’accès personnel en suivant les instructions de la [documentation GitHub](https://docs.github.com/fr/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).<li>Autorisations requises pour le jeton d’accès personnel (PAT) d’entreprise GitHub <br>ces autorisations permettent à Cloud Manager de valider les demandes d’extraction, de gérer les vérifications de statut de validation et d’accéder aux détails de référentiel nécessaires.<br>Lorsque vous générez le PAT dans GitHub Enterprise, assurez-vous qu’il inclut les autorisations de référentiel suivantes :<ul><li>Demande d’extraction (lecture et écriture)<li>Commit status (lecture et écriture).<li>Métadonnées du référentiel (lecture seule)</li></li></ul></li></ul></ul></ul><ul><li>Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
    | | **Type de référentiel : GitLab**<ul><li>Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous êtes en train de créer.<li>Créez un jeton d’accès personnel en suivant les instructions de la [documentation GitLab](https://docs.gitlab.com/user/profile/personal_access_tokens/).<li>Autorisations requises pour le jeton d’accès personnel GitLab (PAT)<br>ces portées permettent à Cloud Manager d’accéder aux données du référentiel et aux informations utilisateur selon les besoins pour la validation et l’intégration du webhook.<br>Lorsque vous générez le PAT dans GitLab, assurez-vous qu’il inclut les portées de jeton suivantes :<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
    | | **Type de référentiel : Bitbucket**<ul><li>Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous êtes en train de créer.<li>Créez un jeton d’accès au référentiel à l’aide de la [documentation Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>Autorisations requises pour le jeton d’accès personnel (PAT) Bitbucket <br>ces autorisations permettent à Cloud Manager d’accéder au contenu du référentiel, de gérer les demandes d’extraction et de configurer des événements webhook ou d’y réagir.<br>Lorsque vous créez le mot de passe de l’application dans Bitbucket, assurez-vous qu’il inclut les autorisations de mot de passe d’application requises suivantes :<ul><li>Référentiel (lecture seule)<li>Requêtes d’extraction (lecture et écriture)<li>Webhooks (lecture et écriture)</li></li></ul></li></li></ul></ul></ul><ul><li>Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
+
+   Voir [ Gestion des jetons d’accès ](/help/managing-code/manage-access-tokens.md).
 
    >[!NOTE]
    >
