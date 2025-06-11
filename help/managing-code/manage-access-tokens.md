@@ -2,13 +2,13 @@
 title: Gestion des jetons d’accès dans Cloud Manager
 description: Découvrez comment afficher, modifier et supprimer les jetons d’accès utilisés pour apporter votre propre Git dans Cloud Manager sur Adobe Managed Services.
 badge: label="Utilisateur(Utilisatrice) Précoce" type="Positive" url="/help/release-notes/current.md#access-tokens"
-source-git-commit: aa0eff7eb1f6b0cde9b99b7cbbfb3410e0db94a6
+exl-id: 873aad0b-d7c6-4bc3-a70d-bbfdc1e02193
+source-git-commit: 4d95981d14004bde4931bf59846f9be7e10e3083
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '415'
 ht-degree: 3%
 
 ---
-
 
 # Gestion des jetons d’accès pour les référentiels externes {#manage-access-tokens}
 
@@ -41,9 +41,9 @@ Voir aussi [Ajouter des référentiels externes dans Cloud Manager](/help/managi
 ## Modification d’un jeton d’accès {#edit-access-tokens}
 
 1. Dans la boîte de dialogue **Gérer les jetons d’accès**, à droite d’un nom de jeton, cliquez sur ![Modifier l’icône](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg).
-1. Dans la boîte de dialogue **Modifier le jeton d’accès**, dans le champ de texte **Nom du jeton**, mettez à jour le nom du jeton.
+1. Dans la boîte de dialogue **Modifier le jeton d’accès**, mettez à jour la valeur **Nom du jeton** ou **Jeton d’accès**, ou les deux.
 
-   Le secret du jeton d’accès lui-même ne peut pas être modifié.
+   Si le **jeton d’accès** est en cours d’utilisation, une notification s’affiche pour vous avertir que tous les référentiels associés sont automatiquement revalidés après la mise à jour.
 
    ![Boîte de dialogue Modifier le jeton d’accès](/help/managing-code/assets/access-tokens-edit.png)
 
