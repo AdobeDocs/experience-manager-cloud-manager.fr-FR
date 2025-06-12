@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 2025.6.0 de Cloud Manager
 description: En savoir plus sur la version 2025.5.0 de Cloud Manager dans Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
+source-git-commit: 38d398caf2323b603afd293aa9152308fefd323f
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 62%
+source-wordcount: '560'
+ht-degree: 58%
 
 ---
 
@@ -55,18 +55,9 @@ Participez au programme Private Beta de Cloud Manager pour obtenir un accès exc
 Les opportunités de version bêta privée suivantes sont actuellement disponibles :
 
 
-### Gérer les jetons d’accès{#access-tokens}
-
-Utilisez la fonctionnalité **Gérer les jetons d’accès** de Cloud Manager pour afficher, renommer et supprimer les jetons d’accès associés aux référentiels Git externes Bring Your Own Git, tels que GitHub Enterprise, GitLab, Bitbucket et Azure DevOps.
-
-Voir [ Gestion des jetons d’accès ](/help/managing-code/manage-access-tokens.md).
-
-Si vous souhaitez tester cette nouvelle fonctionnalité et faire part de vos commentaires, envoyez un e-mail à [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) à partir de l’adresse e-mail associée à votre Adobe ID. Veillez à inclure la plateforme Git à utiliser et indiquez si vous utilisez une structure de référentiel privée/publique ou d’entreprise.
-
-
 ### Apportez votre propre Git - avec prise en charge de GitLab et Bitbucket {#gitlab-bitbucket}
 
-La fonctionnalité **Apportez votre propre Git** a été étendue pour inclure la prise en charge de référentiels externes tels que GitLab et Bitbucket. Cette nouvelle prise en charge s’ajoute à la prise en charge existante des référentiels GitHub privés et d’entreprise. Lorsque vous ajoutez ces nouveaux référentiels, vous pouvez également les lier directement à vos pipelines. Vous pouvez héberger ces référentiels sur des plateformes cloud publiques ou dans votre infrastructure ou cloud privés. Cette intégration élimine également la nécessité d’une synchronisation constante du code avec le référentiel d’Adobe et permet de valider les requêtes d’extraction avant de les fusionner dans une branche principale.
+La fonctionnalité **Bring Your Own Git** (BYOG) a été étendue pour inclure la prise en charge des référentiels externes, tels que GitLab et Bitbucket. Cette nouvelle prise en charge s’ajoute à la prise en charge existante des référentiels GitHub privés et d’entreprise. Lorsque vous ajoutez ces nouveaux référentiels, vous pouvez également les lier directement à vos pipelines. Vous pouvez héberger ces référentiels sur des plateformes cloud publiques ou dans votre infrastructure ou cloud privés. Cette intégration élimine également la nécessité d’une synchronisation constante du code avec le référentiel d’Adobe et permet de valider les requêtes d’extraction avant de les fusionner dans une branche principale.
 
 Les pipelines qui utilisent des référentiels externes (à l’exclusion de ceux hébergés par GitHub) et le **Déclencheur de déploiement** défini sur **Lors des modifications Git** démarrent désormais automatiquement.
 
@@ -77,6 +68,14 @@ Voir [Ajouter des référentiels externes dans Cloud Manager](/help/managing-co
 >[!NOTE]
 >
 >Actuellement, les contrôles de qualité du code des requêtes d’extraction prêts à l’emploi sont exclusifs aux référentiels hébergés par GitHub, mais une mise à jour permettant d’étendre cette fonctionnalité à d’autres fournisseurs Git est en cours.
+
+Si vous souhaitez tester cette nouvelle fonctionnalité et faire part de vos commentaires, envoyez un e-mail à [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) à partir de l’adresse e-mail associée à votre Adobe ID. Veillez à inclure la plateforme Git à utiliser et indiquez si vous utilisez une structure de référentiel privée/publique ou d’entreprise.
+
+#### Gérer les jetons d’accès{#access-tokens}
+
+Utilisez la fonctionnalité **Gérer les jetons d’accès**, conjointement avec BYOG, pour afficher, renommer et supprimer les jetons d’accès associés aux référentiels Git externes Bring Your Own, tels que GitHub Enterprise, GitLab, Bitbucket et Azure DevOps.
+
+Voir [ Gestion des jetons d’accès ](/help/managing-code/manage-access-tokens.md).
 
 Si vous souhaitez tester cette nouvelle fonctionnalité et faire part de vos commentaires, envoyez un e-mail à [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) à partir de l’adresse e-mail associée à votre Adobe ID. Veillez à inclure la plateforme Git à utiliser et indiquez si vous utilisez une structure de référentiel privée/publique ou d’entreprise.
 
