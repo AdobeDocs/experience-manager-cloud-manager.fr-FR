@@ -1,23 +1,23 @@
 ---
-title: Mises à jour du pack de services pour les environnements de développement - Utilisateurs et utilisatrices précoces
+title: Mises à jour du pack de services pour les environnements de développement - version bêta privée
 description: Découvrez comment vous pouvez désormais lancer des mises à jour du pack de services pour les environnements de développement via l’interface utilisateur de Cloud Manager.
 hide: true
 hidefromtoc: true
 exl-id: 996a8eee-843f-45a6-8f7a-31ea405c2b32
-source-git-commit: 55b33db1bf80f066b1a66bc87c0abeefa4771871
+source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
 
-# Mises à jour du pack de services pour les environnements de développement (utilisateurs et utilisatrices précoces) {#stage-prod-only}
+# Mises à jour du pack de services pour les environnements de développement (version bêta privée) {#stage-prod-only}
 
 Découvrez comment lancer des mises à jour du pack de services pour les environnements de développement via l’interface utilisateur de Cloud Manager.
 
 >[!NOTE]
 >
->Cette fonctionnalité n’est disponible que pour le [programme d’adoption précoce](/help/release-notes/current.md#early-adoption).
+>Cette fonctionnalité n’est disponible que pour [le programme Private Beta](/help/release-notes/current.md#beta-program).
 
 ## Vue d’ensemble {#service-pack-updates-overview}
 

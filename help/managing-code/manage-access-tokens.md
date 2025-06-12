@@ -1,9 +1,9 @@
 ---
 title: Gestion des jetons d’accès dans Cloud Manager
 description: Découvrez comment afficher, modifier et supprimer les jetons d’accès utilisés pour apporter votre propre Git dans Cloud Manager sur Adobe Managed Services.
-badge: label="Utilisateur(Utilisatrice) Précoce" type="Positive" url="/help/release-notes/current.md#access-tokens"
+badge: label="Private Beta" type="Positive" url="/help/release-notes/current.md#access-tokens"
 exl-id: 873aad0b-d7c6-4bc3-a70d-bbfdc1e02193
-source-git-commit: 4d95981d14004bde4931bf59846f9be7e10e3083
+source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 3%
@@ -20,7 +20,7 @@ Voir aussi [Ajouter des référentiels externes dans Cloud Manager](/help/managi
 
 >[!NOTE]
 >
->Les fonctionnalités décrites dans cet article ne sont disponibles que dans le cadre du programme d’adoption précoce. Pour plus d’informations et pour vous inscrire en tant qu’utilisateur ou utilisatrice précoce, consultez [Gestion des jetons d’accès](/help/release-notes/current.md#access-tokens).
+>Les fonctionnalités décrites dans cet article ne sont disponibles que via le programme bêta privé. Pour plus d’informations et pour vous inscrire à la version Private Beta, voir [Gérer les jetons d’accès](/help/release-notes/current.md#access-tokens).
 
 ## Afficher les jetons d’accès {#view-access-tokens}
 

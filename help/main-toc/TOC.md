@@ -7,10 +7,10 @@ user-guide-description: Découvrez comment utiliser Cloud Manager pour auto-gé
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 35845e827b0a3fadfe2a55a2171b5e02100cf3eb
+source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
 workflow-type: tm+mt
 source-wordcount: '373'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 92%
    + [Test de qualité du code](/help/using/code-quality-testing.md)
    + [Gestion des environnements](/help/using/managing-environments.md)
    + [Surveillance des environnements](/help/using/monitoring-environments.md)
-   + [Mises à jour du pack de services pour les environnements de développement (utilisateurs précoces)](/help/using/service-packs-environments.md)
+   + [Mises à jour du pack de services pour les environnements de développement (version bêta privée)](/help/using/service-packs-environments.md)
    + [API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
    + [CLI Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
    + [Notifications](/help/using/notifications.md)
@@ -63,8 +63,8 @@ ht-degree: 92%
    + [Informations d’accès au référentiel](/help/managing-code/accessing-repositories.md)
    + [Ajout d’un référentiel Adobe](/help/managing-code/adobe-repositories.md)
    + [Ajout d’un référentiel privé](/help/managing-code/private-repositories.md)
-   + [Ajout d’un référentiel externe (adoption précoce)](/help/managing-code/external-repositories.md)
-   + [Gérer les jetons d’accès (utilisateurs et utilisatrices précoces)](/help/managing-code/manage-access-tokens.md)
+   + [Ajout d’un référentiel externe (version bêta privée)](/help/managing-code/external-repositories.md)
+   + [Gérer les jetons d’accès (version bêta privée)](/help/managing-code/manage-access-tokens.md)
    + [Prise en charge des sous-modules Git](/help/managing-code/git-submodules.md)
    + [Configuration de la vérification GitHub](/help/managing-code/github-check-config.md)
    + [Annotations de la vérification GitHub](/help/managing-code/github-annotations.md)

@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 2025.6.0 de Cloud Manager
 description: En savoir plus sur la version 2025.5.0 de Cloud Manager dans Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: d0acd47ea6011dc5896d20d76ab0fcaa970df6ac
+source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
 workflow-type: tm+mt
 source-wordcount: '558'
-ht-degree: 67%
+ht-degree: 62%
 
 ---
 
@@ -33,7 +33,7 @@ La prochaine version est prévue le vendredi 10 juillet 2025.
 
 * **Pipelines d’évaluation uniquement et de production uniquement**
 
-  Cloud Manager prend désormais en charge les pipelines d’évaluation uniquement et de production uniquement. Cette fonctionnalité vous permet de diviser les déploiements de production full stack en pipelines plus petits et spécifiques à un objectif. <!-- This feature went into GA from Early Adopter in the June 5, 2025 CM release -->
+  Cloud Manager prend désormais en charge les pipelines d’évaluation uniquement et de production uniquement. Cette fonctionnalité vous permet de diviser les déploiements de production full stack en pipelines plus petits et spécifiques à un objectif. <!-- This feature went into GA from Private beta in the June 5, 2025 CM release -->
 
   ![Boîte de dialogue Ajouter un pipeline hors production avec le bouton radio Code de pile complète sélectionné et Environnement d’évaluation sélectionné](/help/release-notes/assets/add-non-production-pipeline.png)
 
@@ -48,11 +48,11 @@ La prochaine version est prévue le vendredi 10 juillet 2025.
   Voir [Marquer les favoris du pipeline](/help/using/managing-pipelines.md#pipeline-favorites).
 
 
-## Programme d’adoption précoce {#early-adoption}
+## Programme Private Beta {#beta-program}
 
-Participez au programme d’adoption précoce de Cloud Manager pour obtenir un accès exclusif aux fonctionnalités à venir avant leur publication générale.
+Participez au programme Private Beta de Cloud Manager pour obtenir un accès exclusif aux fonctionnalités à venir avant leur publication générale.
 
-Les possibilités d’adoption précoce suivantes sont actuellement disponibles :
+Les opportunités de version bêta privée suivantes sont actuellement disponibles :
 
 
 ### Gérer les jetons d’accès{#access-tokens}

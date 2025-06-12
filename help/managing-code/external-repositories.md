@@ -1,12 +1,12 @@
 ---
 title: Ajouter des référentiels externes dans Cloud Manager
 description: Découvrez comment ajouter un référentiel externe dans Cloud Manager. Cloud Manager prend en charge l’intégration aux référentiels GitHub Enterprise, GitLab et Bitbucket.
-badge: label="Utilisateur(Utilisatrice) Précoce" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
+badge: label="Private Beta" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: 83ba61364d5a492bd7236d7fcaeabf8cf904627a
+source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
 workflow-type: tm+mt
 source-wordcount: '1871'
-ht-degree: 28%
+ht-degree: 27%
 
 ---
 
@@ -16,7 +16,7 @@ Découvrez comment ajouter un référentiel externe dans Cloud Manager. Cloud M
 
 >[!NOTE]
 >
->Les fonctionnalités décrites dans cet article ne sont disponibles que dans le cadre du programme d’adoption précoce. Pour plus d’informations et pour vous inscrire en tant qu’utilisateur ou utilisatrice précoce, voir [Apporter votre propre Git](/help/release-notes/current.md#gitlab-bitbucket).
+>Les fonctionnalités décrites dans cet article ne sont disponibles que via le programme bêta privé. Pour plus d’informations et pour vous inscrire à la version Private Beta, voir [Apporter votre propre Git](/help/release-notes/current.md#gitlab-bitbucket).
 
 ## Configuration d’un référentiel externe
 
@@ -79,7 +79,7 @@ La configuration d’un référentiel externe dans Cloud Manager se compose de 
 
    >[!NOTE]
    >
-   >La fonctionnalité **Ajouter un nouveau jeton d’accès** est actuellement en phase d’adoption précoce. Des fonctionnalités supplémentaires sont en cours de planification. Par conséquent, les autorisations requises pour les jetons d’accès peuvent changer. De plus, l’interface d’utilisation pour la gestion des jetons peut être mise à jour avec des fonctionnalités telles que la gestion des dates d’expiration des jetons. Ainsi que des vérifications automatisées pour garantir que les jetons associés aux référentiels restent valides.
+   >La fonctionnalité **Ajouter un nouveau jeton d’accès** est actuellement en phase bêta privée. Des fonctionnalités supplémentaires sont en cours de planification. Par conséquent, les autorisations requises pour les jetons d’accès peuvent changer. De plus, l’interface d’utilisation pour la gestion des jetons peut être mise à jour avec des fonctionnalités telles que la gestion des dates d’expiration des jetons. Ainsi que des vérifications automatisées pour garantir que les jetons associés aux référentiels restent valides.
 
 1. Cliquez sur **Valider**.
 
