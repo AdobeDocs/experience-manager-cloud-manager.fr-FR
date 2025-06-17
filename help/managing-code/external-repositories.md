@@ -3,9 +3,9 @@ title: Ajouter des référentiels externes dans Cloud Manager
 description: Découvrez comment ajouter un référentiel externe dans Cloud Manager. Cloud Manager prend en charge l’intégration aux référentiels GitHub Enterprise, GitLab et Bitbucket.
 badge: label="Private Beta" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
+source-git-commit: dfdbc66c6a447d47d669eb84e6ddf8dca86fc632
 workflow-type: tm+mt
-source-wordcount: '1871'
+source-wordcount: '1864'
 ht-degree: 27%
 
 ---
@@ -23,8 +23,9 @@ Découvrez comment ajouter un référentiel externe dans Cloud Manager. Cloud M
 La configuration d’un référentiel externe dans Cloud Manager se compose de trois étapes :
 
 1. [Ajoutez un référentiel externe](#add-external-repo) à un programme sélectionné.
-1. Fournissez un jeton d’accès au référentiel externe.
-1. Validez la propriété du référentiel GitHub privé.
+1. [Lier un référentiel externe validé à un pipeline](#validate-ext-repo).
+<!-- 1. Provide an access token to the external repository.
+1. Validate ownership of the private GitHub repository. -->
 1. [Configurez un webhook](#configure-webhook) dans un référentiel externe.
 
 
