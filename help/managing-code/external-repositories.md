@@ -3,10 +3,10 @@ title: Ajouter des référentiels externes dans Cloud Manager
 description: Découvrez comment ajouter un référentiel externe dans Cloud Manager. Cloud Manager prend en charge l’intégration aux référentiels GitHub Enterprise, GitLab et Bitbucket.
 badge: label="Private Beta" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: 3958e36391eaca3450ef765676fcbbd485766318
+source-git-commit: 073f1024891e1a1d4298c5c593df011f5572e820
 workflow-type: tm+mt
-source-wordcount: '2050'
-ht-degree: 24%
+source-wordcount: '2295'
+ht-degree: 30%
 
 ---
 
@@ -51,14 +51,14 @@ La configuration d’un référentiel externe dans Cloud Manager se compose de 
 
 1. Dans la boîte de dialogue **Ajouter un référentiel**, sélectionnez **Référentiel privé** pour lier un référentiel Git externe à votre programme.
 
-   ![Ajout de votre propre référentiel](/help/managing-code/assets/repositories-private-repo-type.png)
+   ![Ajout de votre propre référentiel](/help/managing-code/assets/repository-add-private-dialogbox2.png)
 
 1. Dans chaque champ respectif, fournissez les détails suivants sur votre référentiel :
 
    | Champ | Description |
    | --- | --- |
    | **Nom du référentiel** | Obligatoire. Nom expressif pour votre nouveau référentiel. |
-   | **URL du référentiel** | Obligatoire. URL du référentiel.<br><br>Si vous utilisez un référentiel hébergé sur GitHub, le chemin d’accès doit se terminer par `.git`.<br>Par exemple, *`https://github.com/org-name/repo-name.git`* (le chemin d’accès de l’URL est fourni à titre d’illustration uniquement).<br><br>Si vous utilisez un référentiel externe, il doit utiliser le format de chemin d’accès d’URL suivant :<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> ou <br>`https://self-hosted-domain/org-name/repo-name.git`<br> et correspondre à votre fournisseur Git. |
+   | **URL du référentiel** | Obligatoire. URL du référentiel.<br><br>Si vous utilisez un référentiel hébergé sur GitHub, le chemin d’accès doit se terminer par `.git`.<br>Par exemple, *`https://github.com/org-name/repo-name.git`* (le chemin de l’URL est fourni à titre d’illustration uniquement).<br><br>Si vous utilisez un référentiel externe, il doit utiliser le format de chemin d’accès d’URL suivant :<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> ou <br>`https://self-hosted-domain/org-name/repo-name.git`<br> et correspondre à votre fournisseur Git. |
    | **Sélection du type de référentiel** | Obligatoire. Sélectionnez le type de référentiel que vous utilisez :<ul><li>**GitHub** (GitHub Enterprise et la version auto-hébergée de GitHub)</li><li>**GitLab** (`gitlab.com` et la version auto-hébergée de GitLab) </li><li>**Bitbucket** (uniquement `bitbucket.org` (version cloud)) est pris en charge. La version auto-hébergée de Bitbucket a été abandonnée à partir du 15 février 2024.)</li></ul>Si le chemin d’accès de l’URL du référentiel ci-dessus inclut le nom du fournisseur Git, tel que GitLab ou Bitbucket, le type de référentiel est déjà présélectionné. |
    | **Description** | Facultatif. Description détaillée du référentiel. |
 
@@ -67,20 +67,56 @@ La configuration d’un référentiel externe dans Cloud Manager se compose de 
 1. Dans la boîte de dialogue **Validation de la propriété du référentiel privé**, fournissez un jeton d’accès pour valider la propriété du référentiel externe afin que vous puissiez y accéder.
 
    ![Sélection d’un jeton d’accès existant pour un référentiel](/help/managing-code/assets/repositories-exisiting-access-token.png)
-   *Sélection d’un jeton d’accès existant pour un référentiel Bitbucket.*
+   *Sélection d’un jeton d’accès existant pour un référentiel Bitbucket (à titre d’illustration uniquement).*
 
-   | Type de jeton | Description |
-   | --- | --- |
-   | **Utilisation d’un jeton d’accès existant** | Si vous avez déjà fourni un jeton d’accès au référentiel pour votre organisation et que vous avez accès à plusieurs référentiels, vous pouvez sélectionner un jeton existant. Utilisez la liste déroulante **Nom du jeton** pour choisir le jeton que vous souhaitez appliquer au référentiel. Sinon, ajoutez un nouveau jeton d’accès. |
-   | **Ajout d’un nouveau jeton d’accès** | **Type de référentiel : GitHub Enterprise**<br><ul><li> Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous êtes en train de créer.<li>Créez un jeton d’accès personnel en suivant les instructions de la [documentation GitHub](https://docs.github.com/fr/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).<li>Autorisations requises pour le jeton d’accès personnel (PAT) d’entreprise GitHub <br>ces autorisations permettent à Cloud Manager de valider les demandes d’extraction, de gérer les vérifications de statut de validation et d’accéder aux détails de référentiel nécessaires.<br>Lorsque vous générez le PAT dans GitHub Enterprise, assurez-vous qu’il inclut les autorisations de référentiel suivantes :<ul><li>Demande d’extraction (lecture et écriture)<li>Commit status (lecture et écriture).<li>Métadonnées du référentiel (lecture seule)</li></li></ul></li></ul></ul></ul><ul><li>Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
-   | | **Type de référentiel : GitLab**<ul><li>Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous êtes en train de créer.<li>Créez un jeton d’accès personnel en suivant les instructions de la [documentation GitLab](https://docs.gitlab.com/user/profile/personal_access_tokens/).<li>Autorisations requises pour le jeton d’accès personnel GitLab (PAT)<br>ces portées permettent à Cloud Manager d’accéder aux données du référentiel et aux informations utilisateur selon les besoins pour la validation et l’intégration du webhook.<br>Lorsque vous générez le PAT dans GitLab, assurez-vous qu’il inclut les portées de jeton suivantes :<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
-   | | **Type de référentiel : Bitbucket**<ul><li>Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous êtes en train de créer.<li>Créez un jeton d’accès au référentiel à l’aide de la [documentation Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>Autorisations requises pour le jeton d’accès personnel (PAT) Bitbucket <br>ces autorisations permettent à Cloud Manager d’accéder au contenu du référentiel, de gérer les demandes d’extraction et de configurer des événements webhook ou d’y réagir.<br>Lorsque vous créez le mot de passe de l’application dans Bitbucket, assurez-vous qu’il inclut les autorisations de mot de passe d’application requises suivantes :<ul><li>Référentiel (lecture seule)<li>Requêtes d’extraction (lecture et écriture)<li>Webhooks (lecture et écriture)</li></li></ul></li></li></ul></ul></ul><ul><li>Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
+>[!BEGINTABS]
 
-   Voir [ Gestion des jetons d’accès ](/help/managing-code/manage-access-tokens.md).
+>[!TAB GitHub Enterprise]
 
-   >[!NOTE]
-   >
-   >La fonctionnalité **Ajouter un nouveau jeton d’accès** est actuellement en phase bêta privée. Des fonctionnalités supplémentaires sont en cours de planification. Par conséquent, les autorisations requises pour les jetons d’accès peuvent changer. De plus, l’interface d’utilisation pour la gestion des jetons peut être mise à jour avec des fonctionnalités telles que la gestion des dates d’expiration des jetons. Ainsi que des vérifications automatisées pour garantir que les jetons associés aux référentiels restent valides.
+**GitHub Enterprise**
+
+| Type de jeton | Description |
+| --- | --- |
+| **Utilisation d’un jeton d’accès existant** | Si vous avez déjà fourni un jeton d’accès au référentiel pour votre organisation et que vous avez accès à plusieurs référentiels, vous pouvez sélectionner un jeton existant. Utilisez la liste déroulante **Nom du jeton** pour choisir le jeton que vous souhaitez appliquer au référentiel. Sinon, ajoutez un nouveau jeton d’accès. |
+| **Ajout d’un nouveau jeton d’accès** | <ul><li> Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous êtes en train de créer.<li>Créez un jeton d’accès personnel en suivant les instructions de la [documentation GitHub](https://docs.github.com/fr/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).<li>Autorisations requises pour le jeton d’accès personnel (PAT) d’entreprise GitHub <br>ces autorisations permettent à Cloud Manager de valider les demandes d’extraction, de gérer les vérifications de statut de validation et d’accéder aux détails de référentiel nécessaires.<br>Lorsque vous générez le PAT dans GitHub Enterprise, assurez-vous qu’il inclut les autorisations de référentiel suivantes :<ul><li>Demande d’extraction (lecture et écriture)<li>Commit status (lecture et écriture).<li>Métadonnées du référentiel (lecture seule)</li></li></ul></li></ul></ul></ul><ul><li>Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
+
+Voir [ Gestion des jetons d’accès ](/help/managing-code/manage-access-tokens.md).
+
+>[!NOTE]
+>
+>La fonctionnalité **Ajouter un nouveau jeton d’accès** est actuellement en phase bêta privée. Des fonctionnalités supplémentaires sont en cours de planification. Par conséquent, les autorisations requises pour les jetons d’accès peuvent changer. De plus, l’interface d’utilisation pour la gestion des jetons peut être mise à jour avec des fonctionnalités telles que la gestion des dates d’expiration des jetons. Ainsi que des vérifications automatisées pour garantir que les jetons associés aux référentiels restent valides.
+
+>[!TAB  GitLab ]
+
+**GitLab**
+
+| Type de jeton | Description |
+| --- | --- |
+| **Utilisation d’un jeton d’accès existant** | Si vous avez déjà fourni un jeton d’accès au référentiel pour votre organisation et que vous avez accès à plusieurs référentiels, vous pouvez sélectionner un jeton existant. Utilisez la liste déroulante **Nom du jeton** pour choisir le jeton que vous souhaitez appliquer au référentiel. Sinon, ajoutez un nouveau jeton d’accès. |
+| **Ajout d’un nouveau jeton d’accès** | <ul><li>Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous êtes en train de créer.<li>Créez un jeton d’accès personnel en suivant les instructions de la [documentation GitLab](https://docs.gitlab.com/user/profile/personal_access_tokens/).<li>Autorisations requises pour le jeton d’accès personnel GitLab (PAT)<br>ces portées permettent à Cloud Manager d’accéder aux données du référentiel et aux informations utilisateur selon les besoins pour la validation et l’intégration du webhook.<br>Lorsque vous générez le PAT dans GitLab, assurez-vous qu’il inclut les portées de jeton suivantes :<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
+
+Voir [ Gestion des jetons d’accès ](/help/managing-code/manage-access-tokens.md).
+
+>[!NOTE]
+>
+>La fonctionnalité **Ajouter un nouveau jeton d’accès** est actuellement en phase bêta privée. Des fonctionnalités supplémentaires sont en cours de planification. Par conséquent, les autorisations requises pour les jetons d’accès peuvent changer. De plus, l’interface d’utilisation pour la gestion des jetons peut être mise à jour avec des fonctionnalités telles que la gestion des dates d’expiration des jetons. Ainsi que des vérifications automatisées pour garantir que les jetons associés aux référentiels restent valides.
+
+>[!TAB Bitbucket]
+
+**Bitbucket**
+
+| Type de jeton | Description |
+| --- | --- |
+| **Utilisation d’un jeton d’accès existant** | Si vous avez déjà fourni un jeton d’accès au référentiel pour votre organisation et que vous avez accès à plusieurs référentiels, vous pouvez sélectionner un jeton existant. Utilisez la liste déroulante **Nom du jeton** pour choisir le jeton que vous souhaitez appliquer au référentiel. Sinon, ajoutez un nouveau jeton d’accès. |
+| **Ajout d’un nouveau jeton d’accès** | <ul><li>Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous êtes en train de créer.<li>Créez un jeton d’accès au référentiel à l’aide de la [documentation Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>Autorisations requises pour le jeton d’accès personnel (PAT) Bitbucket <br>ces autorisations permettent à Cloud Manager d’accéder au contenu du référentiel, de gérer les demandes d’extraction et de configurer des événements webhook ou d’y réagir.<br>Lorsque vous créez le mot de passe de l’application dans Bitbucket, assurez-vous qu’il inclut les autorisations de mot de passe d’application requises suivantes :<ul><li>Référentiel (lecture seule)<li>Requêtes d’extraction (lecture et écriture)<li>Webhooks (lecture et écriture)</li></li></ul></li></li></ul></ul></ul><ul><li>Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
+
+Voir [ Gestion des jetons d’accès ](/help/managing-code/manage-access-tokens.md).
+
+>[!NOTE]
+>
+>La fonctionnalité **Ajouter un nouveau jeton d’accès** est actuellement en phase bêta privée. Des fonctionnalités supplémentaires sont en cours de planification. Par conséquent, les autorisations requises pour les jetons d’accès peuvent changer. De plus, l’interface d’utilisation pour la gestion des jetons peut être mise à jour avec des fonctionnalités telles que la gestion des dates d’expiration des jetons. Ainsi que des vérifications automatisées pour garantir que les jetons associés aux référentiels restent valides.
+
+>[!ENDTABS]
 
 1. Cliquez sur **Valider**.
 
@@ -154,7 +190,7 @@ Collez le secret dans un fichier texte brut. Le secret copié est requis pour le
 
 >[!TAB GitHub Enterprise]
 
-### GitHub Entreprise
+**GitHub Enterprise**
 
 1. Recherchez la section Paramètres **Webhook** de la solution.
 1. Collez l’URL du Webhook que vous avez copiée précédemment dans le champ de texte de l’URL.
@@ -171,6 +207,8 @@ Collez le secret dans un fichier texte brut. Le secret copié est requis pour le
 
 >[!TAB  GitLab ]
 
+**GitLab**
+
 1. Recherchez la section Paramètres **Webhook** de la solution.
 1. Collez l’URL du Webhook que vous avez copiée précédemment dans le champ de texte de l’URL.
    1. Remplacez le paramètre de requête `api_key` dans l’URL du Webhook par votre propre clé API réelle.
@@ -186,7 +224,7 @@ Collez le secret dans un fichier texte brut. Le secret copié est requis pour le
 
 >[!TAB Bitbucket]
 
-### Bitbucket
+**Bitbucket**
 
 1. Recherchez la section Paramètres **Webhook** de la solution.
 1. Collez l’URL du Webhook que vous avez copiée précédemment dans le champ de texte de l’URL.
@@ -209,42 +247,51 @@ Une fois les Webhooks configurés correctement, Cloud Manager déclenche automat
 
 Les comportements suivants s’appliquent :
 
-* **GitHub Enterprise**
+>[!BEGINTABS]
 
-  Lorsque la vérification est créée, elle ressemble à la capture d’écran ci-dessous. La principale différence avec `GitHub.com` est que `GitHub.com` utilise une exécution de vérification, tandis que GitHub Enterprise (à l’aide de jetons d’accès personnel) génère un statut de validation :
+>[!TAB GitHub Enterprise]
 
-  ![Statut d’engagement pour indiquer le processus de validation PR sur GitHub Enterprise](/help/managing-code/assets/repository-webhook-github-pr-validation.png)
+**GitHub Enterprise**
 
-* **Bitbucket**
+Lorsque la vérification est créée, elle ressemble à la capture d’écran ci-dessous. La principale différence avec `GitHub.com` est que `GitHub.com` utilise une exécution de vérification, tandis que GitHub Enterprise (à l’aide de jetons d’accès personnel) génère un statut de validation :
 
-  Lorsque la validation de la qualité du code est en cours d’exécution :
+![Statut d’engagement pour indiquer le processus de validation PR sur GitHub Enterprise](/help/managing-code/assets/repository-webhook-github-pr-validation.png)
 
-  ![Statut pendant l’exécution de la validation de la qualité du code](/help/managing-code/assets/repository-webhook-bitbucket1.png)
+>[!TAB  GitLab ]
 
-  Utilise le statut de validation pour le suivi de la progression de la validation PR. Dans le cas suivant, la capture d’écran montre ce qui se produit lorsqu’une validation de qualité du code échoue en raison d’un problème client. Un commentaire est ajouté avec des informations détaillées sur les erreurs, et une vérification de validation est créée, qui affiche l’échec (visible à droite) :
+**GitLab**
 
-  ![Statut de validation de la demande d’extraction pour Bitbucket](/help/managing-code/assets/repository-webhook-bitbucket2.png)
+Les interactions GitLab reposent uniquement sur des commentaires. Lorsque la validation commence, un commentaire est ajouté. Une fois la validation terminée (qu’elle ait réussi ou échoué), le commentaire initial est supprimé et remplacé par un nouveau commentaire contenant les résultats de la validation ou les détails de l’erreur.
 
-* **GitLab**
+Lorsque la validation de la qualité du code est en cours d’exécution :
 
-  Les interactions GitLab reposent uniquement sur des commentaires. Lorsque la validation commence, un commentaire est ajouté. Une fois la validation terminée (qu’elle ait réussi ou échoué), le commentaire initial est supprimé et remplacé par un nouveau commentaire contenant les résultats de la validation ou les détails de l’erreur.
+![Lorsque la validation de la qualité du code est en cours d’exécution](/help/managing-code/assets/repository-webhook-gitlab1.png)
 
-  Lorsque la validation de la qualité du code est en cours d’exécution :
+Lorsque la validation de la qualité à froid est terminée :
 
-  ![Lorsque la validation de la qualité du code est en cours d’exécution](/help/managing-code/assets/repository-webhook-gitlab1.png)
+![Lorsque la validation de la qualité à froid est terminée](/help/managing-code/assets/repository-webhook-gitlab2.png)
 
-  Lorsque la validation de la qualité à froid est terminée :
+Lorsque la validation de la qualité du code échoue avec une erreur :
 
-  ![Lorsque la validation de la qualité à froid est terminée](/help/managing-code/assets/repository-webhook-gitlab2.png)
+![Lorsque la validation de la qualité du code échoue avec une erreur](/help/managing-code/assets/repository-webhook-gitlab3.png)
 
-  Lorsque la validation de la qualité du code échoue avec une erreur :
+Lorsque la validation de la qualité du code échoue en raison de problèmes client :
 
-  ![Lorsque la validation de la qualité du code échoue avec une erreur](/help/managing-code/assets/repository-webhook-gitlab3.png)
+![Lorsque la validation de la qualité du code échoue en raison de problèmes client](/help/managing-code/assets/repository-webhook-gitlab4.png)
 
-  Lorsque la validation de la qualité du code échoue en raison de problèmes client :
+>[!TAB Bitbucket]
 
-  ![Lorsque la validation de la qualité du code échoue en raison de problèmes client](/help/managing-code/assets/repository-webhook-gitlab4.png)
+**Bitbucket**
 
+Lorsque la validation de la qualité du code est en cours d’exécution :
+
+![Statut pendant l’exécution de la validation de la qualité du code](/help/managing-code/assets/repository-webhook-bitbucket1.png)
+
+Utilise le statut de validation pour le suivi de la progression de la validation PR. Dans le cas suivant, la capture d’écran montre ce qui se produit lorsqu’une validation de qualité du code échoue en raison d’un problème client. Un commentaire est ajouté avec des informations détaillées sur les erreurs, et une vérification de validation est créée, qui affiche l’échec (visible à droite) :
+
+![Statut de validation de la demande d’extraction pour Bitbucket](/help/managing-code/assets/repository-webhook-bitbucket2.png)
+
+>[!ENDTABS]
 
 ## Résolution des problèmes webhook
 
