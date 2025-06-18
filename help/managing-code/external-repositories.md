@@ -78,7 +78,7 @@ La configuration d’un référentiel externe dans Cloud Manager se compose de 
     | **Utiliser un jeton d’accès existant** | Si vous avez déjà fourni un jeton d’accès au référentiel pour votre organisation et que vous avez accès à plusieurs référentiels, vous pouvez sélectionner un jeton existant. Utilisez la liste déroulante **Nom du jeton** pour choisir le jeton à appliquer au référentiel. Sinon, ajoutez un nouveau jeton d’accès. |
     | **Ajouter un nouveau jeton d’accès** |&lt;ul>&lt;li> Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous êtes en train de créer.&lt;li>Créez un jeton d’accès personnel en suivant les instructions de la [documentation GitHub](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).&lt;li>Autorisations requises pour le jeton d’accès personnel (PAT) d’entreprise GitHub&lt;br>Ces autorisations permettent à Cloud Manager de valider les demandes d’extraction, de gérer les vérifications de statut de validation et d’accéder aux détails du référentiel nécessaires.&lt;br>Lorsque vous générez le PAT dans GitHub Enterprise, assurez-vous qu’il inclut les autorisations de référentiel suivantes :&lt;ul>&lt;li>Demande d’extraction (lecture et écriture)&lt;li>Statuts de validation (lecture et écriture)&lt;li>Métadonnées de référentiel (lecture seule)&lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul>&lt;ul>&lt;li>Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
     
-    1. Cliquez sur ** Valider **.
+    1. Cliquez sur **&#x200B; Valider &#x200B;**.
     
     Après validation, le référentiel externe est prêt à être utilisé et à être lié à un pipeline.
     
@@ -105,7 +105,7 @@ La configuration d’un référentiel externe dans Cloud Manager se compose de 
     | **Utiliser un jeton d’accès existant** | Si vous avez déjà fourni un jeton d’accès au référentiel pour votre organisation et que vous avez accès à plusieurs référentiels, vous pouvez sélectionner un jeton existant. Utilisez la liste déroulante **Nom du jeton** pour choisir le jeton à appliquer au référentiel. Sinon, ajoutez un nouveau jeton d’accès. |
     | **Ajouter un nouveau jeton d’accès** |&lt;ul>&lt;li>Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous êtes en train de créer.&lt;li>Créez un jeton d’accès au référentiel à l’aide de la [documentation Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).&lt;li>Autorisations requises pour le jeton d’accès personnel Bitbucket (PAT)&lt;br>Ces autorisations permettent à Cloud Manager d’accéder au contenu du référentiel, de gérer des demandes d’extraction et de configurer des événements webhook ou d’y réagir.&lt;br>Lorsque vous créez le mot de passe de l’application dans Bitbucket, assurez-vous qu’il inclut les autorisations de mot de passe de l’application requises suivantes :&lt;ul>&lt;li>Référentiel (lecture seule)&lt;li>Demandes d’extraction (lecture et écriture)&lt;li>Webhooks (lecture et écriture)&lt;/li>&lt;/li>&lt;/ul>&lt;/li>&lt;/ul>&lt;/ul>&lt;ul>&lt;li>Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
     
-    1. Cliquez sur ** Valider **.
+    1. Cliquez sur **&#x200B; Valider &#x200B;**.
     
     Après validation, le référentiel externe est prêt à être utilisé et à être lié à un pipeline.
     
