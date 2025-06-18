@@ -3,9 +3,9 @@ title: Ajouter des référentiels externes dans Cloud Manager
 description: Découvrez comment ajouter un référentiel externe dans Cloud Manager. Cloud Manager prend en charge l’intégration aux référentiels GitHub Enterprise, GitLab et Bitbucket.
 badge: label="Private Beta" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: 073f1024891e1a1d4298c5c593df011f5572e820
+source-git-commit: 523e8ef1c90bf88aa846e067aa1cca9e6ed5d8ce
 workflow-type: tm+mt
-source-wordcount: '2295'
+source-wordcount: '2283'
 ht-degree: 30%
 
 ---
@@ -73,8 +73,6 @@ La configuration d’un référentiel externe dans Cloud Manager se compose de 
 
 >[!TAB GitHub Enterprise]
 
-**GitHub Enterprise**
-
 | Type de jeton | Description |
 | --- | --- |
 | **Utilisation d’un jeton d’accès existant** | Si vous avez déjà fourni un jeton d’accès au référentiel pour votre organisation et que vous avez accès à plusieurs référentiels, vous pouvez sélectionner un jeton existant. Utilisez la liste déroulante **Nom du jeton** pour choisir le jeton que vous souhaitez appliquer au référentiel. Sinon, ajoutez un nouveau jeton d’accès. |
@@ -88,8 +86,6 @@ Voir [ Gestion des jetons d’accès ](/help/managing-code/manage-access-tokens.
 
 >[!TAB  GitLab ]
 
-**GitLab**
-
 | Type de jeton | Description |
 | --- | --- |
 | **Utilisation d’un jeton d’accès existant** | Si vous avez déjà fourni un jeton d’accès au référentiel pour votre organisation et que vous avez accès à plusieurs référentiels, vous pouvez sélectionner un jeton existant. Utilisez la liste déroulante **Nom du jeton** pour choisir le jeton que vous souhaitez appliquer au référentiel. Sinon, ajoutez un nouveau jeton d’accès. |
@@ -102,8 +98,6 @@ Voir [ Gestion des jetons d’accès ](/help/managing-code/manage-access-tokens.
 >La fonctionnalité **Ajouter un nouveau jeton d’accès** est actuellement en phase bêta privée. Des fonctionnalités supplémentaires sont en cours de planification. Par conséquent, les autorisations requises pour les jetons d’accès peuvent changer. De plus, l’interface d’utilisation pour la gestion des jetons peut être mise à jour avec des fonctionnalités telles que la gestion des dates d’expiration des jetons. Ainsi que des vérifications automatisées pour garantir que les jetons associés aux référentiels restent valides.
 
 >[!TAB Bitbucket]
-
-**Bitbucket**
 
 | Type de jeton | Description |
 | --- | --- |
@@ -190,8 +184,6 @@ Collez le secret dans un fichier texte brut. Le secret copié est requis pour le
 
 >[!TAB GitHub Enterprise]
 
-**GitHub Enterprise**
-
 1. Recherchez la section Paramètres **Webhook** de la solution.
 1. Collez l’URL du Webhook que vous avez copiée précédemment dans le champ de texte de l’URL.
    1. Remplacez le paramètre de requête `api_key` dans l’URL du Webhook par votre propre clé API réelle.
@@ -207,8 +199,6 @@ Collez le secret dans un fichier texte brut. Le secret copié est requis pour le
 
 >[!TAB  GitLab ]
 
-**GitLab**
-
 1. Recherchez la section Paramètres **Webhook** de la solution.
 1. Collez l’URL du Webhook que vous avez copiée précédemment dans le champ de texte de l’URL.
    1. Remplacez le paramètre de requête `api_key` dans l’URL du Webhook par votre propre clé API réelle.
@@ -223,8 +213,6 @@ Collez le secret dans un fichier texte brut. Le secret copié est requis pour le
    | Ces événements webhook permettent à Cloud Manager de déclencher des pipelines lorsque le code est transmis ou qu’une demande de fusion est envoyée. Ils effectuent également le suivi des commentaires liés à la validation de la demande d’extraction (par le biais d’événements de note).<br>Assurez-vous que le webhook est configuré pour se déclencher sur les événements webhook requis suivants<ul><li>Événements push<li>Événements de demande de fusion<li>Événements de note</li></li></li></ul></ul></ul> |
 
 >[!TAB Bitbucket]
-
-**Bitbucket**
 
 1. Recherchez la section Paramètres **Webhook** de la solution.
 1. Collez l’URL du Webhook que vous avez copiée précédemment dans le champ de texte de l’URL.
@@ -251,15 +239,11 @@ Les comportements suivants s’appliquent :
 
 >[!TAB GitHub Enterprise]
 
-**GitHub Enterprise**
-
 Lorsque la vérification est créée, elle ressemble à la capture d’écran ci-dessous. La principale différence avec `GitHub.com` est que `GitHub.com` utilise une exécution de vérification, tandis que GitHub Enterprise (à l’aide de jetons d’accès personnel) génère un statut de validation :
 
 ![Statut d’engagement pour indiquer le processus de validation PR sur GitHub Enterprise](/help/managing-code/assets/repository-webhook-github-pr-validation.png)
 
 >[!TAB  GitLab ]
-
-**GitLab**
 
 Les interactions GitLab reposent uniquement sur des commentaires. Lorsque la validation commence, un commentaire est ajouté. Une fois la validation terminée (qu’elle ait réussi ou échoué), le commentaire initial est supprimé et remplacé par un nouveau commentaire contenant les résultats de la validation ou les détails de l’erreur.
 
@@ -280,8 +264,6 @@ Lorsque la validation de la qualité du code échoue en raison de problèmes cli
 ![Lorsque la validation de la qualité du code échoue en raison de problèmes client](/help/managing-code/assets/repository-webhook-gitlab4.png)
 
 >[!TAB Bitbucket]
-
-**Bitbucket**
 
 Lorsque la validation de la qualité du code est en cours d’exécution :
 
