@@ -3,10 +3,10 @@ title: Ajouter des référentiels externes dans Cloud Manager
 description: Découvrez comment ajouter un référentiel externe dans Cloud Manager. Cloud Manager prend en charge l’intégration aux référentiels GitHub Enterprise, GitLab et Bitbucket.
 badge: label="Private Beta" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: 06fa04f8a459885a20f2b626ccf5d648ccc5fb57
+source-git-commit: bacb4b6e79519e4fef4cf01e04154d492cc888e2
 workflow-type: tm+mt
-source-wordcount: '2150'
-ht-degree: 26%
+source-wordcount: '2035'
+ht-degree: 27%
 
 ---
 
@@ -63,6 +63,8 @@ La configuration d’un référentiel externe dans Cloud Manager se compose de 
    | **Description** | Facultatif. Description détaillée du référentiel. |
 
 1. Sélectionnez **Enregistrer** pour ajouter le référentiel.
+
+   Fournissez maintenant un jeton d’accès pour valider la propriété du référentiel externe.
 
 1. Dans la boîte de dialogue **Validation de la propriété du référentiel privé**, fournissez un jeton d’accès pour valider la propriété du référentiel externe afin que vous puissiez y accéder, puis cliquez sur **Valider**.
 
@@ -129,6 +131,7 @@ Voir aussi [Gérer les jetons d’accès](/help/managing-code/manage-access-toke
 >
 >Pour plus d’informations sur la gestion des référentiels dans Cloud Manager, consultez le document [Référentiels Cloud Manager](/help/managing-code/managing-repositories.md).
 
+
 ## Configuration d’un webhook pour un référentiel externe {#configure-webhook}
 
 Cloud Manager vous permet de configurer des webhooks pour les référentiels Git externes que vous avez ajoutés. Voir [ Ajouter un référentiel externe ](#add-ext-repo). Ces webhooks permettent à Cloud Manager de recevoir des événements liés à différentes actions dans votre solution de fournisseur Git.
@@ -172,60 +175,44 @@ Collez le secret dans un fichier texte brut. Le secret copié est requis pour le
 
    Tous les détails sur la configuration webhook et les événements requis pour chaque fournisseur sont disponibles dans [Ajouter un référentiel externe](#add-ext-repo). Sous l’étape 8, consultez le tableau à onglets.
 
+1. Recherchez la section Paramètres **Webhook** de la solution.
+1. Collez l’URL du Webhook que vous avez copiée précédemment dans le champ de texte de l’URL.
+   1. Remplacez le paramètre de requête `api_key` dans l’URL du Webhook par votre propre clé API réelle.
+
+      Pour générer une clé API, vous devez créer un projet d’intégration dans Adobe Developer Console. Voir [Création d’un projet d’intégration d’API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) pour plus d’informations.
+
+1. Collez le secret Webhook que vous avez copié précédemment dans le champ de texte **Secret** (ou **Clé secrète** ou **Jeton secret**).
+1. Configurez le webhook pour envoyer les événements requis par Cloud Manager. Utilisez le tableau suivant pour déterminer les événements corrects pour votre fournisseur Git.
+
 >[!BEGINTABS]
 
 >[!TAB GitHub Enterprise]
 
-1. Recherchez la section Paramètres **Webhook** de la solution.
-1. Collez l’URL du Webhook que vous avez copiée précédemment dans le champ de texte de l’URL.
-   1. Remplacez le paramètre de requête `api_key` dans l’URL du Webhook par votre propre clé API réelle.
-
-      Pour générer une clé API, vous devez créer un projet d’intégration dans Adobe Developer Console. Voir [Création d’un projet d’intégration d’API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) pour plus d’informations.
-
-1. Collez le secret Webhook que vous avez copié précédemment dans le champ de texte **Secret** (ou **Clé secrète** ou **Jeton secret**).
-1. Configurez le webhook pour envoyer les événements requis attendus par Cloud Manager.
-
-   | Événements webhook obligatoires |
-   | --- |
-   | Ces événements permettent à Cloud Manager de répondre à l’activité GitHub, comme la validation de la demande d’extraction, les déclencheurs basés sur les notifications push pour les pipelines ou la synchronisation du code Edge Delivery Services.<br>Assurez-vous que le webhook est configuré pour se déclencher sur les événements webhook requis suivants :<ul><li>Requêtes d’extraction<li>Notifications push<li>Commentaires sur l&#39;événement</li></li></li></ul></ul></ul> |
+    | Événements webhook obligatoires |
+    | — |
+    | Ces événements permettent à Cloud Manager de répondre à l’activité GitHub, comme la validation de la demande d’extraction, les déclencheurs basés sur les notifications push pour les pipelines ou la synchronisation du code Edge Delivery Services.&lt;br>Assurez-vous que le webhook est configuré pour se déclencher sur les événements webhook obligatoires suivants :&lt;ul>&lt;li>Requêtes d’extraction&lt;li>Push&lt;li>Commentaires sur l’événement&lt;/li>&lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul> |
 
 >[!TAB  GitLab ]
 
-1. Recherchez la section Paramètres **Webhook** de la solution.
-1. Collez l’URL du Webhook que vous avez copiée précédemment dans le champ de texte de l’URL.
-   1. Remplacez le paramètre de requête `api_key` dans l’URL du Webhook par votre propre clé API réelle.
-
-      Pour générer une clé API, vous devez créer un projet d’intégration dans Adobe Developer Console. Voir [Création d’un projet d’intégration d’API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) pour plus d’informations.
-
-1. Collez le secret Webhook que vous avez copié précédemment dans le champ de texte **Secret** (ou **Clé secrète** ou **Jeton secret**).
-1. Configurez le webhook pour envoyer les événements requis attendus par Cloud Manager.
-
-   | Événements webhook obligatoires |
-   | --- |
-   | Ces événements webhook permettent à Cloud Manager de déclencher des pipelines lorsque le code est transmis ou qu’une demande de fusion est envoyée. Ils effectuent également le suivi des commentaires liés à la validation de la demande d’extraction (par le biais d’événements de note).<br>Assurez-vous que le webhook est configuré pour se déclencher sur les événements webhook requis suivants<ul><li>Événements push<li>Événements de demande de fusion<li>Événements de note</li></li></li></ul></ul></ul> |
+    | Événements webhook obligatoires |
+    | — |
+    | Ces événements webhook permettent à Cloud Manager de déclencher des pipelines lorsque le code est transmis ou qu’une demande de fusion est envoyée. Ils effectuent également le suivi des commentaires liés à la validation de la demande d’extraction (par le biais d’événements de note).&lt;br>Assurez-vous que le webhook est configuré pour se déclencher sur les événements webhook requis suivants&lt;ul>&lt;li>Événements push&lt;li>Événements de requête de fusion&lt;li>Événements de note&lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul>&lt;/ul> |
 
 >[!TAB Bitbucket]
 
-1. Recherchez la section Paramètres **Webhook** de la solution.
-1. Collez l’URL du Webhook que vous avez copiée précédemment dans le champ de texte de l’URL.
-   1. Remplacez le paramètre de requête `api_key` dans l’URL du Webhook par votre propre clé API réelle.
-
-      Pour générer une clé API, vous devez créer un projet d’intégration dans Adobe Developer Console. Voir [Création d’un projet d’intégration d’API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) pour plus d’informations.
-
-1. Collez le secret Webhook que vous avez copié précédemment dans le champ de texte **Secret** (ou **Clé secrète** ou **Jeton secret**).
-1. Configurez le webhook pour envoyer les événements requis attendus par Cloud Manager.
-
-   | Événements webhook obligatoires |
-   | --- |
-   | Ces événements permettent à Cloud Manager de valider les demandes d’extraction, de répondre aux publications de code et d’interagir avec les commentaires pour la coordination du pipeline.<br>Assurez-vous que le webhook est configuré pour se déclencher sur les événements webhook requis suivants<ul><li>Demande d’extraction : créée<li>Demande d’extraction : mise à jour<li>Demandes d’extraction : fusionnées<li>Demande d’extraction : commentaire<li>Référentiel : Push</li></li></li></ul></ul></ul> |
+    | Événements webhook obligatoires |
+    | — |
+    | Ces événements permettent à Cloud Manager de valider les demandes d’extraction, de répondre aux publications de code et d’interagir avec les commentaires pour la coordination du pipeline.&lt;br>Assurez-vous que le webhook est configuré pour se déclencher sur les événements webhook requis suivants&lt;ul>&lt;li>Requête d’extraction : Créée&lt;li>Requête d’extraction : Mise à jour&lt;li>Requêtes d’extraction : Fusionnée&lt;li>Requête d’extraction : Commentaire&lt;li>Référentiel : Push&lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul> |
 
 >[!ENDTABS]
 
+
 ### Validation des requêtes d’extraction avec des Webhooks
 
-Une fois les Webhooks configurés correctement, Cloud Manager déclenche automatiquement les exécutions de pipeline ou les contrôles de validation de RP pour votre référentiel.
+Une fois les Webhooks configurés correctement, Cloud Manager déclenche automatiquement les contrôles d’exécution de pipeline ou de validation de requête d’extraction (PR) pour votre référentiel.
 
-En fonction du référentiel externe que vous utilisez, les comportements suivants s’appliquent :
+Le comportement varie en fonction du fournisseur Git que vous utilisez, comme indiqué ci-dessous.
+
 
 >[!BEGINTABS]
 
