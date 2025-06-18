@@ -3,10 +3,10 @@ title: Ajouter des référentiels externes dans Cloud Manager
 description: Découvrez comment ajouter un référentiel externe dans Cloud Manager. Cloud Manager prend en charge l’intégration aux référentiels GitHub Enterprise, GitLab et Bitbucket.
 badge: label="Private Beta" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: 523e8ef1c90bf88aa846e067aa1cca9e6ed5d8ce
+source-git-commit: a0836dd24dd3b711c9d1b78f28755e2db98b051c
 workflow-type: tm+mt
-source-wordcount: '2283'
-ht-degree: 30%
+source-wordcount: '2210'
+ht-degree: 17%
 
 ---
 
@@ -73,48 +73,46 @@ La configuration d’un référentiel externe dans Cloud Manager se compose de 
 
 >[!TAB GitHub Enterprise]
 
-| Type de jeton | Description |
-| --- | --- |
-| **Utilisation d’un jeton d’accès existant** | Si vous avez déjà fourni un jeton d’accès au référentiel pour votre organisation et que vous avez accès à plusieurs référentiels, vous pouvez sélectionner un jeton existant. Utilisez la liste déroulante **Nom du jeton** pour choisir le jeton que vous souhaitez appliquer au référentiel. Sinon, ajoutez un nouveau jeton d’accès. |
-| **Ajout d’un nouveau jeton d’accès** | <ul><li> Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous êtes en train de créer.<li>Créez un jeton d’accès personnel en suivant les instructions de la [documentation GitHub](https://docs.github.com/fr/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).<li>Autorisations requises pour le jeton d’accès personnel (PAT) d’entreprise GitHub <br>ces autorisations permettent à Cloud Manager de valider les demandes d’extraction, de gérer les vérifications de statut de validation et d’accéder aux détails de référentiel nécessaires.<br>Lorsque vous générez le PAT dans GitHub Enterprise, assurez-vous qu’il inclut les autorisations de référentiel suivantes :<ul><li>Demande d’extraction (lecture et écriture)<li>Commit status (lecture et écriture).<li>Métadonnées du référentiel (lecture seule)</li></li></ul></li></ul></ul></ul><ul><li>Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
-
-Voir [ Gestion des jetons d’accès ](/help/managing-code/manage-access-tokens.md).
-
->[!NOTE]
->
->La fonctionnalité **Ajouter un nouveau jeton d’accès** est actuellement en phase bêta privée. Des fonctionnalités supplémentaires sont en cours de planification. Par conséquent, les autorisations requises pour les jetons d’accès peuvent changer. De plus, l’interface d’utilisation pour la gestion des jetons peut être mise à jour avec des fonctionnalités telles que la gestion des dates d’expiration des jetons. Ainsi que des vérifications automatisées pour garantir que les jetons associés aux référentiels restent valides.
+    | Type de jeton | Description |
+    | — | — |
+    | **Utiliser un jeton d’accès existant** | Si vous avez déjà fourni un jeton d’accès au référentiel pour votre organisation et que vous avez accès à plusieurs référentiels, vous pouvez sélectionner un jeton existant. Utilisez la liste déroulante **Nom du jeton** pour choisir le jeton à appliquer au référentiel. Sinon, ajoutez un nouveau jeton d’accès. |
+    | **Ajouter un nouveau jeton d’accès** |&lt;ul>&lt;li> Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous êtes en train de créer.&lt;li>Créez un jeton d’accès personnel en suivant les instructions de la [documentation GitHub](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).&lt;li>Autorisations requises pour le jeton d’accès personnel (PAT) d’entreprise GitHub&lt;br>Ces autorisations permettent à Cloud Manager de valider les demandes d’extraction, de gérer les vérifications de statut de validation et d’accéder aux détails du référentiel nécessaires.&lt;br>Lorsque vous générez le PAT dans GitHub Enterprise, assurez-vous qu’il inclut les autorisations de référentiel suivantes :&lt;ul>&lt;li>Demande d’extraction (lecture et écriture)&lt;li>Statuts de validation (lecture et écriture)&lt;li>Métadonnées de référentiel (lecture seule)&lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul>&lt;ul>&lt;li>Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
+    
+    1. Cliquez sur ** Valider **.
+    
+    Après validation, le référentiel externe est prêt à être utilisé et à être lié à un pipeline.
+    
+    Voir aussi [Gérer les jetons d’accès](/help/managing-code/manage-access-tokens.md).
 
 >[!TAB  GitLab ]
 
-| Type de jeton | Description |
-| --- | --- |
-| **Utilisation d’un jeton d’accès existant** | Si vous avez déjà fourni un jeton d’accès au référentiel pour votre organisation et que vous avez accès à plusieurs référentiels, vous pouvez sélectionner un jeton existant. Utilisez la liste déroulante **Nom du jeton** pour choisir le jeton que vous souhaitez appliquer au référentiel. Sinon, ajoutez un nouveau jeton d’accès. |
-| **Ajout d’un nouveau jeton d’accès** | <ul><li>Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous êtes en train de créer.<li>Créez un jeton d’accès personnel en suivant les instructions de la [documentation GitLab](https://docs.gitlab.com/user/profile/personal_access_tokens/).<li>Autorisations requises pour le jeton d’accès personnel GitLab (PAT)<br>ces portées permettent à Cloud Manager d’accéder aux données du référentiel et aux informations utilisateur selon les besoins pour la validation et l’intégration du webhook.<br>Lorsque vous générez le PAT dans GitLab, assurez-vous qu’il inclut les portées de jeton suivantes :<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
-
-Voir [ Gestion des jetons d’accès ](/help/managing-code/manage-access-tokens.md).
-
->[!NOTE]
->
->La fonctionnalité **Ajouter un nouveau jeton d’accès** est actuellement en phase bêta privée. Des fonctionnalités supplémentaires sont en cours de planification. Par conséquent, les autorisations requises pour les jetons d’accès peuvent changer. De plus, l’interface d’utilisation pour la gestion des jetons peut être mise à jour avec des fonctionnalités telles que la gestion des dates d’expiration des jetons. Ainsi que des vérifications automatisées pour garantir que les jetons associés aux référentiels restent valides.
-
->[!TAB Bitbucket]
-
-| Type de jeton | Description |
-| --- | --- |
-| **Utilisation d’un jeton d’accès existant** | Si vous avez déjà fourni un jeton d’accès au référentiel pour votre organisation et que vous avez accès à plusieurs référentiels, vous pouvez sélectionner un jeton existant. Utilisez la liste déroulante **Nom du jeton** pour choisir le jeton que vous souhaitez appliquer au référentiel. Sinon, ajoutez un nouveau jeton d’accès. |
-| **Ajout d’un nouveau jeton d’accès** | <ul><li>Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous êtes en train de créer.<li>Créez un jeton d’accès au référentiel à l’aide de la [documentation Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>Autorisations requises pour le jeton d’accès personnel (PAT) Bitbucket <br>ces autorisations permettent à Cloud Manager d’accéder au contenu du référentiel, de gérer les demandes d’extraction et de configurer des événements webhook ou d’y réagir.<br>Lorsque vous créez le mot de passe de l’application dans Bitbucket, assurez-vous qu’il inclut les autorisations de mot de passe d’application requises suivantes :<ul><li>Référentiel (lecture seule)<li>Requêtes d’extraction (lecture et écriture)<li>Webhooks (lecture et écriture)</li></li></ul></li></li></ul></ul></ul><ul><li>Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
-
-Voir [ Gestion des jetons d’accès ](/help/managing-code/manage-access-tokens.md).
-
->[!NOTE]
->
->La fonctionnalité **Ajouter un nouveau jeton d’accès** est actuellement en phase bêta privée. Des fonctionnalités supplémentaires sont en cours de planification. Par conséquent, les autorisations requises pour les jetons d’accès peuvent changer. De plus, l’interface d’utilisation pour la gestion des jetons peut être mise à jour avec des fonctionnalités telles que la gestion des dates d’expiration des jetons. Ainsi que des vérifications automatisées pour garantir que les jetons associés aux référentiels restent valides.
-
->[!ENDTABS]
+    | Type de jeton | Description |
+    | — | — |
+    | **Utiliser un jeton d’accès existant** | Si vous avez déjà fourni un jeton d’accès au référentiel pour votre organisation et que vous avez accès à plusieurs référentiels, vous pouvez sélectionner un jeton existant. Utilisez la liste déroulante **Nom du jeton** pour choisir le jeton à appliquer au référentiel. Sinon, ajoutez un nouveau jeton d’accès. |
+    | **Ajouter un nouveau jeton d’accès** |&lt;ul>&lt;li>Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous êtes en train de créer.&lt;li>Créez un jeton d’accès personnel en suivant les instructions de la [documentation GitLab](https://docs.gitlab.com/user/profile/personal_access_tokens/).&lt;li>Autorisations requises pour le jeton d’accès personnel GitLab (PAT)&lt;br>Ces portées permettent à Cloud Manager d’accéder aux données du référentiel et aux informations utilisateur selon les besoins pour la validation et l’intégration du webhook.&lt;br>Lorsque vous générez le PAT dans GitLab, assurez-vous qu’il inclut les portées de jeton suivantes :&lt;ul>&lt;li>api&lt;li>read_user&lt;/li>&lt;/li>&lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul>&lt;/ul>&lt;ul>&lt;li>Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
 
 1. Cliquez sur **Valider**.
 
-Après validation, le référentiel externe est prêt à l’emploi et peut être connecté à un pipeline.
+   Après validation, le référentiel externe est prêt à l’emploi et peut être connecté à un pipeline.
+
+   Voir aussi [Gérer les jetons d’accès](/help/managing-code/manage-access-tokens.md).
+
+
+>[!TAB Bitbucket]
+
+    | Type de jeton | Description |
+    | — | — |
+    | **Utiliser un jeton d’accès existant** | Si vous avez déjà fourni un jeton d’accès au référentiel pour votre organisation et que vous avez accès à plusieurs référentiels, vous pouvez sélectionner un jeton existant. Utilisez la liste déroulante **Nom du jeton** pour choisir le jeton à appliquer au référentiel. Sinon, ajoutez un nouveau jeton d’accès. |
+    | **Ajouter un nouveau jeton d’accès** |&lt;ul>&lt;li>Dans le champ de texte **Nom du jeton**, saisissez un nom pour le jeton d’accès que vous êtes en train de créer.&lt;li>Créez un jeton d’accès au référentiel à l’aide de la [documentation Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).&lt;li>Autorisations requises pour le jeton d’accès personnel Bitbucket (PAT)&lt;br>Ces autorisations permettent à Cloud Manager d’accéder au contenu du référentiel, de gérer des demandes d’extraction et de configurer des événements webhook ou d’y réagir.&lt;br>Lorsque vous créez le mot de passe de l’application dans Bitbucket, assurez-vous qu’il inclut les autorisations de mot de passe de l’application requises suivantes :&lt;ul>&lt;li>Référentiel (lecture seule)&lt;li>Demandes d’extraction (lecture et écriture)&lt;li>Webhooks (lecture et écriture)&lt;/li>&lt;/li>&lt;/ul>&lt;/li>&lt;/ul>&lt;/ul>&lt;ul>&lt;li>Dans le champ **Jeton d’accès**, collez le jeton que vous venez de créer. |
+    
+    1. Cliquez sur ** Valider **.
+    
+    Après validation, le référentiel externe est prêt à être utilisé et à être lié à un pipeline.
+    
+    Voir aussi [Gérer les jetons d’accès](/help/managing-code/manage-access-tokens.md).
+
+>[!ENDTABS]
+
 
 ## Liaison d’un référentiel externe validé à un pipeline {#validate-ext-repo}
 
