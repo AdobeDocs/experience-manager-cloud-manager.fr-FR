@@ -3,9 +3,9 @@ title: Ajouter des référentiels externes dans Cloud Manager
 description: Découvrez comment ajouter un référentiel externe dans Cloud Manager. Cloud Manager prend en charge l’intégration aux référentiels GitHub Enterprise, GitLab et Bitbucket.
 badge: label="Private Beta" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: 5bef5a1b8f54a245e1354b1b77c775a06b9b3faa
+source-git-commit: 06fa04f8a459885a20f2b626ccf5d648ccc5fb57
 workflow-type: tm+mt
-source-wordcount: '2141'
+source-wordcount: '2150'
 ht-degree: 26%
 
 ---
@@ -170,7 +170,7 @@ Collez le secret dans un fichier texte brut. Le secret copié est requis pour le
 1. Cliquez sur **Fermer**.
 1. Accédez à la solution de votre fournisseur Git (GitHub Enterprise, GitLab ou Bitbucket).
 
-   Tous les détails sur la configuration webhook et les événements requis pour chaque fournisseur sont disponibles dans [Ajouter un référentiel externe](#add-ext-repo). Sous l’étape 8, consultez le tableau.
+   Tous les détails sur la configuration webhook et les événements requis pour chaque fournisseur sont disponibles dans [Ajouter un référentiel externe](#add-ext-repo). Sous l’étape 8, consultez le tableau à onglets.
 
 >[!BEGINTABS]
 
@@ -225,7 +225,7 @@ Collez le secret dans un fichier texte brut. Le secret copié est requis pour le
 
 Une fois les Webhooks configurés correctement, Cloud Manager déclenche automatiquement les exécutions de pipeline ou les contrôles de validation de RP pour votre référentiel.
 
-Les comportements suivants s’appliquent :
+En fonction du référentiel externe que vous utilisez, les comportements suivants s’appliquent :
 
 >[!BEGINTABS]
 
