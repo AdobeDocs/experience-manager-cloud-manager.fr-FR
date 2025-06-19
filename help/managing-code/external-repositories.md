@@ -3,7 +3,7 @@ title: Ajouter des référentiels externes dans Cloud Manager
 description: Découvrez comment ajouter un référentiel externe dans Cloud Manager. Cloud Manager prend en charge l’intégration aux référentiels GitHub Enterprise, GitLab et Bitbucket.
 badge: label="Private Beta" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: cd2a71bc83a8ac7173089daea9670d25b68e62ba
+source-git-commit: c8ded11e36bc68d442a0296a599f40066be73867
 workflow-type: tm+mt
 source-wordcount: '2003'
 ht-degree: 28%
@@ -75,6 +75,8 @@ La configuration d’un référentiel externe dans Cloud Manager se compose de 
 
 >[!TAB GitHub Enterprise]
 
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
+
 | Option de jeton d’accès | Description |
 | --- | --- |
 | **Utilisation d’un jeton d’accès existant** | Si vous avez déjà fourni un jeton d’accès au référentiel pour votre organisation et que vous avez accès à plusieurs référentiels, vous pouvez sélectionner un jeton existant. Utilisez la liste déroulante **Nom du jeton** pour choisir le jeton que vous souhaitez appliquer au référentiel. Sinon, ajoutez un nouveau jeton d’accès. |
@@ -85,6 +87,8 @@ Après validation, le référentiel externe est prêt à l’emploi et peut êtr
 Voir aussi [Gérer les jetons d’accès](/help/managing-code/manage-access-tokens.md).
 
 >[!TAB  GitLab ]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
 
 | Option de jeton d’accès | Description |
 | --- | --- |
@@ -97,6 +101,8 @@ Voir aussi [Gérer les jetons d’accès](/help/managing-code/manage-access-toke
 
 
 >[!TAB Bitbucket]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/bitbucket -->
 
 | Option de jeton d’accès | Description |
 | --- | --- |
@@ -188,17 +194,23 @@ Collez le secret dans un fichier texte brut. Le secret copié est requis pour le
 
 >[!TAB GitHub Enterprise]
 
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
+
 | Événements webhook obligatoires |
 | --- |
 | Ces événements permettent à Cloud Manager de répondre à l’activité GitHub, comme la validation de la demande d’extraction, les déclencheurs basés sur les notifications push pour les pipelines ou la synchronisation du code Edge Delivery Services.<br>Assurez-vous que le webhook est configuré pour se déclencher sur les événements webhook requis suivants :<ul><li>Requêtes d’extraction<li>Notifications push<li>Commentaires sur l&#39;événement</li></li></li></ul></ul></ul> |
 
 >[!TAB  GitLab ]
 
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
+
 | Événements webhook obligatoires |
 | --- |
 | Ces événements webhook permettent à Cloud Manager de déclencher des pipelines lorsque le code est transmis ou qu’une demande de fusion est envoyée. Ils effectuent également le suivi des commentaires liés à la validation de la demande d’extraction (par le biais d’événements de note).<br>Assurez-vous que le webhook est configuré pour se déclencher sur les événements webhook requis suivants<ul><li>Événements push<li>Événements de demande de fusion<li>Événements de note</li></li></li></ul></ul></ul> |
 
 >[!TAB Bitbucket]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/bitbucket -->
 
 | Événements webhook obligatoires |
 | --- |
@@ -218,11 +230,15 @@ Le comportement varie en fonction du fournisseur Git que vous utilisez, comme in
 
 >[!TAB GitHub Enterprise]
 
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
+
 Lorsque la vérification est créée, elle ressemble à la capture d’écran ci-dessous. La principale différence avec `GitHub.com` est que `GitHub.com` utilise une exécution de vérification, tandis que GitHub Enterprise (à l’aide de jetons d’accès personnel) génère un statut de validation :
 
 ![Statut d’engagement pour indiquer le processus de validation PR sur GitHub Enterprise](/help/managing-code/assets/repository-webhook-github-pr-validation.png)
 
 >[!TAB  GitLab ]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
 
 Les interactions GitLab reposent uniquement sur des commentaires. Lorsque la validation commence, un commentaire est ajouté. Une fois la validation terminée (qu’elle ait réussi ou échoué), le commentaire initial est supprimé et remplacé par un nouveau commentaire contenant les résultats de la validation ou les détails de l’erreur.
 
@@ -243,6 +259,8 @@ Lorsque la validation de la qualité du code échoue en raison de problèmes cli
 ![Lorsque la validation de la qualité du code échoue en raison de problèmes client](/help/managing-code/assets/repository-webhook-gitlab4.png)
 
 >[!TAB Bitbucket]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/bitbucket -->
 
 Lorsque la validation de la qualité du code est en cours d’exécution :
 
