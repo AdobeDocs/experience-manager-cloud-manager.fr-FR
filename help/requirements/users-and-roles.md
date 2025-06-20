@@ -2,10 +2,10 @@
 title: Ajouter des utilisateurs et des rôles
 description: Découvrez comment utiliser Admin Console pour ajouter des utilisateurs et utilisatrices et des rôles ainsi que créer des profils.
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
-source-git-commit: 53fb666ab6caff7a697d7f1942ce25f2bf27a2ce
+source-git-commit: 012359b4ecf872ece036b27b48fededf150493d2
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 89%
+source-wordcount: '872'
+ht-degree: 75%
 
 ---
 
@@ -42,7 +42,7 @@ Le tableau suivant résume les rôles dans Cloud Manager.
 >
 >Dans Admin Console, la personne désignée pour le développement n’a aucun rapport avec le rôle de développement dans [!UICONTROL Cloud Manager].
 
-## Créer un profil à l’aide d’Admin Console {#using-admin-console-to-create-a-profile}
+## Création d’un profil de produit à l’aide d’Admin Console {#using-admin-console-to-create-a-profile}
 
 Les rôles de [!UICONTROL Cloud Manager] sont gérés depuis Admin Console. Des rôles spécifiques sont attribués en ajoutant un utilisateur à un profil de produit [!UICONTROL Cloud Manager].
 
@@ -55,7 +55,13 @@ Un administrateur ou une administratrice doit créer des profils de produit sous
 * Développeur ou développeuse
 * Responsable de programme
 
-Vous pouvez créer ou ajouter des utilisateurs, des utilisatrices ou des groupes à ces profils de produit avec Admin Console.
+Créez ou ajoutez des utilisateurs ou des groupes à ces profils de produit avec Admin Console.
+
+>[!IMPORTANT]
+>
+>En raison d’une limitation actuelle dans Admin Console et Cloud Manager, les profils ne peuvent pas être enregistrés si l’option **Aucune autorisation** est sélectionnée. Toute tentative de ce type génère une erreur de serveur principal. Ce comportement affecte la création des profils de responsable de déploiement. Pour pallier ce problème, sélectionnez au moins une autorisation lors de la création d’un profil.
+
+**Pour créer un profil de produit à l’aide de l’Admin Console, procédez comme suit**
 
 1. Connectez-vous à Admin Console à l’adresse [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
@@ -76,6 +82,10 @@ Vous pouvez créer ou ajouter des utilisateurs, des utilisatrices ou des groupes
    * **Nom de profil** : vous pouvez saisir le **nom de profil** que vous souhaitez. Toutefois, afin d’éviter toute confusion, il est recommandé d’utiliser les valeurs de la colonne **Nom de profil recommandé**.
    * **Nom d’affichage** - Le **nom d’affichage** doit correspondre à la valeur technique définie par [!UICONTROL Cloud Manager] (voir le tableau ci-dessous).
    * **Groupe d’autorisations** - Vous pouvez choisir un groupe d’autorisations pour le profil (pas toujours disponible).
+
+     >[!IMPORTANT]
+     >
+     >En raison d’une limitation actuelle dans Admin Console et Cloud Manager, les profils ne peuvent pas être enregistrés si l’option **Aucune autorisation** est sélectionnée. Toute tentative de ce type génère une erreur de serveur principal. Ce comportement affecte la création des profils de responsable de déploiement. Pour pallier ce problème, sélectionnez au moins une autorisation lors de la création d’un profil.
 
    ![Créer un profil](/help/assets/screen_shot_2018-05-04at171819.png)
 

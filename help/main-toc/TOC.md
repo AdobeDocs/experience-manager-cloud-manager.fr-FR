@@ -7,9 +7,9 @@ user-guide-description: Découvrez comment utiliser Cloud Manager pour auto-gé
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
+source-git-commit: 012359b4ecf872ece036b27b48fededf150493d2
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '372'
 ht-degree: 91%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 91%
    + [Droits d’accès](/help/requirements/access-rights.md)
    + [Référentiel de code source](/help/requirements/source-code-repository.md)
    + [Autorisations basées sur les rôles](/help/requirements/role-based-permissions.md)
-   + [Configuration des utilisateurs et utilisatrices et des rôles](/help/requirements/users-and-roles.md)
+   + [Ajouter des utilisateurs et des rôles](/help/requirements/users-and-roles.md)
    + [Autorisations personnalisées](/help/using/custom-permissions.md)
    + [Approvisionnement d’environnement](/help/requirements/environment-provisioning.md)
 + Commencer {#getting-started}
