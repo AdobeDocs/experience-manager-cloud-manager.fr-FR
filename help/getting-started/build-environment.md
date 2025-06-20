@@ -2,10 +2,10 @@
 title: Environnement de création
 description: Découvrez l’environnement de création spécialisé dans lequel les utilisateurs et utilisatrices de Cloud Manager peuvent créer et tester votre code.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '1263'
-ht-degree: 100%
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
+source-wordcount: '1262'
+ht-degree: 97%
 
 ---
 
@@ -33,7 +33,7 @@ Les environnements de création de Cloud Manager possèdent les attributs suiva
    * `graphicsmagick`
 * D’autres packages peuvent être installés au moment de la création, comme décrit dans la section [Installer des packages système supplémentaires](#installing-additional-system-packages).
 * Chaque création est réalisée dans un environnement vierge. Le conteneur de création ne conserve aucun état entre les exécutions.
-* Maven est toujours exécuté avec les trois commandes suivantes :
+* Maven est exécuté avec les trois commandes suivantes :
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
@@ -117,7 +117,7 @@ Les combinaisons fournisseur/version actuellement disponibles sont les suivantes
 
 Il est également possible de sélectionner Oracle 8 ou Oracle 11 en tant que JDK pour l’ensemble de l’exécution de Maven. Contrairement aux options de chaînes d’outils, un autre JDK sera utilisé pour tous les plug-ins, sauf si la configuration des chaînes d’outils est également définie, auquel cas la configuration des chaînes d’outils est toujours appliquée pour les plug-ins Maven compatibles avec les chaînes d’outils. Par conséquent, la vérification et l’application de la version Java à l’aide du [plug-in Apache Maven Enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/) fonctionneront.
 
-Pour ce faire, créez un fichier nommé `.cloudmanager/java-version` dans la branche de référentiel Git utilisée par le pipeline. Ce fichier peut avoir le contenu `11` ou `8`. Toute autre valeur est ignorée. Si `11` est spécifié, Oracle 11 est utilisé et la variable d’environnement `JAVA_HOME` est définie sur `/usr/lib/jvm/jdk-11.0.22`. Si `8` est spécifié, Oracle 8 est utilisé et la variable d’environnement `JAVA_HOME` est définie sur `/usr/lib/jvm/jdk1.8.0_401`.
+Pour ce faire, créez un fichier nommé `.cloudmanager/java-version` dans la branche de référentiel Git utilisée par le pipeline. Ce fichier peut avoir le contenu `11` ou `8`. Toute autre valeur est ignorée. Si `11` est spécifié, le système utilise Oracle 11 et définit la variable d’environnement `JAVA_HOME` sur `/usr/lib/jvm/jdk-11.0.22`. Si `8` est spécifié, le système utilise Oracle 8 et définit la variable d’environnement `JAVA_HOME` sur `/usr/lib/jvm/jdk1.8.0_401`.
 
 ## Variables d’environnement {#environment-variables}
 

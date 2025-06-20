@@ -3,25 +3,24 @@ title: Phase d’évaluation
 seo-title: Evaluation Phase
 description: Découvrez comment la phase d’évaluation de l’assistant de mise à jour du produit évalue la complexité de la mise à niveau à l’aide de la détection de motifs.
 exl-id: 1ffcbc21-dc36-435d-b83b-0209f81a15e7
-source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
-workflow-type: ht
-source-wordcount: '279'
-ht-degree: 100%
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
+source-wordcount: '257'
+ht-degree: 57%
 
 ---
 
 
 # Phase d’évaluation {#evaluation}
 
-La première phase de l’assistant de mise à jour du produit est la phase d’**[!UICONTROL évaluation]**, qui évalue la complexité de la mise à niveau à l’aide de la détection de motifs directement dans l’assistant. À la fin de cette étape, vous pouvez accéder au rapport d’évaluation.
+La première phase de l’assistant de mise à jour du produit est la phase **[!UICONTROL Évaluation]**. Il exécute la détection des motifs dans l’assistant pour évaluer la complexité de la mise à niveau. À la fin de cette étape, vous pouvez afficher le rapport d’évaluation.
 
-Le rapport généré vous permet de vérifier l’éligibilité de l’instance de création pour la mise à niveau en détectant les motifs qui :
+Le rapport vérifie que l’instance de création est prête pour la mise à niveau en détectant des motifs pour les éléments suivants :
 
-* enfreignent certaines règles liées aux zones affectées ou remplacées par la mise à niveau ;
+* Violations de règles dans les zones affectées ou remplacées par la mise à niveau.
+* Il utilise des fonctionnalités ou des API AEM 6.x qui ne sont pas rétrocompatibles et qui peuvent échouer après la mise à niveau.
 
-* utilisent une fonctionnalité d’AEM 6.x ou une API non rétrocompatible avec la nouvelle version d’AEM et qui peut potentiellement échouer après la mise à niveau.
-
-Ce rapport sert à évaluer l’ampleur des tâches de développement nécessaires pour effectuer une mise à niveau vers Adobe Experience Manager (AEM) 6.5.
+Ce rapport permet d’estimer l’effort de développement requis pour effectuer la mise à niveau vers Adobe Experience Manager (AEM) 6.5.
 
 >[!NOTE]
 >
@@ -45,4 +44,4 @@ La détection de motifs peut s’exécuter dans n’importe quel environnement. 
 
    ![Rapport créé](/help/assets/Evaluation-1.png)
 
-La version actuelle de l’assistant de mise à jour du produit de Cloud Manager prend uniquement en charge la phase **Évaluation**. Les quatre autres phases appelées **Correction**, **Exécution**, **Validation** et **Achèvement** seront bientôt disponibles.
+L’assistant de mise à jour du produit en cours dans Cloud Manager prend uniquement en charge la phase **Évaluation**. Les quatre autres phases appelées **Correction**, **Exécution**, **Validation** et **Achèvement** seront bientôt disponibles.

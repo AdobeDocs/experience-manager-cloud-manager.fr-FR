@@ -2,10 +2,10 @@
 title: Configurer les branches
 description: Découvrez comment configurer votre première branche dans Git et son utilisation par le pipeline CI/CD pour déployer le code de votre application.
 exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '324'
-ht-degree: 100%
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
+source-wordcount: '323'
+ht-degree: 95%
 
 ---
 
@@ -74,7 +74,7 @@ To <url>
 
 ## Branches supplémentaires {#additional-branches}
 
-Une branche `main` unique peut suffire pour des projets très simples, mais dans la plupart des cas, une stratégie de branchement plus complexe est requise. Un grand nombre de clientes et clients suivent un processus où les activités de développement quotidiennes sont exécutées sur une branche appelée `develop`. La branche de développement est ensuite fusionnée dans la branche `main` lorsqu’il est temps de procéder à un déploiement.
+Une branche `main` unique peut suffire pour des projets très simples, mais dans la plupart des cas, une stratégie de branchement plus complexe est requise. Un grand nombre de clientes et clients suivent un processus où les activités de développement quotidiennes sont exécutées sur une branche appelée `develop`. La branche `develop` est ensuite fusionnée dans la branche `main` au moment d’un déploiement.
 
 >[!TIP]
 >

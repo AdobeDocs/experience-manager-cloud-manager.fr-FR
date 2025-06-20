@@ -2,10 +2,10 @@
 title: Configuration du programme
 description: Après l’intégration, la personne propriétaire de l’entreprise doit effectuer une configuration initiale du programme.
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
 source-wordcount: '564'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -40,7 +40,7 @@ Pour configurer le programme et définir les KPI, procédez comme suit :
 
    ![Définition des KPI](/help/assets/Setup_Program-KPIs.png)
 
-1. Dans l’onglet **Approvisionnement**, vous pouvez définir les options de mise à l’échelle à la demande de vos environnements si la mise à l’échelle automatique est activée pour votre programme.
+1. Dans l’onglet **Mise en service**, vous pouvez définir les options de mise à l’échelle à la demande de vos environnements si la mise à l’échelle automatique est activée pour votre programme.
 
    La fonction de mise à l’échelle automatique s’applique uniquement à l’environnement de production et peut ne pas être disponible pour tous les programmes clients.
 
@@ -84,7 +84,7 @@ Utilisez la barre d’actions pour passer à un autre programme, modifier le pro
 
 Les KPI des sites sont mesurés sur les tests exécutés dans l’environnement d’évaluation. En règle générale, les KPI sont adaptés aux capacités de l’environnement d’évaluation.
 
-Par exemple, une personne qui attend une moyenne de 1 000 pages vues par minute dans son environnement de production et qui dispose de quatre serveurs Dispatcher/de publication en production doit réduire cette valeur à 250 pages vues par minute. Ce scénario suppose que son environnement d’évaluation se compose d’une seule paire de serveurs Dispatcher/de publication.
+Par exemple, une personne qui attend une moyenne de 1 000 pages vues par minute dans son environnement de production et qui dispose de quatre serveurs Dispatcher/de publication en production doit réduire cette valeur à 250 pages vues par minute. Ce scénario suppose que leur environnement d’évaluation se compose d’une seule paire Dispatcher/serveur de publication.
 
 Les tests de performances d’Assets impliquent le chargement répété de ressources sur une période de 30 minutes. Le temps de traitement de chaque ressource et diverses mesures au niveau du système sont mesurés tout au long du test.
 
@@ -92,4 +92,4 @@ De plus, de nombreux utilisateurs et utilisatrices disposeront d’un réseau de
 
 ## Vue d’ensemble vidéo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/34714?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26313/)

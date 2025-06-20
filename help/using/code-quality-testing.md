@@ -2,10 +2,10 @@
 title: Test de qualité du code
 description: Découvrez comment fonctionne le test de qualité du code des pipelines et comment il peut améliorer la qualité de vos déploiements.
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: f5e6ac81c6454730850bb7e884d82be48d2f8525
-workflow-type: ht
-source-wordcount: '2793'
-ht-degree: 100%
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
+source-wordcount: '2783'
+ht-degree: 98%
 
 ---
 
@@ -126,18 +126,18 @@ Le tableau suivant répertorie les contrôles d’intégrité :
 | Le pare-feu de désérialisation est chargé. | [Pare-feu de désérialisation chargé](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/security/mitigating-serialization-issues#security) | Critique |
 | L’implémentation `AuthorizableNodeName` n’expose pas d’ID autorisable dans le nom/chemin du nœud. | [Génération de nom de nœud autorisé](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/security/security-checklist#security) | Critique |
 | Les mots de passe par défaut ont été modifiés. | [Comptes de connexion par défaut](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/security/security#users-and-groups-in-aem) | Critique |
-| Le servlet GET par défaut Sling est protégé contre les attaques par DOS. | Servlet Sling Get | Critique |
-| Le gestionnaire JavaScript Sling est configuré de manière appropriée. | Gestionnaire JavaScript Sling | Critique |
-| Le gestionnaire de script JSP Sling est correctement configuré. | Gestionnaire de script JSP Sling | Critique |
+| `Sling` servlet GET par défaut est protégé contre les attaques DOS. | servlet `Sling Get` | Critique |
+| Le gestionnaire JavaScript `Sling` est correctement configuré. | Gestionnaire JavaScript `Sling` | Critique |
+| Le gestionnaire de scripts JSP `Sling` est correctement configuré. | Gestionnaire de script JSP `Sling` | Critique |
 | Le protocole SSL est correctement configuré. | Configuration SSL | Critique |
 | Aucune politique de profil utilisateur évidemment risquée n’a été trouvée. | Accès par défaut au profil utilisateur | Critique |
-| Le filtre référent Sling est configuré pour empêcher les attaques CSRF. | [Filtre référent Sling](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/security/security-checklist#security) | Important |
+| Le filtre Référent `Sling` est configuré pour empêcher les attaques CSRF. | [Filtre référent Sling](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/security/security-checklist#security) | Important |
 | Le gestionnaire de bibliothèques HTML Adobe Granite est configuré correctement. | Configuration de gestionnaire de bibliothèque HTML CQ | Important |
 | Le lot Prise en charge CRXDE est désactivé. | Prise en charge de CRXDE | Important |
-| Le lot DavEx Sling et le servlet sont désactivés. | Contrôle d’intégrité DavEx | Important |
+| `Sling` lot et le servlet DavEx sont désactivés. | Contrôle d’intégrité DavEx | Important |
 | L’exemple de contenu n’est pas installé. | Packages d’exemple de contenu | Important |
 | Les filtres de demande et de débogage de la gestion de contenu web sont désactivés. | [Configuration des filtres WCM](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/deploying/configuring/osgi-configuration-settings#configuring) | Important |
-| Le lot WebDAV Sling et le servlet sont correctement configurés. | Contrôle d’intégrité WebDAV | Important |
+| `Sling` lot WebDAV et le servlet sont correctement configurés. | Contrôle d’intégrité WebDAV | Important |
 | Le serveur web est configuré pour empêcher les clics publicitaires. | Configuration du serveur web | Important |
 | La réplication n’utilise pas l’utilisateur `admin`. | Utilisateurs de réplication et de transport | Infos |
 
@@ -199,7 +199,7 @@ Le tableau suivant résume la matrice de test de performance à l’aide du syst
 | Taux d’erreur des demandes de pages | Critique | >= 2 % |
 | Taux d’utilisation de l’UC | Critique | >= 80 % |
 | Délai d’attente d’E/S de disque | Critique | >= 50 % |
-| 95e centile du temps de réponse | Important | >= ICP de niveau programme |
+| 95e percentile du temps de réponse | Important | >= ICP de niveau programme |
 | Délai de réponse max. | Important | >= 18 secondes |
 | Nombre de pages vues par minute | Important | &lt; ICP de niveau programme |
 | Utilisation de la bande passante de disque | Important | >= 90 % |
@@ -283,8 +283,8 @@ Cette fonctionnalité est disponible pour les mesures suivantes.
 
 * **Temps de réponse maximal** : graphique du temps de réponse maximal par minute pendant la période de test.
 
-* **Temps de réponse du 95e centile** : graphique montrant le temps de réponse du 95e centile par minute pendant la période de test.
-   * Fichier CSV répertoriant les pages dont le 95e centile du temps de réponse a dépassé les KPI définis.
+* **Temps de réponse du 95e percentile** : graphique montrant le temps de réponse du 95e percentile par minute pendant la période de test.
+   * Fichier CSV répertoriant les pages dont le 95e percentile du temps de réponse a dépassé les ICP définis.
 
 ## Optimisation de l’analyse des modules de contenu {#content-package-scanning-optimization}
 

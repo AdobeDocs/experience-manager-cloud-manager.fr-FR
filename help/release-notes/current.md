@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 2025.6.0 de Cloud Manager
 description: En savoir plus sur la version 2025.5.0 de Cloud Manager dans Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 38d398caf2323b603afd293aa9152308fefd323f
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 58%
+source-wordcount: '556'
+ht-degree: 71%
 
 ---
 
@@ -24,7 +24,7 @@ La date de publication de la version 2025.6.0 de [!UICONTROL Cloud Manager] es
 
 <!-- There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
-La prochaine version est prévue le vendredi 10 juillet 2025.
+La prochaine version est prévue le 10 juillet 2025.
 
 <!-- SAVE FOR FUTURE POSSIBLE USE There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
@@ -39,13 +39,13 @@ La prochaine version est prévue le vendredi 10 juillet 2025.
 
   Voir [Pipelines d’évaluation uniquement et de production uniquement](/help/using/stage-prod-only.md).
 
-* **Favoris de pipeline**
+* **Pipelines favoris**
 
   Dans cette version, Cloud Manager offre la possibilité d’épingler les pipelines favoris, ce qui vous permet de marquer des pipelines spécifiques comme favoris afin qu’ils apparaissent en haut de la liste sur la page **Pipelines**. Cette amélioration facilite la recherche et l’exécution des pipelines fréquemment consultés. <!-- CMGR-68293 -->
 
-  ![Pipelines marqués comme favoris](/help/release-notes/assets/pipeline-favorites.png) *deux pipelines marqués comme favoris.*
+  ![Pipelines marqués comme favoris](/help/release-notes/assets/pipeline-favorites.png) *Deux pipelines marqués comme favoris.*
 
-  Voir [Marquer les favoris du pipeline](/help/using/managing-pipelines.md#pipeline-favorites).
+  Voir la section [Marquer les pipelines favoris](/help/using/managing-pipelines.md#pipeline-favorites).
 
 
 ## Programme Private Beta {#beta-program}
@@ -73,16 +73,16 @@ Si vous souhaitez tester cette nouvelle fonctionnalité et faire part de vos com
 
 #### Gérer les jetons d’accès{#access-tokens}
 
-Utilisez la fonctionnalité **Gérer les jetons d’accès**, conjointement avec BYOG, pour afficher, renommer et supprimer les jetons d’accès associés aux référentiels Git externes Bring Your Own, tels que GitHub Enterprise, GitLab, Bitbucket et Azure DevOps.
+Utilisez **Gérer les jetons d’accès** avec BYOG pour afficher, renommer et supprimer les jetons d’accès associés aux référentiels Git externes Bring Your Own Git, tels que GitHub Enterprise, GitLab, Bitbucket et Azure DevOps.
 
-Voir [ Gestion des jetons d’accès ](/help/managing-code/manage-access-tokens.md).
+Voir la section [Gérer les jetons d’accès](/help/managing-code/manage-access-tokens.md).
 
 Si vous souhaitez tester cette nouvelle fonctionnalité et faire part de vos commentaires, envoyez un e-mail à [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) à partir de l’adresse e-mail associée à votre Adobe ID. Veillez à inclure la plateforme Git à utiliser et indiquez si vous utilisez une structure de référentiel privée/publique ou d’entreprise.
 
 
 ## Correctif des bugs {#bug-fixes}
 
-* AEM Cloud Manager mappe désormais correctement les échecs de build Maven provoqués par des erreurs 409 (conflits) lors de la récupération des artefacts client vers un échec provoqué par le client. Cette modification améliore le message d’erreur en faisant la distinction entre les erreurs internes et les problèmes liés à la configuration de l’environnement client. <!-- CMGR-66673 -->
+* AEM Cloud Manager mappe désormais correctement les échecs de version Maven provoqués par des erreurs 409 (conflits) lors de la récupération des artefacts client vers un échec provoqué par le client ou la cliente. Cette modification améliore les messages d’erreur en permettant la distinction entre les erreurs internes et les problèmes liés à la configuration de l’environnement du client ou de la cliente. <!-- CMGR-66673 -->
 
 <!--
 Known Issues {#known-issues}

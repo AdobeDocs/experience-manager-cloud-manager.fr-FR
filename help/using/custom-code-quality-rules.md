@@ -2,10 +2,10 @@
 title: Règles de qualité du code personnalisé
 description: Découvrez les détails des règles de qualité du code personnalisé exécutées par Cloud Manager lors du test de qualité du code. Ces règles sont basées sur les bonnes pratiques de l’ingénierie AEM.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 54987d6ccd8c31dab677d90b40466c458743f936
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
 workflow-type: tm+mt
-source-wordcount: '3644'
-ht-degree: 96%
+source-wordcount: '3636'
+ht-degree: 95%
 
 ---
 
@@ -227,7 +227,7 @@ public void orDoThis(Session session) throws Exception {
 * **Gravité** : majeure
 * **Depuis** : version 2018.4.0
 
-Comme décrit dans la [documentation Sling](https://sling.apache.org/documentation/the-sling-engine/servlets.html), il est déconseillé de lier les servlets aux chemins. Les servlets liés au chemin ne peuvent pas utiliser les contrôles d’accès JCR standard et, par conséquent, nécessitent une rigueur de sécurité supplémentaire. Plutôt que d’utiliser des servlets liés au chemin d’accès, il est recommandé de créer des nœuds dans le référentiel et d’enregistrer les servlets par type de ressource.
+Comme décrit dans la [documentation Sling](https://sling.apache.org/documentation/the-sling-engine/servlets.html), les servlets de liaison par chemins d’accès sont découragés. Les servlets liés au chemin ne peuvent pas utiliser les contrôles d’accès JCR standard et, par conséquent, nécessitent une rigueur de sécurité supplémentaire. Plutôt que d’utiliser des servlets liés au chemin d’accès, il est recommandé de créer des nœuds dans le référentiel et d’enregistrer les servlets par type de ressource.
 
 #### Code non conforme {#non-compliant-code-5}
 
@@ -475,7 +475,7 @@ public void doThis() {
 * **Gravité** : mineure
 * **Depuis** : version 2018.4.0
 
-Les chemins commençant par `/libs` et `/apps` ne doivent généralement pas être codés en dur. Ces chemins sont généralement stockés par rapport au chemin de recherche Sling, qui est par défaut `/libs,/apps`. L’utilisation du chemin absolu peut introduire des défauts discrets qui n’apparaîtront que plus tard dans le cycle de vie du projet.
+Les chemins commençant par `/libs` et `/apps` ne doivent généralement pas être codés en dur. Ces chemins sont généralement stockés par rapport au chemin de recherche `Sling`, qui est défini par défaut sur `/libs,/apps`. L’utilisation du chemin absolu peut introduire des défauts discrets qui n’apparaîtront que plus tard dans le cycle de vie du projet.
 
 #### Code non conforme {#non-compliant-code-13}
 
@@ -908,8 +908,7 @@ Le Cloud Service AEM interdit la création de définitions d’indexation conten
 * **Gravité** : majeure
 * **Depuis** : version 2025.4.0
 
-L’utilisation du mode « remplacement » dans File Vault n’est pas autorisée pour les chemins d’accès situés sous /content ; il ne doit pas être utilisé pour les chemins d’accès situés sous /etc et /var.
-Le mode « remplacer » remplacera tout le contenu existant dans le référentiel par celui fourni dans le package de contenu et les packages qui déclenchent cette action ne doivent pas faire partie des packages déployés via Cloud Manager.
+L’utilisation du mode « remplacement » dans File Vault n’est pas autorisée pour les chemins d’accès inférieurs à `/content` ; il ne doit pas être utilisé pour les chemins d’accès inférieurs à `/etc` et `/var.`. Le mode « remplacer » remplace le contenu du référentiel existant par le contenu provenant du package. Les packages qui déclenchent cette action ne doivent pas être inclus dans ceux déployés via Cloud Manager.
 
 ## Outil d’optimisation du Dispatcher {#dispatcher-optimization-tool-rules}
 

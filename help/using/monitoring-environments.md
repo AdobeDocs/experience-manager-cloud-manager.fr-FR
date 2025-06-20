@@ -2,10 +2,10 @@
 title: Surveiller les environnements
 description: Découvrez comment surveiller vos environnements dans Cloud Manager.
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: 53fb666ab6caff7a697d7f1942ce25f2bf27a2ce
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 98%
+source-wordcount: '865'
+ht-degree: 74%
 
 ---
 
@@ -29,7 +29,7 @@ Adobe Managed Services définit les seuils, que vous pouvez afficher dans [!UI
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) et sélectionnez l’organisation et le programme appropriés.
 
 1. Cliquez sur ![icône Plus, points de suspension](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) du programme que vous souhaitez surveiller.
-1. Dans le menu, sous l’en-tête **Gérer**, cliquez sur **Afficher la surveillance** pour ouvrir la page **Rapports** qui affiche les informations de surveillance du système.
+1. Dans le menu, sous **Gérer**, cliquez sur **Afficher la surveillance** pour ouvrir la page **Rapports** qui affiche les informations de surveillance du système.
 
    ![Paramètres](/help/assets/first-timea1.png)
 
@@ -73,28 +73,28 @@ Par exemple, si vous cliquez sur la série de seuil d’avertissement, vous ne v
 
 #### Hôte {#host}
 
-* **Charger par noyau** : nombre de processus que le processeur exécute. Ou, le nombre de processus en file d’attente dont l’état est en attente a été calculé en moyenne sur une période d’une (load1), de cinq (load5) et de quinze (load15) minutes.
-* **Nombre de processus** : nombre de processus actuellement ouverts.
-* **Nombre d’utilisateurs et d’utilisatrices** : nombre d’utilisateurs et d’utilisatrices disposant d’une session shell active.
-* **Utilisation de la mémoire** : pourcentage de la mémoire système actuellement allouée.
-* **Mémoire JVM** : taille (en mégaoctets) du tas Java alloué.
-* **Espace de l’ancienne génération** : pourcentage de la mémoire de la JVM de l’ancienne génération actuellement allouée.
+* **`Load Per Core`** : nombre de processus exécutés par le CPU. Ou, le nombre de processus en file d’attente dont l’état est en attente a été calculé en moyenne sur une période d’une (load1), de cinq (load5) et de quinze (load15) minutes.
+* **P`rocess Count`** : nombre de processus actuellement ouverts.
+* **`User Count`** : nombre d’utilisateurs disposant d’une session shell active.
+* **`Memory Usage`** : pourcentage de la mémoire système actuellement allouée.
+* **`JVM Memory`** : taille (en mégaoctets) du tas Java alloué.
+* **`Old Generation Space`** : pourcentage de la mémoire de l’ancienne génération JVM actuellement allouée.
 
 #### Réseau {#network}
 
-* **Vérification du port CQ** : délai de réponse en secondes pour accéder au port AEM ou Dispatcher. Il existe différentes mesures pour les instances de création et de publication et le Dispatcher.
+* **`CQ Port Check`** : délai de réponse en secondes pour accéder au port AEM ou Dispatcher. Il existe différentes mesures pour les instances de création et de publication et le Dispatcher.
 
 #### Stockage {#storage}
 
-* **Espace disque** : espace disque utilisé (en mégaoctets) pour chaque point de montage sur l’hôte. Il existe différentes mesures pour chaque point de montage. Au minimum, les mesures `/` et `/mnt` sont disponibles, mais des mesures de point de montage supplémentaires peuvent être disponibles selon la configuration d’instance spécifique.
-* **Taille du dossier**
-* **Banque de segments AEM** : espace disque utilisé (en gigaoctets) pour la banque de segments AEM.
+* **`Disk Space`** : espace disque utilisé (en mégaoctets) pour chaque point de montage sur l’hôte. Il existe différentes mesures pour chaque point de montage. Au minimum, les mesures `/` et `/mnt` sont disponibles, mais des mesures de point de montage supplémentaires peuvent être disponibles selon la configuration d’instance spécifique.
+* **`Folder Size`**
+* **`AEM Segment Store`** : espace disque utilisé (en gigaoctets) pour l’entrepôt de segments AEM.
 
 #### Application {#application}
 
-* **Agent de réplication** : durée, en secondes, d’un événement de réplication de test.
+* **`Replication Agent`** : durée (en secondes) d’un événement de réplication de test.
    * Il existe des mesures distinctes pour chaque agent de réplication.
-* **Vidage du Dispatcher** : nombre d’éléments actuellement présents dans la file d’attente de vidage du Dispatcher
+* **`Dispatcher Flush`** : nombre d’éléments actuellement dans la file d’attente de vidage Dispatcher
 
 ## Création de rapports SLA {#sla-reporting}
 
@@ -114,15 +114,15 @@ La section **Analyse des événements**, située sous ce graphique, affiche l’
 
 ## Mesures SLA {#sla-metrics}
 
-* **Contrat de création** : il s’agit de l’accord SLA défini dans le cadre de votre contrat avec Adobe Managed Services pour le niveau création.
-* **SLA de création AMS** : il s’agit de la période de disponibilité mesurée du niveau création de production comptabilisant les incidents causés par Adobe ou par nos fournisseurs.
-* **SLA de création** : il s’agit de la période de disponibilité mesurée du niveau création ignorant le temps d’arrêt planifié, tel que les fenêtres de maintenance.
-* **Contrat d’utilisation finale** : il s’agit de l’accord SLA défini dans votre contrat avec Adobe Managed Services pour le niveau de publication.
-* **SLA d’utilisation finale AMS** : il s’agit de la période de disponibilité mesurée du niveau de publication de production comptabilisant les incidents causés par Adobe ou par nos fournisseurs.
-* **SLA d’utilisation finale** : il s’agit de la période de disponibilité mesurée du niveau de publication ignorant le temps d’arrêt planifié, tel que les fenêtres de maintenance.
+* **`Author Contract`** : SLA défini dans votre contrat avec Adobe Managed Services pour le niveau création.
+* **`AMS Author SLA`** : temps de disponibilité mesuré du niveau de création de production, en tenant compte des incidents causés par les fournisseurs ou par Adobe.
+* **`Author SLA`** : temps de disponibilité mesuré du niveau de création ignorant le temps d’arrêt planifié, tel que les fenêtres de maintenance.
+* **`End User Contract`** : SLA défini dans votre contrat avec Adobe Managed Services pour le niveau de publication.
+* **`AMS End User SLA`** : temps de disponibilité mesurés du niveau de publication de production, en tenant compte des incidents causés par les fournisseurs ou par Adobe.
+* **`End User SLA`** : temps de disponibilité mesuré du niveau de publication ignorant le temps d’arrêt planifié, tel que les fenêtres de maintenance.
 
 ## Tutoriel vidéo {#video-tutorial}
 
 Cette vidéo présente une vue d’ensemble de l’utilisation des graphiques générés par les rapports Cloud Manager pour une vue d’ensemble de vos environnements de programme.
 
->[!VIDEO](https://video.tv.adobe.com/v/34717?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26315/)

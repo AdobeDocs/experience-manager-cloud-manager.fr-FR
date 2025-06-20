@@ -2,10 +2,10 @@
 title: Autorisations personnalisées
 description: Découvrez comment utiliser des autorisations personnalisées pour créer des profils d’autorisation personnalisés avec des autorisations configurables afin de restreindre l’accès aux programmes, aux pipelines et aux environnements pour les utilisateurs et utilisatrices de Cloud Manager.
 exl-id: a81eda9f-aa89-40ea-8e4c-52367a0a6aba
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '1416'
-ht-degree: 100%
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
+source-wordcount: '1373'
+ht-degree: 98%
 
 ---
 
@@ -111,23 +111,23 @@ Voir la section **Ajouter des utilisateurs et des utilisatrices et des groupes d
 Les autorisations suivantes sont disponibles pour créer des profils personnalisés.
 
 | Autorisation | Description |
-|---|---|
-| Accès au programme | Autoriser des personnes à accéder aux programmes |
-| Modification du programme | Autoriser les personnes à modifier des programmes |
-| Création d’un pipeline | Autoriser les personnes à créer des pipelines |
-| Suppression de pipeline | Autoriser les personnes à supprimer des pipelines |
-| Modification du pipeline | Autoriser les personnes à modifier les pipelines |
-| Approbation et rejet des déploiements de production | Autoriser les personnes à approuver ou rejeter une étape de déploiement en production |
-| Annulation des exécutions de pipeline | Autoriser les personnes à annuler les exécutions de pipeline |
-| Démarrage des exécutions de pipeline | Autoriser les personnes à démarrer de nouvelles exécutions de pipeline |
-| Remplacement et rejet d’échecs de mesures importantes | Autoriser les personnes à remplacer et à rejeter les échecs de mesures importantes |
-| Planification des déploiements en production | Autoriser des personnes à planifier une étape de déploiement en production |
-| Accès aux informations sur le référentiel | Autoriser les personnes à accéder aux informations du référentiel et à générer un mot de passe d’accès |
-| Création de référentiel | Autoriser les personnes à créer des référentiels Git |
-| Suppression de référentiel | Autoriser les personnes à supprimer des référentiels Git |
-| Modification de référentiel | Autoriser les personnes à modifier les référentiels Git |
-| Génération de code de référentiel | Autoriser les personnes à générer des projets à partir de l’archétype |
-| Gestion de la copie de contenu | Autoriser les personnes à gérer les opérations de copie de contenu |
+| --- | --- |
+| `Program Access` | Autoriser des personnes à accéder aux programmes |
+| `Program Edit` | Autoriser les personnes à modifier des programmes |
+| `Pipeline Create` | Autoriser les personnes à créer des pipelines |
+| `Pipeline Delete` | Autoriser les personnes à supprimer des pipelines |
+| `Pipeline Edit` | Autoriser les personnes à modifier les pipelines |
+| `Production Deployments Approve/Reject` | Autoriser les personnes à approuver ou rejeter une étape de déploiement en production |
+| `Pipeline Executions Cancel` | Autoriser les personnes à annuler les exécutions de pipeline |
+| `Pipeline Executions Start` | Autoriser les personnes à démarrer de nouvelles exécutions de pipeline |
+| `Override/Reject Important Metric Failures` | Autoriser les personnes à remplacer et à rejeter les échecs de mesures importantes |
+| `Production Deployments Schedule` | Autoriser des personnes à planifier une étape de déploiement en production |
+| `Repository Info Access` | Autoriser les personnes à accéder aux informations du référentiel et à générer un mot de passe d’accès |
+| `Repository Create` | Autoriser les personnes à créer des référentiels Git |
+| `Repository Delete` | Autoriser les personnes à supprimer des référentiels Git |
+| `Repository Edit` | Autoriser les personnes à modifier les référentiels Git |
+| `Repository Code Generate` | Autoriser les personnes à générer des projets à partir de l’archétype |
+| `Content Copy Manage` | Autoriser les personnes à gérer les opérations de copie de contenu |
 
 ### Autorisations au niveau de l’organisation {#organization-level}
 
@@ -142,7 +142,7 @@ Voir la section [Référentiel de code source](/help/requirements/source-code-re
 Les termes suivants sont utilisés pour créer et gérer des autorisations personnalisées et des rôles prédéfinis.
 
 | Terme | Description |
-|---|---|
+| --- | --- |
 | Autorisations prédéfinies | Rôles prédéfinis tels que **Propriétaire de l’entreprise**, **Responsable de déploiement**, etc. pour régir différentes fonctionnalités de Cloud Manager. Pour plus d’informations sur les rôles prédéfinis, voir la section [Autorisations basées sur les rôles](/help/requirements/role-based-permissions.md). |
 | Autorisations personnalisées | Fonctionnalités de Cloud Manager qui permettent aux utilisateurs et utilisatrices de créer des profils d’autorisation pour définir des rôles afin de régir les fonctionnalités prises en charge de Cloud Manager |
 | Profil d’autorisation | Créé dans Admin Console pour gérer les autorisations configurables qui s’appliqueront aux utilisateurs et utilisatrices faisant partie du profil d’autorisation. |
@@ -152,11 +152,11 @@ Les termes suivants sont utilisés pour créer et gérer des autorisations perso
 Les éléments d’autorisation se rapportent à la portée dans laquelle les autorisations seront appliquées. En règle générale, il s’agit de l’un des éléments suivants.
 
 | Type d’élément d’autorisation | Exemple | Description |
-|---|---|---|
+| --- | --- | --- |
 | Organisation | Organisation:entrepriseA | Toutes les ressources applicables d’une organisation. Une ressource peut être un programme, un environnement ou un pipeline. Si l’utilisateur ou l’utilisatrice ajoute une organisation pour n’importe quelle autorisation, toutes les nouvelles ressources de cette organisation auront également cette autorisation. |
-| Programme | Programme A | Toutes les ressources applicables d’un programme |
-| Environnement | Programme A : environnement | Applicable dans un environnement spécifique |
-| Pipeline | Programme A : pipeline | Applicable sur un pipeline spécifique |
+| Programme | Programme A | Toutes les ressources applicables d’un programme. |
+| Environnement | Programme A : environnement | Applicable dans un environnement spécifique. |
+| Pipeline | Programme A : pipeline | Applicable sur un pipeline spécifique. |
 
 ## Limites {#limitations}
 

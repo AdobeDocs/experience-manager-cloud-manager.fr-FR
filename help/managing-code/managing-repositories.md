@@ -2,10 +2,10 @@
 title: Gérer les référentiels dans Cloud Manager
 description: Découvrez comment afficher, ajouter et supprimer vos référentiels Git dans Cloud Manager.
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
-source-git-commit: ee84c682b6bd2b9144b3f75d544dea33a5ad944b
-workflow-type: ht
-source-wordcount: '732'
-ht-degree: 100%
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
+source-wordcount: '730'
+ht-degree: 97%
 
 ---
 
@@ -73,7 +73,7 @@ La fenêtre **Informations sur le référentiel** s’ouvre et affiche les déta
 
 ## Vérifier les branches / Créer un projet {#check-branches}
 
-Dans **AEM Cloud Manager**, l’action **Vérifier les branches / Créer un projet** a deux objectifs, selon l’état actuel du référentiel.
+Dans **AEM Cloud Manager**, **Vérifier les branches / Créer un projet** a deux objectifs, selon le statut actuel du référentiel.
 
 * Si le référentiel est nouvellement créé, l’action génère un exemple de projet basé sur l’[archétype de projet AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/overview).
 * Si l’exemple de projet est déjà créé dans le référentiel, l’action vérifie le statut du référentiel et de ses branches, en indiquant si l’exemple de projet existe déjà.

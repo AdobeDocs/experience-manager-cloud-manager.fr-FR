@@ -2,16 +2,16 @@
 title: Partager des pipelines d’évaluation uniquement et de production uniquement
 description: Découvrez comment séparer les déploiements d’évaluation et de production à l’aide de pipelines dédiés.
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: 35845e827b0a3fadfe2a55a2171b5e02100cf3eb
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
 workflow-type: tm+mt
-source-wordcount: '924'
-ht-degree: 98%
+source-wordcount: '917'
+ht-degree: 96%
 
 ---
 
 # Fractionner les pipelines d’évaluation uniquement et de production uniquement {#stage-prod-only}
 
-Découvrez comment séparer les déploiements d’évaluation et de production à l’aide de pipelines dédiés.
+Vous pouvez diviser les déploiements d’évaluation et de production à l’aide de pipelines dédiés.
 
 ## Vue d’ensemble {#overview}
 
@@ -75,7 +75,7 @@ Les pipelines dédiés à la production uniquement et à l’évaluation uniquem
 
 ### Pipelines dédiés uniquement à la production {#prod-only}
 
-1. Une fois que vous avez sélectionné l’option **Ajouter un pipeline de production uniquement**, la boîte de dialogue **Ajouter un pipeline de production uniquement** s’ouvre.
+1. Après avoir cliqué sur **Ajouter un pipeline de production uniquement**, la boîte de dialogue associée s’ouvre.
 1. Dans le champ **Nom du pipeline**, saisissez le nom de votre choix. Les options et les fonctionnalités restantes de la boîte de dialogue fonctionnent de la même manière que celles de la boîte de dialogue de création d’un pipeline couplé standard.
 1. Dans l’angle inférieur droit de la boîte de dialogue, cliquez sur **Enregistrer**.
 
