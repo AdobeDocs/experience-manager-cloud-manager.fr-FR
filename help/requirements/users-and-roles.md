@@ -2,10 +2,10 @@
 title: Ajouter des utilisateurs et des rôles
 description: Découvrez comment utiliser Admin Console pour ajouter des utilisateurs et utilisatrices et des rôles ainsi que créer des profils.
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
-source-git-commit: 012359b4ecf872ece036b27b48fededf150493d2
+source-git-commit: 9ad9af206fafea45f8bbf61b02950de0776b5a9f
 workflow-type: tm+mt
-source-wordcount: '872'
-ht-degree: 75%
+source-wordcount: '770'
+ht-degree: 85%
 
 ---
 
@@ -57,9 +57,10 @@ Un administrateur ou une administratrice doit créer des profils de produit sous
 
 Créez ou ajoutez des utilisateurs ou des groupes à ces profils de produit avec Admin Console.
 
+<!-- CQDOC-22790
 >[!IMPORTANT]
 >
->En raison d’une limitation actuelle dans Admin Console et Cloud Manager, les profils ne peuvent pas être enregistrés si l’option **Aucune autorisation** est sélectionnée. Toute tentative de ce type génère une erreur de serveur principal. Ce comportement affecte la création des profils de responsable de déploiement. Pour pallier ce problème, sélectionnez au moins une autorisation lors de la création d’un profil.
+>Due to a current limitation in the Admin Console and Cloud Manager, profiles cannot be saved with **No permissions** selected. Attempting to do so results in a backend error. This behavior affects the creation of Deployment Manager profiles. As a workaround, select at least one permission when creating a new profile. -->
 
 **Pour créer un profil de produit à l’aide de l’Admin Console, procédez comme suit**
 
@@ -83,18 +84,19 @@ Créez ou ajoutez des utilisateurs ou des groupes à ces profils de produit avec
    * **Nom d’affichage** - Le **nom d’affichage** doit correspondre à la valeur technique définie par [!UICONTROL Cloud Manager] (voir le tableau ci-dessous).
    * **Groupe d’autorisations** - Vous pouvez choisir un groupe d’autorisations pour le profil (pas toujours disponible).
 
-     >[!IMPORTANT]
-     >
-     >En raison d’une limitation actuelle dans Admin Console et Cloud Manager, les profils ne peuvent pas être enregistrés si l’option **Aucune autorisation** est sélectionnée. Toute tentative de ce type génère une erreur de serveur principal. Ce comportement affecte la création des profils de responsable de déploiement. Pour pallier ce problème, sélectionnez au moins une autorisation lors de la création d’un profil.
+<!-- CQDOC-22790
+      >[!IMPORTANT]
+      >
+      >Due to a current limitation in the Admin Console and Cloud Manager, profiles cannot be saved with **No permissions** selected. Attempting to do so results in a backend error. This behavior affects the creation of Deployment Manager profiles. As a workaround, select at least one permission when creating a new profile. -->
 
-   ![Créer un profil](/help/assets/screen_shot_2018-05-04at171819.png)
+![Créer un profil](/help/assets/screen_shot_2018-05-04at171819.png)
 
-   | Rôle | Nom d’affichage (obligatoire) | Nom de profil recommandé |
-   |---|---|---|
-   | Propriétaire de l’entreprise | `CM_BUSINESS_OWNER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] : rôle du propriétaire de l’entreprise |
-   | Responsable de déploiement | `CM_DEPLOYMENT_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] : rôle de responsable de déploiement |
-   | Développeur ou développeuse | `CM_DEVELOPER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] : rôle de développeur |
-   | Responsable de programme | `CM_PROGRAM_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] : rôle de responsable de programme |
+| Rôle | Nom d’affichage (obligatoire) | Nom de profil recommandé |
+|---|---|---|
+| Propriétaire de l’entreprise | `CM_BUSINESS_OWNER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] : rôle du propriétaire de l’entreprise |
+| Responsable de déploiement | `CM_DEPLOYMENT_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] : rôle de responsable de déploiement |
+| Développeur ou développeuse | `CM_DEVELOPER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] : rôle de développeur |
+| Responsable de programme | `CM_PROGRAM_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] : rôle de responsable de programme |
 
 
 1. Cliquez sur **Terminé** pour enregistrer le nouveau profil.
