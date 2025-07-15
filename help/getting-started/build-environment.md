@@ -2,10 +2,10 @@
 title: Environnement de création
 description: Découvrez l’environnement de création spécialisé dans lequel les utilisateurs et utilisatrices de Cloud Manager peuvent créer et tester votre code.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+source-git-commit: e9f3ac70735a95a15b1f63cf40496672162de777
 workflow-type: tm+mt
-source-wordcount: '1262'
-ht-degree: 97%
+source-wordcount: '1161'
+ht-degree: 83%
 
 ---
 
@@ -40,6 +40,9 @@ Les environnements de création de Cloud Manager possèdent les attributs suiva
 * Maven est configuré au niveau du système avec un fichier `settings.xml` qui inclut automatiquement le référentiel public d’artefacts Adobe à l’aide d’un profil appelé `adobe-public`. Pour plus d’informations, voir le [référentiel Maven public d’Adobe](https://repo1.maven.org/).
 * Node.js 18 est disponible pour les [pipelines front-end](/help/overview/ci-cd-pipelines.md).
 
+>[!IMPORTANT]
+>La prise en charge des chaînes d’outils Maven a été supprimée à partir de la version Cloud Manager 2025.06.0. La sélection du JDK est désormais prise en charge uniquement via `.cloudmanager/java-version`. Pour plus d’informations, voir [ Utilisation d’une version Java spécifique ](#using-java-version).
+
 >[!NOTE]
 >
 >Bien que Cloud Manager ne définisse pas de version spécifique du `jacoco-maven-plugin`, la version utilisée doit être au moins `0.7.5.201505241946`.
@@ -62,14 +65,23 @@ Pour garantir une expérience fluide avec la version mise à jour, Adobe recomma
 
 ## Utiliser une version de Java spécifique {#using-java-version}
 
-Par défaut, les projets créés par le processus de création Cloud Manager utilisent le JDK Oracle 8. Les clientes et clients qui souhaitent utiliser un autre JDK disposent de deux options.
+Par défaut, les projets créés par le processus de création Cloud Manager utilisent le JDK Oracle 8. Les clients qui souhaitent utiliser un autre JDK peuvent sélectionner une autre version de JDK pour l’ensemble du processus d’exécution Maven.
 
-* [Maven Toolchains](#maven-toolchains)
-* [Sélectionner une autre version du JDK pour l’ensemble du processus d’exécution de Maven](#alternate-maven)
+>[!IMPORTANT]
+>
+>Les chaînes d’outils Maven ne sont plus prises en charge dans Cloud Manager 2025.06.0. N’oubliez pas que les pipelines contenant une configuration maven-toolchains-plugin vont échouer avec `Cannot find matching toolchain definitions.` Utilisez le fichier `.cloudmanager/java-version` pour sélectionner JDK 11, 17 ou 21 à la place.
+>
+>**Conseils de migration :**
+>
+>1. Supprimez les chaînes d&#39;outils en supprimant toute entrée de `org.apache.maven.plugins:maven-toolchains-plugin` et tout `toolchains.xml` validé dans votre contrôle de code source.
+>1. Sélectionnez un JDK avec `.cloudmanager/java-version`(21, 17 ou 11), comme décrit dans la section [ Autre version du JDK d’exécution Maven ](#alternate-maven).
+>1. Adobe recommande d’effacer le cache de build de Cloud Manager ou de déclencher une nouvelle exécution de pipeline.
+>
 
+<!--DEPRECATED 
 ### Maven Toolchains {#maven-toolchains}
 
-Le [plug-in Maven Toolchains](https://maven.apache.org/plugins/maven-toolchains-plugin/) permet aux projets de sélectionner un JDK (dit toolchain) spécifique à utiliser dans le contexte des plug-ins Maven compatibles avec les chaînes d’outils. Cette opération est effectuée dans le fichier `pom.xml` du projet en spécifiant un fournisseur et une valeur de version. Voici un exemple de section dans le fichier `pom.xml` :
+The [Maven Toolchains plug-in](https://maven.apache.org/plugins/maven-toolchains-plugin/) lets projects select a specific JDK (or toolchain) to use in the context of toolchains-aware Maven plug-ins. This process is done in the project's `pom.xml` file by specifying a vendor and version value. A sample section in the `pom.xml` file is the following:
 
 ```xml
         <plugin>
@@ -92,30 +104,31 @@ Le [plug-in Maven Toolchains](https://maven.apache.org/plugins/maven-toolchains
         </toolchains>
     </configuration>
 </plugin>
+
 ```
 
-Cela entraîne l’utilisation du JDK Oracle, version 11 dans tous les plug-ins Maven compatibles avec les chaînes d’outils.
+This process causes all toolchains-aware Maven plug-ins to use the Oracle JDK, version 11.
 
-Lors de l’utilisation de cette méthode, Maven s’exécute toujours en utilisant le JDK par défaut (Oracle 8) et la variable d’environnement `JAVA_HOME` n’est pas modifiée. Par conséquent, la vérification ou l’application de la version Java par le biais de plug-ins tels que le [plug-in Apache Maven Enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/) ne fonctionne pas et ces plug-ins ne doivent pas être utilisés.
+When using this method, Maven itself still runs using the default JDK (Oracle 8) and the `JAVA_HOME` environment variable is not changed. Therefore, checking or enforcing the Java version through plug-ins like the [Apache Maven Enforcer Plug-in](https://maven.apache.org/enforcer/maven-enforcer-plugin/) does not work and such plug-ins must not be used.
 
-Les combinaisons fournisseur/version actuellement disponibles sont les suivantes :
+The currently available vendor/version combinations are:
 
-| Fournisseur | Version |
+|Vendor|Version|
 |---|---|
-| Oracle | 1.8 |
-| Oracle | 1.11 |
-| Oracle | 11 |
-| dim. | 1.8 |
-| dim. | 1.11 |
-| dim. | 11 |
+| Oracle |1.8|
+| Oracle |1.11|
+| Oracle |11|
+| Sun |1.8|
+| Sun |1.11|
+| Sun |11|
 
 >[!NOTE]
 >
->À compter d’avril 2022, le JDK Oracle sera le JDK par défaut pour le développement et le fonctionnement des applications AEM. Le processus de génération de Cloud Manager passe automatiquement à l’utilisation du JDK Oracle, même si une autre option est explicitement sélectionnée dans la chaîne d’outils Maven. Pour plus d’informations, voir les [notes de mise à jour d’avril](/help/release-notes/2022/2022-4-0.md).
+>Starting April 2022, Oracle JDK is going to be the default JDK for the development and operation of AEM applications. Cloud Manager's build process automatically switches to using Oracle JDK, even if an alternative option is explicitly selected in the Maven toolchain. See the [April release notes](/help/release-notes/2022/2022-4-0.md) for more details. -->
 
 ### Autre version du JDK d’exécution Maven {#alternate-maven}
 
-Il est également possible de sélectionner Oracle 8 ou Oracle 11 en tant que JDK pour l’ensemble de l’exécution de Maven. Contrairement aux options de chaînes d’outils, un autre JDK sera utilisé pour tous les plug-ins, sauf si la configuration des chaînes d’outils est également définie, auquel cas la configuration des chaînes d’outils est toujours appliquée pour les plug-ins Maven compatibles avec les chaînes d’outils. Par conséquent, la vérification et l’application de la version Java à l’aide du [plug-in Apache Maven Enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/) fonctionneront.
+Il est possible de sélectionner Oracle 8 ou Oracle 11 en tant que JDK pour l’ensemble de l’exécution de Maven. Cette approche modifie le JDK utilisé pour tous les plug-ins. Par conséquent, la vérification et l’application de la version Java à l’aide du [plug-in Apache Maven Enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/) fonctionneront.
 
 Pour ce faire, créez un fichier nommé `.cloudmanager/java-version` dans la branche de référentiel Git utilisée par le pipeline. Ce fichier peut avoir le contenu `11` ou `8`. Toute autre valeur est ignorée. Si `11` est spécifié, le système utilise Oracle 11 et définit la variable d’environnement `JAVA_HOME` sur `/usr/lib/jvm/jdk-11.0.22`. Si `8` est spécifié, le système utilise Oracle 8 et définit la variable d’environnement `JAVA_HOME` sur `/usr/lib/jvm/jdk1.8.0_401`.
 
