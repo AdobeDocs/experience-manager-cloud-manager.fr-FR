@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 2025.7.0 de Cloud Manager
 description: En savoir plus sur la version 2025.7.0 de Cloud Manager dans Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 106caded8056a8a667b6c702b573566f9358f401
+source-git-commit: a1f023b8ecc6fcae97832c5f3fad6bb8ae79ced1
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 68%
+source-wordcount: '528'
+ht-degree: 69%
 
 ---
 
@@ -24,7 +24,7 @@ La date de publication de la version 2025.7.0 de [!UICONTROL Cloud Manager] es
 
 <!-- There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
-La prochaine version est prévue le vendredi 7 août 2025.
+La prochaine version est prévue le jeudi 7 août 2025.
 
 <!-- SAVE FOR FUTURE POSSIBLE USE There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
@@ -48,11 +48,11 @@ La prochaine version est prévue le vendredi 7 août 2025.
   Voir la section [Marquer les pipelines favoris](/help/using/managing-pipelines.md#pipeline-favorites).
 
 
-## Programme d’adoption précoce {#beta-program}
+## Programmes Alpha/Beta {#beta-program}
 
-Participez aux programmes alpha et bêta de Cloud Manager pour obtenir un accès anticipé et exclusif aux fonctionnalités à venir avant leur publication générale.
+Participez aux programmes alpha et bêta de Cloud Manager pour obtenir un accès exclusif aux fonctionnalités à venir avant leur publication générale.
 
-Les opportunités suivantes sont actuellement disponibles :
+Les opportunités suivantes sont actuellement disponibles :
 
 
 ### Apportez votre propre Git - avec prise en charge de GitLab et Bitbucket {#gitlab-bitbucket}
