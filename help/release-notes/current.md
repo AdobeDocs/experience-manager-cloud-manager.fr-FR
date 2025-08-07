@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 2025.8.0 de Cloud Manager
 description: En savoir plus sur la version 2025.8.0 de Cloud Manager dans Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: d6f058c3f6dc010f08a5cb75a0fb152b56111e79
+source-git-commit: 73a094f47f518e2782ac96357e1adc4e923a0b63
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 62%
+source-wordcount: '625'
+ht-degree: 73%
 
 ---
 
@@ -57,7 +57,37 @@ Participez aux programmes Beta de Cloud Manager pour obtenir un accès exclusif 
 Les opportunités suivantes sont actuellement disponibles :
 
 
-### Apportez votre propre Git - avec prise en charge de GitLab et Bitbucket {#gitlab-bitbucket}
+### Apporter votre propre Git (BYOG) {#gitlab-bitbucket-azure-vsts}
+
+<!-- BOTH CS & AMS -->
+
+Les clientes et clients peuvent désormais intégrer leurs référentiels Git Azure DevOps dans Cloud Manager, avec la prise en charge des référentiels Azure DevOps modernes et VSTS (Visual Studio Team Services) hérités.
+
+* Pour les utilisateurs et utilisatrices d’Edge Delivery Services, le référentiel intégré peut être utilisé pour synchroniser et déployer le code du site.
+* Pour les utilisateurs et utilisatrices d’AEM as a Cloud Service et d’Adobe Managed Services (AMS), le référentiel peut être lié aux pipelines full stack et front-end.
+
+La prise en charge de types de pipeline supplémentaires et de la validation des demandes d’extraction par le biais de pipelines de qualité du code sera bientôt disponible.
+
+Voir [Ajouter des référentiels externes dans Cloud Manager](/help/managing-code/external-repositories.md).
+
+![Boîte de dialogue Ajouter un référentiel](/help/release-notes/assets/azure-repo.png)
+
+Si vous souhaitez tester cette nouvelle fonctionnalité et faire part de vos commentaires, envoyez un e-mail à [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) à partir de l’adresse e-mail associée à votre Adobe ID. Veillez à inclure la plateforme Git à utiliser et indiquez si vous utilisez une structure de référentiel privée/publique ou d’entreprise.
+
+#### Gérer les jetons d’accès{#manage-access-tokens}
+
+Utilisez **Gérer les jetons d’accès** dans Cloud Manager pour afficher, renommer et supprimer les jetons d’accès associés aux référentiels BYOG externes, tels que GitHub Enterprise, GitLab, Bitbucket et Azure DevOps.
+
+Voir la section [Gérer les jetons d’accès](/help/managing-code/manage-access-tokens.md).
+
+Si vous souhaitez tester cette nouvelle fonctionnalité et faire part de vos commentaires, envoyez un e-mail à [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) à partir de l’adresse e-mail associée à votre Adobe ID.
+
+
+
+
+
+
+
 
 La fonctionnalité **Bring Your Own Git** (BYOG) a été étendue pour inclure la prise en charge des référentiels externes, tels que GitLab et Bitbucket. Cette nouvelle prise en charge s’ajoute à la prise en charge existante des référentiels GitHub privés et d’entreprise. Lorsque vous ajoutez ces nouveaux référentiels, vous pouvez également les lier directement à vos pipelines. Vous pouvez héberger ces référentiels sur des plateformes cloud publiques ou dans votre infrastructure ou cloud privés. Cette intégration élimine également la nécessité d’une synchronisation constante du code avec le référentiel d’Adobe et permet de valider les requêtes d’extraction avant de les fusionner dans une branche principale.
 
