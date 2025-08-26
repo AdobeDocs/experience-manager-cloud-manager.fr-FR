@@ -1,12 +1,13 @@
 ---
 title: À propos d’Experience Hub
 description: En savoir plus sur la page Adobe Experience Hub.
-hide: true
-hidefromtoc: true
-source-git-commit: b64b8529e4c6072c9bcb7438dc2d89098d29115d
+hide: false
+hidefromtoc: false
+exl-id: adc8996f-671a-4018-a195-1212ea662284
+source-git-commit: 2a67253253bb06b888bc0283d07838a6f0779532
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 7%
+source-wordcount: '547'
+ht-degree: 5%
 
 ---
 
@@ -14,9 +15,9 @@ ht-degree: 7%
 
 Experience Hub offre un point de départ centralisé pour la gestion du contenu, des ressources et des sites dans Adobe Experience Manager. Conçu pour offrir une expérience personnalisée, Experience Hub vous permet de naviguer facilement dans l’écosystème AEM en fonction de vos rôles et objectifs. Véritable guide, elle vous fournit des informations clés et vous recommande des actions pour vous aider à atteindre vos objectifs de manière efficace. Grâce à une disposition claire et personnalisée, Experience Hub garantit un accès rapide aux outils essentiels, ce qui permet une expérience rationalisée et efficace de toutes les fonctionnalités d’AEM.
 
-Regardez une présentation rapide de l’espace de travail AEM Experience Hub repensé (1 minute, 27 secondes).
+Regardez une présentation rapide de l’espace de travail AEM Experience Hub repensé (2 minutes, 19 secondes).
 
->[!VIDEO](https://video.tv.adobe.com/v/3463269?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3470957?learn=on)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -27,8 +28,8 @@ Available as a private beta, Experience Hub offers an optimized experience focus
 
    ![Page d&#39;accueil de Adobe Experience Cloud](/help/assets/experience-cloud-experiencemanager.png)
 
-1. Dans le regroupement **Accès rapide**, cliquez sur **Experience Manager**.
-1. Sur la page **Dites-nous ce que vous souhaitez faire**, cliquez sur l’option de votre choix pour qu’Adobe puisse adapter votre expérience.
+1. Dans le regroupement **Accès rapide**, cliquez sur [**Experience Manager**](https://experience.adobe.com).
+1. La première fois que vous y accédez, sur la page **Dites-nous ce que vous souhaitez faire**, cliquez sur l’option de votre choix pour qu’Adobe puisse adapter votre expérience.
 
    Vous pouvez modifier cette préférence à tout moment.
 
@@ -43,9 +44,17 @@ La page Adobe Experience Manager a été actualisée avec une navigation amélio
 * Extension Manager
 * Brand Portal
 
-Ces solutions sont désormais déplacées vers la navigation principale sous **Outils**. En outre, de nouveaux éléments de navigation pour **Sites** et **Assets** permettent d’accéder rapidement aux principales fonctionnalités de Adobe Experience Manager telles qu’Assets, les collections, les sites et les fragments de contenu. Ces fonctionnalités sont disponibles pour l’environnement de production principal auquel vous avez accès.
+>[!IMPORTANT]
+>
+>Les widgets, outils et artefacts affichés dépendent du personnage de l’utilisateur, des droits et du type de déploiement d’AEM (AEM as a Cloud Service ou Managed Services 6.5/6.5 LTS).
+
+Ces solutions sont désormais déplacées vers la navigation principale sous **Outils** ou **Services**. En outre, les nouveaux éléments de navigation permettent d’accéder rapidement aux principales fonctionnalités de Adobe Experience Manager spécifiques aux solutions activées, telles qu’Assets, Sites, Forms, Fragments de contenu, Lancements, etc.
 
 ![Environnements Experience Hub](/help/assets/experience-hub-author-environments.png)
+
+Ces fonctionnalités sont disponibles pour l’environnement de production principal auquel vous avez accès ou vous pouvez sélectionner un environnement spécifique à cibler si vous avez accès à plusieurs instances AEM.
+
+![Environnements de production et d’évaluation](/help/assets/experience-hub-prod-stage.png)
 
 Faisant office de hub central pour Adobe Experience Manager, la page Experience Hub se développe pour proposer des widgets et des actions supplémentaires adaptés à chaque rôle d’utilisateur. Entièrement personnalisable, la page permet de choisir la disposition optimale de votre écran. Les widgets peuvent être filtrés afin que seuls certains soient affichés sur la page principale, offrant ainsi une expérience personnalisée.
 
@@ -55,15 +64,21 @@ Les widgets peuvent également être redimensionnés et repositionnés sur la pa
 
 ![Widgets Experience Hub](/help/assets/experience-hub-widgets.png)
 
-La section **Environnements de création** affiche tous les environnements AEM auxquels vous avez accès, tandis que la section **Récents** fournit une liste des pages récemment visitées et suivies dans les systèmes AEM.
+La section **Environnements de création** affiche tous les environnements AEM qui vous sont accessibles, avec des raccourcis spécifiques pour les solutions et les pages disponibles pour ces environnements, ce qui vous permet également d’épingler des environnements spécifiques que vous souhaitez afficher en haut de la liste.
 
-Les éléments de navigation incluent Assets Browse, qui charge le référentiel de l’environnement de production accessible à l’utilisateur.
+La section **Récents**, illustrée dans l’image ci-dessous, répertorie les pages que vous avez récemment visitées dans AEM. Selon la licence de votre client, le widget peut inclure des éléments tels que le programme, l’exécution de pipeline, Assets, l’éditeur de page et l’éditeur de formulaire.
 
-![éléments de navigation Experience Hub](/help/assets/experience-hub-navigation.png)
+**Raccourcis rapides** dans le coin supérieur gauche de la page, fournissez une liste configurable de raccourcis pour vous aider à démarrer les tâches quotidiennes. La liste est personnalisable et chaque action cible l’environnement AEM sélectionné.
 
-Si aucun environnement de production AEM Cloud Service n’est disponible, les options apparaissent grisées (indisponibles) pour l’utilisateur ou l’utilisatrice.
+![Environnements de création](/help/assets/experience-hub-recents.png)
+
+![Raccourcis Rapides D’Experience Hub](/help/assets/experience-hub-quick-shortcuts.png)
+
+S’il n’existe aucun environnement de production AEM Cloud Service ou Managed Services, les options de sélection apparaissent grisées et indisponibles.
 
 ![Experience Hub sans environnements de production](/help/assets/experience-hub-no-prod-environs.png)
 
+<!--
+## AI Assistant in AEM 6.5
 
-
+For customers who have [completed pre-requisite criteria](/help/ai-assistant-in-aem.md#get-access), the AI Assistant in AEM is available to users of their organization. See [AI Assistant in AEM](/help/ai-assistant-in-aem.md). -->

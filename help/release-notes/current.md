@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 2025.8.0 de Cloud Manager
 description: En savoir plus sur la version 2025.8.0 de Cloud Manager dans Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: b64b8529e4c6072c9bcb7438dc2d89098d29115d
+source-git-commit: b34fe26f8c9a2d59a7df3d03717f302fe4456352
 workflow-type: tm+mt
 source-wordcount: '474'
-ht-degree: 61%
+ht-degree: 63%
 
 ---
 
@@ -24,7 +24,7 @@ La date de publication de la version 2025.8.0 de [!UICONTROL Cloud Manager] es
 
 <!-- There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
-La prochaine version est prévue le vendredi 4 septembre 2025.
+La prochaine version est prévue le 4 septembre 2025.
 
 <!-- SAVE FOR FUTURE POSSIBLE USE There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
@@ -54,14 +54,14 @@ La prochaine version est prévue le vendredi 4 septembre 2025.
   Voir la section [Marquer les pipelines favoris](/help/using/managing-pipelines.md#pipeline-favorites).
 
 
-## Programmes Beta {#beta-program}
+## Programmes bêta {#beta-program}
 
 Participez aux programmes Beta de Cloud Manager pour obtenir un accès exclusif aux fonctionnalités à venir avant leur publication générale.
 
 Les opportunités suivantes sont actuellement disponibles :
 
 
-### Apporter votre propre Git (BYOG) {#gitlab-bitbucket-azure-vsts}
+### Apporter votre propre Git (BYOG) {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 
@@ -88,7 +88,7 @@ Voir la section [Gérer les jetons d’accès](/help/managing-code/manage-access
 
 ## Correctifs {#bug-fixes}
 
-Il n’existe aucun correctif de bogue significatif dans la version Cloud Manager de juillet.
+La version d’août de Cloud Manager ne contient aucun correctif significatif.
 
 <!--
 Known Issues {#known-issues}
