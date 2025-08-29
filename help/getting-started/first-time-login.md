@@ -20,7 +20,7 @@ Une fois que vous avez établi la configuration générale pour [!UICONTROL Clou
 
 ## Se connecter pour la première fois {#logging-in-for-the-first-time}
 
-1. Connectez-vous à Cloud Manager à l’adresse [experiency.adobe.com](https://experience.adobe.com/experiencemanager). Pour en savoir plus, voir [À propos d’Adobe Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
+1. Connectez-vous à Cloud Manager à l’adresse [experiency.adobe.com](https://experience.adobe.com/experiencemanager). Pour en savoir plus, voir [À propos d’Adobe Experience Hub](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/experience-hub/experience-hub)
 1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
 
    ![Cloud Manager dans le panneau latéral gauche d’Experience Manager](/help/getting-started/assets/cloud-manager-experiencemanager.png)
