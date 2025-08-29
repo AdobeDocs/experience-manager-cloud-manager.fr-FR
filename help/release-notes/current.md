@@ -35,7 +35,7 @@ La prochaine version est prévue le 4 septembre 2025.
 
   À partir du 19 août 2025, Adobe commence le déploiement échelonné de la nouvelle Experience Hub auprès de tous les utilisateurs de Adobe Experience Manager.
 
-  Experience Hub est un point de départ unifié qui offre des expériences contextuelles personnalisées pour aider les utilisateurs à atteindre plus rapidement leurs objectifs. Le déploiement se termine le 26 août 2025, date à laquelle il sera disponible pour tous les utilisateurs. Le nouvel Experience Hub est accessible directement sur [experience.adobe.com](https://experience.adobe.com/). Pour en savoir plus, voir [Adobe Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub).
+  Experience Hub est un point de départ unifié qui offre des expériences contextuelles personnalisées pour aider les utilisateurs à atteindre plus rapidement leurs objectifs. Le déploiement se termine le 26 août 2025, date à laquelle il sera disponible pour tous les utilisateurs. Le nouvel Experience Hub est accessible directement sur [experience.adobe.com](https://experience.adobe.com/). Pour en savoir plus, voir [Adobe Experience Hub](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/experience-hub/experience-hub).
 
 * **Pipelines d’évaluation uniquement et de production uniquement**
 
