@@ -1,33 +1,35 @@
 ---
-title: Configuration de la vérification GitHub pour les référentiels privés
+title: Vérifications des demandes d’extraction pour les référentiels privés
 description: Découvrez comment contrôler les pipelines créés automatiquement afin de valider chaque requête d’extraction dans un référentiel privé.
 exl-id: 29c9e487-e196-411a-8cda-6751b0a56066
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '236'
-ht-degree: 100%
+source-git-commit: 1ae6792f8bc628c3530a63004c3d38f215c72778
+workflow-type: tm+mt
+source-wordcount: '237'
+ht-degree: 92%
 
 ---
 
-# Configuration de la vérification GitHub pour les référentiels privés {#github-check-config}
+# Vérifications des demandes d’extraction pour les référentiels privés {#github-check-config}
+
+<!--OLD TITLE THAT I THOUGHT WAS BETTER Check configuration for private repositories -->
 
 Découvrez comment contrôler les pipelines créés automatiquement afin de valider chaque requête d’extraction dans un référentiel privé.
 
-## Configuration des vérifications GitHub {#configuration}
+## Configuration des vérifications de référentiel privé {#configuration}
 
 Lors de l’utilisation de [référentiels privés](private-repositories.md#using), un [pipeline de qualité de code de pile pleine](/help/overview/ci-cd-pipelines.md) est créé automatiquement. Ce pipeline démarre à chaque mise à jour de demande d’extraction.
 
 Vous pouvez contrôler ces vérifications en créant un fichier `.cloudmanager/pr_pipelines.yml` dans la branche par défaut du référentiel privé.
 
 ```yaml
-github:
+pullRequest:
   shouldDeletePreviousComment: false
 pipelines:
   - type: CI_CD
     template:
       programId: 1234
       pipelineId: 456
-    namePrefix: Full Stack Code Quality Pipeline for PR 
+    namePrefix: Full Stack Code Quality Pipeline for PR
     importantMetricsFailureBehavior: CONTINUE
 ```
 

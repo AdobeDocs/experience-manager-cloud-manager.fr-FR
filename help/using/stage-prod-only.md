@@ -2,7 +2,7 @@
 title: Partager des pipelines d’évaluation uniquement et de production uniquement
 description: Découvrez comment séparer les déploiements d’évaluation et de production à l’aide de pipelines dédiés.
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+source-git-commit: 34c0b39d50dd4998cb75cc032d71d24798dee729
 workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 96%
@@ -38,7 +38,7 @@ Ces pipelines dédiés offrent plus de flexibilité, mais tenez compte des infor
 >
 >* Un tel scénario peut entraîner des restaurations de code indésirables.
 >* Adobe vous recommande d’arrêter d’utiliser le pipeline de production couplé standard une fois que vous commencez à utiliser les pipelines dédiés à la production uniquement et à l’évaluation uniquement.
->* Si vous décidez malgré tout d’exécuter les pipelines couplés standard et les pipelines dédiés à l’évaluation/la production uniquement, tenez compte de la réutilisation des artefacts pour éviter les réécritures de code.
+>* Si vous décidez malgré tout d’exécuter les pipelines couplés standard et les pipelines dédiés à l’évaluation/la production uniquement, tenez compte de la réutilisation des artefacts pour éviter les restaurations de code.
 
 ## Création de pipeline {#pipeline-creation}
 
@@ -103,7 +103,7 @@ Un pipeline dédié uniquement à l’évaluation s’exécute presque de la mê
 
 ![Exécution d’un pipeline dédié uniquement à l’évaluation](/help/assets/configure-pipelines/stage-only-pipeline-run.png)
 
-Cliquer sur **Promouvoir la version** vous invite à confirmer l’exécution du pipeline associé dédié uniquement à l’évaluation, normalement ou en [mode d’urgence](#emergency-mode).
+Le fait de cliquer sur **Promouvoir la version** vous invite à confirmer l’exécution du pipeline associé dédié uniquement à l’évaluation, normalement ou en [mode d’urgence](#emergency-mode).
 
 Si aucun pipeline dédié à la production uniquement n’existe, vous devez en créer un.
 

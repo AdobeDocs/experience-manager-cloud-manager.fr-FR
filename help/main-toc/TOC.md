@@ -7,10 +7,10 @@ user-guide-description: Découvrez comment utiliser Cloud Manager pour auto-gé
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 5df4852716a608c7497e93eef030b4b5bd27d42b
+source-git-commit: 1ae6792f8bc628c3530a63004c3d38f215c72778
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 91%
+source-wordcount: '384'
+ht-degree: 89%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 91%
 # Documentation de Cloud Manager {#content}
 
 + [Cloud Manager pour AMS](/help/introduction.md)
-+ [Experience Hub](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/experience-hub/experience-hub)
++ [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
 + Vue d’ensemble {#overview}
    + [Concepts clés](/help/overview/key-concepts.md)
    + [Parcours d’utilisateur ou d’utilisatrice](/help/overview/user-journey.md)
@@ -67,7 +67,7 @@ ht-degree: 91%
    + [Ajout d’un référentiel externe (version bêta privée)](/help/managing-code/external-repositories.md)
    + [Gérer les jetons d’accès (version bêta privée)](/help/managing-code/manage-access-tokens.md)
    + [Prise en charge des sous-modules Git](/help/managing-code/git-submodules.md)
-   + [Configuration de la vérification GitHub](/help/managing-code/github-check-config.md)
+   + [Vérifications des demandes d’extraction pour les référentiels privés](/help/managing-code/github-check-config.md)
    + [Annotations de la vérification GitHub](/help/managing-code/github-annotations.md)
    + [Gestion des versions du projet Maven](/help/managing-code/maven-project-version.md)
    + [Intégration à Git](/help/managing-code/git-integration.md)
@@ -78,6 +78,7 @@ ht-degree: 91%
 + Notes de mise à jour {#release-notes}
    + [En cours](/help/release-notes/current.md)
    + 2025 {#rn-2025}
+      + [2025.8.0](/help/release-notes/2025/2025-8-0.md)
       + [2025.7.0](/help/release-notes/2025/2025-7-0.md)
       + [2025.6.0](/help/release-notes/2025/2025-6-0.md)
       + [2025.5.0](/help/release-notes/2025/2025-5-0.md)
