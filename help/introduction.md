@@ -2,10 +2,10 @@
 title: Présentation de Cloud Manager pour AMS
 description: Commencez ici pour découvrir Cloud Manager pour Adobe Managed Services (AMS) et comment il permet aux entreprises d’auto-gérer Adobe Experience Manager en mode cloud.
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
-workflow-type: ht
-source-wordcount: '1256'
-ht-degree: 100%
+source-git-commit: 8f29a06f63b8dc10cb3d28e2f38da1ead84f32f5
+workflow-type: tm+mt
+source-wordcount: '1250'
+ht-degree: 95%
 
 ---
 
@@ -34,26 +34,23 @@ Commencez ici pour découvrir Cloud Manager pour AMS (Adobe Managed Services)
 Avec Cloud Manager, votre équipe de développement bénéficie des fonctionnalités suivantes :
 
 * Intégration continue/diffusion continue (CI/CD) du code pour réduire le délai de mise sur le marché de plusieurs mois/semaines à quelques jours/heures.
-
 * Inspection du code, test de performance et validation de la sécurité basés sur les bonnes pratiques avant de passer à la production, afin de minimiser les interruptions de production.
-
 * Connectivité de l’API pour compléter les processus DevOps existants.
-
 * La mise à l’échelle automatique détecte intelligemment la nécessité d’une capacité accrue et met automatiquement en ligne plusieurs segments supplémentaires Dispatcher/de publication.
 
 ![Flux CI/CD](/help/assets/screen_shot_2018-05-12at73843pm.png)Le flux du processus CI/CD utilisé dans [!UICONTROL Cloud Manager].
 
 ## Fonctionnalités clés de [!UICONTROL Cloud Manager] {#key-features-in-cloud-manager}
 
-Vous trouverez ci-dessous un aperçu plus détaillé de certaines fonctionnalités clés de Cloud Manager.
+Les sections suivantes mettent en évidence les principales fonctionnalités de Cloud Manager.
 
 ### Interface en libre-service {#self-service-interface}
 
-L’interface d’utilisation de [!UICONTROL Cloud Manager] vous permet de gérer et d’accéder facilement à l’environnement cloud et au pipeline CI/CD pour vos applications Adobe Experience Manager.
+Pour découvrir et commencer à utiliser l’interface d’utilisation de [!UICONTROL Cloud Manager], consultez la rubrique [Première connexion](/help/getting-started/first-time-login.md).
+
+L’interface utilisateur de [!UICONTROL Cloud Manager] permet d’accéder et de gérer facilement l’environnement cloud et le pipeline CI/CD pour vos applications Adobe Experience Manager.
 
 Vous définissez des indicateurs clés de performances (KPI) spécifiques à l’application, tels que le pic de pages vues par minute ou le temps de réponse attendu pour le chargement d’une page. Ces KPI servent de base pour mesurer le succès du déploiement. Les rôles et autorisations des différentes personnes membres de l’équipe peuvent être facilement définis. L’interface en libre-service vous offre un contrôle total. Elle fournit également des liens vers les ressources sur les bonnes pratiques et l’accès à des spécialistes d’Adobe pour obtenir des conseils lorsque vous en avez besoin.
-
-Pour découvrir et commencer à utiliser l’interface d’utilisation de [!UICONTROL Cloud Manager], consultez la rubrique [Première connexion](/help/getting-started/first-time-login.md).
 
 ### Pipeline CI/CD {#ci-cd-pipeline}
 
@@ -105,14 +102,14 @@ Le déploiement bleu/vert est une technique qui réduit les temps d’interrupti
 Lorsque le déploiement bleu/vert est activé, le flux de déploiement diffère du flux de déploiement du service cloud standard.
 
 | Étape | Déploiement bleu/vert | Déploiement standard |
-|---|---|---|
+| --- | --- | --- |
 | 1 | Déploiement vers l’auteur | Déploiement vers l’auteur |
 | 2 | Mise en pause pour le test | - |
 | 3 | Une infrastructure verte est créée | - |
-| 4 | Déploiement vers le niveau de publication/Dispatcher vert | Déploiement vers l’éditeur |
+| 4 | Déploiement vers le niveau Publication verte/Dispatcher | Déploiement vers l’éditeur |
 | 5 | Mise en pause pour le test (jusqu’à 24 heures) | - |
 | 6 | Une infrastructure verte est ajoutée à l’équilibreur de charge de production | - |
-| 7 | L’infrastructure bleue est supprimée de l’équilibreur de charge de production |
+| 7 | L’infrastructure bleue est supprimée de la répartition de charge de production | - |
 | 8 | Suspendre pour la validation finale (jusqu’à 24 heures) | - |
 | 9 | L’infrastructure bleue est automatiquement arrêtée | - |
 | 10 | Fin du pipeline | - |
