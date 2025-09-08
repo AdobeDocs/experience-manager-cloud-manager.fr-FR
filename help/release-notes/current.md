@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 2025.9.0 de Cloud Manager
 description: En savoir plus sur la version 2025.9.0 de Cloud Manager dans Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 68e546c1337122f823d63529ebd68d6966bb132a
+source-git-commit: 24ec1d82f9a700b57cd74c2c83c8d9d00b8bece1
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 75%
+source-wordcount: '376'
+ht-degree: 72%
 
 ---
 
@@ -31,13 +31,13 @@ La prochaine version est prévue le vendredi 2 octobre 2025.
 
 ## Nouveautés {#what-is-new}
 
-* **Ajout de la prise en charge des référentiels privés Azure DevOps**
+* **Ajout de la prise en charge d’Azure DevOps (référentiels privés)**
 
   Les mises à jour de la documentation incluent les étapes de configuration pour apporter votre propre Git avec Azure DevOps et la validation de la demande d’extraction. Voir [Ajout de référentiels externes dans Cloud Manager](/help/managing-code/external-repositories.md).
 
-* **Vérifications des demandes d’extraction pour les référentiels privés**
+* **Apportez votre propre prise en charge Git (BYOG) étendue aux pipelines de configuration (référentiels privés)**
 
-  Cloud Manager prend désormais en charge les pipelines de configuration avec des référentiels privés sur GitHub, Bitbucket, Azure DevOps et GitLab. Voir ![Extraction des vérifications de requête pour les référentiels privés](/help/managing-code/github-check-config.md).
+  Cloud Manager prend désormais en charge les pipelines de configuration avec des référentiels privés sur GitHub, Bitbucket, Azure DevOps et GitLab. Ce soutien accélère encore le cycle de développement. Voir ![Extraction des vérifications de requête pour les référentiels privés](/help/managing-code/github-check-config.md).
 
 ## Programmes bêta {#beta-program}
 
