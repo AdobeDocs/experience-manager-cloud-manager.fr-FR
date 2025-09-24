@@ -2,10 +2,10 @@
 title: Partager des pipelines d’évaluation uniquement et de production uniquement
 description: Découvrez comment séparer les déploiements d’évaluation et de production à l’aide de pipelines dédiés.
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: 34c0b39d50dd4998cb75cc032d71d24798dee729
+source-git-commit: 92237ea156e3921b5dc55cea3abdecee9d26b14b
 workflow-type: tm+mt
 source-wordcount: '917'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 
@@ -103,7 +103,7 @@ Un pipeline dédié uniquement à l’évaluation s’exécute presque de la mê
 
 ![Exécution d’un pipeline dédié uniquement à l’évaluation](/help/assets/configure-pipelines/stage-only-pipeline-run.png)
 
-Le fait de cliquer sur **Promouvoir la version** vous invite à confirmer l’exécution du pipeline associé dédié uniquement à l’évaluation, normalement ou en [mode d’urgence](#emergency-mode).
+Cliquez sur **Promouvoir la création** pour confirmer l&#39;exécution du pipeline en production seule associé, normalement ou en [mode d&#39;urgence](#emergency-mode).
 
 Si aucun pipeline dédié à la production uniquement n’existe, vous devez en créer un.
 
