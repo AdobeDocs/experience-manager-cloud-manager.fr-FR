@@ -66,7 +66,7 @@ Après avoir lancé la mise à jour, vous pouvez surveiller la progression dans 
 
 1. Cliquez sur l’entrée pour afficher la progression détaillée et les mises à jour de statut comme suit :
 
-   ![ Progression de l’installation du pack de services ](/help/using/assets/service-pack-progression.png)
+   ![&#x200B; Progression de l’installation du pack de services &#x200B;](/help/using/assets/service-pack-progression.png)
 
 ### Résolution des problèmes d’installation
 
@@ -93,4 +93,4 @@ Une fois l’installation terminée, votre approbation (ou votre rejet) est néc
    * Pour annuler la mise à jour, cliquez sur **Rejeter**.
 L’installation du pack de services est annulée et aucune modification n’est appliquée.
 
-   ![ Rejet du pack de services ](/help/using/assets/service-pack-reject.png)
+   ![&#x200B; Rejet du pack de services &#x200B;](/help/using/assets/service-pack-reject.png)
