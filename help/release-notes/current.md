@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 2025.10.0 de Cloud Manager
 description: En savoir plus sur la version 2025.10.0 de Cloud Manager dans Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: e203ab018908ec0a47e8d472079843d5db05dce0
+source-git-commit: 8477b55292be4591b679200ff11b976a2da3a7be
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 57%
+source-wordcount: '581'
+ht-degree: 47%
 
 ---
 
@@ -41,7 +41,7 @@ Les opportunités suivantes sont actuellement disponibles :
 
 ### Extensibilité et personnalisation d’Experience Hub {#exp-hub-extensibility}
 
-[Experience Hub](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/experience-hub/experience-hub) sert de point d’entrée à AEM, personnalisé en fonction des besoins de votre entreprise. Informez Adobe de vos extensions d’interface utilisateur AEM existantes afin qu’elles puissent vous aider à les activer dans Experience Hub avec un effort minimal.
+[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub) sert de point d’entrée à AEM, personnalisé en fonction des besoins de votre entreprise. Informez Adobe de vos extensions d’interface utilisateur AEM existantes afin qu’elles puissent vous aider à les activer dans Experience Hub avec un effort minimal.
 
 ![Diagramme du workflow d’extensibilité et de personnalisation d’Experience Hub](/help/release-notes/assets/experience-hub-extensibility-customization.png)
 
@@ -53,7 +53,16 @@ Intéressé par la version bêta ? Envoyez un courrier électronique à l’adre
 
 Un nouveau modèle de version compile uniquement les modules modifiés (plutôt que le référentiel entier) à l’aide de la mise en cache au niveau du module pour réduire les temps de création. Elle s’applique aux pipelines de qualité de code, full stack et intermédiaires uniquement.
 
-Intéressé par la version bêta ? Envoyez [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) par e-mail avec votre ID d’organisation et votre ID de programme Adobe.
+![Boîte de dialogue Modifier le pipeline hors production présentant les deux options de stratégie de création qui sont Création complète et Génération intelligente](/help/release-notes/assets/non-production-pipeline-edit.png) *Boîte de dialogue Modifier le pipeline hors production présentant les deux options de stratégie de création qui sont Création complète et Génération intelligente.*
+
+Dans la boîte de dialogue **Ajouter/Modifier un pipeline**, sous l’onglet **Code Source**, une nouvelle section **Stratégie de build** vous permet de choisir l’une des options de build suivantes :
+
+* **Version complète** — crée tous les modules du référentiel à chaque exécution.
+* **Version intelligente** : crée uniquement les modules qui ont été modifiés depuis la dernière validation, ce qui réduit la durée globale de la création.
+
+Vous contrôlez les pipelines qui utilisent **génération intelligente**. Dans la version bêta, cette option s’affiche uniquement pour les pipelines **Qualité du code** et **Déploiement de développement**.
+
+Intéressé ? Envoyez [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) par e-mail avec votre ID d’organisation et votre ID de programme Adobe.
 
 <!-- You can deactivate incremental builds at the pipeline level by setting the property `CM_BUILD_DISABLE_MODULE_CACHING` to `true` (effective during the `BUILD` step). For how to add pipeline variables, see [Pipeline variables](/help/getting-started/build-environment.md#pipeline-variables). -->
 
