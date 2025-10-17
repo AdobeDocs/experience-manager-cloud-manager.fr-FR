@@ -3,7 +3,7 @@ title: Notes de mise à jour de la version 2025.10.0 de Cloud Manager
 description: En savoir plus sur la version 2025.10.0 de Cloud Manager dans Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 8477b55292be4591b679200ff11b976a2da3a7be
+source-git-commit: f62191a1b9dd67ea1e999e2db0bb05de66bf73f2
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 47%
@@ -41,7 +41,7 @@ Les opportunités suivantes sont actuellement disponibles :
 
 ### Extensibilité et personnalisation d’Experience Hub {#exp-hub-extensibility}
 
-[Experience Hub](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/experience-hub/experience-hub) sert de point d’entrée à AEM, personnalisé en fonction des besoins de votre entreprise. Informez Adobe de vos extensions d’interface utilisateur AEM existantes afin qu’elles puissent vous aider à les activer dans Experience Hub avec un effort minimal.
+[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub) sert de point d’entrée à AEM, personnalisé en fonction des besoins de votre entreprise. Informez Adobe de vos extensions d’interface utilisateur AEM existantes afin qu’elles puissent vous aider à les activer dans Experience Hub avec un effort minimal.
 
 ![Diagramme du workflow d’extensibilité et de personnalisation d’Experience Hub](/help/release-notes/assets/experience-hub-extensibility-customization.png)
 
@@ -53,7 +53,8 @@ Intéressé par la version bêta ? Envoyez un courrier électronique à l’adre
 
 Un nouveau modèle de version compile uniquement les modules modifiés (plutôt que le référentiel entier) à l’aide de la mise en cache au niveau du module pour réduire les temps de création. Elle s’applique aux pipelines de qualité de code, full stack et intermédiaires uniquement.
 
-![Boîte de dialogue Modifier le pipeline hors production présentant les deux options de stratégie de création qui sont Création complète et Génération intelligente](/help/release-notes/assets/non-production-pipeline-edit.png) *Boîte de dialogue Modifier le pipeline hors production présentant les deux options de stratégie de création qui sont Création complète et Génération intelligente.*
+![Boîte de dialogue Modifier le pipeline hors production présentant les deux options de stratégie de création qui sont Création complète et Création intelligente](/help/release-notes/assets/non-production-pipeline-edit.png)
+*Boîte de dialogue Modifier le pipeline hors production présentant les deux options de stratégie de création qui sont Création complète et Création intelligente.*
 
 Dans la boîte de dialogue **Ajouter/Modifier un pipeline**, sous l’onglet **Code Source**, une nouvelle section **Stratégie de build** vous permet de choisir l’une des options de build suivantes :
 
