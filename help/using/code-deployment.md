@@ -2,10 +2,10 @@
 title: Déploiement du code
 description: Découvrez comment déployer votre code et ce qui se passe dans Cloud Manager lors du déploiement.
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '1637'
-ht-degree: 100%
+source-git-commit: b98e1711f1f98f52977dd6cb4cd2bc834d81a360
+workflow-type: tm+mt
+source-wordcount: '1636'
+ht-degree: 98%
 
 ---
 
@@ -107,9 +107,9 @@ Lorsque Cloud Manager se déploie sur des topologies autres que de production, 
    >
    >Il est prévu que 1-1-1 clientes et clients utilisent cette fonctionnalité.
 
-1. Chaque artefact AEM est déployé sur chacune des instances AEM par le biais des API du gestionnaire de packages, avec des dépendances de packages qui déterminent l’ordre de déploiement.
+1. Chaque artefact AEM est déployé sur chacune des instances AEM par le biais des API du gestionnaire de modules, avec des dépendances de packages qui déterminent l’ordre de déploiement.
 
-   * Pour en savoir plus sur l’utilisation des packages pour installer de nouvelles fonctionnalités, transférer du contenu entre des instances et sauvegarder le contenu du référentiel. Voir la section [Gestionnaire de packages](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
+   * Pour en savoir plus sur l’utilisation des packages pour installer de nouvelles fonctionnalités, transférer du contenu entre des instances et sauvegarder le contenu du référentiel. Voir la section [Gestionnaire de modules](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
 
    >[!NOTE]
    >
@@ -120,7 +120,7 @@ Lorsque Cloud Manager se déploie sur des topologies autres que de production, 
    1. Les configurations actuelles sont sauvegardées et copiées vers un emplacement temporaire.
    1. Toutes les configurations sont supprimées, à l’exception des fichiers non-modifiables. Voir la section [Configurations du Dispatcher](/help/getting-started/dispatcher-configurations.md) pour plus d’informations. Cela permet de vider les répertoires pour qu’aucun fichier orphelin ne soit abandonné.
    1. L’artefact est extrait dans le répertoire `httpd`. Les fichiers non modifiables ne sont pas remplacés. Toute modification apportée aux fichiers non modifiables dans votre référentiel Git sera ignorée au moment du déploiement. Ces fichiers sont essentiels à la structure du Dispatcher AMS et ne peuvent pas être modifiés.
-   1. Apache effectue un test de configuration. Si aucune erreur n’est trouvée, le service est rechargé. Si une erreur se produit, les configurations sont restaurées à partir de la sauvegarde, le service est rechargé et l’erreur est signalée à Cloud Manager.
+   1. Apache effectue un test de configuration. Si aucune erreur n’est trouvée, le service est rechargé. Si des erreurs sont détectées, les configurations sont restaurées à partir de la sauvegarde, le service est rechargé et l’erreur est signalée à Cloud Manager.
    1. Chaque chemin spécifié dans la configuration de pipeline est invalidé ou purgé du cache du Dispatcher.
 
    >[!NOTE]
