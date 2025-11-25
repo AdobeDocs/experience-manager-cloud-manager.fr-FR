@@ -1,21 +1,21 @@
 ---
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
-workflow-type: ht
-source-wordcount: '498'
-ht-degree: 100%
+source-git-commit: 23930ee54667561b5f3983056af4406301f28da2
+workflow-type: tm+mt
+source-wordcount: '500'
+ht-degree: 92%
 
 ---
-# Contribution à la documentation d’Adobe Experience Manager Screens
+# Contribution à la documentation de Adobe Experience Manager Cloud Manager
 
-Merci d’avoir choisi de contribuer à la documentation d’Adobe Experience Manager Screens. Adobe accueille favorablement les contributions de l’ensemble de la communauté des lecteurs, des lectrices, des collaborateurs et des collaboratrices d’Adobe.
+Merci d’avoir choisi de contribuer à la documentation de Adobe Experience Manager Cloud Manager. Adobe accueille favorablement les contributions de l’ensemble de la communauté des lecteurs, des lectrices, des collaborateurs et des collaboratrices d’Adobe.
 
 Ce fichier décrit comment contribuer à la documentation ainsi que les instructions à suivre lors de l’apport de vos contributions.
 
-## Code de conduite Open Source d’Adobe
+## Code de conduite open source d’Adobe
 
 Ce projet a adopté le [Code de conduite Adobe Open Source](code-of-conduct.md). En contribuant à la documentation AEM, vous acceptez de respecter ce code de conduite. Signalez tout comportement inacceptable à [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
-## Instructions relatives à la contribution
+## Recommandations pour la contribution
 
 Chez Adobe, bien que toute contribution visant à améliorer la documentation d’AEM soit la bienvenue, nous vous demandons, si possible, de bien vouloir respecter certaines instructions et normes. Pour plus d’informations, consultez les [Instructions relatives à la contribution à la documentation AEM](guidelines.md).
 
@@ -32,7 +32,7 @@ La méthode choisie dépend de votre aisance pour modifier vous-même la documen
 >
 >Les contributions proposées entrent dans le champ d’application des [Conditions d’utilisation d’Adobe](https://www.adobe.com/fr/legal/terms.html).
 
-### Création d’une demande {#create-an-issue}
+### Créer un problème {#create-an-issue}
 
 Vous avez une suggestion, une observation à propos des documents actuels ou une question sur la manière dont un élément est décrit ? Créez ensuite un problème. Les propositions relatives aux problèmes sont également excellentes si vous souhaitez apporter votre contribution, mais que vous n’êtes pas habitué(e) à modifier les documents ou à générer vous-même une demande d’extraction.
 
@@ -44,7 +44,7 @@ Si vous rencontrez un problème et savez exactement comment le résoudre, envisa
 
 Toutes les demandes d’extraction doivent posséder un [contrat de licence de contributeur ou de contributrice (CLA)](https://opensource.adobe.com/cla.html) signé. Le CLA permet d’autoriser Adobe à redistribuer vos contributions dans le cadre du projet. Vous n’avez besoin de soumettre un CLA Adobe qu’une seule fois. Par conséquent, si vous l’avez déjà soumis, vous n’avez rien à faire.
 
-### Présentation rapide en vidéo
+### Présentation rapide des vidéos
 
 Regardez la vidéo suivante pour un aperçu rapide de la création de problèmes et de demandes d’extraction.
 
@@ -58,4 +58,4 @@ Adobe accueille avec enthousiasme toute contribution et examine votre contributi
 
 ## Informations supplémentaires
 
-Pour plus d’informations sur l’utilisation de la plateforme de création GitHub, consultez le [Guide du contributeur d’Adobe Docs](https://experienceleague.adobe.com/fr/docs/contributor/contributor-guide/introduction).
+Pour plus d’informations sur l’utilisation de la plateforme de création GitHub, consultez le [Guide des contributeurs et contributrices à la documentation d’Adobe](https://experienceleague.adobe.com/fr/docs/contributor/contributor-guide/introduction).

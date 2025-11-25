@@ -1,8 +1,8 @@
 ---
-source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+source-git-commit: d8380bf56891af7ce3fe833e209ae8663e4bc6fe
 workflow-type: tm+mt
 source-wordcount: '713'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 # Instructions relatives à la contribution à la documentation d’Adobe Experience Manager
@@ -27,13 +27,13 @@ Les contributions qui ne satisfont pas à ces normes peuvent être rejetées.
 
 La documentation d’AEM couvre les cas d’utilisation standard. Les cas d’utilisation au-delà de la portée de l’installation et de l’utilisation standard du produit ne font pas partie de la documentation AEM.
 
-### En général, Adobe ne documente pas les bugs ni leurs solutions de contournement.
+### Adobe ne documente généralement pas les bogues ou leurs solutions de contournement
 
 La documentation d’AEM couvre les cas d’utilisation standard. Pour cette raison, les bugs, les effets qu’ils causent et leurs solutions de contournement ne sont pas documentés.
 
 Les exceptions à cette règle s’appliquent aux notes de mise à jour dans lesquelles les problèmes connus peuvent être répertoriés avec les solutions possibles approuvées par la gestion des produits.
 
-### Les contributions à la documentation ne sont pas destinées à répondre aux questions techniques.
+### Les contributions à la documentation ne sont pas destinées à répondre aux questions techniques
 
 Toute contribution susceptible d’améliorer la documentation AEM est la bienvenue. Toutefois, les commentaires, les problèmes et les demandes d’extraction sont destinés uniquement à être des *contributions*. Ils n’ont pas pour but de répondre à vos questions sur l’utilisation et l’implémentation d’AEM ou la résolution de problèmes techniques.
 
@@ -41,7 +41,7 @@ Vous pouvez poser toute question relative à l’utilisation d’AEM ou à des e
 
 ***Les contributions à la documentation d’AEM ne remplacent pas l’assistance clientèle Adobe***, et toute contribution de ce type qui recherche des réponses aux questions liées au support technique sera refusée.
 
-### Les contributions doivent clairement référencer les pages de documentation concernées.
+### Les contributions doivent clairement faire référence aux pages de documentation affectées
 
 Si vous créez une demande pour suggérer des améliorations à la documentation, vous devez inclure des liens vers les pages concernées. Si vous créez un problème à l’aide du lien **Modifier cette page** sur une page de documentation, le problème est créé automatiquement avec un lien vers la page.
 
