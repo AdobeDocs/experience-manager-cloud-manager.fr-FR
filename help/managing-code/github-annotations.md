@@ -2,10 +2,10 @@
 title: Annotations de la vérification GitHub
 description: Découvrez comment les vérifications GitHub annotent les requêtes d’extraction de vos référentiels privés afin de vous fournir des commentaires utiles.
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
-source-git-commit: 6f5d51ef59aef831574bd55cee6b12a29e3d70d2
-workflow-type: ht
-source-wordcount: '251'
-ht-degree: 100%
+source-git-commit: 75baacd1fd6f36ca1d6ea5c1993516569ab6ef47
+workflow-type: tm+mt
+source-wordcount: '250'
+ht-degree: 92%
 
 ---
 
@@ -16,7 +16,7 @@ Découvrez comment les vérifications GitHub annotent les requêtes d’extracti
 
 ## Vue d’ensemble {#overview}
 
-Si vous utilisez des [référentiels privés](private-repositories.md) pour votre programme Cloud Manager, les vérifications dans GitHub sont automatiquement exécutées pour chaque requête d’extraction. Ces vérifications sont annotées avec des informations utiles pour vous aider à comprendre les problèmes liés à votre code aussi rapidement que possible.
+Si vous utilisez des [référentiels privés](private-repositories.md) pour votre programme Cloud Manager, consigne automatiquement l’exécution GitHub pour chaque demande d’extraction. Ces vérifications sont annotées avec des informations utiles pour vous aider à comprendre les problèmes liés à votre code aussi rapidement que possible.
 
 ![Exemple d’annotations de vérification GitHub](assets/github-check-annotations.png)
 

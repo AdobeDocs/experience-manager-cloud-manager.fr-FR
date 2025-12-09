@@ -2,10 +2,10 @@
 title: Concepts clés
 description: Comme tous les outils puissants, Cloud Manager englobe plusieurs concepts et termes. Ce document résume les éléments les plus importants à connaître lorsque vous commencez à utiliser Cloud Manager.
 exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
-workflow-type: ht
+source-git-commit: 75baacd1fd6f36ca1d6ea5c1993516569ab6ef47
+workflow-type: tm+mt
 source-wordcount: '414'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -42,7 +42,7 @@ Une instance est un serveur virtuel spécifique qui exécute la [solution](#solu
 
 ## Organisation {#organization}
 
-Une organisation est un concept d’Adobe représentant un client d’entreprise. Une société peut être constituée de plusieurs organisations en fonction de la configuration initiale du système Identity Management (IMS) d’Adobe.
+Une organisation est un concept d’Adobe représentant un client d’entreprise. Une société peut posséder plusieurs organisations en fonction de la configuration initiale du système Identity Management (IMS) d’Adobe.
 
 ## Pipeline {#pipeline}
 
