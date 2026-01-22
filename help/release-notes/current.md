@@ -3,7 +3,7 @@ title: Notes de mise à jour de la version 2026.1.0 de Cloud Manager
 description: En savoir plus sur la version 2026.1.0 de Cloud Manager dans Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 19b8efeab20b07bdb71595fbff979ea11d8801c0
+source-git-commit: 6279792f05ec04c82634d255dad7264f6d0cef64
 workflow-type: tm+mt
 source-wordcount: '660'
 ht-degree: 64%
@@ -37,7 +37,7 @@ La prochaine version est prévue le vendredi 5 février 2026.
   ![Option Afficher/Modifier les variables dans le menu déroulant d’un pipeline sélectionné](/help/release-notes/assets/view-edit-variables-option.png)
   *Option Afficher/Modifier les variables dans le menu déroulant d’un pipeline sélectionné.*
 
-  ![Boîte de dialogue Configuration des variables](/help/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*Boîte de dialogue Configuration des variables.
+  ![Boîte de dialogue Configuration des variables ](/help/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*Boîte de dialogue Configuration des variables.*
 
 * **Stabilité, performances et fiabilité améliorées**
 
@@ -52,7 +52,7 @@ Les opportunités suivantes sont actuellement disponibles :
 
 ### Extensibilité et personnalisation d’Experience Hub {#exp-hub-extensibility}
 
-[Experience Hub](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/experience-hub/experience-hub) sert de point d’entrée à AEM, personnalisé en fonction des besoins de votre entreprise. Informez Adobe de vos extensions de l’interface d’utilisation AEM existantes afin que l’on puisse vous aider à les activer dans Experience Hub sans difficulté.
+[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub) sert de point d’entrée à AEM, personnalisé en fonction des besoins de votre entreprise. Informez Adobe de vos extensions de l’interface d’utilisation AEM existantes afin que l’on puisse vous aider à les activer dans Experience Hub sans difficulté.
 
 ![Diagramme du workflow d’extensibilité et de personnalisation d’Experience Hub](/help/release-notes/assets/experience-hub-extensibility-customization.png)
 
