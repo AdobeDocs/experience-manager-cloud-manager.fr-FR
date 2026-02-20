@@ -7,10 +7,10 @@ user-guide-description: Découvrez comment utiliser Cloud Manager pour auto-gé
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 19b8efeab20b07bdb71595fbff979ea11d8801c0
+source-git-commit: 28841719e820e47577b411a4034ebc7a8e1bb556
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 89%
+source-wordcount: '390'
+ht-degree: 90%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 89%
 # Documentation de Cloud Manager {#content}
 
 + [Cloud Manager pour AMS](/help/introduction.md)
-+ [Experience Hub](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/experience-hub/experience-hub)
++ [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
 + Vue d’ensemble {#overview}
    + [Concepts clés](/help/overview/key-concepts.md)
    + [Parcours d’utilisateur ou d’utilisatrice](/help/overview/user-journey.md)
@@ -64,7 +64,7 @@ ht-degree: 89%
    + [Informations d’accès au référentiel](/help/managing-code/accessing-repositories.md)
    + [Ajout d’un référentiel Adobe](/help/managing-code/adobe-repositories.md)
    + [Ajout d’un référentiel privé](/help/managing-code/private-repositories.md)
-   + [Ajout d’un référentiel externe (version bêta privée)](/help/managing-code/external-repositories.md)
+   + [Ajouter un référentiel externe](/help/managing-code/external-repositories.md)
    + [Gérer les jetons d’accès (version bêta privée)](/help/managing-code/manage-access-tokens.md)
    + [Prise en charge des sous-modules Git](/help/managing-code/git-submodules.md)
    + [Vérifications des demandes de tirage pour les référentiels privés](/help/managing-code/github-check-config.md)
