@@ -7,10 +7,10 @@ user-guide-description: Découvrez comment utiliser Cloud Manager pour auto-gé
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 8ceaefebdddefb508a4c296c00f053e6b4dfb248
+source-git-commit: 77f5000f0a237dc82e183eb074eddb23e3a2eb44
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 91%
+source-wordcount: '334'
+ht-degree: 87%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 91%
 # Documentation de Cloud Manager {#content}
 
 + [Cloud Manager pour AMS](/help/introduction.md)
-+ [Experience Hub](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/experience-hub/experience-hub)
++ [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
 + Vue d’ensemble {#overview}
    + [Concepts clés](/help/overview/key-concepts.md)
    + [Parcours d’utilisateur ou d’utilisatrice](/help/overview/user-journey.md)
@@ -54,21 +54,21 @@ ht-degree: 91%
    + [Gestion des environnements](/help/using/managing-environments.md)
    + [Surveillance des environnements](/help/using/monitoring-environments.md)
    + [Mises à jour du pack de services pour les environnements de développement (version bêta privée)](/help/using/service-packs-environments.md)
-   + [API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
-   + [CLI Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
+   + [API CLOUD MANAGER](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
+   + [CLOUD MANAGER CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
    + [Notifications](/help/using/notifications.md)
    + [Règles de qualité du code personnalisé](/help/using/custom-code-quality-rules.md)
    + [Copie de contenu pour la cohérence de l’environnement](/help/using/content-copy.md)
 + Gérer le code {#managing-code}
    + [Gestion des référentiels dans Cloud Manager](/help/managing-code/managing-repositories.md)
    + [Informations d’accès au référentiel](/help/managing-code/accessing-repositories.md)
-   + [Ajout d’un référentiel Adobe](/help/managing-code/adobe-repositories.md)
+   + [Ajouter un référentiel Adobe](/help/managing-code/adobe-repositories.md)
    + [Ajout d’un référentiel privé](/help/managing-code/private-repositories.md)
    + [Ajouter un référentiel externe](/help/managing-code/external-repositories.md)
    + [Gérer les jetons d’accès](/help/managing-code/manage-access-tokens.md)
    + [Prise en charge des sous-modules Git](/help/managing-code/git-submodules.md)
    + [Vérifications des demandes de tirage pour les référentiels privés](/help/managing-code/github-check-config.md)
-   + [Annotations de la vérification GitHub](/help/managing-code/github-annotations.md)
+   + [Annotations du contrôle GitHub](/help/managing-code/github-annotations.md)
    + [Gestion des versions du projet Maven](/help/managing-code/maven-project-version.md)
    + [Intégration à Git](/help/managing-code/git-integration.md)
    + [Utilisation de plusieurs référentiels Git](/help/managing-code/multiple-git-repos.md)
@@ -77,6 +77,9 @@ ht-degree: 91%
    + [Évaluation](/help/product-update-wizard/evaluation.md)
 + Notes de mise à jour {#release-notes}
    + [En cours](/help/release-notes/current.md)
+   + 2026 {#rn-2026}
+      + [2026.2.0](/help/release-notes/2026/2026-2-0.md)
+      + [2026.1.0](/help/release-notes/2026/2026-1-0.md)
    + 2025 {#rn-2025}
       + [2025.12.0](/help/release-notes/2025/2025-12-0.md)
       + [2025.11.0](/help/release-notes/2025/2025-11-0.md)
