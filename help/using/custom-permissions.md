@@ -2,10 +2,10 @@
 title: Autorisations personnalisées
 description: Découvrez comment utiliser des autorisations personnalisées pour créer des profils d’autorisation personnalisés avec des autorisations configurables afin de restreindre l’accès aux programmes, aux pipelines et aux environnements pour les utilisateurs et utilisatrices de Cloud Manager.
 exl-id: a81eda9f-aa89-40ea-8e4c-52367a0a6aba
-source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+source-git-commit: ee49b0732fdb870c4f768764aa75b240fd101b59
 workflow-type: tm+mt
-source-wordcount: '1373'
-ht-degree: 98%
+source-wordcount: '1391'
+ht-degree: 97%
 
 ---
 
@@ -153,7 +153,7 @@ Les éléments d’autorisation se rapportent à la portée dans laquelle les au
 
 | Type d’élément d’autorisation | Exemple | Description |
 | --- | --- | --- |
-| Organisation | Organisation:entrepriseA | Toutes les ressources applicables d’une organisation. Une ressource peut être un programme, un environnement ou un pipeline. Si l’utilisateur ou l’utilisatrice ajoute une organisation pour n’importe quelle autorisation, toutes les nouvelles ressources de cette organisation auront également cette autorisation. |
+| Organisation | organisation :companyA | Toutes les ressources applicables d’une organisation. Une ressource peut être un programme, un environnement ou un pipeline. Si l’utilisateur ou l’utilisatrice ajoute une organisation pour n’importe quelle autorisation, toutes les nouvelles ressources de cette organisation auront également cette autorisation. |
 | Programme | Programme A | Toutes les ressources applicables d’un programme. |
 | Environnement | Programme A : environnement | Applicable dans un environnement spécifique. |
 | Pipeline | Programme A : pipeline | Applicable sur un pipeline spécifique. |
@@ -163,7 +163,7 @@ Les éléments d’autorisation se rapportent à la portée dans laquelle les au
 Gardez à l’esprit les limites suivantes lorsque vous utilisez des autorisations personnalisées :
 
 * Un [ensemble limité d’autorisations est disponible](#configurable-permissions) pour créer des profils personnalisés.
-* Les ressources telles que le programme, l’environnement, le pipeline, etc. créées dans Cloud Manager peuvent prendre jusqu’à deux minutes pour s’afficher dans Admin Console pour la configuration des autorisations.
+* Les ressources telles que le programme, l’environnement, le pipeline, etc. créées dans Cloud Manager peuvent prendre deux minutes pour s’afficher dans Admin Console pour la configuration des autorisations.
 * Dans de rares cas où le service d’autorisations personnalisées ne répond pas, les profils prédéfinis sont toujours disponibles et les utilisateurs et utilisatrices des profils prédéfinis disposent toujours d’un accès approprié.
 
 ## Questions fréquentes {#faq}

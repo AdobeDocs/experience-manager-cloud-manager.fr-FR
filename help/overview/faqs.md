@@ -2,9 +2,9 @@
 title: Questions fréquentes relatives à Cloud Manager
 description: Découvrez les réponses aux questions les plus fréquemment posées concernant Cloud Manager pour les clientes et clients AMS.
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
-source-git-commit: e7e9844b5f06552fc2104584c63935dee7a9fa89
+source-git-commit: ee49b0732fdb870c4f768764aa75b240fd101b59
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '762'
 ht-degree: 100%
 
 ---
@@ -20,7 +20,8 @@ Ce document répond aux questions les plus fréquemment posées concernant Cloud
 Yes. You need to add the `maven-toolchains-plugin` with the correct settings for Java 11.
 
 * This process is documented [here](/help/getting-started/using-the-wizard.md).
-* For an example, see the [WKND sample project code](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75). -->
+* For an example, see the [WKND sample project code](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75). 
+-->
 
 ## Ma version échoue et affiche une erreur concernant maven-scr-plugin, après le passage de Java 8 à Java 11. Que puis-je faire ? {#maven-src-plugin}
 
@@ -79,11 +80,11 @@ Pour le contrôle de version personnalisé dans les déploiements d’évaluatio
 
 Cloud Manager ajoute automatiquement sa version aux versions d’évaluation et de production et crée une branche Git. Aucune configuration spécifique n’est nécessaire. Si vous ne définissez pas de version Maven comme décrit précédemment, le déploiement s’effectue quand même et une version est automatiquement définie.
 
-## Ma build Maven échoue lors des déploiements de Cloud Manager, mais elle est pourtant créée localement sans la moindre erreur. Quel est le problème ? {#maven-build-fail}
+## Ma build Maven échoue lors des déploiements de Cloud Manager, mais elle est pourtant créée localement sans la moindre erreur. Qu’est-ce qui ne va pas ? {#maven-build-fail}
 
 Consultez [Ressource Git](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md) pour plus de détails.
 
-## Je ne parviens pas à définir une variable à l’aide d’une commande AIO. Que puis-je faire ? {#set-variable}
+## Je ne parviens pas à définir une variable à l’aide d’une commande aio. Que puis-je faire ? {#set-variable}
 
 Il se peut que vous receviez une erreur 403, comme celle qui suit, lorsque vous tentez de répertorier ou de définir des variables de pipeline par le biais de commandes `aio`.
 

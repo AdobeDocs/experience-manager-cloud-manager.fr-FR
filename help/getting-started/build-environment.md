@@ -2,10 +2,10 @@
 title: Environnement de création
 description: Découvrez l’environnement de création spécialisé dans lequel les utilisateurs et utilisatrices de Cloud Manager peuvent créer et tester votre code.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: e9f3ac70735a95a15b1f63cf40496672162de777
+source-git-commit: ee49b0732fdb870c4f768764aa75b240fd101b59
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 83%
+source-wordcount: '1243'
+ht-degree: 81%
 
 ---
 
@@ -41,7 +41,7 @@ Les environnements de création de Cloud Manager possèdent les attributs suiva
 * Node.js 18 est disponible pour les [pipelines front-end](/help/overview/ci-cd-pipelines.md).
 
 >[!IMPORTANT]
->La prise en charge des chaînes d’outils Maven a été supprimée à partir de la version Cloud Manager 2025.06.0. La sélection du JDK est désormais prise en charge uniquement via `.cloudmanager/java-version`. Pour plus d’informations, voir [&#x200B; Utilisation d’une version Java spécifique &#x200B;](#using-java-version).
+>La prise en charge des chaînes d’outils Maven a été supprimée à partir de la version Cloud Manager 2025.06.0. La sélection du JDK est désormais prise en charge uniquement via `.cloudmanager/java-version`. Pour plus d’informations, voir [ Utilisation d’une version Java spécifique ](#using-java-version).
 
 >[!NOTE]
 >
@@ -57,7 +57,7 @@ Les environnements de création de Cloud Manager possèdent les attributs suiva
 
 ## Référentiels Maven HTTPS {#https-maven}
 
-Cloud Manager [version 2023.10.0](/help/release-notes/2023/2023-10-0.md) a commencé une mise à jour continue de l’environnement de création (achevée avec la version 2023.12.0), qui incluait une mise à jour vers Maven 3.8.8. L’amélioration de la sécurité visant à atténuer les vulnérabilités potentielles a constitué un changement significatif introduit dans Maven 3.8.1. Plus précisément, Maven désactive désormais par défaut tous les miroirs `http://*` non sécurisés, comme indiqué dans les [Notes de mise à jour de Maven](https://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291).
+Cloud Manager [2023.10.0](/help/release-notes/2023/2023-10-0.md) a commencé une mise à jour progressive de l’environnement de création (achevée avec la version 2023.12.0), qui incluait une mise à jour de Maven 3.8.8. Un changement significatif introduit dans Maven 3.8.1 a été une amélioration de la sécurité visant à atténuer les vulnérabilités potentielles. Plus précisément, Maven désactive désormais par défaut tous les miroirs `http://*` non sécurisés, comme indiqué dans les [Notes de mise à jour de Maven](https://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291).
 
 Suite à cette amélioration de la sécurité, certaines personnes peuvent rencontrer des problèmes lors de l’étape de création, en particulier lors du téléchargement d’artefacts à partir de référentiels Maven qui utilisent des connexions HTTP non sécurisées.
 
@@ -74,11 +74,12 @@ Par défaut, les projets créés par le processus de création Cloud Manager ut
 >**Conseils de migration :**
 >
 >1. Supprimez les chaînes d&#39;outils en supprimant toute entrée de `org.apache.maven.plugins:maven-toolchains-plugin` et tout `toolchains.xml` validé dans votre contrôle de code source.
->1. Sélectionnez un JDK avec `.cloudmanager/java-version`(21, 17 ou 11), comme décrit dans la section [&#x200B; Autre version du JDK d’exécution Maven &#x200B;](#alternate-maven).
+>1. Sélectionnez un JDK avec `.cloudmanager/java-version`(21, 17 ou 11), comme décrit dans la section [ Autre version du JDK d’exécution Maven ](#alternate-maven).
 >1. Adobe recommande d’effacer le cache de build de Cloud Manager ou de déclencher une nouvelle exécution de pipeline.
 >
 
-<!--DEPRECATED 
+<!--
+DEPRECATED 
 ### Maven Toolchains {#maven-toolchains}
 
 The [Maven Toolchains plug-in](https://maven.apache.org/plugins/maven-toolchains-plugin/) lets projects select a specific JDK (or toolchain) to use in the context of toolchains-aware Maven plug-ins. This process is done in the project's `pom.xml` file by specifying a vendor and version value. A sample section in the `pom.xml` file is the following:
@@ -124,7 +125,8 @@ The currently available vendor/version combinations are:
 
 >[!NOTE]
 >
->Starting April 2022, Oracle JDK is going to be the default JDK for the development and operation of AEM applications. Cloud Manager's build process automatically switches to using Oracle JDK, even if an alternative option is explicitly selected in the Maven toolchain. See the [April release notes](/help/release-notes/2022/2022-4-0.md) for more details. -->
+>Starting April 2022, Oracle JDK is going to be the default JDK for the development and operation of AEM applications. Cloud Manager's build process automatically switches to using Oracle JDK, even if an alternative option is explicitly selected in the Maven toolchain. See the [April release notes](/help/release-notes/2022/2022-4-0.md) for more details.
+-->
 
 ### Autre version du JDK d’exécution Maven {#alternate-maven}
 

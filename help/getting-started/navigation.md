@@ -2,9 +2,9 @@
 title: Navigation dans l’interface d’utilisation de Cloud Manager
 description: Découvrez l’organisation de l’interface d’utilisation de Cloud Manager et comment gérer vos programmes et vos environnements.
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: b98e1711f1f98f52977dd6cb4cd2bc834d81a360
+source-git-commit: ee49b0732fdb870c4f768764aa75b240fd101b59
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1657'
 ht-degree: 52%
 
 ---
@@ -29,11 +29,11 @@ La console **Mes programmes** donne un aperçu de tous les programmes auxquels v
 
 |   | Aire | Description |
 | --- | --- | --- |
-| 1 | [&#x200B; Barres d’outils &#x200B;](#toolbars-my-programs-toolbars) | À utiliser pour la sélection d’organisations, les alertes et les paramètres de compte. |
+| 1 | [ Barres d’outils ](#toolbars-my-programs-toolbars) | À utiliser pour la sélection d’organisations, les alertes et les paramètres de compte. |
 | 2 | Onglet du panneau latéral gauche | Différents onglets vous permettent d’activer/désactiver l’affichage actuel de vos programmes, notamment <br><ul><li>**Experience Manager** ouvre la page d’accueil de vos différentes solutions AEM</li><li>**Tous les programmes** qui affichent tous les programmes disponibles.</li><li>**Licence** ouvre le tableau de bord des licences. Le tableau de bord des licences s’applique uniquement aux *programmes AEM as a Cloud Service* (AEMaaCS), et non aux programmes Adobe Managed Services tels qu’AEM 6.5 et AEM 6.5 LTS. Pour déterminer le type de service de votre programme (AEMaaCS ou AMS), consultez la section [Cartes de programme](#program-cards) de cet article. Par défaut, les onglets sont fermés et peuvent être affichés à l’aide du menu déroulant ![icône Afficher le menu, hamburger](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) situé sur le côté gauche de l’en-tête de [Cloud Manager](#cloud-manager-header).</li></ol> |
-| 3 | [Mes programmes](#my-programs-section) | Répertorie tous les programmes disponibles que vous pouvez sélectionner.<br>Voir [Programmes et types de programmes](/help/getting-started/program-setup.md) pour plus d’informations sur les programmes. |
+| 3 | [Mes programmes](#my-programs-section) | Répertorie tous les programmes disponibles que vous pouvez sélectionner.<br>Consultez [Programmes et types de programmes](/help/getting-started/program-setup.md) pour plus d’informations sur les programmes. |
 | 4 | [Appels à l’action et statistiques](#cta-statistics) | Donne un aperçu de votre activité récente. |
-| 5 | [Liens rapides &#x200B;](#quick-links) | Accès rapide aux ressources associées. |
+| 5 | [Liens rapides](#quick-links) | Accès rapide aux ressources associées. |
 
 
 ### Barres d’outils {#my-programs-toolbars}
@@ -48,15 +48,15 @@ Le premier est l’en-tête de Cloud Manager. L’en-tête est persistant lorsq
 
 | Aire | Description |
 | --- | --- |
-| ![Afficher l&#39;icône du menu, hamburger](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) | Un menu déroulant qui permet d’accéder à des onglets pour des parties spécifiques d’un programme individuel.<br>Pour déterminer le type de service de votre programme (AMS ou AEMaaCS), reportez-vous à la section [Cartes de programme](#program-cards) de ce document. |
-| ![Icône rouge et blanche Adobe &#x200B;](/help/getting-started/assets/AdobeLogoWhiteOnRed.svg) Cloud Manager | Cliquez pour ouvrir la console **Mes programmes** de Cloud Manager, où que vous soyez dans Cloud Manager. |
-| *`Name of selected organization`* | Le sélecteur d’organisation affiche l’organisation dans laquelle vous êtes actuellement connecté (dans cet exemple, *Interne Foundation*). Cliquez pour passer à une autre organisation si votre Adobe ID est associé à plusieurs organisations. |
-| ![Icône Commentaires](/help/getting-started/assets/AppComment.svg) Commentaires | Cliquez pour fournir des commentaires à Adobe à propos de Cloud Manager. |
-| ![Icône de l’assistant AI](/help/getting-started/assets/AIChat.svg) | L’assistant d’IA offre une interface conversationnelle conçue pour rationaliser la recherche de réponses à vos requêtes liées à AEM. Voir [Assistant IA](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/ai-in-aem/ai-assistant/ai-assistant-in-aem#) |
+| ![Afficher l&#39;icône du menu, hamburger](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) | Menu déroulant permettant d&#39;accéder à des onglets pour des parties spécifiques d&#39;un programme individuel.<br>Pour déterminer le type de service de votre programme (AMS ou AEMaaCS), consultez la [section Cartes de programme](#program-cards) de ce document. |
+| ![Icône rouge et blanc Adobe](/help/getting-started/assets/AdobeLogoWhiteOnRed.svg) Cloud Manager | Cliquez pour ouvrir la console **Mes programmes** de Cloud Manager, où que vous soyez dans Cloud Manager. |
+| *`Name of selected organization`* | Le sélecteur d&#39;organisation affiche l&#39;organisation à laquelle vous êtes actuellement connecté (dans cet exemple, *Foundation Internal*). Cliquez pour passer à une autre organisation si votre Adobe ID est associé à plusieurs organisations. |
+| Icône ![Retour](/help/getting-started/assets/AppComment.svg) Retour | Cliquez pour fournir des commentaires à l’Adobe sur Cloud Manager. |
+| Icône ![Assistant IA](/help/getting-started/assets/AIChat.svg) | L’assistant AI offre une interface conversationnelle conçue pour simplifier la recherche de réponses à vos questions AEM. Voir [Assistant IA](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/ai-in-aem/ai-assistant/ai-assistant-in-aem#) |
 | ![Icône d’aide](https://spectrum.adobe.com/static/icons/workflow_18/Smock_HelpOutline_18_N.svg) | Cliquez pour fournir un accès rapide aux ressources d’apprentissage et de support. |
-| ![Icône de cloche blanche](/help/getting-started/assets/Bell.svg) | Cliquez pour afficher le nombre de [notifications](/help/using/notifications.md) incomplètes actuellement attribuées. |
-| ![Icône Applications](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) | Cliquez pour passer rapidement de la page d’accueil d’AEM aux solutions AEM |
-| *`Dynamic Account icon`* | Cliquez sur la photo de l’utilisateur pour accéder à vos **Paramètres du compte** et **Paramètres du programme** ou pour vous déconnecter.<br>Si vous choisissez de ne pas ajouter d’image d’utilisateur, une icône est attribuée de manière aléatoire (comme illustré dans l’image de la barre d’outils ci-dessus). |
+| ![Icône en forme de cloche blanche](/help/getting-started/assets/Bell.svg) | Cliquez pour afficher le nombre de [notifications](/help/using/notifications.md) incomplètes actuellement attribuées |
+| Icône ![Applications](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) | Cliquez pour passer rapidement de la page d’accueil d’AEM aux solutions AEM. |
+| *`Dynamic Account icon`* | Cliquez sur votre photo d&#39;utilisateur pour accéder à vos **paramètres de compte** et à vos **paramètres de programme**, ou pour vous déconnecter.<br>Si vous choisissez de ne pas ajouter de photo d&#39;utilisateur, une icône est attribuée de manière aléatoire (comme illustré dans l&#39;image de la barre d&#39;outils ci-dessus). |
 
 <!--
 1. The ![Show menu icon, hamburger](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) icon on the left side of the header is  
@@ -68,19 +68,20 @@ Le premier est l’en-tête de Cloud Manager. L’en-tête est persistant lorsq
 1. Clicking the solutions switcher lets you quickly jump to other Experience Cloud solutions.
 1. The Help icon provides quick access to learning and support resources.
 1. The notifications icon is badged with the number of currently assigned incomplete [notifications](/help/using/notifications.md)
-1. Select the icon representing your user to access your user settings. If you do not select a user picture, an icon is randomly assigned. -->
+1. Select the icon representing your user to access your user settings. If you do not select a user picture, an icon is randomly assigned. 
+-->
 
 #### Barre d’outils du programme {#program-toolbar}
 
 La barre d’outils des programmes fournit des liens pour basculer entre les programmes Cloud Manager et des actions contextuelles.
 
-Barre d&#39;outils du programme Cloud Manager ![](/help/getting-started/assets/cloud-manager-programs-toolbar.png)
+![Barre d&#39;outils du programme Cloud Manager](/help/getting-started/assets/cloud-manager-programs-toolbar.png)
 
 |   | Aire | Description |
 | --- | --- | --- |
-| 1 | Mes programmes | Cliquez pour ouvrir une liste déroulante dans laquelle vous pouvez choisir d’ajouter un programme, de sélectionner d’autres programmes existants ou de revenir à la page d’accueil d’Experience Manager. |
-| 2 | ![Icône Infos](/help/getting-started/assets/Info.svg) Prise en main | Cliquez sur pour accéder au [parcours de documentation d’intégration](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/onboarding/journey/overview) afin de vous familiariser avec Cloud Manager.<br>Le parcours d’intégration est conçu pour Cloud Manager sur Adobe Experience Manager as a Cloud Service (AEMaaCS) et non pour Cloud Manager sur Adobe Managed Services (AMS). Cependant, de nombreux concepts sont identiques. |
-| 3 | *`Dynamic action button`* | Le bouton d’action propose des actions contextuelles sur lesquelles vous pouvez cliquer, telles que **Ajouter un programme** (illustré dans l’exemple ci-dessus) ou ajouter un domaine. |
+| 1 | Mes programmes | Cliquez pour ouvrir une liste déroulante dans laquelle vous pouvez choisir d’ajouter un programme, de sélectionner d’autres programmes existants ou de revenir à la page d’accueil du Experience Manager. |
+| 2 | Icône ![Informations](/help/getting-started/assets/Info.svg) Prise en main | Cliquez pour accéder au [parcours de documentation d’intégration](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/onboarding/journey/overview) afin de vous familiariser avec Cloud Manager.<br>Le parcours d’intégration est conçu pour Cloud Manager sur Adobe Experience Manager as a Cloud Service (AEMaaCS), et non pour Cloud Manager sur Adobe Managed Services (AMS). Cependant, de nombreux concepts sont identiques. |
+| 3 | *`Dynamic action button`* | Le bouton d&#39;action propose des actions contextuelles sur lesquelles vous pouvez cliquer, par exemple **Ajouter un programme** (voir l&#39;exemple ci-dessus) ou ajouter un domaine. |
 
 ### Appels à l’action et statistiques {#cta-statistics}
 

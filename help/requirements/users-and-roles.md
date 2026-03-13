@@ -2,9 +2,9 @@
 title: Ajouter des utilisateurs et des rôles
 description: Découvrez comment utiliser Admin Console pour ajouter des utilisateurs et utilisatrices et des rôles ainsi que créer des profils.
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
-source-git-commit: 9ad9af206fafea45f8bbf61b02950de0776b5a9f
+source-git-commit: ee49b0732fdb870c4f768764aa75b240fd101b59
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '796'
 ht-degree: 85%
 
 ---
@@ -29,13 +29,13 @@ De nombreuses fonctionnalités de [!UICONTROL Cloud Manager] nécessitent des au
 
 Le tableau suivant résume les rôles dans Cloud Manager.
 
-| Rôle dans [!UICONTROL Cloud Manager] | Description |
+| Rôle dans [!UICONTROL Cloud Manager] | Description |
 | --- | --- |
 | Propriétaire de l’entreprise | Est responsable de la définition des KPI, approuve les déploiements en production et contourne les échecs à 3 niveaux si nécessaire. |
 | Responsable de programme | Cette personne utilise [!UICONTROL Cloud Manager] pour effectuer la configuration de l’équipe, réviser le statut, afficher les KPI et approuver les échecs importants à 3 niveaux si nécessaire. |
 | Responsable de déploiement | Gère les opérations de déploiement et utilise [!UICONTROL Cloud Manager] pour exécuter les déploiements d’évaluation et de production, modifier les pipelines CI/CD et approuver les échecs importants à 3 niveaux si nécessaire. Cette personne a également accès au référentiel Git. |
 | Développeur ou développeuse | Cette personne développe et teste des codes d’application personnalisés et utilise principalement [!UICONTROL Cloud Manager] pour afficher le statut du déploiement. Elle peut accéder au référentiel Git pour les validations de code. |
-| Équipe d’ingénierie du service client | Cette personne prend en charge généralement le service client pour les clientes et clients AMS. Elle interagit avec [!UICONTROL Cloud Manager] dans le but d’exécuter des déploiements nécessitant la supervision de l’équipe d’ingénierie du service client. |
+| Responsable du succès client | Cette personne prend en charge généralement le succès client pour les clientes et clients AMS. Elle interagit avec [!UICONTROL Cloud Manager] dans le but d’exécuter des déploiements nécessitant la supervision de l’équipe d’ingénierie du service client. |
 | Créateur ou créatrice de contenu | Cette personne n’interagit généralement pas avec [!UICONTROL Cloud Manager] mais peut utiliser le sélecteur de programmes de [!UICONTROL Cloud Manager] pour accéder à AEM. |
 
 >[!NOTE]
@@ -44,7 +44,7 @@ Le tableau suivant résume les rôles dans Cloud Manager.
 
 ## Création d’un profil de produit à l’aide d’Admin Console {#using-admin-console-to-create-a-profile}
 
-Les rôles de [!UICONTROL Cloud Manager] sont gérés depuis Admin Console. Des rôles spécifiques sont attribués en ajoutant un utilisateur à un profil de produit [!UICONTROL Cloud Manager].
+Les rôles de [!UICONTROL Cloud Manager] sont gérés depuis Admin Console. Une appartenance à un rôle spécifique est fournie en ajoutant l’utilisateur ou l’utilisatrice à un profil de produit [!UICONTROL Cloud Manager].
 
 Admin Console fournit un emplacement centralisé pour gérer les droits Adobe dans l’ensemble de votre organisation. Pour en savoir plus sur Adobe Admin Console, consultez [Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html).
 
@@ -57,10 +57,12 @@ Un administrateur ou une administratrice doit créer des profils de produit sous
 
 Créez ou ajoutez des utilisateurs ou des groupes à ces profils de produit avec Admin Console.
 
-<!-- CQDOC-22790
+<!-- 
+CQDOC-22790
 >[!IMPORTANT]
 >
->Due to a current limitation in the Admin Console and Cloud Manager, profiles cannot be saved with **No permissions** selected. Attempting to do so results in a backend error. This behavior affects the creation of Deployment Manager profiles. As a workaround, select at least one permission when creating a new profile. -->
+>Due to a current limitation in the Admin Console and Cloud Manager, profiles cannot be saved with **No permissions** selected. Attempting to do so results in a backend error. This behavior affects the creation of Deployment Manager profiles. As a workaround, select at least one permission when creating a new profile. 
+-->
 
 **Pour créer un profil de produit à l’aide de l’Admin Console, procédez comme suit**
 
@@ -84,10 +86,13 @@ Créez ou ajoutez des utilisateurs ou des groupes à ces profils de produit avec
    * **Nom d’affichage** - Le **nom d’affichage** doit correspondre à la valeur technique définie par [!UICONTROL Cloud Manager] (voir le tableau ci-dessous).
    * **Groupe d’autorisations** - Vous pouvez choisir un groupe d’autorisations pour le profil (pas toujours disponible).
 
-<!-- CQDOC-22790
-      >[!IMPORTANT]
-      >
-      >Due to a current limitation in the Admin Console and Cloud Manager, profiles cannot be saved with **No permissions** selected. Attempting to do so results in a backend error. This behavior affects the creation of Deployment Manager profiles. As a workaround, select at least one permission when creating a new profile. -->
+<!-- 
+CQDOC-22790
+
+>[!IMPORTANT]
+>
+>Due to a current limitation in the Admin Console and Cloud Manager, profiles cannot be saved with **No permissions** selected. Attempting to do so results in a backend error. This behavior affects the creation of Deployment Manager profiles. As a workaround, select at least one permission when creating a new profile.
+-->
 
 ![Créer un profil](/help/assets/screen_shot_2018-05-04at171819.png)
 
