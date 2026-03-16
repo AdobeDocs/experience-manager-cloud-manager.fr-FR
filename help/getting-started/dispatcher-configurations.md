@@ -2,10 +2,10 @@
 title: Configurations du Dispatcher
 description: Découvrez comment déployer les fichiers de configuration du Dispatcher à l’aide de Cloud Manager.
 exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '575'
-ht-degree: 100%
+source-git-commit: 037a296c21adde6f7fa731c71ee4a75cea042780
+workflow-type: tm+mt
+source-wordcount: '595'
+ht-degree: 89%
 
 ---
 
@@ -22,7 +22,7 @@ Pour tirer parti de cette fonctionnalité, la version Maven doit produire un fic
 
 Les projets générés par Cloud Manager à l’aide de l’[assistant de création de projet](/help/getting-started/using-the-wizard.md) intégré créent automatiquement la structure de projet Maven appropriée. Ce chemin est recommandé si vous découvrez Adobe Managed Services (AMS).
 
-Lorsque vous effectuez un déploiement sur une instance du Dispatcher, les répertoires de l’instance sont remplacés par ceux du référentiel Git. Comme les fichiers de configuration du serveur web et du Dispatcher requièrent souvent des détails spécifiques à l’environnement, vous devez collaborer avec l’équipe d’ingénierie du service client (CSE) pour définir les variables d’environnement appropriées dans `/etc/sysconfig/httpd` avant d’utiliser cette fonctionnalité correctement.
+Lorsque vous effectuez un déploiement sur une instance du Dispatcher, les répertoires de l’instance sont remplacés par ceux du référentiel Git. Comme les fichiers de configuration du serveur web et du Dispatcher requièrent souvent des détails spécifiques à l’environnement, vous devez collaborer avec les responsables du succès client pour définir les variables d’environnement appropriées dans `/etc/sysconfig/httpd` avant d’utiliser cette fonctionnalité correctement.
 
 ## Configuration de Dispatcher pour les clientes et clients Managed Services existants {#steps-for-configuring-dispatcher}
 
@@ -30,7 +30,7 @@ Suivez les étapes ci-dessous pour terminer la configuration initiale de Dispatc
 
 1. Récupérez les fichiers de configuration de production actuels auprès de votre CSE.
 1. Supprimez les données codées de manière irréversible et spécifiques à l’environnement (par exemple, l’IP de rendu de publication) et remplacez-les par des variables.
-1. Définissez les variables requises dans les paires clé-valeur pour chaque Dispatcher cible et demandez au CSE de les ajouter à `/etc/sysconfig/httpd` sur chaque instance.
+1. Définissez les variables requises dans les paires clé-valeur pour chaque Dispatcher cible et ajoutez-les au dossier [variables](https://experienceleague.adobe.com/docs/experience-manager-learn/ams/dispatcher/variables.html?lang=en#variables-files-(.vars)) sur chaque instance.
 1. Testez les configurations mises à jour dans votre environnement d’évaluation.
 1. Une fois le test effectué, demandez au CSE de procéder au déploiement en production.
 1. Validez les fichiers dans votre référentiel Git.
@@ -88,7 +88,7 @@ Le fichier et la structure des répertoires spécifiques peuvent varier en fonct
    </project>
    ```
 
-   * Comme à l’étape 1, l’artifactId et le nom peuvent avoir d’autres valeurs si vous le souhaitez. `dispatcher` est utilisé ici à titre d’exemple.
+   * Comme à l’étape 1, l’artifactId et le nom peuvent avoir d’autres valeurs si vous le souhaitez. `dispatcher` est utilisé ici à titre d’exemple.
 
 1. Le plug-in Maven Assembly requiert un `descriptor` pour définir la façon dont le fichier ZIP est créé. Pour créer ce descripteur, créez un fichier dans le sous-répertoire `dispatcher` nommé `assembly.xml` avec ce contenu. Ce fichier est référencé à la ligne 26 du fichier `pom.xml` ci-dessus.
 
