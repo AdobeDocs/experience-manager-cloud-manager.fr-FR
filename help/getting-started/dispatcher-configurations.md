@@ -30,7 +30,7 @@ Suivez les étapes ci-dessous pour terminer la configuration initiale de Dispatc
 
 1. Récupérez les fichiers de configuration de production actuels auprès de votre CSE.
 1. Supprimez les données codées de manière irréversible et spécifiques à l’environnement (par exemple, l’IP de rendu de publication) et remplacez-les par des variables.
-1. Définissez les variables requises dans les paires clé-valeur pour chaque Dispatcher cible et ajoutez-les au dossier [variables](https://experienceleague.adobe.com/docs/experience-manager-learn/ams/dispatcher/variables.html?lang=en#variables-files-(.vars)) sur chaque instance.
+1. Définissez les variables requises dans les paires clé-valeur pour chaque Dispatcher cible et ajoutez-les au dossier [variables](https://experienceleague.adobe.com/docs/experience-manager-learn/ams/dispatcher/variables.html?lang=fr#variables-files-(.vars)) sur chaque instance.
 1. Testez les configurations mises à jour dans votre environnement d’évaluation.
 1. Une fois le test effectué, demandez au CSE de procéder au déploiement en production.
 1. Validez les fichiers dans votre référentiel Git.
