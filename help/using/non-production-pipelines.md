@@ -2,7 +2,7 @@
 title: Ajout d’un pipeline hors production
 description: Découvrez comment utiliser Cloud Manager pour créer et configurer des pipelines hors production afin de déployer votre code.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: eaf3db69bd3cc0a06aafd1b415c5bdb467019c1b
+source-git-commit: 2a022c10ce64bb42d4bffd63bea01de25af0bd41
 workflow-type: tm+mt
 source-wordcount: '1992'
 ht-degree: 27%
@@ -139,7 +139,7 @@ Le gain de performances de l’utilisation de la création dynamique dépend de 
 * La fréquence et l’étendue des modifications de code.
 * La distribution des dépendances entre les modules.
 
-En règle générale, les projets comportant de nombreux modules indépendants présentent la plus grande amélioration.
+En règle générale, les projets comportant de nombreux modules indépendants peuvent bénéficier de la plus grande amélioration.
 
 ### Désinscription du cache par module{#smart-build-cache-optout}
 
@@ -226,4 +226,4 @@ Après avoir configuré le pipeline, vous pouvez déployer votre code. Voir la s
 
 Cette vidéo présente une vue d’ensemble du processus de création de pipeline, détaillé dans ce document.
 
->[!VIDEO](https://video.tv.adobe.com/v/327614?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26316/)
