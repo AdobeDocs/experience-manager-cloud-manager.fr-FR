@@ -1,18 +1,18 @@
 ---
 title: Pipelines CI/CD
-description: Découvrez les pipelines CI/CD et comment ils gèrent les déploiements vers les environnements d’évaluation et de production dans Cloud Manager.
+description: Découvrez les pipelines CI/CD et comment ils gèrent les déploiements vers les environnements d’évaluation et de production dans Cloud Manager.
 exl-id: 7130e5b7-6986-48c8-900c-90f3e4187f91
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '562'
-ht-degree: 100%
+source-git-commit: b7e651b72d1943aef69c1c69915d4752a6163931
+workflow-type: tm+mt
+source-wordcount: '639'
+ht-degree: 81%
 
 ---
 
 
 # Pipelines CI/CD {#ci-cd-pipeline}
 
-Découvrez les pipelines CI/CD et comment ils gèrent les déploiements vers les environnements d’évaluation et de production dans Cloud Manager.
+Découvrez les pipelines CI/CD et comment ils gèrent les déploiements vers les environnements d’évaluation et de production dans Cloud Manager.
 
 ## Vue d’ensemble {#overview}
 
@@ -28,16 +28,25 @@ Le diagramme suivant illustre ce qui se produit une fois qu’une version est d�
 
 | Étape du pipeline | Description |
 | --- | --- |
-| 1. Démarrage d’une version | Une personne responsable de déploiement déclenche une version manuellement, avec une validation Git, ou selon un planning récurrent. |
-| 2. Création d’une balise de version | [!UICONTROL Cloud Manager] crée une balise Git pour marquer la version à l’aide d’un numéro de version généré automatiquement, par exemple `2018.531.245527.0000001222`. |
-| 3. Création en tant que version avec une version générée automatiquement | [!UICONTROL Cloud Manager] génère l’application avec le numéro de version nouvellement attribué. |
-| 4. Évaluation de la qualité du code | [!UICONTROL Cloud Manager] analyse le code source et fournit un résumé avant que le code puisse être déployé dans l’environnement d’évaluation. |
-| 5. Artefacts versionnés stockés | Les artefacts de version sont stockés pour une utilisation ultérieure dans les étapes de déploiement. |
-| 6. Déploiement automatique des artefacts dans l’évaluation AMS AEM | L’artefact de version est déployé dans l’environnement d’évaluation. |
-| 7. Déclenchement des tests automatisés | [!UICONTROL Cloud Manager] exécute les tests de performance et de sécurité sur l’artefact. |
-| 8. Déploiement du déclencheur de production | Une fois les tests automatisés terminés, [!UICONTROL Cloud Manager] démarre le déploiement en production. |
-| 9. [!UICONTROL Cloud Manager] reçoit un ou plusieurs artefacts à déployer | [!UICONTROL Cloud Manager] extrait les artefacts de version stockés. |
-| 10. Déploiement des artefacts en production | Les artefacts de version sont déployés dans l’environnement de production. |
+| &#x200B;1. Démarrer une version | Une personne responsable de déploiement déclenche une version manuellement, avec une validation Git, ou selon un planning récurrent. |
+| &#x200B;2. Création d’une balise de version | [!UICONTROL Cloud Manager] crée une balise Git pour marquer la version à l’aide d’un numéro de version généré automatiquement, par exemple `2018.531.245527.0000001222`. |
+| &#x200B;3. Version créée en tant que avec version générée automatiquement | [!UICONTROL Cloud Manager] génère l’application avec le numéro de version nouvellement attribué. |
+| &#x200B;4. Évaluation de la qualité du code | [!UICONTROL Cloud Manager] analyse le code source et fournit un résumé avant que le code puisse être déployé dans l’environnement d’évaluation. |
+| &#x200B;5. Artefacts avec version stockés | Les artefacts de version sont stockés pour une utilisation ultérieure dans les étapes de déploiement. |
+| &#x200B;6. Déploiement automatique des artefacts dans l’évaluation AMS AEM | L’artefact de version est déployé dans l’environnement d’évaluation. |
+| &#x200B;7. Déclencher des tests automatisés | [!UICONTROL Cloud Manager] exécute les tests de performance et de sécurité sur l’artefact. |
+| &#x200B;8. Déploiement du déclencheur de production | Une fois les tests automatisés terminés, [!UICONTROL Cloud Manager] démarre le déploiement en production. |
+| &#x200B;9.  récupère un ou plusieurs artefacts à déployer | [!UICONTROL Cloud Manager] extrait les artefacts de version stockés. |
+| &#x200B;10. Déploiement des artefacts en production | Les artefacts de version sont déployés dans l’environnement de production. |
+
+### Versions plus rapides à l’aide de la création dynamique {#use=smart-build}
+
+Cloud Manager utilise désormais une stratégie de création optimisée appelée **Smart Build**, qui utilise la mise en cache au niveau du module pour accélérer le processus de création. Lors de chaque génération, seuls les modules qui ont été modifiés sont reconstruits, tandis que les modules inchangés sont réutilisés à partir du cache.
+
+La génération intelligente est disponible uniquement pour les pipelines de qualité du code et de déploiement Dev Full Stack .
+
+Voir [Ajouter un pipeline hors production](/help/using/non-production-pipelines.md#add-non-production-pipeline) et [À propos de l’utilisation de la création intelligente dans un pipeline hors production](/help/using/non-production-pipelines.md#about-smart-build).
+
 
 ### Configurer un pipeline CI/CD {#how-to-setup-a-ci-cd-pipeline}
 
@@ -49,7 +58,7 @@ Le pipeline CI/CD fournit des points de contrôle de qualité, ou critères d’
 
 * Qualité du code
 * Test de performance
-* Test de sécurité
+* Tests de sécurité
 
 Pour chacun de ces points de contrôle, trois niveaux de problèmes sont identifiés :
 
