@@ -2,7 +2,7 @@
 title: Ajout d’un pipeline hors production
 description: Découvrez comment utiliser Cloud Manager pour créer et configurer des pipelines hors production afin de déployer votre code.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: 57de7b00b382e4fb65ad3e03948960022ec02de1
+source-git-commit: eaf3db69bd3cc0a06aafd1b415c5bdb467019c1b
 workflow-type: tm+mt
 source-wordcount: '1992'
 ht-degree: 27%
@@ -33,7 +33,7 @@ Il existe deux types de pipelines hors production :
 
 ## Ajout d’un nouveau pipeline hors production {#add-non-production-pipeline}
 
-Une fois que vous avez configuré un programme et que vous disposez au moins d’un environnement basé sur l’interface utilisateur de Cloud Manager, vous pouvez ajouter des pipelines hors production pour tester la qualité de votre code avant le déploiement dans les environnements de production.
+Après avoir configuré un programme et au moins un environnement dans l’interface utilisateur de Cloud Manager, vous pouvez ajouter des pipelines hors production. Utilisez ces pipelines pour tester la qualité de votre code avant de le déployer dans des environnements de production.
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) et sélectionnez l’organisation et le programme appropriés.
 
@@ -226,4 +226,4 @@ Après avoir configuré le pipeline, vous pouvez déployer votre code. Voir la s
 
 Cette vidéo présente une vue d’ensemble du processus de création de pipeline, détaillé dans ce document.
 
->[!VIDEO](https://video.tv.adobe.com/v/327614?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26316/)
