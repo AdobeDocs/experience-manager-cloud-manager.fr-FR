@@ -2,10 +2,10 @@
 title: Ajout d’un pipeline hors production
 description: Découvrez comment utiliser Cloud Manager pour créer et configurer des pipelines hors production afin de déployer votre code.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: ee409c97269a70aa9cf4ee4a39c425e62bc156e0
+source-git-commit: ddbffd1310e0af646c071c81d560fb50abeb01c1
 workflow-type: tm+mt
-source-wordcount: '1992'
-ht-degree: 27%
+source-wordcount: '1994'
+ht-degree: 23%
 
 ---
 
@@ -29,7 +29,7 @@ Il existe deux types de pipelines hors production :
 
 >[!NOTE]
 >
->Un pipeline ne peut être configuré que si le référentiel Git qui lui est associé dispose d’au moins une branche et que la [configuration du programme](/help/getting-started/program-setup.md) est terminée. Consultez le document [Référentiels Cloud Manager](/help/managing-code/managing-repositories.md) pour découvrir comment ajouter et gérer des référentiels dans Cloud Manager.
+>Vous ne pouvez pas configurer de pipeline tant que le référentiel Git associé ne comporte pas au moins une branche et que la [configuration du programme](/help/getting-started/program-setup.md) n’est pas terminée. Consultez le document [Référentiels Cloud Manager](/help/managing-code/managing-repositories.md) pour découvrir comment ajouter et gérer des référentiels dans Cloud Manager.
 
 ## Ajout d’un nouveau pipeline hors production {#add-non-production-pipeline}
 
@@ -37,7 +37,7 @@ Après avoir configuré un programme et au moins un environnement dans l’inter
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) et sélectionnez l’organisation et le programme appropriés.
 
-1. Accédez à la vignette Pipelines à partir de l’écran d’accueil de Cloud Manager. Cliquez sur **Ajouter** et sélectionnez **Ajouter un pipeline hors production**.
+1. Sur l’écran d’accueil de Cloud Manager, ouvrez la carte Pipelines et cliquez sur **Ajouter**, puis sélectionnez **Ajouter un pipeline hors production**.
 
    ![Ajouter un pipeline hors production](/help/assets/configure-pipelines/nonprod-pipeline-add1.png)
 
@@ -54,7 +54,7 @@ Après avoir configuré un programme et au moins un environnement dans l’inter
 
 | Section | Option | Description |
 | --- | --- | --- |
-| **Configuration du pipeline** | **Nom du pipeline hors production** | Fournissez une description de votre pipeline dans le champ **Nom du pipeline hors production**. |
+| **Configuration du pipeline** | **Nom du pipeline hors production** | Saisissez une description pour votre pipeline dans le champ **Nom du pipeline hors production**. |
 |  | **Test** | Visible uniquement lors de la modification d’un pipeline hors production.<br>L’interface utilisateur affiche les catégories de test que le pipeline exécute dans le cadre de la validation de la qualité du code.<ul><li>**Test de code statique** - Analyse le code pour détecter les problèmes de qualité et d’exactitude.<li>**Tests de charge/performance** - Évalue le comportement lié aux performances dans le cadre des tests de pipeline.<li>**Tests de sécurité** - Vérifie le code et la sortie du pipeline pour les problèmes de sécurité. |
 | **Options de déploiement** | **Déclencheur de déploiement** | <ul><li>**Manuel** : vous permet de lancer le pipeline manuellement.<li>**Lors des modifications Git** : démarre le pipeline lorsque des validations sont ajoutées à la branche Git configurée. Avec cette option, vous pouvez toujours démarrer le pipeline manuellement, si nécessaire. |
 |  | **Comportement en cas d’échecs de mesures importants** | <ul><li>**Demander à chaque fois** – Ce comportement est le paramètre par défaut qui nécessite une intervention manuelle lors de tout échec important.<li>**Défaillance immédiate** - si cette option est sélectionnée, le pipeline est interrompu chaque fois qu’une défaillance importante se produit. Il émule essentiellement un utilisateur rejetant manuellement chaque échec.<li>**Continuer immédiatement** - si cette option est sélectionnée, le pipeline se poursuit automatiquement chaque fois qu’un échec important se produit. Il émule essentiellement la validation manuelle de chaque échec par un utilisateur.</li></ul> |
@@ -64,14 +64,14 @@ Après avoir configuré un programme et au moins un environnement dans l’inter
 
 | Section | Option | Description |
 | --- | --- | --- |
-| **Configuration du pipeline** | **Nom du pipeline hors production** | Fournissez une description de votre pipeline dans le champ **Nom du pipeline hors production**. |
+| **Configuration du pipeline** | **Nom du pipeline hors production** | Saisissez une description pour votre pipeline dans le champ **Nom du pipeline hors production**. |
 |   | **Environnement de déploiement éligible** | Si votre pipeline est un pipeline de déploiement, vous devez sélectionner les environnements dans lesquels Cloud Manager déploie le code. |
 |   | **Test** | Visible uniquement lors de la modification d’un pipeline hors production.<br>L’interface utilisateur affiche les catégories de test que le pipeline exécute dans le cadre de la validation de la qualité du code.<ul><li>**Test de code statique** - Analyse le code pour détecter les problèmes de qualité et d’exactitude.<li>**Tests de charge/performance** - Évalue le comportement lié aux performances dans le cadre des tests de pipeline.<li>**Tests de sécurité** - Vérifie le code et la sortie du pipeline pour les problèmes de sécurité.</li></ul> |
 | **Options de déploiement** | **Déclencheur de déploiement** | <ul><li>**Manuel** : vous permet de lancer le pipeline manuellement.<li>**Lors des modifications Git** : démarre le pipeline lorsque des validations sont ajoutées à la branche Git configurée. Avec cette option, vous pouvez toujours démarrer le pipeline manuellement, si nécessaire. |
 |   | **Comportement en cas d’échecs de mesures importants** | <ul><li>**Demander à chaque fois** - Le paramètre par défaut invite l’utilisateur à décider comment procéder lorsqu’une mesure importante échoue.<li>**Échec immédiat** - Le pipeline est annulé chaque fois qu’une mesure importante échoue. Il s’agit essentiellement de l’émulation d’un utilisateur ou d’une utilisatrice qui rejette manuellement chaque échec.<li>**Continuer immédiatement** - Le pipeline se poursuit automatiquement chaque fois qu’une mesure importante échoue. Il s’agit essentiellement de l’émulation d’un utilisateur ou d’une utilisatrice qui approuve manuellement chaque échec.</li></ul> |
 |  | Case à cocher **Approuver après le déploiement dans l’environnement intermédiaire** | Visible uniquement lors de la modification d’un pipeline hors production.<br>Sélectionnez cette option pour exiger une approbation après le déploiement dans l’environnement d’évaluation avant que le pipeline puisse continuer. Si cette option n’est pas sélectionnée, le pipeline se poursuit en fonction du comportement configuré. |
 |  | Case **Ignorer les modifications de la répartition de charge** | Sélectionnez cette option pour empêcher le pipeline d’effectuer des modifications de la répartition de charge pendant le déploiement. |
-|  | **Configuration** | Le rôle **Responsable de déploiement** permet de configurer un ensemble de chemins de contenu qui sont soit invalidés soit vidés du cache d’AEM Dispatcher lorsqu’un pipeline est exécuté. Ces actions de cache sont exécutées dans le cadre de l’étape du pipeline de déploiement, juste après le déploiement des modules de contenu. Ces paramètres utilisent le comportement standard d’AEM Dispatcher. Pour configurer `Dispatcher`, procédez comme suit :<ul><li>Sous **CHEMIN**, indiquez un chemin d’accès au contenu que le pipeline doit vider ou invalider.<li>Sous **TYPE**, sélectionnez l’action à effectuer sur ce chemin.<ul><li>**Vidage** - Effectuez une suppression du cache sur le chemin d’accès spécifié.</li><li>**Invalider** - effectuez une invalidation du cache, comme lorsque le contenu est activé d’une instance de création vers une instance de publication.</li><li>Cliquez sur **Ajouter un chemin** pour ajouter votre chemin spécifié. Vous pouvez ajouter jusqu’à 100 chemins par environnement.</li></ul> |
+|  | **Configuration** | Le rôle **Responsable de déploiement** permet de configurer un ensemble de chemins de contenu qui sont soit invalidés soit vidés du cache d’AEM Dispatcher lorsqu’un pipeline est exécuté. Cloud Manager exécute ces actions de cache dans le cadre de l’étape du pipeline de déploiement, juste après le déploiement des packages de contenu. Ces paramètres utilisent le comportement standard d’AEM Dispatcher. Pour configurer `Dispatcher`, procédez comme suit :<ul><li>Sous **CHEMIN**, indiquez un chemin d’accès au contenu que le pipeline doit vider ou invalider.<li>Sous **TYPE**, sélectionnez l’action à effectuer sur ce chemin.<ul><li>**Vidage** - Effectuez une suppression du cache sur le chemin d’accès spécifié.</li><li>**Invalider** - effectuez une invalidation du cache, comme lorsque le contenu est activé d’une instance de création vers une instance de publication.</li><li>Cliquez sur **Ajouter un chemin** pour ajouter votre chemin spécifié. Vous pouvez ajouter jusqu’à 100 chemins par environnement.</li></ul> |
 | **Pipeline** | Case à cocher **Contrôle de l’expérience** | Sélectionnez cette option pour inclure une étape de contrôle de l’expérience dans le pipeline. Lorsqu’il est activé, le pipeline inclut l’étape Contrôle de l’expérience après l’onglet Code Source . |
 
 >[!ENDTABS]
@@ -187,10 +187,10 @@ Voir [Ajouter un pipeline hors production](#add-non-production-pipeline) la sect
 <!-- 
 1. If you chose to add a **Deployment Pipeline**, select the target deployment environment from the **Eligible Deployment Environments** dropdown.
 
-1. Provide the repository where the pipeline should retrieve the code.
+1. Enter the repository where the pipeline should retrieve the code.
 
-   * **Repository** - Defines from which Git repo that the pipeline should retrieve the code.
-   * **Git Branch** - Defines from which branch in Git that the selected pipeline should retrieve the code.
+   * **Repository** - Select the Git repository that the pipeline retrieves code from.
+   * **Git Branch** - Select the branch in the Git repository that the selected pipeline retrieves code from.
 
 1. Define your deployment options.
 
@@ -202,10 +202,10 @@ Voir [Ajouter un pipeline hors production](#add-non-production-pipeline) la sect
    1. For deployment pipelines, under **Important Metric Failures Behavior**, define the behavior of the pipeline when an important failure is encountered in any of the quality gates.
 
        * **Ask every time** - The default setting and requires manual intervention on any important failure.
-       * **Fail Immediately** - The pipeline is canceled whenever an important failure occurs. It is essentially emulating a user manually rejecting each failure.
+       * **Fail Immediately** - Cloud Manager cancels the pipeline whenever an important failure occurs. It is essentially emulating a user manually rejecting each failure.
        * **Continue Immediately** - The pipeline proceeds automatically whenever an important failure occurs. It is essentially emulating a user manually approving each failure.
 
-   1. **Dispatcher Configuration** - The **Deployment Manager** role can configure a set of content paths that are either invalidated or flushed from the AEM Dispatcher cache when a pipeline is run. These cache actions are performed as part of the deployment pipeline step, just after any content packages are deployed. These settings use standard AEM Dispatcher behavior. To configure:
+   1. **Dispatcher Configuration** - The **Deployment Manager** role can configure a set of content paths that Cloud Manager invalidates or flushes from the AEM Dispatcher cache when a pipeline is run. These cache actions are performed as part of the deployment pipeline step, just after any content packages are deployed. These settings use standard AEM Dispatcher behavior. To configure:
 
       1. Under **PATH** provide a content path.
       1. Under **TYPE**, select the action to be taken on that path.
