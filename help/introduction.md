@@ -4,8 +4,8 @@ description: Commencez ici pour découvrir Cloud Manager pour Adobe Managed S
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
 source-git-commit: 8f29a06f63b8dc10cb3d28e2f38da1ead84f32f5
 workflow-type: tm+mt
-source-wordcount: '1250'
-ht-degree: 95%
+source-wordcount: '1299'
+ht-degree: 96%
 
 ---
 
@@ -48,7 +48,7 @@ Les sections suivantes mettent en évidence les principales fonctionnalités de 
 
 Pour découvrir et commencer à utiliser l’interface d’utilisation de [!UICONTROL Cloud Manager], consultez la rubrique [Première connexion](/help/getting-started/first-time-login.md).
 
-L’interface utilisateur de [!UICONTROL Cloud Manager] permet d’accéder et de gérer facilement l’environnement cloud et le pipeline CI/CD pour vos applications Adobe Experience Manager.
+L’interface utilisateur de  permet d’accéder et de gérer facilement l’environnement cloud et le pipeline CI/CD pour vos applications Adobe Experience Manager.
 
 Vous définissez des indicateurs clés de performances (KPI) spécifiques à l’application, tels que le pic de pages vues par minute ou le temps de réponse attendu pour le chargement d’une page. Ces KPI servent de base pour mesurer le succès du déploiement. Les rôles et autorisations des différentes personnes membres de l’équipe peuvent être facilement définis. L’interface en libre-service vous offre un contrôle total. Elle fournit également des liens vers les ressources sur les bonnes pratiques et l’accès à des spécialistes d’Adobe pour obtenir des conseils lorsque vous en avez besoin.
 
@@ -80,7 +80,7 @@ Lorsque l’environnement de production est soumis à une charge exceptionnellem
 
 Dans un tel cas, [!UICONTROL Cloud Manager] déclenche automatiquement le processus d’approvisionnement de mise à l’échelle automatique, envoie une notification de l’événement de mise à l’échelle automatique et met en ligne la capacité supplémentaire en quelques minutes. La capacité supplémentaire est fournie dans l’environnement de production, dans les mêmes régions et conformément aux spécifications système des nœuds Dispatcher/de publication exécutés.
 
-La fonctionnalité de mise à l’échelle automatique s’applique au niveau Dispatcher/de publication, en utilisant la mise à l’échelle horizontale pour ajouter un à dix segments de paires Dispatcher/de publication. Toute capacité supplémentaire configurée est mise à l’échelle manuellement dans un délai de dix jours ouvrés, selon les indications de l’équipe d’ingénierie du service client (CSE) Adobe.
+La fonctionnalité de mise à l’échelle automatique s’applique au niveau Dispatcher/de publication, en utilisant la mise à l’échelle horizontale pour ajouter un à dix segments de paires Dispatcher/de publication. Toute capacité supplémentaire configurée est mise à l’échelle manuellement dans un délai de dix jours ouvrés, selon les indications du responsable du succès client Adobe.
 
 >[!NOTE]
 >
