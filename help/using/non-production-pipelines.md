@@ -2,10 +2,10 @@
 title: Ajout d’un pipeline hors production
 description: Découvrez comment utiliser Cloud Manager pour créer et configurer des pipelines hors production afin de déployer votre code.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: ddbffd1310e0af646c071c81d560fb50abeb01c1
+source-git-commit: 261c4334a514ee2101444e83a559d300bba3d507
 workflow-type: tm+mt
 source-wordcount: '1994'
-ht-degree: 23%
+ht-degree: 22%
 
 ---
 
@@ -17,7 +17,7 @@ Découvrez comment utiliser Cloud Manager pour créer et configurer des pipelin
 
 En utilisant le volet **Pipelines** dans [!UICONTROL Cloud Manager], le **Responsable de déploiement** peut créer deux types de pipelines différents.
 
-* **Pipelines de production** - un pipeline de production est un pipeline spécialement conçu, composé d’une série d’étapes coordonnées permettant de mener le code source jusqu’à la production.
+* **Pipelines de production** - un pipeline de production est un pipeline spécialement conçu, composé d’une série d’étapes coordonnées pour mener le code source jusqu’à la production.
 * **Pipelines hors production** - un pipeline hors production sert principalement à exécuter des analyses de qualité du code ou à déployer le code source dans un environnement de développement.
 
 Ce document se concentre sur les pipelines hors production. Pour plus de détails sur la configuration des pipelines de production, voir le document [Configurer des pipelines de production](/help/using/production-pipelines.md).
@@ -226,4 +226,4 @@ Après avoir configuré le pipeline, vous pouvez déployer votre code. Voir la s
 
 Cette vidéo présente une vue d’ensemble du processus de création de pipeline, détaillé dans ce document.
 
->[!VIDEO](https://video.tv.adobe.com/v/327614?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26316/)
