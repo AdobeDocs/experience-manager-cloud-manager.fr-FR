@@ -1,20 +1,20 @@
 ---
 title: Notes de mise à jour de la version 2026.4.0 de Cloud Manager
-description: Découvrez la version 2026.4.0 de Cloud Manager sur Adobe Managed Services.
+description: Découvrez la version 2026.4.0 de Cloud Manager dans Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 4f2fdc8d04b0ab48d3d18cc7d2cacfe0075b48f9
+source-git-commit: 0ad5d533e6f8749a9c141d5a095f0a2fed37efcf
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 14%
 
 ---
 
-# Notes de mise à jour de Cloud Manager 2026.4.0 sur Adobe Managed Services {#release-notes}
+# Notes de mise à jour de Cloud Manager 2026.4.0 dans Adobe Managed Services {#release-notes}
 
 <!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.04.0+Release -->
 
-Découvrez la version  2026.4.0 d’Adobe Managed Services.
+Découvrez la version  2026.4.0 dans Adobe Managed Services.
 
 Consultez également les [notes de mise à jour actuelles d’Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/release-notes/home).
 
@@ -31,7 +31,7 @@ La prochaine version prévue est le jeudi 7 mai 2026.
 
 * **Prise en charge de l’extensibilité de l’interface utilisateur dans AEM Experience Hub.**
 
-  La prise en charge des extensions d’interface utilisateur dans [AEM Experience Hub](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/experience-hub/experience-hub) est désormais activée, ce qui permet aux développeurs d’étendre l’interface avec des fonctionnalités et des widgets personnalisés créés à l’aide d’Adobe App Builder.
+  La prise en charge des extensions d’interface utilisateur dans [AEM Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub) est désormais activée, ce qui permet aux développeurs d’étendre l’interface avec des fonctionnalités et des widgets personnalisés créés à l’aide d’Adobe App Builder.
 
   Pour en savoir plus, voir [AEM Experience Hub](https://developer.adobe.com/uix/docs/services/aem-experience-hub/).
 
@@ -42,7 +42,7 @@ La prochaine version prévue est le jeudi 7 mai 2026.
   ![Option Afficher/Modifier les variables dans le menu déroulant d’un pipeline sélectionné](/help/release-notes/assets/view-edit-variables-option.png)
   *Option Afficher/Modifier les variables dans le menu déroulant d’un pipeline sélectionné.*
 
-  ![Boîte de dialogue Configuration des variables &#x200B;](/help/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*Boîte de dialogue Configuration des variables.*
+  ![Boîte de dialogue Configuration des variables ](/help/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*Boîte de dialogue Configuration des variables.*
 
 * **Stabilité, performances et fiabilité améliorées.**
 
@@ -58,7 +58,7 @@ Les opportunités suivantes sont actuellement disponibles :
 <!--
 ### Experience Hub Extensibility and Customization {#exp-hub-extensibility}
 
-[Experience Hub](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/experience-hub/experience-hub) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI extensions so they can help you enable them in Experience Hub with minimal effort.
+[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI extensions so they can help you enable them in Experience Hub with minimal effort.
 
 ![Diagram of Experience Hub extensibility and customization workflow](/help/release-notes/assets/experience-hub-extensibility-customization.png)
 
@@ -71,7 +71,7 @@ Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_e
 
 Un nouveau modèle de version compile uniquement les modules modifiés (plutôt que le référentiel entier) à l’aide de la mise en cache au niveau du module pour réduire les temps de création. Elle s’applique aux pipelines Qualité du code et Pile complète .
 
-![&#x200B; Boîte de dialogue Modifier le pipeline hors production présentant les deux options de stratégie de création, à savoir Création complète et Création intelligente](/help/release-notes/assets/non-production-pipeline-edit.png)
+![ Boîte de dialogue Modifier le pipeline hors production présentant les deux options de stratégie de création, à savoir Création complète et Création intelligente](/help/release-notes/assets/non-production-pipeline-edit.png)
 *Boîte de dialogue Modifier le pipeline hors production présentant les deux options de stratégie de création qui sont Création complète et Création intelligente.*
 
 Dans la boîte de dialogue **Ajouter/Modifier un pipeline**, sous l’onglet **Code Source**, une nouvelle section **Stratégie de build** vous permet de choisir l’une des options de build suivantes :
