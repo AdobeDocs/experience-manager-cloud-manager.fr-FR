@@ -7,9 +7,9 @@ user-guide-description: Découvrez comment utiliser Cloud Manager pour auto-gé
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 77f5000f0a237dc82e183eb074eddb23e3a2eb44
+source-git-commit: 96700ba34a6c09289bbb8134d76a3aeca808ccc3
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '335'
 ht-degree: 87%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 87%
 # Documentation de Cloud Manager {#content}
 
 + [Cloud Manager pour AMS](/help/introduction.md)
-+ [Experience Hub](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/experience-hub/experience-hub)
++ [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
 + Vue d’ensemble {#overview}
    + [Concepts clés](/help/overview/key-concepts.md)
    + [Parcours d’utilisateur ou d’utilisatrice](/help/overview/user-journey.md)
@@ -78,6 +78,7 @@ ht-degree: 87%
 + Notes de mise à jour {#release-notes}
    + [En cours](/help/release-notes/current.md)
    + 2026 {#rn-2026}
+      + [2026.3.0](/help/release-notes/2026/2020-3-0.md)
       + [2026.2.0](/help/release-notes/2026/2026-2-0.md)
       + [2026.1.0](/help/release-notes/2026/2026-1-0.md)
    + 2025 {#rn-2025}
