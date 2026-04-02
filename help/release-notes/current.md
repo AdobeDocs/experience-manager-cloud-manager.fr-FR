@@ -1,20 +1,20 @@
 ---
 title: Notes de mise à jour de la version 2026.4.0 de Cloud Manager
-description: Découvrez la version 2026.4.0 de Cloud Manager sur Adobe Managed Services.
+description: Découvrez la version 2026.4.0 de Cloud Manager dans Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 4f2fdc8d04b0ab48d3d18cc7d2cacfe0075b48f9
+source-git-commit: 0ad5d533e6f8749a9c141d5a095f0a2fed37efcf
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 14%
 
 ---
 
-# Notes de mise à jour de Cloud Manager 2026.4.0 sur Adobe Managed Services {#release-notes}
+# Notes de mise à jour de Cloud Manager 2026.4.0 dans Adobe Managed Services {#release-notes}
 
 <!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.04.0+Release -->
 
-Découvrez la version  2026.4.0 d’Adobe Managed Services.
+Découvrez la version  2026.4.0 dans Adobe Managed Services.
 
 Consultez également les [notes de mise à jour actuelles d’Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/release-notes/home).
 
