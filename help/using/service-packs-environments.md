@@ -3,7 +3,7 @@ title: Mises à jour du pack de services pour les environnements de développeme
 description: Découvrez comment vous pouvez désormais lancer des mises à jour du pack de services pour les environnements de développement via l’interface utilisateur de Cloud Manager.
 hide: true
 exl-id: 996a8eee-843f-45a6-8f7a-31ea405c2b32
-source-git-commit: 9ef2f45331c0aaf5c619af1151da38278cfc3c5d
+source-git-commit: 17edfbaea9bb2bd9b817a0ee5726b0883cdd31f2
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 2%
@@ -65,7 +65,7 @@ Après avoir lancé la mise à jour, vous pouvez surveiller la progression dans 
 
 1. Cliquez sur l’entrée pour afficher la progression détaillée et les mises à jour de statut comme suit :
 
-   ![&#x200B; Progression de l’installation du pack de services &#x200B;](/help/using/assets/service-pack-progression.png)
+   ![ Progression de l’installation du pack de services ](/help/using/assets/service-pack-progression.png)
 
 ### Résolution des problèmes d’installation
 
@@ -92,4 +92,4 @@ Une fois l’installation terminée, votre approbation (ou votre rejet) est néc
    * Pour annuler la mise à jour, cliquez sur **Rejeter**.
 L’installation du pack de services est annulée et aucune modification n’est appliquée.
 
-   ![&#x200B; Rejet du pack de services &#x200B;](/help/using/assets/service-pack-reject.png)
+   ![ Rejet du pack de services ](/help/using/assets/service-pack-reject.png)
