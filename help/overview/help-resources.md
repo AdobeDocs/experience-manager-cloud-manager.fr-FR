@@ -21,6 +21,6 @@ ht-degree: 100%
 
 Contactez votre responsable du succès client Adobe Managed Services pour obtenir de l’aide sur [!UICONTROL Cloud Manager]. Cette équipe peut vous indiquer si elle peut résoudre votre problème ou si vous devez envoyer un ticket à l’assistance clientèle d’Adobe.
 
-Accédez à l’[assistance dédiée aux entreprises](https://experienceleague.adobe.com/?support-tab=home&lang=fr#support) pour créer des tickets d’assistance.
+Accédez à l’[assistance dédiée aux entreprises](https://experienceleague.adobe.com/fr?support-tab=home&lang=fr#support) pour créer des tickets d’assistance.
 
 Pour plus d’informations sur la création de tickets d’assistance auprès de l’assistance clientèle d’Adobe, reportez-vous au document [Accès au Portail d’assistance AEM](https://helpx.adobe.com/fr/enterprise/using/support-and-expert-services.html).
