@@ -2,13 +2,15 @@
 title: Configurer votre projet
 description: Découvrez comment configurer votre projet afin de pouvoir le gérer et le déployer avec Cloud Manager.
 exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '1395'
+TQID: https://experienceleague.adobe.com/OhaZ2-x6p1b6aF0xHwr2G-RNTYPd15pqHVxKVwv-GDM
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+workflow-type: tm+mt
+source-wordcount: 1430
 ht-degree: 100%
 
 ---
-
 
 # Configurer votre projet {#setting-up-your-project}
 
@@ -23,11 +25,11 @@ Les projets AEM existants doivent respecter certaines règles de base pour pouv
    * Ce fichier `pom.xml` peut renvoyer à autant de sous-modules (qui à leur tour peuvent comporter d’autres sous-modules) que nécessaire.
    * Vous pouvez ajouter des références à d’autres référentiels d’artefact Maven dans vos fichiers `pom.xml`.
    * L’accès aux [référentiels d’artefacts protégés par mot de passe](#password-protected-maven-repositories) est pris en charge s’il est configuré. Cependant, l’accès aux référentiels d’artefacts protégés par réseau n’est pas pris en charge.
-* Les packages de contenu déployables sont découverts en analysant les fichiers ZIP de packages de contenu se trouvant dans un répertoire nommé `target`.
-   * Un nombre illimité de sous-modules peut produire des packages de contenu.
+* Les modules de contenu déployables sont découverts en analysant les fichiers ZIP de modules de contenu se trouvant dans un répertoire nommé `target`.
+   * Un nombre illimité de sous-modules peut produire des modules de contenu.
 * Les artefacts de Dispatcher déployables sont découverts en recherchant les fichiers `zip` contenus dans des sous-répertoires de `target` nommés `conf` et `conf.d`.
-* S’il existe plusieurs packages de contenu, l’ordre des déploiements des packages n’est pas garanti.
-* Si un ordre spécifique est nécessaire, il est possible d’utiliser les dépendances de packages pour le définir.
+* S’il existe plusieurs modules de contenu, l’ordre des déploiements des modules n’est pas garanti.
+* Si un ordre spécifique est nécessaire, il est possible d’utiliser les dépendances de module de contenu pour le définir.
 * Les packages peuvent être [ignorés](#skipping-content-packages) du déploiement.
 
 ## Activer des profils Maven dans Cloud Manager {#activating-maven-profiles-in-cloud-manager}
@@ -237,11 +239,11 @@ Configurez le `maven-assembly-plugin` dans votre projet :
         </plugin>
 ```
 
-## Ignorer les packages de contenu {#skipping-content-packages}
+## Ignorer les modules de contenu {#skipping-content-packages}
 
-Dans Cloud Manager, chaque compilation peut produire un certain nombre de packages de contenu. Pour diverses raisons, il peut être préférable de produire un package de contenu, mais de ne pas le déployer, Par exemple, cette approche peut se révéler utile lorsque vous créez des packages de contenu uniquement à des fins de test ou lorsqu’une autre étape du processus de création les recompile. C’est-à-dire sous forme de sous-package d’un autre package.
+Dans Cloud Manager, chaque compilation peut produire un certain nombre de modules de contenu. Pour diverses raisons, il peut être préférable de produire un module de contenu, mais de ne pas le déployer, Par exemple, cette approche peut se révéler utile lorsque vous créez des modules de contenu uniquement à des fins de test ou lorsqu’une autre étape du processus de compilation les recompile. C’est-à-dire sous forme de sous-package d’un autre package.
 
-Pour tenir compte de ces scénarios, Cloud Manager recherche une propriété nommée `cloudManagerTarget` dans les propriétés des packages de contenu créés. Si cette propriété est définie sur `none`, le package est ignoré et n’est pas déployé. Le mécanisme permettant de définir cette propriété dépend de la manière dont la création produit le package de contenu. Par exemple, avec le `filevault-maven-plugin`, vous devez configurer le plug-in comme suit :
+Pour tenir compte de ces scénarios, Cloud Manager recherche une propriété nommée `cloudManagerTarget` dans les propriétés des modules de contenu créés. Si cette propriété est définie sur `none`, le package est ignoré et n’est pas déployé. Le mécanisme permettant de définir cette propriété dépend de la manière dont la création produit le module de contenu. Par exemple, avec le `filevault-maven-plugin`, vous devez configurer le plug-in comme suit :
 
 ```xml
         <plugin>

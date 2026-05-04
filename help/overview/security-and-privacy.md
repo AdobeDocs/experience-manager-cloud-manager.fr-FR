@@ -2,13 +2,16 @@
 title: Sécurité et confidentialité
 description: Découvrez la sécurité et la confidentialité de vos ressources de code et d’artefact dans Cloud Manager.
 exl-id: 67df1987-8db7-40bd-9717-1bf194e957f7
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '202'
+TQID: https://experienceleague.adobe.com/mtWOzJnzV8k403LlyD9Fn9WSE5XTgjHzyVuA4j62MMg
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+workflow-type: tm+mt
+source-wordcount: 202
 ht-degree: 100%
 
 ---
-
 
 # Sécurité et confidentialité {#security-and-privacy}
 
@@ -34,4 +37,4 @@ Chaque client ou cliente obtient son propre référentiel Git. Le code est sécu
 
 [!UICONTROL Cloud Manager] adhère aux principes de confidentialité définis par Adobe. L’équipe de développement transmet le code en toute sécurité dans le référentiel Git sur HTTPS.
 
-L’interface d’utilisation de [!UICONTROL Cloud Manager] repose sur des services conformes à un framework de contrôle commun d’Adobe. L’interface d’utilisation de [!UICONTROL Cloud Manager] utilise les services sécurisés de plusieurs fournisseurs de cloud.
+L’interface d’utilisation de [!UICONTROL Cloud Manager] repose sur des services conformes à un framework de contrôle commun d’Adobe. L’interface d’utilisation de [!UICONTROL Cloud Manager] utilise les services sécurisés de plusieurs fournisseurs de services cloud.

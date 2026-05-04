@@ -2,13 +2,17 @@
 title: Copie de contenu pour la cohérence de l’environnement
 description: La copie de contenu dans Cloud Manager permet de copier du contenu modifiable à la demande à partir des environnements de production Adobe Experience Manager 6.x hébergés par Adobe Managed Services dans des environnements inférieurs pour les tests.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 84b3366481c2efd497583627eac67046452f6c38
-workflow-type: ht
-source-wordcount: '1321'
-ht-degree: 100%
+TQID: https://experienceleague.adobe.com/ffcf9UNSOp7oIpDZdtLcoFWp-Ww-A1XV3kCDmKqJLSw
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+workflow-type: tm+mt
+source-wordcount: 1452
+ht-degree: 99%
 
 ---
-
 
 # Copie de contenu pour la cohérence de l’environnement {#content-copy}
 
@@ -75,7 +79,7 @@ Pour qu’un contenu puisse être copié, un jeu de contenu doit être défini. 
    1. À droite d’un chemin de contenu inclus que vous souhaitez restreindre, cliquez sur ![icône de suppression de dossier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderDelete_18_N.svg).
    1. Dans le champ de texte, saisissez un chemin relatif au chemin racine affiché dans la boîte de dialogue.
    1. Cliquez sur ![Icône de suppression de dossier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderDelete_18_N.svg) **Exclure le chemin**.
-   1. Si nécessaire, répétez les étapes i à iii. ci-dessus pour ajouter d’autres chemins d’exclusion. Il n’y a aucune limitation. Autrement, passez à l’étape suivante.
+   1. Si nécessaire, répétez les étapes ci-dessous. jusqu&#39;à iii. ci-dessus pour ajouter d’autres chemins d’exclusion. Il n’y a aucune limitation. Autrement, passez à l’étape suivante.
 
    ![Exclusion de chemins](/help/assets/add-content-set-paths-excluded.png)
 

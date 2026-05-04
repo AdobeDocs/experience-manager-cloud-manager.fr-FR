@@ -2,13 +2,17 @@
 title: Surveiller les environnements
 description: Découvrez comment surveiller vos environnements dans Cloud Manager.
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+TQID: https://experienceleague.adobe.com/1WlZ7i3267CTPVQrvLi9FlzJuTjzSzpghePEMlSygjY
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: 873
 ht-degree: 74%
 
 ---
-
 
 # Surveiller les environnements {#monitoring-environments}
 
@@ -22,7 +26,7 @@ Si une mesure est supérieure à son seuil d’avertissement (mais inférieure �
 
 Si une mesure dépasse son seuil critique, elle est considérée comme étant dans un état critique.
 
-Adobe Managed Services définit les seuils, que vous pouvez afficher dans [!UICONTROL Cloud Manager]. Dans la plupart des cas, les seuils sont cohérents entre les clientes et clients. Mais dans certains cas, Adobe Managed Services modifie les seuils pour répondre à leurs besoins spécifiques. Posez toutes les questions que vous avez concernant les seuils à votre équipe d’ingénierie du service client.
+Adobe Managed Services définit les seuils, que vous pouvez afficher dans [!UICONTROL Cloud Manager]. Dans la plupart des cas, les seuils sont cohérents entre les clientes et clients. Mais dans certains cas, Adobe Managed Services modifie les seuils pour répondre à leurs besoins spécifiques. Posez toutes les questions que vous avez concernant les seuils à votre responsable du succès client.
 
 ## Accéder à la surveillance du système {#accessing-system-monitoring}
 
@@ -125,4 +129,4 @@ La section **Analyse des événements**, située sous ce graphique, affiche l’
 
 Cette vidéo présente une vue d’ensemble de l’utilisation des graphiques générés par les rapports Cloud Manager pour une vue d’ensemble de vos environnements de programme.
 
->[!VIDEO](https://video.tv.adobe.com/v/34717?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26315/)

@@ -2,13 +2,17 @@
 title: Test de qualité du code
 description: Découvrez comment fonctionne le test de qualité du code des pipelines et comment il peut améliorer la qualité de vos déploiements.
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+TQID: https://experienceleague.adobe.com/gAO8BdTx9-Sq8evIuI3hIaHIUixk-IulQagCI-Jssrc
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754bid: ff09c71c-26a9-449a-85f8-2aeb8ce96100
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '2783'
-ht-degree: 98%
+source-wordcount: 2911
+ht-degree: 97%
 
 ---
-
 
 # Test de qualité du code {#code-quality-testing}
 
@@ -44,7 +48,7 @@ Cette étape de test évalue la qualité du code de votre application, qui est l
 
 Les tests de qualité du code analysent le code source afin de s’assurer qu’il répond à certains critères de qualité.
 
-Le logiciel les implémente avec une combinaison d’analyses SonarQube, d’examen au niveau du package de contenu à l’aide d’OakPAL et de validation du Dispatcher à l’aide de l’outil d’optimisation du Dispatcher.
+Le logiciel les implémente avec une combinaison d’analyses SonarQube, d’examen au niveau du module de contenu à l’aide d’OakPAL et de validation du Dispatcher à l’aide de l’outil d’optimisation du Dispatcher.
 
 Il existe plus de 100 règles combinant des règles Java génériques et des règles spécifiques à AEM. Certaines des règles spécifiques à AEM sont créées en fonction des bonnes pratiques de l’équipe d’ingénierie AEM et sont appelées [Règles de qualité du code personnalisées](/help/using/custom-code-quality-rules.md).
 
@@ -64,7 +68,7 @@ Les résultats des tests de qualité du code sont fournis sous forme d’évalua
 | Couverture | Défini par un mélange de couverture de ligne de test unitaire et de couverture de condition à l’aide de la formule : <br/>`Coverage = (CT + CF + LC) / (2 * B + EL)`  <ul><li>`CT` = Conditions qui ont été évaluées comme `true` au moins une fois lors de l’exécution de tests unitaires</li><li>`CF` = Conditions qui ont été évaluées comme `false` au moins une fois lors de l’exécution de tests unitaires</li><li>`LC` = Lignes couvertes = lines_to_cover - uncover_lines</li><li>`B` = nombre total de conditions</li><li>`EL` = nombre total de lignes exécutables (lines_to_cover)</li></ul> | Important | &lt; 50 % |
 | Tests unitaires ignorés | Nombre de tests unitaires ignorés | Infos | > 1 |
 | Problèmes en cours | Types de problèmes généraux – Vulnérabilités, bogues et smells de code | Infos | > 0 |
-| Lignes dupliquées | Défini comme le nombre de lignes impliquées dans les blocs dupliqués. Un bloc de code est considéré comme dupliqué dans les conditions suivantes.<br>Projets non Java :<ul><li>Il doit y avoir au moins 100 jetons successifs et dupliqués.</li><li>Ces jetons doivent être répartis au moins sur : </li><li>30 lignes de code pour COBOL </li><li>20 lignes de code pour ABAP </li><li>10 lignes de code pour d’autres langages</li></ul>Projets Java :<ul></li><li> Il devrait y avoir au moins 10 déclarations successives et dupliquées, quel que soit le nombre de jetons et de lignes.</li></ul>Les différences dans la mise en retrait ainsi que dans les littéraux de chaîne sont ignorées lors de la détection des doublons. | Infos | > 1 % |
+| Lignes dupliquées | Défini comme le nombre de lignes impliquées dans les blocs dupliqués. Un bloc de code est considéré comme dupliqué dans les conditions suivantes.<br>Projets non Java :<ul><li>Il doit y avoir au moins 100 jetons successifs et dupliqués.</li><li>Ces jetons doivent être répartis au moins sur : </li><li>30 lignes de code pour COBOL </li><li>20 lignes de code pour ABAP </li><li>10 lignes de code pour d’autres langages</li></ul>Projets Java :<ul></li><li> Il devrait y avoir au moins 10 déclarations successives et dupliquées, quel que soit le nombre de jetons et de lignes.</li></ul>Les différences dans la mise en retrait ainsi que dans les littéraux de chaîne sont ignorées lors de la détection des doublons. | Infos | > 1 % |
 | Compatibilité Cloud Service | Nombre de problèmes de compatibilité Cloud Service identifiés | Infos | > 0 |
 
 >[!NOTE]
@@ -135,7 +139,7 @@ Le tableau suivant répertorie les contrôles d’intégrité :
 | Le gestionnaire de bibliothèques HTML Adobe Granite est configuré correctement. | Configuration de gestionnaire de bibliothèque HTML CQ | Important |
 | Le lot Prise en charge CRXDE est désactivé. | Prise en charge de CRXDE | Important |
 | `Sling` lot et le servlet DavEx sont désactivés. | Contrôle d’intégrité DavEx | Important |
-| L’exemple de contenu n’est pas installé. | Packages d’exemple de contenu | Important |
+| L’exemple de contenu n’est pas installé. | Exemples de modules de contenu | Important |
 | Les filtres de demande et de débogage de la gestion de contenu web sont désactivés. | [Configuration des filtres WCM](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/deploying/configuring/osgi-configuration-settings#configuring) | Important |
 | `Sling` lot WebDAV et le servlet sont correctement configurés. | Contrôle d’intégrité WebDAV | Important |
 | Le serveur web est configuré pour empêcher les clics publicitaires. | Configuration du serveur web | Important |
@@ -288,19 +292,19 @@ Cette fonctionnalité est disponible pour les mesures suivantes.
 
 ## Optimisation de l’analyse des modules de contenu {#content-package-scanning-optimization}
 
-Dans le cadre du processus d’analyse de la qualité, Cloud Manager effectue une analyse des modules de contenu générés par la version Maven. Cloud Manager propose des optimisations pour accélérer ce processus, qui est efficace lorsque certaines contraintes de conditionnement sont observées.
+Dans le cadre du processus d’analyse de la qualité, Cloud Manager effectue une analyse des modules de contenu générés par la version Maven. Cloud Manager propose des optimisations pour accélérer ce processus, qui est efficace lorsque certaines contraintes de conditionnement sont observées.
 
-La principale optimisation est effectuée pour les projets qui génèrent un seul package « all », qui contient d’autres packages de contenu générés par la version, qui sont marqués comme étant ignorés. Lorsque Cloud Manager détecte ce scénario, plutôt que de décompresser le package « all », les packages de contenu individuels sont analysés directement et triés en fonction des dépendances. Par exemple, considérez la sortie de génération suivante.
+La principale optimisation est effectuée pour les projets qui génèrent un seul package « all », qui contient d’autres modules de contenu générés par la version, qui sont marqués comme étant ignorés. Lorsque Cloud Manager détecte ce scénario, plutôt que de décompresser le package « all », les modules de contenu individuels sont analysés directement et triés en fonction des dépendances. Par exemple, considérez la sortie de génération suivante.
 
 * `all/myco-all-1.0.0-SNAPSHOT.zip` (package de contenu)
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (package de contenu ignoré)
 * `ui.content/myco-ui.content-1.0.0-SNAPSHOT.zip` (package de contenu ignoré)
 
-Si les seuls éléments contenus dans `myco-all-1.0.0-SNAPSHOT.zip` sont les deux packages de contenu ignorés, les deux packages incorporés sont analysés au lieu du package de contenu « all ».
+Si les seuls éléments contenus dans `myco-all-1.0.0-SNAPSHOT.zip` sont les deux modules de contenu ignorés, les deux packages incorporés sont analysés au lieu du module de contenu « all ».
 
 Pour les projets qui produisent des dizaines de packages incorporés, il a été démontré que cette optimisation permet de gagner jusqu’à 10 minutes par exécution de pipeline.
 
-Un cas particulier peut se produire lorsque le package de contenu « all » contient une combinaison de packages de contenu ignorés et de lots OSGi. Par exemple, si `myco-all-1.0.0-SNAPSHOT.zip` contient les deux packages incorporés mentionnés précédemment ainsi qu’un ou plusieurs lots OSGi, un nouveau package de contenu minimal est créé avec uniquement les lots OSGi. Ce package est toujours nommé `cloudmanager-synthetic-jar-package` et les lots contenus sont placés dans `/apps/cloudmanager-synthetic-installer/install`.
+Un cas particulier peut se produire lorsque le module de contenu « all » contient une combinaison de modules de contenu ignorés et de lots OSGi. Par exemple, si `myco-all-1.0.0-SNAPSHOT.zip` contient les deux packages incorporés mentionnés précédemment ainsi qu’un ou plusieurs lots OSGi, un nouveau module de contenu minimal est créé avec uniquement les lots OSGi. Ce package est toujours nommé `cloudmanager-synthetic-jar-package` et les lots contenus sont placés dans `/apps/cloudmanager-synthetic-installer/install`.
 
 >[!NOTE]
 >

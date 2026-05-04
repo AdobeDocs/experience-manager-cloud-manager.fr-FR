@@ -2,13 +2,18 @@
 title: Environnement de création
 description: Découvrez l’environnement de création spécialisé dans lequel les utilisateurs et utilisatrices de Cloud Manager peuvent créer et tester votre code.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: ee49b0732fdb870c4f768764aa75b240fd101b59
+TQID: https://experienceleague.adobe.com/AdGVWjyF0DXEX7jH5S39JQ506oVnNYGtYqAWNHcQeP8
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552eid: cd2426f1-5719-4006-b8c2-738e5969754b
+subfeature_v2: id: d9eb3b3e-9447-4ed4-bf4a-96c7b245cb27
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '1243'
+source-wordcount: 1243
 ht-degree: 81%
 
 ---
-
 
 # Environnement de création {#build-environment}
 
@@ -41,7 +46,7 @@ Les environnements de création de Cloud Manager possèdent les attributs suiva
 * Node.js 18 est disponible pour les [pipelines front-end](/help/overview/ci-cd-pipelines.md).
 
 >[!IMPORTANT]
->La prise en charge des chaînes d’outils Maven a été supprimée à partir de la version Cloud Manager 2025.06.0. La sélection du JDK est désormais prise en charge uniquement via `.cloudmanager/java-version`. Pour plus d’informations, voir [&#x200B; Utilisation d’une version Java spécifique &#x200B;](#using-java-version).
+>La prise en charge des chaînes d’outils Maven a été supprimée à partir de la version Cloud Manager 2025.06.0. La sélection du JDK est désormais prise en charge uniquement via `.cloudmanager/java-version`. Pour plus d’informations, voir [ Utilisation d’une version Java spécifique ](#using-java-version).
 
 >[!NOTE]
 >
@@ -74,7 +79,7 @@ Par défaut, les projets créés par le processus de création Cloud Manager ut
 >**Conseils de migration :**
 >
 >1. Supprimez les chaînes d&#39;outils en supprimant toute entrée de `org.apache.maven.plugins:maven-toolchains-plugin` et tout `toolchains.xml` validé dans votre contrôle de code source.
->1. Sélectionnez un JDK avec `.cloudmanager/java-version`(21, 17 ou 11), comme décrit dans la section [&#x200B; Autre version du JDK d’exécution Maven &#x200B;](#alternate-maven).
+>1. Sélectionnez un JDK avec `.cloudmanager/java-version`(21, 17 ou 11), comme décrit dans la section [ Autre version du JDK d’exécution Maven ](#alternate-maven).
 >1. Adobe recommande d’effacer le cache de build de Cloud Manager ou de déclencher une nouvelle exécution de pipeline.
 >
 

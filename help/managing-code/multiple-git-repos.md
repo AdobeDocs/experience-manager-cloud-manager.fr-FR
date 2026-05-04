@@ -2,9 +2,12 @@
 title: Utiliser plusieurs référentiels Git
 description: Au lieu de travailler directement avec le référentiel Git de Cloud Manager, vous pouvez apprendre à utiliser vos propres référentiels Git ou plusieurs autres.
 exl-id: 53bf78bb-489a-4a83-8459-c361f532d54a
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
-workflow-type: ht
-source-wordcount: '738'
+TQID: https://experienceleague.adobe.com/xKzqOfbi12A0POy-C7Gm7-n649DEBX9JP3LfXA5UC3Y
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+workflow-type: tm+mt
+source-wordcount: 743
 ht-degree: 100%
 
 ---
@@ -48,7 +51,7 @@ Par exemple, une transmission vers une branche du projet A peut déclencher une
 
 À titre d’exemple, une modification apportée à la branche `main` du projet A est automatiquement transmise vers la branche `main` du référentiel Git de Cloud Manager. Bien entendu, il pourrait exister un mappage entre les branches, par exemple une transmission vers une branche nommée `dev` dans le projet A qui est transmise vers une branche nommée `development` dans le référentiel Git de Cloud Manager. Des étapes similaires sont nécessaires pour le projet B.
 
-Selon la stratégie et les workflows d’embranchement, il est possible de configurer la synchronisation pour différentes branches. Si le référentiel Git utilisé ne propose pas de concept similaire aux actions GitHub, une intégration via Jenkins (ou un outil similaire) est également possible. Dans ce cas, un webhook déclenche un traitement Jenkins chargé d’effectuer le travail.
+Selon les workflows et la stratégie d’embranchement, il est possible de configurer la synchronisation pour différentes branches. Si le référentiel Git utilisé ne propose pas de concept similaire aux actions GitHub, une intégration via Jenkins (ou un outil similaire) est également possible. Dans ce cas, un webhook déclenche un traitement Jenkins chargé d’effectuer le travail.
 
 Suivez les étapes ci-dessous pour ajouter une nouvelle source ou un nouveau référentiel (la ou le troisième) :
 

@@ -2,13 +2,16 @@
 title: Parcours d’utilisateur ou d’utilisatrice
 description: Découvrez les différents scénarios d’intégration et la prise en main de Cloud Manager.
 exl-id: deb3429c-dfcf-4e52-9aba-d9368aa240e6
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '532'
+TQID: https://experienceleague.adobe.com/EnNaMZzu5bLUD3Jjsp6ovqFvoFM30ju4FOQJfmySLEk
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+workflow-type: tm+mt
+source-wordcount: 560
 ht-degree: 100%
 
 ---
-
 
 # Parcours d’utilisateur ou d’utilisatrice {#user-journey}
 
@@ -52,7 +55,7 @@ Pour obtenir des informations supplémentaires sur les avantages de la mise à n
 
 Connectez-vous à la page de destination [!UICONTROL Experience Cloud] à l’aide de vos informations d’identification Adobe Identity Management. À partir de là, sélectionnez AEM dans le sélecteur de solution pour accéder à [!UICONTROL Cloud Manager] et à vos environnements AEM.
 
-Après la première connexion à [!UICONTROL Cloud Manager], vous avez accès à vos environnements AEM directement depuis l’interface d’utilisation de [!UICONTROL Cloud Manager]. À ce stade, vous pouvez commencer à explorer toutes les possibilités offertes par [!UICONTROL Cloud Manager] et préparer votre première branche de code, à déployer dans vos environnements d’évaluation et de production.
+Après la première connexion à [!UICONTROL Cloud Manager], vous avez accès à vos environnements AEM directement depuis l’interface d’utilisation de [!UICONTROL Cloud Manager]. À ce stade, vous pouvez commencer à explorer toutes les possibilités offertes par [!UICONTROL Cloud Manager] et préparer votre première branche de code à déployer dans vos environnements d’évaluation et de production.
 
 Pour commencer à utiliser [!UICONTROL Cloud Manager], consultez le document [Première connexion](/help/getting-started/first-time-login.md).
 
@@ -63,7 +66,7 @@ Pour des informations complémentaires sur AEM, voir le document [Déploiement 
 Une fois la connexion à [!UICONTROL Cloud Manager] effectuée, vous pouvez commencer votre projet AEM en procédant comme suit :
 
 1. Configurez votre environnement de référentiel de code.
-1. Configurez votre équipe et les rôles. Les appartenances aux rôles sont attribuées en ajoutant l’utilisateur ou l’utilisatrice à un profil [!UICONTROL Cloud Manager] à l’aide d’Admin Console.
+1. Configurez votre équipe et les rôles. L’appartenance à un rôle est affectée en ajoutant l’utilisateur ou l’utilisatrice à à un profil [!UICONTROL Cloud Manager] à l’aide d’Admin Console.
 1. Configurez les branches de code source dans le référentiel Git.
 1. Définissez vos objectifs en termes de KPI (indicateurs clés de performance) de charge et de performance.
 1. Définissez des scénarios de test pour déployer votre code dans vos environnements d’évaluation et de production une fois toutes les vérifications de qualité effectuées.

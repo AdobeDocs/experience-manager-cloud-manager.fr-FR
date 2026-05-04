@@ -2,13 +2,16 @@
 title: Ajout d’un pipeline de production
 description: Découvrez comment créer et configurer des pipelines de production à l’aide de Cloud Manager afin de déployer votre code.
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 1209faf71edbd74cd87acfe24ec438b98ddd4a3a
-workflow-type: ht
-source-wordcount: '1249'
+TQID: https://experienceleague.adobe.com/WH6W8bZNCWo0BAGLwnMOPpB3bk5P6Fd7c5b-dRT5Vc0
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+workflow-type: tm+mt
+source-wordcount: 1256
 ht-degree: 100%
 
 ---
-
 
 # Ajout d’un pipeline de production {#configuring-production-pipelines}
 
@@ -117,7 +120,7 @@ Une fois que vous avez utilisé l’interface d’utilisation de [!UICONTROL Clo
            >
            >Voir la section [Déploiement du code](/help/using/code-deployment.md) pour découvrir comment définir le planning de déploiement ou exécuter le pipeline immédiatement.
 
-            * **Solliciter la supervision par l’équipe d’ingénierie du service client (CSE)** : si cette option est choisie, une personne faisant partie de l’équipe d’ingénierie du service client est engagée pour véritablement démarrer le déploiement. Lors de la création ou de la modification d’un pipeline lorsque cette option est activée, le rôle **Responsable de déploiement** dispose des options suivantes.
+            * **Solliciter la supervision par le responsable du succès client** : si cette option est choisie, une personne responsable du succès client est engagée pour véritablement démarrer le déploiement. Lors de la création ou de la modification d’un pipeline lorsque cette option est activée, le rôle **Responsable de déploiement** dispose des options suivantes.
 
                * **Toute personne faisant partie de l’équipe d’ingénierie du service client** : permet à un ingénieur ou à une ingénieure du service client disponible de démarrer le déploiement.
                * **Ma personne faisant partie de l’équipe d’ingénierie du service client** : permet uniquement à la personne faisant partie de l’équipe d’ingénierie du service client spécifique affectée au client ou à la cliente de démarrer le déploiement. Cette option s’applique également à la personne remplaçante désignée de l’ingénieur ou de l’ingénieure du service client indisponible.
@@ -163,4 +166,4 @@ Une fois que vous avez configuré le pipeline, vous devez déployer votre code. 
 
 Cette vidéo présente une vue d’ensemble du processus de création de pipeline, détaillé dans ce document.
 
->[!VIDEO](https://video.tv.adobe.com/v/327601?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26314/)
