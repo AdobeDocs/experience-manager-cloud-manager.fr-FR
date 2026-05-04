@@ -2,13 +2,20 @@
 title: Configurer les branches
 description: Découvrez comment configurer votre première branche dans Git et son utilisation par le pipeline CI/CD pour déployer le code de votre application.
 exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
-source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+TQID: https://experienceleague.adobe.com/Mxmx725a6m7J9UtwkI5o3tJGzZ7O3c3Bgv-fF393sZg
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: 332
 ht-degree: 95%
 
 ---
-
 
 # Configurer les branches {#configuring-branches}
 
@@ -70,7 +77,7 @@ To <url>
 
 >[!NOTE]
 >
->L’URL spécifique ainsi que vos informations d’identification vous seront fournies par votre équipe d’ingénierie du service client lors de l’intégration à [!UICONTROL Cloud Manager].
+>L’URL spécifique ainsi que vos informations d’identification vous seront fournies par votre responsable du succès client lors de l’intégration à [!UICONTROL Cloud Manager].
 
 ## Branches supplémentaires {#additional-branches}
 

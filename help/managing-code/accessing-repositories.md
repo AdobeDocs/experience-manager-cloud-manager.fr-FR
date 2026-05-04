@@ -2,9 +2,15 @@
 title: Informations d’accès au référentiel
 description: Découvrez comment accéder à votre référentiel Git géré par Adobe et comment le gérer à l’aide de la gestion de compte Git en libre-service, à partir de Cloud Manager.
 exl-id: 1cc88c82-67c7-4553-a1b8-d2ab22be466c
-source-git-commit: 04fbc4a3fdba8b108055d66a4fdb1a31994cb18e
-workflow-type: ht
-source-wordcount: '0'
+TQID: https://experienceleague.adobe.com/S3oIN4DvfYCvKQLGQmFtWlqHcN5Mv9xvoNKjaMnNlm0
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+workflow-type: tm+mt
+source-wordcount: 403
 ht-degree: 100%
 
 ---
@@ -60,4 +66,4 @@ La fonction **Accéder aux informations sur le référentiel** est également di
 
 Vous pouvez révoquer un mot de passe d’accès à tout moment.
 
-Pour ce faire, [créez un ticket d’assistance pour cette demande](https://experienceleague.adobe.com/fr?support-solution=Experience+Manager&amp;support-tab=home#support). Le ticket est traité en priorité et la révocation est généralement effectuée dans la journée.
+Pour ce faire, [créez un ticket d’assistance pour cette demande](https://experienceleague.adobe.com/fr?support-solution=Experience+Manager&support-tab=home#support). Le ticket est traité en priorité et la révocation est généralement effectuée dans la journée.

@@ -2,13 +2,20 @@
 title: Configurations du Dispatcher
 description: Découvrez comment déployer les fichiers de configuration du Dispatcher à l’aide de Cloud Manager.
 exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
-source-git-commit: 037a296c21adde6f7fa731c71ee4a75cea042780
+TQID: https://experienceleague.adobe.com/KpGTN-444bigrhLddGnZvxkZsThcVc1B--oEoAKTdos
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 89%
+source-wordcount: 595
+ht-degree: 92%
 
 ---
-
 
 # Configurations du Dispatcher {#manage-your-dispatcher-configurations}
 
@@ -88,7 +95,7 @@ Le fichier et la structure des répertoires spécifiques peuvent varier en fonct
    </project>
    ```
 
-   * Comme à l’étape 1, l’artifactId et le nom peuvent avoir d’autres valeurs si vous le souhaitez. `dispatcher` est utilisé ici à titre d’exemple.
+   * Comme à l’étape 1, l’artifactId et le nom peuvent avoir d’autres valeurs si vous le souhaitez. `dispatcher` est utilisé ici à titre d’exemple.
 
 1. Le plug-in Maven Assembly requiert un `descriptor` pour définir la façon dont le fichier ZIP est créé. Pour créer ce descripteur, créez un fichier dans le sous-répertoire `dispatcher` nommé `assembly.xml` avec ce contenu. Ce fichier est référencé à la ligne 26 du fichier `pom.xml` ci-dessus.
 

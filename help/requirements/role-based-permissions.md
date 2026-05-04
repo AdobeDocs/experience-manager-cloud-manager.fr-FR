@@ -2,13 +2,20 @@
 title: Autorisations basées sur les rôles
 description: Découvrez les autorisations préconfigurées basées sur les rôles de Cloud Manager pour gérer l’accès à vos ressources cloud.
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+TQID: https://experienceleague.adobe.com/JXI9QGaexNJga8o80oLNo7allavc1x021DWmef-AkTc
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: 592
 ht-degree: 99%
 
 ---
-
 
 # Autorisations basées sur les rôles {#role-based-permissions}
 
@@ -22,7 +29,7 @@ ht-degree: 99%
 
 ## Rôles d’utilisateur ou d’utilisatrice {#user-roles}
 
-La gestion des rôles pour [!UICONTROL Cloud Manager] s’effectue dans [Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html). Toute personne utilisant [!UICONTROL Cloud Manager] doit être membre de l’organisation IMS du client ou de la cliente et avoir le contexte du produit Adobe Managed Services. Des rôles spécifiques sont fournis en ajoutant un utilisateur ou une utilisatrice à un profil de produit [!UICONTROL Cloud Manager] dans Admin Console.
+La gestion des rôles pour [!UICONTROL Cloud Manager] s’effectue dans [Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html). Toute personne utilisant [!UICONTROL Cloud Manager] doit être membre de l’organisation IMS du client ou de la cliente et avoir le contexte du produit Adobe Managed Services. L’appartenance à un rôle spécifique est fournie en ajoutant l’utilisateur ou l’utilisatrice à un profil de produit [!UICONTROL Cloud Manager] dans Admin Console.
 
 Pour plus d’informations sur la configuration de vos rôles, consultez la rubrique [Configuration des utilisateurs et utilisatrices et des rôles](/help/requirements/users-and-roles.md).
 
@@ -32,7 +39,7 @@ Ce tableau répertorie les rôles que vous pouvez affecter dans Admin Console.
 |---|---|
 | Propriétaire de l’entreprise | La personne principale effectue la configuration de [!UICONTROL Cloud Manager] initiale et est chargée de définir les KPI, d’approuver les déploiements en production et de remplacer les échecs à 3 niveaux importants si nécessaire. |
 | Créateur ou créatrice de contenu | Cette personne n’interagit généralement pas avec Cloud Manager, mais peut utiliser le sélecteur de programme Cloud Manager (à partir d’Experience Cloud) pour accéder à Adobe Experience Manager (AEM). |
-| Équipe d’ingénierie du service client | La personne prend principalement en charge le service client AMS et engage avec [!UICONTROL Cloud Manager] pour exécuter les déploiements. Ces déploiements nécessitent la supervision de l’équipe d’ingénierie du service client (CSE) Adobe. |
+| Responsable du succès client | La personne prend principalement en charge le succès client AMS et interagit avec [!UICONTROL Cloud Manager] pour exécuter les déploiements. Ces déploiements nécessitent la supervision d’un responsable du succès client Adobe. |
 | Responsable de déploiement | Cette personne gère les opérations de déploiement à l’aide de [!UICONTROL Cloud Manager] pour exécuter des déploiements d’évaluation et de production, peut approuver des échecs à 3 niveaux importants si nécessaire, et a accès au référentiel Git. |
 | Développeur ou développeuse | Cette personne développe et teste des codes d’application personnalisés, utilise principalement [!UICONTROL Cloud Manager] pour afficher le statut du déploiement et dispose d’un accès en validation au référentiel Git. |
 | Responsable de programme | Cette personne utilise [!UICONTROL Cloud Manager] pour effectuer la configuration de l’équipe, réviser le statut, afficher les KPI et approuver les échecs à 3 niveaux importants si nécessaire. |

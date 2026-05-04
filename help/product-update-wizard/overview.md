@@ -2,13 +2,20 @@
 title: Assistant de mise à jour du produit
 description: Découvrez comment l’assistant de mise à jour du produit simplifie le processus de mise à jour AEM de bout en bout dans Cloud Manager.
 exl-id: 8134e956-bfcf-41b8-a408-fa4375058c6a
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '208'
+TQID: https://experienceleague.adobe.com/1xLX5-Q3m0NRcAs0OrGyNbR0d2vP4VDl9iF2IzYpt7Y
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+workflow-type: tm+mt
+source-wordcount: 215
 ht-degree: 100%
 
 ---
-
 
 # Assistant de mise à jour du produit {#product-update-wizard}
 
@@ -24,7 +31,7 @@ L’assistant comprend cinq phases qui vous guident lors d’une mise à jour d
 
 ## Utiliser l’assistant {#using}
 
-Les clients intégrés à Cloud Manager et admissibles à la mise à niveau vers AEM 6.5 pourront utiliser l’assistant de mise à jour du produit. Pour plus d’informations, contactez l’ingénieur du service client (CSE).
+Les clients intégrés à Cloud Manager et admissibles à la mise à niveau vers AEM 6.5 pourront utiliser l’assistant de mise à jour du produit. Pour plus d’informations, contactez le responsable du succès client.
 
 1. Vous recevez une notification push par le biais de Cloud Manager pour vous informer qu’AEM 6.5 est disponible pour votre programme.
 

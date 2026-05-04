@@ -2,13 +2,18 @@
 title: Notifications
 description: Découvrez comment Cloud Manager vous informe des événements importants.
 exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '561'
+TQID: https://experienceleague.adobe.com/WBAHeIAH1XL6oVy342wLaUAoAHkUoN1AbcAl2Erkte4
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+workflow-type: tm+mt
+source-wordcount: 564
 ht-degree: 100%
 
 ---
-
 
 # Notifications {#notifications}
 
@@ -16,13 +21,13 @@ Découvrez comment Cloud Manager vous informe des événements importants.
 
 ## Notifications dans Cloud Manager {#cloud-manager-notifications}
 
-[!UICONTROL Cloud Manager] vous envoie des notifications lorsqu’un pipeline de production démarre et se termine (avec succès ou non) au début d’un déploiement en production, ainsi que lorsque les étapes **Approbation de mise en production** et **Planifié** sont atteintes. Ces notifications sont envoyées via le système de notification [!UICONTROL Experience Cloud].
+[!UICONTROL Cloud Manager] vous envoie des notifications lorsqu’un pipeline de production démarre et se termine (avec succès ou non) au début d’un déploiement en production. ainsi que lorsque les étapes **Approbation de mise en production** et **Planifié** sont atteintes. Ces notifications sont envoyées via le système de notification [!UICONTROL Experience Cloud].
 
 >[!NOTE]
 >
 >Les notifications Approbation et Planifié sont envoyées uniquement aux utilisateurs occupant les rôles de **Propriétaire d’entreprise**, **Gestionnaire de programme** et **Responsable de déploiement**.
 
-Les notifications s’affichent dans une barre latérale dans [!UICONTROL Cloud Manager] et dans [!UICONTROL Experience Cloud] d’Adobe.
+Les notifications s’affichent dans une barre latérale dans [!UICONTROL Cloud Manager] et dans [!UICONTROL Experience Cloud] d’Adobe.
 
 Les nouvelles notifications sont signalées sur l’icone en forme de cloche dans l’en-tête.
 
