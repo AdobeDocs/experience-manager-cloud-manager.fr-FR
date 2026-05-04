@@ -4,9 +4,13 @@ description: Découvrez la version 2026.4.0 de Cloud Manager dans Adobe Managed 
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
 TQID: https://experienceleague.adobe.com/4zfTpSYuFwrJZ-oeL1SObT14v2Rd--Z1hKn5JllHAro
-product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
 source-git-commit: 8964aad406d3e7fc5b911b98f928ad0427511230
 workflow-type: tm+mt
 source-wordcount: 467
@@ -49,7 +53,7 @@ La prochaine version prévue est le jeudi 7 mai 2026.
   ![Option Afficher/Modifier les variables dans le menu déroulant d’un pipeline sélectionné](/help/release-notes/assets/view-edit-variables-option.png)
   *Option Afficher/Modifier les variables dans le menu déroulant d’un pipeline sélectionné.*
 
-  ![Boîte de dialogue Configuration des variables ](/help/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*Boîte de dialogue Configuration des variables.*
+  ![Boîte de dialogue Configuration des variables &#x200B;](/help/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*Boîte de dialogue Configuration des variables.*
 
 * **Stabilité, performances et fiabilité améliorées.**
 
@@ -78,7 +82,7 @@ Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_e
 
 Un nouveau modèle de version compile uniquement les modules modifiés (plutôt que le référentiel entier) à l’aide de la mise en cache au niveau du module pour réduire les temps de création. Elle s’applique aux pipelines Qualité du code et Pile complète .
 
-![ Boîte de dialogue Modifier le pipeline hors production présentant les deux options de stratégie de création, à savoir Création complète et Création intelligente](/help/release-notes/assets/non-production-pipeline-edit.png)
+![&#x200B; Boîte de dialogue Modifier le pipeline hors production présentant les deux options de stratégie de création, à savoir Création complète et Création intelligente](/help/release-notes/assets/non-production-pipeline-edit.png)
 *Boîte de dialogue Modifier le pipeline hors production présentant les deux options de stratégie de création qui sont Création complète et Création intelligente.*
 
 Dans la boîte de dialogue **Ajouter/Modifier un pipeline**, sous l’onglet **Code Source**, une nouvelle section **Stratégie de build** vous permet de choisir l’une des options de build suivantes :

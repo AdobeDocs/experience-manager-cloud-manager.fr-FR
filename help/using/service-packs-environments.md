@@ -4,10 +4,17 @@ description: Découvrez comment vous pouvez désormais lancer des mises à jour 
 hide: true
 exl-id: 996a8eee-843f-45a6-8f7a-31ea405c2b32
 TQID: https://experienceleague.adobe.com/jdKXZuiGX-MZMKrsWCM6BzZ2hGfZLnvwMh2XTstMmZs
-product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: 8964aad406d3e7fc5b911b98f928ad0427511230
 workflow-type: tm+mt
 source-wordcount: 468
@@ -70,7 +77,7 @@ Après avoir lancé la mise à jour, vous pouvez surveiller la progression dans 
 
 1. Cliquez sur l’entrée pour afficher la progression détaillée et les mises à jour de statut comme suit :
 
-   ![ Progression de l’installation du pack de services ](/help/using/assets/service-pack-progression.png)
+   ![&#x200B; Progression de l’installation du pack de services &#x200B;](/help/using/assets/service-pack-progression.png)
 
 ### Résolution des problèmes d’installation
 
@@ -97,4 +104,4 @@ Une fois l’installation terminée, votre approbation (ou votre rejet) est néc
    * Pour annuler la mise à jour, cliquez sur **Rejeter**.
 L’installation du pack de services est annulée et aucune modification n’est appliquée.
 
-   ![ Rejet du pack de services ](/help/using/assets/service-pack-reject.png)
+   ![&#x200B; Rejet du pack de services &#x200B;](/help/using/assets/service-pack-reject.png)
