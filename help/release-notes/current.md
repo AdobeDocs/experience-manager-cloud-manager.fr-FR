@@ -1,88 +1,64 @@
 ---
-title: Notes de mise à jour de la version 2026.4.0 de Cloud Manager
-description: Découvrez la version 2026.4.0 de Cloud Manager dans Adobe Managed Services.
+title: Notes de mise à jour de la version 2026.5.0 de Cloud Manager
+description: Découvrez la version 2026.5.0 de Cloud Manager dans Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
 TQID: https://experienceleague.adobe.com/4zfTpSYuFwrJZ-oeL1SObT14v2Rd--Z1hKn5JllHAro
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 8964aad406d3e7fc5b911b98f928ad0427511230
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 0c2a9a946df6d5e1b0e4d5edb2715d8db98e9974
 workflow-type: tm+mt
-source-wordcount: 467
-ht-degree: 14%
+source-wordcount: 512
+ht-degree: 15%
 
 ---
 
 
-# Notes de mise à jour de Cloud Manager 2026.4.0 dans Adobe Managed Services {#release-notes}
+# Notes de mise à jour de Cloud Manager 2026.5.0 dans Adobe Managed Services {#release-notes}
 
 <!-- add "hold: true" to metadata above to be able to commit/merge to Main WITHOUT Publishig -->
 
 <!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.04.0+Release -->
 
-Découvrez la version  2026.4.0 dans Adobe Managed Services.
+Découvrez la version  2026.5.0 dans Adobe Managed Services.
 
 Consultez également les [notes de mise à jour actuelles d’Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/release-notes/home).
 
 ## Dates de publication {#release-date}
 
-La date de publication de  2026.4.0 est le jeudi 2 avril 2026.
+La date de publication de  2026.5.0 est le jeudi 7 mai 2026.
 <!-- There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
-La prochaine version prévue est le jeudi 7 mai 2026.
+La prochaine version prévue est le jeudi 4 juin 2026.
 
 <!-- SAVE FOR FUTURE POSSIBLE USE There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
 ## Nouveautés {#what-is-new}
 
-* **Prise en charge de l’extensibilité de l’interface utilisateur dans AEM Experience Hub.**
-
-  La prise en charge des extensions d’interface utilisateur dans [AEM Experience Hub](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/experience-hub/experience-hub) est désormais activée, ce qui permet aux développeurs d’étendre l’interface avec des fonctionnalités et des widgets personnalisés créés à l’aide d’Adobe App Builder.
-
-  Pour en savoir plus, voir [AEM Experience Hub](https://developer.adobe.com/uix/docs/services/aem-experience-hub/).
-
-* **Les pipelines de configuration prennent désormais en charge les secrets gérés.**
-
-  Les utilisateurs peuvent désormais ajouter et gérer des secrets directement dans les pipelines de configuration de Cloud Manager. Ces secrets remplacent en toute sécurité les valeurs dans la spécification de configuration du pipeline et prennent en charge les déploiements flexibles spécifiques à un environnement.
-
-  ![Option Afficher/Modifier les variables dans le menu déroulant d’un pipeline sélectionné](/help/release-notes/assets/view-edit-variables-option.png)
-  *Option Afficher/Modifier les variables dans le menu déroulant d’un pipeline sélectionné.*
-
-  ![Boîte de dialogue Configuration des variables &#x200B;](/help/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*Boîte de dialogue Configuration des variables.*
-
-* **Stabilité, performances et fiabilité améliorées.**
-
-  Cette version comprend des mises à jour d’optimisation et de maintenance qui ont amélioré la stabilité, les performances et la fiabilité de Cloud Manager.
-
+Il n’existe aucune nouvelle fonctionnalité significative dans la version de mai 2026 de Cloud Manager on AMS.
 
 ## Programmes bêta {#beta-program}
 
-Participez aux programmes Beta de Cloud Manager pour obtenir un accès exclusif aux fonctionnalités à venir avant leur publication générale.
+Participez au programme bêta de Cloud Manager pour obtenir un accès exclusif aux fonctionnalités à venir avant leur disponibilité générale.
 
-Les opportunités suivantes sont actuellement disponibles :
+>[!IMPORTANT]
+>
+>Les versions de Beta peuvent contenir des défauts et sont fournies « EN L’ÉTAT » sans garantie d’aucune sorte. Adobe n’a aucune obligation de tenir à jour, corriger, mettre à jour, modifier, remplacer ou prendre en charge (par le biais des services d’assistance Adobe ou d’une autre manière) les versions bêta. Adobe conseille aux clients d’être prudent et de ne pas se fier au bon fonctionnement ou aux performances des versions bêta, ni à la documentation ou aux documents d’accompagnement. Les fonctionnalités et API de la version bêta peuvent être modifiées sans préavis. Par conséquent, toute utilisation des versions bêta s’effectue entièrement aux risques et périls du client.
 
-<!--
-### Experience Hub Extensibility and Customization {#exp-hub-extensibility}
+Les opportunités de programme Beta suivantes sont actuellement disponibles :
 
-[Experience Hub](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/experience-hub/experience-hub) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI extensions so they can help you enable them in Experience Hub with minimal effort.
+### Pipelines de niveau web pour AEM Managed Services {#web-tier-pipelines}
 
-![Diagram of Experience Hub extensibility and customization workflow](/help/release-notes/assets/experience-hub-extensibility-customization.png)
+Cloud Manager prend désormais en charge les pipelines de niveau web dédiés pour les programmes AMS, ce qui permet aux équipes de déployer des configurations de niveau web et Dispatcher indépendamment des déploiements de pile complète. Cela permet une itération plus rapide sur les modifications de niveau web tout en réduisant les exécutions inutiles de pipelines complets. Lorsqu’un pipeline de niveau web est configuré, les pipelines de pile complète ignorent automatiquement le déploiement de niveau web pour cet environnement afin d’éviter les conflits de déploiement. La suppression du pipeline de couche web restaure automatiquement le comportement de déploiement par défaut.
 
-Embed custom experiences in Experience Hub to extend and personalize your organization's dashboard. In addition to Adobe's built-in widgets, add your own using the [UI Extensibility](https://developer.adobe.com/uix/docs/) framework. Build JavaScript-based UI apps and surface them to your users to meet business-specific requirements and workflows. 
-
-Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_exphubextensibility@adobe.com) with your Adobe OrgID and a short description of the customization you intend to create.
--->
+Pour rejoindre Beta, contactez votre ingénieur du succès client Adobe pour en savoir plus.
 
 ### Versions plus rapides avec mise en cache du module {#quick-build-cm-pipelines}
 
 Un nouveau modèle de version compile uniquement les modules modifiés (plutôt que le référentiel entier) à l’aide de la mise en cache au niveau du module pour réduire les temps de création. Elle s’applique aux pipelines Qualité du code et Pile complète .
 
-![&#x200B; Boîte de dialogue Modifier le pipeline hors production présentant les deux options de stratégie de création, à savoir Création complète et Création intelligente](/help/release-notes/assets/non-production-pipeline-edit.png)
+![ Boîte de dialogue Modifier le pipeline hors production présentant les deux options de stratégie de création, à savoir Création complète et Création intelligente](/help/release-notes/assets/non-production-pipeline-edit.png)
 *Boîte de dialogue Modifier le pipeline hors production présentant les deux options de stratégie de création qui sont Création complète et Création intelligente.*
 
 Dans la boîte de dialogue **Ajouter/Modifier un pipeline**, sous l’onglet **Code Source**, une nouvelle section **Stratégie de build** vous permet de choisir l’une des options de build suivantes :
@@ -92,7 +68,7 @@ Dans la boîte de dialogue **Ajouter/Modifier un pipeline**, sous l’onglet **C
 
 Voir [Ajouter un pipeline hors production](/help/using/non-production-pipelines.md#add-non-production-pipeline) et [À propos de l’utilisation de la création intelligente dans un pipeline hors production](/help/using/non-production-pipelines.md#about-smart-build).
 
-Vous contrôlez les pipelines qui utilisent **génération intelligente**. Pendant la version bêta, cette option s’affiche uniquement pour les pipelines **Qualité du code** et **Déploiement du code de pile complète de développement**.
+Vous contrôlez les pipelines qui utilisent **Smart Build**. Pendant la version bêta, cette option s’affiche uniquement pour les pipelines **Qualité du code** et **Déploiement du code de pile complète de développement**.
 
 Pour rejoindre Beta, envoyez un e-mail à l’adresse [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) avec votre ID d’organisation et votre ID de programme Adobe.
 
@@ -100,7 +76,7 @@ Pour rejoindre Beta, envoyez un e-mail à l’adresse [beta_quickbuild_cmpipelin
 
 ## Correctifs {#bug-fixes}
 
-Il n’existe aucun correctif de bugs significatif dans la version d’avril 2026 de Cloud Manager on AMS.
+Il n’existe aucun correctif significatif dans la version de mai 2026 de Cloud Manager on AMS.
 
 <!--
 Known Issues {#known-issues}
