@@ -3,13 +3,9 @@ title: Configurations du Dispatcher
 description: Découvrez comment déployer les fichiers de configuration du Dispatcher à l’aide de Cloud Manager.
 exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
 TQID: https://experienceleague.adobe.com/KpGTN-444bigrhLddGnZvxkZsThcVc1B--oEoAKTdos
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
 source-wordcount: 595
@@ -37,7 +33,7 @@ Suivez les étapes ci-dessous pour terminer la configuration initiale de Dispatc
 
 1. Récupérez les fichiers de configuration de production actuels auprès de votre CSE.
 1. Supprimez les données codées de manière irréversible et spécifiques à l’environnement (par exemple, l’IP de rendu de publication) et remplacez-les par des variables.
-1. Définissez les variables requises dans les paires clé-valeur pour chaque Dispatcher cible et ajoutez-les au dossier [variables](https://experienceleague.adobe.com/docs/experience-manager-learn/ams/dispatcher/variables.html?lang=fr#variables-files-(.vars)) sur chaque instance.
+1. Définissez les variables requises dans les paires clé-valeur pour chaque Dispatcher cible et ajoutez-les au dossier [variables](https://experienceleague.adobe.com/docs/experience-manager-learn/ams/dispatcher/variables.html?lang=en#variables-files-(.vars)) sur chaque instance.
 1. Testez les configurations mises à jour dans votre environnement d’évaluation.
 1. Une fois le test effectué, demandez au CSE de procéder au déploiement en production.
 1. Validez les fichiers dans votre référentiel Git.
