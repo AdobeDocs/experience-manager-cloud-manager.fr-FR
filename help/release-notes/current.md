@@ -4,9 +4,13 @@ description: Découvrez la version 2026.6.0 de Cloud Manager dans Adobe Managed 
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
 TQID: https://experienceleague.adobe.com/4zfTpSYuFwrJZ-oeL1SObT14v2Rd--Z1hKn5JllHAro
-product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
 source-git-commit: d70a97d1084e147fb48165a7ea8c1347d9c3158b
 workflow-type: tm+mt
 source-wordcount: 513
@@ -58,7 +62,7 @@ Pour rejoindre Beta, contactez votre ingénieur du succès client Adobe pour en 
 
 Un nouveau modèle de version compile uniquement les modules modifiés (plutôt que le référentiel entier) à l’aide de la mise en cache au niveau du module pour réduire les temps de création. Elle s’applique aux pipelines Qualité du code et Pile complète .
 
-![ Boîte de dialogue Modifier le pipeline hors production présentant les deux options de stratégie de création, à savoir Création complète et Création intelligente](/help/release-notes/assets/non-production-pipeline-edit.png)
+![&#x200B; Boîte de dialogue Modifier le pipeline hors production présentant les deux options de stratégie de création, à savoir Création complète et Création intelligente](/help/release-notes/assets/non-production-pipeline-edit.png)
 *Boîte de dialogue Modifier le pipeline hors production présentant les deux options de stratégie de création qui sont Création complète et Création intelligente.*
 
 Dans la boîte de dialogue **Ajouter/Modifier un pipeline**, sous l’onglet **Code Source**, une nouvelle section **Stratégie de build** vous permet de choisir l’une des options de build suivantes :
