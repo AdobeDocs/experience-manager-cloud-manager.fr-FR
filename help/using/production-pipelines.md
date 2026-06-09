@@ -10,10 +10,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: badb64b816e83ca08a39b2b39eda13335f6a3c1d
 workflow-type: tm+mt
-source-wordcount: 1256
-ht-degree: 100%
+source-wordcount: 1665
+ht-degree: 73%
 
 ---
 
@@ -50,24 +50,11 @@ Une fois que vous avez utilisé l’interface d’utilisation de [!UICONTROL Clo
 
 1. Cliquez sur **+Ajouter** et sélectionnez **Ajouter un pipeline de production**.
 
-   ![Ajout d’un pipeline de production](/help/assets/configure-pipelines/add-prod1.png)
+   ![Ajout d’un pipeline de production](/help/assets/configure-pipelines/add-prod7.png)
 
 1. La boîte de dialogue **Ajout d’un pipeline de production** s’ouvre sur l’onglet de **Configuration** où plusieurs options de votre pipeline doivent être définies. Ces options sont regroupées en sections réductibles et sont décrites dans les étapes suivantes.
 
    1. Attribuez un nom explicite à votre pipeline dans le champ **Nom du pipeline**.
-
-   1. Sous la section **Code source**, définissez où le pipeline récupère le code qu’il traite.
-
-      * **Référentiel** : définit à partir de quel référentiel Git le pipeline doit récupérer le code.
-
-      >[!TIP]
-      >
-      >Voir le document [Configuration du programme](/help/getting-started/program-setup.md) pour découvrir comment ajouter et gérer des référentiels dans Cloud Manager.
-
-      * **Branche Git** : définit à partir de quelle branche le pipeline sélectionné doit récupérer le code.
-      * **Emplacement du code** : définit le chemin d’accès dans la branche du référentiel sélectionné à partir duquel le pipeline doit récupérer le code.
-
-      ![Définition des référentiels pour le pipeline](/help/assets/configure-pipelines/add-prod2.png)
 
    1. Sous la section **Environnements**, vous définissez ce qui déclenche un déploiement et comment il doit être déployé par environnement.
 
@@ -133,7 +120,16 @@ Une fois que vous avez utilisé l’interface d’utilisation de [!UICONTROL Clo
 
          * **Configuration du Dispatcher** : définissez la configuration du Dispatcher pour votre environnement de production. Les options sont identiques à celles de l’environnement d’évaluation.
 
-1. Cliquez sur **Continuer** pour accéder à l’onglet **Tests de l’environnement d’évaluation** où vous pouvez configurer les tests de performances d’AEM Sites et d’AEM Assets, en fonction des produits sous licence que vous possédez.
+1. Cliquez sur **Continuer** pour accéder à l’onglet **Code Source** dans lequel vous sélectionnez le type de code à déployer et configurez le référentiel source.
+
+   1. Sous **Sélectionner le code à déployer**, choisissez le type de déploiement :
+
+      * **[Code de pile complète](#full-stack-code)** - Code de votre application AEM complète.
+      * **[Configuration de niveau web](#web-tier-config)** - Propriétés Dispatcher pour stocker, traiter et diffuser des pages web au client.
+
+      Voir [Pipelines CI/CD](/help/overview/ci-cd-pipelines.md#code-sources) pour plus d’informations sur ces types de déploiement. Les étapes restantes pour terminer la configuration du pipeline dépendent du type que vous avez sélectionné. Suivez les liens ci-dessus pour accéder à la section appropriée de ce document.
+
+1. Cliquez sur **Continuer** pour accéder à l’onglet **Tests de l’environnement d’évaluation** où vous pouvez configurer les tests de performances d’AEM Sites et d’AEM Assets, en fonction des produits sous licence que vous possédez. {#stage-testing}
 
    >[!TIP]
    >
@@ -145,7 +141,7 @@ Une fois que vous avez utilisé l’interface d’utilisation de [!UICONTROL Clo
       * **Autres pages dynamiques**
       * **Nouvelles pages**
 
-      ![Poids de charge des sites](/help/assets/configure-pipelines/add-prod5.png)
+      ![Poids de charge des sites](/help/assets/configure-pipelines/add-prod8.png)
 
    1. Sous la section **Distribution des tests de performances des ressources**, vous définissez la distribution de test des images et des PDF ainsi que vos propres ressources de test.
 
@@ -161,6 +157,57 @@ Une fois que vous avez utilisé l’interface d’utilisation de [!UICONTROL Clo
       ![Distribution des tests des ressources](/help/assets/configure-pipelines/add-prod6.png)
 
 1. Cliquez sur **Enregistrer** pour terminer l’ajout de votre pipeline de production.
+
+### Code full stack {#full-stack-code}
+
+Un pipeline de code full stack déploie des versions de code front-end et back-end avec une configuration HTTPD/Dispatcher.
+
+>[!NOTE]
+>
+>Si un pipeline de production full stack existe déjà, cette sélection est désactivée.
+
+**Pour configurer un pipeline de production de code de pile complète, procédez comme suit**
+
+1. Dans l&#39;onglet **Code**, définissez les options suivantes.
+
+   * **Référentiel** : définit à partir de quel référentiel Git le pipeline doit récupérer le code.
+
+   >[!TIP]
+   >
+   >Voir le document [Configuration du programme](/help/getting-started/program-setup.md) pour découvrir comment ajouter et gérer des référentiels dans Cloud Manager.
+
+   * **Branche Git** - Définit à partir de quelle branche le pipeline doit récupérer le code.
+   * **Ignorer la configuration de niveau Web** – Lorsque cette case est cochée, le pipeline ne déploie pas votre configuration de niveau web. Si un pipeline de configuration de niveau web existe déjà pour le même environnement, cette case à cocher est automatiquement sélectionnée et désactivée, car la configuration de niveau web est gérée par ce pipeline à la place. Lorsqu’il n’existe aucun pipeline de configuration de niveau web, vous pouvez sélectionner ou désélectionner cette option pour contrôler si le pipeline de pile complète déploie la configuration Dispatcher.
+
+   ![Source du code de pile complète](/help/assets/configure-pipelines/add-prod-fullstack-source.png)
+
+1. Cliquez sur **Continuer** pour accéder à l’onglet **Test d’évaluation**. Voir [Test d’évaluation](#stage-testing) pour plus d’informations.
+
+### Configuration de la couche web {#web-tier-config}
+
+Un pipeline de configuration de niveau web déploie uniquement la configuration HTTPD/Dispatcher. Voir [Pipelines CI/CD](/help/overview/ci-cd-pipelines.md#deployment-types) pour plus d’informations sur ce type de pipeline.
+
+>[!NOTE]
+>
+>Si un pipeline de production de configuration de niveau web existe déjà, cette sélection est désactivée.
+
+Si vous créez un pipeline de configuration de niveau web pour un environnement avec un pipeline full stack existant, la configuration de niveau web dans le pipeline full stack est ignorée. Cette modification affecte uniquement la configuration de niveau web dans cet environnement.
+
+**Pour configurer un pipeline de production de configuration de niveau web, procédez comme suit**
+
+1. Dans l&#39;onglet **Code**, définissez les options suivantes.
+
+   * **Référentiel** - Dans la liste déroulante, sélectionnez le référentiel Git contenant la configuration de niveau web.
+   * **Branche Git** - Sélectionnez la branche dans le référentiel choisi que Cloud Manager utilise pour le déploiement.
+   * **Emplacement du code** - Saisissez le chemin d’accès dans le référentiel sélectionné qui contient la configuration de niveau web à déployer. L’emplacement par défaut est la racine du référentiel (`/`).
+
+   >[!NOTE]
+   >
+   >Si l’emplacement du code ne pointe pas vers l’emplacement du code du Dispatcher, du code d’application supplémentaire peut être extrait dans le package d’artefact et déployé vers le Dispatcher, ce qui entraîne l’échec d’Apache au redémarrage et l’échec du pipeline. Veillez à définir le chemin d’accès correct aux fichiers du Dispatcher dans le référentiel.
+
+   ![Source de configuration de niveau web](/help/assets/configure-pipelines/add-prod-webtier-source.png)
+
+1. Cliquez sur **Continuer** pour accéder à l’onglet **Test d’évaluation**. Voir [Test d’évaluation](#stage-testing) pour plus d’informations.
 
 ## Étapes suivantes {#the-next-steps}
 
