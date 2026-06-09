@@ -3,14 +3,11 @@ title: Ajout d’un pipeline hors production
 description: Découvrez comment utiliser Cloud Manager pour créer et configurer des pipelines hors production afin de déployer votre code.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
 TQID: https://experienceleague.adobe.com/Dj7SjKdao6RU-cIS7D1AQxg5qpKrJMTcYQJBfiqc-Gg
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: badb64b816e83ca08a39b2b39eda13335f6a3c1d
 workflow-type: tm+mt
-source-wordcount: 1999
+source-wordcount: 2096
 ht-degree: 22%
 
 ---
@@ -91,6 +88,10 @@ Après avoir configuré un programme et au moins un environnement dans l’inter
 
 Déploie l’ensemble de l’application AEM, y compris le code de l’application et, par défaut, la configuration de niveau web.
 
+>[!NOTE]
+>
+>Si un pipeline de code full stack existe déjà pour l’environnement sélectionné, cette sélection est désactivée.
+
 | Section | Option | Description |
 | --- | --- | --- |
 | **Code** | **Référentiel** | Dans la liste déroulante , choisissez le référentiel Git que le pipeline utilise comme source. Cloud Manager crée le code à partir du référentiel que vous choisissez ici. |
@@ -105,11 +106,19 @@ Déploie uniquement la configuration de niveau web, telle que les propriétés D
 
 Si un pipeline de pile complète existe déjà, Cloud Manager affiche un avis indiquant que la création d’un pipeline de configuration de niveau web entraîne l’exclusion de la configuration de niveau web par le pipeline de pile complète existant. Une fois que vous avez créé le pipeline de configuration de niveau web, Cloud Manager gère les déploiements de configuration de niveau web via ce pipeline au lieu du pipeline de pile complète.
 
+>[!NOTE]
+>
+>Si un pipeline de configuration de niveau web existe déjà pour l’environnement sélectionné, cette sélection est désactivée. À tout moment, il ne peut y avoir qu’un seul pipeline de configuration de niveau web par environnement.
+
 | Section | Option | Description |
 | --- | --- | --- |
 | **Code** | **Référentiel** | Dans la liste déroulante, sélectionnez le référentiel Git contenant la configuration de niveau web. |
 |   | **Branche Git** | Sélectionnez la branche dans le référentiel choisi que Cloud Manager utilise pour le déploiement. Si nécessaire, cliquez sur **Actualiser** pour mettre à jour la liste des branches disponibles pour le référentiel sélectionné. Utilisez cette option si une branche créée récemment n’apparaît pas dans la liste. |
 |   | **Emplacement du code** | Saisissez le chemin d’accès dans le référentiel sélectionné qui contient la configuration de niveau web à déployer. L’emplacement par défaut est la racine du référentiel (`/`). |
+
+>[!NOTE]
+>
+>Si l’emplacement du code ne pointe pas vers l’emplacement du code du Dispatcher, du code d’application supplémentaire peut être extrait dans le package d’artefact et déployé vers le Dispatcher, ce qui entraîne l’échec d’Apache au redémarrage et l’échec du pipeline. Veillez à définir le chemin d’accès correct aux fichiers du Dispatcher dans le référentiel.
 
 >[!ENDTABS]
 
@@ -232,4 +241,4 @@ Après avoir configuré le pipeline, vous pouvez déployer votre code. Voir la s
 
 Cette vidéo présente une vue d’ensemble du processus de création de pipeline, détaillé dans ce document.
 
->[!VIDEO](https://video.tv.adobe.com/v/327614?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26316/)

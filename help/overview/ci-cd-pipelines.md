@@ -3,23 +3,15 @@ title: Pipelines CI/CD
 description: Découvrez les pipelines CI/CD et comment ils gèrent les déploiements vers les environnements d’évaluation et de production dans Cloud Manager.
 exl-id: 7130e5b7-6986-48c8-900c-90f3e4187f91
 TQID: https://experienceleague.adobe.com/BwkZH2MIbXrzSxf0yk9yeDZZIpw7-Ldue-OPQPkWrdg
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: cd2426f1-5719-4006-b8c2-738e5969754b
-  - id: ff09c71c-26a9-449a-85f8-2aeb8ce96100
-subfeature_v2:
-  - id: c14b2f98-ee16-4c49-b87b-919c91b01d9d
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754bid: ff09c71c-26a9-449a-85f8-2aeb8ce96100
+subfeature_v2: id: c14b2f98-ee16-4c49-b87b-919c91b01d9d
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: badb64b816e83ca08a39b2b39eda13335f6a3c1d
 workflow-type: tm+mt
-source-wordcount: 639
-ht-degree: 81%
+source-wordcount: 1091
+ht-degree: 51%
 
 ---
 
@@ -51,6 +43,63 @@ Le diagramme suivant illustre ce qui se produit une fois qu’une version est d�
 | &#x200B;8. Déploiement du déclencheur de production | Une fois les tests automatisés terminés, [!UICONTROL Cloud Manager] démarre le déploiement en production. |
 | &#x200B;9.  obtient un ou plusieurs artefacts à déployer | [!UICONTROL Cloud Manager] extrait les artefacts de version stockés. |
 | &#x200B;10. Déploiement des artefacts en production | Les artefacts de version sont déployés dans l’environnement de production. |
+
+### Sources de code {#code-sources}
+
+Les pipelines peuvent également différer selon le type de code qu’ils déploient, en plus de la production et de la non-production.
+
+* **[Pipelines full stack](#full-stack-pipeline)** - Déployez l’ensemble du code de l’application AEM avec les configurations HTTPD/Dispatcher.
+* **[Pipelines de configuration de niveau web](#web-tier-config-pipelines)** - Déployez uniquement les configurations HTTPD/Dispatcher.
+
+### Pipelines full stack {#full-stack-pipeline}
+
+Les pipelines full stack déploient l’ensemble du code de l’application AEM sur le runtime AEM et, par défaut, déploient également les configurations de niveau web.
+
+Les restrictions suivantes s’appliquent.
+
+* Un utilisateur doit être connecté avec le rôle **Responsable de déploiement** pour configurer ou exécuter des pipelines.
+* À tout moment, il ne peut y avoir qu’un seul pipeline full stack par environnement.
+
+La section suivante décrit l’interaction du pipeline full stack avec un [pipeline de configuration de niveau web](#web-tier-config-pipelines).
+
+* Le pipeline full stack pour un environnement ignore la configuration Dispatcher si le pipeline de configuration de niveau web correspondant existe.
+* Si le pipeline de configuration de niveau web correspondant à l’environnement n’existe pas, l’utilisateur peut configurer le pipeline full stack pour inclure ou ignorer la configuration Dispatcher.
+
+Les pipelines full stack peuvent être des pipelines de type qualité de code ou déploiement.
+
+#### Configuration des pipelines full stack {#configure-full-stack}
+
+Voir [Ajouter un pipeline de production](/help/using/production-pipelines.md#full-stack-code).
+Voir [Ajouter un pipeline hors production](/help/using/non-production-pipelines.md#add-non-production-pipeline).
+
+### Pipelines de configuration de niveau web {#web-tier-config-pipelines}
+
+Les pipelines de configuration de niveau web permettent le déploiement exclusif de la configuration HTTPD/Dispatcher pour l’exécution d’AEM, en la découplant des autres modifications de code. Il s’agit d’un pipeline rationalisé qui fournit aux utilisateurs qui souhaitent déployer uniquement les modifications de configuration de Dispatcher une méthode accélérée pour le faire en quelques minutes seulement.
+
+>[!TIP]
+>
+>Les pipelines de configuration de niveau web vous permettent de stocker votre configuration web au même emplacement source ou à un autre emplacement que le pipeline de pile complète, en fonction de ce qui convient le mieux à votre structure de projet.
+
+Les restrictions suivantes s’appliquent.
+
+* Un utilisateur doit être connecté avec le rôle **Responsable de déploiement** pour configurer ou exécuter des pipelines.
+* À tout moment, il ne peut y avoir qu’un seul pipeline de configuration de niveau web par environnement.
+* L’utilisateur ne peut pas configurer de pipeline de configuration de niveau web lorsque le pipeline full stack correspondant est en cours d’exécution.
+
+La section suivante décrit l’interaction du pipeline de configuration de niveau web avec le [pipeline de pile complète](#full-stack-pipeline).
+
+* Si un pipeline de configuration de niveau web n’est pas configuré pour un environnement, l’utilisateur peut choisir d’inclure ou d’ignorer la configuration Dispatcher lors de la configuration du pipeline full stack.
+* Une fois qu’un pipeline de configuration de niveau web est configuré pour un environnement, son pipeline full stack correspondant (s’il en existe un) ignore la configuration Dispatcher lors de l’exécution et du déploiement.
+* Après la suppression d’un pipeline de configuration de niveau web, son pipeline full stack correspondant (s’il en existe un) est réinitialisé pour déployer des configurations Dispatcher lors de son exécution.
+
+>[!NOTE]
+>
+>Pour les programmes AMS dont le déploiement bleu/vert est activé, les mises à jour de niveau web utilisent le déploiement en continu par défaut. Utilisez un pipeline de pile complète si vous avez besoin d’un déploiement bleu/vert pour les modifications de niveau web.
+
+#### Configuration des pipelines de niveau web {#configure-web-tier}
+
+Voir [Ajouter un pipeline de production](/help/using/production-pipelines.md#web-tier-config).
+Voir [Ajouter un pipeline hors production](/help/using/non-production-pipelines.md#add-non-production-pipeline).
 
 ### Versions plus rapides à l’aide de la création dynamique {#use=smart-build}
 
