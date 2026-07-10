@@ -3,17 +3,13 @@ title: Ajout d’un pipeline de production
 description: Découvrez comment créer et configurer des pipelines de production à l’aide de Cloud Manager afin de déployer votre code.
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 TQID: https://experienceleague.adobe.com/WH6W8bZNCWo0BAGLwnMOPpB3bk5P6Fd7c5b-dRT5Vc0
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: badb64b816e83ca08a39b2b39eda13335f6a3c1d
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 4c73ab16ff7eab406c31a6d26cdd09360a94b3ea
 workflow-type: tm+mt
-source-wordcount: 1665
-ht-degree: 73%
+source-wordcount: 2101
+ht-degree: 58%
 
 ---
 
@@ -40,7 +36,7 @@ Le rôle du **responsable du déploiement** : il est chargé de la configuratio
 >
 >Un pipeline ne peut être configuré que si le référentiel Git qui lui est associé dispose d’au moins une branche et que la [configuration du programme](/help/getting-started/program-setup.md) est terminée.
 
-## Ajouter un nouveau pipeline de production {#adding-production-pipeline}
+## Ajout d’un pipeline de production {#adding-production-pipeline}
 
 Une fois que vous avez utilisé l’interface d’utilisation de [!UICONTROL Cloud Manager] pour configurer votre programme et que vous disposez d’au moins un environnement, vous pouvez ajouter un pipeline de production.
 
@@ -209,6 +205,83 @@ Si vous créez un pipeline de configuration de niveau web pour un environnement 
 
 1. Cliquez sur **Continuer** pour accéder à l’onglet **Test d’évaluation**. Voir [Test d’évaluation](#stage-testing) pour plus d’informations.
 
+
+## À propos de l’utilisation de la création dynamique dans un pipeline de production{#about-smart-build}
+
+La **version intelligente** dans Cloud Manager est une stratégie de création optimisée pour les pipelines de production. La génération intelligente réduit les temps de génération en mettant en cache les modules et en ne reconstruisant que les modules qui ont été modifiés depuis la dernière exécution réussie. Les modules inchangés sont réutilisés à partir du cache, tandis que seuls les modules modifiés et leurs dépendances sont reconstruits, ce qui améliore l’efficacité des workflows de développement itératifs.
+
+La génération intelligente est actuellement disponible pour les éléments suivants :
+
+* Pipelines de la qualité du code.
+* Pipelines de déploiement full stack de développement, d’évaluation et de production.
+
+>[!NOTE]
+>
+>La première exécution après l’activation de la création dynamique se comporte comme une création complète, car le cache est vide.
+
+Le build intelligent est recommandé lorsque vous disposez des éléments suivants :
+
+* Vous développez et validez activement des modifications incrémentielles fréquentes.
+* Votre projet contient plusieurs modules Maven.
+* Les versions complètes prennent beaucoup de temps.
+
+La création intelligente n’est pas toujours idéale lorsque vous disposez des éléments suivants :
+
+* Votre version repose principalement sur des modules externes qui effectuent des opérations en dehors du graphique de dépendance de Maven.
+* Vous avez besoin d’une validation de reconstruction complète à chaque exécution.
+
+### Présentation des performances de build{#smart-build-performance}
+
+Le gain de performances de l’utilisation de la création dynamique dépend de plusieurs facteurs, notamment des éléments suivants :
+
+* Nombre de modules dans le projet.
+* La fréquence et l’étendue des modifications de code.
+* La distribution des dépendances entre les modules.
+
+En règle générale, les projets comportant de nombreux modules indépendants peuvent bénéficier de la plus grande amélioration.
+
+### Désinscription du cache par module{#smart-build-cache-optout}
+
+Smart Build fournit un contrôle affiné qui vous permet de désactiver la mise en cache pour des modules spécifiques. Cette fonctionnalité est utile lorsque certains modules :
+
+* Utilisez des plug-ins, tels que `exec-maven-plugin` ou `maven-antrun-plugin`.
+* Effectuer des opérations de fichier non suivies par les dépendances Maven.
+* Produire des résultats incohérents lors de la mise en cache.
+
+### Désactiver la mise en cache pour un module{#smart-build-disable-caching}
+
+Vous pouvez ajouter la propriété suivante au `pom.xml` du module concerné :
+
+```xml
+<properties>
+  <maven.build.cache.enabled>false</maven.build.cache.enabled>
+</properties>
+```
+
+Cette syntaxe force le module à se recréer à chaque exécution de pipeline tandis que les autres modules continuent à bénéficier de la mise en cache.
+
+### Restrictions et considérations lors de l’utilisation de la création dynamique{#smart-build-limitations}
+
+Gardez les points suivants à l’esprit lorsque vous utilisez la création dynamique :
+
+* Smart Build repose sur l’analyse des dépendances Maven.
+* Les modifications en dehors du graphique de dépendance peuvent ne pas déclencher de reconstructions.
+* Certains plug-ins peuvent ne pas être entièrement compatibles avec la mise en cache.
+* Vous pouvez revenir à la **version complète** à tout moment en modifiant le pipeline hors production.
+
+Si vous rencontrez un comportement de build inattendu, envisagez de désactiver la mise en cache de modules spécifiques ou de changer temporairement votre stratégie de build en **Version complète**.
+
+### Dépannage des problèmes de création dynamique{#smart-build-troubleshoot}
+
+| Problème | Solutions suggérées |
+| --- | --- |
+| Les résultats de build sont incohérents | · Désactivez la mise en cache pour les modules concernés.<br>· Vérifiez le comportement des plug-ins (en particulier des plug-ins `exec`/`antrun`). |
+| Aucune amélioration des performances | · Assurez-vous que plusieurs exécutions ont eu lieu (préchauffage du cache).<br>· Vérifiez si la plupart des modules changent fréquemment. |
+| Artefacts inattendus ou modifications manquantes | · Vérifiez si les modifications ne se trouvent pas en dehors du suivi des dépendances Maven.<br>· Utilisez **Version complète** pour la vérification. |
+
+Voir [Ajouter un pipeline de production](#adding-production-pipeline) la section Activation de la création dynamique.
+
+
 ## Étapes suivantes {#the-next-steps}
 
 Une fois que vous avez configuré le pipeline, vous devez déployer votre code. Voir la section [Déploiement du code](/help/using/code-deployment.md) pour plus d’informations.
@@ -217,4 +290,4 @@ Une fois que vous avez configuré le pipeline, vous devez déployer votre code. 
 
 Cette vidéo présente une vue d’ensemble du processus de création de pipeline, détaillé dans ce document.
 
->[!VIDEO](https://video.tv.adobe.com/v/327601?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26314/)

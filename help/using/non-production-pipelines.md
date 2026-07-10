@@ -3,14 +3,11 @@ title: Ajout d’un pipeline hors production
 description: Découvrez comment utiliser Cloud Manager pour créer et configurer des pipelines hors production afin de déployer votre code.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
 TQID: https://experienceleague.adobe.com/Dj7SjKdao6RU-cIS7D1AQxg5qpKrJMTcYQJBfiqc-Gg
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: badb64b816e83ca08a39b2b39eda13335f6a3c1d
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 4c73ab16ff7eab406c31a6d26cdd09360a94b3ea
 workflow-type: tm+mt
-source-wordcount: 2096
+source-wordcount: 2080
 ht-degree: 22%
 
 ---
@@ -37,7 +34,7 @@ Il existe deux types de pipelines hors production :
 >
 >Vous ne pouvez pas configurer de pipeline tant que le référentiel Git associé ne comporte pas au moins une branche et que la [configuration du programme](/help/getting-started/program-setup.md) n’est pas terminée. Consultez le document [Référentiels Cloud Manager](/help/managing-code/managing-repositories.md) pour découvrir comment ajouter et gérer des référentiels dans Cloud Manager.
 
-## Ajout d’un nouveau pipeline hors production {#add-non-production-pipeline}
+## Ajout d’un pipeline hors production {#add-non-production-pipeline}
 
 Après avoir configuré un programme et au moins un environnement dans l’interface utilisateur de Cloud Manager, vous pouvez ajouter des pipelines hors production. Utilisez ces pipelines pour tester la qualité de votre code avant de le déployer dans des environnements de production.
 
@@ -99,7 +96,7 @@ Déploie l’ensemble de l’application AEM, y compris le code de l’applicati
 | --- | --- | --- |
 | **Code** | **Référentiel** | Dans la liste déroulante , choisissez le référentiel Git que le pipeline utilise comme source. Cloud Manager crée le code à partir du référentiel que vous choisissez ici. |
 |   | **Branche Git** | Dans la liste déroulante , choisissez la branche du référentiel sélectionné à partir de laquelle le pipeline doit être créé. La valeur par défaut est `main`. Le pipeline utilise la branche choisie comme source pour la création et le déploiement. Si nécessaire, cliquez sur **Actualiser** pour mettre à jour la liste des branches disponibles pour le référentiel sélectionné. Utilisez cette option si une branche créée récemment n’apparaît pas dans la liste. |
-|   | **Créer une stratégie** | <ul><li>**Version complète** - Génère tous les modules du référentiel à chaque fois<li>BETA **Smart Build** - crée uniquement les modules qui ont été modifiés depuis la dernière validation.<br>En savoir plus sur [l’utilisation de la création intelligente dans un pipeline hors production](#about-smart-build).</li></ol>**Important** : la création intelligente est disponible uniquement pour les pipelines de qualité du code et de déploiement de code de pile complète de développement. |
+|   | **Créer une stratégie** | <ul><li>**Version complète** - Génère tous les modules du référentiel à chaque fois<li>**Version intelligente** - Crée uniquement les modules qui ont été modifiés depuis la dernière validation.<br>En savoir plus sur [l’utilisation de la création intelligente dans un pipeline hors production](#about-smart-build).</li></ol> |
 |   | Case à cocher **Ignorer la configuration de niveau web** | Sélectionnez cette option pour ignorer le déploiement de la configuration de niveau web dans un pipeline de code de pile complète. Laissez l’option désélectionnée pour déployer la configuration de niveau web avec le code du pipeline. |
 | **Pipeline** | Case à cocher **Contrôle de l’expérience** | Sélectionnez cette option pour inclure une étape de contrôle de l’expérience dans le pipeline. Lorsqu’il est activé, le pipeline inclut l’étape Contrôle de l’expérience après l’onglet Code Source . |
 
@@ -127,25 +124,28 @@ Si un pipeline de pile complète existe déjà, Cloud Manager affiche un avis in
 
 1. Cliquez sur **Enregistrer**.
 
-## À propos de l’utilisation de la création dynamique dans un pipeline hors production{#about-smart-build}
+## À propos de l’utilisation de la création dynamique dans votre pipeline hors production{#about-smart-build}
 
 La **version intelligente** dans Cloud Manager est une stratégie de création optimisée pour les pipelines hors production. La génération intelligente réduit les temps de génération en mettant en cache les modules et en ne reconstruisant que les modules qui ont été modifiés depuis la dernière exécution réussie. Les modules inchangés sont réutilisés à partir du cache, tandis que seuls les modules modifiés et leurs dépendances sont reconstruits, ce qui améliore l’efficacité des workflows de développement itératifs.
 
-La génération intelligente n&#39;est actuellement disponible que pour les éléments suivants :
+La génération intelligente est actuellement disponible pour les éléments suivants :
 
 * Pipelines de la qualité du code.
-* Développez des pipelines de déploiement full stack.
+* Pipelines de déploiement full stack de développement, d’évaluation et hors production.
+
 
 >[!NOTE]
 >
 >La première exécution après l’activation de la création dynamique se comporte comme une création complète, car le cache est vide.
 
 Le build intelligent est recommandé lorsque vous disposez des éléments suivants :
+
 * Vous développez et validez activement des modifications incrémentielles fréquentes.
 * Votre projet contient plusieurs modules Maven.
 * Les versions complètes prennent beaucoup de temps.
 
 La création intelligente n’est pas toujours idéale lorsque vous disposez des éléments suivants :
+
 * Votre version repose principalement sur des modules externes qui effectuent des opérations en dehors du graphique de dépendance de Maven.
 * Vous avez besoin d’une validation de reconstruction complète à chaque exécution.
 
@@ -244,4 +244,4 @@ Après avoir configuré le pipeline, vous pouvez déployer votre code. Voir la s
 
 Cette vidéo présente une vue d’ensemble du processus de création de pipeline, détaillé dans ce document.
 
->[!VIDEO](https://video.tv.adobe.com/v/327614?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26316/)

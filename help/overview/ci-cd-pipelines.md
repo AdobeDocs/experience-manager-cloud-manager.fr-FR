@@ -3,23 +3,15 @@ title: Pipelines CI/CD
 description: Découvrez les pipelines CI/CD et comment ils gèrent les déploiements vers les environnements d’évaluation et de production dans Cloud Manager.
 exl-id: 7130e5b7-6986-48c8-900c-90f3e4187f91
 TQID: https://experienceleague.adobe.com/BwkZH2MIbXrzSxf0yk9yeDZZIpw7-Ldue-OPQPkWrdg
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: cd2426f1-5719-4006-b8c2-738e5969754b
-  - id: ff09c71c-26a9-449a-85f8-2aeb8ce96100
-subfeature_v2:
-  - id: c14b2f98-ee16-4c49-b87b-919c91b01d9d
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: badb64b816e83ca08a39b2b39eda13335f6a3c1d
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754bid: ff09c71c-26a9-449a-85f8-2aeb8ce96100
+subfeature_v2: id: c14b2f98-ee16-4c49-b87b-919c91b01d9d
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 694d3e8dad6e2ba86186a4bf6fdda3739e1041da
 workflow-type: tm+mt
-source-wordcount: 1091
-ht-degree: 51%
+source-wordcount: 1122
+ht-degree: 50%
 
 ---
 
@@ -77,8 +69,7 @@ Les pipelines full stack peuvent être des pipelines de type qualité de code ou
 
 #### Configuration des pipelines full stack {#configure-full-stack}
 
-Voir [Ajouter un pipeline de production](/help/using/production-pipelines.md#full-stack-code).
-Voir [Ajouter un pipeline hors production](/help/using/non-production-pipelines.md#add-non-production-pipeline).
+Voir [Ajouter un pipeline de production](/help/using/production-pipelines.md#full-stack-code).Voir [Ajouter un pipeline hors production](/help/using/non-production-pipelines.md#add-non-production-pipeline).
 
 ### Pipelines de configuration de niveau web {#web-tier-config-pipelines}
 
@@ -106,14 +97,13 @@ La section suivante décrit l’interaction du pipeline de configuration de nive
 
 #### Configuration des pipelines de niveau web {#configure-web-tier}
 
-Voir [Ajouter un pipeline de production](/help/using/production-pipelines.md#web-tier-config).
-Voir [Ajouter un pipeline hors production](/help/using/non-production-pipelines.md#add-non-production-pipeline).
+Voir [Ajouter un pipeline de production](/help/using/production-pipelines.md#web-tier-config).Voir [Ajouter un pipeline hors production](/help/using/non-production-pipelines.md#add-non-production-pipeline).
 
 ### Versions plus rapides à l’aide de la création dynamique {#use=smart-build}
 
 Cloud Manager utilise désormais une stratégie de création optimisée appelée **Smart Build**, qui utilise la mise en cache au niveau du module pour accélérer le processus de création. Lors de chaque génération, seuls les modules qui ont été modifiés sont reconstruits, tandis que les modules inchangés sont réutilisés à partir du cache.
 
-La génération intelligente est disponible uniquement pour les pipelines de qualité du code et de déploiement Dev Full Stack .
+La génération intelligente est disponible pour les pipelines de qualité de code et de déploiement de pile complète (développement, évaluation, production).
 
 Voir [Ajouter un pipeline hors production](/help/using/non-production-pipelines.md#add-non-production-pipeline) et [À propos de l’utilisation de la création intelligente dans un pipeline hors production](/help/using/non-production-pipelines.md#about-smart-build).
 
