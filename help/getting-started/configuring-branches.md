@@ -10,20 +10,20 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: 1692390e24f8fa7d719bd8293a99586ec4ec36d4
 workflow-type: tm+mt
-source-wordcount: 332
-ht-degree: 95%
+source-wordcount: 314
+ht-degree: 47%
 
 ---
 
 # Configurer les branches {#configuring-branches}
 
-Découvrez comment configurer votre première branche dans Git et son utilisation par le pipeline CI/CD pour déployer le code de votre application.
+Découvrez comment configurer votre première branche dans Git et comment le pipeline CI/CD l’utilise pour déployer le code de votre application.
 
 ## Configurer votre première branche dans Git {#setting-up-your-first-branch-in-git}
 
-Un seul référentiel Git, initialement vide, [est fourni](/help/requirements/environment-provisioning.md) pour chaque programme intégré à Cloud Manager. Ce référentiel peut contenir autant de branches que nécessaire pour votre processus de développement. Toutefois, au moins une branche doit être utilisée par le pipeline CI/CD pour déployer le code de l’application dans les environnements d’évaluation et de production. Il est conseillé d’utiliser le nom `main` pour cette branche. Pour des raisons pratiques, cette approche correspond au comportement par défaut des clientes et clients Git lors de la configuration de nouveaux projets.
+Un seul référentiel Git, initialement vide, [est fourni](/help/requirements/environment-provisioning.md) pour chaque programme intégré à Cloud Manager. Ce référentiel peut contenir autant de branches que nécessaire pour votre processus de développement, mais le pipeline CI/CD doit utiliser au moins une branche pour déployer le code de l’application en évaluation et en production. Il est conseillé d’utiliser le nom `main` pour cette branche. Cette approche est le comportement par défaut des clients Git lors de la configuration de nouveaux projets.
 
 Par exemple, lorsque vous configurez un nouveau projet, vous exécutez un ensemble de commandes comme celui-ci :
 
@@ -57,7 +57,7 @@ $ git commit -m "initial commit"
 
 >[!NOTE]
 >
->Il n’est pas nécessaire d’utiliser le client de la ligne de commande. Différents clients graphiques Git sont disponibles, soit en tant qu’applications autonomes, soit dans le cadre d’un environnement de développement intégré (IDE), tel qu’Eclipse ou IntelliJ. Tant que l’application cliente prend en charge Git avec HTTPS, elle doit être compatible avec [!UICONTROL Cloud Manager].
+>Il n’est pas nécessaire d’utiliser le client de la ligne de commande. Différents clients graphiques Git sont disponibles, soit en tant qu’applications autonomes, soit dans le cadre d’un environnement de développement intégré (IDE), tel qu’Eclipse ou IntelliJ. Tant que l’application cliente prend en charge Git avec HTTPS, elle est compatible avec .
 
 ## Transmettre votre première branche {#pushing-your-first-branch}
 
@@ -77,12 +77,12 @@ To <url>
 
 >[!NOTE]
 >
->L’URL spécifique ainsi que vos informations d’identification vous seront fournies par votre responsable du succès client lors de l’intégration à [!UICONTROL Cloud Manager].
+>Votre CSE Adobe (ingénieur du succès client) fournit l’URL spécifique, ainsi que vos informations d’identification, lors de l’intégration à [!UICONTROL Cloud Manager].
 
 ## Branches supplémentaires {#additional-branches}
 
-Une branche `main` unique peut suffire pour des projets très simples, mais dans la plupart des cas, une stratégie de branchement plus complexe est requise. Un grand nombre de clientes et clients suivent un processus où les activités de développement quotidiennes sont exécutées sur une branche appelée `develop`. La branche `develop` est ensuite fusionnée dans la branche `main` au moment d’un déploiement.
+Une branche `main` est suffisante pour les projets simples, mais une stratégie d’embranchement plus complexe est recommandée. De nombreux clients suivent un processus au cours duquel des activités de développement de routine sont exécutées sur une branche appelée `develop`. La branche `develop` est ensuite fusionnée dans la branche `main` au moment d’un déploiement.
 
 >[!TIP]
 >
->Pour afficher les commandes Git courantes, consultez l’[Aide-mémoire Git](https://training.github.com/downloads/github-git-cheat-sheet).
+>Pour afficher les commandes Git courantes, reportez-vous au [Guide de référence Git](https://training.github.com/downloads/github-git-cheat-sheet/).

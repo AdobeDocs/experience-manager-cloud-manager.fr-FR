@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2a25b0482800d4c5428a5595c9699dceed327043
+source-git-commit: 1692390e24f8fa7d719bd8293a99586ec4ec36d4
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Pour favoriser un environnement ouvert et accueillant, les contributeurs et les 
 
 Voici quelques exemples de comportements qui contribuent à créer un environnement positif :
 
-* Utiliser une langue accueillante et inclusive
+* Utiliser un langage accueillant et inclusif
 * Respecter les différents points de vue et expériences
 * Accepter les critiques constructives avec élégance
 * Se concentrer sur ce qui est le mieux pour la communauté
@@ -27,21 +27,21 @@ Voici quelques exemples de comportements inacceptables de la part des participan
 * Provocations, commentaires insultants/désobligeants et attaques personnelles ou politiques
 * Harcèlement public ou privé
 * Publier les informations privées d&#39;autrui, telles qu&#39;une adresse physique ou électronique, sans autorisation explicite
-* Autres comportements pouvant raisonnablement être considérés comme inappropriés dans un cadre professionnel
+* Autres comportements raisonnablement considérés comme inappropriés dans le cadre professionnel
 
 ## Responsabilités d’Adobe
 
 Les responsables du projet sont chargés de clarifier les normes de comportement acceptable et sont tenus de prendre des mesures correctives appropriées et justes en cas de comportement inacceptable.
 
-Les responsables du projet ont le droit et la responsabilité de supprimer, modifier ou rejeter des commentaires. Cette surveillance inclut les validations, le code, les modifications du wiki, les problèmes ou d’autres contributions non conformes au présent Code de conduite. Ou interdire temporairement ou définitivement tout contributeur pour d’autres comportements qu’ils jugent inappropriés, menaçants, offensants ou nuisibles.
+Les responsables du projet ont le droit et la responsabilité de supprimer, modifier ou rejeter des commentaires. Cette surveillance inclut les validations, le code, les modifications du wiki, les problèmes ou d’autres contributions non conformes au présent Code de conduite. Ils peuvent également interdire temporairement ou définitivement tout contributeur ou contributrice pour d’autres comportements qu’ils ou elles jugent inappropriés, menaçants, offensants ou nuisibles.
 
 ## Portée
 
-Ce Code de conduite s’applique à la fois aux espaces de projet et aux espaces publics où une personne représente le projet ou sa communauté. L’utilisation d’une adresse e-mail officielle de projet est un exemple de représentation d’un projet ou d’une communauté. Elle peut également inclure la publication par le biais d’un compte officiel de médias sociaux. Il peut également s’agir d’agir en tant que représentant désigné lors d’un événement en ligne ou hors ligne. Les responsables du projet peuvent définir et clarifier davantage la représentation d’un projet.
+Ce Code de conduite s’applique à la fois aux espaces de projet et aux espaces publics où une personne représente le projet ou sa communauté. Utiliser une adresse e-mail officielle de projet est un exemple de représentation d’un projet ou d’une communauté. Il peut également s’agir de publier sur un compte officiel de médias sociaux. Il peut également s’agir d’agir en tant que représentant désigné lors d’un événement en ligne ou hors ligne. Les responsables de projet peuvent définir et clarifier la représentation d’un projet.
 
 ## Application
 
-Des cas de comportement abusif, de harcèlement ou tout autre comportement inacceptable peuvent être signalés en contactant l’équipe du projet à l’adresse Grp-opensourceoffice@adobe.com. Toutes les plaintes sont examinées et font l&#39;objet d&#39;une enquête et peuvent donner lieu à une réponse jugée nécessaire et appropriée aux circonstances. L&#39;équipe du projet est tenue de respecter la confidentialité de la personne signalant un incident. Des informations supplémentaires sur les politiques d’application spécifiques peuvent être publiées séparément.
+Des cas de comportement abusif, de harcèlement ou tout autre comportement inacceptable sont signalés en contactant l’équipe du projet à l’adresse Grp-opensourceoffice@adobe.com. Toutes les plaintes sont examinées et font l&#39;objet d&#39;une enquête et peuvent donner lieu à une réponse jugée nécessaire et appropriée aux circonstances. L&#39;équipe du projet est tenue de respecter la confidentialité de la personne signalant un incident. Des informations supplémentaires sur les politiques d’application spécifiques sont publiées séparément.
 
 Les responsables du projet qui ne respectent pas ou n’appliquent pas de bonne foi le Code de conduite peuvent faire face à des répercussions temporaires ou permanentes, telles que déterminées par d’autres membres de la direction du projet.
 
