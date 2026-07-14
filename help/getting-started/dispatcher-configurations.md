@@ -37,7 +37,7 @@ Pour terminer la configuration Dispatcher initiale, procédez comme suit :
 
 1. Obtenez les fichiers de configuration de production actuels auprès de votre équipe du succès client.
 1. Supprimez les données spécifiques à un environnement, telles que les adresses IP de rendu de publication, et remplacez-les par des variables.
-1. Définissez les variables requises dans les paires clé-valeur pour chaque Dispatcher cible et ajoutez-les au dossier [variables](https://experienceleague.adobe.com/en/docs/experience-manager-learn/ams/dispatcher/variables) sur chaque instance.
+1. Définissez les variables requises dans les paires clé-valeur pour chaque Dispatcher cible et ajoutez-les au dossier [variables](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/ams/dispatcher/variables) sur chaque instance.
 1. Testez les configurations mises à jour dans votre environnement d’évaluation.
 1. Une fois le test effectué, demandez à votre équipe du succès client de procéder au déploiement en production.
 1. Validez les fichiers dans votre référentiel Git.
