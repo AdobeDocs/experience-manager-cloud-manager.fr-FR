@@ -3,27 +3,21 @@ title: Configuration du programme
 description: Après l’intégration, la personne propriétaire de l’entreprise doit effectuer une configuration initiale du programme.
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
 TQID: https://experienceleague.adobe.com/AqaA4GSOptV11h2y4V1Mt15KmEhEYBaiM-RvBFjtfWY
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: cd2426f1-5719-4006-b8c2-738e5969754b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: fa6be369b979682cebf68852603725d8754605ab
 workflow-type: tm+mt
-source-wordcount: 570
-ht-degree: 93%
+source-wordcount: 549
+ht-degree: 65%
 
 ---
 
 # Configuration du programme {#program-setup}
 
-Après l’intégration, la personne propriétaire de l’entreprise configure le programme en ajoutant une description et en définissant des indicateurs clés de performance (KPI). Ces KPI sont ensuite utilisés pour les tests de performance.
+Après l’intégration, le chef d’entreprise configure le programme en ajoutant une description et en définissant des indicateurs clés de performance (KPI). Ces KPI sont ensuite utilisés pour les tests de performance.
 
 ## Configuration du programme avec [!UICONTROL Cloud Manager] {#program-setup-cloud-manager}
-
-Pour configurer le programme et définir les KPI, procédez comme suit :
 
 1. Connectez-vous à Cloud Manager à l’adresse [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com) et sélectionnez l’organisation appropriée.
 
@@ -49,17 +43,19 @@ Pour configurer le programme et définir les KPI, procédez comme suit :
 
 1. Dans l’onglet **Mise en service**, vous pouvez définir les options de mise à l’échelle à la demande de vos environnements si la mise à l’échelle automatique est activée pour votre programme.
 
-   La fonction de mise à l’échelle automatique s’applique uniquement à l’environnement de production et peut ne pas être disponible pour tous les programmes clients.
+   La mise à l’échelle automatique s’applique uniquement à l’environnement de production et n’est pas disponible pour certains programmes clients.
 
    ![Options d’approvisionnement](/help/assets/Setup_Program-Provisioning.png)
 
 1. Cliquez sur **Enregistrer**.
 
-Votre programme est créé. L’approvisionnement des ressources peut prendre plusieurs minutes avant que le programme ne soit prêt à l’emploi.
+Votre programme est créé. L’approvisionnement des ressources prend plusieurs minutes avant que le programme ne soit prêt à l’emploi.
 
 ## Modifier un programme {#editing-program}
 
-Vous pouvez modifier les programmes une fois qu’ils ont été configurés. Pour modifier un programme, procédez comme suit.
+Vous pouvez modifier les programmes une fois qu’ils ont été configurés.
+
+**Pour modifier un programme, procédez comme suit**
 
 1. Connectez-vous à Cloud Manager à l’adresse [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com) et sélectionnez l’organisation appropriée.
 
@@ -89,14 +85,14 @@ Utilisez la barre d’actions pour passer à un autre programme, modifier le pro
 
 ## KPI {#kpis}
 
-Les KPI des sites sont mesurés sur les tests exécutés dans l’environnement d’évaluation. En règle générale, les KPI sont adaptés aux capacités de l’environnement d’évaluation.
+Les KPI des sites sont mesurés sur les tests exécutés dans l’environnement d’évaluation. En règle générale, ces indicateurs de performance clés sont ajustés pour correspondre aux fonctionnalités de l’environnement d’évaluation.
 
-Par exemple, une personne qui attend une moyenne de 1 000 pages vues par minute dans son environnement de production et qui dispose de quatre serveurs Dispatcher/de publication en production doit réduire cette valeur à 250 pages vues par minute. Ce scénario suppose que leur environnement d’évaluation se compose d’une seule paire Dispatcher/serveur de publication.
+Par exemple, un utilisateur qui s’attend à une moyenne de 1 000 pages vues par minute dans son environnement de production et qui dispose de quatre serveurs Dispatcher/de publication en production réduit ce scénario à 250 pages vues par minute. Ce scénario suppose que leur environnement d’évaluation se compose d’une seule paire Dispatcher/serveur de publication.
 
 Les tests de performances d’Assets impliquent le chargement répété de ressources sur une période de 30 minutes. Le temps de traitement de chaque ressource et diverses mesures au niveau du système sont mesurés tout au long du test.
 
-De plus, de nombreux utilisateurs et utilisatrices disposeront d’un réseau de diffusion de contenu (CDN), tel qu’Akamai ou CloudFront, devant leur environnement de production. Étant donné que [!UICONTROL Cloud Manager] effectue directement des tests par rapport à l’environnement d’évaluation, le KPI doit refléter uniquement le trafic prévu pour transiter via le réseau CDN. C’est-à-dire les défaut du cache. En règle générale, cette expérience est un sous-ensemble relativement petit du trafic de production total.
+Vous disposez d’un réseau de diffusion de contenu (CDN) tel qu’Akamai ou CloudFront configuré pour votre environnement de production. Comme  teste directement l’environnement d’évaluation, l’indicateur de performance clé reflète uniquement le trafic prévu pour transiter via le réseau CDN. C’est-à-dire les défaut du cache. En règle générale, ce trafic est un sous-ensemble relativement petit du trafic de production total.
 
 ## Vue d’ensemble vidéo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/34714?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26313/)
