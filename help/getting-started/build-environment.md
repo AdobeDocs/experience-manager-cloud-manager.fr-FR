@@ -15,7 +15,7 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 1692390e24f8fa7d719bd8293a99586ec4ec36d4
+source-git-commit: fa6be369b979682cebf68852603725d8754605ab
 workflow-type: tm+mt
 source-wordcount: 1205
 ht-degree: 50%
@@ -73,7 +73,7 @@ Cloud Manager [2023.10.0](/help/release-notes/2023/2023-10-0.md) a commencé une
 
 Certains utilisateurs rencontrent des problèmes lors de l’étape de création lors du téléchargement d’artefacts à partir de référentiels Maven qui utilisent des connexions HTTP non sécurisées.
 
-Pour garantir une expérience fluide avec la version mise à jour, Adobe recommande aux utilisateurs et utilisatrices de mettre à jour leurs référentiels Maven de sorte à utiliser HTTPS au lieu de HTTP. Cet ajustement soutient la transition de l&#39;industrie vers des protocoles de communication sécurisés et maintient un processus de création sécurisé et fiable.
+Pour garantir une expérience fluide avec la version mise à jour, Adobe recommande aux utilisateurs et utilisatrices de mettre à jour leurs référentiels Maven de sorte à utiliser HTTPS au lieu de HTTP. Cet ajustement soutient la transition du secteur vers des protocoles de communication sécurisés et maintient un processus de création sécurisé et fiable.
 
 ## Utiliser une version de Java spécifique {#using-java-version}
 
