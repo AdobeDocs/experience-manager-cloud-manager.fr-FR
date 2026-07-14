@@ -99,4 +99,4 @@ Vous disposez d’un réseau de diffusion de contenu (CDN) tel qu’Akamai ou Cl
 
 ## Vue d’ensemble vidéo {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/26313/)
+>[!VIDEO](https://video.tv.adobe.com/v/34714?captions=fre_fr)
