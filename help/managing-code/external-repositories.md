@@ -3,16 +3,12 @@ title: Ajouter des référentiels externes dans Cloud Manager
 description: Découvrez comment ajouter un référentiel externe dans Cloud Manager. Cloud Manager prend en charge l’intégration aux référentiels GitHub Enterprise, GitLab, Bitbucket et Azure DevOps.
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
 TQID: https://experienceleague.adobe.com/uLIqzfR3sTBSMHCewIQPPADP9opdLQoT2PNQy5YZTKo
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: a7e83374a2282e4d63efb409d40722ebe9b4697e
 workflow-type: tm+mt
-source-wordcount: 2568
+source-wordcount: 2528
 ht-degree: 27%
 
 ---
@@ -80,9 +76,9 @@ THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/C
 
 1. Sélectionnez **Enregistrer** pour ajouter le référentiel.
 
-   Fournissez maintenant un jeton d’accès pour valider la propriété du référentiel externe.
+   Pour valider la propriété du référentiel externe, fournissez un jeton d’accès.
 
-1. Dans la boîte de dialogue **Validation de la propriété du référentiel privé**, fournissez un jeton d’accès pour valider la propriété du référentiel externe afin que vous puissiez y accéder, puis cliquez sur **Valider**.
+1. Pour valider la propriété du référentiel externe afin de pouvoir y accéder, fournissez un jeton d’accès dans la boîte de dialogue **Validation de la propriété du référentiel privé**, puis cliquez sur **Valider**.
 
    ![Sélection d’un jeton d’accès existant pour un référentiel](/help/managing-code/assets/repositories-exisiting-access-token.png)
    *Sélection d’un jeton d’accès existant pour un référentiel Bitbucket (à titre d’illustration uniquement).*
@@ -157,7 +153,7 @@ Voir aussi [Gérer les jetons d’accès](/help/managing-code/manage-access-toke
 
 1. Ajoutez ou modifiez un pipeline :
    * [Ajout d’un pipeline de production](/help/using/production-pipelines.md#adding-production-pipeline)
-   * [Ajout de pipelines hors production](/help/using/non-production-pipelines.md#add-non-production-pipeline)
+   * [Ajout d’un pipeline hors production](/help/using/non-production-pipelines.md#add-non-production-pipeline)
    * [Modification d’un pipeline](/help/using/managing-pipelines.md#editing-pipelines)
 
    ![Référentiel de code source du pipeline et branche Git](/help/managing-code/assets/pipeline-repo-gitbranch.png)
@@ -177,7 +173,7 @@ Voir aussi [Gérer les jetons d’accès](/help/managing-code/manage-access-toke
 
 ## Configuration d’un webhook pour un référentiel externe {#configure-webhook}
 
-Cloud Manager vous permet de configurer des webhooks pour les référentiels Git externes que vous avez ajoutés. Voir [&#x200B; Ajouter un référentiel externe &#x200B;](#add-ext-repo). Ces webhooks permettent à Cloud Manager de recevoir des événements liés à différentes actions dans votre solution de fournisseur Git.
+Cloud Manager vous permet de configurer des webhooks pour les référentiels Git externes que vous avez ajoutés. Voir [ Ajouter un référentiel externe ](#add-ext-repo). Ces webhooks permettent à Cloud Manager de recevoir des événements liés à différentes actions dans votre solution de fournisseur Git.
 
 Par exemple, les webhooks permettent à Cloud Manager de déclencher des actions en fonction d’événements tels que :
 
@@ -195,7 +191,7 @@ Pour tous les autres référentiels externes intégrés avec un jeton d’accès
 
 1. Dans la console **[Mes programmes](/help/getting-started/navigation.md#my-programs-console)**, sélectionnez le programme pour lequel vous souhaitez configurer un webhook pour un référentiel Git externe.
 
-1. Dans le coin supérieur gauche de la page, cliquez sur ![Icône Afficher le menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) pour afficher le menu de gauche.
+1. Dans le coin supérieur gauche de la page, cliquez sur ![Afficher l’icône de menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) pour afficher le menu latéral gauche.
 
 1. Dans le menu de gauche, sous l’en-tête **Programme**, cliquez sur ![Icône Composition du dossier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **Référentiels**.
 
@@ -210,9 +206,9 @@ Pour tous les autres référentiels externes intégrés avec un jeton d’accès
 1. Dans la boîte de dialogue **Configurer le Webhook**, procédez comme suit :
 
    1. En regard du champ **URL Webhook**, cliquez sur ![Icône Copier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).
-Collez l’URL dans un fichier texte brut. L’URL copiée est requise pour les paramètres du Webhook de votre fournisseur Git.
+      Collez l’URL dans un fichier texte brut. L’URL copiée est requise pour les paramètres du Webhook de votre fournisseur Git.
    1. En regard du champ **Secret Webhook** jeton/clé, cliquez sur **Générer**, puis sur ![Icône Copier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).
-Collez le secret dans un fichier texte brut. Le secret copié est requis pour les paramètres du Webhook de votre fournisseur Git.
+      Collez le secret dans un fichier texte brut. Le secret copié est requis pour les paramètres du Webhook de votre fournisseur Git.
 1. Cliquez sur **Fermer**.
 1. Accédez à votre solution de fournisseur Git (GitHub Enterprise, GitLab, Bitbucket ou Azure DevOps).
 
@@ -222,10 +218,10 @@ Collez le secret dans un fichier texte brut. Le secret copié est requis pour le
 1. Collez l’URL du Webhook que vous avez copiée précédemment dans le champ de texte de l’URL.
    1. Remplacez le paramètre de requête `api_key` dans l’URL du Webhook par votre propre clé API réelle.
 
-      Pour générer une clé API, vous devez créer un projet d’intégration dans Adobe Developer Console. Voir [Création d’un projet d’intégration d’API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) pour plus d’informations.
+      Pour générer une clé API, vous devez créer un projet d’intégration dans Adobe Developer Console. Voir [Création d’un projet d’intégration d’API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration) pour plus d’informations.
 
 1. Collez le secret Webhook que vous avez copié précédemment dans le champ de texte **Secret** (ou **Clé secrète** ou **Jeton secret**).
-1. Configurez le webhook pour envoyer les événements requis par Cloud Manager. Utilisez le tableau suivant pour déterminer les événements corrects pour votre fournisseur Git.
+1. Pour envoyer les événements requis par Cloud Manager, configurez le webhook. Utilisez le tableau suivant pour déterminer les événements corrects pour votre fournisseur Git.
 
 >[!BEGINTABS]
 
@@ -277,7 +273,7 @@ Le comportement varie en fonction du fournisseur Git que vous utilisez, comme in
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
 
-Lorsque la vérification est créée, elle ressemble à la capture d’écran ci-dessous. La principale différence avec `GitHub.com` est que `GitHub.com` utilise une exécution de vérification, tandis que GitHub Enterprise (à l’aide de jetons d’accès personnel) génère un statut de validation :
+Lorsque la vérification est créée, elle ressemble à la capture d’écran suivante. La principale différence avec `GitHub.com` est que `GitHub.com` utilise une exécution de vérification, tandis que GitHub Enterprise (à l’aide de jetons d’accès personnel) génère un statut de validation :
 
 ![Statut d’engagement pour indiquer le processus de validation PR sur GitHub Enterprise](/help/managing-code/assets/repository-webhook-github-pr-validation.png)
 
@@ -285,15 +281,15 @@ Lorsque la vérification est créée, elle ressemble à la capture d’écran ci
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
 
-Les interactions GitLab reposent uniquement sur des commentaires. Lorsque la validation commence, un commentaire est ajouté. Une fois la validation terminée (qu’elle ait réussi ou échoué), le commentaire initial est supprimé et remplacé par un nouveau commentaire contenant les résultats de la validation ou les détails de l’erreur.
+Les interactions GitLab reposent uniquement sur les commentaires. Lorsque la validation commence, un commentaire est ajouté. Une fois la validation terminée (qu’elle ait réussi ou échoué), le commentaire initial est supprimé et remplacé par un nouveau commentaire contenant les résultats de la validation ou les détails de l’erreur.
 
 Lorsque la validation de la qualité du code est en cours d’exécution :
 
 ![Lorsque la validation de la qualité du code est en cours d’exécution](/help/managing-code/assets/repository-webhook-gitlab1.png)
 
-Lorsque la validation de la qualité à froid est terminée :
+Lorsque la validation de la qualité du code est terminée :
 
-![Lorsque la validation de la qualité à froid est terminée](/help/managing-code/assets/repository-webhook-gitlab2.png)
+![Lorsque la validation de la qualité du code est terminée](/help/managing-code/assets/repository-webhook-gitlab2.png)
 
 Lorsque la validation de la qualité du code échoue avec une erreur :
 
