@@ -3,15 +3,12 @@ title: Informations d’accès au référentiel
 description: Découvrez comment accéder à votre référentiel Git géré par Adobe et comment le gérer à l’aide de la gestion de compte Git en libre-service, à partir de Cloud Manager.
 exl-id: 1cc88c82-67c7-4553-a1b8-d2ab22be466c
 TQID: https://experienceleague.adobe.com/S3oIN4DvfYCvKQLGQmFtWlqHcN5Mv9xvoNKjaMnNlm0
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: c1c7a8a36bd770401393fe7e2c62b306c1a2573d
 workflow-type: tm+mt
-source-wordcount: 403
-ht-degree: 100%
+source-wordcount: 400
+ht-degree: 72%
 
 ---
 
@@ -21,14 +18,14 @@ Découvrez comment accéder à votre référentiel Git géré par Adobe et comme
 
 ## Accéder aux informations du référentiel à partir de la page Vue d’ensemble {#overview-page}
 
-Cloud Manager facilite la récupération des informations d’accès aux référentiels gérés par Adobe à l’aide du bouton **Accéder aux informations sur le référentiel** de la carte **Pipelines**.
+Avec Cloud Manager, vous pouvez récupérer les informations d’accès à votre référentiel pour les référentiels gérés par Adobe à l’aide de la vignette **Accéder aux informations sur le référentiel** à partir de la carte **Pipelines**.
 
 La boîte de dialogue **Informations sur le référentiel** vous permet d’afficher les informations d’accès suivantes pour les référentiels gérés par Adobe :
 
 * Le nom d’utilisateur ou d’utilisatrice Git.
 * Le mot de passe Git.
 * L’URL vers le référentiel Git de Cloud Manager.
-* Des commandes Git préconfigurées pour ajouter rapidement un référentiel distant à votre référentiel Git et pour transférer du code.
+* Commandes Git préconfigurées pour ajouter un élément distant à votre référentiel Git et à votre code push.
 
   ![Fenêtre Informations sur le référentiel](assets/repository-info.png)
 
@@ -44,7 +41,7 @@ L’option **Accéder aux informations sur le référentiel** est visible par le
 
    ![Bouton Accéder aux informations sur le référentiel de la carte Pipelines](/help/managing-code/assets/pipelines-card2.png)
 
-1. Pour accéder au mot de passe, un nouveau mot de passe doit être généré. Dans la boîte de dialogue **Informations sur le référentiel**, sélectionnez **Générer un mot de passe**.
+1. Pour accéder au mot de passe, vous devez générer un nouveau mot de passe. Dans la boîte de dialogue **Informations sur le référentiel**, sélectionnez **Générer un mot de passe**.
 
 1. Dans la boîte de dialogue de confirmation, sélectionnez **Générer un mot de passe**.
 
@@ -52,11 +49,11 @@ L’option **Accéder aux informations sur le référentiel** est visible par le
 
    * La génération d’un mot de passe invalide le mot de passe précédent.
    * Cloud Manager n’enregistre pas le mot de passe. Il vous appartient d’enregistrer ce mot de passe en toute sécurité.
-   * Étant donné que Cloud Manager n’enregistre pas le mot de passe, si vous le perdez, vous devez en régénérer un nouveau.
+   * Comme Cloud Manager n’enregistre pas le mot de passe, si vous le perdez, vous devez en générer un nouveau.
 
    ![Copier le mot de passe dans la boîte de dialogue Informations sur le référentiel](/help/managing-code/assets/repository-copy-password.png)
 
-À l’aide de ces informations d’identification, vous pouvez cloner une copie locale du référentiel et apporter des modifications à ce référentiel local. Lorsque vous avez terminé, vous pouvez ensuite valider toutes les modifications du code vers le référentiel de code distant dans Cloud Manager.
+À l’aide de ces informations d’identification, vous pouvez cloner une copie locale du référentiel, apporter des modifications à ce référentiel local et, une fois prêt, renvoyer les modifications de code au référentiel de code distant de Cloud Manager.
 
 ## Accéder aux informations sur le référentiel à partir de la fenêtre Référentiels {#repositories-window}
 
@@ -66,4 +63,4 @@ La fonction **Accéder aux informations sur le référentiel** est également di
 
 Vous pouvez révoquer un mot de passe d’accès à tout moment.
 
-Pour ce faire, [créez un ticket d’assistance pour cette demande](https://experienceleague.adobe.com/fr?support-solution=Experience+Manager&support-tab=home#support). Le ticket est traité en priorité et la révocation est généralement effectuée dans la journée.
+Pour ce faire, [créez un ticket d’assistance pour cette demande](https://experienceleague.adobe.com/?support-solution=Experience+Manager&support-tab=home#support). Le ticket se voit attribuer une priorité élevée et est généralement résolu en une journée.
