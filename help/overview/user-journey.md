@@ -1,31 +1,27 @@
 ---
-title: Parcours d’utilisateur ou d’utilisatrice
+title: Intégration des utilisateurs
 description: Découvrez les différents scénarios d’intégration et la prise en main de Cloud Manager.
 exl-id: deb3429c-dfcf-4e52-9aba-d9368aa240e6
 TQID: https://experienceleague.adobe.com/EnNaMZzu5bLUD3Jjsp6ovqFvoFM30ju4FOQJfmySLEk
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: cd2426f1-5719-4006-b8c2-738e5969754b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 2cd89edca1c1dfac7f1b7b68eccdf1416efb4724
 workflow-type: tm+mt
-source-wordcount: 560
-ht-degree: 100%
+source-wordcount: 567
+ht-degree: 62%
 
 ---
 
-# Parcours d’utilisateur ou d’utilisatrice {#user-journey}
+# Intégration des utilisateurs {#user-journey}
 
-En tant qu’utilisateur ou utilisatrice d’AEM (Adobe Experience Manager), vous vous trouvez probablement dans l’un des cas de figure suivants :
+En tant qu’utilisateur d’AEM (Adobe Experience Manager), vous êtes dans l’un des scénarios suivants :
 
 * Vous débutez sur AEM.
 * Vous utilisez actuellement AEM 6.x.
 * Vous devez effectuer la mise à niveau vers AEM 6.5 pour utiliser [!UICONTROL Cloud Manager].
 
-Ce document présente ces trois cas de figure et explique votre parcours de prise en main de [!UICONTROL Cloud Manager].
+Ce document décrit ces trois scénarios et explique le processus de prise en main de .
 
 >[!NOTE]
 >
@@ -37,13 +33,13 @@ Le processus d’intégration peut varier si vous êtes novice ou si vous êtes 
 
 ### Novice d’Adobe Managed Services {#new-to-ams}
 
-En tant que nouveau client ou nouvelle cliente, nous vous présenterons [!UICONTROL Cloud Manager] dans le cadre du processus d’intégration à Adobe Managed Services.
+En tant que nouveau client, vous intégrez  dans le cadre du processus d’intégration à Adobe Managed Services.
 
 Dans le cadre du processus d’intégration, vous recevrez un e-mail de bienvenue contenant les informations suivantes :
 
 * URL d’accès à [!UICONTROL Cloud Manager].
 * Instructions de connexion à [!UICONTROL Experience Cloud].
-* Instructions d’utilisation d’Admin Console pour gérer vos utilisateurs et utilisatrices et leurs autorisations respectives afin qu’ils puissent accéder à [!UICONTROL Cloud Manager] si nécessaire.
+* Instructions d’utilisation d’Admin Console pour gérer vos utilisateurs et leurs autorisations respectives afin qu’ils puissent accéder à Cloud Manager si nécessaire.
 
 ### Personne faisant déjà partie de la clientèle d’Adobe Managed Services {#existing-customer}
 
@@ -51,15 +47,15 @@ En tant que personne faisant déjà partie de la clientèle d’AMS, vous devrez
 
 Lors de la mise à niveau, le système vous intégrera à Cloud Manager et fournira l’URL d’accès à [!UICONTROL Cloud Manager]. En outre, vous devrez utiliser Admin Console pour gérer les utilisateurs et utilisatrices qui doivent accéder à [!UICONTROL Cloud Manager] ainsi que leurs autorisations respectives.
 
-Votre projet AEM existant devra également se conformer aux bonnes pratiques recommandées, car vous commencerez à utiliser [!UICONTROL Cloud Manager] pour déployer de nouvelles modifications de code dans vos environnements AEM.
+Votre projet AEM existant doit également se conformer aux pratiques recommandées, car vous commencez à utiliser [!UICONTROL Cloud Manager] pour déployer de nouveaux changements de code dans vos environnements AEM.
 
 Pour obtenir des informations supplémentaires sur les avantages de la mise à niveau vers AEM 6.5, voir [Mise à niveau vers AEM 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/deploying/upgrading/upgrade).
 
 ## Accéder à [!UICONTROL Cloud Manager] {#accessing-cloud-manager}
 
-Connectez-vous à la page de destination [!UICONTROL Experience Cloud] à l’aide de vos informations d’identification Adobe Identity Management. À partir de là, sélectionnez AEM dans le sélecteur de solution pour accéder à [!UICONTROL Cloud Manager] et à vos environnements AEM.
+Connectez-vous à la page de destination [!UICONTROL Experience Cloud] à l’aide de vos informations d’identification Adobe Identity Management. Sélectionnez AEM dans le sélecteur de solutions pour accéder à [!UICONTROL Cloud Manager] et à vos environnements AEM.
 
-Après la première connexion à [!UICONTROL Cloud Manager], vous avez accès à vos environnements AEM directement depuis l’interface d’utilisation de [!UICONTROL Cloud Manager]. À ce stade, vous pouvez commencer à explorer toutes les possibilités offertes par [!UICONTROL Cloud Manager] et préparer votre première branche de code à déployer dans vos environnements d’évaluation et de production.
+Après la première connexion à [!UICONTROL Cloud Manager], vous avez accès à vos environnements AEM directement depuis l’interface d’utilisation de [!UICONTROL Cloud Manager]. À ce stade, vous êtes prêt à utiliser toutes les fonctionnalités de  et à préparer votre première branche de code à déployer dans vos environnements d’évaluation et de production.
 
 Pour commencer à utiliser [!UICONTROL Cloud Manager], consultez le document [Première connexion](/help/getting-started/first-time-login.md).
 
@@ -72,11 +68,11 @@ Une fois la connexion à [!UICONTROL Cloud Manager] effectuée, vous pouvez com
 1. Configurez votre environnement de référentiel de code.
 1. Configurez votre équipe et les rôles. L’appartenance à un rôle est affectée en ajoutant l’utilisateur ou l’utilisatrice à à un profil [!UICONTROL Cloud Manager] à l’aide d’Admin Console.
 1. Configurez les branches de code source dans le référentiel Git.
-1. Définissez vos objectifs en termes de KPI (indicateurs clés de performance) de charge et de performance.
+1. Définissez vos KPI de charge et de performance (indicateurs clés de performance).
 1. Définissez des scénarios de test pour déployer votre code dans vos environnements d’évaluation et de production une fois toutes les vérifications de qualité effectuées.
 
-## Parcours de bout en bout {#end-to-end-journey}
+## Présentation du processus {#end-to-end-journey}
 
-Le diagramme suivant illustre le parcours client à un haut niveau lors de l’utilisation du pipeline CI/CD de [!UICONTROL Cloud Manager] pour déployer vos modifications de code dans vos environnements d’évaluation et de production.
+Le diagramme suivant résume le processus d’utilisation du pipeline CI/CD  pour déployer vos modifications de code dans vos environnements d’évaluation et de production.
 
-![Parcours de bout en bout](/help/assets/screen_shot_2018-05-15at124004pm.png)
+parcours client pour l’intégration à Cloud Manager, présentant le chemin d’accès aux nouveaux clients et aux clients existants par le biais de la configuration ou des mises à niveau de l’environnement, de la gestion des utilisateurs et des rôles, de la mise en œuvre du projet et du pipeline CI/CD.](/help/assets/screen_shot_2018-05-15at124004pm.png)![
