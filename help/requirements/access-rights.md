@@ -23,7 +23,7 @@ Découvrez votre Adobe ID et comment l’utiliser pour accéder aux ressources 
 
 Dans le cadre du processus d’intégration, Adobe crée un identifiant d’organisation pour votre société dans le système Adobe Identity Management (IMS). IMS vous permet de gérer l’ensemble de vos utilisateurs et utilisatrices ainsi que leurs autorisations. Chaque utilisateur qui doit être membre de cette organisation et qui a accès à l’un des services [!UICONTROL Experience Cloud] doit disposer d’une Adobe ID.
 
-Pour plus d’informations sur un Adobe ID, voir [Gestion des types d’identité Adobe](https://helpx.adobe.com/business/enterprise/set-up-your-organization/identity.html) pour obtenir des instructions détaillées sur la manière d’obtenir un Adobe ID à l’aide de l’un des types d’identité disponibles.
+Pour plus d’informations sur un Adobe ID, voir [Gestion des types d’identité Adobe](https://helpx.adobe.com/fr/business/enterprise/set-up-your-organization/identity.html) pour obtenir des instructions détaillées sur la manière d’obtenir un Adobe ID à l’aide de l’un des types d’identité disponibles.
 
 ### Utilisateurs, utilisatrices et rôles {#users-and-roles}
 
