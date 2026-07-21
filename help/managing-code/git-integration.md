@@ -8,16 +8,16 @@ product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: 2011f63c513689f571d21772752348388c2f342a
 workflow-type: tm+mt
-source-wordcount: 367
-ht-degree: 95%
+source-wordcount: 356
+ht-degree: 76%
 
 ---
 
 # Intégration Git à Adobe Cloud Manager
 
-Adobe Cloud Manager est fourni avec un référentiel Git unique utilisé pour déployer le code à l’aide des pipelines CI/CD de Cloud Manager. Vous pouvez utiliser le référentiel Git de Cloud Manager prêt à l’emploi ou vous avez également la possibilité d’intégrer un référentiel Git On-Premise ou géré par le client ou la cliente avec Cloud Manager.
+Adobe Cloud Manager est fourni avec un référentiel Git unique utilisé pour déployer le code à l’aide des pipelines CI/CD de Cloud Manager. Vous pouvez utiliser le référentiel Git de Cloud Manager comme indiqué, ou vous avez la possibilité d’intégrer un référentiel Git local ou géré par le client avec Cloud Manager.
 
 ## Vue d’ensemble de l’intégration Git
 
@@ -31,9 +31,9 @@ Cette série de vidéos explore plusieurs cas d’utilisation concernant l’int
 * [Déploiement dans l’environnement de production](#production-deployment)
 * [Synchronisation des balises de publication](#sync-tags)
 
-Cette série de vidéos part du principe que les spectateurs et spectatrices possèdent des connaissances de base de la gestion de Git et du contrôle de code source. Consultez les [ressources supplémentaires ci-dessous](#additional-resources) pour en savoir plus sur Git.
+Cette série vidéo nécessite des connaissances de base de Git et de la gestion de la commande source. Consultez les [ressources supplémentaires ci-dessous](#additional-resources) pour en savoir plus sur Git.
 
-Les étapes et les conventions de nommage décrites dans cette série vidéo représentent quelques bonnes pratiques pour travailler avec un référentiel Git géré par le client et la cliente et Cloud Manager. On s’attend à ce que les conventions et les workflows décrits soient adaptés aux équipes de développement individuelles.
+Les étapes et les conventions de nommage décrites dans cette série vidéo représentent quelques bonnes pratiques pour travailler avec un référentiel Git géré par le client et la cliente et Cloud Manager. Les conventions et les workflows présentés sont adaptés aux différentes équipes de développement.
 
 Pour une vue d’ensemble complète de Cloud Manager, voir la section [Présentation de Cloud Manager](/help/introduction.md).
 
@@ -45,7 +45,7 @@ Premières étapes de la synchronisation d’un référentiel Git géré par le 
 
 ## Stratégie d’embranchement de base {#branching-strategy}
 
-Configurez une stratégie d’embranchement de base afin de tirer parti des [pipelines de production](/help/using/production-pipelines.md) et des [pipelines hors production](/help/using/non-production-pipelines.md) de Cloud Manager.
+Configurez une stratégie d’embranchement de base pour utiliser les [pipelines de production](/help/using/production-pipelines.md) et [pipelines hors production](/help/using/non-production-pipelines.md) de Cloud Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31133/?captions=fre_fr&quality=12)
 

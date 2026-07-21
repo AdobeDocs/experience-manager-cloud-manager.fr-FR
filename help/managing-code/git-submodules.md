@@ -10,10 +10,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: c2a6d2f87cf9f9c98f2af818f73b1fb2793c2e46
 workflow-type: tm+mt
-source-wordcount: 421
-ht-degree: 100%
+source-wordcount: 420
+ht-degree: 82%
 
 ---
 
@@ -77,9 +77,9 @@ Pour plus d’informations sur les sous-modules Git, consultez le [manuel de ré
 Lors de l’utilisation de sous-modules Git, tenez compte des points suivants :
 
 * L’URL Git doit se trouver exactement dans la syntaxe décrite ci-dessus.
-* Pour des raisons de sécurité, n’incorporez pas les informations d’identification dans ces URL.
+* Pour des raisons de sécurité, n’incluez pas d’informations d’identification dans ces URL.
 * Seuls les sous-modules situés à la racine de la branche sont pris en charge.
-* Les références des sous-modules Git sont stockées vers des validations Git spécifiques. Par conséquent, lorsque des modifications sont apportées au référentiel de sous-module, la validation référencée doit être mise à jour. Par exemple, en utilisant `git submodule update --remote`.
+* Les références des sous-modules Git sont stockées vers des validations Git spécifiques. Par conséquent, lorsque des modifications sont apportées au référentiel de sous-module, vous devez mettre à jour la validation référencée. Par exemple, en utilisant `git submodule update --remote`.
 * Sauf si nécessaire, Adobe vous recommande d’utiliser des sous-modules « superficiels » en exécutant `git config -f .gitmodules submodule.<submodule path>.shallow true` pour chaque sous-module.
 
 
@@ -87,7 +87,7 @@ Lors de l’utilisation de sous-modules Git, tenez compte des points suivants :
 
 La prise en charge des sous-modules Git pour les [référentiels privés](private-repositories.md) est largement similaire à celle des référentiels Adobe.
 
-Cependant, après avoir configuré votre fichier `pom.xml` et exécuté les commandes `git submodule`, vous devez ajouter un fichier `.gitmodules` dans le répertoire racine du référentiel de l’agrégateur pour que Cloud Manager détecte la configuration du sous-module.
+Cependant, pour que Cloud Manager détecte la configuration du sous-module, vous devez ajouter un fichier `.gitmodules` au répertoire racine du référentiel d’agrégation après avoir configuré votre fichier `pom.xml` et exécuté les commandes `git submodule`.
 
 ![fichier .gitmodules](assets/gitmodules.png)
 
