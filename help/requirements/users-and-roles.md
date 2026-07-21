@@ -3,25 +3,21 @@ title: Ajouter des utilisateurs et des rôles
 description: Découvrez comment utiliser Admin Console pour ajouter des utilisateurs et utilisatrices et des rôles ainsi que créer des profils.
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
 TQID: https://experienceleague.adobe.com/95vfyk6-SMg7GFaCVWkiaaGObo603DJqvExEgPFrwqw
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 130406286e65ad0e0651451766ca740f3458a9c1
 workflow-type: tm+mt
-source-wordcount: 796
-ht-degree: 85%
+source-wordcount: 797
+ht-degree: 75%
 
 ---
 
 # Ajouter des utilisateurs et utilisatrices et des rôles {#add-users-and-roles}
 
-De nombreuses fonctionnalités de [!UICONTROL Cloud Manager] nécessitent des autorisations spécifiques. Par exemple, seuls certains utilisateurs sont autorisés à définir les indicateurs de performance clés (ICP) d’un programme. Ces autorisations sont regroupées de manière logique en rôles.
+De nombreuses fonctionnalités de [!UICONTROL Cloud Manager] nécessitent des autorisations spécifiques. Par exemple, seuls les utilisateurs autorisés sont autorisés à définir les indicateurs de performance clés (ICP) d’un programme. Ces autorisations sont regroupées de manière logique en rôles.
 
-[!UICONTROL Cloud Manager] définit actuellement quatre rôles pour les utilisateurs et utilisatrices qui régissent la disponibilité de fonctionnalités spécifiques :
+ définit quatre rôles pour les utilisateurs, qui régissent la disponibilité de fonctionnalités spécifiques :
 
 * Propriétaire de l’entreprise
 * Responsable de programme
@@ -51,9 +47,9 @@ Le tableau suivant résume les rôles dans Cloud Manager.
 
 ## Création d’un profil de produit à l’aide d’Admin Console {#using-admin-console-to-create-a-profile}
 
-Les rôles de [!UICONTROL Cloud Manager] sont gérés depuis Admin Console. Une appartenance à un rôle spécifique est fournie en ajoutant l’utilisateur ou l’utilisatrice à un profil de produit [!UICONTROL Cloud Manager].
+Les rôles de [!UICONTROL Cloud Manager] sont gérés depuis Admin Console. L’ajout de l’utilisateur à un profil de produit  fournit des appartenances à des rôles spécifiques.
 
-Admin Console fournit un emplacement centralisé pour gérer les droits Adobe dans l’ensemble de votre organisation. Pour en savoir plus sur Adobe Admin Console, consultez [Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html).
+Admin Console fournit un emplacement centralisé pour gérer les droits Adobe dans l’ensemble de votre organisation. Pour en savoir plus sur Adobe Admin Console, consultez [Admin Console](https://helpx.adobe.com/business/enterprise/plan-your-deployment/basic-concepts/admin-console.html).
 
 Un administrateur ou une administratrice doit créer des profils de produit sous le contexte du produit [!UICONTROL AEM Managed Services] pour attribuer des autorisations basées sur les rôles aux utilisateurs et utilisatrices de [!UICONTROL Cloud Manager], correspondant à chacun des quatre rôles [!UICONTROL Cloud Manager].
 
@@ -87,11 +83,11 @@ CQDOC-22790
 
    ![Nouveau profil](/help/assets/admin-console-product-profiles.png)
 
-1. Fournissez les informations requises afin de configurer un nouveau rôle pour [!UICONTROL Cloud Manager].
+1. Pour configurer un nouveau rôle pour , fournissez les informations.
 
    * **Nom de profil** : vous pouvez saisir le **nom de profil** que vous souhaitez. Toutefois, afin d’éviter toute confusion, il est recommandé d’utiliser les valeurs de la colonne **Nom de profil recommandé**.
    * **Nom d’affichage** - Le **nom d’affichage** doit correspondre à la valeur technique définie par [!UICONTROL Cloud Manager] (voir le tableau ci-dessous).
-   * **Groupe d’autorisations** - Vous pouvez choisir un groupe d’autorisations pour le profil (pas toujours disponible).
+   * **Groupe d’autorisations** - Sélectionnez un groupe d’autorisations pour le profil (pas toujours disponible).
 
 <!-- 
 CQDOC-22790
@@ -137,6 +133,6 @@ Une fois que vous avez créé des profils de produit, vous pouvez leur affecter 
 
 1. Cliquez sur **Enregistrer** pour enregistrer les profils de l’utilisateur.
 
-Répétez les mêmes étapes pour affecter des profils à des groupes d’utilisateurs, mais sélectionnez **Groupes d’utilisateurs** dans le panneau de navigation de gauche dans l’onglet **Utilisateurs**. Cliquez sur un groupe d’utilisateurs et sélectionnez le **Profils de produit attribués** puis cliquez sur **Attribuer un profil de produit** pour affecter des profils.
+Répétez les mêmes étapes pour affecter des profils à des groupes d’utilisateurs, mais sélectionnez **Groupes d’utilisateurs** dans le panneau de navigation de gauche dans l’onglet **Utilisateurs**. Cliquez sur un groupe d’utilisateurs et sélectionnez les **Profils de produit attribués**, puis cliquez sur **Attribuer un profil de produit** pour affecter des profils.
 
 ![Affectation de profils à un groupe](/help/assets/admin-console-edit-user-groups.png)
