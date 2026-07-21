@@ -3,23 +3,19 @@ title: Autorisations basées sur les rôles
 description: Découvrez les autorisations préconfigurées basées sur les rôles de Cloud Manager pour gérer l’accès à vos ressources cloud.
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
 TQID: https://experienceleague.adobe.com/JXI9QGaexNJga8o80oLNo7allavc1x021DWmef-AkTc
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: e94834c5e13825a468ef5344e77024c4fe4a29e6
 workflow-type: tm+mt
-source-wordcount: 592
-ht-degree: 99%
+source-wordcount: 596
+ht-degree: 85%
 
 ---
 
 # Autorisations basées sur les rôles {#role-based-permissions}
 
-[!UICONTROL Cloud Manager] dispose de rôles préconfigurés avec les autorisations appropriées. Par exemple, un développeur développe du code et a l’autorisation de placer le code dans le référentiel Git. Une personne propriétaire d’entreprise dispose de différents autorisations lui permettant de définir des indicateurs de performance clés (KPI) et d’approuver les déploiements.
+ inclut des rôles préconfigurés avec les autorisations appropriées. Par exemple, les développeurs de logiciels écrivent du code et ont l’autorisation de placer le code dans le référentiel Git. Les responsables d’entreprise disposent d’autorisations différentes leur permettant de définir les indicateurs clés de performance (KPI) et d’approuver les déploiements.
 
 >[!NOTE]
 >
@@ -29,7 +25,7 @@ ht-degree: 99%
 
 ## Rôles d’utilisateur ou d’utilisatrice {#user-roles}
 
-La gestion des rôles pour [!UICONTROL Cloud Manager] s’effectue dans [Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html). Toute personne utilisant [!UICONTROL Cloud Manager] doit être membre de l’organisation IMS du client ou de la cliente et avoir le contexte du produit Adobe Managed Services. L’appartenance à un rôle spécifique est fournie en ajoutant l’utilisateur ou l’utilisatrice à un profil de produit [!UICONTROL Cloud Manager] dans Admin Console.
+La gestion des rôles pour [!UICONTROL Cloud Manager] s’effectue dans [Admin Console](https://helpx.adobe.com/business/enterprise/plan-your-deployment/basic-concepts/admin-console.html). Toute personne utilisant [!UICONTROL Cloud Manager] doit être membre de l’organisation IMS du client ou de la cliente et avoir le contexte du produit Adobe Managed Services. Vous fournissez des rôles spécifiques en ajoutant un utilisateur à un profil de produit  dans Admin Console.
 
 Pour plus d’informations sur la configuration de vos rôles, consultez la rubrique [Configuration des utilisateurs et utilisatrices et des rôles](/help/requirements/users-and-roles.md).
 
@@ -46,7 +42,7 @@ Ce tableau répertorie les rôles que vous pouvez affecter dans Admin Console.
 
 ## Autorisations d’utilisateur ou d’utilisatrice {#user-permissions}
 
-Chacun des rôles est associé à des autorisations préconfigurées spécifiques. Ce tableau récapitule les autorisations disponibles et les rôles qui peuvent les exécuter.
+Chacun des rôles est associé à des autorisations préconfigurées spécifiques. Le tableau suivant répertorie les autorisations disponibles et les rôles qui peuvent les exécuter.
 
 | Autorisation | Description | Propriétaire de l’entreprise | Responsable de déploiement | Responsable de programme | Développeur ou développeuse | Ingénieur du service client |
 | --- | --- | --- | --- | --- | --- | --- |
