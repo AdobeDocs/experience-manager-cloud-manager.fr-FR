@@ -53,7 +53,7 @@ Le tableau suivant résume les rôles dans Cloud Manager.
 
 Les rôles de [!UICONTROL Cloud Manager] sont gérés depuis Admin Console. L’ajout de l’utilisateur à un profil de produit  fournit des appartenances à des rôles spécifiques.
 
-Admin Console fournit un emplacement centralisé pour gérer les droits Adobe dans l’ensemble de votre organisation. Pour en savoir plus sur Adobe Admin Console, consultez [Admin Console](https://helpx.adobe.com/business/enterprise/plan-your-deployment/basic-concepts/admin-console.html).
+Admin Console fournit un emplacement centralisé pour gérer les droits Adobe dans l’ensemble de votre organisation. Pour en savoir plus sur Adobe Admin Console, consultez [Admin Console](https://helpx.adobe.com/fr/business/enterprise/plan-your-deployment/basic-concepts/admin-console.html).
 
 Un administrateur ou une administratrice doit créer des profils de produit sous le contexte du produit [!UICONTROL AEM Managed Services] pour attribuer des autorisations basées sur les rôles aux utilisateurs et utilisatrices de [!UICONTROL Cloud Manager], correspondant à chacun des quatre rôles [!UICONTROL Cloud Manager].
 
