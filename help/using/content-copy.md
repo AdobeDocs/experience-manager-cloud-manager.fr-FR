@@ -3,10 +3,15 @@ title: Copie de contenu pour la cohérence de l’environnement
 description: La copie de contenu dans Cloud Manager permet de copier du contenu modifiable à la demande à partir des environnements de production Adobe Experience Manager 6.x hébergés par Adobe Managed Services dans des environnements inférieurs pour les tests.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 TQID: https://experienceleague.adobe.com/ffcf9UNSOp7oIpDZdtLcoFWp-Ww-A1XV3kCDmKqJLSw
-product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
 source-git-commit: 845c182685d59844a2349c90d176d3e7c8a594cf
 workflow-type: tm+mt
 source-wordcount: 1435
@@ -176,7 +181,7 @@ Vous pouvez surveiller le statut de vos processus de copie à la page **Activit�
 * Une copie de contenu ne peut pas être effectuée si une opération active est en cours d’exécution dans l’environnement de destination ou l’environnement source, tel qu’un pipeline CI/CD.
 * La copie de contenu ne doit pas être utilisé comme outil de clonage ou de mise en miroir, car elle ne peut pas effectuer le suivi du contenu déplacé ou supprimé sur la source.
 * Une copie de contenu ne peut pas être suspendue ou annulée une fois qu’elle est lancée.
-* La copie de contenu copie les ressources avec les métadonnées liées à Dynamic Media, de l’environnement supérieur vers l’environnement inférieur sélectionné. Les ressources copiées doivent ensuite être retraitées à l’aide du workflow [ Traitement des ressources de gestion des ressources numériques ](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/assets/using/assets-workflow) dans l’environnement inférieur. Ce retraitement est nécessaire pour utiliser la configuration Dynamic Media correspondante.
+* La copie de contenu copie les ressources avec les métadonnées liées à Dynamic Media, de l’environnement supérieur vers l’environnement inférieur sélectionné. Les ressources copiées doivent ensuite être retraitées à l’aide du workflow [&#x200B; Traitement des ressources de gestion des ressources numériques &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/assets/using/assets-workflow) dans l’environnement inférieur. Ce retraitement est nécessaire pour utiliser la configuration Dynamic Media correspondante.
 * [Les configurations Dynamic Media dont la taille de ressource est supérieure à 2 Go activée](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb) ne sont pas prises en charge.
 * Les régions de l’environnement cible doivent être identiques à ou être un sous-ensemble des régions de l’environnement source.
 
