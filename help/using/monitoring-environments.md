@@ -3,20 +3,14 @@ title: Surveiller les environnements
 description: Découvrez comment surveiller vos environnements dans Cloud Manager.
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
 TQID: https://experienceleague.adobe.com/1WlZ7i3267CTPVQrvLi9FlzJuTjzSzpghePEMlSygjY
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: cd2426f1-5719-4006-b8c2-738e5969754b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 59ab2b4824e516576d0905376b80c37edc49e53d
 workflow-type: tm+mt
-source-wordcount: 873
-ht-degree: 74%
+source-wordcount: 843
+ht-degree: 57%
 
 ---
 
@@ -32,7 +26,7 @@ Si une mesure est supérieure à son seuil d’avertissement (mais inférieure �
 
 Si une mesure dépasse son seuil critique, elle est considérée comme étant dans un état critique.
 
-Adobe Managed Services définit les seuils, que vous pouvez afficher dans [!UICONTROL Cloud Manager]. Dans la plupart des cas, les seuils sont cohérents entre les clientes et clients. Mais dans certains cas, Adobe Managed Services modifie les seuils pour répondre à leurs besoins spécifiques. Posez toutes les questions que vous avez concernant les seuils à votre responsable du succès client.
+Adobe Managed Services définit les seuils, que vous pouvez afficher dans [!UICONTROL Cloud Manager]. En règle générale, les seuils sont cohérents entre les clients. Cependant, il existe des cas où Adobe Managed Services modifie les seuils pour répondre aux besoins spécifiques des clients. Posez toutes les questions que vous avez concernant les seuils à votre responsable du succès client.
 
 ## Accéder à la surveillance du système {#accessing-system-monitoring}
 
@@ -54,7 +48,7 @@ La section **Surveillance du système** de la page **Rapports** répertorie les 
 * Réseau
 * Application
 
-Le statut de chaque catégorie est un résumé des mesures individuelles. Si une mesure d’une catégorie est dans un état critique, l’ensemble de la catégorie est dans un état critique aux fins de la page de vue d’ensemble. La même synthèse peut être affichée au niveau d’un environnement et au niveau d’une instance.
+Le statut de chaque catégorie est un résumé des mesures individuelles. Si une mesure d’une catégorie atteint un état critique, la catégorie entière est critique sur la page d’aperçu. La même synthèse peut être affichée au niveau d’un environnement ou d’une instance.
 
 ![Présentation de la surveillance du système](/help/assets/System-Monitoring-Reports.png)
 
@@ -70,12 +64,12 @@ Pour consulter les détails de mesures spécifiques, cliquez sur l’une des col
 
 La navigation à gauche affiche les mesures disponibles dans la catégorie sélectionnée pour laquelle il existe des données pour l’environnement et les instances sélectionnés.
 
-Un graphique séparé indique le statut et les données dans le temps avec les seuils. Si plusieurs instances sont affichées, les données de chaque instance se trouvent dans une série distincte.
+Un graphique séparé indique le statut et les données dans le temps avec les seuils. Si plusieurs instances sont affichées, les données de chaque instance sont affichées dans une série distincte.
 
 ![Graphique de mesures](/help/assets/Monitoring_Graphs1.png)
 
-Une série peut être masquée dans un graphique en cliquant dessus dans la légende.
-Par exemple, si vous cliquez sur la série de seuil d’avertissement, vous ne verrez que le seuil critique.
+Vous pouvez supprimer une série de la vue d’un graphique en cliquant dessus dans la légende.
+Par exemple, si vous cliquez sur la série de seuils d’avertissement, vous ne voyez que le seuil critique.
 
 ![Modification de graphique](/help/assets/Monitoring_Graphs2.png)
 
@@ -84,7 +78,7 @@ Par exemple, si vous cliquez sur la série de seuil d’avertissement, vous ne v
 #### Hôte {#host}
 
 * **`Load Per Core`** : nombre de processus exécutés par le CPU. Ou, le nombre de processus en file d’attente dont l’état est en attente a été calculé en moyenne sur une période d’une (load1), de cinq (load5) et de quinze (load15) minutes.
-* **P`rocess Count`** : nombre de processus actuellement ouverts.
+* **`Process Count`** : nombre de processus actuellement ouverts.
 * **`User Count`** : nombre d’utilisateurs disposant d’une session shell active.
 * **`Memory Usage`** : pourcentage de la mémoire système actuellement allouée.
 * **`JVM Memory`** : taille (en mégaoctets) du tas Java alloué.
@@ -96,14 +90,14 @@ Par exemple, si vous cliquez sur la série de seuil d’avertissement, vous ne v
 
 #### Stockage {#storage}
 
-* **`Disk Space`** : espace disque utilisé (en mégaoctets) pour chaque point de montage sur l’hôte. Il existe différentes mesures pour chaque point de montage. Au minimum, les mesures `/` et `/mnt` sont disponibles, mais des mesures de point de montage supplémentaires peuvent être disponibles selon la configuration d’instance spécifique.
+* **`Disk Space`** : espace disque utilisé (en mégaoctets) pour chaque point de montage sur l’hôte. Il existe différentes mesures pour chaque point de montage. Au minimum, il existe des mesures pour `/` et `/mnt`, mais des mesures de point de montage supplémentaires sont disponibles selon la configuration d’instance spécifique.
 * **`Folder Size`**
 * **`AEM Segment Store`** : espace disque utilisé (en gigaoctets) pour l’entrepôt de segments AEM.
 
 #### Application {#application}
 
 * **`Replication Agent`** : durée (en secondes) d’un événement de réplication de test.
-   * Il existe des mesures distinctes pour chaque agent de réplication.
+  * Il existe des mesures distinctes pour chaque agent de réplication.
 * **`Dispatcher Flush`** : nombre d’éléments actuellement dans la file d’attente de vidage Dispatcher
 
 ## Création de rapports SLA {#sla-reporting}
@@ -114,7 +108,7 @@ Le graphique suivant montre les performances mensuelles du contrat de niveau de 
 
 ![Graphique SLA pour 2018](/help/assets/SLA-Reports-one.png)
 
-Comme pour les graphiques de surveillance du système, le fait de survoler un point de données affiche les valeurs correspondant à ce mois.
+Comme pour les graphiques de surveillance du système, le survol d’un point de données affiche les valeurs spécifiques de ce mois.
 
 ![Survol des points de données](/help/assets/SLA-Reports-two.png)
 
@@ -125,14 +119,14 @@ La section **Analyse des événements**, située sous ce graphique, affiche l’
 ## Mesures SLA {#sla-metrics}
 
 * **`Author Contract`** : SLA défini dans votre contrat avec Adobe Managed Services pour le niveau création.
-* **`AMS Author SLA`** : temps de disponibilité mesuré du niveau de création de production, en tenant compte des incidents causés par les fournisseurs ou par Adobe.
+* **`AMS Author SLA`** : temps de disponibilité mesuré du niveau de création de production, en tenant compte des incidents causés par les fournisseurs ou Adobe.
 * **`Author SLA`** : temps de disponibilité mesuré du niveau de création ignorant le temps d’arrêt planifié, tel que les fenêtres de maintenance.
 * **`End User Contract`** : SLA défini dans votre contrat avec Adobe Managed Services pour le niveau de publication.
-* **`AMS End User SLA`** : temps de disponibilité mesurés du niveau de publication de production, en tenant compte des incidents causés par les fournisseurs ou par Adobe.
+* **`AMS End User SLA`** : temps de disponibilité mesuré du niveau de publication de production, en tenant compte des incidents causés par les fournisseurs ou Adobe.
 * **`End User SLA`** : temps de disponibilité mesuré du niveau de publication ignorant le temps d’arrêt planifié, tel que les fenêtres de maintenance.
 
 ## Tutoriel vidéo {#video-tutorial}
 
-Cette vidéo présente une vue d’ensemble de l’utilisation des graphiques générés par les rapports Cloud Manager pour une vue d’ensemble de vos environnements de programme.
+Cette vidéo présente un aperçu de l’utilisation des graphiques générés par les rapports Cloud Manager pour surveiller vos environnements de programme.
 
->[!VIDEO](https://video.tv.adobe.com/v/34717?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26315/)
