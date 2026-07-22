@@ -3,39 +3,36 @@ title: Ajout d’un pipeline hors production
 description: Découvrez comment utiliser Cloud Manager pour créer et configurer des pipelines hors production afin de déployer votre code.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
 TQID: https://experienceleague.adobe.com/Dj7SjKdao6RU-cIS7D1AQxg5qpKrJMTcYQJBfiqc-Gg
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 4c73ab16ff7eab406c31a6d26cdd09360a94b3ea
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 38a0aa1ab543c976c8e7526ac2ba78d06c9b06d6
 workflow-type: tm+mt
-source-wordcount: 2080
-ht-degree: 22%
+source-wordcount: 2070
+ht-degree: 20%
 
 ---
 
 # Ajout d’un pipeline hors production {#configuring-non-production-pipelines}
 
-Découvrez comment utiliser Cloud Manager pour créer et configurer des pipelines hors production afin de déployer votre code. Si vous souhaitez d’abord obtenir une vue d’ensemble plus conceptuelle du fonctionnement des pipelines dans Cloud Manager, reportez-vous au document [Pipelines CI/CD](/help/overview/ci-cd-pipelines.md).
+Découvrez comment utiliser Cloud Manager pour créer et configurer des pipelines hors production afin de déployer votre code. Pour une présentation plus conceptuelle du fonctionnement des pipelines dans Cloud Manager, voir [Pipelines CI/CD](/help/overview/ci-cd-pipelines.md).
 
 ## Vue d’ensemble {#overview}
 
 En utilisant le volet **Pipelines** dans [!UICONTROL Cloud Manager], le **Responsable de déploiement** peut créer deux types de pipelines différents.
 
-* **Pipelines de production** - un pipeline de production est un pipeline spécialement conçu, composé d’une série d’étapes coordonnées pour mener le code source jusqu’à la production.
+* **Pipelines de production** - un pipeline de production est un pipeline spécialement conçu, composé d’une série d’étapes coordonnées pour déployer le code source en production.
 * **Pipelines hors production** - un pipeline hors production sert principalement à exécuter des analyses de qualité du code ou à déployer le code source dans un environnement de développement.
 
 Ce document se concentre sur les pipelines hors production. Pour plus de détails sur la configuration des pipelines de production, voir le document [Configurer des pipelines de production](/help/using/production-pipelines.md).
 
 Il existe deux types de pipelines hors production :
 
-* **Pipelines de qualité du code** : ceux-ci exécutent des analyses de qualité du code sur le code dans une branche Git et exécutent les étapes de création et de qualité du code.
+* **Pipelines de qualité du code** - ceux-ci exécutent des analyses de qualité du code sur le code dans une branche Git et exécutent les étapes de création et de qualité du code.
 * **Pipelines de déploiement** : outre l’exécution des étapes de création et de qualité du code, identiques à celles des pipelines de qualité du code, ces pipelines déploient le code dans un environnement hors production.
 
 >[!NOTE]
 >
->Vous ne pouvez pas configurer de pipeline tant que le référentiel Git associé ne comporte pas au moins une branche et que la [configuration du programme](/help/getting-started/program-setup.md) n’est pas terminée. Consultez le document [Référentiels Cloud Manager](/help/managing-code/managing-repositories.md) pour découvrir comment ajouter et gérer des référentiels dans Cloud Manager.
+>Vous ne pouvez pas configurer de pipeline tant que le référentiel Git associé ne comporte pas au moins une branche et que la [configuration du programme](/help/getting-started/program-setup.md) n’est pas terminée. Pour savoir comment ajouter et gérer des référentiels dans Cloud Manager, consultez [Référentiels Cloud Manager](/help/managing-code/managing-repositories.md).
 
 ## Ajout d’un pipeline hors production {#add-non-production-pipeline}
 
@@ -127,7 +124,7 @@ Si un pipeline de pile complète existe déjà, Cloud Manager affiche un avis in
 
 1. Cliquez sur **Enregistrer**.
 
-## À propos de l’utilisation de la création dynamique dans votre pipeline hors production{#about-smart-build}
+## Utilisation de la création intelligente dans votre pipeline hors production{#about-smart-build}
 
 La **version intelligente** dans Cloud Manager est une stratégie de création optimisée pour les pipelines hors production. La génération intelligente réduit les temps de génération en mettant en cache les modules et en ne reconstruisant que les modules qui ont été modifiés depuis la dernière exécution réussie. Les modules inchangés sont réutilisés à partir du cache, tandis que seuls les modules modifiés et leurs dépendances sont reconstruits, ce qui améliore l’efficacité des workflows de développement itératifs.
 
@@ -160,7 +157,7 @@ Le gain de performances de l’utilisation de la création dynamique dépend de 
 * La fréquence et l’étendue des modifications de code.
 * La distribution des dépendances entre les modules.
 
-En règle générale, les projets comportant de nombreux modules indépendants peuvent bénéficier de la plus grande amélioration.
+Les projets comportant de nombreux modules indépendants peuvent bénéficier de la plus grande amélioration.
 
 ### Désinscription du cache par module{#smart-build-cache-optout}
 
@@ -187,13 +184,13 @@ Cette syntaxe force le module à se recréer à chaque exécution de pipeline ta
 Gardez les points suivants à l’esprit lorsque vous utilisez la création dynamique :
 
 * Smart Build repose sur l’analyse des dépendances Maven.
-* Les modifications en dehors du graphique de dépendance peuvent ne pas déclencher de reconstructions.
-* Certains plug-ins peuvent ne pas être entièrement compatibles avec la mise en cache.
+* Les modifications en dehors du graphique de dépendance ne déclenchent pas de reconstructions.
+* Certains plug-ins ne sont pas entièrement compatibles avec la mise en cache.
 * Vous pouvez revenir à la **version complète** à tout moment en modifiant le pipeline hors production.
 
 Si vous rencontrez un comportement de build inattendu, envisagez de désactiver la mise en cache de modules spécifiques ou de changer temporairement votre stratégie de build en **Version complète**.
 
-### Dépannage des problèmes de création dynamique{#smart-build-troubleshoot}
+### Résoudre les problèmes de création dynamique{#smart-build-troubleshoot}
 
 | Problème | Solutions suggérées |
 | --- | --- |
@@ -201,7 +198,7 @@ Si vous rencontrez un comportement de build inattendu, envisagez de désactiver 
 | Aucune amélioration des performances | · Assurez-vous que plusieurs exécutions ont eu lieu (préchauffage du cache).<br>· Vérifiez si la plupart des modules changent fréquemment. |
 | Artefacts inattendus ou modifications manquantes | · Vérifiez si les modifications ne se trouvent pas en dehors du suivi des dépendances Maven.<br>· Utilisez **Version complète** pour la vérification. |
 
-Voir [Ajouter un pipeline hors production](#add-non-production-pipeline) la section Activation de la création dynamique.
+Voir [Ajouter un pipeline hors production](#add-non-production-pipeline) pour activer la création intelligente.
 
 
 
@@ -247,4 +244,4 @@ Après avoir configuré le pipeline, vous pouvez déployer votre code. Voir la s
 
 Cette vidéo présente une vue d’ensemble du processus de création de pipeline, détaillé dans ce document.
 
->[!VIDEO](https://video.tv.adobe.com/v/327614?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26316/)
