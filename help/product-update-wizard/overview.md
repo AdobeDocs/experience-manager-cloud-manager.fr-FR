@@ -10,16 +10,16 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: 7c68326b67ce5fc11a8afa7bffb893b461709b51
 workflow-type: tm+mt
-source-wordcount: 215
-ht-degree: 100%
+source-wordcount: 202
+ht-degree: 65%
 
 ---
 
 # Assistant de mise à jour du produit {#product-update-wizard}
 
-L’assistant de mise à jour du produit est une expérience de mise à niveau guidée et détaillée vers la dernière version d’Adobe Experience Manager 6.5 à l’aide de Cloud Manager. Il simplifie le processus de bout en bout et assure le respect des bonnes pratiques AEM à l’aide du framework CI/CD de Cloud Manager et des tests automatisés intégrés.
+L’assistant de mise à jour du produit est une expérience de mise à niveau guidée et séquentielle vers la dernière version de Adobe Experience Manager 6.5 à l’aide de Cloud Manager. Il simplifie le processus de bout en bout et assure le respect des bonnes pratiques AEM à l’aide du framework CI/CD de Cloud Manager et des tests automatisés intégrés.
 
 L’assistant comprend cinq phases qui vous guident lors d’une mise à jour du produit AEM :
 
@@ -29,13 +29,13 @@ L’assistant comprend cinq phases qui vous guident lors d’une mise à jour d
 * Validation
 * Fin
 
-## Utiliser l’assistant {#using}
+## Utilisation de l’assistant {#using}
 
-Les clients intégrés à Cloud Manager et admissibles à la mise à niveau vers AEM 6.5 pourront utiliser l’assistant de mise à jour du produit. Pour plus d’informations, contactez le responsable du succès client.
+Les clients intégrés à Cloud Manager et admissibles à la mise à niveau vers AEM 6.5 pourront utiliser l’assistant de mise à jour du produit. Contactez votre représentant ou représentante du service client pour plus d’informations.
 
-1. Vous recevez une notification push par le biais de Cloud Manager pour vous informer qu’AEM 6.5 est disponible pour votre programme.
+1. Vous recevez une notification push via Cloud Manager pour vous informer qu’AEM 6.5 est disponible pour votre programme.
 
-1. Une vignette **[!UICONTROL Mise à jour AEM 6.5]** s’affiche sur l’écran de vue d’ensemble de [!UICONTROL Cloud Manager]. Cette vignette permet de déterminer dans quelle phase du processus de mise à jour vous vous trouvez actuellement et vous informe de la prochaine étape à suivre.
+1. Une vignette **[!UICONTROL Mise à jour AEM 6.5]** s’affiche sur l’écran de vue d’ensemble de [!UICONTROL Cloud Manager]. Cette carte effectue le suivi de la phase actuelle du processus de mise à jour et vous informe de l’étape suivante requise.
 
    ![Mettre à jour la vignette de l’assistant](/help/assets/Start-Update.png)
 

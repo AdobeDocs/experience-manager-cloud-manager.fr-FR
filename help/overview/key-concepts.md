@@ -10,26 +10,26 @@ feature_v2:
   - id: cd2426f1-5719-4006-b8c2-738e5969754b
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: 628eceafe63153d64151937df85937135bdc8e7b
 workflow-type: tm+mt
-source-wordcount: 431
-ht-degree: 95%
+source-wordcount: 421
+ht-degree: 60%
 
 ---
 
 # Concepts clés {#key-concepts}
 
-Comme tous les outils puissants, Cloud Manager englobe plusieurs concepts et termes. Ce document résume les éléments les plus importants à connaître lorsque vous commencez à utiliser Cloud Manager.
+Cloud Manager englobe de nombreux concepts et termes. Cet article résume certains des concepts les plus importants à connaître lorsque vous commencez à utiliser Cloud Manager.
 
 ## Application {#application}
 
-Une application est l’ensemble des personnalisations et des configurations créées par un client ou une cliente dans le but d’adapter la [solution](#solution) sous-jacente (par exemple, AEM Sites ou AEM Assets) à ses cas d’utilisation et ses besoins spécifiques. Une application est une unité logique pouvant être composée de plusieurs [artefacts](#artifact).
+Une application est l’ensemble des personnalisations et des configurations créées par un client ou une cliente dans le but d’adapter la [solution](#solution) sous-jacente (par exemple, AEM Sites ou AEM Assets) à ses cas d’utilisation et ses besoins spécifiques. Une application est une unité logique composée de plusieurs [artefacts](#artifact).
 
 Exemple d’application : [WKND, une application fictive dédiée aux loisirs](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview).
 
 ## Artefact {#artifact}
 
-Un artefact est une unité déployable et résulte d’un processus de création qui transforme le code source en une seule unité. Par exemple, un fichier Zip contenant le code source.
+Un artefact est une unité déployable et est le résultat d’un processus de création qui transforme le code source en une seule unité. Par exemple, un fichier Zip contenant le code source.
 
 ## Référentiel d’artefacts {#artifact-repository}
 
@@ -49,19 +49,19 @@ Une instance est un serveur virtuel spécifique qui exécute la [solution](#solu
 
 ## Organisation {#organization}
 
-Une organisation est un concept d’Adobe représentant un client d’entreprise. Une société peut posséder plusieurs organisations en fonction de la configuration initiale du système Identity Management (IMS) d’Adobe.
+Une organisation est un concept d’Adobe représentant un client d’entreprise. Une société peut avoir plusieurs organisations en fonction de la manière dont elles sont configurées dans Adobe Identity Management System (IMS).
 
 ## Pipeline {#pipeline}
 
-Un pipeline est un ensemble d’étapes de déploiement « exécutées » en séquence.
+Un pipeline est un ensemble d’étapes de déploiement exécutées en séquence.
 
 ## Produit {#product}
 
-Un produit est un ensemble spécifique de fonctionnalités au sein d’une [solution](#solution) autorisée par une organisation. Au sein d’une organisation, différents [programmes](#program) peuvent bénéficier de différents ensembles de produits, tels qu’AEM Sites, AEM Assets ou AEM Forms.
+Un produit est un ensemble spécifique de fonctionnalités au sein d’une [solution](#solution) autorisée par une organisation. Au sein d’une organisation[&#128279;](#program) différents programmes ont droit à différents ensembles de produits, tels qu’AEM Sites, AEM Assets ou AEM Forms.
 
 ## Programme {#program}
 
-Un programme est un ensemble d’environnements qui prennent en charge un regroupement logique d’initiatives client, correspondant en règle générale à un contrat de niveau de service (SLA) acheté. Chaque programme comprend un environnement de production précis et peut intégrer un grand nombre d’environnements hors production.
+Un programme est un ensemble d’environnements qui prennent en charge un regroupement logique d’initiatives client, correspondant en règle générale à un service level agreement acheté (SLA). Chaque programme comporte exactement un environnement de production et de nombreux environnements hors production.
 
 ## Solution {#solution}
 
@@ -69,4 +69,4 @@ Une solution désigne l’une des solutions [!UICONTROL Experience Cloud] d’Ad
 
 ## Étape {#step}
 
-Une étape est un ensemble d’instructions définies qui exécute une unité de travail à la manière d’un bloc de création d’un [pipeline](#pipeline).
+Une étape est un ensemble d’instructions configurées qui exécute une unité de travail en tant que composant d’un [pipeline](#pipeline).

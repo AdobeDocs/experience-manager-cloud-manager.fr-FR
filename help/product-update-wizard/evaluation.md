@@ -11,10 +11,10 @@ feature_v2:
   - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: 1b146c2a01d3371ed2fe014a15a84ddee2cd9b6c
 workflow-type: tm+mt
 source-wordcount: 270
-ht-degree: 59%
+ht-degree: 40%
 
 ---
 
@@ -25,7 +25,7 @@ La première phase de l’assistant de mise à jour du produit est la phase **[!
 Le rapport vérifie que l’instance de création est prête pour la mise à niveau en détectant des motifs pour les éléments suivants :
 
 * Violations de règles dans les zones affectées ou remplacées par la mise à niveau.
-* Il utilise des fonctionnalités ou des API AEM 6.x qui ne sont pas rétrocompatibles et qui peuvent échouer après la mise à niveau.
+* Il détecte les fonctionnalités ou les API d’AEM 6.x qui ne sont pas rétrocompatibles et qui peuvent échouer après la mise à niveau.
 
 Ce rapport permet d’estimer l’effort de développement requis pour effectuer la mise à niveau vers Adobe Experience Manager (AEM) 6.5.
 
@@ -35,7 +35,7 @@ Ce rapport permet d’estimer l’effort de développement requis pour effectuer
 
 ## Exécuter le rapport d’évaluation {#running}
 
-La détection de motifs peut s’exécuter dans n’importe quel environnement. Toutefois, afin d’augmenter le taux de détection et d’éviter tout ralentissement des instances professionnelles essentielles, Cloud Manager l’exécute dans l’environnement d’évaluation de l’instance de création.
+La détection de motifs peut s’exécuter dans n’importe quel environnement. Toutefois, pour augmenter le taux de détection et éviter tout impact sur les performances des instances critiques, Cloud Manager l’exécute dans l’environnement d’évaluation de l’instance de création.
 
 **Pour exécuter le rapport d’évaluation, procédez comme suit :**
 
@@ -45,10 +45,10 @@ La détection de motifs peut s’exécuter dans n’importe quel environnement. 
 
    ![Exécuter une évaluation](/help/assets/Run-Evaluation.png)
 
-1. L’assistant vous informe de l’état de votre action. Vous remarquerez les états **En cours** ou **Terminé** le cas échéant une fois le rapport d’évaluation généré.
+1. L’assistant vous informe de l’état de votre action. Remarque **En cours** ou **Terminé**, le cas échéant, pendant la génération du rapport d’évaluation.
 
 1. Une fois le rapport généré, vous pouvez cliquer sur **[!UICONTROL Télécharger le rapport]** pour enregistrer une copie.
 
    ![Rapport créé](/help/assets/Evaluation-1.png)
 
-L’assistant de mise à jour du produit en cours dans Cloud Manager prend uniquement en charge la phase **Évaluation**. Les quatre autres phases appelées **Correction**, **Exécution**, **Validation** et **Achèvement** seront bientôt disponibles.
+L’assistant de mise à jour du produit en cours dans Cloud Manager prend uniquement en charge la phase **Évaluation**. Les quatre autres phases, à savoir **Correction**, **Exécution**, **Validation** et **Achèvement**, seront bientôt disponibles.

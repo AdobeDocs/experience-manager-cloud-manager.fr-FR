@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 694d3e8dad6e2ba86186a4bf6fdda3739e1041da
+source-git-commit: f83ddaa74a656abd2328cd3969ff0cc10b79d729
 workflow-type: tm+mt
-source-wordcount: 1122
+source-wordcount: 1085
 ht-degree: 50%
 
 ---
@@ -71,17 +71,18 @@ Les restrictions suivantes s’appliquent.
 La section suivante décrit l’interaction du pipeline full stack avec un [pipeline de configuration de niveau web](#web-tier-config-pipelines).
 
 * Le pipeline full stack pour un environnement ignore la configuration Dispatcher si le pipeline de configuration de niveau web correspondant existe.
-* Si le pipeline de configuration de niveau web correspondant à l’environnement n’existe pas, l’utilisateur peut configurer le pipeline full stack pour inclure ou ignorer la configuration Dispatcher.
+* Si le pipeline de configuration de niveau web correspondant à l’environnement n’existe pas, l’utilisateur peut inclure ou ignorer la configuration Dispatcher lors de la configuration du pipeline full stack.
 
 Les pipelines full stack peuvent être des pipelines de type qualité de code ou déploiement.
 
 #### Configuration des pipelines full stack {#configure-full-stack}
 
-Voir [Ajouter un pipeline de production](/help/using/production-pipelines.md#full-stack-code).Voir [Ajouter un pipeline hors production](/help/using/non-production-pipelines.md#add-non-production-pipeline).
+Voir [Ajouter un pipeline de production](/help/using/production-pipelines.md#full-stack-code).
+Voir [Ajouter un pipeline hors production](/help/using/non-production-pipelines.md#add-non-production-pipeline).
 
 ### Pipelines de configuration de niveau web {#web-tier-config-pipelines}
 
-Les pipelines de configuration de niveau web permettent le déploiement exclusif de la configuration HTTPD/Dispatcher pour l’exécution d’AEM, en la découplant des autres modifications de code. Il s’agit d’un pipeline rationalisé qui fournit aux utilisateurs qui souhaitent déployer uniquement les modifications de configuration de Dispatcher une méthode accélérée pour le faire en quelques minutes seulement.
+Les pipelines de configuration de niveau web permettent le déploiement exclusif de la configuration HTTPD/Dispatcher pour l’exécution d’AEM, en la découplant des autres modifications de code. Il s’agit d’un pipeline rationalisé qui fournit aux utilisateurs qui souhaitent déployer uniquement les modifications de configuration de Dispatcher un moyen efficace de le faire rapidement.
 
 >[!TIP]
 >
@@ -105,7 +106,8 @@ La section suivante décrit l’interaction du pipeline de configuration de nive
 
 #### Configuration des pipelines de niveau web {#configure-web-tier}
 
-Voir [Ajouter un pipeline de production](/help/using/production-pipelines.md#web-tier-config).Voir [Ajouter un pipeline hors production](/help/using/non-production-pipelines.md#add-non-production-pipeline).
+Voir [Ajouter un pipeline de production](/help/using/production-pipelines.md#web-tier-config).
+Voir [Ajouter un pipeline hors production](/help/using/non-production-pipelines.md#add-non-production-pipeline).
 
 ### Versions plus rapides à l’aide de la création dynamique {#use=smart-build}
 
@@ -131,7 +133,7 @@ Le pipeline CI/CD fournit des points de contrôle de qualité, ou critères d’
 Pour chacun de ces points de contrôle, trois niveaux de problèmes sont identifiés :
 
 * **Critique** : les problèmes critiques identifiés par le point de contrôle entraînent un échec immédiat du pipeline.
-* **Important** : les problèmes importants identifiés par le point de contrôle entraînent la suspension du pipeline. Une personne responsable de déploiement, de projet ou propriétaire d’entreprise peut contourner les problèmes, ce qui permet au pipeline de se poursuivre. Au contraire, les problèmes peuvent également être acceptés, ce qui entraîne l’arrêt du pipeline avec un échec.
+* **Important** : les problèmes importants identifiés par le point de contrôle entraînent la suspension du pipeline. Un responsable de déploiement, un responsable de projet ou un chef d’entreprise peuvent remplacer les problèmes, ce qui permet au pipeline de continuer. Au contraire, les problèmes peuvent également être acceptés, ce qui entraîne l’arrêt du pipeline avec un échec.
 * **Informations** : les problèmes d’informations identifiés par le point de contrôle sont fournis à titre purement informatif et sans incidence sur l’exécution du pipeline.
 
 L’exemple suivant est une analyse du code avec les problèmes identifiés.

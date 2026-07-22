@@ -8,10 +8,10 @@ product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: b24e9550f11486e7ed8da31d5da27f85ad5acaf2
 workflow-type: tm+mt
-source-wordcount: 254
-ht-degree: 100%
+source-wordcount: 236
+ht-degree: 44%
 
 ---
 
@@ -23,14 +23,14 @@ Découvrez les informations sur le référentiel Git qui est fourni pour chaque 
 
 Votre abonnement à [!UICONTROL AEM Managed Services] comprend un référentiel de code source configuré et géré par Adobe. Chaque programme se voit attribuer un référentiel Git unique, où le code associé est stocké et sécurisé.
 
-Il est considéré comme une bonne pratique de toujours utiliser le référentiel Git de Cloud Manager, qui est fourni vide, sans branche configurée ni exemple de projet. Cloud Manager fournit un jeton d’accès privé pour son référentiel Git, ce qui vous permet d’utiliser n’importe quel client Git pour créer des branches, gérer le code, récupérer l’historique de validation, etc.
+En règle générale, utilisez toujours le référentiel Git de Cloud Manager, qui est fourni vide, sans aucune branche configurée ni exemple de projet. Cloud Manager fournit un jeton d’accès privé pour son référentiel Git, ce qui vous permet d’utiliser n’importe quel client Git pour créer des branches, gérer le code, récupérer l’historique de validation, etc.
 
 Pour plus d’informations sur la configuration de branches dans Git, voir la section [Configurer des branches de versions](/help/getting-started/configuring-branches.md).
 
-Pour plus d’informations sur l’utilisation du référentiel Git de Cloud Manager avec le pipeline CI/CD, voir les sections [Configurer des pipelines de production](/help/using/production-pipelines.md) et [Configurer des pipelines hors production](/help/using/non-production-pipelines.md).
+Pour en savoir plus sur l’utilisation du référentiel Git de Cloud Manager avec le pipeline CI/CD, voir [Configuration des pipelines de production](/help/using/production-pipelines.md) et [Configuration de pipelines hors production](/help/using/non-production-pipelines.md).
 
-## Référentiel On-Premise {#on-premise-repository}
+## Référentiel local {#on-premise-repository}
 
-Il se peut que vous possédiez un référentiel Git existant et que vous souhaitiez le conserver, auquel cas vous pouvez utiliser la fonctionnalité de Git pour plusieurs référentiels distants. Le développement quotidien continuerait alors dans votre référentiel Git. Lorsqu’une branche de version est prête pour un déploiement en production, vous pouvez placer votre dernier code dans le référentiel Git de Cloud Manager et déclencher le pipeline CI/CD de Cloud Manager.
+Si vous disposez déjà d’un référentiel Git et que vous souhaitez continuer à l’utiliser, utilisez la fonctionnalité de Git pour plusieurs référentiels distants. Le développement se poursuit dans votre référentiel Git. Lorsqu’une branche de version est prête pour le déploiement en production, vous pouvez placer votre dernier code dans le référentiel Git de Cloud Manager et déclencher le pipeline CI/CD de Cloud Manager.
 
-Pour afficher les commandes Git courantes, consultez l’[Aide-mémoire Git](https://education.github.com/git-cheat-sheet-education.pdf).
+Pour afficher les commandes Git courantes, reportez-vous au [Guide de référence Git](https://education.github.com/git-cheat-sheet-education.pdf).
