@@ -135,4 +135,4 @@ La section **Analyse des événements**, située sous ce graphique, affiche l’
 
 Cette vidéo présente un aperçu de l’utilisation des graphiques générés par les rapports Cloud Manager pour surveiller vos environnements de programme.
 
->[!VIDEO](https://video.tv.adobe.com/v/26315/)
+>[!VIDEO](https://video.tv.adobe.com/v/34717?captions=fre_fr)
