@@ -118,7 +118,7 @@ Vous pouvez désormais affecter des personnes au nouveau profil de produit que v
 
 1. Cliquez sur **Ajouter des utilisateurs et utilisatrices** et affectez des personnes à votre nouveau profil de produit avec des autorisations personnalisées.
 
-Voir la section **Ajouter des utilisateurs et des utilisatrices et des groupes d’utilisateurs et utilisatrices à un profil de produit** du document [Gérer des profils de produit pour les utilisateurs et utilisatrices d’entreprise](https://helpx.adobe.com/business/enterprise/manage-products-and-entitlements/manage-products-and-product-profiles/manage-product-profiles.html) pour plus d’informations sur l’utilisation d’Admin Console.
+Voir la section **Ajouter des utilisateurs et des utilisatrices et des groupes d’utilisateurs et utilisatrices à un profil de produit** du document [Gérer des profils de produit pour les utilisateurs et utilisatrices d’entreprise](https://helpx.adobe.com/fr/business/enterprise/manage-products-and-entitlements/manage-products-and-product-profiles/manage-product-profiles.html) pour plus d’informations sur l’utilisation d’Admin Console.
 
 ## Autorisations configurables {#configurable-permissions}
 
