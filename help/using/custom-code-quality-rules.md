@@ -16,10 +16,10 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: 3ecc950f1fc53c4c7bf4a079c08c33f6dd34fe23
 workflow-type: tm+mt
-source-wordcount: 4156
-ht-degree: 91%
+source-wordcount: 4096
+ht-degree: 80%
 
 ---
 
@@ -29,7 +29,7 @@ Découvrez en détail les règles de qualité du code personnalisé exécutées 
 
 >[!NOTE]
 >
->Les exemples de code utilisés ici ne sont fournis qu’à titre indicatif. Reportez-vous à la [documentation relative aux concepts de SonarQube](https://docs.sonarsource.com/sonarqube-server/latest/) pour en savoir plus sur ses concepts et ses règles de qualité.
+>Les exemples de code utilisés ici ne sont fournis qu’à titre indicatif. Pour en savoir plus sur ses concepts et ses règles de qualité, consultez la [documentation sur les concepts de SonarQube](https://docs.sonarsource.com/sonarqube-server).
 
 Les règles SonarQube complètes ne peuvent pas être téléchargées en raison d’informations exclusives d’Adobe. Vous pouvez télécharger la liste complète des règles [via ce lien](/help/assets/CodeQuality-rules-latest-AMS.xlsx). Poursuivez la lecture de ce document pour obtenir des descriptions et des exemples de règles.
 
@@ -97,14 +97,14 @@ public class DoThis implements Runnable {
 }
 ```
 
-### N’utilisez pas de chaînes de format pouvant être contrôlées en externe. {#do-not-use-format-strings-which-may-be-externally-controlled}
+### N’utilisez pas de chaînes de format contrôlées en externe {#do-not-use-format-strings-which-may-be-externally-controlled}
 
 * **Clé** : CQRules:CWE-134
 * **Type** : vulnérabilité
 * **Gravité** : majeure
 * **Depuis** : version 2018.4.0
 
-L’utilisation d’une chaîne de format provenant d’une source externe (telle qu’un paramètre de requête ou un contenu créé par l’utilisateur ou l’utilisatrice) peut exposer une application aux attaques par déni de service. Dans certains cas, une chaîne de format peut être contrôlée en externe, mais elle n’est autorisée que si elle provient de sources approuvées.
+L’utilisation d’une chaîne de format provenant d’une source externe (telle qu’un paramètre de requête ou un contenu créé par l’utilisateur ou l’utilisatrice) peut exposer une application aux attaques par déni de service. Dans certains cas, une chaîne de format est contrôlée en externe, mais elle n’est autorisée que si elle provient de sources approuvées.
 
 #### Code non conforme {#non-compliant-code-1}
 
@@ -123,7 +123,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 * **Gravité** : critique
 * **Depuis** : version 2018.6.0
 
-Lors de l’exécution de requêtes HTTP à partir d’une application AEM, il est essentiel que les délais d’expiration appropriés soient configurés afin d’éviter toute consommation inutile de threads. Malheureusement, le client HTTP par défaut de Java™, `java.net.HttpUrlConnection` et le client de composants HTTP Apache largement utilisé ne disposent pas d’un délai d’expiration par défaut. Par conséquent, les délais d’expiration doivent être explicitement configurés. Il est considéré comme une bonne pratique pour ces délais d’expiration de ne pas dépasser 60 secondes.
+Lors de l’exécution de requêtes HTTP à partir d’une application AEM, il est essentiel que les délais d’expiration appropriés soient configurés afin d’éviter toute consommation inutile de threads. Malheureusement, le client HTTP par défaut de Java™, `java.net.HttpUrlConnection` et le client de composants HTTP Apache largement utilisé ne disposent pas d’un délai d’expiration par défaut. Par conséquent, les délais d’expiration doivent être explicitement configurés. Il est recommandé de ne pas dépasser 60 secondes pour ces délais d’expiration.
 
 #### Code non conforme {#non-compliant-code-2}
 
@@ -240,7 +240,7 @@ public void orDoThis(Session session) throws Exception {
 * **Gravité** : majeure
 * **Depuis** : version 2018.4.0
 
-Comme décrit dans la [documentation Sling](https://sling.apache.org/documentation/the-sling-engine/servlets.html), les servlets de liaison par chemins d’accès sont découragés. Les servlets liés au chemin ne peuvent pas utiliser les contrôles d’accès JCR standard et, par conséquent, nécessitent une rigueur de sécurité supplémentaire. Plutôt que d’utiliser des servlets liés au chemin d’accès, il est recommandé de créer des nœuds dans le référentiel et d’enregistrer les servlets par type de ressource.
+Comme décrit dans la [documentation Sling](https://sling.apache.org/documentation/the-sling-engine/servlets.html), la liaison de servlets par des chemins d’accès est découragée. Les servlets liés au chemin ne peuvent pas utiliser les contrôles d’accès JCR standard et, par conséquent, nécessitent une rigueur de sécurité supplémentaire. Plutôt que d’utiliser des servlets liés au chemin d’accès, il est recommandé de créer des nœuds dans le référentiel et d’enregistrer les servlets par type de ressource.
 
 #### Code non conforme {#non-compliant-code-5}
 
@@ -302,7 +302,7 @@ public void orDoThis() throws MyCustomException {
 * **Gravité** : mineure
 * **Depuis** : version 2018.4.0
 
-Un autre schéma courant à éviter consiste à consigner un message, puis à émettre immédiatement une exception. Ce problème indique généralement que le message d’exception sera dupliqué dans les fichiers journaux.
+Un autre schéma courant à éviter consiste à consigner un message, puis à émettre immédiatement une exception. Ce problème indique que le message d’exception est dupliqué dans les fichiers journaux.
 
 #### Code non conforme {#non-compliant-code-7}
 
@@ -327,7 +327,7 @@ public void doThis() throws Exception {
 * **Type** : `Code Smell`
 * **Gravité** : mineure
 
-En règle générale, le niveau de journal Informations doit être utilisé pour délimiter les actions importantes et, par défaut, AEM est configuré pour le journal au niveau Information ou au-dessus. Les méthodes GET et HEAD ne doivent jamais être en lecture seule et ne constituent donc pas des actions importantes. La journalisation au niveau INFO en réponse aux demandes GET ou HEAD est susceptible de créer un bruit journal significatif, rendant ainsi plus difficile l’identification des informations utiles dans les fichiers journaux. Lors de la gestion des requêtes GET ou HEAD, la journalisation doit se trouver aux niveaux WARN ou ERROR si un problème est survenu. Pour des informations de résolution des problèmes plus détaillées, la journalisation doit se trouver aux niveaux DEBUG ou TRACE.
+En règle générale, le niveau de journal Informations doit être utilisé pour délimiter les actions importantes et, par défaut, AEM est configuré pour le journal au niveau Information ou au-dessus. Les méthodes GET et HEAD ne doivent jamais être en lecture seule et ne constituent donc pas des actions importantes. La journalisation au niveau INFO en réponse aux requêtes GET ou HEAD crée un bruit journal significatif, ce qui rend plus difficile l’identification des informations utiles dans les fichiers journaux. Lors de la gestion des requêtes GET ou HEAD, consignez-vous aux niveaux WARN ou ERROR si un problème s’est produit. Pour obtenir des informations de dépannage plus détaillées, consignez-les au niveau DEBUG ou TRACE.
 
 >[!NOTE]
 >
@@ -356,7 +356,7 @@ public void doGet() throws Exception {
 * **Gravité** : mineure
 * **Depuis** : version 2018.4.0
 
-Il est recommandé que les messages de journal fournissent des informations contextuelles sur l’emplacement d’une exception dans l’application. Bien que le contexte puisse également être déterminé par l’utilisation des arborescences des appels de procédure, il est généralement plus facile de lire et de comprendre le message du journal. Par conséquent, lors de la journalisation d’une exception, il est déconseillé d’utiliser le message de l’exception comme message du journal. Le message d’exception doit détailler ce qui est erroné. En revanche, le message du journal doit informer le lecteur ou la lectrice de ce que faisait l’application lorsque l’exception s’est produite. Le message d’exception est toujours journalisé. En spécifiant votre propre message, les journaux sont plus faciles à comprendre.
+Il est recommandé que les messages de journal fournissent des informations contextuelles sur l’emplacement d’une exception dans l’application. Bien que vous déterminiez le contexte à l’aide des arborescences des appels de procédure, le message du journal est généralement plus facile à lire et à comprendre. Par conséquent, lors de la journalisation d’une exception, il est déconseillé d’utiliser le message de l’exception comme message du journal. Le message d’exception détaille le problème. En revanche, le message du journal informe le lecteur de ce que faisait l’application lorsque l’exception s’est produite. Le message d’exception est toujours journalisé. En spécifiant votre propre message, les journaux sont plus faciles à comprendre.
 
 #### Code non conforme {#non-compliant-code-9}
 
@@ -382,7 +382,7 @@ public void doThis() {
 }
 ```
 
-### La journalisation des blocs catch doit se trouver au niveau d’avertissement ou d’erreur {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
+### La journalisation des blocs catch se trouve au niveau WARN ou ERROR {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
 
 * **Clé** : CQRules:CQBP-44---WrongLogLevelInCatchBlock
 * **Type** : `Code Smell`
@@ -422,7 +422,7 @@ public void doThis() {
 * **Gravité** : mineure
 * **Depuis** : version 2018.4.0
 
-Le contexte est essentiel pour la compréhension des messages du journal. L’utilisation d’`Exception.printStackTrace()` entraîne seulement la sortie de la trace de la pile dans le flux d’erreurs standard, ce qui provoque la perte de tout le contexte. De plus, dans une application multi-thread telle qu’AEM, si plusieurs exceptions sont imprimées à l’aide de cette méthode en parallèle, leurs traces de pile peuvent se chevaucher, ce qui prête à confusion. Les exceptions ne doivent être consignées que dans la structure de journalisation.
+Le contexte est essentiel pour la compréhension des messages du journal. Utiliser `Exception.printStackTrace()` entraîne uniquement la sortie de la trace de la pile dans le flux d’erreurs standard, en omettant tout le contexte. En outre, dans une application multithread telle qu’AEM, la sortie de l’arborescence des piles parallèles entraîne des problèmes. Les exceptions ne doivent être consignées que dans la structure de journalisation.
 
 #### Code non conforme {#non-compliant-code-11}
 
@@ -455,7 +455,7 @@ public void doThis() {
 * **Gravité** : mineure
 * **Depuis** : version 2018.4.0
 
-La journalisation sur AEM doit toujours être effectuée via la structure de journalisation SLF4J. La génération directe d’une sortie standard ou d’un flux d’erreur standard perd les informations structurelles et contextuelles fournies par la structure de journalisation et peut entraîner quelquefois des problèmes de performances.
+La journalisation sur AEM doit toujours être effectuée via la structure de journalisation SLF4J. La génération directe d’une sortie standard ou d’un flux d’erreur standard perd les informations structurelles et contextuelles fournies par la structure de journalisation et entraîne parfois des problèmes de performances.
 
 #### Code non conforme {#non-compliant-code-12}
 
@@ -488,7 +488,7 @@ public void doThis() {
 * **Gravité** : mineure
 * **Depuis** : version 2018.4.0
 
-Les chemins commençant par `/libs` et `/apps` ne doivent généralement pas être codés en dur. Ces chemins sont généralement stockés par rapport au chemin de recherche `Sling`, qui est défini par défaut sur `/libs,/apps`. L’utilisation du chemin absolu peut introduire des défauts discrets qui n’apparaîtront que plus tard dans le cycle de vie du projet.
+Les chemins commençant par `/libs` et `/apps` ne sont pas codés en dur. Ces chemins sont généralement stockés par rapport au chemin de recherche `Sling`, qui est défini par défaut sur `/libs,/apps`. L’utilisation du chemin absolu introduit des défauts subtils qui n’apparaissent que plus tard dans le cycle de vie du projet.
 
 #### Code non conforme {#non-compliant-code-13}
 
@@ -513,11 +513,11 @@ public void doThis(Resource resource) {
 * **Gravité** : mineure
 * **Depuis** : version 2020.5.0
 
-N’utilisez pas le planificateur Sling pour les tâches qui nécessitent une exécution garantie. Les tâches planifiées Sling garantissent l’exécution et conviennent mieux aux environnements organisés avec ou sans cluster.
+N’utilisez pas le planificateur Sling pour les tâches qui nécessitent une exécution garantie. Les tâches planifiées Sling garantissent l’exécution et conviennent mieux aux environnements organisés avec ou sans grappes.
 
-Voir la [documentation sur la gestion des traitements et des événements Apache Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) pour en savoir plus sur la façon dont les traitements Sling sont gérés dans des environnements en cluster.
+Pour en savoir plus sur la façon dont les tâches Sling sont gérées dans des environnements en cluster, consultez la documentation [Gestion des tâches et des événements Apache Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html).
 
-### Les API AEM obsolètes ne doivent pas être utilisées. {#sonarqube-aem-deprecated}
+### N’utilisez pas d’API obsolètes d’AEM. {#sonarqube-aem-deprecated}
 
 * **Clé** : AMSCORE-553
 * **Type** : compatibilité `Code Smell`/Cloud Service
@@ -526,9 +526,9 @@ Voir la [documentation sur la gestion des traitements et des événements Apache
 
 La surface de l’API AEM est constamment revue pour identifier les API dont l’utilisation est déconseillée et qui sont donc considérées comme obsolètes.
 
-Dans de nombreux cas, ces API sont abandonnées en y associant l’annotation standard Java™ *@Deprecated*. Elles sont à ce titre identifiées par la mention `squid:CallToDeprecatedMethod`.
+Dans de nombreux cas, ces API sont abandonnées en y associant l’annotation standard Java™ *@Deprecated* qui identifie ce comportement comme `squid:CallToDeprecatedMethod`.
 
-Cependant, il arrive qu’une API devienne obsolète dans le contexte d’AEM, mais pas dans d’autres contextes. Cette règle identifie cette deuxième classe.
+Cependant, il existe des cas où une API est abandonnée dans le cadre d’AEM, mais pas dans d’autres contextes. Cette règle identifie cette deuxième classe.
 
 ## Règles de contenu OakPAL {#oakpal-rules}
 
@@ -536,9 +536,9 @@ La section suivante présente les vérifications OakPAL exécutées par Cloud M
 
 >[!NOTE]
 >
->OakPAL est une structure qui valide les modules de contenu à l’aide d’un référentiel Oak autonome. Un partenaire d’AEM et lauréat du prix 2019 AEM Rock Star North America l’a développée.
+>OakPAL est une structure qui valide les modules de contenu à l’aide d’un référentiel Oak autonome. Un partenaire d’AEM et lauréat du prix « AEM Rock Star North America » 2019 l’a développé.
 
-### Les clientes et clients ne doivent pas implémenter ni étendre les API de produit annotées avec @ProviderType {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
+### Ne pas implémenter ni étendre les API de produit annotées avec @ProviderType {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
 
 * **Clé** : CQBP-84
 * **Type** : bogue
@@ -561,14 +561,14 @@ public class DontDoThis implements Page {
 }
 ```
 
-### Les packages des clientes et des clients ne doivent ni créer ni modifier les nœuds sous `/libs`. {#oakpal-customer-package}
+### Ne créez ou ne modifiez pas de nœuds sous `/libs` dans les packages clients {#oakpal-customer-package}
 
 * **Clé** : BannedPath
 * **Type** : bogue
 * **Gravité** : bloqueur
 * **Depuis** : version 2019.6.0
 
-En guise de bonne pratique, il a été établi depuis longtemps que l’arborescence de contenu `/libs` dans le référentiel de contenu AEM doit être considérée comme étant en lecture seule par les clients. La modification des nœuds et des propriétés sous `/libs` crée un risque significatif pour les mises à jour majeures et mineures. Les modifications apportées à `/libs` ne sont effectuées que par Adobe par le biais de canaux officiels.
+En guise de bonne pratique, il a été établi depuis longtemps que l’arborescence de contenu `/libs` dans le référentiel de contenu AEM doit être considérée comme étant en lecture seule par les clients. La modification des nœuds et des propriétés sous `/libs` crée un risque significatif pour les mises à jour majeures et mineures. Adobe apporte des modifications aux `/libs` uniquement par le biais des canaux officiels.
 
 ### Les packages ne doivent pas contenir de configurations OSGi en double. {#oakpal-package-osgi}
 
@@ -637,9 +637,9 @@ Un problème courant est l’utilisation de nœuds nommés `config` dans les bo�
 * **Gravité** : majeure
 * **Depuis** : version 2019.6.0
 
-Tout comme la règle [Les packages ne doivent pas contenir de configurations OSGi en double](#oakpal-package-osgi), ce problème est courant sur les projets complexes où le même chemin de nœud est écrit par plusieurs modules de contenu distincts. Bien que l’utilisation des dépendances des modules de contenu puisse servir à garantir un résultat cohérent, il est préférable d’éviter tout chevauchement.
+Tout comme la règle [Les packages ne doivent pas contenir de configurations OSGi en double](#oakpal-package-osgi), ce problème est courant sur les projets complexes où plusieurs packages de contenu distincts écrivent sur le même chemin de nœud. Bien que l’utilisation des dépendances des modules de contenu puisse servir à garantir un résultat cohérent, il est préférable d’éviter tout chevauchement.
 
-### Le mode de création par défaut ne doit pas être défini sur l’interface d’utilisation classique. {#oakpal-default-authoring}
+### Le mode de création par défaut n’est pas l’interface utilisateur classique {#oakpal-default-authoring}
 
 * **Clé** : ClassicUIAuthoringMode
 * **Type** : compatibilité `Code Smell`/Cloud Service
@@ -648,7 +648,7 @@ Tout comme la règle [Les packages ne doivent pas contenir de configurations OSG
 
 La configuration OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` définit le mode de création par défaut dans AEM. Comme l’interface utilisateur classique a été abandonnée depuis AEM 6.4, un problème survient maintenant lorsque le mode de création par défaut est configuré sur l’interface utilisateur classique.
 
-### Les boîtes de dialogue de composants doivent être de type interface d’utilisation tactile. {#oakpal-components-dialogs}
+### Les composants dotés de boîtes de dialogue nécessitent des boîtes de dialogue d’interface utilisateur tactile {#oakpal-components-dialogs}
 
 * **Clé** : ComponentWithOnlyClassicUIDialog
 * **Type** : compatibilité `Code Smell`/Cloud Service
@@ -674,7 +674,7 @@ La prise en charge de la réplication inverse n’est pas disponible dans les d�
 
 Les client(e)s qui utilisent la réplication inverse doivent contacter Adobe pour obtenir d’autres solutions.
 
-### Les ressources contenues dans les bibliothèques clientes activées par proxy doivent se trouver dans un dossier nommé ressources. {#oakpal-resources-proxy}
+### Les ressources contenues dans les bibliothèques clientes activées par proxy résident dans un dossier nommé resources {#oakpal-resources-proxy}
 
 * **Clé** : ClientlibProxyResource
 * **Type** : bogue
@@ -849,14 +849,14 @@ AEM Cloud Service interdit que les définitions d’index de recherche personnal
 >
 >Nous vous conseillons vivement de résoudre ce problème dès que possible, car cela entraînera l’échec des pipelines à compter de la [version d’août 2024 de Cloud Manager.](/help/release-notes/current.md)
 
-### La personnalisation de certaines définitions d’index intégrées est interdite. {#oakpal-customizing-ootb-index}
+### La personnalisation de certaines définitions d’index standard est interdite {#oakpal-customizing-ootb-index}
 
 * **Clé** : RestrictIndexCustomization
 * **Type** : amélioration
 * **Gravité** : majeure
 * **Depuis** : version 2024.6.0
 
-AEM Cloud Service interdit toute modification non autorisée des index intégrés suivants :
+AEM Cloud Service interdit les modifications non autorisées des index standard suivants :
 
 * `nodetypeLucene`
 * `slingResourceResolver`
@@ -945,20 +945,20 @@ La section suivante répertorie les vérifications de l’outil d’optimisation
 
 * [Généralités de la configuration Dispatcher](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-general)
 
-* [Le cache de la batterie de publication Dispatcher doit avoir `serveStaleOnError` activé](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-servestaleonerror-enabled)
+* [Le cache de la batterie de publication de Dispatcher a `serveStaleOnError` activé](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-servestaleonerror-enabled)
 
 * [Les filtres de la batterie de publication Dispatcher doivent contenir les règles de refus par défaut de la version 6.x.x de l’archétype AEM](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-contain-the-default-deny-rules-from-the-6xx-version-of-the-aem-archetype)
 
-* [La propriété `statfileslevel` du cache de la batterie de publication Dispatcher doit être >= 2](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-statfileslevel-property-should-be--2)
+* [La propriété `statfileslevel` du cache de la batterie de publication Dispatcher est >= 2](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-statfileslevel-property-should-be--2)
 
-* [La propriété `gracePeriod` de la batterie de publication Dispatcher doit être >= 2](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-graceperiod-property-should-be--2)
+* [La propriété `gracePeriod` de la batterie de publication Dispatcher est >= 2](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-graceperiod-property-should-be--2)
 
-* [Chaque batterie de serveurs Dispatcher doit avoir un nom unique](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---each-dispatcher-farm-should-have-a-unique-name)
+* [Chaque batterie de serveurs Dispatcher porte un nom unique](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---each-dispatcher-farm-should-have-a-unique-name)
 
-* [Les règles de `ignoreUrlParams` du cache de la batterie de publication de Dispatcher doivent être configurées de manière à](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner)
+* [Les règles de `ignoreUrlParams` du cache de la batterie de publication Dispatcher sont configurées de manière](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner)
 
-* [Les filtres de la batterie de publication Dispatcher doivent spécifier les autorisations des sélecteurs Sling d’une manière qui place sur la liste autorisée](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-selectors-in-an-allow-list-manner)
+* [Les filtres de la batterie de publication Dispatcher spécifient les autorisations des sélecteurs Sling d’une manière placée sur la liste autorisée](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-selectors-in-an-allow-list-manner)
 
-* [Les filtres de la batterie de publication Dispatcher doivent spécifier les modèles de suffixes Sling autorisés d’une manière placée sur la liste autorisée](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-suffix-patterns-in-an-allow-list-manner)
+* [Les filtres de la batterie de publication Dispatcher spécifient les modèles de suffixes Sling autorisés d’une manière placée sur la liste autorisée](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-suffix-patterns-in-an-allow-list-manner)
 
 * [N’utilisez pas la directive « Require all granted » dans une section VirtualHost Directory dotée d’un chemin de répertoire racine](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-require-all-granted-directive-should-not-be-used-in-a-virtualhost-directory-section-with-a-root-directory-path)
