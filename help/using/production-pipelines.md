@@ -10,22 +10,22 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 4c73ab16ff7eab406c31a6d26cdd09360a94b3ea
+source-git-commit: b44ffa027df5c60b1e5b2b81ec0702bb60c7078c
 workflow-type: tm+mt
-source-wordcount: 2101
-ht-degree: 58%
+source-wordcount: 2085
+ht-degree: 54%
 
 ---
 
 # Ajout d’un pipeline de production {#configuring-production-pipelines}
 
-Découvrez comment créer et configurer des pipelines de production à l’aide de Cloud Manager afin de déployer votre code. Si vous souhaitez d’abord obtenir une vue d’ensemble plus conceptuelle du fonctionnement des pipelines dans Cloud Manager, reportez-vous au document [Pipelines CI/CD](/help/overview/ci-cd-pipelines.md).
+Découvrez comment créer et configurer des pipelines de production à l’aide de Cloud Manager afin de déployer votre code. Pour une présentation plus conceptuelle du fonctionnement des pipelines dans Cloud Manager, voir [Pipelines CI/CD](/help/overview/ci-cd-pipelines.md).
 
 ## Vue d’ensemble {#overview}
 
 En utilisant le volet **Paramètres du pipeline** dans [!UICONTROL Cloud Manager], vous pouvez créer deux types de pipelines différents.
 
-* **Pipelines de production** : un pipeline de production est un pipeline spécialement conçu, composé d’une série d’étapes coordonnées pour mener le code source depuis le référentiel Git jusqu’à la production.
+* **Pipelines de production** - un pipeline de production est un pipeline spécialement conçu, composé d’une série d’étapes coordonnées pour mener le code source de votre référentiel Git en production.
 * **Pipelines hors production** - un pipeline hors production sert principalement à exécuter des analyses de qualité du code ou à déployer le code source dans un environnement de développement.
 
 Ce document se concentre sur les pipelines de production. Pour plus d’informations sur la configuration des pipelines hors production, voir le document [Configurer des pipelines hors production](/help/using/non-production-pipelines.md).
@@ -40,7 +40,7 @@ Le rôle du **responsable du déploiement** : il est chargé de la configuratio
 >
 >Un pipeline ne peut être configuré que si le référentiel Git qui lui est associé dispose d’au moins une branche et que la [configuration du programme](/help/getting-started/program-setup.md) est terminée.
 
-## Ajout d’un pipeline de production {#adding-production-pipeline}
+## Ajout d’un pipeline de production {#add-a-production-pipeline}
 
 Une fois que vous avez utilisé l’interface d’utilisation de [!UICONTROL Cloud Manager] pour configurer votre programme et que vous disposez d’au moins un environnement, vous pouvez ajouter un pipeline de production.
 
@@ -62,34 +62,34 @@ Une fois que vous avez utilisé l’interface d’utilisation de [!UICONTROL Clo
 
          * **Déclencheur de déploiement** - vous disposez des options suivantes pour définir les déclencheurs de déploiement pour démarrer le pipeline.
 
-            * **Manuel** : démarrez manuellement le pipeline à l’aide de l’interface d’utilisation de Cloud Manager.
-            * **Lors des modifications Git** : démarrez le pipeline CI/CD lorsque des validations sont ajoutées à la branche Git configurée. Avec cette option, vous pouvez toujours démarrer le pipeline manuellement, si nécessaire.
+           * **Manuel** : démarrez manuellement le pipeline à l’aide de l’interface d’utilisation de Cloud Manager.
+           * **Lors des modifications Git** : démarrez le pipeline CI/CD lorsque des validations sont ajoutées à la branche Git configurée. Avec cette option, vous pouvez toujours démarrer le pipeline manuellement, si nécessaire.
 
          * **Comportement en cas d’échecs de mesure importants** - lors de la configuration ou de la modification du pipeline, le responsable de déploiement peut définir le comportement du pipeline lorsqu’un échec important est rencontré à l’un des points de contrôle qualité. Les options disponibles sont les suivantes :
 
-            * **Demander à chaque fois** : paramètre par défaut, qui nécessite une intervention manuelle lors de n’importe quel échec important.
-            * **Échouer immédiatement** : le pipeline sera interrompu dès qu’un échec important aura lieu. Il s’agit de l’émulation d’un utilisateur ou d’une utilisatrice qui rejette manuellement chaque échec.
-            * **Continuer immédiatement** : le pipeline se poursuivra automatiquement chaque fois qu’un échec important se produira. Il s’agit de l’émulation d’un utilisateur ou d’une utilisatrice qui approuve manuellement chaque échec.
+           * **Demander à chaque fois** : paramètre par défaut, qui nécessite une intervention manuelle lors de n’importe quel échec important.
+           * **Échouer immédiatement** : le pipeline sera interrompu dès qu’un échec important aura lieu. Il s’agit de l’émulation d’un utilisateur ou d’une utilisatrice qui rejette manuellement chaque échec.
+           * **Continuer immédiatement** : le pipeline se poursuivra automatiquement chaque fois qu’un échec important se produira. Il s’agit de l’émulation d’un utilisateur ou d’une utilisatrice qui approuve manuellement chaque échec.
 
          ![Déclencheur de déploiement](/help/assets/configure-pipelines/add-prod3.png)
 
          * **Options de déploiement** - vous pouvez accélérer certaines tâches de déploiement.
 
-            * **Approbation après le déploiement d’évaluation** - cette approbation a lieu après le déploiement dans l’environnement d’évaluation avant que tout test ne soit effectué. Sinon, l’approbation se produit avant le déploiement en production, qui est effectué une fois tous les tests terminés.
+           * **Approbation après le déploiement d’évaluation** - cette approbation a lieu après le déploiement dans l’environnement d’évaluation avant que tout test ne soit effectué. Sinon, l’approbation se produit avant le déploiement en production, qui est effectué une fois tous les tests terminés.
 
-            * **Ignorer les modifications de la répartition de charge** - les modifications de la répartition de charge ne sont pas effectuées.
+           * **Ignorer les modifications de la répartition de charge** - les modifications de la répartition de charge ne sont pas effectuées.
 
          ![Options de déploiement intermédiaire](/help/assets/configure-pipelines/add-prod4.png)
 
-         * **Configuration du Dispatcher** : le rôle de la personne **Responsable de déploiement** consiste à configurer un ensemble de chemins de contenu qui sont soit invalidés soit vidés du cache d’AEM Dispatcher lorsqu’un pipeline est exécuté. Ces actions de cache sont exécutées dans le cadre de l’étape du pipeline de déploiement, juste après le déploiement des modules de contenu. Ces paramètres utilisent le comportement standard d’AEM Dispatcher. Pour effectuer la configuration, procédez comme suit :
+         * **Configuration du Dispatcher** : le rôle de la personne **Responsable de déploiement** consiste à configurer un ensemble de chemins de contenu qui sont soit invalidés soit vidés du cache d’AEM Dispatcher lorsqu’un pipeline est exécuté. Ces actions de cache sont effectuées dans le cadre de l’étape du pipeline de déploiement après le déploiement des packages de contenu. Ces paramètres utilisent le comportement standard d’AEM Dispatcher. Pour effectuer la configuration, procédez comme suit :
 
-            1. Sous **CHEMIN**, fournissez un chemin d’accès au contenu.
-            1. Sous **TYPE**, sélectionnez l’action à effectuer sur ce chemin.
+           1. Sous **CHEMIN**, fournissez un chemin d’accès au contenu.
+           1. Sous **TYPE**, sélectionnez l’action à effectuer sur ce chemin.
 
-               * **Purge** - videz le cache.
-               * **Invalider** - effectuez une invalidation du cache, comme lorsque le contenu est activé d’une instance de création vers une instance de publication.
+              * **Purge** - videz le cache.
+              * **Invalider** - effectuez une invalidation du cache, comme lorsque le contenu est activé d’une instance de création vers une instance de publication.
 
-            1. Cliquez sur **Ajouter un chemin** pour ajouter votre chemin spécifié. Vous pouvez ajouter jusqu’à 100 chemins par environnement.
+           1. Cliquez sur **Ajouter un chemin** pour ajouter votre chemin spécifié. Vous pouvez ajouter jusqu’à 100 chemins par environnement.
 
          ![Configuration de Dispatcher](/help/assets/configure-pipelines/dispatcher-stage.png)
 
@@ -101,20 +101,20 @@ Une fois que vous avez utilisé l’interface d’utilisation de [!UICONTROL Clo
 
          * **Options de déploiement** - vous pouvez définir les paramètres contrôlant le déploiement en production.
 
-            * **Utiliser l’approbation de mise en production** : une personne ayant le rôle de **Propriétaire d’entreprise**, **Responsable de projet** ou **Responsable de déploiement** via l’interface d’utilisation de [!UICONTROL Cloud Manager] doit approuver manuellement un déploiement.
-            * **Planifié** : interrompt le pipeline avant le déploiement en production pour permettre sa planification. Si cette option est sélectionnée, le pipeline s’arrête après le déploiement dans l’environnement d’évaluation et demandera à l’utilisateur ou à l’utilisatrice quelle action entreprendre.
-               * **`Now`** : déploie immédiatement en production, terminant ainsi le pipeline.
-               * **Date** : permet à l’utilisateur ou à l’utilisatrice de planifier une heure à laquelle le déploiement doit être terminé.
-               * **Arrêter l’exécution** : interrompt le déploiement en production.
+           * **Utiliser l’approbation de mise en production** : une personne ayant le rôle de **Propriétaire d’entreprise**, **Responsable de projet** ou **Responsable de déploiement** via l’interface d’utilisation de [!UICONTROL Cloud Manager] doit approuver manuellement un déploiement.
+           * **Planifié** : interrompt le pipeline avant le déploiement en production pour permettre sa planification. Si cette option est sélectionnée, le pipeline s’arrête après le déploiement dans l’environnement d’évaluation et demandera à l’utilisateur ou à l’utilisatrice quelle action entreprendre.
+             * **`Now`** : déploie immédiatement en production, terminant ainsi le pipeline.
+             * **Date** : permet à l’utilisateur ou à l’utilisatrice de planifier une heure à laquelle le déploiement doit être terminé.
+             * **Arrêter l’exécution** : interrompt le déploiement en production.
 
            >[!TIP]
            >
            >Voir la section [Déploiement du code](/help/using/code-deployment.md) pour découvrir comment définir le planning de déploiement ou exécuter le pipeline immédiatement.
 
-            * **Solliciter la supervision par le responsable du succès client** : si cette option est choisie, une personne responsable du succès client est engagée pour véritablement démarrer le déploiement. Lors de la création ou de la modification d’un pipeline lorsque cette option est activée, le rôle **Responsable de déploiement** dispose des options suivantes.
+           * **Solliciter la supervision par le responsable du succès client** : si cette option est choisie, une personne responsable du succès client est engagée pour véritablement démarrer le déploiement. Lors de la création ou de la modification d’un pipeline lorsque cette option est activée, le rôle **Responsable de déploiement** dispose des options suivantes.
 
-               * **Toute personne faisant partie de l’équipe d’ingénierie du service client** : permet à un ingénieur ou à une ingénieure du service client disponible de démarrer le déploiement.
-               * **Ma personne faisant partie de l’équipe d’ingénierie du service client** : permet uniquement à la personne faisant partie de l’équipe d’ingénierie du service client spécifique affectée au client ou à la cliente de démarrer le déploiement. Cette option s’applique également à la personne remplaçante désignée de l’ingénieur ou de l’ingénieure du service client indisponible.
+             * **Toute personne faisant partie de l’équipe d’ingénierie du service client** : permet à un ingénieur ou à une ingénieure du service client disponible de démarrer le déploiement.
+             * **Ma personne faisant partie de l’équipe d’ingénierie du service client** : permet uniquement à la personne faisant partie de l’équipe d’ingénierie du service client spécifique affectée au client ou à la cliente de démarrer le déploiement. Cette option s’applique également à la personne remplaçante désignée de l’ingénieur ou de l’ingénieure du service client indisponible.
 
            ![Options de déploiement en production](/help/assets/configure-pipelines/prod-deploymentoptions.png)
 
@@ -150,9 +150,9 @@ Une fois que vous avez utilisé l’interface d’utilisation de [!UICONTROL Clo
 
       * Définissez vos propres ressources personnalisées en les chargeant.
 
-         1. **FORMAT** - choisissez si votre ressource personnalisée est un PDF ou une image.
-         1. **NOM DE FICHIER** - utilisez le bouton du navigateur de fichiers pour sélectionner une image sur votre ordinateur local.
-         1. **Ajouter un fichier test** - cliquez pour charger la ressource sélectionnée.
+        1. **FORMAT** - Choisissez si votre ressource personnalisée est un PDF ou une image.
+        1. **NOM DE FICHIER** - utilisez le bouton du navigateur de fichiers pour sélectionner une image sur votre ordinateur local.
+        1. **Ajouter un fichier test** - cliquez pour charger la ressource sélectionnée.
 
       ![Distribution des tests des ressources](/help/assets/configure-pipelines/add-prod6.png)
 
@@ -170,14 +170,14 @@ Un pipeline de code full stack déploie des versions de code front-end et back-e
 
 1. Dans l&#39;onglet **Code**, définissez les options suivantes.
 
-   * **Référentiel** : définit à partir de quel référentiel Git le pipeline doit récupérer le code.
+   * **Référentiel** - Définit le référentiel Git à partir duquel le pipeline récupère le code.
 
    >[!TIP]
    >
    >Voir le document [Configuration du programme](/help/getting-started/program-setup.md) pour découvrir comment ajouter et gérer des référentiels dans Cloud Manager.
 
-   * **Branche Git** - Définit à partir de quelle branche le pipeline doit récupérer le code.
-   * **Ignorer la configuration de niveau Web** – Lorsque cette case est cochée, le pipeline ne déploie pas votre configuration de niveau web. Si un pipeline de configuration de niveau web existe déjà pour le même environnement, cette case à cocher est automatiquement sélectionnée et désactivée, car la configuration de niveau web est gérée par ce pipeline à la place. Lorsqu’il n’existe aucun pipeline de configuration de niveau web, vous pouvez sélectionner ou désélectionner cette option pour contrôler si le pipeline de pile complète déploie la configuration Dispatcher.
+   * **Branche Git** - Définit à partir de quelle branche le pipeline récupère le code.
+   * **Ignorer la configuration de niveau Web** – Lorsque cette case est cochée, le pipeline ne déploie pas votre configuration de niveau web. Si un pipeline de configuration de niveau web existe déjà pour le même environnement, cette case à cocher est automatiquement sélectionnée et désactivée, car ce pipeline gère la configuration de niveau web à la place. Lorsqu’il n’existe aucun pipeline de configuration de niveau web, vous pouvez sélectionner ou désélectionner cette option pour contrôler si le pipeline de pile complète déploie la configuration Dispatcher.
 
    ![Source du code de pile complète](/help/assets/configure-pipelines/add-prod-fullstack-source.png)
 
@@ -210,7 +210,7 @@ Si vous créez un pipeline de configuration de niveau web pour un environnement 
 1. Cliquez sur **Continuer** pour accéder à l’onglet **Test d’évaluation**. Voir [Test d’évaluation](#stage-testing) pour plus d’informations.
 
 
-## À propos de l’utilisation de la création dynamique dans un pipeline de production{#about-smart-build}
+## Utilisation de la création intelligente dans un pipeline de production{#about-smart-build}
 
 La **version intelligente** dans Cloud Manager est une stratégie de création optimisée pour les pipelines de production. La génération intelligente réduit les temps de génération en mettant en cache les modules et en ne reconstruisant que les modules qui ont été modifiés depuis la dernière exécution réussie. Les modules inchangés sont réutilisés à partir du cache, tandis que seuls les modules modifiés et leurs dépendances sont reconstruits, ce qui améliore l’efficacité des workflows de développement itératifs.
 
@@ -242,7 +242,7 @@ Le gain de performances de l’utilisation de la création dynamique dépend de 
 * La fréquence et l’étendue des modifications de code.
 * La distribution des dépendances entre les modules.
 
-En règle générale, les projets comportant de nombreux modules indépendants peuvent bénéficier de la plus grande amélioration.
+Les projets comportant de nombreux modules indépendants peuvent bénéficier de la plus grande amélioration.
 
 ### Désinscription du cache par module{#smart-build-cache-optout}
 
@@ -269,13 +269,13 @@ Cette syntaxe force le module à se recréer à chaque exécution de pipeline ta
 Gardez les points suivants à l’esprit lorsque vous utilisez la création dynamique :
 
 * Smart Build repose sur l’analyse des dépendances Maven.
-* Les modifications en dehors du graphique de dépendance peuvent ne pas déclencher de reconstructions.
-* Certains plug-ins peuvent ne pas être entièrement compatibles avec la mise en cache.
-* Vous pouvez revenir à la **version complète** à tout moment en modifiant le pipeline hors production.
+* Les modifications en dehors du graphique de dépendance ne déclenchent pas de reconstructions.
+* Certains plug-ins ne sont pas entièrement compatibles avec la mise en cache.
+* Vous pouvez revenir à la **version complète** à tout moment en modifiant le pipeline de production.
 
 Si vous rencontrez un comportement de build inattendu, envisagez de désactiver la mise en cache de modules spécifiques ou de changer temporairement votre stratégie de build en **Version complète**.
 
-### Dépannage des problèmes de création dynamique{#smart-build-troubleshoot}
+### Résoudre les problèmes de création dynamique{#smart-build-troubleshoot}
 
 | Problème | Solutions suggérées |
 | --- | --- |
@@ -283,7 +283,7 @@ Si vous rencontrez un comportement de build inattendu, envisagez de désactiver 
 | Aucune amélioration des performances | · Assurez-vous que plusieurs exécutions ont eu lieu (préchauffage du cache).<br>· Vérifiez si la plupart des modules changent fréquemment. |
 | Artefacts inattendus ou modifications manquantes | · Vérifiez si les modifications ne se trouvent pas en dehors du suivi des dépendances Maven.<br>· Utilisez **Version complète** pour la vérification. |
 
-Voir [Ajouter un pipeline de production](#adding-production-pipeline) la section Activation de la création dynamique.
+Pour activer la création intelligente, voir [Ajouter un pipeline de production](#add-a-production-pipeline).
 
 
 ## Étapes suivantes {#the-next-steps}

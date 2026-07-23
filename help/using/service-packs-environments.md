@@ -15,9 +15,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 8964aad406d3e7fc5b911b98f928ad0427511230
+source-git-commit: b4846046c6c410642d3e23f2cc2c002a6d53b3b7
 workflow-type: tm+mt
-source-wordcount: 468
+source-wordcount: 455
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ Découvrez comment lancer des mises à jour du pack de services pour les environ
 
 >[!NOTE]
 >
->Cette fonctionnalité n’est disponible que pour [le programme Private Beta](/help/release-notes/current.md#beta-program).
+>Cette fonctionnalité n’est disponible que dans [le programme Private Beta](/help/release-notes/current.md#beta-program).
 
 ## Vue d’ensemble {#service-pack-updates-overview}
 
@@ -95,13 +95,13 @@ Une fois l’installation terminée, votre approbation (ou votre rejet) est néc
 
    ![Rejeter ou approuver la mise à jour du pack de services](/help/using/assets/service-pack-reject-approve.png)
 
-1. Effectuez l’une des opérations suivantes :
+1. Utilisez l’une des méthodes suivantes :
 
    * Pour finaliser la mise à jour, cliquez sur **Approuver**.
 
    ![Validation du pack de services](/help/using/assets/service-pack-approve.png)
 
    * Pour annuler la mise à jour, cliquez sur **Rejeter**.
-L’installation du pack de services est annulée et aucune modification n’est appliquée.
+     L’installation du pack de services est annulée et aucune modification n’est appliquée.
 
    ![&#x200B; Rejet du pack de services &#x200B;](/help/using/assets/service-pack-reject.png)
