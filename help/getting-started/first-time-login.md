@@ -3,14 +3,10 @@ title: Première connexion
 description: Consultez cette page si vous avez terminé les configurations générales et que vous êtes prêt à utiliser Cloud Manager pour la première fois.
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 TQID: https://experienceleague.adobe.com/2fA-qKPKPhxCCRzxWC5pujXWQCa9vcP8tJtnSXSdipU
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: cd2426f1-5719-4006-b8c2-738e5969754b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 1692390e24f8fa7d719bd8293a99586ec4ec36d4
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: dac18093bc590afbd33e358582b3f1c703ce23e1
 workflow-type: tm+mt
 source-wordcount: 294
 ht-degree: 30%
@@ -27,7 +23,7 @@ Une fois la configuration générale de [!UICONTROL Cloud Manager terminée], vo
 
 ## Se connecter pour la première fois {#logging-in-for-the-first-time}
 
-1. Connectez-vous à Cloud Manager sur [experience.adobe.com](https://experience.adobe.com/experiencemanager). Pour en savoir plus, voir [À propos d’Adobe Experience Hub](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/experience-hub/experience-hub)
+1. Connectez-vous à Cloud Manager sur [experience.adobe.com](https://experience.adobe.com/experiencemanager). Pour en savoir plus, voir [À propos d’Adobe Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
 1. Dans le panneau de gauche, cliquez sur **Cloud Manager**.
 
    ![Cloud Manager dans le panneau latéral gauche d’Experience Manager](/help/getting-started/assets/cloud-manager-experiencemanager.png)
@@ -59,4 +55,4 @@ Cloud Manager fournit une vue consolidée de l’activité d’un programme. Il 
 
 >[!NOTE]
 >
->Par défaut, une personne ayant accès à un environnement AEM dispose également du rôle d’utilisateur ou d’utilisatrice Cloud Manager. Ce rôle n’accorde pas à l’utilisateur l’accès à la vue des détails du programme. Un utilisateur disposant uniquement du rôle Utilisateur Cloud Manager peut accéder à l’URL de création de l’environnement AEM (s’il existe des environnements) à l’aide des options de menu du programme. Ces utilisateurs doivent contacter leurs administrateurs s’ils souhaitent obtenir l’accès au niveau du programme.
+>Par défaut, une personne ayant accès à un environnement AEM dispose également du rôle d’utilisateur ou d’utilisatrice Cloud Manager. Ce rôle ne permet pas à l’utilisateur d’accéder à la vue des détails du programme. Un utilisateur disposant uniquement du rôle Utilisateur Cloud Manager peut accéder à l’URL de création de l’environnement AEM (s’il existe des environnements) à l’aide des options de menu du programme. Ces utilisateurs doivent contacter leurs administrateurs s’ils souhaitent obtenir l’accès au niveau du programme.
