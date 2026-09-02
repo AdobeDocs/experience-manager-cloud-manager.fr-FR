@@ -10,9 +10,9 @@ feature_v2:
   - id: cd2426f1-5719-4006-b8c2-738e5969754b
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: fa6be369b979682cebf68852603725d8754605ab
+source-git-commit: dac18093bc590afbd33e358582b3f1c703ce23e1
 workflow-type: tm+mt
-source-wordcount: 1641
+source-wordcount: 1640
 ht-degree: 36%
 
 ---
@@ -104,16 +104,16 @@ Si vous commencez la configuration de votre organisation, nous vous conseillons 
 
 Le contenu principal de la console Mes programmes est la section **Mes programmes** qui répertorie vos programmes sous la forme de cartes individuelles. Cliquez sur une carte pour accéder à la page **Vue d’ensemble du programme** du programme concerné pour obtenir plus d’informations sur le programme.
 
-En fonction de vos privilèges, vous ne pourrez peut-être pas sélectionner certains programmes.
+En fonction de vos privilèges, vous ne pouvez pas sélectionner certains programmes.
 
 Vous pouvez utiliser les options de tri suivantes pour trouver rapidement le programme souhaité :
 
 ![Options de tri](/help/getting-started/assets/cloud-manager-my-programs-sorting.png)
 
 * Trier par :
-   * Date de création
-   * Nom du programme
-   * Statut
+  * Date de création
+  * Nom du programme
+  * Statut
 * ![Icône Trier vers le bas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) / ![Icône Trier vers le haut](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderUp_18_N.svg) Trier les programmes vers le haut ou vers le bas, respectivement.
 * ![Icône classique de la vue grille](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ClassicGridView_18_N.svg) / ![Icône ou liste à puces de texte](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TextBulleted_18_N.svg) Affichez les programmes sous forme de grille ou de liste, respectivement.
 
@@ -126,8 +126,8 @@ Une carte ou une ligne dans un tableau représente chaque programme, fournissant
 * Image du programme (si configurée)
 * Nom du programme (dans l’exemple ci-dessus, *WKND Magazine*)
 * Type de service :
-   * **Experience Manager** pour les programmes AMS
-   * **Cloud Experience Manager** pour les [programmes AEM as a Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/home)
+  * **Experience Manager** pour les programmes AMS
+  * **Cloud Experience Manager** pour les [programmes AEM as a Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/home)
 * Statut (dans l’exemple ci-dessus, *Prêt*)
 * Solutions configurées
 * Date de création

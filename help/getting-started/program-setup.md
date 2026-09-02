@@ -10,10 +10,10 @@ feature_v2:
   - id: cd2426f1-5719-4006-b8c2-738e5969754b
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: fa6be369b979682cebf68852603725d8754605ab
+source-git-commit: 4381c51e54aaf1286b69c149dbf57c77bcd9a8bd
 workflow-type: tm+mt
-source-wordcount: 549
-ht-degree: 65%
+source-wordcount: 548
+ht-degree: 60%
 
 ---
 
@@ -81,7 +81,7 @@ Si vous n’avez pas encore créé de pipeline, consultez les documents [Configu
 
 ## Basculer entre les programmes {#swithing-programs}
 
-Lorsque vous travaillez sur un programme, vous pouvez basculer rapidement vers un autre programme sans revenir à la page de présentation de Cloud Manager.
+Lorsque vous travaillez sur un programme, vous pouvez passer à un autre programme sans revenir à la page d’aperçu de Cloud Manager.
 
 Utilisez la barre d’actions pour passer à un autre programme, modifier le programme actuel ou ajouter un nouveau programme.
 
@@ -91,11 +91,11 @@ Utilisez la barre d’actions pour passer à un autre programme, modifier le pro
 
 Les KPI des sites sont mesurés sur les tests exécutés dans l’environnement d’évaluation. En règle générale, ces indicateurs de performance clés sont ajustés pour correspondre aux fonctionnalités de l’environnement d’évaluation.
 
-Par exemple, un utilisateur qui s’attend à une moyenne de 1 000 pages vues par minute dans son environnement de production et qui dispose de quatre serveurs Dispatcher/de publication en production réduit ce scénario à 250 pages vues par minute. Ce scénario suppose que leur environnement d’évaluation se compose d’une seule paire Dispatcher/serveur de publication.
+Par exemple, une équipe qui s’attend à une moyenne de 1 000 pages vues par minute dans son environnement de production et qui dispose de quatre serveurs Dispatcher/de publication en production met ce scénario à l’échelle à 250 pages vues par minute. Ce scénario suppose que leur environnement d’évaluation se compose d’une seule paire Dispatcher/serveur de publication.
 
 Les tests de performances d’Assets impliquent le chargement répété de ressources sur une période de 30 minutes. Le temps de traitement de chaque ressource et diverses mesures au niveau du système sont mesurés tout au long du test.
 
-Vous disposez d’un réseau de diffusion de contenu (CDN) tel qu’Akamai ou CloudFront configuré pour votre environnement de production. Comme  teste directement l’environnement d’évaluation, l’indicateur de performance clé reflète uniquement le trafic prévu pour transiter via le réseau CDN. C’est-à-dire les défaut du cache. En règle générale, ce trafic est un sous-ensemble relativement petit du trafic de production total.
+Vous disposez d’un réseau de diffusion de contenu (CDN) tel qu’Akamai ou CloudFront configuré pour votre environnement de production. Comme  teste directement l’environnement d’évaluation, l’indicateur de performance clé reflète uniquement le trafic prévu pour transiter via le réseau CDN. Fait référence aux défauts de cache. En règle générale, ce trafic est un sous-ensemble relativement petit du trafic de production total.
 
 ## Vue d’ensemble vidéo {#video}
 

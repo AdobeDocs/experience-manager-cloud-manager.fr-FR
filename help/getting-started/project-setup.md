@@ -8,7 +8,7 @@ product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: fa6be369b979682cebf68852603725d8754605ab
+source-git-commit: 4381c51e54aaf1286b69c149dbf57c77bcd9a8bd
 workflow-type: tm+mt
 source-wordcount: 1411
 ht-degree: 65%
@@ -25,14 +25,14 @@ Les projets AEM existants doivent respecter certaines règles de base pour pouv
 
 * Les projets doivent être créés à l’aide d’Apache Maven.
 * Un fichier `pom.xml` doit se trouver à la racine du référentiel Git.
-   * Ce fichier `pom.xml` peut faire référence à autant de sous-modules (qui à leur tour comportent d’autres sous-modules) que nécessaire.
-   * Vous pouvez ajouter des références à d’autres référentiels d’artefact Maven dans vos fichiers `pom.xml`.
-   * L’accès aux [référentiels d’artefacts protégés par mot de passe](#password-protected-maven-repositories) est pris en charge s’il est configuré. Cependant, l’accès aux référentiels d’artefacts protégés par réseau n’est pas pris en charge.
+  * Ce fichier `pom.xml` peut faire référence à autant de sous-modules (qui à leur tour comportent d’autres sous-modules) que nécessaire.
+  * Vous pouvez ajouter des références à d’autres référentiels d’artefact Maven dans vos fichiers `pom.xml`.
+  * L’accès aux [référentiels d’artefacts protégés par mot de passe](#password-protected-maven-repositories) est pris en charge s’il est configuré. Cependant, l’accès aux référentiels d’artefacts protégés par réseau n’est pas pris en charge.
 * Cloud Manager détecte les packages de contenu déployables en analysant les fichiers ZIP de packages de contenu contenus dans un répertoire nommé `target`.
-   * Un nombre illimité de sous-modules produit des packages de contenu.
+  * Un nombre illimité de sous-modules produit des packages de contenu.
 * Cloud Manager détecte les artefacts Dispatcher déployables en recherchant les fichiers `zip` contenus dans des sous-répertoires de `target` nommés `conf` et `conf.d`.
 * S’il existe plusieurs modules de contenu, l’ordre des déploiements des modules n’est pas garanti.
-   * Si un ordre spécifique est nécessaire, il est possible d’utiliser les dépendances de module de contenu pour le définir.
+  * Si un ordre spécifique est nécessaire, il est possible d’utiliser les dépendances de module de contenu pour le définir.
 * Les packages peuvent être [ignorés](#skipping-content-packages) du déploiement.
 
 ## Activer des profils Maven dans Cloud Manager {#activating-maven-profiles-in-cloud-manager}
@@ -339,7 +339,7 @@ Si vous le souhaitez, le comportement de réutilisation peut être désactivé p
 
 * Les artefacts de build ne sont pas réutilisés dans différents programmes, que le hachage de validation soit identique ou non.
 * Les artefacts de build sont réutilisés dans le même programme même si la branche et/ou le pipeline sont différents.
-* [Gestion des versions Maven](/help/managing-code/maven-project-version.md) remplace la version du projet uniquement dans les pipelines de production. Si la même validation est utilisée pour les pipelines de développement et de production et que le pipeline de développement s’exécute en premier, les versions sont déployées dans les environnements d’évaluation et de production sans changer. Cependant, une balise sera toujours créée dans cette situation.
+* [Gestion des versions Maven](/help/managing-code/maven-project-version.md) remplace la version du projet uniquement dans les pipelines de production. Si la même validation est utilisée pour les pipelines de développement et de production et que le pipeline de développement est exécuté en premier, les versions sont déployées dans les environnements d’évaluation et de production sans changer. Cependant, une balise sera toujours créée dans cette situation.
 * Si la récupération des artefacts stockés échoue, l’étape de création est exécutée comme si aucun artefact n’avait été stocké.
 * Les variables de pipeline autres que `CM_DISABLE_BUILD_REUSE` ne sont pas prises en compte lorsque Cloud Manager décide de réutiliser des artefacts de version créés précédemment.
 
