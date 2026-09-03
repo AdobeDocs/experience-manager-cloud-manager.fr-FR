@@ -7,9 +7,9 @@ user-guide-description: Découvrez comment utiliser Cloud Manager pour auto-gé
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 40d52d486e16f247b2edd249c9afaae2d91c0643
+source-git-commit: e10c3c15c01c28f6bad0a9cf0464288937402cb7
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '340'
 ht-degree: 85%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 85%
 # Documentation de Cloud Manager {#content}
 
 + [Cloud Manager pour AMS](/help/introduction.md)
-+ [Experience Hub](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/experience-hub/experience-hub)
++ [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
 + Vue d’ensemble {#overview}
   + [Concepts clés](/help/overview/key-concepts.md)
   + [Parcours d’utilisateur ou d’utilisatrice](/help/overview/user-journey.md)
@@ -67,7 +67,7 @@ ht-degree: 85%
   + [Ajouter un référentiel externe](/help/managing-code/external-repositories.md)
   + [Gérer les jetons d’accès](/help/managing-code/manage-access-tokens.md)
   + [Prise en charge des sous-modules Git](/help/managing-code/git-submodules.md)
-  + [Vérifications des demandes de tirage pour les référentiels privés](/help/managing-code/github-check-config.md)
+  + [Vérifications des pull requests pour les référentiels privés](/help/managing-code/github-check-config.md)
   + [Annotations du contrôle GitHub](/help/managing-code/github-annotations.md)
   + [Gestion des versions du projet Maven](/help/managing-code/maven-project-version.md)
   + [Intégration à Git](/help/managing-code/git-integration.md)
@@ -78,6 +78,7 @@ ht-degree: 85%
 + Notes de mise à jour {#release-notes}
   + [En cours](/help/release-notes/current.md)
   + 2026 {#rn-2026}
+    + [2026.8.0](/help/release-notes/2026/2026-8-0.md)
     + [2026.7.0](/help/release-notes/2026/2026-7-0.md)
     + [2026.6.0](/help/release-notes/2026/2026-6-0.md)
     + [2026.5.0](/help/release-notes/2026/2026-5-0.md)
