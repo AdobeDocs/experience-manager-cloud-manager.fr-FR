@@ -5,25 +5,33 @@ exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 TQID: https://experienceleague.adobe.com/gAO8BdTx9-Sq8evIuI3hIaHIUixk-IulQagCI-Jssrc
 product_v2:
   - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: cd2426f1-5719-4006-b8c2-738e5969754b
+    internal-label: Environments
   - id: ff09c71c-26a9-449a-85f8-2aeb8ce96100
+    internal-label: Implementation
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 source-git-commit: 7cd0317c081cdfdefb61b1c953fca179cd25eb1a
 workflow-type: tm+mt
-source-wordcount: 2880
+source-wordcount: '2880'
 ht-degree: 82%
-
 ---
-
 # Test de qualité du code {#code-quality-testing}
 
 Découvrez comment fonctionne le test de qualité du code des pipelines et comment il peut améliorer la qualité de vos déploiements.
@@ -147,7 +155,7 @@ Le tableau suivant répertorie les contrôles d’intégrité :
 | Aucune politique de profil utilisateur évidemment risquée n’a été trouvée. | Accès par défaut au profil utilisateur | Critique |
 | Le filtre Référent `Sling` est configuré pour empêcher les attaques CSRF. | [Filtre référent Sling](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/security/security-checklist#security) | Important |
 | Le gestionnaire de bibliothèques HTML Adobe Granite est configuré correctement. | Configuration de gestionnaire de bibliothèque HTML CQ | Important |
-| Le lot Prise en charge CRXDE est désactivé. | Prise en charge de CRXDE | Important |
+| Le bundle CRXDE Support est désactivé. | Prise en charge de CRXDE | Important |
 | `Sling` lot et le servlet DavEx sont désactivés. | Contrôle d’intégrité DavEx | Important |
 | L’exemple de contenu n’est pas installé. | Exemples de modules de contenu | Important |
 | Les filtres de demande et de débogage de la gestion de contenu web sont désactivés. | [Configuration des filtres WCM](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/deploying/configuring/osgi-configuration-settings#configuring) | Important |
@@ -314,7 +322,7 @@ Si les seuls éléments contenus dans `myco-all-1.0.0-SNAPSHOT.zip` sont les deu
 
 Pour les projets qui produisent des dizaines de packages incorporés, il a été démontré que cette optimisation permet de gagner plus de 10 minutes par exécution de pipeline.
 
-Un cas particulier peut se produire lorsque le module de contenu « all » contient une combinaison de modules de contenu ignorés et de lots OSGi. Par exemple, si `myco-all-1.0.0-SNAPSHOT.zip` contient les deux packages incorporés et les lots OSGi, un nouveau package de contenu minimal est créé avec uniquement les lots OSGi. Ce package est toujours nommé `cloudmanager-synthetic-jar-package` et les lots contenus sont placés dans `/apps/cloudmanager-synthetic-installer/install`.
+Un cas particulier peut se produire lorsque le module de contenu « all » contient une combinaison de modules de contenu ignorés et de bundles OSGi. Par exemple, si `myco-all-1.0.0-SNAPSHOT.zip` contient les deux packages incorporés et les lots OSGi, un nouveau package de contenu minimal est créé avec uniquement les lots OSGi. Ce package est toujours nommé `cloudmanager-synthetic-jar-package` et les lots contenus sont placés dans `/apps/cloudmanager-synthetic-installer/install`.
 
 >[!NOTE]
 >
