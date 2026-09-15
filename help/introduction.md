@@ -5,26 +5,34 @@ exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
 TQID: https://experienceleague.adobe.com/VR-H6ubMFgVrkfzDvY4JWYlUtM-Dkztdewr5LiSZK1w
 product_v2:
   - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: cd2426f1-5719-4006-b8c2-738e5969754b
+    internal-label: Environments
   - id: ff09c71c-26a9-449a-85f8-2aeb8ce96100
+    internal-label: Implementation
 subfeature_v2:
   - id: a4d14782-c381-4db2-89e3-8cf3f31b103c
+    internal-label: Code deployment
   - id: c14b2f98-ee16-4c49-b87b-919c91b01d9d
+    internal-label: CI/CD Pipelines
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 source-git-commit: ee4f497a8bb5fb2d37fd8283721ebc9891f9053a
 workflow-type: tm+mt
-source-wordcount: 1266
-ht-degree: 69%
-
+source-wordcount: '1266'
+ht-degree: 71%
 ---
-
 # Présentation de [!UICONTROL Cloud Manager] pour AMS {#introduction-to-cloud-manager}
 
 Pour découvrir Cloud Manager pour AMS (Adobe Managed Services) et comment il permet aux entreprises d’auto-gérer Adobe Experience Manager en mode cloud, commencez ici.
@@ -32,7 +40,7 @@ Pour découvrir Cloud Manager pour AMS (Adobe Managed Services) et comment il pe
 >[!CONTEXTUALHELP]
 >id="aemcloud_cloudmanager_introduction"
 >title="Présentation de Cloud Manager pour AMS"
->abstract="Il permet aux entreprises de gérer elles-mêmes Adobe Experience Manager dans le cloud à l’aide d’un framework CI/CD. Ce framework permet aux équipes d’accélérer les personnalisations ou les mises à jour sans compromettre les performances ou la sécurité."
+>abstract="Ce service permet aux entreprises de gérer elles-mêmes Adobe Experience Manager dans le cloud à l’aide d’un framework CI/CD. Ce framework permet aux équipes d’accélérer les personnalisations ou les mises à jour sans compromettre les performances ou la sécurité."
 >additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/cloud-manager/programs#cloud-manager" text="Créer des programmes"
 >additional-url="https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/cloud-manager/environments#cloud-manager" text="Créer des environnements"
 
@@ -65,7 +73,7 @@ Pour découvrir et commencer à utiliser l’interface d’utilisation de [!UICO
 
 L’interface utilisateur de  permet d’accéder à l’environnement cloud et au pipeline CI/CD et de les gérer facilement pour vos applications Adobe Experience Manager.
 
-Vous définissez des indicateurs clés de performances (KPI) spécifiques à l’application, tels que le pic de pages vues par minute ou le temps de réponse attendu pour le chargement d’une page. Ces KPI servent de base pour mesurer le succès du déploiement. Les rôles et autorisations des différentes personnes membres de l’équipe peuvent être facilement définis. L’interface en libre-service vous offre un contrôle total. Elle fournit également des liens vers les ressources sur les bonnes pratiques et l’accès à des spécialistes d’Adobe pour obtenir des conseils lorsque vous en avez besoin.
+Vous définissez des indicateurs clés de performances (KPI) spécifiques à l’application, tels que le pic de pages vues par minute ou le temps de réponse attendu pour le chargement d’une page. Ces KPI servent de base pour mesurer le succès du déploiement. Les rôles et autorisations des différents membres de l’équipe peuvent être facilement définis. L’interface en libre-service vous offre un contrôle total. Elle fournit également des liens vers les ressources sur les bonnes pratiques et l’accès à des spécialistes d’Adobe pour obtenir des conseils lorsque vous en avez besoin.
 
 ### Pipeline CI/CD {#ci-cd-pipeline}
 
@@ -95,11 +103,11 @@ Lorsque l’environnement de production est soumis à une charge exceptionnellem
 
 Dans un tel cas,  déclenche automatiquement le processus d&#39;approvisionnement de mise à l&#39;échelle automatique, envoie une notification de l&#39;événement de mise à l&#39;échelle automatique et approvisionne la capacité supplémentaire en quelques minutes. La capacité supplémentaire est fournie dans l’environnement de production et dans les mêmes régions, conformément aux spécifications système des nœuds Dispatcher/de publication en cours d’exécution.
 
-La fonctionnalité de mise à l’échelle automatique s’applique au niveau Dispatcher/de publication, en utilisant la mise à l’échelle horizontale pour ajouter un à dix segments de paires Dispatcher/de publication. Toute capacité supplémentaire configurée est mise à l’échelle manuellement dans un délai de dix jours ouvrés, selon les indications du responsable du succès client Adobe.
+La fonctionnalité de mise à l’échelle automatique s’applique au niveau Dispatcher/de publication, en utilisant la mise à l’échelle horizontale pour ajouter un à dix segments de paires Dispatcher/de publication. Toute capacité supplémentaire configurée est réduite manuellement dans un délai de dix jours ouvrables, selon les indications du CSE (Customer Success Engineer) Adobe.
 
 >[!NOTE]
 >
->Si vous souhaitez déterminer si la mise à l’échelle automatique convient à votre application, contactez votre CSE ou votre représentant ou représentante Adobe.
+>Si vous souhaitez déterminer si la mise à l’échelle automatique convient à votre application, contactez votre CSE ou votre représentant ou représentante Adobe.
 
 ### Déploiements bleu/vert {#blue-green}
 
@@ -109,12 +117,12 @@ Le déploiement bleu/vert est une technique qui réduit les temps d’interrupti
 
 * Le déploiement bleu/vert est un module complémentaire des pipelines CI/CD de Cloud Manager dans lequel un deuxième ensemble d’instances de publication et de Dispatcher (vert) est créé et utilisé pour les déploiements. Les instances vertes sont ensuite associées à la répartition de charge de production et les anciennes instances (bleues) sont supprimées et interrompues.
 * Cette implémentation de bleu/vert traite les instances comme transitoires et chaque itération d’un pipeline bleu/vert crée un ensemble de serveurs de publication et de Dispatcher.
-* Une répartition de charge verte sera créée dans le cadre de la configuration. Cet équilibreur de charge ne change jamais et est la cible de votre URL verte ou « test ».
+* Une répartition de charge verte est créée dans le cadre de la configuration. Cet équilibreur de charge ne change jamais et est la cible de votre URL verte ou « test ».
 * Lors d’un déploiement bleu/vert, une réplique exacte des niveaux de publication/Dispatcher existants est créée.
 
 #### Flux de déploiement bleu/vert {#flow}
 
-Lorsque le déploiement bleu/vert est activé, le flux de déploiement diffère du flux de déploiement du service cloud standard.
+Lorsque le déploiement bleu/vert est activé, le flux de déploiement diffère du flux de déploiement standard du service Cloud.
 
 | Étape | Déploiement bleu/vert | Déploiement standard |
 | --- | --- | --- |
@@ -123,7 +131,7 @@ Lorsque le déploiement bleu/vert est activé, le flux de déploiement diffère 
 | 3 | Une infrastructure verte est créée | - |
 | 4 | Déploiement vers le niveau Publication verte/Dispatcher | Déploiement vers l’éditeur |
 | 5 | Mise en pause pour le test (jusqu’à 24 heures) | - |
-| 6 | Une infrastructure verte est ajoutée à l’équilibreur de charge de production | - |
+| 6 | Une infrastructure verte est ajoutée à la répartition de charge de production | - |
 | 7 | L’infrastructure bleue est supprimée de la répartition de charge de production | - |
 | 8 | Suspendre pour la validation finale (jusqu’à 24 heures) | - |
 | 9 | L’infrastructure bleue est automatiquement arrêtée | - |
@@ -131,15 +139,15 @@ Lorsque le déploiement bleu/vert est activé, le flux de déploiement diffère 
 
 #### Implémentation bleue/verte {#implementing}
 
-Les utilisateurs et utilisatrices d’AMS qui utilisent Cloud Manager pour les déploiements en production peuvent utiliser le déploiement bleu/vert. Toutefois, l’utilisation du déploiement bleu/vert nécessite une validation supplémentaire de vos environnements et une configuration par l’équipe d’ingénierie du service client Adobe.
+Les utilisateurs et utilisatrices d’AMS qui utilisent Cloud Manager pour les déploiements en production peuvent utiliser le déploiement bleu/vert. Toutefois, l’utilisation du déploiement bleu/vert nécessite une validation supplémentaire de vos environnements et une configuration par un CSE (Customer Success Engineer) Adobe.
 
 Si le déploiement bleu/vert vous intéresse, tenez compte des exigences et limites suivantes et contactez votre CSE.
 
 #### Exigences et limites {#limitations}
 
 * Le bleu/vert est uniquement disponible pour les paires publication/Dispatcher.
-* Les paires de prévisualisation Dispatcher/de publication ne font pas partie des déploiements bleu/vert.
+* Les paires de prévisualisation Dispatcher/publish ne font pas partie des déploiements bleu/vert.
 * Chaque paire Dispatcher/publication est identique à toutes les autres paires Dispatcher/publication.
 * Le bleu/vert n’est disponible que dans l’environnement de production.
 * Le déploiement bleu/vert est disponible dans AWS, ainsi que dans Azure.
-* Le bleu/vert n’est pas disponible pour les clientes et clients d’Assets uniquement.
+* Le déploiement bleu/vert n’est pas disponible pour les clientes et clients disposant uniquement d’Assets.
