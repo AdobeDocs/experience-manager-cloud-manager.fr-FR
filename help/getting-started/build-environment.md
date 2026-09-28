@@ -2,26 +2,42 @@
 title: Environnement de création
 description: Découvrez l’environnement de création spécialisé dans lequel les utilisateurs et utilisatrices de Cloud Manager peuvent créer et tester votre code.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-TQID: https://experienceleague.adobe.com/AdGVWjyF0DXEX7jH5S39JQ506oVnNYGtYqAWNHcQeP8
+autotag-review: '2026-09-28T18:27:41.054Z'
+TQID: 'https://experienceleague.adobe.com/DNcpDvFCu798nnK81kUEN8JmIv8DP72cas0YaVKPw40'
 product_v2:
   - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+    internal-label: APIs
   - id: cd2426f1-5719-4006-b8c2-738e5969754b
+    internal-label: Environments
+  - id: 143cda9c-8952-5316-be5f-2cd421ad8ecc
+    internal-label: Dispatcher
+  - id: 2741637d-a621-529a-b21b-bfe9be07a9c8
+    internal-label: Dispatcher
+  - id: 2e0e1a8a-56e7-5bd5-b805-f35a7c0c2ca7
+    internal-label: Projects
+  - id: 5be0fc8f-1cff-5c3e-bb92-2903a56a3de6
+    internal-label: Migration
+  - id: d54b7e32-ec14-504f-8821-22c27fbf278b
+    internal-label: Production
 subfeature_v2:
   - id: d9eb3b3e-9447-4ed4-bf4a-96c7b245cb27
+    internal-label: Cloud Manager APIs
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fa6be369b979682cebf68852603725d8754605ab
+    internal-label: Security
+source-git-commit: 9b75e449f463ef5512ed4e42c4f749852d8c945a
 workflow-type: tm+mt
-source-wordcount: 1205
+source-wordcount: '1205'
 ht-degree: 50%
-
 ---
-
 # Environnement de création {#build-environment}
 
 Découvrez l’environnement de création spécialisé utilisé par Cloud Manager pour créer et tester votre code.
@@ -32,28 +48,28 @@ Les environnements de création de Cloud Manager possèdent les attributs suiva
 
 * L’environnement de création est basé sur Linux, dérivé de Ubuntu 22.04.
 * Apache Maven 3.9.4 est installé.
-   * Adobe recommande aux utilisateurs et utilisatrices de [mettre à jour leurs référentiels Maven de sorte à utiliser HTTPS au lieu de HTTP](#https-maven).
+  * Adobe recommande aux utilisateurs et utilisatrices de [mettre à jour leurs référentiels Maven de sorte à utiliser HTTPS au lieu de HTTP](#https-maven).
 * Les versions Java installées sont Oracle JDK 8u401 et Oracle JDK 11.0.22.
-   * `/usr/lib/jvm/jdk1.8.0_401`
-   * `/usr/lib/jvm/jdk-11.0.22`
-* Par défaut, la variable d’environnement `JAVA_HOME` est définie sur `/usr/lib/jvm/jdk1.8.0_401` qui contient Oracle JDK 8u401. Consultez la section [&#x200B; Autre version du JDK d’exécution de Maven &#x200B;](#alternate-maven) pour plus d’informations.
+  * `/usr/lib/jvm/jdk1.8.0_401`
+  * `/usr/lib/jvm/jdk-11.0.22`
+* Par défaut, la variable d’environnement `JAVA_HOME` est définie sur `/usr/lib/jvm/jdk1.8.0_401` qui contient Oracle JDK 8u401. Consultez la section [ Autre version du JDK d’exécution de Maven ](#alternate-maven) pour plus d’informations.
 * D’autres packages système nécessaires sont installés.
-   * `bzip2`
-   * `unzip`
-   * `libpng`
-   * `imagemagick`
-   * `graphicsmagick`
+  * `bzip2`
+  * `unzip`
+  * `libpng`
+  * `imagemagick`
+  * `graphicsmagick`
 * D’autres packages sont installés au moment de la génération, comme décrit dans la section [Installation de packages système supplémentaires](#installing-additional-system-packages).
 * Chaque génération est effectuée dans un nouvel environnement. Le conteneur de build ne conserve pas les données entre les exécutions.
 * Maven est exécuté avec les trois commandes suivantes :
-   * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
-   * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
-   * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
+  * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
+  * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
+  * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven est configuré au niveau du système avec un fichier `settings.xml` qui inclut automatiquement le référentiel public d’artefacts Adobe à l’aide d’un profil appelé `adobe-public`. Pour plus d’informations, voir le [référentiel Maven public d’Adobe](https://repo1.maven.org/).
 * Node.js 18 est disponible pour les [pipelines front-end](/help/overview/ci-cd-pipelines.md).
 
 >[!IMPORTANT]
->La prise en charge des chaînes d’outils Maven a été supprimée à partir de la version Cloud Manager 2025.06.0. La sélection du JDK est désormais prise en charge uniquement via `.cloudmanager/java-version`. Pour plus d’informations, voir [&#x200B; Utilisation d’une version Java spécifique &#x200B;](#using-java-version).
+>La prise en charge des chaînes d’outils Maven a été supprimée à partir de la version Cloud Manager 2025.06.0. La sélection du JDK est désormais prise en charge uniquement via `.cloudmanager/java-version`. Pour plus d’informations, voir [ Utilisation d’une version Java spécifique ](#using-java-version).
 
 >[!NOTE]
 >
@@ -86,7 +102,7 @@ Par défaut, les projets créés par le processus de création Cloud Manager ut
 >**Conseils de migration :**
 >
 >1. Supprimez les chaînes d&#39;outils en supprimant toute entrée de `org.apache.maven.plugins:maven-toolchains-plugin` et tout `toolchains.xml` validé dans votre contrôle de code source.
->1. Sélectionnez un JDK avec des `.cloudmanager/java-version` (21, 17 ou 11), comme décrit dans la section [&#x200B; Autre version du JDK d’exécution Maven &#x200B;](#alternate-maven).
+>1. Sélectionnez un JDK avec des `.cloudmanager/java-version` (21, 17 ou 11), comme décrit dans la section [ Autre version du JDK d’exécution Maven ](#alternate-maven).
 >1. Adobe recommande d’effacer le cache de build de Cloud Manager ou de déclencher une nouvelle exécution de pipeline.
 >
 
@@ -209,7 +225,7 @@ $ aio cloudmanager:list-pipeline-variables PIPELINEID
 Les variables doivent respecter certaines limites.
 
 * Les noms de variables ne peuvent contenir que des caractères alphanumériques et le trait de soulignement (`_`).
-   * Par convention, les noms sont tous en majuscules.
+  * Par convention, les noms sont tous en majuscules.
 * Il existe une limite de 200 variables par pipeline.
 * Chaque nom doit comporter moins de 100 caractères.
 * La valeur de chaque chaîne doit comporter moins de 2 048 caractères.
